@@ -1,4 +1,4 @@
-Area﻿,IMI,IEM UCR,IE UCR,IEM UTN,IM UCR,IEM CAPS
+area﻿,imi,iem_ucr,ie_ucr,iem_utn,im_ucr,iem_caps
 Informática,3,4,4,2,4,3
 Matemática,21,18,21,21,18,21
 Química,8,4,4,8,8,8
@@ -15,4 +15,3 @@ Electivas,8,6,18,9,9,6
 Sistemas ,4,12,17,4,6,16
 TFG,12,0,3,4,0,12
 Otros,1,8,8,6,5,0
-Total,178,160,170,180,172,176
