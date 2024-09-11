@@ -1,17 +1,17 @@
-area﻿,imi,iem_ucr,ie_ucr,iem_utn,im_ucr,iem_caps
-Informática,3,4,4,2,4,3
-Matemática,21,18,21,21,18,21
-Química,8,4,4,8,8,8
-Ciencias Sociales,11,19,17,16,16,8
-Inglés,4,0,0,0,0,1
-Comunicación,10,3,3,8,6,9
-Física,11,12,12,11,12,11
-Mecánica,39,24,9,46,73,35
-Eléctrica,24,35,48,28,3,21
-Administración,17,9,3,13,6,20
-Ciencia Materiales,3,3,3,4,3,3
-Prob. y estadística,2,3,0,0,3,2
-Electivas,8,6,18,9,9,6
-Sistemas ,4,12,17,4,6,16
-TFG,12,0,3,4,0,12
-Otros,1,8,8,6,5,0
+﻿area,imi,iem_ucr,ie_ucr,im_ucr,iem_utn
+Informática,3,4,4,4,2
+Matemática,21,18,21,18,21
+Química,8,4,4,8,8
+Ciencias Sociales,11,19,17,16,16
+Inglés,4,0,0,0,0
+Comunicación,10,3,3,6,8
+Física,11,12,12,12,11
+Mecánica,39,24,9,73,46
+Eléctrica,24,35,48,3,28
+Administración,17,9,3,6,13
+Ciencia Materiales,3,3,3,3,4
+Prob. y estadística,2,3,0,3,0
+Electivas,8,6,18,9,9
+Integración,4,12,17,6,4
+TFG,12,0,3,0,4
+Otros,1,8,8,5,6
