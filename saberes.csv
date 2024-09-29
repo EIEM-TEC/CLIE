@@ -1,11 +1,11 @@
 ﻿codigo,nombre,categoria,porcBachi
-mate,Matemática,Ciencias Básicas,10
-fisi,Física,Ciencias Básicas,6
-otcb,Otras ciencias básicas,Ciencias Básicas,2
-eycs,Ética y ciencias sociales,Formación profesional y habilidades Interpersonales,3
-cthi,Comunicación técnica y habilidades interpersonales,Formación profesional y habilidades Interpersonales,3
-sysl,Salud y seguridad laboral,Formación profesional y habilidades Interpersonales,1
-ingl,Inglés,Formación profesional y habilidades Interpersonales,1
+mate,Matemática,Ciencias básicas,10
+fisi,Física,Ciencias básicas,6
+otcb,Otras ciencias básicas,Ciencias básicas,2
+eycs,Ética y ciencias sociales,Formación profesional y habilidades interpersonales,3
+cthi,Comunicación técnica y habilidades interpersonales,Formación profesional y habilidades interpersonales,3
+sysl,Salud y seguridad laboral,Formación profesional y habilidades interpersonales,1
+ingl,Inglés,Formación profesional y habilidades interpersonales,1
 ceye,Circuitos eléctricos y electrónica,Ingeniería eléctrica y electrónica,8
 mesp,Máquinas eléctricas y sistemas de potencia,Ingeniería eléctrica y electrónica,7
 insa,Instrumentación y transductores,Ingeniería eléctrica y electrónica,4
@@ -21,7 +21,7 @@ pmys,Programación. Modelado y simulación,Ingeniería de sistemas. Control y au
 isco,Ingeniería de sistemas complejos,Ingeniería de sistemas. Control y automatización,2
 mpml,Mantenimiento predictivo y aprendizaje de máquina,Ingeniería de sistemas. Control y automatización,2
 myde,Metrología y diseño de experimentos,Metrología. Análisis de datos y confiabilidad,2
-peyc,Probabilidad y estadística,Metrología. Análisis de Datos y Confiabilidad,2
+peyc,Probabilidad y estadística,Metrología. Análisis de datos y confiabilidad,2
 conf,Confiabilidad,Metrología. Análisis de datos y confiabilidad,1
 adpr,Administración de proyectos,Gestión de la ingeniería electromecánica,3
 garh,Gestión de activos y recursos energéticos,Gestión de la ingeniería electromecánica,2
