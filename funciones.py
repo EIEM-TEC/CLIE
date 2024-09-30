@@ -75,7 +75,7 @@ def radar_clie(ax,cat,val,title,fontsize,tfontsize,rpmax,mult):
     ax.set_facecolor('#f7f7f7')
 
 def multiradar(lista,saberes,categorias,columnaPorc):
-    fig, axs = plt.subplots(2, 4, subplot_kw=dict(projection='polar'), figsize=(15, 12))
+    fig, axs = plt.subplots(2, 4, subplot_kw=dict(projection='polar'), figsize=(12, 15))
 
     row = 0
     column = 0
@@ -86,7 +86,7 @@ def multiradar(lista,saberes,categorias,columnaPorc):
         cat = sab['nombre'].to_list()
         val = sab[columnaPorc].to_list()
         #val = [(x / porc)*100 for x in val]
-        radar_clie(axs[row,column],cat,val,categoria,8,10,10,2)
+        radar_clie(axs[row,column],cat,val,categoria,8,10,15,5)
         if column < 3:
             column += 1
         else:

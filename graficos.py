@@ -7,30 +7,29 @@ saberes = pd.read_csv("saberes.csv")
 categorias = pd.read_csv('categorias.csv')
 
 # cat_list = categorias['categoria'].to_list()
-list_bachi = ['Ciencias básicas',
-'Formación profesional y habilidades interpersonales', 'Gestión de la ingeniería electromecánica',
-'Ingeniería de sistemas. Control y automatización', 'Ingeniería eléctrica y electrónica', 
-'Ingeniería mecánica y de materiales', 'Metrología. Análisis de datos y confiabilidad']
+list_trc = ['Ciencias básicas', 'Formación profesional y habilidades interpersonales',
+            'Comunicación y dibujo', 'Ingeniería eléctrica y electrónica',
+            'Ingeniería mecánica y de materiales', 'Automática',
+            'Analisís de datos']
 
-bachi = categorias[categorias['categoria'].isin(list_bachi)]
+trc = categorias[categorias['categoria'].isin(list_trc)]
 
-#Bachi
-cat = bachi['categoria'].to_list()
+#TRC
+cat = trc['categoria'].to_list()
 
-val = bachi['porcBachi'].to_list()
+val = trc['porcTRC'].to_list()
 
 fig, axs = plt.subplots(subplot_kw=dict(projection='polar'), figsize=(10, 10))
 
 fun.radar_clie(axs,cat,val,'Distribución de areas para el tronco común',12,14,30,5)
 
-fun.multiradar(list_bachi,saberes,categorias,'porcBachi')
+fun.multiradar(list_trc,saberes,categorias,'porcTRC')
 
 #DIG
-list_DIG = ['Ciencias básicas',
-'Formación profesional y habilidades interpersonales', 'Gestión de la ingeniería electromecánica',
-'Ingeniería de sistemas. Control y automatización', 'Ingeniería eléctrica y electrónica', 
-'Ingeniería mecánica y de materiales', 'Metrología. Análisis de datos y confiabilidad',
-'Diseño, instalaciones y gestión']
+list_DIG = ['Ciencias básicas', 'Formación profesional y habilidades interpersonales',
+            'Comunicación y dibujo', 'Ingeniería eléctrica y electrónica',
+            'Ingeniería mecánica y de materiales', 'Automática',
+            'Analisís de datos', 'Diseño, instalaciones y gestión']
 
 dig = categorias[categorias['categoria'].isin(list_DIG)]
 
@@ -45,11 +44,10 @@ fun.radar_clie(axs,cat,val,'Distribución de areas para el énfasis: Diseño, in
 fun.multiradar(list_DIG,saberes,categorias,'porcDIG')
 
 #AER
-list_AER = ['Ciencias básicas',
-'Formación profesional y habilidades interpersonales', 'Gestión de la ingeniería electromecánica',
-'Ingeniería de sistemas. Control y automatización', 'Ingeniería eléctrica y electrónica', 
-'Ingeniería mecánica y de materiales', 'Metrología. Análisis de datos y confiabilidad',
-'Aeronáutica']
+list_AER = ['Ciencias básicas', 'Formación profesional y habilidades interpersonales',
+            'Comunicación y dibujo', 'Ingeniería eléctrica y electrónica',
+            'Ingeniería mecánica y de materiales', 'Automática',
+            'Analisís de datos', 'Aeronáutica']
 
 aer = categorias[categorias['categoria'].isin(list_AER)]
 
@@ -64,11 +62,10 @@ fun.radar_clie(axs,cat,val,'Distribución de areas para el énfasis: Aeronáutic
 fun.multiradar(list_AER,saberes,categorias,'porcAER')
 
 #CIB
-list_CIB = ['Ciencias básicas',
-'Formación profesional y habilidades interpersonales', 'Gestión de la ingeniería electromecánica',
-'Ingeniería de sistemas. Control y automatización', 'Ingeniería eléctrica y electrónica', 
-'Ingeniería mecánica y de materiales', 'Metrología. Análisis de datos y confiabilidad',
-'Sistemas ciberfísicos']
+list_CIB = ['Ciencias básicas', 'Formación profesional y habilidades interpersonales',
+            'Comunicación y dibujo', 'Ingeniería eléctrica y electrónica',
+            'Ingeniería mecánica y de materiales', 'Automática',
+            'Analisís de datos', 'Sistemas ciberfísicos']
 
 cib = categorias[categorias['categoria'].isin(list_CIB)]
 

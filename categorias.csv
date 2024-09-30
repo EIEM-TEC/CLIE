@@ -1,11 +1,11 @@
-categoria,porcBachi,porcDIG,porcAER,porcCIB
+categoria,porcTRC,porcDIG,porcAER,porcCIB
 Aeronáutica,0,0.0,25.0,0.0
-Ciencias básicas,18,13.5,13.5,13.5
+Analisís de datos,4,3.0,3.0,3.0
+Automática,10,7.5,7.5,7.5
+Ciencias básicas,28,21.0,21.0,21.0
+Comunicación y dibujo,7,5.25,5.25,5.25
 "Diseño, instalaciones y gestión",0,25.0,0.0,0.0
 Formación profesional y habilidades interpersonales,8,6.0,6.0,6.0
-Gestión de la ingeniería electromecánica,7,5.25,5.25,5.25
-Ingeniería de sistemas. Control y automatización,15,11.25,11.25,11.25
-Ingeniería eléctrica y electrónica,26,19.5,19.5,19.5
+Ingeniería eléctrica y electrónica,19,14.25,14.25,14.25
 Ingeniería mecánica y de materiales,21,15.75,15.75,15.75
-Metrología. Análisis de datos y confiabilidad,5,3.75,3.75,3.75
 Sistemas ciberfísicos,0,0.0,0.0,25.0
