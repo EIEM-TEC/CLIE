@@ -16,19 +16,14 @@ def gen_list_porc(N):
     
     return lista_numeros, lista_porcentajes
 
-def radar_clie(cat,val,title):
+def radar_clie(ax,cat,val,title,fontsize,tfontsize,rpmax,mult):
     
-    rpmax = int(math.ceil(max(val) / 10) * 10)
-
     N = len(cat)
 
     # Cerramos el círculo
     val += val[:1]
     ang = np.linspace(0, 2 * np.pi, N, endpoint=False).tolist()
     ang += ang[:1]
-
-    # Inicializamos el gráfico polar
-    fig, ax = plt.subplots(figsize=(10, 10), subplot_kw=dict(polar=True))
 
     # Dibujamos el gráfico
     ax.plot(ang, val, linewidth=2, linestyle='solid', color='teal')
@@ -39,12 +34,12 @@ def radar_clie(cat,val,title):
 
     # Ajustamos las etiquetas del eje radial
     ax.set_rlabel_position(0)
-    list_porc, list_l_porc = gen_list_porc(rpmax) 
-    plt.yticks(list_porc, list_l_porc, color="grey", size=10)
+    # list_porc, list_l_porc = gen_list_porc(rpmax)
+    list_porc = list(range(mult, rpmax + 1, mult))
+    list_l_porc = [f"{numero}%" for numero in list_porc]
 
-    # Ajustamos las etiquetas de las categorías
-    # Establecemos los ángulos en grados para las etiquetas
-    ang_in_degrees = np.degrees(ang[:-1])
+    ax.set_yticks(list_porc, list_l_porc, color="grey", size=fontsize)
+
     ax.set_xticks(ang[:-1])
     ax.set_xticklabels([])  # Ocultamos las etiquetas por defecto
 
@@ -61,8 +56,8 @@ def radar_clie(cat,val,title):
         ax.text(
             angle,
             ax.get_ylim()[1] * 0.4,  # Ajusta este factor para mover el texto radialmente
-            textwrap.fill(label, width=30),
-            size=12,
+            textwrap.fill(label, width=int(fontsize*2.8)),
+            size=fontsize,
             horizontalalignment=alignment,
             verticalalignment="top",
             rotation=angle_text,
@@ -70,7 +65,7 @@ def radar_clie(cat,val,title):
         )
 
     # Añadimos título
-    plt.title(title, size=14, y=1.08)
+    ax.set_title(textwrap.fill(title, width=tfontsize*4), size=tfontsize, color='blue', y=1.1)
 
     # Añadimos gridlines personalizados
     ax.grid(color='grey', linestyle='dashed', linewidth=0.5)
@@ -78,6 +73,25 @@ def radar_clie(cat,val,title):
     # Mejoramos la estética general
     ax.spines['polar'].set_visible(False)
     ax.set_facecolor('#f7f7f7')
-    fig.patch.set_facecolor('#f7f7f7')
 
+def multiradar(lista,saberes,categorias,columnaPorc):
+    fig, axs = plt.subplots(2, 4, subplot_kw=dict(projection='polar'), figsize=(15, 12))
+
+    row = 0
+    column = 0
+    for categoria in lista:
+        sab = saberes[saberes['categoria']==categoria]
+        porc = categorias[categorias['categoria']==categoria]
+        porc = porc[columnaPorc].item()
+        cat = sab['nombre'].to_list()
+        val = sab[columnaPorc].to_list()
+        #val = [(x / porc)*100 for x in val]
+        radar_clie(axs[row,column],cat,val,categoria,8,10,10,2)
+        if column < 3:
+            column += 1
+        else:
+            row += 1
+            column = 0
+    if len(lista) < 8:
+        fig.delaxes(axs[row,column])
     plt.show()

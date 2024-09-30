@@ -1,29 +1,51 @@
-﻿codigo,nombre,categoria,porcBachi
-mate,Matemática,Ciencias básicas,10
-fisi,Física,Ciencias básicas,6
-otcb,Otras ciencias básicas,Ciencias básicas,2
-eycs,Ética y ciencias sociales,Formación profesional y habilidades interpersonales,3
-cthi,Comunicación técnica y habilidades interpersonales,Formación profesional y habilidades interpersonales,3
-sysl,Salud y seguridad laboral,Formación profesional y habilidades interpersonales,1
-ingl,Inglés,Formación profesional y habilidades interpersonales,1
-ceye,Circuitos eléctricos y electrónica,Ingeniería eléctrica y electrónica,8
-mesp,Máquinas eléctricas y sistemas de potencia,Ingeniería eléctrica y electrónica,7
-insa,Instrumentación y transductores,Ingeniería eléctrica y electrónica,4
-mpse,Microprocesadores y sistemas embebidos,Ingeniería eléctrica y electrónica,4
-tcri,Telecomunicaciones y redes industriales,Ingeniería eléctrica y electrónica,3
-ceim,Ciencia e ingeniería de los materiales,Ingeniería mecánica y de materiales,4
-msyf,Mecánica de sólidos y fluidos,Ingeniería mecánica y de materiales,6
-tdtc,Termodinámica y transferencia de calor,Ingeniería mecánica y de materiales,5
-dmym,Diseño mecánico y manufactura,Ingeniería mecánica y de materiales,6
-acel,Accionamientos eléctricos,Ingeniería de sistemas. Control y automatización,2
-scya,Sistemas de control y automatización,Ingeniería de sistemas. Control y automatización,4
-pmys,Programación. Modelado y simulación,Ingeniería de sistemas. Control y automatización,5
-isco,Ingeniería de sistemas complejos,Ingeniería de sistemas. Control y automatización,2
-mpml,Mantenimiento predictivo y aprendizaje de máquina,Ingeniería de sistemas. Control y automatización,2
-myde,Metrología y diseño de experimentos,Metrología. Análisis de datos y confiabilidad,2
-peyc,Probabilidad y estadística,Metrología. Análisis de datos y confiabilidad,2
-conf,Confiabilidad,Metrología. Análisis de datos y confiabilidad,1
-adpr,Administración de proyectos,Gestión de la ingeniería electromecánica,3
-garh,Gestión de activos y recursos energéticos,Gestión de la ingeniería electromecánica,2
-emin,Emprendimiento e innovación,Gestión de la ingeniería electromecánica,1
-amso,Ambiente y sostenibilidad,Gestión de la ingeniería electromecánica,1
+,nombre,categoria,porcBachi,porcDIG,porcAER,porcCIB
+0,Matemática,Ciencias básicas,10,7.5,7.5,7.5
+1,Física,Ciencias básicas,6,4.5,4.5,4.5
+2,Química,Ciencias básicas,2,1.5,1.5,1.5
+3,Ética y ciencias sociales,Formación profesional y habilidades interpersonales,3,2.25,2.25,2.25
+4,Comunicación técnica y habilidades interpersonales,Formación profesional y habilidades interpersonales,3,2.25,2.25,2.25
+5,Salud y seguridad laboral,Formación profesional y habilidades interpersonales,1,0.75,0.75,0.75
+6,Inglés,Formación profesional y habilidades interpersonales,1,0.75,0.75,0.75
+7,Circuitos eléctricos y electrónica,Ingeniería eléctrica y electrónica,8,6.0,6.0,6.0
+8,Máquinas eléctricas y sistemas de potencia,Ingeniería eléctrica y electrónica,7,5.25,5.25,5.25
+9,Instrumentación y transductores,Ingeniería eléctrica y electrónica,4,3.0,3.0,3.0
+10,Microprocesadores y sistemas embebidos,Ingeniería eléctrica y electrónica,4,3.0,3.0,3.0
+11,Telecomunicaciones y redes industriales,Ingeniería eléctrica y electrónica,3,2.25,2.25,2.25
+12,Ciencia e ingeniería de los materiales,Ingeniería mecánica y de materiales,4,3.0,3.0,3.0
+13,Mecánica de sólidos y fluidos,Ingeniería mecánica y de materiales,6,4.5,4.5,4.5
+14,Termodinámica y transferencia de calor,Ingeniería mecánica y de materiales,5,3.75,3.75,3.75
+15,Máquinas y mecanismos,Ingeniería mecánica y de materiales,3,2.25,2.25,2.25
+16,Manufactura,Ingeniería mecánica y de materiales,3,2.25,2.25,2.25
+17,Accionamientos eléctricos,Ingeniería de sistemas. Control y automatización,2,1.5,1.5,1.5
+18,Sistemas de control y automatización,Ingeniería de sistemas. Control y automatización,4,3.0,3.0,3.0
+19,Programación. Modelado y simulación,Ingeniería de sistemas. Control y automatización,5,3.75,3.75,3.75
+20,Ingeniería de sistemas complejos,Ingeniería de sistemas. Control y automatización,2,1.5,1.5,1.5
+21,Mantenimiento predictivo y aprendizaje automático,Ingeniería de sistemas. Control y automatización,2,1.5,1.5,1.5
+22,Metrología y diseño de experimentos,Metrología. Análisis de datos y confiabilidad,2,1.5,1.5,1.5
+23,Probabilidad y estadística,Metrología. Análisis de datos y confiabilidad,2,1.5,1.5,1.5
+24,Confiabilidad,Metrología. Análisis de datos y confiabilidad,1,0.75,0.75,0.75
+25,Administración de proyectos,Gestión de la ingeniería electromecánica,3,2.25,2.25,2.25
+26,Gestión de activos y recursos energéticos,Gestión de la ingeniería electromecánica,2,1.5,1.5,1.5
+27,Emprendimiento e innovación,Gestión de la ingeniería electromecánica,1,0.75,0.75,0.75
+28,Ambiente y sostenibilidad,Gestión de la ingeniería electromecánica,1,0.75,0.75,0.75
+29,Diseño mecánico,"Diseño, instalaciones y gestión",0,6.25,0.0,0.0
+30,Manufactura avanzada,"Diseño, instalaciones y gestión",0,3.75,0.0,0.0
+31,Instalaciones electromecánicas,"Diseño, instalaciones y gestión",0,6.25,0.0,0.0
+32,Monitoreo de la condición,"Diseño, instalaciones y gestión",0,3.75,0.0,0.0
+33,Transformación digital,"Diseño, instalaciones y gestión",0,5,0.0,0.0
+34,Aviónica,Aeronáutica,0,0.0,5,0.0
+35,Sistemas de propulsión,Aeronáutica,0,0.0,5,0.0
+36,Aerodinámica y dinámica de vuelo,Aeronáutica,0,0.0,5,0.0
+37,Análisis mecánico de estructuras aeronáuticas,Aeronáutica,0,0.0,3.75,0.0
+38,Mantenimiento aeronáutico,Aeronáutica,0,0.0,2.5,0.0
+39,Diseño de instalaciones aeroportuarias,Aeronáutica,0,0.0,2.5,0.0
+40,Sistemas de transporte y elevación,Aeronáutica,0,0.0,1.25,0.0
+41,Sistemas embebidos en tiempo real,Sistemas ciberfísicos,0,0.0,0.0,2.5
+42,Programación y comunicación de bajo nivel,Sistemas ciberfísicos,0,0.0,0.0,3.75
+43,Sistemas de comunicación inalámbrica,Sistemas ciberfísicos,0,0.0,0.0,2.5
+44,Interfaz hombre máquina,Sistemas ciberfísicos,0,0.0,0.0,2.5
+45,Diseño y prototipado iterativo,Sistemas ciberfísicos,0,0.0,0.0,2.5
+46,Integración de sistemas,Sistemas ciberfísicos,0,0.0,0.0,2.5
+47,Aprendizaje automático e IA embebida,Sistemas ciberfísicos,0,0.0,0.0,3.75
+48,Verificación y validación funcional,Sistemas ciberfísicos,0,0.0,0.0,2.5
+49,Ciberseguridad,Sistemas ciberfísicos,0,0.0,0.0,2.5
