@@ -26,24 +26,22 @@ Sistemas de control y automatización,Automática,5,3.75,3.75,3.75
 Estadística y metrología,Analisís de datos,2,1.5,1.5,1.5
 Diseño de experimentos,Analisís de datos,1,0.75,0.75,0.75
 "Confiabilidad,disponibilidad,mantenibilidad y seguridad",Analisís de datos,1,0.75,0.75,0.75
-Diseño mecánico,"Diseño, instalaciones y gestión",0,0.0,0.0,0.0
-Manufactura avanzada,"Diseño, instalaciones y gestión",0,0.0,0.0,0.0
-Instalaciones electromecánicas,"Diseño, instalaciones y gestión",0,0.0,0.0,0.0
-Monitoreo de la condición,"Diseño, instalaciones y gestión",0,0.0,0.0,0.0
-Transformación digital,"Diseño, instalaciones y gestión",0,0.0,0.0,0.0
-Aviónica,Aeronáutica,0,0.0,0.0,0.0
-Sistemas de propulsión,Aeronáutica,0,0.0,0.0,0.0
-Aerodinámica y dinámica de vuelo,Aeronáutica,0,0.0,0.0,0.0
-Análisis mecánico de estructuras aeronáuticas,Aeronáutica,0,0.0,0.0,0.0
-Mantenimiento aeronáutico,Aeronáutica,0,0.0,0.0,0.0
-Diseño de instalaciones aeroportuarias,Aeronáutica,0,0.0,0.0,0.0
-Sistemas de transporte y elevación,Aeronáutica,0,0.0,0.0,0.0
-Sistemas embebidos en tiempo real,Sistemas ciberfísicos,0,0.0,0.0,0.0
-Programación y comunicación de bajo nivel,Sistemas ciberfísicos,0,0.0,0.0,0.0
-Sistemas de comunicación inalámbrica,Sistemas ciberfísicos,0,0.0,0.0,0.0
-Interfaz hombre máquina,Sistemas ciberfísicos,0,0.0,0.0,0.0
-Diseño y prototipado iterativo,Sistemas ciberfísicos,0,0.0,0.0,0.0
-Integración de sistemas,Sistemas ciberfísicos,0,0.0,0.0,0.0
-Aprendizaje automático e IA embebida,Sistemas ciberfísicos,0,0.0,0.0,0.0
-Verificación y validación funcional,Sistemas ciberfísicos,0,0.0,0.0,0.0
-Ciberseguridad,Sistemas ciberfísicos,0,0.0,0.0,0.0
+Sistemas de transporte de masa y energía,"Diseño, instalaciones y gestión",0,10,0.0,0.0
+Sistemas de generación y almacenamiento de energía,"Diseño, instalaciones y gestión",0,3,0.0,0.0
+Sistemas de distribución y transmisión de energía eléctrica,"Diseño, instalaciones y gestión",0,4,0.0,0.0
+Instalaciones electromecánicas,"Diseño, instalaciones y gestión",0,3,0.0,0.0
+Gestión del ciclo de vida y transformación digital,"Diseño, instalaciones y gestión",0,3,0.0,0.0
+Gestión de la energía,"Diseño, instalaciones y gestión",0,2,0.0,0.0
+Aviónica y control automático de vuelo y tráfico,Aeronáutica,0,0,6,0.0
+Sistemas de propulsión y dinámica de vuelo,Aeronáutica,0,0,5,0.0
+"Análisis mecánico de materiales, estructuras y mecanismos de la aeronave",Aeronáutica,0,0,7,0.0
+Gestión del ciclo de vida de la aeronave,Aeronáutica,0,0,3,0.0
+Instalaciones aeroportuarias,Aeronáutica,0,0,2,0.0
+Movilidad aérea avanzada,Aeronáutica,0,0,2,0.0
+Sistemas embebidos en tiempo real,Sistemas ciberfísicos,0,0.0,0,4
+Interfaz humano máquina,Sistemas ciberfísicos,0,0.0,0.0,1
+Ingeniería de sistemas complejos,Sistemas ciberfísicos,0,0.0,0.0,6
+Machine Learning e inteligencia artificial embebida,Sistemas ciberfísicos,0,0.0,0.0,4
+"Visión de máquina, robótica y domótica",Sistemas ciberfísicos,0,0.0,0.0,5
+Internet de las cosas,Sistemas ciberfísicos,0,0.0,0.0,3
+Ciberseguridad,Sistemas ciberfísicos,0,0.0,0.0,2

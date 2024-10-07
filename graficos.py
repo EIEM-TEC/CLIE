@@ -39,7 +39,7 @@ val = dig['porcDIG'].to_list()
 
 fig, axs = plt.subplots(subplot_kw=dict(projection='polar'), figsize=(10, 10))
 
-fun.radar_clie(axs,cat,val,'Distribución de areas para el énfasis: Diseño, instalaciones y gestión',12,14,30,5)
+fun.radar_clie(axs,cat,val,'Distribución de areas para el énfasis: Diseño, instalaciones y gestión',14,18,30,5)
 
 fun.multiradar(list_DIG,saberes,categorias,'porcDIG')
 

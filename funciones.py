@@ -56,7 +56,7 @@ def radar_clie(ax,cat,val,title,fontsize,tfontsize,rpmax,mult):
         ax.text(
             angle,
             ax.get_ylim()[1] * 0.4,  # Ajusta este factor para mover el texto radialmente
-            textwrap.fill(label, width=int(fontsize*2.8)),
+            textwrap.fill(label, width=int(fontsize*3)),
             size=fontsize,
             horizontalalignment=alignment,
             verticalalignment="top",
