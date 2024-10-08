@@ -16,7 +16,7 @@ def gen_list_porc(N):
     
     return lista_numeros, lista_porcentajes
 
-def radar_clie(ax,cat,val,title,fontsize,tfontsize,rpmax,mult):
+def radar_clie(ax,cat,val,title,fontsize,tfontsize,rpmax,mult,textw):
     
     N = len(cat)
 
@@ -56,7 +56,7 @@ def radar_clie(ax,cat,val,title,fontsize,tfontsize,rpmax,mult):
         ax.text(
             angle,
             ax.get_ylim()[1] * 0.4,  # Ajusta este factor para mover el texto radialmente
-            textwrap.fill(label, width=int(fontsize*3)),
+            textwrap.fill(label, width=int(textw)),
             size=fontsize,
             horizontalalignment=alignment,
             verticalalignment="top",
@@ -74,7 +74,7 @@ def radar_clie(ax,cat,val,title,fontsize,tfontsize,rpmax,mult):
     ax.spines['polar'].set_visible(False)
     ax.set_facecolor('#f7f7f7')
 
-def multiradar(lista,saberes,categorias,columnaPorc):
+def multiradar(lista,saberes,categorias,columnaPorc,fontsize,tfontsize,rpmax,mult,textw):
     fig, axs = plt.subplots(2, 4, subplot_kw=dict(projection='polar'), figsize=(12, 15))
 
     row = 0
@@ -86,7 +86,7 @@ def multiradar(lista,saberes,categorias,columnaPorc):
         cat = sab['nombre'].to_list()
         val = sab[columnaPorc].to_list()
         #val = [(x / porc)*100 for x in val]
-        radar_clie(axs[row,column],cat,val,categoria,8,10,15,5)
+        radar_clie(axs[row,column],cat,val,categoria,fontsize,tfontsize,rpmax,mult,textw)
         if column < 3:
             column += 1
         else:
@@ -94,4 +94,5 @@ def multiradar(lista,saberes,categorias,columnaPorc):
             column = 0
     if len(lista) < 8:
         fig.delaxes(axs[row,column])
+    #plt.tight_layout(pad=0.1, w_pad=0.5, h_pad=0.2)
     plt.show()
