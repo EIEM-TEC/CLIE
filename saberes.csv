@@ -1,4 +1,4 @@
-nombre,categoria,porcTRC,porcDIG,porcAER,porcCIB
+nombre,area,porcTRC,porcINS,porcAER,porcSCB
 Matemática,Ciencias básicas,15,11.25,11.25,11.25
 Física,Ciencias básicas,10,7.5,7.5,7.5
 Química,Ciencias básicas,3,2.25,2.25,2.25
@@ -16,22 +16,22 @@ Instrumentación y transductores,Ingeniería eléctrica y electrónica,3,2.25,2.
 Microprocesadores,Ingeniería eléctrica y electrónica,2,1.5,1.5,1.5
 Telecomunicaciones y redes,Ingeniería eléctrica y electrónica,2,1.5,1.5,1.5
 Ciencia e ingeniería de los materiales,Ingeniería mecánica y de materiales,3,2.25,2.25,2.25
-Mecánica de sólidos y fluidos,Ingeniería mecánica y de materiales,9,6.75,6.75,6.75
-Termodinámica y transferencia de calor,Ingeniería mecánica y de materiales,4,3.0,3.0,3.0
+Mecánica de sólidos y fluidos,Ingeniería mecánica y de materiales,10,6.75,6.75,6.75
+Termodinámica y transferencia de calor,Ingeniería mecánica y de materiales,5,3.0,3.0,3.0
 Elementos de máquinas,Ingeniería mecánica y de materiales,3,2.25,2.25,2.25
 Manufactura,Ingeniería mecánica y de materiales,2,1.5,1.5,1.5
 Programación y arquitectura de computadores,Automática,2,1.5,1.5,1.5
 Modelado y simulación,Automática,3,2.25,2.25,2.25
-Sistemas de control y automatización,Automática,5,3.75,3.75,3.75
+Sistemas de control y automatización,Automática,6,3.75,3.75,3.75
 Estadística y metrología,Analisís de datos,2,1.5,1.5,1.5
 Diseño de experimentos,Analisís de datos,1,0.75,0.75,0.75
 "Confiabilidad,disponibilidad,mantenibilidad y seguridad",Analisís de datos,1,0.75,0.75,0.75
-Sistemas de transporte de masa y energía,"Diseño, instalaciones y gestión",0,10,0.0,0.0
-Sistemas de generación y almacenamiento de energía,"Diseño, instalaciones y gestión",0,3,0.0,0.0
-Sistemas de distribución y transmisión de energía eléctrica,"Diseño, instalaciones y gestión",0,4,0.0,0.0
-Instalaciones electromecánicas,"Diseño, instalaciones y gestión",0,3,0.0,0.0
-Gestión del ciclo de vida y transformación digital,"Diseño, instalaciones y gestión",0,3,0.0,0.0
-Gestión de la energía,"Diseño, instalaciones y gestión",0,2,0.0,0.0
+Sistemas de transporte de masa y energía,Instalaciones,0,10,0.0,0.0
+Sistemas de generación y almacenamiento de energía,Instalaciones,0,3,0.0,0.0
+Sistemas de distribución y transmisión de energía eléctrica,Instalaciones,0,4,0.0,0.0
+Instalaciones electromecánicas,Instalaciones,0,3,0.0,0.0
+Gestión del ciclo de vida y transformación digital,Instalaciones,0,3,0.0,0.0
+Gestión de la energía,Instalaciones,0,2,0.0,0.0
 Aviónica y control automático de vuelo y tráfico,Aeronáutica,0,0,6,0.0
 Sistemas de propulsión y dinámica de vuelo,Aeronáutica,0,0,5,0.0
 "Análisis mecánico de materiales, estructuras y mecanismos de la aeronave",Aeronáutica,0,0,7,0.0
