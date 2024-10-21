@@ -48,7 +48,7 @@ def colocar_semestre(semestre,color,horasteoriasemestre,horaspracticasemestre,cr
 
 def generar_TRC(programa,plan):
     cred_TRC = [0,0,0,0,0,0,0,0,0,0,0]
-    cred_acum = []
+    cred_INS = 0
     acumulado = 0
     nombreProg = "Ingeniería Electromecánica - Tronco Común"
     #Geometría
@@ -101,11 +101,11 @@ def generar_TRC(programa,plan):
             code={
                 \def\ancho{5}
                 \def\alto{0.8}
-                \draw[fill=#6] (-\ancho/2,\alto) rectangle (\ancho/2,-\alto) node[midway,align=center,text width=\ancho cm]{\fontsize{14pt}{2pt}\selectfont {#2}};
+                \draw[fill=#6] (-\ancho/2,\alto) rectangle (\ancho/2,-\alto) node[midway,align=center,text width=\ancho cm]{\fontsize{16pt}{2pt}\selectfont {#2}};
                 \draw[fill=#6] (-\ancho/2,\alto) rectangle (\ancho/2,\alto + \alto) node[midway]{\fontsize{14pt}{14pt}\selectfont #1};
                 \draw[fill=#6] (-\ancho/2,-\alto) rectangle (-\ancho/2 + \ancho/3, -\alto - \alto) node[midway]{\fontsize{14pt}{14pt}\selectfont #3};
-                \draw[fill=#6] (-\ancho/2 + \ancho/3,-\alto) rectangle (-\ancho/2 + 2*\ancho/3, -\alto - \alto) node[midway]{\fontsize{12pt}{14pt}\selectfont #4};
-                \draw[fill=#6] (-\ancho/2 + 2*\ancho/3,-\alto) rectangle (-\ancho/2 + 3*\ancho/3, -\alto - \alto) node[midway]{\fontsize{12pt}{14pt}\selectfont #5};
+                \draw[fill=#6] (-\ancho/2 + \ancho/3,-\alto) rectangle (-\ancho/2 + 2*\ancho/3, -\alto - \alto) node[midway]{\fontsize{14pt}{14pt}\selectfont #4};
+                \draw[fill=#6] (-\ancho/2 + 2*\ancho/3,-\alto) rectangle (-\ancho/2 + 3*\ancho/3, -\alto - \alto) node[midway]{\fontsize{14pt}{14pt}\selectfont #5};
             }
         }
     }''' 
@@ -187,12 +187,25 @@ def generar_TRC(programa,plan):
                 cred_TRC[i] = cred_TRC[i] + creditos
                 acumulado = acumulado + creditos
                 malla.append(colocar_curso(codigo,nombre,fila,semestre,horasteoria,horaspractica,creditos,color))
-            cred_TRC[10] = acumulado              
-    datos_TRC = pd.DataFrame(areas["codArea"],columns=["codArea"])
-    datos_TRC["cred_TRC"] = (cred_TRC)
-    datos_TRC["porc_med_TRC"] = ((datos_TRC["cred_TRC"] / (acumulado))*100)
-    datos_TRC["porc_teo_TRC"] = areas["porcTRC"]
-    print(datos_TRC)
+            cred_TRC[10] = acumulado   
+            if area in ["INS"]:
+                cred_INS = cred_INS + creditos           
+    
+    
+    datos_malla = pd.DataFrame(index=areas["codArea"])
+    datos_malla["cred_TRC"] = cred_TRC
+    datos_malla["pm_TRC"] = round((datos_malla["cred_TRC"] / (acumulado))*100,1)
+    datos_malla["pt_TRC"] = areas["porcTRC"].to_list()
+    datos_malla["pm_INS"] = round(((datos_malla["cred_TRC"]/180)*100),1)
+    datos_malla["pt_INS"] = round((datos_malla["pt_TRC"]*135)/180,1)
+    datos_malla.loc["INS","pm_INS"] = cred_INS
+    datos_malla.loc["INS","pt_INS"] = 25
+    datos_malla.loc["TOT"] = 0
+    datos_malla.loc["TOT"] = datos_malla.sum(numeric_only=True)
+    print(datos_malla)
+
+
+
     doc.generate_pdf(f"{programa}-{plan}", clean=True, clean_tex=False, compiler='lualatex',silent=True)
 
 generar_TRC('EM','0001')

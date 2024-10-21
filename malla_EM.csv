@@ -8,22 +8,23 @@ QU1106,Química básica I,CIB,1,4,4,0,3
 QU1102,Laboratorio de química básica I,CIB,1,5,0,2,1
 CI1106,Comunicación escrita,CYD,1,6,3,0,2
 MI2101,Dibujo técnico,CYD,1,7,4,0,3
-CS1502,Introducción a la técnica ciencia y tecnología,FPH,1,8,2,0,1
+IEM0000,Introducción a la Ingeniería Electromecánica,FPH,1,8,2,0,1
+FH1000,Centros de formación humanistica,FPH,1,9,3,0,0
 MA1103,Cálculo y álgebra lineal,CIB,2,1,4,0,4
 FI1102,Física general II,CIB,2,2,4,0,3
 FI1202,Laboratorio de física general II,CIB,2,3,0,2,1
 CA21XX,Introducción a la computación,AUT,2,5,4,0,3
 CI1107,Comunicación oral,CYD,2,6,3,0,1
-ME2208,Ciencia e ingeniería de los materiales,IMM,2,7,3,1,3
+MI2106,Estática,IMM,2,7,4,0,3
 CS2303,Relaciones laborales,FPH,2,8,3,0,2
-FH1000,Centros de formación humanistica,FPH,2,9,3,0,1
+CS1502,Introducción a la técnica ciencia y tecnología,FPH,2,9,2,0,1
 MA2105,Ecuaciones diferenciales,CIB,3,1,4,0,4
 FI2103,Física general III,CIB,3,2,4,0,3
 IEM2201,Análisis de circuitos I,IEE,3,3,4,0,3
 IEM2251,Laboratorio de circuitos I,IEE,3,4,0,2,1
 IEM2301,Transductores,IEE,3,5,2,0,2
-MI2102,Estática,IMM,3,7,4,0,3
-CS4402,Seminario de estudios costarricenses,FPH,3,8,3,0,2
+MI3117,Dinámica,IMM,3,7,4,0,3
+CS3404,Seminario de ética en ingeniería,FPH,3,8,3,0,2
 SE1100,Actividad cultural I,FPH,3,9,2,0,0
 MA2104,Cálculo superior,CIB,4,1,4,0,4
 IEM4200,Estadística aplicada I,ADD,4,2,3,0,2
@@ -31,26 +32,26 @@ IEM2202,Análisis de circuitos II,IEE,4,3,4,0,3
 IEM2252,Laboratorio de circuitos II,IEE,4,4,0,2,1
 IEM2302,Instrumentación,IEE,4,5,2,0,2
 IEM2352,Laboratorio de instrumentación,IEE,4,6,0,2,1
-MI2103,Dinámica,IMM,4,7,4,0,3
-CS3404,Seminario de ética en ingeniería,FPH,4,8,3,0,2
+MI3130,Termodinámica,IMM,4,7,4,0,3
+CS4402,Seminario de estudios costarricenses,FPH,4,8,3,0,2
 SE1200,Actividad deportiva I,FPH,4,9,0,2,0
 CM3207,Métodos numéricos para ingeniería,CIB,5,1,4,0,3
 IEM2305,Estadística aplicada II,ADD,5,2,3,0,2
 IEM2203,Sistemas analógicos,IEE,5,3,3,0,2
 IEM2303,Modelado y simulación de sistemas electromecánicos,AUT,5,5,3,1,3
-IEM2104,Termodinámica,IMM,5,6,4,0,3
+ME220X,Ciencia e ingeniería de los materiales,IMM,5,6,3,1,3
 IEM2105,Manufactura,IMM,5,7,3,0,3
 IEM2155,Laboratorio de manufactura,IMM,5,8,0,3,1
-CI3203,Inglés para Electromecánica,CYD,5,9,3,0,1
-IEM2304,Fundamentos de gestión de proyectos,FPH,6,1,4,0,2
+CI3203,Inglés para Electromecánica,CYD,5,9,2,0,1
+IEM2304,Fundamentos de gestión de proyectos,FPH,6,1,3,0,2
 IEM2204,Sistemas digitales,IEE,6,3,3,0,2
 IEM2254,Laboratorio de sistemas analógicos y digitales,IEE,6,4,0,2,1
-IEM2106,Transferencia de calor,IMM,6,5,4,0,3
+CMXXXX,Transferencia de calor,IMM,6,5,4,0,3
 IEM2107,Resistencia de materiales,IMM,6,6,4,0,3
 IEM2109,Mecánica de fluidos,IMM,6,7,4,0,3
 IEM2159,Laboratorio de mecánica de fluidos,IMM,6,8,0,2,1
 IEM2108,Dibujo industrial,CYD,6,9,4,0,3
-IEM2400,Metodología de la investigación,FPH,7,1,3,0,1
+IEM2400,Metodología de la investigación,FPH,7,1,2,0,1
 IEM2205,Máquinas eléctricas I,IEE,7,3,4,0,3
 IEM2255,Laboratorio de máquinas eléctricas I,IEE,7,4,0,2,1
 IEM2306,Control automático,AUT,7,5,3,0,3
