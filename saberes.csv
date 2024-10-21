@@ -1,47 +1,47 @@
-nombre,area,porcTRC,porcINS,porcAER,porcSCB
-Matemática,Ciencias básicas,15,11.25,11.25,11.25
-Física,Ciencias básicas,10,7.5,7.5,7.5
-Química,Ciencias básicas,3,2.25,2.25,2.25
-Ética y ciencias sociales,Formación profesional y habilidades interpersonales,3,2.25,2.25,2.25
-Habilidades interpersonales,Formación profesional y habilidades interpersonales,1,0.75,0.75,0.75
-Salud y seguridad laboral,Formación profesional y habilidades interpersonales,1,0.75,0.75,0.75
-Administración de proyectos,Formación profesional y habilidades interpersonales,2,1.5,1.5,1.5
-Metodología de la investigación,Formación profesional y habilidades interpersonales,1,0.75,0.75,0.75
-Comunicación oral y escrita,Comunicación y dibujo,1,0.75,0.75,0.75
-Inglés,Comunicación y dibujo,1,0.75,0.75,0.75
-Dibujo para ingeniería,Comunicación y dibujo,5,3.75,3.75,3.75
-Circuitos eléctricos y electrónica,Ingeniería eléctrica y electrónica,8,6.0,6.0,6.0
-Máquinas eléctricas,Ingeniería eléctrica y electrónica,4,3.0,3.0,3.0
-Instrumentación y transductores,Ingeniería eléctrica y electrónica,3,2.25,2.25,2.25
-Microprocesadores,Ingeniería eléctrica y electrónica,2,1.5,1.5,1.5
-Telecomunicaciones y redes,Ingeniería eléctrica y electrónica,2,1.5,1.5,1.5
-Ciencia e ingeniería de los materiales,Ingeniería mecánica y de materiales,3,2.25,2.25,2.25
-Mecánica de sólidos y fluidos,Ingeniería mecánica y de materiales,10,6.75,6.75,6.75
-Termodinámica y transferencia de calor,Ingeniería mecánica y de materiales,5,3.0,3.0,3.0
-Elementos de máquinas,Ingeniería mecánica y de materiales,3,2.25,2.25,2.25
-Manufactura,Ingeniería mecánica y de materiales,2,1.5,1.5,1.5
-Programación y arquitectura de computadores,Automática,2,1.5,1.5,1.5
-Modelado y simulación,Automática,3,2.25,2.25,2.25
-Sistemas de control y automatización,Automática,6,3.75,3.75,3.75
-Estadística y metrología,Analisís de datos,2,1.5,1.5,1.5
-Diseño de experimentos,Analisís de datos,1,0.75,0.75,0.75
-"Confiabilidad,disponibilidad,mantenibilidad y seguridad",Analisís de datos,1,0.75,0.75,0.75
-Sistemas de transporte de masa y energía,Instalaciones,0,10,0.0,0.0
-Sistemas de generación y almacenamiento de energía,Instalaciones,0,3,0.0,0.0
-Sistemas de distribución y transmisión de energía eléctrica,Instalaciones,0,4,0.0,0.0
-Instalaciones electromecánicas,Instalaciones,0,3,0.0,0.0
-Gestión del ciclo de vida y transformación digital,Instalaciones,0,3,0.0,0.0
-Gestión de la energía,Instalaciones,0,2,0.0,0.0
-Aviónica y control automático de vuelo y tráfico,Aeronáutica,0,0,6,0.0
-Sistemas de propulsión y dinámica de vuelo,Aeronáutica,0,0,5,0.0
-"Análisis mecánico de materiales, estructuras y mecanismos de la aeronave",Aeronáutica,0,0,7,0.0
-Gestión del ciclo de vida de la aeronave,Aeronáutica,0,0,3,0.0
-Instalaciones aeroportuarias,Aeronáutica,0,0,2,0.0
-Movilidad aérea avanzada,Aeronáutica,0,0,2,0.0
-Sistemas embebidos en tiempo real,Sistemas ciberfísicos,0,0.0,0,4
-Interfaz humano máquina,Sistemas ciberfísicos,0,0.0,0.0,1
-Ingeniería de sistemas complejos,Sistemas ciberfísicos,0,0.0,0.0,6
-Machine Learning e inteligencia artificial embebida,Sistemas ciberfísicos,0,0.0,0.0,4
-"Visión de máquina, robótica y domótica",Sistemas ciberfísicos,0,0.0,0.0,5
-Internet de las cosas,Sistemas ciberfísicos,0,0.0,0.0,3
-Ciberseguridad,Sistemas ciberfísicos,0,0.0,0.0,2
+nombre,codArea,porcTRC,porcINS,porcAER,porcSCB
+Matemática,CIB,15,11.25,11.25,11.25
+Física,CIB,9,7.5,7.5,7.5
+Química,CIB,3,2.25,2.25,2.25
+Ética y ciencias sociales,FPH,3,2.25,2.25,2.25
+Habilidades interpersonales,FPH,1,0.75,0.75,0.75
+Salud y seguridad laboral,FPH,1,0.75,0.75,0.75
+Administración de proyectos,FPH,2,1.5,1.5,1.5
+Metodología de la investigación,FPH,1,0.75,0.75,0.75
+Comunicación oral y escrita,CYD,1,0.75,0.75,0.75
+Inglés,CYD,1,0.75,0.75,0.75
+Dibujo para ingeniería,CYD,5,3.75,3.75,3.75
+Circuitos eléctricos y electrónica,IEE,8,6.0,6.0,6.0
+Máquinas eléctricas,IEE,4,3.0,3.0,3.0
+Instrumentación y transductores,IEE,4,2.25,2.25,2.25
+Microprocesadores,IEE,2,1.5,1.5,1.5
+Telecomunicaciones y redes,IEE,2,1.5,1.5,1.5
+Ciencia e ingeniería de los materiales,IMM,3,2.25,2.25,2.25
+Mecánica de sólidos y fluidos,IMM,10,6.75,6.75,6.75
+Termodinámica y transferencia de calor,IMM,5,3.0,3.0,3.0
+Elementos de máquinas,IMM,3,2.25,2.25,2.25
+Manufactura,IMM,3,1.5,1.5,1.5
+Programación y arquitectura de computadores,AUT,2,1.5,1.5,1.5
+Modelado y simulación,AUT,3,2.25,2.25,2.25
+Sistemas de control y automatización,AUT,6,3.75,3.75,3.75
+Estadística y metrología,ADD,1,1.5,1.5,1.5
+Diseño de experimentos,ADD,1,0.75,0.75,0.75
+"Confiabilidad,disponibilidad,mantenibilidad y seguridad",ADD,1,0.75,0.75,0.75
+Sistemas de transporte de masa y energía,INS,0,10,0.0,0.0
+Sistemas de generación y almacenamiento de energía,INS,0,3,0.0,0.0
+Sistemas de distribución y transmisión de energía eléctrica,INS,0,4,0.0,0.0
+Instalaciones electromecánicas,INS,0,3,0.0,0.0
+Gestión del ciclo de vida y transformación digital,INS,0,3,0.0,0.0
+Gestión de la energía,INS,0,2,0.0,0.0
+Aviónica y control automático de vuelo y tráfico,AER,0,0,6,0.0
+Sistemas de propulsión y dinámica de vuelo,AER,0,0,5,0.0
+"Análisis mecánico de materiales, estructuras y mecanismos de la aeronave",AER,0,0,7,0.0
+Gestión del ciclo de vida de la aeronave,AER,0,0,3,0.0
+Instalaciones aeroportuarias,AER,0,0,2,0.0
+Movilidad aérea avanzada,AER,0,0,2,0.0
+Sistemas embebidos en tiempo real,SCB,0,0.0,0,4
+Interfaz humano máquina,SCB,0,0.0,0.0,1
+Ingeniería de sistemas complejos,SCB,0,0.0,0.0,6
+Machine Learning e inteligencia artificial embebida,SCB,0,0.0,0.0,4
+"Visión de máquina, robótica y domótica",SCB,0,0.0,0.0,5
+Internet de las cosas,SCB,0,0.0,0.0,3
+Ciberseguridad,SCB,0,0.0,0.0,2

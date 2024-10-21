@@ -1,12 +1,12 @@
-area,cod,porcTRC,porcINS,porcAER,porcSCB
-Aeronáutica,CIB,0.0,0.0,25.0,0.0
-Analisís de datos,FPH,4.0,3.0,3.0,3.0
-Automática,CYD,11.0,8.25,8.25,8.25
-Ciencias básicas,IEE,28.0,21.0,21.0,21.0
-Comunicación y dibujo,IMM,7.0,5.25,5.25,5.25
-Formación profesional y habilidades interpersonales,AUT,8.0,6.0,6.0,6.0
-Ingeniería eléctrica y electrónica,ADD,19.0,14.25,14.25,14.25
-Ingeniería mecánica y de materiales,INS,23.0,17.25,17.25,17.25
-Instalaciones,AER,0.0,25.0,0.0,0.0
-Sistemas ciberfísicos,SCB,0.0,0.0,0.0,25.0
-Total,TOT,100.0,100.0,100.0,100.0
+codArea,nombre,porcTRC,porcINS,porcAER,porcSCB
+ADD,Analisís de datos,3.0,2.25,2.25,2.25
+AER,Aeronáutica,0.0,0.0,25.0,0.0
+AUT,Automática,11.0,8.25,8.25,8.25
+CIB,Ciencias básicas,27.0,20.25,20.25,20.25
+CYD,Comunicación y dibujo,7.0,5.25,5.25,5.25
+FPH,Formación profesional y habilidades interpersonales,8.0,6.0,6.0,6.0
+IEE,Ingeniería eléctrica y electrónica,20.0,15.0,15.0,15.0
+IMM,Instalaciones,24.0,18.0,18.0,18.0
+INS,Aeronaútica,0.0,25.0,0.0,0.0
+SCB,Sistemas ciberfísicos,0.0,0.0,0.0,25.0
+TOT,Total,100.0,100.0,100.0,100.0

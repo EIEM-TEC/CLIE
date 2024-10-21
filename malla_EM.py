@@ -153,47 +153,45 @@ def generar_TRC(programa,plan):
             creditos = datos[datos.Codigo == codigo].Creditos.item()
             area = datos[datos.Codigo == codigo].Area.item()
             match area:
-                case "CIB":
+                case "ADD":
                     color = "Apricot"
                     i = 0
-                case "FPH":
+                case "AER":
                     color = "Aquamarine"
                     i = 1
-                case "CYD":
+                case "AUT":
                     color = "Lavender"
                     i = 2
-                case "IEE":
+                case "CIB":
                     color = "LimeGreen"
                     i = 3
-                case "IMM":
+                case "CYD":
                     color = "WildStrawberry"
                     i = 4
-                case "AUT":
+                case "FPH":
                     color = "Tan"
                     i = 5
-                case "ADD":
+                case "IEE":
                     color = "YellowOrange"
                     i = 6
-                case "INS":
-                    color = "white"
+                case "IMM":
+                    color = "Mulberry"
                     i = 7
-                case "AER":
-                    color = "white"
+                case "INS":
+                    color = "Mahogany"
                     i = 8
                 case "SCB":
-                    color = "white"
+                    color = "Melon"
                     i = 9
             if area in ["CIB","FPH","CYD","IEE","IMM","AUT","ADD"]:                    
                 cred_TRC[i] = cred_TRC[i] + creditos
                 acumulado = acumulado + creditos
                 malla.append(colocar_curso(codigo,nombre,fila,semestre,horasteoria,horaspractica,creditos,color))
             cred_TRC[10] = acumulado              
-    datos_TRC = pd.DataFrame(["CIB","FPH","CYD","IEE","IMM","AUT","ADD","INS","AER","SCB","Total"],columns=["area"])
+    datos_TRC = pd.DataFrame(areas["codArea"],columns=["codArea"])
     datos_TRC["cred_TRC"] = (cred_TRC)
     datos_TRC["porc_med_TRC"] = ((datos_TRC["cred_TRC"] / (acumulado))*100)
-    datos_TRC["porc_teo_TRC"] = areas[porcTRC]
-    #acum_cred = pd.DataFrame(cred_acum, columns=["CIB","FPH","CYD","IEE","IMM","AUT","ADD","INS","AER","SCB","Total"]) 
-    #acum_cred.insert(0,'detalle',["Creditos TC", "Porcentajes TC"])
+    datos_TRC["porc_teo_TRC"] = areas["porcTRC"]
     print(datos_TRC)
     doc.generate_pdf(f"{programa}-{plan}", clean=True, clean_tex=False, compiler='lualatex',silent=True)
 

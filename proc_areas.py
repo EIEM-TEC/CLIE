@@ -4,21 +4,32 @@ porcTC = 0.75
 
 saberes = pd.read_csv("saberes.csv")
 
-areas = saberes[['area','porcTRC']].groupby("area",as_index=False).sum()
+areas = saberes[['codArea','porcTRC']].groupby("codArea",as_index=False).sum()
 
 areas.to_csv('areas.csv',index=False)
 
-areas = pd.read_csv('areas.csv',index_col='area')
+areas = pd.read_csv('areas.csv',index_col='codArea')
 
 areas['porcINS'] = porcTC*areas['porcTRC']
-areas.loc['Instalaciones','porcINS'] = (1 - porcTC)*100
+areas.loc['INS','porcINS'] = (1 - porcTC)*100
 areas['porcAER'] = porcTC*areas['porcTRC']
-areas.loc['Aeronáutica','porcAER'] = (1 - porcTC)*100
+areas.loc['AER','porcAER'] = (1 - porcTC)*100
 areas['porcSCB'] = porcTC*areas['porcTRC']
-areas.loc['Sistemas ciberfísicos','porcSCB'] = (1 - porcTC)*100
+areas.loc['SCB','porcSCB'] = (1 - porcTC)*100
 
-areas.loc["Total"] = areas.sum()
-areas.insert(0,"cod",["CIB","FPH","CYD","IEE","IMM","AUT","ADD","INS","AER","SCB","TOT"])
+areas.loc["TOT"] = areas.sum()
+
+areas.insert(0,"nombre",["Analisís de datos",
+                         "Aeronáutica",
+                         "Automática",
+                         "Ciencias básicas",
+                         "Comunicación y dibujo",
+                         "Formación profesional y habilidades interpersonales",
+                         "Ingeniería eléctrica y electrónica",
+                         "Instalaciones",
+                         "Aeronaútica",
+                         "Sistemas ciberfísicos",
+                         "Total"])
 
 print(areas)
 
