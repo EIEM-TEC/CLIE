@@ -10,7 +10,7 @@ from pylatex import Document, Package, Command, PageStyle, Head, Foot, NewPage,\
 from pylatex.base_classes import Environment, Arguments
 from pylatex.utils import NoEscape, bold, italic
 
-datos = pd.read_csv("malla_EM.csv",
+cursos = pd.read_csv("cursos.csv",
     dtype = {'Codigo':str,'Nombre':str,'Area':str,'Semestre':int,'Fila':int,'HorasTeoria':int,'HorasPractica':int,'Creditos':int})
 areas = pd.read_csv("areas.csv")
 
@@ -140,18 +140,18 @@ def generar_TRC(programa,plan):
         # malla.append(NoEscape(r"\draw (,0)--(45,-2);"))
         malla.append(colocar_titulo(f"{nombreProg} - Plan: {plan}","lightgray"))
         for semestre in range(0,9):
-            horasteoriasemestre = datos[datos.Semestre == semestre].HorasTeoria.sum()
-            horaspracticasemestre = datos[datos.Semestre == semestre].HorasPractica.sum()
-            creditossemestre = datos[datos.Semestre == semestre].Creditos.sum()
+            horasteoriasemestre = cursos[cursos.Semestre == semestre].HorasTeoria.sum()
+            horaspracticasemestre = cursos[cursos.Semestre == semestre].HorasPractica.sum()
+            creditossemestre = cursos[cursos.Semestre == semestre].Creditos.sum()
             malla.append(colocar_semestre(semestre,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
-        for codigo in datos.Codigo:
-            nombre = datos[datos.Codigo == codigo].Nombre.item()
-            fila = datos[datos.Codigo == codigo].Fila.item()
-            semestre = datos[datos.Codigo == codigo].Semestre.item()
-            horasteoria = datos[datos.Codigo == codigo].HorasTeoria.item()
-            horaspractica = datos[datos.Codigo == codigo].HorasPractica.item()
-            creditos = datos[datos.Codigo == codigo].Creditos.item()
-            area = datos[datos.Codigo == codigo].Area.item()
+        for codigo in cursos.Codigo:
+            nombre = cursos[cursos.Codigo == codigo].Nombre.item()
+            fila = cursos[cursos.Codigo == codigo].Fila.item()
+            semestre = cursos[cursos.Codigo == codigo].Semestre.item()
+            horasteoria = cursos[cursos.Codigo == codigo].HorasTeoria.item()
+            horaspractica = cursos[cursos.Codigo == codigo].HorasPractica.item()
+            creditos = cursos[cursos.Codigo == codigo].Creditos.item()
+            area = cursos[cursos.Codigo == codigo].Area.item()
             match area:
                 case "ADD":
                     color = "Apricot"
@@ -191,17 +191,17 @@ def generar_TRC(programa,plan):
             if area in ["INS"]:
                 cred_INS = cred_INS + creditos           
     
-    
-    datos_malla = pd.DataFrame(index=areas["codArea"])
-    datos_malla["cred_TRC"] = cred_TRC
-    datos_malla["pm_TRC"] = round((datos_malla["cred_TRC"] / (acumulado))*100,1)
-    datos_malla["pt_TRC"] = areas["porcTRC"].to_list()
-    datos_malla["pm_INS"] = round(((datos_malla["cred_TRC"]/180)*100),1)
-    datos_malla["pt_INS"] = round((datos_malla["pt_TRC"]*135)/180,1)
-    datos_malla.loc["INS","pm_INS"] = cred_INS
-    datos_malla.loc["INS","pt_INS"] = 25
-    datos_malla.loc["TOT"] = 0
-    datos_malla.loc["TOT"] = datos_malla.sum(numeric_only=True)
+    datos_malla = cursos.groupby("Area")["Creditos"].sum(numeric_only=True)
+    # datos_malla = pd.DataFrame(index=areas["codArea"])
+    # datos_malla["cred_TRC"] = cred_TRC
+    # datos_malla["pm_TRC"] = round((datos_malla["cred_TRC"] / (acumulado))*100,1)
+    # datos_malla["pt_TRC"] = areas["porcTRC"].to_list()
+    # datos_malla["pm_INS"] = round(((datos_malla["cred_TRC"]/180)*100),1)
+    # datos_malla["pt_INS"] = round((datos_malla["pt_TRC"]*135)/180,1)
+    # datos_malla.loc["INS","pm_INS"] = cred_INS
+    # datos_malla.loc["INS","pt_INS"] = 25
+    # datos_malla.loc["TOT"] = 0
+    # datos_malla.loc["TOT"] = datos_malla.sum(numeric_only=True)
     print(datos_malla)
 
 
