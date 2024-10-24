@@ -14,6 +14,21 @@ cursos = pd.read_csv("cursos.csv",
     dtype = {'Codigo':str,'Nombre':str,'Area':str,'Semestre':int,'Fila':int,'HorasTeoria':int,'HorasPractica':int,'Creditos':int})
 areas = pd.read_csv("areas.csv")
 
+TRC = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD"]
+
+area_colors = {
+    "ADD": "Apricot",
+    "AER": "Aquamarine",
+    "AUT": "Lavender",
+    "CIB": "LimeGreen",
+    "CYD": "WildStrawberry",
+    "FPH": "Tan",
+    "IEE": "YellowOrange",
+    "IMM": "Mulberry",
+    "INS": "BlueGreen",
+    "SCB": "Melon"
+}
+
 def textcolor(size,vspace,color,bold,text,hspace="0"):
     dump = NoEscape(r"\par")
     if hspace!="0":
@@ -27,30 +42,27 @@ def textcolor(size,vspace,color,bold,text,hspace="0"):
     return dump
 
 def colocar_titulo(titulo,color):
-    dump = NoEscape(f"\draw ({round(57/2)},{round(4)})")
+    dump = NoEscape(r"\draw ")
+    dump += NoEscape(f"({round(57/2)},{round(4)})")
     dump += NoEscape(f"pic{{titulo={{{titulo},{color}}}}};")
     return dump
 
-def colocar_curso(codigo,nombre,fila,semestre,horasteoria,horaspractica,creditos,color):
-    dump = NoEscape(f"\draw ({round(6.87*semestre,2)+0.5},{round(-4.2*fila,1)-0.5})")
+def colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color):
+    dump = NoEscape(r"\draw ")
+    dump += NoEscape(f"({round(6.87*(semestre-sesgo),2)+0.5},{round(-4.2*fila,1)-0.5})")
     dump += NoEscape(f"pic{{curso={{{codigo},{nombre},{round(horasteoria)},{round(horaspractica)},{round(creditos)},{color}}}}};")
     return dump
 
-def colocar_semestre(semestre,color,horasteoriasemestre,horaspracticasemestre,creditossemestre):
-    dump = NoEscape(f"\draw ({round(6.87*semestre,2)+0.5},{round(0)})")
+def colocar_semestre(semestre,sesgo,color,horasteoriasemestre,horaspracticasemestre,creditossemestre):
+    dump = NoEscape(r"\draw ")
+    dump += NoEscape(f"({round(6.87*(semestre-sesgo),2)+0.5},{round(0)})")
     if semestre == 0:
         dump += NoEscape(f"pic{{semestre={{{semestre},{color},{horasteoriasemestre},{horaspracticasemestre},{creditossemestre}}}}};")
     else:
         dump += NoEscape(f"pic{{semestre={{{roman.toRoman(semestre)},{color},{horasteoriasemestre},{horaspracticasemestre},{creditossemestre}}}}};")
     return dump
 
-
-
-def generar_TRC(programa,plan):
-    cred_TRC = [0,0,0,0,0,0,0,0,0,0,0]
-    cred_INS = 0
-    acumulado = 0
-    nombreProg = "Ingeniería Electromecánica - Tronco Común"
+def generar_malla():
     #Geometría
     geometry_options = { 
         "left": "0mm",
@@ -130,82 +142,73 @@ def generar_TRC(programa,plan):
     doc.preamble.append(bloqueCurso)
     doc.preamble.append(bloqueSemestre)
     doc.append(Command('centering'))
+    sesgo = 0
     with doc.create(TikZ(
             options=TikZOptions
                 (    
                 "scale = 0.45",
                 "transform shape"
                 )
-        )) as malla:
-        # malla.append(NoEscape(r"\draw (,0)--(45,-2);"))
-        malla.append(colocar_titulo(f"{nombreProg} - Plan: {plan}","lightgray"))
+        )) as malla_TRC:
+        malla_TRC.append(colocar_titulo("Bachillerato en Ingeniería Electromecánica y tronco común de Licenciatura en Ingeniería Electromecánica - Plan: 2026","lightgray"))
+        cursos_TRC = cursos[cursos["area"].isin(TRC)]
         for semestre in range(0,9):
-            horasteoriasemestre = cursos[cursos.Semestre == semestre].HorasTeoria.sum()
-            horaspracticasemestre = cursos[cursos.Semestre == semestre].HorasPractica.sum()
-            creditossemestre = cursos[cursos.Semestre == semestre].Creditos.sum()
-            malla.append(colocar_semestre(semestre,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
-        for codigo in cursos.Codigo:
-            nombre = cursos[cursos.Codigo == codigo].Nombre.item()
-            fila = cursos[cursos.Codigo == codigo].Fila.item()
-            semestre = cursos[cursos.Codigo == codigo].Semestre.item()
-            horasteoria = cursos[cursos.Codigo == codigo].HorasTeoria.item()
-            horaspractica = cursos[cursos.Codigo == codigo].HorasPractica.item()
-            creditos = cursos[cursos.Codigo == codigo].Creditos.item()
-            area = cursos[cursos.Codigo == codigo].Area.item()
-            match area:
-                case "ADD":
-                    color = "Apricot"
-                    i = 0
-                case "AER":
-                    color = "Aquamarine"
-                    i = 1
-                case "AUT":
-                    color = "Lavender"
-                    i = 2
-                case "CIB":
-                    color = "LimeGreen"
-                    i = 3
-                case "CYD":
-                    color = "WildStrawberry"
-                    i = 4
-                case "FPH":
-                    color = "Tan"
-                    i = 5
-                case "IEE":
-                    color = "YellowOrange"
-                    i = 6
-                case "IMM":
-                    color = "Mulberry"
-                    i = 7
-                case "INS":
-                    color = "Mahogany"
-                    i = 8
-                case "SCB":
-                    color = "Melon"
-                    i = 9
-            if area in ["CIB","FPH","CYD","IEE","IMM","AUT","ADD"]:                    
-                cred_TRC[i] = cred_TRC[i] + creditos
-                acumulado = acumulado + creditos
-                malla.append(colocar_curso(codigo,nombre,fila,semestre,horasteoria,horaspractica,creditos,color))
-            cred_TRC[10] = acumulado   
-            if area in ["INS"]:
-                cred_INS = cred_INS + creditos           
-    
-    datos_malla = cursos.groupby("Area")["Creditos"].sum(numeric_only=True)
-    # datos_malla = pd.DataFrame(index=areas["codArea"])
-    # datos_malla["cred_TRC"] = cred_TRC
-    # datos_malla["pm_TRC"] = round((datos_malla["cred_TRC"] / (acumulado))*100,1)
-    # datos_malla["pt_TRC"] = areas["porcTRC"].to_list()
-    # datos_malla["pm_INS"] = round(((datos_malla["cred_TRC"]/180)*100),1)
-    # datos_malla["pt_INS"] = round((datos_malla["pt_TRC"]*135)/180,1)
-    # datos_malla.loc["INS","pm_INS"] = cred_INS
-    # datos_malla.loc["INS","pt_INS"] = 25
-    # datos_malla.loc["TOT"] = 0
-    # datos_malla.loc["TOT"] = datos_malla.sum(numeric_only=True)
-    print(datos_malla)
+            horasteoriasemestre = cursos_TRC[cursos_TRC.semestre == semestre].horasTeoria.sum()
+            horaspracticasemestre = cursos_TRC[cursos_TRC.semestre == semestre].horasPractica.sum()
+            creditossemestre = cursos_TRC[cursos_TRC.semestre == semestre].creditos.sum()
+            malla_TRC.append(colocar_semestre(semestre,sesgo,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
+        for codigo in cursos_TRC.codigo:
+            nombre = cursos_TRC[cursos_TRC.codigo == codigo].nombre.item()
+            fila = cursos_TRC[cursos_TRC.codigo == codigo].fila.item()
+            semestre = cursos_TRC[cursos_TRC.codigo == codigo].semestre.item()
+            horasteoria = cursos_TRC[cursos_TRC.codigo == codigo].horasTeoria.item()
+            horaspractica = cursos_TRC[cursos_TRC.codigo == codigo].horasPractica.item()
+            creditos = cursos_TRC[cursos_TRC.codigo == codigo].creditos.item()
+            area = cursos_TRC[cursos_TRC.codigo == codigo].area.item()           
+            color = area_colors.get(area)            
+            malla_TRC.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+    doc.append(NoEscape(r"\newpage"))
+    sesgo = 8
+    with doc.create(TikZ(
+            options=TikZOptions
+                (    
+                "scale = 0.45",
+                "transform shape"
+                )
+        )) as malla_INS:
+        malla_INS.append(colocar_titulo("Licenciatura en Ingeniería Electromecánica con énfasis en Instalaciones (debe cursar primero tronco común)","lightgray"))
+        cursos_INS = cursos[cursos["area"] == "INS"]
+        for semestre in range(8,11):
+            horasteoriasemestre = cursos_INS[cursos_INS.semestre == semestre].horasTeoria.sum()
+            horaspracticasemestre = cursos_INS[cursos_INS.semestre == semestre].horasPractica.sum()
+            creditossemestre = cursos_INS[cursos_INS.semestre == semestre].creditos.sum()
+            malla_INS.append(colocar_semestre(semestre,sesgo,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
+        for codigo in cursos_INS[cursos_INS["area"] == "INS"].codigo:
+            nombre = cursos_INS[cursos_INS.codigo == codigo].nombre.item()
+            fila = cursos_INS[cursos_INS.codigo == codigo].fila.item()
+            semestre = cursos_INS[cursos_INS.codigo == codigo].semestre.item()
+            horasteoria = cursos_INS[cursos_INS.codigo == codigo].horasTeoria.item()
+            horaspractica = cursos_INS[cursos_INS.codigo == codigo].horasPractica.item()
+            creditos = cursos_INS[cursos_INS.codigo == codigo].creditos.item()
+            area = cursos_INS[cursos_INS.codigo == codigo].area.item()           
+            color = area_colors.get(area)            
+            malla_INS.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+
+
+    doc.generate_pdf(f"malla_EM", clean=True, clean_tex=False, compiler='lualatex',silent=True)
 
 
 
-    doc.generate_pdf(f"{programa}-{plan}", clean=True, clean_tex=False, compiler='lualatex',silent=True)
+datos_malla = pd.DataFrame()
+datos_malla["cred_TRC"] = cursos.groupby("area")["creditos"].sum(numeric_only=True)
+datos_malla.loc[["INS","AER","SCF"],"cred_TRC"] = 0
+datos_malla["pm_TRC"] = round((datos_malla["cred_TRC"] / datos_malla["cred_TRC"].sum())*100,1)
+datos_malla["cred_INS"] = cursos.groupby("area")["creditos"].sum(numeric_only=True)
+datos_malla.loc[["AER","SCF"],"cred_INS"] = 0
+datos_malla["pt_TRC"] = areas["porcTRC"].to_list()[:-1]
+datos_malla["pm_INS"] = round(((datos_malla["cred_TRC"]/180)*100),1)
 
-generar_TRC('EM','0001')
+datos_malla.loc["TOT"] = datos_malla.sum(numeric_only=True)
+
+print(datos_malla)
+generar_malla()
