@@ -66,22 +66,49 @@ IEM2358,Laboratorio de control,AUT,8,6,0,2,1
 SE1400,Actividad cultural - deportiva,FPH,8,9,0,2,0
 IEM7081,Sistemas de generación y almacenamiento de energía,INS,8,1,3,0,3
 MI4212,Instalaciones eléctricas,INS,8,2,4,0,3
-MI3116,Turbomáquinas,INS,8,8,4,0,3
-MI3119,Laboratorio de turbomáquinas,INS,8,9,0,2,1
-MI5215,Sistemas electricos de distribución,INS,9,1,4,0,3
+MI3116,Turbomáquinas,INS,8,7,4,0,3
+MI3119,Laboratorio de turbomáquinas,INS,8,8,0,2,1
+MI5215,Sistemas electricos de distribución y transmisión,INS,9,1,4,0,3
 IEM7092,Gestión de la energía,INS,9,2,4,0,3
 IEM7095,Sistemas de agua potable y sanitaria,INS,9,5,4,0,3
-MI6252,Neumática y oleohidraulica,INS,9,6,4,0,3
-IEM7097,Laboratorio de neumática y oleohidraulica,INS,9,7,0,2,1
+MI6252,Electroneumática y oleohidraulica,INS,9,6,4,0,3
+IEM7097,Laboratorio de electroneumática y oleohidraulica,INS,9,7,0,2,1
 IEM7098,Sistemas de refrigeración y aire acondicionado,INS,9,8,3,0,3
 IEM7099,Laboratorio de refrigeración y aire acondicionado,INS,9,9,0,2,1
-IEM7101,Sistemas electricos de transmisión,INS,10,1,4,0,3
-IEM7102,Gestion del ciclo de vida y la transformación digital,INS,10,2,3,0,2
-IEM7103,Diseño e integración de instalaciones electromecánicas,INS,10,3,4,0,3
-IEM0101,Electiva I,INS,10,4,4,0,3
-IEM0102,Electiva II,INS,10,5,4,0,3
-IEM0106,Sistemas de fluidos térmicos,INS,10,6,4,0,3
-IEM0107,Laboratorio de sistemas de fluidos térmicos,INS,10,7,0,2,1
+IEM7101,Gestion del ciclo de vida y la transformación digital,INS,10,1,3,0,2
+IEM7102,Diseño e integración de instalaciones electromecánicas,INS,10,2,4,0,3
+IEM0101,Electiva I,INS,10,5,4,0,3
+IEM0102,Electiva II,INS,10,6,4,0,3
 IEM0103,Trabajo final de graduación,INS,10,9,0,21,7
-IEM2309,Sistemas,SCF,9,2,4,0,2
-IEM2207,Eléctrica,AER,9,3,4,0,3
+IEM2509,Aviónica,AER,8,1,4,0,3
+IEM2110,Máquinas y mecanismos,AER,8,2,4,0,3
+IEM2511,Sistemas de propulsión,AER,8,7,4,0,3
+IEM8091,Sistemas de aeronaves de ala fija y giratoria,AER,9,1,4,0,3
+IEM8092,Sistemas de aeronaves no tripulados y de despegue vertical,AER,9,2,4,0,3
+IEM2512,Aerodinámica y dinámica de vuelo,AER,9,3,4,0,3
+IEM2552,Laboratorio de aerodinámica y dinámica de vuelo,AER,9,4,0,2,1
+IEM8104,Materiales en aeronautica,AER,9,5,3,0,2
+IEM8105,Análisis mecánico de estructuras y mecanismos de la aeronave,AER,9,6,4,0,3
+IEM8103,Gestión del ciclo de vida de la aeronave,AER,9,7,3,0,2
+IEM8098,Taller de metrología aeronautica,AER,9,7,2,0,1
+IEM8101,Control automático de vuelo y tráfico,AER,10,1,4,0,3
+IEM2519,Diseño eléctrico aeroportuario,AER,10,2,3,0,2
+IEM0101,Electiva I,AER,10,5,4,0,3
+IEM0102,Electiva II,AER,10,6,4,0,3
+IEM0103,Trabajo final de graduación,AER,10,9,0,21,7
+IEM9081,Sistemas embebidos en tiempo real,SCF,8,1,3,0,2
+IEM9082,Laboratorio de sistemas embebidos en tiempo real,SCF,8,2,0,2,1
+IEM9087,Tecnología de fabricación de semiconductores y MEMS,SCF,8,7,4,0,3
+IEM9088,Ingenieria de sistemas: requerimientos y arquitectura,SCF,8,8,4,0,3
+IEM9091,Sistemas de monitoreo e internet de las cosas,SCF,9,1,3,0,3
+IEM9092,Sistemas de visión de máquina,SCF,9,2,3,0,3
+IEM9093,Sistema de robótica y domótica,SCF,9,3,3,0,3
+IEM9094,Laboratorio de sistemas inteligentes,SCF,9,4,0,2,1
+IEM9097,Empaque y emsamble de semiconductores y MEMS,SCF,9,7,4,0,3
+IEM9098,Ingenieria de sistemas: integración y validación,SCF,9,8,4,0,3
+IEM9099,Fundamentos de ciberseguridad,SCF,9,9,3,0,2
+IEM9101,Diseño de interfases humano-máquina,SCF,10,1,3,0,3
+IEM0101,Electiva I,SCF,10,5,4,0,3
+IEM0102,Electiva II,SCF,10,6,4,0,3
+IEM9108,Taller de integración de sistemas,SCF,10,8,2,2,2
+IEM0103,Trabajo final de graduación,SCF,10,9,0,21,7

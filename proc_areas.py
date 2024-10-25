@@ -14,8 +14,8 @@ areas['porcINS'] = porcTC*areas['porcTRC']
 areas.loc['INS','porcINS'] = (1 - porcTC)*100
 areas['porcAER'] = porcTC*areas['porcTRC']
 areas.loc['AER','porcAER'] = (1 - porcTC)*100
-areas['porcSCB'] = porcTC*areas['porcTRC']
-areas.loc['SCB','porcSCB'] = (1 - porcTC)*100
+areas['porcSCF'] = porcTC*areas['porcTRC']
+areas.loc['SCF','porcSCF'] = (1 - porcTC)*100
 
 areas.loc["TOT"] = areas.sum()
 

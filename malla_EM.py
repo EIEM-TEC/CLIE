@@ -18,7 +18,7 @@ TRC = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD"]
 
 area_colors = {
     "ADD": "Apricot",
-    "AER": "Aquamarine",
+    "AER": "Thistle",
     "AUT": "Lavender",
     "CIB": "LimeGreen",
     "CYD": "WildStrawberry",
@@ -26,7 +26,7 @@ area_colors = {
     "IEE": "YellowOrange",
     "IMM": "Mulberry",
     "INS": "BlueGreen",
-    "SCB": "Melon"
+    "SCF": "Melon"
 }
 
 def textcolor(size,vspace,color,bold,text,hspace="0"):
@@ -193,8 +193,56 @@ def generar_malla():
             area = cursos_INS[cursos_INS.codigo == codigo].area.item()           
             color = area_colors.get(area)            
             malla_INS.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
-
-
+    doc.append(NoEscape(r"\newpage"))
+    with doc.create(TikZ(
+            options=TikZOptions
+                (    
+                "scale = 0.45",
+                "transform shape"
+                )
+        )) as malla_AER:
+        malla_AER.append(colocar_titulo("Licenciatura en Ingeniería Electromecánica con énfasis en Aeronáutica (debe cursar primero tronco común)","lightgray"))
+        cursos_AER = cursos[cursos["area"] == "AER"]
+        for semestre in range(8,11):
+            horasteoriasemestre = cursos_AER[cursos_AER.semestre == semestre].horasTeoria.sum()
+            horaspracticasemestre = cursos_AER[cursos_AER.semestre == semestre].horasPractica.sum()
+            creditossemestre = cursos_AER[cursos_AER.semestre == semestre].creditos.sum()
+            malla_AER.append(colocar_semestre(semestre,sesgo,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
+        for codigo in cursos_AER[cursos_AER["area"] == "AER"].codigo:
+            nombre = cursos_AER[cursos_AER.codigo == codigo].nombre.item()
+            fila = cursos_AER[cursos_AER.codigo == codigo].fila.item()
+            semestre = cursos_AER[cursos_AER.codigo == codigo].semestre.item()
+            horasteoria = cursos_AER[cursos_AER.codigo == codigo].horasTeoria.item()
+            horaspractica = cursos_AER[cursos_AER.codigo == codigo].horasPractica.item()
+            creditos = cursos_AER[cursos_AER.codigo == codigo].creditos.item()
+            area = cursos_AER[cursos_AER.codigo == codigo].area.item()           
+            color = area_colors.get(area)            
+            malla_AER.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+    doc.append(NoEscape(r"\newpage"))
+    with doc.create(TikZ(
+            options=TikZOptions
+                (    
+                "scale = 0.45",
+                "transform shape"
+                )
+        )) as malla_SCF:
+        malla_SCF.append(colocar_titulo("Licenciatura en Ingeniería Electromecánica con énfasis en Sistemas Ciberfísicos (debe cursar primero tronco común)","lightgray"))
+        cursos_SCF = cursos[cursos["area"] == "SCF"]
+        for semestre in range(8,11):
+            horasteoriasemestre = cursos_SCF[cursos_SCF.semestre == semestre].horasTeoria.sum()
+            horaspracticasemestre = cursos_SCF[cursos_SCF.semestre == semestre].horasPractica.sum()
+            creditossemestre = cursos_SCF[cursos_SCF.semestre == semestre].creditos.sum()
+            malla_SCF.append(colocar_semestre(semestre,sesgo,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
+        for codigo in cursos_SCF[cursos_SCF["area"] == "SCF"].codigo:
+            nombre = cursos_SCF[cursos_SCF.codigo == codigo].nombre.item()
+            fila = cursos_SCF[cursos_SCF.codigo == codigo].fila.item()
+            semestre = cursos_SCF[cursos_SCF.codigo == codigo].semestre.item()
+            horasteoria = cursos_SCF[cursos_SCF.codigo == codigo].horasTeoria.item()
+            horaspractica = cursos_SCF[cursos_SCF.codigo == codigo].horasPractica.item()
+            creditos = cursos_SCF[cursos_SCF.codigo == codigo].creditos.item()
+            area = cursos_SCF[cursos_SCF.codigo == codigo].area.item()           
+            color = area_colors.get(area)            
+            malla_SCF.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
     doc.generate_pdf(f"malla_EM", clean=True, clean_tex=False, compiler='lualatex',silent=True)
 
 
@@ -202,13 +250,22 @@ def generar_malla():
 datos_malla = pd.DataFrame()
 datos_malla["cred_TRC"] = cursos.groupby("area")["creditos"].sum(numeric_only=True)
 datos_malla.loc[["INS","AER","SCF"],"cred_TRC"] = 0
+datos_malla["pt_TRC"] = areas["porcTRC"].to_list()[:-1]
 datos_malla["pm_TRC"] = round((datos_malla["cred_TRC"] / datos_malla["cred_TRC"].sum())*100,1)
 datos_malla["cred_INS"] = cursos.groupby("area")["creditos"].sum(numeric_only=True)
 datos_malla.loc[["AER","SCF"],"cred_INS"] = 0
-datos_malla["pt_TRC"] = areas["porcTRC"].to_list()[:-1]
-datos_malla["pm_INS"] = round(((datos_malla["cred_TRC"]/180)*100),1)
-
+datos_malla["pt_INS"] = areas["porcINS"].to_list()[:-1]
+datos_malla["pm_INS"] = round(((datos_malla["cred_INS"]/180)*100),1)
+datos_malla["cred_AER"] = cursos.groupby("area")["creditos"].sum(numeric_only=True)
+datos_malla.loc[["INS","SCF"],"cred_AER"] = 0
+datos_malla["pt_AER"] = areas["porcAER"].to_list()[:-1]
+datos_malla["pm_AER"] = round(((datos_malla["cred_AER"]/180)*100),1)
+datos_malla["cred_SCF"] = cursos.groupby("area")["creditos"].sum(numeric_only=True)
+datos_malla.loc[["AER","INS"],"cred_SCF"] = 0
+datos_malla["pt_SCF"] = areas["porcSCF"].to_list()[:-1]
+datos_malla["pm_SCF"] = round(((datos_malla["cred_SCF"]/180)*100),1)
 datos_malla.loc["TOT"] = datos_malla.sum(numeric_only=True)
-
+datos_malla.to_csv('datos_malla.csv')
 print(datos_malla)
+
 generar_malla()

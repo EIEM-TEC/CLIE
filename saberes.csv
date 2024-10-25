@@ -1,4 +1,4 @@
-nombre,codArea,porcTRC,porcINS,porcAER,porcSCB
+nombre,codArea,porcTRC,porcINS,porcAER,porcSCF
 Matemática,CIB,15,11.25,11.25,11.25
 Física,CIB,9,7.5,7.5,7.5
 Química,CIB,3,2.25,2.25,2.25
@@ -38,10 +38,10 @@ Sistemas de propulsión y dinámica de vuelo,AER,0,0,5,0.0
 Gestión del ciclo de vida de la aeronave,AER,0,0,3,0.0
 Instalaciones aeroportuarias,AER,0,0,2,0.0
 Movilidad aérea avanzada,AER,0,0,2,0.0
-Sistemas embebidos en tiempo real,SCB,0,0.0,0,4
-Interfaz humano máquina,SCB,0,0.0,0.0,1
-Ingeniería de sistemas complejos,SCB,0,0.0,0.0,6
-Machine Learning e inteligencia artificial embebida,SCB,0,0.0,0.0,4
-"Visión de máquina, robótica y domótica",SCB,0,0.0,0.0,5
-Internet de las cosas,SCB,0,0.0,0.0,3
-Ciberseguridad,SCB,0,0.0,0.0,2
+Sistemas embebidos en tiempo real,SCF,0,0.0,0,4
+Interfaz humano máquina,SCF,0,0.0,0.0,1
+Ingeniería de sistemas complejos,SCF,0,0.0,0.0,6
+Machine Learning e inteligencia artificial embebida,SCF,0,0.0,0.0,4
+"Visión de máquina, robótica y domótica",SCF,0,0.0,0.0,5
+Internet de las cosas,SCF,0,0.0,0.0,3
+Ciberseguridad,SCF,0,0.0,0.0,2
