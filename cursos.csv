@@ -68,7 +68,7 @@ IEM7081,Sistemas de generación y almacenamiento de energía,INS,8,1,3,0,3
 MI4212,Instalaciones eléctricas,INS,8,2,4,0,3
 MI3116,Turbomáquinas,INS,8,7,4,0,3
 MI3119,Laboratorio de turbomáquinas,INS,8,8,0,2,1
-MI5215,Sistemas electricos de distribución y transmisión,INS,9,1,4,0,3
+MI5215,Sistemas electricos de potencia,INS,9,1,4,0,3
 IEM7092,Gestión de la energía,INS,9,2,4,0,3
 IEM7095,Sistemas de agua potable y sanitaria,INS,9,5,4,0,3
 MI6252,Electroneumática y oleohidraulica,INS,9,6,4,0,3
