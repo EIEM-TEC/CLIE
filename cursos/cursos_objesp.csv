@@ -1,0 +1,435 @@
+id,objetivosEspecificos
+CYD0107,"Aplicar las normas INTE/ISO y de otros estándares.
+Representar mediante proyecciones ortogonales, proyecciones axonométricas, vistas auxiliares y vistas de corte una pieza mecánica.
+Acotar adecuadamente una pieza mecánica en las proyecciones ortogonales."
+IEM2308,"Al finalizar el curso la persona estudiante estará en capacidad de reconocer las características de sistemas de control en eventos continuos y discretos asi como sus aplicaciones. 
+Al finalizar el curso la persona  estudiante estar en capacidad de analizar el comportamiento de sistemas de  control  haciendo uso de herramientas de simulación. 
+Al finalizar el curso la persona estudiante estará en capacidad de utilizar herramientas de ingeniería para el diseño de circuitos de  control de procesos industriales.                                                 "
+IEM2358,"Al finalizar el curso la persona estudiante estará en capacidad de integrar los conocimientos teoricos, mediante la realizacion de prácticas que demuestran  el comportamiento de sistemas de control y automatización de procesos.     
+Al finalizar  el curso la persona estudiante estará en capacidad de utilizar herramientas de software  para el diseño y simulación de sistemas de control de procesos.   
+Al finalizar el curso la persona estudiante estará en capacidad de aplicar estandares internacionales para el diseño de soluciones de control de procesos. 
+Al finalizar el curso la persona estudiante estará en capacidad de  desarrollar habilidades de trabajo en equipo y comunicación al colaborar con otros estudiantes en prácticas de laboratorio.                                                                                        "
+IEM2111,"Comprender los principios fundamentales de las turbomáquinas y su relevancia en la ingeniería electromecánica.
+Analizar el funcionamiento y el rendimiento de diferentes tipos de turbomáquinas, incluidos compresores, bombas y ventiladores.
+Evaluar el rendimiento y la eficiencia de las turbomáquinas mediante métodos de análisis y pruebas experimentales.
+Aplicar conceptos de mecánica de fluidos y termodinámica en el estudio y análisis de sistemas mecánicos (agua fría y caliente; aire comprimido y ventilación) que incluyen turbomáquinas en aplicaciones industriales específicas.
+5.	Desarrollar habilidades para el diseño, selección y mantenimiento de sistemas mecánicos (agua fría y caliente; aire comprimido y ventilación) que incluyen turbomáquinas en aplicaciones industriales específicas."
+IEM2201,"Comprender los conceptos y definiciones aplicables a un circuito eléctrico
+Analizar circuitos eléctricos básicos por medio de las leyes de Kirchhoff y de simplificación de series y paralelos
+Analizar circuitos eléctricos complejos utilizando técnicas como mallas, nodos, superposición, teoremas de Thévenin y Norton.
+Resolver circuitos RLC de primer y segundo orden utilizando la transformada de Laplace."
+IEM2202,"Comprender el comportamiento de los distintos elementos que conforman un circuito RLC bajo excitación sinusoidal.	
+Analizar el concepto de Función de transferencia y su estructura general con el fin de determinar los diagramas de Bode
+Relacionar las señales periódicas con las series de Fourier y su respuesta ante filtros pasivos
+Utilizar herramientas para el estudio de circuitos en el dominio del tiempo y frecuencia, aplicación del concepto de resonancia pura y compuesta."
+IEM2203,"Comprender las características y operación de los amplificadores operacionales en sus topologías básicas.
+Estudiar aplicaciones de IC especiales como monostables, astable, comparadores, reguladores de voltaje, convertidores V/f y V/I, entre otros.
+Comprender el funcionamiento de dispositivos electrónicos básicos diodo semiconductor, al transistor de unión bipolar.
+Diseñar aplicaciones electrónicas utilizando circuitos lógicos combinacionales."
+IEM2203,"Comprender las características y operación de los amplificadores operacionales en sus topologías básicas.
+Estudiar aplicaciones de IC especiales: como monostable, astable, comparadores, reguladores de voltaje, convertidores, entre otros.
+Comprender el funcionamiento de dispositivos electrónicos básicos diodo semiconductor, al transistor de unión bipolar, MOSFET e IGBT."
+IEM2204,"Comprender el álgebra y uso de sistemas de código base N.
+Analizar problemas compuestos de sistemas digitales combinacionales y secuenciales
+Diseñar propuestas de solución para problemas de ingeniería electromecánica utilizando sistemas digitales.
+Programar soluciones en lenguajes de alto nivel aplicados a ingeniería electromecánica"
+IEM2205,"Analizar sistemas eléctricos trifásicos balanceado y desbalanceados.
+Diferenciar los diversos tipos de transformadores trifásicos y monofásicos para su uso.
+Relacionar los usos de las máquinas eléctricas de inducción monofásico y trifásicas."
+IEM2206,"Realizar análisis de las máquinas eléctricas rotativas de Corriente Alterna trifásicas Sincrónicas a partir de modelos matemáticos equivalentes, para el establecimiento del punto de operación ante diversas condiciones de funcionamiento.
+Realizar análisis de las máquinas eléctricas rotativas de Corriente Directa a partir de modelos matemáticos equivalentes, para el establecimiento del punto de operación ante diversas condiciones de funcionamiento.
+Adquirir conocimiento de las partes constructivas de las máquinas eléctricas rotativas Sincrónicas y Corriente Directa, así como su importancia en operación y mantenimiento para la comprensión de la caracterización y modos de fallas.
+Modelar en lenguaje de programación OPENSOURCE para la simulación del funcionamiento de distintas máquinas eléctricas rotativas."
+IEM2207,"Diseñar líneas de transmisión monofásicas y trifásicas.
+Analizar el desempeño del sistema de potencia.
+Confeccionar estudios de cortocircuito, operación económica y estabilidad."
+IEM2208,"Diseñar instalaciones eléctricas industriales, comerciales y residenciales.
+Calcular conductores de puesta a tierra.
+Seleccionar protecciones térmicas y termomagnéticas a máquinas eléctricas estáticas y rotativas.
+Confeccionar estudios de cortocircuito, luminotécnicos, de bajo factor de potencia a instalaciones de baja tensión."
+IEM2255,"Conocer la construcción y funcionamiento de transformadores de potencia monofásicos y trifásicos
+Verificar de manera práctica los conceptos teóricos estudiados en el curso de Máquinas Eléctricas I
+Aplicar diversos métodos de medición de potencia monofásica y trifásica y comprobar las características eléctricas de estas configuraciones. "
+IEM2256,"Conocer los tipos de conexión que debe realizar en los motores y alternadores sincrónicos, y máquinas de CD según ciertas condiciones operativas.
+Comprobar mediante la utilización de equipos e instrumentos, las características de los motores y generadores en AC y DC.
+Analizar el comportamiento de los motores y generadores en AC y DC bajo ciertas circunstancias de operación y de acuerdo con sus características.
+analice el comportamiento de los motores y generadores en AC y DC bajo ciertas circunstancias de operación y de acuerdo con sus características."
+IEM2301,"Comprender los principios constructivos de los sensores: resistivos, capacitivos, inductivos, ultrasónicos, electromagnéticos, autogeneradores.
+Conocer el funcionamiento de actuadores magnéticos como los relés y solenoides.
+Comprender las especificaciones técnicas de los transductores.
+Experimentar con transductores para lograr aprendizajes significativos."
+IEM2302,"Seleccionar los transductores adecuados según la aplicación del sistema de instrumentación
+Conocer los principios sobre adquisición, acondicionamiento y visualización de señales
+Identificar y calcular los componentes de la incertidumbre de una señal
+Diseñar instrumentos virtuales para aplicaciones específicas"
+IEM2303,
+IEM2304,"Definir las herramientas técnico-administrativas, legales y ambientales, para el análisis del entorno (contexto nacional e internacional) en la determinación de oportunidades innovadoras de desarrollo, alineadas con los objetivos y metas estratégicas de la organización.
+Aplicar las herramientas de planificación, estimación, implementación, evaluación y seguimiento de proyectos, para la adecuada gestión de un proyecto, basado en literatura correspondiente.
+Desarrollar herramientas de análisis de entorno para la optimización máxima de los recursos durante la ejecución de proyectos, estableciendo sus indicadores de gestión.
+Explorar las nuevas tendencias y desarrollos en el tema de la gestión de proyectos y su aplicación dependiendo del tipo de proyecto."
+IEM2305,"Desarrollar competencias en la gestión integral de sistemas electromecánicos en el estudiante, para la aplicación de metodologías y herramientas reconocidas que permitan la planificación,ejecución y control de un sistema electromecánico, garantizando la entrega exitosa de productos y sistemas que cumplan con los requisitos y estándares de calidad establecidos.Fomentar el pensamiento sistémico y la integración de disciplinas técnicas que promuevan una comprensión profunda de la interacción entre los componentes eléctricos y mecánicos en sistemas electromecánicos, dando como resultado  su adecuada gestión.
+Construir habilidades de liderazgo y trabajo en equipo que faciliten la coordinación entre diferentes áreas funcionales promoviendo una comunicación efectiva dentro de los equipos de trabajo, asegurando un ambiente colaborativo que impulse el éxito del proyecto electromecánico.
+Investigar las tendencias emergentes y avances en la gestión de la Ingeniería Electromecánica, analizando su aplicabilidad según las características específicas de cada sistema electromecánico."
+IEM2306,"Comprender el concepto de sistema de control, el de lazo de control realimentado y definir la función de sus componentes.
+Usar herramientas computacionales para la simulación y el diseño de compensadores y reguladores.
+Diseñar compensadores y reguladores utilizando los diferentes métodos en estudio.
+Implementar reguladores y compensadores usando electrónica digital (computadores y microcontroladores)."
+IEM2307,"Desarrollar habilidades en la persona estudiante la comprensión de los  fundamentos teóricos del Mantenimiento Basado en Condición, permitiéndole la adquisición de un conocimiento sólido para su aplicación en estrategias efectivas para la gestión de activos industriales, mediante el estudio de análisis de datos, interpretación de análisis de monitoreo y toma de decisiones.
+Desarrollar habilidades en la persona estudiante para el uso de  tecnologías de monitoreo de estado, incluyendo análisis de vibraciones, termografía, análisis de aceite y ultrasonido, de manera que le permita la selección y aplicación mas adecuada para la detección temprana de posibles fallas de funcionamiento , tomando decisiones informadas en la gestión de activos.
+Adquirir las habilidades de aprendizaje  para la interpretación de datos de monitoreo de estado , de manera que se identifiquen los patrones de deterioro y predicción de posibles fallas en equipos y maquinaria.
+Diseñar programas de Mantenimiento Basado en Condición adaptados a las necesidades específicas de una planta industrial, contribuyendo a la mejora de la eficiencia operativa de la organización"
+IEM2309,"Introducir los conceptos fundamentales de la gestión de energía, incluyendo la terminología básica, principios y la importancia de una gestión energética eficiente y sostenible.
+Analizar las estrategias de descarbonización, su relevancia en la lucha contra el cambio climático y su impacto en las prácticas de gestión de energía.
+Profundizar en los detalles, aplicaciones y beneficios de la familia de normas ISO 50000 para la gestión de energía, incluyendo cómo pueden ser implementadas en organizaciones de diversos sectores.
+Estudiar diferentes tipos de energías renovables (solar, eólica, hidroeléctrica, biomasa, geotérmica, entre otras), su funcionamiento, aplicaciones prácticas y cómo pueden ser integradas en sistemas de gestión de energía existentes.
+Investigar las últimas tecnologías y tendencias en la generación de energía, incluyendo almacenamiento de energía, microredes, y otras innovaciones tecnológicas que están modelando el futuro del sector energético.
+Profundizar en la importancia de la gestión sostenible del agua, explorar las normas AWWA para la calidad y gestión del agua potable y su integración en sistemas de gestión ambiental y energética.
+Proporcionar las herramientas y conocimientos necesarios para planificar, implementar y evaluar proyectos de gestión de energía, con un enfoque en la sostenibilidad y la eficiencia energética."
+IEM2311,"Desarrollar sistemas de comunicación industrial entre distintos tipos de dispositivos
+Desarrollar sistemas de automatizados usando técnicas de diseño para procesos continuos o discretos.
+Simular y desarrollar algoritmos para el control de calidad de procesos usando sistemas de visión.
+Integrar distintos controladores o sistemas de monitoreo dentro de un sistema SCADA.
+Simular y desarrollar algoritmos para el control para robots manipuladores, vehículos guidos autónomos (AVG) y  Robots móviles autónomos(AMR)."
+EM2102,"Analizar y resolver problemas de partículas en dos y tres dimensiones, utilizando los conceptos fundamentales de la Estática, como vectores, componentes rectangulares, triángulos de fuerzas y las ecuaciones de equilibrio.
+Analizar y resolver problemas de sistemas de fuerzas y pares aplicados a cuerpos rígidos.
+Analizar y resolver problemas de cuerpos rígidos en equilibrio estático, en dos y tres dimensiones, haciendo uso de las leyes fundamentales del equilibrio. El estudiante podrá calcular el centroide o el centro de gravedad de cuerpos simples y compuestos, tanto en dos como en tres dimensiones.
+Calcular el centroide o el centro de gravedad de cuerpos simples y compuestos, tanto en dos como en tres dimensiones.
+Calcular Momentos de Inercia de áreas conocidas y por integración.
+Analizar diferentes tipos de estructuras (armaduras, marcos y máquinas) y calcular la magnitud de las fuerzas a que están sometidos sus elementos.
+Calcular y dibujar los diagramas de fuerza cortante y momento flector de una viga estáticamente determinada, sometida a cargas concentradas y distribuidas.
+Analizar y resolver problemas de cuerpos que presentan rozamiento, a partir de un análisis general del sistema."
+EM2108,"Aplique procedimientos para la intersección de diferentes objetos sólidos.
+Lleve a cabo el desarrollo de diferentes objetos enteros y con truncamientos rectos o debidos a la intersección con otros cuerpos sólidos.
+Distinga y aplique las herramientas necesarias en la decisión de un corte de un cuerpo y así comprender e interpretar el interior de la pieza.
+Interprete, mediante la identificación adecuada, los diferentes procedimientos de cortes, vistas auxiliares, secciones, secciones superpuestas y uso de elementos desplazados y sus aplicaciones en la lectura del plano de una pieza.
+Desarrolle mediante procedimientos gráficos, la representación de conjuntos mecánicos en el plano con todas las características técnicas: tolerancia, ajustes, soldaduras, rugosidad y acabado superficial.
+Diferencie en un plano, un elemento de máquina estandarizado y una pieza no estandarizada.
+Identifique en un plano mecánico los diferentes elementos estandarizados y los represente gráficamente según la normativa vigente.
+Interprete correctamente la representación gráfica en planos de uniones roscadas, remachadas, soldadas, de chavetas, pasadores y otras uniones específicas utilizadas en la aeronáutica y en la industria en general, aplicando las normas ISO.
+Aplique gráficamente e interprete correctamente las tolerancias acabadas superficiales y los ajustes normalizados en los planos.
+Interprete planos de instalaciones industriales diversas, según la normativa vigente"
+EM2107,"Desarrollar un conocimiento utilizable de las relaciones entre las cargas aplicadas a un cuerpo no rígido hecho de un material   dado   y   las
+deformaciones resultantes del cuerpo.
+Desarrollar una comprensión completa de las relaciones entre las cargas aplicadas a un cuerpo no rígido y los esfuerzos  producidos  en  el
+cuerpo.
+Desarrollar una visión clara de las relaciones entre esfuerzo y deformación unitaria bajo una amplia	variedad	de
+condiciones y materiales.
+Desarrollar procedimientos adecuados para encontrar las dimensiones requeridas de un miembro de un material especificado, para soportar una cargada dada sujeta a
+especificaciones establecidas de esfuerzo y flexión."
+EM2106,"Comprender los fundamentos de la transferencia de calor: Al finalizar el curso, los estudiantes deberían ser capaces de explicar los conceptos básicos de la transferencia de calor, incluyendo los modos de conducción, convección y radiación, así como las leyes fundamentales que rigen estos fenómenos.
+Aplicar problemas de conducción de calor: Los estudiantes deben ser capaces de aplicar la ley de Fourier para analizar problemas de conducción de calor en sistemas electromecánicos, tanto en situaciones estacionarias como transitorias, y comprender cómo la geometría y las propiedades del material afectan la transferencia de calor.
+Aplicar la convección de calor en sistemas electromecánicos: Al finalizar el curso, los estudiantes deben ser capaces de aplicar coeficientes de transferencia de calor convectivos y aplicar ecuaciones de balance de energía para analizar problemas de convección de calor en sistemas electromecánicos, incluyendo la convección natural y forzada.
+Aplicar los principios de la radiación de calor: Los estudiantes deberían ser capaces de aplicar la ley de Stefan-Boltzmann y comprender los conceptos de emisividad, absorptividad y reflectividad para analizar problemas de radiación de calor en sistemas electromecánicos y evaluar su impacto en el diseño térmico.
+Aplicar los conceptos aprendidos en casos prácticos: Los estudiantes deberán aplicar los principios de transferencia de calor aprendidos a través de ejercicios prácticos y estudios de casos relacionados con sistemas electromecánicos, incluyendo el diseño térmico de componentes y la optimización del rendimiento térmico.
+Utilizar herramientas de simulación y software especializado: Al finalizar el curso, los estudiantes deberían estar familiarizados con el uso de herramientas de simulación y software especializado para realizar análisis térmicos y resolver problemas prácticos relacionados con la transferencia de calor en sistemas electromecánicos."
+MI4136,"1. Estimar factores de seguridad de acuerdo con las teorías de falla estática y dinámica. 
+     2. Diseñar elementos para máquinas y mecanismos, tales como engranes, arboles, ejes, resortes, juntas fijas y desmontables.
+      3. Seleccionar elementos para máquinas y mecanismos como: cojinetes de elementos rodantes, bandas y cadenas."
+MI4300,"1. Conceptualizar el mantenimiento como unidad de apoyo y servicio en una organización. 
+      2. Establecer los recursos y herramientas tácticas de los que debe disponer un Departamento de Mantenimiento para realizar una gestión efectiva. 
+      3. Analizar las herramientas y sistemas de información requeridos para la toma de decisiones relacionadas con la operación y mantenimiento de equipos y sistemas de producción. 
+      4. Diseñar sistemas de documentación y de información para la adecuada gestión del mantenimiento.
+      5. Caracterizar los diferentes tipos de mantenimiento que se pueden aplicar en los diversos sectores productivos. 
+      6. Diseñar programas de mantenimiento para garantizar la confiabilidad operacional de los equipos y sistemas electromecánicos."
+MI2101,"1. Interpretar y desarrollar planos de 
+conjuntos mecánicos reales."
+MI2106,"1. Analizar y resolver problemas de partículas en dos y tres dimensiones, utilizando los conceptos fundamentales de la Estática, como vectores, componentes rectangulares, triángulos de fuerzas y las ecuaciones de equilibrio. 
+    2. Analizar y resolver problemas de cuerpos rígidos sometido a fuerzas, momentos y fuerza par. Reducir un sistema de fuerzas a una fuerza y un par. 
+    3. Analizar y resolver problemas de cuerpos rígidos en equilibrio estático, en dos y tres dimensiones, haciendo uso de las leyes fundamentales del equilibrio. El estudiante podrá calcular el centroide o el centro de gravedad de cuerpos simples y compuestos, tanto en dos como en tres dimensiones. 
+     4. El estudiante podrá calcular el centroide o el centro de gravedad de cuerpos simples y compuestos, tanto en dos como en tres dimensiones. 
+     5. El estudiante estará en capacidad de calcular Momentos de Inercia de áreas conocidas y por integración. 
+     6. El estudiante estará en capacidad de analizar diferentes tipos de estructuras (armaduras, marcos y máquinas) y calcular la magnitud de las fuerzas a que están sometidos sus elementos. 
+     7. Calcular y dibujar los diagramas de fuerza cortante y momento flector de una viga estáticamente determinada, sometida a cargas concentradas y distribuidas. 
+    8. Analizar y resolver problemas de cuerpos que presentan rozamiento, a partir de un análisis general del sistema."
+MI2202,"1. Familiarizarse con el uso de instrumentos de medición eléctrica.
+    2. Comprobar de forma práctica la aplicación de las leyes de Kirchhoff y de simplificación de series y paralelos para el análisis de circuitos eléctricos sencillos 
+    3. Comprobar de forma práctica la aplicación de las técnicas de malla, nodos, superposición y teoremas de Thévenin y Norton para el análisis de circuitos eléctricos complejos. 
+      4. Comprobar de forma práctica la respuesta natural y forzada de los circuitos de primer orden RL y RC. 
+       5. Comprobar de forma práctica la aplicación de las técnicas de mallas, nodos, superposición y teoremas de Thévenin y Norton 5 para el análisis de circuitos RLC en corriente alterna."
+MI2204,"1. Construir circuitos serie paralelo en corriente alterna, y evaluar su comportamiento en presencia de reactancias inductivas y capacitivas a diferentes frecuencias de operación. 
+     2. Conocer la construcción y funcionamiento de transformadores de potencia monofásicos y trifásicos.
+     3. Verificar de manera práctica los conceptos teóricos estudiados en el curso de Electricidad II. 
+      4. Aplicar diversos métodos de medición de potencia monofásica y trifásica y comprobar las características eléctricas de dichas configuraciones.
+     5. Conocer la forma correcta de conexión de instrumentos de medición eléctrica y las normas de seguridad para evitar choques eléctricos y daños en el equipo."
+MI2205,"1. Comprender los conceptos y definiciones aplicables a un circuito eléctrico.
+      2. Analizar circuitos eléctricos básicos por medio de las leyes de Kirchhoff y de simplificación de series y paralelos. 
+       3. Analizar circuitos eléctricos complejos utilizando técnicas como mallas, nodos, superposición, teoremas de Thévenin y Norton. 
+      4. Analizar la respuesta natural y forzada de los circuitos de primer orden RL y RC.
+       5. Analizar circuitos RLC en corriente alterna utilizando técnicas como mallas, nodos, superposición, teoremas de Thévenin y Norton."
+MI2207,"1. Comprender el comportamiento de los distintos elementos que conforman un circuito RLC bajo excitación sinusoidal.
+     2. Utilizar herramientas analíticas para el estudio de circuitos en el dominio del tiempo y frecuencia, resonancia de circuitos RLC y teoría electromagnética.
+     3. Analizar el comportamiento de circuitos polifásicos bajo distintas cargas, enfocando su estudio a redes de distribución eléctrica. 
+    4. Analizar circuitos con transformadores y autotransformadores como elementos básicos de máquinas eléctricas."
+MI3103,"1. Reconocer la organización del taller mecánico y su seguridad.
+     2. Conocer e identificar las herramientas menores y su uso.
+     3. Aprender a tomar lecturas correctas con diferentes tipos de instrumentos de medición, así como sus cuidados. 
+     4. Conocer sobre las máquinas herramientas con desprendimiento de viruta: tipos y generalidades. 
+     5. Conocer de manera general sobre la programación de las máquinas. 
+     6. Conocer sobre control numérico computarizado, así como software de manufactura, principios de CAD/CAM, y tipos de CNC. 
+      7. Conocer sobre la teoría de fundición, deformaciones plásticas (forja, laminado, extrusión, trefilado y estirado) y calderería. 
+      8. Conocer acerca de la teoría sobre el proceso de soldadura."
+MI3104,1. Desarrollar destrezas necesarias que le permitan familiarizarse con la realización de trabajos típicos de un taller de mantenimiento.
+MI3108,"1. Aplicar las propiedades de los fluidos y las leyes básicas que la rigen para la solución de problemas donde se involucren los fluidos. 
+    2. Adquirir los conocimientos básicos y fundamentales del comportamiento mecánico de los fluidos y su efecto sobre su entorno, que le permitan comprender y analizar sistemas de movimiento fluido. 
+    3. Desarrollar competencias en el alumno que le permitan aplicar los fundamentos del flujo compresible e incompresible al planteamiento lógico de la solución de problemas de transporte en conductos y al estudio de los sistemas y máquinas de transformación de la energía hidráulica. 
+    4. Plantear los modelos tradicionales y nuevas perspectivas en la estimación de pérdidas de carga en sistemas hidráulicos, principalmente: sistemas de suministro de agua potable y de proceso. 
+    5. Analizar los conceptos de presión en un fluido y la forma de medirlos.
+    6. Analizar el concepto de viscosidad y el efecto sobre el flujo de un fluido.
+    7. Desarrollar las consecuencias de los principios de conservación de masa, de cantidad de movimiento y de energía sobre el flujo de un fluido. 
+    8. Comprender las leyes que rigen los fluidos en movimiento en estado estable. 
+    9. Calcular las pérdidas de energía del fluido en movimiento en un ducto cerrado. 
+    10. Calcular la presión y caudal en un sistema de tuberías. 
+    11. Desarrollar competencias en el alumno que le permitan comprender los principios de la mecánica de los fluidos, con el fin de simular y calcular un sistema hidráulico. 
+    12. Utilizar un lenguaje computacional para programar y simular sistemas hidráulicos básicos."
+MI3111,"1. Aplicar las técnicas básicas para determinar en la práctica las propiedades básicas de los fluidos.
+    2. Clasificar una muestra aceite según la norma SAE o ISO, a partir de pruebas en viscosímetro Saybolt a 40°C y 100°C.
+    3. Verificar si un aceite automotriz es monogrado o multigrado.
+    4. Calcular la viscosidad de un aceite a través de la ley de Stokes.
+    5. Determinar y/o calcular la presión de un fluido usando diferentes tipos de manómetros.
+    6. Calcular el caudal y el flujo de masa de fluidos gaseosos y líquidos a través de las técnicas más generalizadas en este tema.
+    7. Demostrar el principio de Bernoulli en un tubo Venturi.
+    8. Conocer el funcionamiento y las aplicaciones de los tanques hidroneumáticos en la industria.
+    9. Relacionar los regímenes de flujo con el número de Reynolds. 
+    10. Determinar experimentalmente las pérdidas longitudinales de energía en tuberías.
+    11. Determinar diversos factores de fricción (ƒ) experimentales en líneas de tubería seleccionadas a partir de los planteamientos de Colebrook y Swamee-Jain.
+    12. Determinar la correlación que existe entre diversos factores de fricción (ƒ) experimentales en líneas de tubería seleccionadas versus número de Reynolds y compararla con el diagrama de Moody.
+    13. Calcular las pérdidas de carga en tuberías a través del modelo de Darcy-Weisbach y compararlas con las determinadas experimentalmente. 
+    14. Determinar experimentalmente las pérdidas de carga por accesorios.
+    15. Calcular las pérdidas de carga en accesorio a través del modelo de Darcy-Weisbach y consideraciones de la literatura y compararlas con las determinadas experimentalmente."
+MI3115,"1. Desarrollar un conocimiento utilizable de las relaciones entre las cargas aplicadas a un cuerpo no rígido hecho de un material dado y las deformaciones resultantes del cuerpo.
+    2. Desarrollar una comprensión completa de las relaciones entre las cargas aplicadas a un cuerpo no rígido y los esfuerzos producidos en el cuerpo. 
+    3. Desarrollar una visión clara de las relaciones entre esfuerzo y deformación unitaria bajo una amplia variedad de condiciones y materiales. 
+    4. Desarrollar procedimientos adecuados para encontrar las dimensiones requeridas de un miembro de un material especificado, para soportar una cargada dada sujeta a especificaciones establecidas de esfuerzo y flexión."
+MI3116,"1. Conocer entre los diferentes métodos para la estimación del caudal de agua requerido por una edificación.
+    2. Reconocer los diferentes métodos para la estimación de diámetros en un sistema de distribución de agua fría/caliente.
+     3. Resolver proyecciones en la estimación de caudales y selección de diámetros para sistemas de distribución de agua fría/caliente.
+     4. Valorar la normativa costarricense para la proyección de instalaciones hidráulicas y sanitarias en edificaciones. 
+     5. Aplicar la normativa costarricense al resolver proyecciones en la estimación de caudales y selección de diámetros para sistemas de distribución de agua fría/caliente. 
+     6. Reconocer los diferentes tipos de sistemas hidroneumáticos. 
+      7. Calcular la capacidad de almacenamiento de cada uno de los tipos de tanques hidroneumáticos. 
+      8. Seleccionar tanques hidroneumáticos. 
+       9. Definir los principios de funcionamiento de las bombas hidráulicas. 
+      10. Estimar el desempeño de las bombas centrífugas a partir del caudal, la presión requerida y las características del sistema donde se instalará la bomba. 
+      11. Distinguir la importancia del aire comprimido en la industria costarricense.
+      12. Describir los niveles de calidad de aire comprimido requeridos según aplicación. 
+      13. Estimar el desempeño de los diferentes compresores a partir del caudal, la presión requerida y las características del sistema donde se instalará el compresor. 
+       14. Seleccionar depósitos de aire comprimido, secadores, filtros, trampas y purgadores según sea la aplicación y calidad de aire comprimido. 
+        15. Seleccionar los diferentes materiales que se utilizan para trasegar aire comprimido en la industria. 
+        16. Caracterizar los tipos de redes de aire comprimido. 
+        17. Valorar las normativas que regulan el diseño e instalación de sistemas de ventilación en edificios. 
+         18. Reconocer los diferentes tipos de ventiladores y su aplicación. 
+         19. Proyectar sistemas de conducción de aire.
+         20. Realizar diseños de ventilación en situaciones reales."
+MI3117,"1. Analizar y calcular problemas de los diferentes tipos de movimientos, utilizando los fundamentos de la cinemática clásica aplicado a partículas y cuerpos rígidos.
+     2. Analizar y calcular problemas de cinética de partículas y cuerpos rígidos.
+     3. Analizar y calcular problemas considerando los diferentes tipos de movimiento de los cuerpos rígidos y obtener la magnitud de los diferentes parámetros de velocidad y aceleración de los distintos componentes de un cuerpo rígido. 
+      4. Analizar y calcular problemas de partículas y cuerpos rígidos en movimiento, aplicando los métodos de trabajo - energía y conservación de la cantidad de movimiento. 
+      5. Analizar y calcular problemas de cuerpos en movimiento, relacionando las fuerzas que actúan sobre él, con el movimiento que realiza. 
+      6. Analizar y calcular problemas que consideren vibraciones en partículas."
+MI3119,"1. Capacidad determinar la eficiencia de una bomba bajo diferentes condiciones de operación.
+     2. Capacidad de Desarmar varios tipos de bombas, reconocer las partes internas y analizar su funcionamiento.
+     3. Capacidad de Reconocer las partes externas de un compresor de aire de pistón de una etapa y de dos etapas.
+     4. Capacidad de Explicar el funcionamiento de un compresor de pistón de dos etapas. Medir la capacidad y eficiencia de un compresor de dos etapas trabajando con y sin enfriador intermedio.
+     5. Capacidad de Conocer el principio de funcionamiento de los accesorios más importantes que debe llevar una instalación neumática.
+     6. Capacidad reconocer diferentes tipos de ventiladores y trazar las curvas características de algunos de ellos.
+     7. Capacidad de explicar el funcionamiento de una turbina Francis y trazar las curvas de eficiencia en función del caudal
+     8. Capacidad de explicar el funcionamiento de una turbina Pelton y trazar las curvas de eficiencia en función del caudal.
+     9. Explicar el funcionamiento de una turbina Banki. Simular un sistema de producción de energía hidroeléctrica utilizando una turbina Banki, un generador de C.A. y un control de carga
+     10. Conocer los diferentes tipos de válvulas que existen en el mercado, desarmar cada una de ellas para comprender su funcionamiento.
+     11. Conocer, desarmar y analizar el funcionamiento de diferentes tipos de válvulas automáticas.
+     12. Conocer diferentes tipos de tuberías y las estandarizaciones que existen, así como los diferentes accesorios que se utilizan en los sistemas de tuberías."
+MI3124,"1. Describir el concepto de Ingeniería Gráfica, mediante el aprendizaje de la Geometría Descriptiva, desde la proyección rectangular y estado espacial de un punto, un segmento y un plano hasta llegar a los objetos sólidos.
+    2. Describir procedimientos y aplicarlos para entender la intersección de diferentes objetos sólidos.
+    3. Aplicar las herramientas gráficas necesarias para dibujar el desarrollo de diferentes objetos. 
+    4. El estudiante distinguirá y aplicará las herramientas necesarias en la decisión de un corte de un cuerpo y así comprender e interpretar el interior de la pieza. 
+    5. Interpretar, mediante la identificación adecuada, los diferentes procedimientos de cortes, vistas auxiliares, secciones, secciones superpuestas y uso de elementos desplazados y sus aplicaciones en la lectura del plano de una pieza. 
+    6. Desarrollar mediante procedimientos gráficos, la representación de conjuntos mecánicos en el plano con todas las características técnicas: tolerancia, ajustes, soldaduras, rugosidad y acabado superficial.
+    7. El estudiante será capaz de diferenciar en un plano, un elemento de máquina estandarizado y una pieza no estandarizada. 
+    8. Crear en el estudiante la capacidad de identificar en un plano mecánico los diferentes elementos estandarizados y poder representarlos gráficamente según la normativa vigente. 
+    9. Interpretar correctamente la gráfica en planos, uniones roscadas, remachadas, soldadas, de chavetas, pasadores y otras uniones específicas utilizadas en la aeronáutica y en la industria en general, aplicando las normas ISO. 
+    10. Aplicar gráficamente e interpretar correctamente las tolerancias acabados superficiales y los ajustes normalizados en los planos. 
+    11. Interpretar planos de instalaciones industriales diversas, según la normativa vigente."
+MI3130,"1. Identificar conceptos básicos de la termodinámica, como sistema, estado, proceso, equilibrio, energía, temperatura, presión y manejo de unidades tanto del sistema internacional como el inglés.
+    2. Entender el concepto de energía y sus distintas formas: energía interna, energía cinética, energía potencial, energía eléctrica, trabajo (eléctrico y mecánico en varias formas), calor y sus formas de transmisión. Implicaciones de la formas de energía en el ambiente.
+    3. Demostrar los procedimientos para determinar propiedades de sustancias puras mediante tablas. Además el uso de la ecuación de estado para gases ideales en la solución de problemas.
+    4. Resolver problemas de balance de energía para sistemas cerrados (masa fija) que tiene que ver con interacciones de trabajo y calor para sustancias puras en general, gases ideales y sustancias incompresibles.
+     5. Resolver problemas de balance de energía para dispositivos comunes de flujo estacionario como toberas, turbinas, válvulas de estrangulamiento, mezcladores, calentadores e intercambiadores de calor. Además aplicar balance de energía a procesos de flujo no estacionario.
+      6. Introducción a la segunda ley de la termodinámica, descripción de máquina térmica, bomba de calor y refrigeración, depósitos de energía, procesos reversibles e irreversibles. Describir el ciclo de Carnot y la determinación de las expresiones para la eficiencia de la máquina térmica. Solución de problemas.
+     7. Definir la entropía y el principio de incremento de entropía. Determinar los cambios de entropía en las sustancias puras, las incompresibles y gases ideales. Definición de procesos isentrópico y eficiencia isentrópica en diferentes dispositivos de flujo estacionario.
+     8. Analizar y resolver problemas del ciclo Rankine combinado (regeneración y recalentamiento) tanto reversibles como irreversibles. Además resolver problemas basados en los ciclos Otto, Diésel, Stirling, Ericsson y Brayton."
+MI3138,"1. Conocer entre los diferentes tipos de máquinas y equipos utilizados en las edificaciones industriales.
+     2. Reconocer los diferentes métodos para la estimación de diámetros en un sistema de distribución de agua fría/caliente.
+     3. Resolver proyecciones en la estimación de caudales y selección de diámetros para sistemas de distribución de agua fría/caliente.
+     4. Definir los principios básicos de funcionamiento de las bombas hidráulicas.
+     5. Aplicar la normativa costarricense al resolver proyecciones en la estimación de caudales y selección de diámetros para sistemas de distribución de agua fría/caliente. 
+     6. Identificar la analogía que existe entre los circuitos hidráulicos y el eléctrico.
+     7. Reconocer las diferencias de la utilización de la corriente directa y alterna en la industria.
+     8. Seleccionar conductores de cobre o aluminio según el método de ampacidad y caída de voltaje.
+     9. Investigar las características constructivas y de funcionamiento de un motor monofásico y trifásico. 
+     10. Reconocer las desventajas del bajo factor de potencia y sus diferentes formas de corregirlo.
+     11. Distinguir la importancia del aire comprimido en la industria costarricense.
+     12. Reconocer los tipos de compresores que utilizan en el sector industrial costarricense.
+     13. Identificar los equipos que componen un sistema de generación de aire comprimido.
+     14. Caracterizar los tipos de redes de aire comprimido.
+     15. Entender las técnicas de diseño que se emplean para circuitos neumáticos industriales. 
+     16. Reconocer las aplicaciones del vapor de agua en el sector industrial costarricense.
+     17. Identificar las principales características constructivas y de funcionamento de las calderas pirotubulares y acuatubulares.
+     18. Describir el funcionamiento de cada parte de la caldera. 
+     19. Resumir los parámetros principales en el tratamiento de agua y la Reglamentación para Caldera.
+     20. Reconocer los elementos mínimos para la estimación, selección e instalación de una caldera."
+MI3206,"1. Que el estudiante conozca los tipos de conexión que debe realizar en una maquina eléctrica, según ciertas condiciones operativas. 
+     2. Que el estudiante experimente y compruebe, mediante la utilización de equipos e instrumentos, las características de las maquinas eléctricas rotativas. 
+    3. Que el estudiante analice el comportamiento de las maquinas eléctricas bajo ciertas circunstancias de operación y de acuerdo a sus características. 
+    4. Desarrollar en el estudiante una actitud crítica y razonable en torno a la utilización de este tipo de máquinas industriales."
+MI3209,"1. Comprender las características y operación de los amplificadores operacionales en sus topologías básicas.
+     2. Estudiar aplicaciones de IC especiales: monostable, astable, comparadores, reguladores de voltaje, convertidores V/f y V/I.
+    3. Comprender el funcionamiento de dispositivos electrónicos básicos diodo semiconductor, al transistor bipolar y de efecto de campo.
+    4. Comprender las características y operación de los transistores BJT, MOSFET, IGBT, SCR, TRIAC y MOV.
+     5. Diseñar fuentes reguladas y convertidores (inversores)
+      6. Diseñar aplicaciones electrónicas utilizando circuitos lógicos combinacionales."
+MI3210,"1. Realizar análisis de las máquinas eléctricas rotativas de Corriente Alterna tanto trifásicas como monofásicas a partir de modelos matemáticos equivalentes, para el establecimiento del punto de operación ante diversas condiciones de funcionamiento. 
+      2. Realizar análisis de las máquinas eléctricas rotativas de Corriente Directa a partir de modelos matemáticos equivalentes, para el establecimiento del punto de operación ante diversas condiciones de funcionamiento. 
+     3. Adquirir conocimiento de las partes constructivas de las máquinas eléctricas rotativas, así como su importancia en operación y mantenimiento para la comprensión de la caracterización y modos de fallas.
+    4. Modelar con software OPENSOURCE la simulación del funcionamiento de distintas máquinas eléctricas rotativas."
+MI4125,"1. Distinguir los métodos comúnmente utilizados para la medición de temperaturas.
+     2. Calcular la eficiencia de la combustión de los gases de escape de una caldera, utilizando el indicador de CO2, el de O2 y el analizador de humos.
+     3. Identificar cada una de las partes que conforman una caldera pirotubular y acuotubular.
+     4. Analizar el diagrama de conexiones eléctricas de una caldera pirotubular y estudiar el funcionamiento paso a paso del programador de la caldera.
+     5. Conocer internamente un quemador, identificar qué tipo es, verificar las medidas específicas de fábrica y recomendar un procedimiento de ajuste.
+    6. Conocer, desarmar y analizar el funcionamiento de los diferentes tipos de trampas de vapor que existen en el mercado, así como conocer posibles aplicaciones de cada tipo.
+   7. Comprobar el funcionamiento de varios tipos de trampas de vapor.
+   8. Medir de dureza con el método E.D.T.A.
+   9. Comprender el funcionamiento de un ablandador de agua.
+   10. Medir el PH del agua de una caldera.
+   11. Realizar las pruebas a que debe ser sometida una caldera en la revisión anual por parte de un inspector.
+   12. Identificar cada una de las partes que conforman una turbina de vapor y cuál es la función que desempeñan. 
+   13. Calcular la eficiencia de una turbina de vapor bajo diferentes condiciones de carga."
+MI4126,"1. Realizar cálculos avanzados de cargas térmicas en procesos que requieren solucionar necesidades de refrigeración.
+   2. Diseñar Cámaras Refrigeradas y tuberías de refrigerantes como parte de sistemas comercial e industrial. 
+   3. Seleccionar equipos y accesorios para los sistemas de refrigeración diseñados, utilizando software de diferentes fabricantes. 
+    4. Conocer la naturaleza y comportamiento de los fluidos refrigerantes."
+MI4127,"1. Comprender el funcionamiento de un sistema de refrigeración básico. 
+     2. Identificar los componentes básicos de un sistema de refrigeración real.
+     3. Comprender el funcionamiento y las fallas principales de los compresores de pistón y tornillo en la aplicación a sistemas de refrigeración. 
+     4. Comprender el ajuste de los controles de presión y temperatura para un sistema de refrigeración real. 
+     5. Diseñar el procedimiento para hacer vacío y cargar refrigerante por el lado de baja en un sistema de refrigeración didáctico. 
+     6. Simular fallas en un panel de refrigeración y comparar los parámetros de operación con los que se dan en condición de falla. 
+     7. Solucionar casos que describen una situación de falla en un sistema de refrigeración real en el comercio o la industria. 
+      8. Establecer los métodos para realizar recuperación de refrigerantes mediante el uso de un equipo de recuperación y depósito de refrigerante real."
+MI4129,"1. Interpretar los distintos parámetros que operan en la combustión.
+     2. Investigar sobre diferentes métodos de medición de la eficiencia de la combustión.
+     3.  Describir el funcionamiento de cada parte de la caldera.  Determinar los accesorios a colocar en cada una de las tuberías que llagan hasta una caldera.  Conocer sobre el mantenimiento básico de calderas.
+      4. Estimar y seleccionar la capacidad mínima de una Caldera.
+      5. Calcular y dimensionar las tuberías para vapor y para condensado. Calcular el aislamiento económico para tuberías.
+     6. Seleccionar Trampas de Vapor según aplicación. 
+      7. Distinguir lo elementos necesarios para la instalación y mantenimiento de Trampas de Vapor.
+     8. Resumir los parámetros principales en el tratamiento de agua y la Reglamentación para Calderas.
+     9. Esquematizar y comprender las partes principales y el principio del funcionamiento de las turbinas de vapor de acción y reacción y los equipos periféricos de las calderas.
+     10. Estimar la factibilidad económica y técnica de los Proyectos más comunes en plantas de vapor en Costa Rica."
+MI4209,"1. Comprender los fundamentos teóricos necesarios para el desarrollo de sistemas automatizados. 
+       2. Resolver problemas de automatización mediante el análisis lógico y metodologías de diseño de ingeniería. 
+      3. Proponer soluciones de automatización utilizando herramientas de diseño y simulación.
+      4. Desarrollar en el estudiante capacidades de aprendizaje autónomo. 
+      5. Desarrollar en el estudiante habilidades de investigación y trabajo en equipo, para el desarrollo de soluciones de automatización, que contribuyen a mejorar los procesos productivos. 
+      6. Desarrollar en el estudiante habilidades de comunicación oral y escrita, sobre temas especializados en el campo de la automatización."
+MI4210,"1. Desarrollar en el estudiante capacidades de aprendizaje autónomo. 
+      2. Comprender el funcionamiento de los elementos básicos de automatización, a través de la implementación de circuitos básicos. 
+       3. Diseñar soluciones de automatización mediante un proceso lógico de análisis y resolución de problemas de automatización de procesos. 
+        4. Desarrollar en el estudiante habilidades blandas como el trabajo en equipo, resolución de conflictos, ética, pensamiento creativo y comunicación, promoviendo una formación profesional de forma integral. 
+       5. Desarrollar en el estudiante habilidades de comunicación oral y escrita, sobre temas especializados en el campo de la automatización. 
+        6. Utilizar herramientas informáticas para el diseño y evaluación del comportamiento de circuitos de automatización industrial."
+MI4212,"1. Dimensionar adecuadamente conductores y protecciones térmicas y termomagnéticas de circuitos ramales de diferentes tipos de cargas eléctricas, y de alimentadores de los tableros respectivos, así como todas sus canalizaciones y ductos. 
+      2. Calcular de manera correcta los conductores, protecciones térmicas y termomagnéticas de acometidas y transformadores. 
+      3. Calcular de manera correcta los conductores de puesta a tierra de equipos y del electrodo de puesta a tierra. 
+      4. Aplicar estudios de corto circuito (diferentes metodologías) en instalaciones eléctricas de bajo voltaje. 
+      5. Aplicar estudios de diseño de iluminación (diferentes metodologías) en instalaciones eléctricas de bajo voltaje. 
+      6. Aplicar la normativa costarricense referente a la elaboración de un plano eléctrico de tipo residencial, comercial-industrial. 
+      7. Definir los principios que definen la selectividad de las protecciones eléctricas en baja tensión (coordinación de protecciones). 
+      8. Distinguir la importancia de corregir el factor de potencia en una instalación de bajo voltaje 
+      9. Aprender a presupuestar los costos económicos de una instalación eléctrica. 
+      10. Realizar un diseño de instalación eléctrica residencial unifamiliar 
+      11. Realizar un diseño de instalación eléctrica comercial o industrial."
+MI4305,"1. Estudiar y comprender la evolución del mantenimiento, su importancia y los atributos que deben guiar su gestión. 
+      2. Estudiar, conocer y comprender la metodología de la gestión de activos, gestión del riesgo, análisis del ciclo de vida útil, así como el diseño adecuado de su implementación, como una manera de identificación total para el logro de los objetivos empresariales.
+       3. Comprender el alineamiento de la gestión del mantenimiento con los objetivos y el plan estratégico de la organización, evidenciando su valor agregado hacia el negocio. 
+       4. Comprender cómo se desarrolla un modelo gestión mantenimiento."
+MI4311,"1. Describir los enfoques en la aplicación del análisis cuantitativo para la toma de decisiones.
+     2. Entender desde una perspectiva científica el análisis cuantitativo en la solución a situaciones reales.
+     3. Describir el uso del modelado en el análisis cuantitativo aplicado a la administración en el campo de la Ingeniería del Mantenimiento. 
+      4. Aplicar los elementos básicos de la probabilidad y la distribución estadística para una aproximación real en la solución de problemas a través de los métodos cuantitativos. 
+      5. Desarrollar modelos cuantitativos a través de la simulación para la aplicación en la solución de problemas reales."
+MI4510,"1. Comprender los principios y magnitudes eléctricas.
+      2. Describir y comprender los componentes eléctricos básicos.
+      3. Identificar las clases y tipos de circuitos eléctricos
+      4. Reconocer las características, conexiones y aplicaciones entre los sistemas de corriente alterna monofásicos y trifásicos
+      5. Interpretar los conceptos generales de electromagnetismo
+      6. Describir las características y funcionamiento de los transformadores.
+      7. Determinar las características particulares de los diferentes tipos de máquinas eléctricas rotativas.
+      8. Resumir e interpretar los resultados obtenidos en los ejercicios prácticos.
+      9. Discriminar los diferentes elementos básicos del control automático y sus aplicaciones."
+MI5135,"1.  Conocer las fuentes contaminantes del aire y propiedades de las partículas en espacios cerrados.
+     2. Repasar los conceptos de calidad del aire y confort. Legislación y normativas de los sistemas de ventilación. 
+     3. Describir el funcionamiento, las leyes físicas y características que rigen la operación de los tipos de ventiladores.
+     4. Definir los principios básicos de funcionamiento de los sistemas de ventilación (flujo de aire y ruido en conducciones).
+    5. Conocer la operación de los sistemas de ventilación localizada y pasiva.
+    6. Comprender el funcionamiento de los diferentes sistemas de medición y balances de los sistemas de ventilación.
+    7. Diseñar las dimensiones, materiales y ubicación para campanas de extracción de aire.
+    8. Diseñar proyectos de sistemas de ventilación (pérdidas de presión, distribución de la red de ductos, diámetros de ductos, preparación de dibujos definitivos y listado de materiales).
+    9. Localizar, diagnosticar, reparar y prevenir averías en sistemas de ventilación."
+MI5152,"1. Conocer alternativas de solución para situaciones que requieren climatización.
+    2. Comprender los fundamentos de diseño de los sistemas de climatización.
+    3. Conocer los principios generales que sirvan de base para profundizar estudios y tomar decisiones relativas a soluciones de climatización en edificios.
+    4. Definir los principios básicos de funcionamiento de los sistemas de climatización (flujo de aire y ruido en conducciones).
+    5. Conocer la operación de los sistemas de climatización.  
+    6. Comprender el funcionamiento de los diferentes sistemas de medición y balances de los sistemas de climatización.
+    7. Diseñar las dimensiones, materiales y ubicación para las tuberías de refrigerante.
+    8. Diseñar proyectos de sistemas de climatización
+    9. Localizar, diagnosticar, reparar y prevenir averías en sistemas de climatización."
+MI5215,"1. Analizar el desempeño del sistema de potencia a partir del modelado de los elementos de la red como las líneas de transmisión, transformadores, generadores y cargas utilizando herramientas técnicas de análisis y funcionamiento. 
+       2. Desarrollar un problema de flujos de potencia a partir de un método numérico para el análisis y comprensión del desempeño del sistema de potencia a partir de una simulación en ETAP 
+       3. Calcular corrientes de falla en redes eléctricas a partir del método de impedancias de secuencia para la simulación de cortocircuitos simétricos y asimétricos. 
+       4. Estimar despachos óptimos a partir de diversas fuentes de generación y utilizando criterios económicos. 
+       5. Estimar condiciones de inestabilidad a partir del modelado de condiciones de fallas, disparos de líneas y otros eventos de la red para el estudio de condiciones inseguras para el sistema."
+MI5411,"1. Al finalizar el curso el estudiante estará en capacidad de diseñar soluciones de automatización industrial mediante el uso de controladores lógicos programables utilizando diferentes tipos de lenguaje de programación. 
+      2. Al finalizar el curso el estudiante estará en capacidad de reconocer las características de los diferentes dispositivos de entrada y salida utilizados en controladores lógicos. 
+      3. Al finalizar el curso el estudiante estará en capacidad de configurar sistemas de comunicación y adquisición de datos para la operación de sistemas automatizados. 
+      4. Al finalizar el curso el estudiante estará en capacidad de configurar los equipos para el tratamiento de señales analógicas. 
+      5. Al finalizar el curso el estudiante estará en capacidad proponer actividades de mantenimiento requeridos para los sistemas de automatización industrial."
+MI6153,"1. Diferenciar los conceptos de gestión de la energía versus conservación (reducir pérdidas), ahorro (hábitos), optimización (tecnología) y auditorías energéticas (inspección). 
+    2. Conocer la metodología para la implementación de un balance de energía, permitiendo la identificación y priorización de las medidas de gestión energética requeridas. 
+    3. Conocer los debe y haber de la normativa ISO 50001 y su relación con la gestión energética para su implementación donde sea requerido.
+     4. Estudiar las etapas de un estudio de huella de carbono, gases de efecto invernadero, impacto ambiental y su vínculo con la economía circular, Plan Nacional de Energía. 
+     5. Determinar el impacto de la disposición final de los desechos, tanto en fuentes energéticas renovable y no renovable. 
+     6. Categorizar las propuestas de proyecto de energía renovable y no renovable bajo los criterios financieros de TIR, VAN, ROI y Punto de Equilibrio para valorar las propuestas del modelo de energía establecido. 
+      7. Explorar las fuentes de energía renovables no convencionales que se aplican o podrían aplicarse en Costa Rica y el entorno político a fin. 
+     8.Conocer las fases para implementar un sistema de gestión de energía, incluyendo los indicadores más representativos."
+MI6252,"1. Explicar los principios y leyes básicas en que se fundamenta la neumática. 
+    2. Repasar la generación y alimentación del aire comprimido.
+    3. Describir el funcionamiento de los principales actuadores. 
+    4. Definir los principios básicos de funcionamiento de las bombas hidráulicas. 
+    5. Conocer la operación de los diferentes tipos de válvulas de vías en sistemas neumáticos. 
+    6. Familiarizarse con el funcionamiento de los diferentes tipos de válvulas de proceso.
+    7. Exponer los sistemas básicos de mando empleados en la neumática.
+    8. Diseñar circuitos neumáticos básicos usando simbología normalizada."
+MI6253,"1. Definir las herramientas técnico-administrativas, legales y ambientales, para el análisis del entorno (contexto nacional e internacional) en la determinación de oportunidades innovadoras de desarrollo, alineadas con los objetivos y metas estratégicas de la organización. 
+     2. Aplicar las herramientas de planificación, estimación, implementación, evaluación y seguimiento de proyectos, para la adecuada gestión de un proyecto, basado en literatura correspondiente.
+     3. Desarrollar herramientas de análisis de entorno para la optimización máxima de los recursos durante la ejecución de proyectos, estableciendo sus indicadores de gestión.
+    4. Explorar las nuevas tendencias y desarrollos en el tema de la gestión de proyectos y su aplicación dependiendo del tipo de proyecto."
+MI6254,"1. Conocer los cuerpos normativos que abarcan el diseño, construcción y pruebas de sistema contra incendio basados en agua.
+       2. Diseñar un sistema de bombeo para un sistema contra incendios basado en agua.
+       3. Conocer los distintos elementos que conforma una red de agua para un sistema contra incendios basado en agua.
+       4. Diseñar sistemas de rociadores y de pulverización de agua para lo protección de edificios, tanques de almacenamiento de gases inflamables y transformadores.
+        5. Establecer los sistemas de protección de espuma adecuados para la protección de incendios de tanques de almacenamiento y áreas que operan con combustibles líquidos o inflamables.
+        6. Implementar sistemas de mantenimiento, inspección y pruebas para sistemas contra incendio basados en agua."
+MI6255,"1. Comprender el concepto de sistema de control, el de lazo de control realimentado y definir la función de sus componentes. 
+     2. Aplicar herramientas de simulación para el análisis y cálculo de sistemas de control lineal. 
+     3. Analizar el control por realimentación frente al control en bucle abierto y las acciones básicas de control por realimentación. 
+      4. Aplicar algunos métodos en el dominio de la frecuencia de análisis y síntesis de controladores de sistemas realimentados. 
+      5. Sintonizar sistemas de control discretos en autómatas programables."
+MI6351,"1. Analizar el comportamiento de variables físicas, para la detección de desviaciones en el funcionamiento de equipos electromecánicos.
+      2. Identificar las acciones proactivas de mejora en los equipos y sistemas electromecánicos, para garantizar la continuidad en el servicio que los activos prestan. 
+      3. Establecer las estrategias técnicas y administrativas para el diseño e implementación de un programa de mantenimiento basado en condición."
+MI8304,"1. Describir los mecanismos utilizados en las máquinas para transmisión y transformación de movimiento y fuerza. 
+     2. Explicar los principios básicos de electricidad y motores.
+     3. Comprender el funcionamiento electromecánico de máquinas, herramientas y de los aparatos de elevación y transporte utilizados en la industria en general.
+     4. Explicar la aplicación y el funcionamiento electromecánico de: calderas, compresores, bombas, válvulas y nuevas tecnologías."
