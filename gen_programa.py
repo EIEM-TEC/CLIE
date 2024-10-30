@@ -505,7 +505,7 @@ def generar_programa(id,listProf):
     doc.append(proCurso)
     #doc.append(VarCol("8 Profesor",proCurso))
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
-    subprocess.run(["biber", f"C:\\Repositories\\IEM_programas\\programas\\{codCurso}"])
+    subprocess.run(["biber", f"C:\\Repositories\\CLIE\\programas\\{codCurso}"])
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex') 
 
