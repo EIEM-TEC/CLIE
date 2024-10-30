@@ -1,6 +1,5 @@
 import textwrap
 import numpy as np
-import math
 from matplotlib import pyplot as plt
 
 def gen_list_porc(N):
@@ -75,24 +74,25 @@ def radar_clie(ax,cat,val,title,fontsize,tfontsize,rpmax,mult,textw):
     ax.set_facecolor('#f7f7f7')
 
 def multiradar(lista,saberes,areas,columnaPorc,fontsize,tfontsize,rpmax,mult,textw):
-    fig, axs = plt.subplots(2, 4, subplot_kw=dict(projection='polar'), figsize=(12, 15))
+    fig, axs = plt.subplots(4, 2, subplot_kw=dict(projection='polar'), figsize=(10, 18))
 
     row = 0
     column = 0
     for area in lista:
-        sab = saberes[saberes['area']==area]
-        porc = areas[areas['area']==area]
+        nom = areas[areas['codArea']==area].nombre.item()
+        sab = saberes[saberes['codArea']==area]
+        porc = areas[areas['codArea']==area]
         porc = porc[columnaPorc].item()
         cat = sab['nombre'].to_list()
         val = sab[columnaPorc].to_list()
         #val = [(x / porc)*100 for x in val]
-        radar_clie(axs[row,column],cat,val,area,fontsize,tfontsize,rpmax,mult,textw)
-        if column < 3:
+        radar_clie(axs[row,column],cat,val,nom,fontsize,tfontsize,rpmax,mult,textw)
+        if column < 1:
             column += 1
         else:
             row += 1
             column = 0
     if len(lista) < 8:
         fig.delaxes(axs[row,column])
-    #plt.tight_layout(pad=0.1, w_pad=0.5, h_pad=0.2)
-    plt.show()
+    plt.tight_layout(pad=1, w_pad=0, h_pad=0)
+    plt.savefig(f'{columnaPorc}.svg',dpi=600)
