@@ -62,6 +62,12 @@ def colocar_semestre(semestre,sesgo,color,horasteoriasemestre,horaspracticasemes
         dump += NoEscape(f"pic{{semestre={{{roman.toRoman(semestre)},{color},{horasteoriasemestre},{horaspracticasemestre},{creditossemestre}}}}};")
     return dump
 
+def colocar_req(semestre,sesgo,fila,sesgovert,num,color):
+    dump = NoEscape(r"\draw ")
+    dump += NoEscape(f"({round(6.87*(semestre-sesgo),2)+3.5},{round(-4.2*fila,1)-sesgovert*1})")
+    dump += NoEscape(f"pic{{requi={{{num},{color}}}}};")
+    return dump
+
 def generar_malla():
     #Geometría
     geometry_options = { 
@@ -129,7 +135,7 @@ def generar_malla():
             code={
                 \def\ancho{6}
                 \def\alto{0.8}
-                \draw[fill=#2] (-\ancho/2,1.5*\alto) rectangle (\ancho/2,-1.5*\alto) node[midway,align=center,text width=6cm]{\fontsize{16pt}{12pt}\selectfont \textbf{#1}};
+                \draw[fill=#2] (-\ancho/2,1.5*\alto) rectangle (\ancho/2,-1.5*\alto) node[midway,align=center,text width=\ancho cm]{\fontsize{16pt}{12pt}\selectfont \textbf{#1}};
                 \draw[fill=#2] (-\ancho/2,-\alto) rectangle (-\ancho/2 + \ancho/3, -\alto - \alto) node[midway]{\fontsize{12pt}{14pt}\selectfont #3};
                 \draw[fill=#2] (-\ancho/2 + \ancho/3,-\alto) rectangle (-\ancho/2 + 2*\ancho/3, -\alto - \alto) node[midway]{\fontsize{12pt}{14pt}\selectfont #4};
                 \draw[fill=#2] (-\ancho/2 + 2*\ancho/3,-\alto) rectangle (-\ancho/2 + 3*\ancho/3, -\alto - \alto) node[midway]{\fontsize{12pt}{14pt}\selectfont #5};
@@ -138,11 +144,24 @@ def generar_malla():
     }'''
     #1: semestre, #2: color, #3: horasteoria, #4: horaspractica, #5: creditos
     )
+    circReq = NoEscape(
+    r'''\tikzset{
+            pics/requi/.style args={#1,#2}{
+            code={
+                \def\diam{0.4}
+                \draw[fill=#2] circle (\diam) node[midway,align=center,text width=\diam cm]{\fontsize{10pt}{10pt}\selectfont \textbf{#1}};
+            }
+        }
+    }'''
+    )
+
     doc.preamble.append(bloqueTitulo)        
     doc.preamble.append(bloqueCurso)
     doc.preamble.append(bloqueSemestre)
+    doc.preamble.append(circReq)
     doc.append(Command('centering'))
     sesgo = 0
+    reqcounter = 10
     with doc.create(TikZ(
             options=TikZOptions
                 (    
@@ -166,8 +185,19 @@ def generar_malla():
             horaspractica = cursos_TRC[cursos_TRC.id == id].horasPractica.item()
             creditos = cursos_TRC[cursos_TRC.id == id].creditos.item()
             area = cursos_TRC[cursos_TRC.id == id].area.item()           
-            color = area_colors.get(area)            
+            color = area_colors.get(area)
+            requi = cursos_TRC[cursos_TRC.id == id].requisitos.str.split(';',expand=True)
+            corequi = cursos_TRC[cursos_TRC.id == id].correquisitos.item()
+            esrequi = cursos_TRC[cursos_TRC.id == id].esrequisito.str.split(';',expand=True)         
             malla_TRC.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+            if not(esrequi[0].isna().item()):
+                for column in esrequi.columns:
+                    idreq = esrequi[column].item()
+                    reqcounter += 1
+                    # codreq = cursos_TRC[cursos_TRC.id == idreq].codigo.item()
+                    # semreq = cursos_TRC[cursos_TRC.id == idreq].semestre.item()
+                    # filareq = cursos_TRC[cursos_TRC.id == idreq].fila.item()
+                    malla_TRC.append(colocar_req(semestre,sesgo,fila,column,reqcounter,color))
     doc.append(NoEscape(r"\newpage"))
     sesgo = 8
     with doc.create(TikZ(

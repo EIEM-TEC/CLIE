@@ -95,4 +95,10 @@ def multiradar(lista,saberes,areas,columnaPorc,fontsize,tfontsize,rpmax,mult,tex
     if len(lista) < 8:
         fig.delaxes(axs[row,column])
     plt.tight_layout(pad=1, w_pad=0, h_pad=0)
-    plt.savefig(f'{columnaPorc}.svg',dpi=600)
+    plt.savefig(f'./graficos/{columnaPorc}.svg',dpi=600)
+
+def radar(nombre,areas,cat,val,title,fontsize,tfontsize,rpmax,mult,textw):
+    nom = areas[areas['codArea'].isin(cat)]['nombre']
+    fig, axs = plt.subplots(subplot_kw=dict(projection='polar'), figsize=(10, 10))
+    radar_clie(axs,nom,val,title,fontsize,tfontsize,rpmax,mult,textw)
+    plt.savefig(f'./graficos/{nombre}.svg',dpi=600)
