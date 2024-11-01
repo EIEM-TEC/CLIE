@@ -62,9 +62,15 @@ def colocar_semestre(semestre,sesgo,color,horasteoriasemestre,horaspracticasemes
         dump += NoEscape(f"pic{{semestre={{{roman.toRoman(semestre)},{color},{horasteoriasemestre},{horaspracticasemestre},{creditossemestre}}}}};")
     return dump
 
+def colocar_esreq(semestre,sesgo,fila,sesgovert,num,color):
+    dump = NoEscape(r"\draw ")
+    dump += NoEscape(f"({round(6.87*(semestre-sesgo),2)+3.5},{round(-4.2*fila,1)-sesgovert})")
+    dump += NoEscape(f"pic{{requi={{{num},{color}}}}};")
+    return dump
+
 def colocar_req(semestre,sesgo,fila,sesgovert,num,color):
     dump = NoEscape(r"\draw ")
-    dump += NoEscape(f"({round(6.87*(semestre-sesgo),2)+3.5},{round(-4.2*fila,1)-sesgovert*1})")
+    dump += NoEscape(f"({round(6.87*(semestre-sesgo),2)-2.5},{round(-4.2*fila,1)-sesgovert})")
     dump += NoEscape(f"pic{{requi={{{num},{color}}}}};")
     return dump
 
@@ -197,6 +203,11 @@ def generar_malla():
                     # codreq = cursos_TRC[cursos_TRC.id == idreq].codigo.item()
                     # semreq = cursos_TRC[cursos_TRC.id == idreq].semestre.item()
                     # filareq = cursos_TRC[cursos_TRC.id == idreq].fila.item()
+                    malla_TRC.append(colocar_esreq(semestre,sesgo,fila,column,reqcounter,color))
+            if not(requi[0].isna().item()):
+                for column in requi.columns:
+                    idreq = requi[column].item()
+                    reqcounter += 1
                     malla_TRC.append(colocar_req(semestre,sesgo,fila,column,reqcounter,color))
     doc.append(NoEscape(r"\newpage"))
     sesgo = 8
