@@ -135,7 +135,7 @@ def generar_programa(id,listProf):
         filter = lisProgr["semestre"] == str(sem)
         filterlist = lisProgr[filter]
         ubiPlane += "Curso de "
-        ubiPlane += number_to_ordinals(str(sem))
+        ubiPlane += number_to_ordinals(str(int(sem)))
         ubiPlane += " semestre en "
         if len(filterlist)  > 1:
             ubiPlane += ' e'.join(filterlist['programa'].str.cat(sep='; ').rsplit(';',1)) + ". "
