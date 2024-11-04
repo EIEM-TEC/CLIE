@@ -16,6 +16,7 @@
 \usepackage{multirow}%
 \usepackage{fancyhdr}%
 %
+\usetikzlibrary{arrows.meta}%
 \tikzset{
             pics/titulo/.style args={#1,#2}{
             code={
@@ -58,6 +59,15 @@
             }
         }
     }%
+\tikzset{
+        pics/arrowreq/.style args={#1}{
+            code={
+                \def\len{0.4} % Arrow length in mm
+                \def\wid{0.2} % Arrow width in mm
+                \draw[#1] -{Stealth[length=\len mm, width=\wid mm]};
+            }
+        }
+    }%
 %
 \begin{document}%
 \normalsize%
@@ -76,63 +86,62 @@
 \draw (0.5,-4.7)pic{curso={MA0101,Matemática general,5,0,2,LimeGreen}};%
 \draw (0.5,-8.9)pic{curso={CI0205,Prueba avanzada de inglés,0,0,0,WildStrawberry}};%
 \draw (7.37,-4.7)pic{curso={MA1102,Cálculo diferencial e integral,5,0,4,LimeGreen}};%
-\draw (10.370000000000001,-4.2)pic{requi={11,LimeGreen}};%
+\draw [-{Stealth[length=3mm,width=2mm]},LimeGreen,line width=0.5mm,](3.02,-3.5) -- (4.84,-3.5);%
 \draw (7.37,-8.9)pic{curso={FI1101,Física general I,4,0,3,LimeGreen}};%
-\draw (10.370000000000001,-8.4)pic{requi={12,LimeGreen}};%
-\draw (10.370000000000001,-9.4)pic{requi={13,LimeGreen}};%
+\draw [-{Stealth[length=3mm,width=2mm]},LimeGreen,line width=0.5mm,](7.37,-6.32) -- (7.37,-7.29);%
 \draw (7.37,-13.1)pic{curso={FI2201,Laboratorio de física general I,0,2,1,LimeGreen}};%
+\draw [-{Stealth[length=3mm,width=2mm]},LimeGreen,line width=0.5mm,](7.37,-10.52) -- (7.37,-11.49);%
 \draw (7.37,-17.3)pic{curso={QU1106,Química básica I,4,0,3,LimeGreen}};%
 \draw (7.37,-21.5)pic{curso={QU1102,Laboratorio de química básica I,0,2,1,LimeGreen}};%
+\draw [-{Stealth[length=3mm,width=2mm]},LimeGreen,line width=0.5mm,](7.37,-18.92) -- (7.37,-19.89);%
 \draw (7.37,-25.7)pic{curso={CI1106,Comunicación escrita,3,0,2,WildStrawberry}};%
-\draw (10.370000000000001,-25.2)pic{requi={14,WildStrawberry}};%
 \draw (7.37,-29.9)pic{curso={MI2101,Dibujo técnico,4,0,3,WildStrawberry}};%
-\draw (10.370000000000001,-29.4)pic{requi={15,WildStrawberry}};%
 \draw (7.37,-34.1)pic{curso={TBD,Introducción a la Ingeniería Electromecánica,2,0,1,Tan}};%
-\draw (10.370000000000001,-33.6)pic{requi={16,Tan}};%
-\draw (10.370000000000001,-34.6)pic{requi={17,Tan}};%
 \draw (7.37,-38.3)pic{curso={FH1000,Centros de formación humanistica,3,0,0,Tan}};%
 \draw (14.24,-4.7)pic{curso={MA1103,Cálculo y álgebra lineal,4,0,4,LimeGreen}};%
-\draw (17.240000000000002,-4.2)pic{requi={18,LimeGreen}};%
-\draw (11.24,-4.2)pic{requi={19,LimeGreen}};%
+\draw [-{Stealth[length=3mm,width=2mm]},LimeGreen,line width=0.5mm,](9.89,-3.5) -- (11.71,-3.5);%
 \draw (14.24,-8.9)pic{curso={FI1102,Física general II,4,0,3,LimeGreen}};%
-\draw (17.240000000000002,-8.4)pic{requi={20,LimeGreen}};%
-\draw (11.24,-8.4)pic{requi={21,LimeGreen}};%
+\draw [-{Stealth[length=3mm,width=2mm]},LimeGreen,line width=0.5mm,](9.89,-7.7) -- (11.71,-7.7);%
 \draw (14.24,-13.1)pic{curso={FI1202,Laboratorio de física general II,0,2,1,LimeGreen}};%
+\draw [-{Stealth[length=3mm,width=2mm]},LimeGreen,line width=0.5mm,](14.24,-10.52) -- (14.24,-11.49);%
 \draw (14.24,-21.5)pic{curso={TBD,Introducción a la computación,4,0,3,Lavender}};%
-\draw (11.24,-21.0)pic{requi={22,Lavender}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,Lavender,line width=0.5mm,](10.36,-21.0) node[align=center,text width=4mm,xshift=4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{1}}-- (11.71,-21.0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},Lavender,line width=0.5mm,](9.89,-34.5) -- (11.24,-34.5) node[align=center,text width=4mm,xshift=-4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{1}};%
 \draw (14.24,-25.7)pic{curso={CI1107,Comunicación oral,3,0,1,WildStrawberry}};%
-\draw (11.24,-25.2)pic{requi={23,WildStrawberry}};%
+\draw [-{Stealth[length=3mm,width=2mm]},WildStrawberry,line width=0.5mm,](9.89,-24.5) -- (11.71,-24.5);%
 \draw (14.24,-29.9)pic{curso={MI2106,Estática,4,0,3,Mulberry}};%
-\draw (17.240000000000002,-29.4)pic{requi={24,Mulberry}};%
-\draw (11.24,-29.4)pic{requi={25,Mulberry}};%
-\draw (11.24,-30.4)pic{requi={26,Mulberry}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,Mulberry,line width=0.5mm,](10.36,-29.4) node[align=center,text width=4mm,xshift=4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{2}}-- (11.71,-29.4);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},Mulberry,line width=0.5mm,](9.89,-9.3) -- (11.24,-9.3) node[align=center,text width=4mm,xshift=-4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{2}};%
+\draw [-{Stealth[length=3mm,width=2mm]},Mulberry,line width=0.5mm,](9.89,-28.7) -- (11.71,-28.7);%
 \draw (14.24,-34.1)pic{curso={CS2303,Relaciones laborales,3,0,2,Tan}};%
 \draw (14.24,-38.3)pic{curso={CS1502,Introducción a la técnica ciencia y tecnología,2,0,1,Tan}};%
 \draw (21.11,-4.7)pic{curso={MA2105,Ecuaciones diferenciales,4,0,4,LimeGreen}};%
-\draw (24.11,-4.2)pic{requi={27,LimeGreen}};%
-\draw (18.11,-4.2)pic{requi={28,LimeGreen}};%
+\draw [-{Stealth[length=3mm,width=2mm]},LimeGreen,line width=0.5mm,](16.76,-3.5) -- (18.58,-3.5);%
 \draw (21.11,-8.9)pic{curso={FI2103,Física general III,4,0,3,LimeGreen}};%
-\draw (24.11,-8.4)pic{requi={29,LimeGreen}};%
 \draw (21.11,-13.1)pic{curso={TBD,Análisis de circuitos I,4,0,3,YellowOrange}};%
-\draw (18.11,-12.6)pic{requi={30,YellowOrange}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,YellowOrange,line width=0.5mm,](17.23,-12.6) node[align=center,text width=4mm,xshift=4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{3}}-- (18.58,-12.6);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},YellowOrange,line width=0.5mm,](16.76,-9.3) -- (18.11,-9.3) node[align=center,text width=4mm,xshift=-4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{3}};%
 \draw (21.11,-17.3)pic{curso={TBD,Laboratorio de circuitos I,0,2,1,YellowOrange}};%
 \draw (21.11,-21.5)pic{curso={TBD,Transductores,2,0,2,YellowOrange}};%
-\draw (24.11,-21.0)pic{requi={31,YellowOrange}};%
-\draw (18.11,-21.0)pic{requi={32,YellowOrange}};%
+\draw [-{Stealth[length=3mm,width=2mm]},YellowOrange,line width=0.5mm,](16.76,-20.3) -- (18.58,-20.3);%
 \draw (21.11,-29.9)pic{curso={MI3117,Dinámica,4,0,3,Mulberry}};%
-\draw (18.11,-29.4)pic{requi={33,Mulberry}};%
+\draw [-{Stealth[length=3mm,width=2mm]},Mulberry,line width=0.5mm,](16.76,-28.7) -- (18.58,-28.7);%
 \draw (21.11,-34.1)pic{curso={CS3404,Seminario de ética en ingeniería,3,0,2,Tan}};%
 \draw (21.11,-38.3)pic{curso={SE1100,Actividad cultural I,2,0,0,Tan}};%
 \draw (27.98,-4.7)pic{curso={MA2104,Cálculo superior,4,0,4,LimeGreen}};%
 \draw (27.98,-8.9)pic{curso={TBD,Estadística aplicada I,3,0,2,Apricot}};%
-\draw (24.98,-8.4)pic{requi={34,Apricot}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,Apricot,line width=0.5mm,](24.1,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{4}}-- (25.45,-8.4);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},Apricot,line width=0.5mm,](23.63,-5.1) -- (24.98,-5.1) node[align=center,text width=4mm,xshift=-4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{4}};%
 \draw (27.98,-13.1)pic{curso={TBD,Análisis de circuitos II,4,0,3,YellowOrange}};%
 \draw (27.98,-17.3)pic{curso={TBD,Laboratorio de circuitos II,0,2,1,YellowOrange}};%
+\draw [-{Stealth[length=3mm,width=2mm]},YellowOrange,line width=0.5mm,](27.98,-14.72) -- (27.98,-15.69);%
 \draw (27.98,-21.5)pic{curso={TBD,Instrumentación,2,0,2,YellowOrange}};%
-\draw (24.98,-21.0)pic{requi={35,YellowOrange}};%
+\draw [-{Stealth[length=3mm,width=2mm]},YellowOrange,line width=0.5mm,](23.63,-20.3) -- (25.45,-20.3);%
 \draw (27.98,-25.7)pic{curso={TBD,Laboratorio de instrumentación,0,2,1,YellowOrange}};%
+\draw [-{Stealth[length=3mm,width=2mm]},YellowOrange,line width=0.5mm,](27.98,-23.12) -- (27.98,-24.09);%
 \draw (27.98,-29.9)pic{curso={MI3130,Termodinámica,4,0,3,Mulberry}};%
-\draw (24.98,-29.4)pic{requi={36,Mulberry}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,Mulberry,line width=0.5mm,](24.1,-29.4) node[align=center,text width=4mm,xshift=4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{5}}-- (25.45,-29.4);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},Mulberry,line width=0.5mm,](23.63,-9.3) -- (24.98,-9.3) node[align=center,text width=4mm,xshift=-4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{5}};%
 \draw (27.98,-34.1)pic{curso={CS4402,Seminario de estudios costarricenses,3,0,2,Tan}};%
 \draw (27.98,-38.3)pic{curso={SE1200,Actividad deportiva I,0,2,0,Tan}};%
 \draw (34.85,-4.7)pic{curso={CM3207,Métodos numéricos para ingeniería,4,0,3,LimeGreen}};%

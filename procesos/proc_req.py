@@ -1,5 +1,4 @@
 # Este archivo es para crear la columna esrequisito a partir de la columna requisitos de cada curso
-import numpy as np
 import pandas as pd
 
 cursos = pd.read_csv("./cursos/cursos_malla.csv")
