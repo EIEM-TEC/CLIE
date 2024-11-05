@@ -234,6 +234,7 @@ def generar_malla():
             corequi = str(cursos_TRC[cursos_TRC.id == id].correquisitos.item())
             esrequi = cursos_TRC[cursos_TRC.id == id].esrequisito.str.split(';',expand=True)         
             malla_TRC.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+            sesgovert = 0
             if not(requi[0].isna().item()):
                 for column in requi.columns:
                     idreq = requi[column].item()
@@ -244,22 +245,15 @@ def generar_malla():
                         malla_TRC.append(colocar_arrowreq(semestre,sesgo,fila,-0.7,"black"))
                     else:
                         reqcounter +=1
-                        malla_TRC.append(colocar_diareq(semestre,sesgo,fila,0,reqcounter,"black"))
+                        malla_TRC.append(colocar_diareq(semestre,sesgo,fila,sesgovert,reqcounter,"black"))
                         malla_TRC.append(colocar_diaesreq(semreq,sesgo,filareq,0.9,reqcounter,"black"))
+                        sesgovert += -0.9
             if not(corequi == 'nan'):
                 semcoreq = cursos_TRC[cursos_TRC.id == corequi].semestre.item()
                 filacoreq = cursos_TRC[cursos_TRC.id == corequi].fila.item()
                 if (semcoreq == semestre) and (filacoreq == fila - 1):
                     malla_TRC.append(colocar_arrowcoreq(semestre,sesgo,fila,"black"))
 
-            # if not(esrequi[0].isna().item()):
-            #     for column in esrequi.columns:
-            #         idreq = esrequi[column].item()
-            #         reqcounter += 1
-            #         # codreq = cursos_TRC[cursos_TRC.id == idreq].codigo.item()
-            #         # semreq = cursos_TRC[cursos_TRC.id == idreq].semestre.item()
-            #         # filareq = cursos_TRC[cursos_TRC.id == idreq].fila.item()
-            #         malla_TRC.append(colocar_esreq(semestre,sesgo,fila,column,reqcounter,color))
     doc.append(NoEscape(r"\newpage"))
     sesgo = 8
     with doc.create(TikZ(
