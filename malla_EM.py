@@ -16,17 +16,19 @@ areas = pd.read_csv("areas.csv")
 
 TRC = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD"]
 
+# black, blue, brown, cyan, darkgray, gray, green, lightgray, lime, magenta, olive, orange, pink, purple, red, teal, violet, white, yellow.
+
 area_colors = {
-    "ADD": "Apricot",
-    "AER": "Thistle",
-    "AUT": "Lavender",
-    "CIB": "LimeGreen",
-    "CYD": "WildStrawberry",
-    "FPH": "Tan",
-    "IEE": "YellowOrange",
-    "IMM": "Mulberry",
-    "INS": "BlueGreen",
-    "SCF": "Melon"
+    "ADD": "blue!20!white",
+    "AER": "brown!20!white",
+    "AUT": "cyan!20!white",
+    "CIB": "green!20!white",
+    "CYD": "magenta!20!white",
+    "FPH": "olive!20!white",
+    "IEE": "orange!20!white",
+    "IMM": "red!20!white",
+    "INS": "teal!20!white",
+    "SCF": "violet!20!white"
 }
 
 def textcolor(size,vspace,color,bold,text,hspace="0"):
@@ -81,7 +83,7 @@ def colocar_diaesreq(semestre,sesgo,fila,sesgovert,num,color):#1.35 de largo
     dump += NoEscape(f"[-{{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}},{color},line width=0.5mm,]")
     dump += NoEscape(f"({round(6.87*(semestre-sesgo)+3.02,2)},{round(-4.2*fila-sesgovert,2)}) -- ")
     dump += NoEscape(f"({round(6.87*(semestre-sesgo)+4.37,2)},{round(-4.2*fila-sesgovert,2)}) ")
-    dump += NoEscape(r"node[align=center,text width=4mm,xshift=-4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{")
+    dump += NoEscape(r"node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
     dump += NoEscape(f"{num}")
     dump += NoEscape(r"}};")                 
     return dump
@@ -90,7 +92,7 @@ def colocar_diareq(semestre,sesgo,fila,sesgovert,num,color):#1.35 de largo
     dump = NoEscape(r"\draw ")
     dump += NoEscape(f"[{{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}}-,{color},line width=0.5mm,]")
     dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.38,2)},{round(-4.2*fila-sesgovert,2)}) ")
-    dump += NoEscape(r"node[align=center,text width=4mm,xshift=4.5mm]{\fontsize{10pt}{10pt}\selectfont \textbf{")
+    dump += NoEscape(r"node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
     dump += NoEscape(f"{num}")
     dump += NoEscape(r"}}")  
     dump += NoEscape(f"-- ({round(6.87*(semestre-sesgo)-2.03,2)},{round(-4.2*fila-sesgovert,2)});")
@@ -239,16 +241,16 @@ def generar_malla():
                     semreq = cursos_TRC[cursos_TRC.id == idreq].semestre.item()
                     filareq = cursos_TRC[cursos_TRC.id == idreq].fila.item()
                     if (filareq == fila) and (semreq == semestre - 1):
-                        malla_TRC.append(colocar_arrowreq(semestre,sesgo,fila,-0.7,color))
+                        malla_TRC.append(colocar_arrowreq(semestre,sesgo,fila,-0.7,"black"))
                     else:
                         reqcounter +=1
-                        malla_TRC.append(colocar_diareq(semestre,sesgo,fila,0,reqcounter,color))
-                        malla_TRC.append(colocar_diaesreq(semreq,sesgo,filareq,0.9,reqcounter,color))
+                        malla_TRC.append(colocar_diareq(semestre,sesgo,fila,0,reqcounter,"black"))
+                        malla_TRC.append(colocar_diaesreq(semreq,sesgo,filareq,0.9,reqcounter,"black"))
             if not(corequi == 'nan'):
                 semcoreq = cursos_TRC[cursos_TRC.id == corequi].semestre.item()
                 filacoreq = cursos_TRC[cursos_TRC.id == corequi].fila.item()
                 if (semcoreq == semestre) and (filacoreq == fila - 1):
-                    malla_TRC.append(colocar_arrowcoreq(semestre,sesgo,fila,color))
+                    malla_TRC.append(colocar_arrowcoreq(semestre,sesgo,fila,"black"))
 
             # if not(esrequi[0].isna().item()):
             #     for column in esrequi.columns:

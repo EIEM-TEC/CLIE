@@ -17,4 +17,4 @@ for index, row in cursosreq.iterrows():
             cursos.loc[cursos['id'] == req, 'esrequisito'] = cursos[cursos['id'] == req]['esrequisito'].item() + ';' + id
 
 
-cursos.to_csv('./cursos/cursos_malla.csv')
+cursos.to_csv('./cursos/cursos_malla.csv',index=False)
