@@ -1,0 +1,114 @@
+id,semestre,codigo,nombre,tipo,requisitos,correquisitos,creditos,horasTot,horasEC
+CIB0001,0,MA0101,Matemática general,Teórico,,,2,5,1
+CYD0002,0,CI0205,Prueba avanzada de inglés,No aplica,,,0,0,0
+CIB0101,1,MA1102,Cálculo diferencial e integral,Teórico,MA0101,,4,5,7
+CIB0102,1,FI1101,Física general I,Teórico,,MA1102,3,4,5
+CIB0103,1,FI2201,Laboratorio de física general I,Práctico,,FI1101,1,2,1
+CIB0104,1,QU1106,Química básica I,Teórico,,,3,4,5
+CIB0105,1,QU1102,Laboratorio de química básica I,Práctico,,QU1106,1,2,1
+CYD0106,1,CI1106,Comunicación escrita,Teórico,,,2,3,3
+CYD0107,1,MI2101,Dibujo técnico,Teórico,,,3,4,5
+FPH0108,1,MI0701,Introducción a la Ingeniería Electromecánica,Teórico,,,1,2,1
+FPH0109,1,FH1000,Centros de formación humanistica,Teórico,,,0,3,0
+CIB0201,2,MA1103,Cálculo y álgebra lineal,Teórico,MA1102,,4,4,8
+CIB0202,2,FI1102,Física general II,Teórico,FI1101,,3,4,5
+CIB0203,2,FI1202,Laboratorio de física general II,Práctico,,FI1102,1,2,1
+AUT0205,2,CAXXXX,Introducción a la computación,Teórico,MI0701,,3,4,5
+CYD0206,2,CI1107,Comunicación oral,Teórico,CI1106,,1,3,0
+IMM0207,2,MI2106,Estática,Teórico,FI1101; MI2101,,3,4,5
+FPH0208,2,CS2303,Relaciones laborales,Teórico,,,2,3,3
+FPH0209,2,CS1502,Introducción a la técnica ciencia y tecnología,Teórico,,,1,2,1
+CIB0301,3,MA2105,Ecuaciones diferenciales,Teórico,MA1103,,4,4,8
+CIB0302,3,FI2103,Física general III,Teórico,,,3,4,5
+IEE0303,3,MI0702,Análisis de circuitos I,Teórico,FI1102,,3,4,5
+IEE0304,3,MI0703,Laboratorio de circuitos I,Práctico,,MI0702,1,2,1
+IEE0305,3,MI0704,Transductores,Teórico,CAXXXX,,2,2,4
+IMM0307,3,MI3117,Dinámica,Teórico,MI2106,,3,4,5
+FPH0308,3,CS3404,Seminario de ética en ingeniería,Teórico,,,2,3,3
+FPH0309,3,SE1100,Actividad cultural I,Teórico,,,0,2,0
+CIB0401,4,MA2104,Cálculo superior,Teórico,MA1103,,4,4,8
+ADD0402,4,MI0705,Estadística aplicada I,Teórico,MA2105,,2,3,3
+IEE0403,4,MI0706,Análisis de circuitos II,Teórico,MI0703,,3,4,5
+IEE0404,4,MI0707,Laboratorio de circuitos II,Práctico,,MI0706,1,2,1
+IEE0405,4,MI0708,Instrumentación,Teórico,MI0704,,2,2,4
+IEE0406,4,MI0709,Laboratorio de instrumentación,Práctico,,MI0708,1,2,1
+IMM0407,4,MI3130,Termodinámica,Teórico,FI2103,,3,4,5
+FPH0408,4,CS4402,Seminario de estudios costarricenses,Teórico,,,2,3,3
+FPH0409,4,SE1200,Actividad deportiva I,Práctico,,,0,2,0
+CIB0501,5,CM3207,Métodos numéricos para ingeniería,Teórico,,,3,4,5
+ADD0502,5,MI0710,Estadística aplicada II,Teórico,MI0705,,2,3,3
+IEE0503,5,MI0711,Sistemas analógicos,Teórico,MI0706,,2,3,3
+AUT0505,5,MI0712,Modelado y simulación de sistemas electromecánicos,Teórico - Práctico,,,3,4,5
+IMM0506,5,ME220X,Ciencia e ingeniería de los materiales,Teórico - Práctico,QU1106; MI3130,,3,4,5
+IMM0507,5,MI0713,Manufactura,Teórico,,,2,3,3
+IMM0508,5,MI0714,Taller de manufactura,Teórico - Práctico,,MI0713,2,4,2
+CYD0509,5,CI3203,Inglés para Electromecánica,Teórico,,,1,2,1
+FPH0601,6,MI0714,Administración de proyectos,Teórico,,,2,3,3
+IEE0603,6,MI0715,Sistemas digitales,Teórico,MI0711,,2,3,3
+IEE0604,6,MI0716,Laboratorio de sistemas analógicos y digitales,Práctico,,MI0715,1,2,1
+IMM0605,6,CM4108,Transferencia de calor,Teórico,ME220X,,3,4,5
+IMM0606,6,MI3115,Resistencia de materiales,Teórico,,,3,4,5
+IMM0607,6,MI3108,Mecánica de fluidos,Teórico,,,3,4,5
+IMM0608,6,MI3111,Laboratorio de mecánica de fluidos,Práctico,,MI3108,1,2,1
+CYD0609,6,MI3124,Dibujo industrial,Teórico,MI0714,,3,4,5
+FPH0701,7,MI0717,Metodología de la investigación,Teórico,MI0714,,1,2,1
+IEE0703,7,MI0718,Máquinas eléctricas I,Teórico,MI0716,,3,4,5
+IEE0704,7,MI0719,Laboratorio de máquinas eléctricas I,Práctico,,MI0718,1,2,1
+AUT0705,7,MI0720,Control automático,Teórico,MI0712,,3,4,5
+AUT0706,7,MI0721,Microcontroladores,Teórico - Práctico,,MI0721,2,3,3
+IMM0707,7,MI0722,Sistemas térmicos,Teórico,,,3,3,6
+IMM0708,7,MI0723,Laboratorio de sistemas térmicos,Práctico,,MI0722,1,2,1
+IMM0709,7,MI4136,Elementos de máquinas,Teórico,,,3,4,5
+IEE0803,8,MI0724,Máquinas eléctricas II,Teórico,MI0719,,3,4,5
+IEE0804,8,MI0725,Laboratorio de máquinas eléctricas II,Práctico,,MI0724,1,2,1
+AUT0805,8,MI0726,Control por eventos discretos,Teórico,MI0720,,3,4,5
+AUT0806,8,MI0727,Laboratorio de control,Práctico,,MI0726,1,2,1
+FPH0809,8,SE1400,Actividad cultural - deportiva,Práctico,,,0,2,0
+INS0801,8,MI0801,Sistemas electricos de transmisión y distribución,Teórico,,,3,3,6
+INS0802,8,MI4212,Instalaciones eléctricas,Teórico,,,3,4,5
+INS0807,8,MI3116,Turbomáquinas,Teórico,,,3,4,5
+INS0808,8,MI3119,Laboratorio de turbomáquinas,Práctico,,,1,2,1
+INS0901,9,MI0802,Sistemas de generación y almacenamiento de energía,Teórico,,,3,4,5
+INS0902,9,MI0803,Gestión de la energía,Teórico,,,3,4,5
+INS0905,9,MI0804,Instalaciones mecánico-sanitarias,Teórico,,,3,4,5
+INS0906,9,MI6252,Neumática y oleohidraulica,Teórico - Práctico,,,3,4,5
+INS0907,9,MI0805,Taller de dibujo para instalaciones electromecánicas,Práctico,,,1,2,1
+INS0908,9,MI0806,Sistemas de refrigeración y aire acondicionado,Teórico,,,3,3,6
+INS0909,9,MI0807,Laboratorio de refrigeración y aire acondicionado,Práctico,,,1,2,1
+INS1001,10,MI0808,Gestion del ciclo de vida y la transformación digital,Teórico,,,2,3,3
+INS1002,10,MI0809,Diseño e integración de instalaciones electromecánicas,Teórico,,,3,4,5
+INS1005,10,MI0901,Electiva I,Teórico,,,3,4,5
+INS1006,10,MI0902,Electiva II,Teórico,,,3,4,5
+INS1009,10,MI1001,Trabajo final de graduación,Práctico,,,7,21,0
+AER0801,8,MI0810,Aviónica,Teórico,,,3,4,5
+AER0802,8,MI0811,Máquinas y mecanismos,Teórico,,,3,4,5
+AER0807,8,MI0812,Sistemas de propulsión,Teórico,,,3,4,5
+AER0901,9,MI0813,Sistemas de aeronaves de ala fija y giratoria,Teórico,,,3,4,5
+AER0902,9,MI0814,Sistemas de aeronaves no tripulados y de despegue vertical,Teórico,,,3,4,5
+AER0903,9,MI0815,Aerodinámica y dinámica de vuelo,Teórico,,,3,4,5
+AER0904,9,MI0816,Laboratorio de aerodinámica y dinámica de vuelo,Práctico,,,1,2,1
+AER0905,9,MI0817,Materiales en aeronautica,Teórico,,,2,3,3
+AER0906,9,MI0818,Análisis mecánico de estructuras y mecanismos de la aeronave,Teórico,,,3,4,5
+AER0907,9,MI0819,Gestión del ciclo de vida de la aeronave,Teórico,,,2,3,3
+AER0908,9,MI0820,Taller de metrología aeronautica,Teórico,,,1,2,1
+AER1001,10,MI0821,Control automático de vuelo y tráfico,Teórico,,,3,4,5
+AER1002,10,MI0822,Diseño eléctrico aeroportuario,Teórico,,,2,3,3
+AER1005,10,MI0901,Electiva I,Teórico,,,3,4,5
+AER1006,10,MI0902,Electiva II,Teórico,,,3,4,5
+AER1009,10,MI1001,Trabajo final de graduación,Práctico,,,7,21,0
+SCF0801,8,MI0823,Sistemas embebidos en tiempo real,Teórico,,,2,3,3
+SCF0802,8,MI0824,Laboratorio de sistemas embebidos en tiempo real,Práctico,,,1,2,1
+SCF0807,8,MI0811,Máquinas y mecanismos,Teórico,,,3,4,5
+SCF0808,8,MI0825,Ingenieria de sistemas: requerimientos y arquitectura,Teórico,,,3,4,5
+SCF0901,9,MI0826,Sistemas de monitoreo e internet de las cosas,Teórico,,,3,3,6
+SCF0902,9,MI0827,Sistemas de visión de máquina,Teórico,,,3,3,6
+SCF0903,9,MI0828,Sistema de robótica y domótica,Teórico,,,3,3,6
+SCF0904,9,MI0829,Laboratorio de sistemas inteligentes,Práctico,,,1,2,1
+SCF0907,9,MI0830,Tecnologías de empaquetado de semiconductores y MEMS,Teórico,,,3,4,5
+SCF0908,9,MI0831,Ingenieria de sistemas: integración y validación,Teórico,,,3,4,5
+SCF0909,9,MI0832,Fundamentos de ciberseguridad,Teórico,,,2,3,3
+SCF1001,10,MI0833,Diseño de interfases humano-máquina,Teórico,,,3,3,6
+SCF1005,10,MI0901,Electiva I,Teórico,,,3,4,5
+SCF1006,10,MI0902,Electiva II,Teórico,,,3,4,5
+SCF1008,10,MI0834,Taller de integración de sistemas,Teórico - Práctico,,,2,4,2
+SCF1009,10,MI1001,Trabajo final de graduación,Práctico,,,7,21,0

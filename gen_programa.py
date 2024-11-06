@@ -24,9 +24,9 @@ datProfes = pd.read_csv("profes_datos.csv")
 areas = pd.read_csv("areas.csv")
 
 tipCursoDic = {
-    0: "Teórico",
-    1: "Práctico",
-    2: "Teórico - Práctico"
+    1: "Teórico",
+    2: "Práctico",
+    3: "Teórico - Práctico"
 }
 
 eleCursoDic = {

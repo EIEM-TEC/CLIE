@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (MiKTeX 24.3) (format=lualatex 2024.4.2)  31 OCT 2024 17:09
+This is LuaHBTeX, Version 1.18.0 (MiKTeX 24.3) (format=lualatex 2024.4.2)  6 NOV 2024 14:00
  restricted system commands enabled.
 **C:/Repositories/CLIE/programas/MI2101.tex
 (C:/Repositories/CLIE/programas/MI2101.tex
@@ -1273,67 +1273,106 @@ Overfull \hbox (23.99998pt too wide) in alignment at lines 71--71
 
 {C:/Users/juanj/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}<../figuras/Log
 o_portada.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 75--110
-
- []
-
 <../figuras/Logo.png, id=12, 451.6875pt x 83.5622pt>
 File: ../figuras/Logo.png Graphic file (type png)
 <use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 110.
+Package luatex.def Info: ../figuras/Logo.png  used on input line 112.
 (luatex.def)             Requested size: 177.82971pt x 32.89896pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 110.
+(Font)              <7> on input line 112.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 110.
-[2<../figuras/Logo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 120--130
+(Font)              <5> on input line 112.
+ [2<../figuras/Logo.png>]
+Underfull \hbox (badness 3536) in paragraph at lines 134--134
+[][]|[]\TU/Arial(0)/b/n/12 2 Des-crip-ción ge-
+ []
 
+
+Overfull \hbox (10.09149pt too wide) in paragraph at lines 134--134
+[][][] 
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 151--158
+\TU/Arial(0)/m/n/12 de una pie-za me-cá-ni-ca, se-gún las nor-mas IN-TE/ISO, 
+que con-ten-ga
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--158
+
+ []
+
+
+Overfull \hbox (10.09149pt too wide) in paragraph at lines 159--159
+[][] 
  []
 
 File: ../figuras/Logo.png Graphic file (type png)
 <use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 130.
+Package luatex.def Info: ../figuras/Logo.png  used on input line 159.
 (luatex.def)             Requested size: 177.82971pt x 32.89896pt.
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 130--204
+Overfull \hbox (10.09149pt too wide) in paragraph at lines 159--159
+[][] 
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--248
+
+ []
+
+
+Overfull \hbox (10.09149pt too wide) in paragraph at lines 248--248
+[][] 
  []
 
 File: ../figuras/Logo.png Graphic file (type png)
 <use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 204.
+Package luatex.def Info: ../figuras/Logo.png  used on input line 248.
 (luatex.def)             Requested size: 177.82971pt x 32.89896pt.
 [4]
-File: ../figuras/Logo.png Graphic file (type png)
-<use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 204.
-(luatex.def)             Requested size: 177.82971pt x 32.89896pt.
- [5]
-File: ../figuras/Logo.png Graphic file (type png)
-<use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 204.
-(luatex.def)             Requested size: 177.82971pt x 32.89896pt.
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--242
-
+Overfull \hbox (10.09149pt too wide) in paragraph at lines 248--248
+[][] 
  []
 
 File: ../figuras/Logo.png Graphic file (type png)
 <use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 242.
+Package luatex.def Info: ../figuras/Logo.png  used on input line 248.
+(luatex.def)             Requested size: 177.82971pt x 32.89896pt.
+[5]
+Overfull \hbox (10.09149pt too wide) in paragraph at lines 248--248
+[][] 
+ []
+
+File: ../figuras/Logo.png Graphic file (type png)
+<use ../figuras/Logo.png>
+Package luatex.def Info: ../figuras/Logo.png  used on input line 248.
+(luatex.def)             Requested size: 177.82971pt x 32.89896pt.
+[6]
+Overfull \hbox (10.09149pt too wide) in paragraph at lines 248--248
+[][] 
+ []
+
+File: ../figuras/Logo.png Graphic file (type png)
+<use ../figuras/Logo.png>
+Package luatex.def Info: ../figuras/Logo.png  used on input line 251.
 (luatex.def)             Requested size: 177.82971pt x 32.89896pt.
 [7]
+Overfull \hbox (10.09149pt too wide) in paragraph at lines 293--293
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--305
+
+ []
+
 File: ../figuras/Logo.png Graphic file (type png)
 <use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 242.
+Package luatex.def Info: ../figuras/Logo.png  used on input line 305.
 (luatex.def)             Requested size: 177.82971pt x 32.89896pt.
- [8] 
+[8] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./MI2101.aux
 LaTeX Info: Redefining \sptext on input line 13.
@@ -1350,18 +1389,18 @@ Package logreq Info: Writing requests to 'MI2101.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 29592 strings out of 476435
+ 29650 strings out of 476435
  125056,1977958 words of node,token memory allocated
  618 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 4 glue, 3 kern, 1 glyph, 10 attribute, 82 glue_spec
 , 6 attribute_list, 2 write nodes
-   avail lists: 1:2,2:1327,3:407,4:72,5:101,6:117,7:7217,8:2,9:869,10:8,11:911
- 51006 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:1571,3:611,4:88,5:100,6:119,7:7387,8:2,9:866,10:28,11:917
+ 51064 multiletter control sequences out of 65536+600000
  65 fonts using 17086055 bytes
  101i,17n,101p,1486b,1794s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Windows/Fonts/arialni.ttf><C:/Windows/Fonts/arialbd.ttf><C:/Windows/Fonts/ar
 ial.ttf>
-Output written on MI2101.pdf (8 pages, 207866 bytes).
+Output written on MI2101.pdf (8 pages, 208859 bytes).
 
 PDF statistics: 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)

@@ -1,4 +1,5 @@
 import roman
+import subprocess
 import numpy as np
 import pandas as pd
 from pylatex import Document, Package, Command, PageStyle, Head, Foot, NewPage,\
@@ -334,7 +335,6 @@ def generar_malla():
             color = area_colors.get(area)            
             malla_SCF.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
     doc.generate_pdf(f"malla_EM", clean=True, clean_tex=False, compiler='lualatex',silent=True)
-
 
 
 datos_malla = pd.DataFrame()
