@@ -95,11 +95,15 @@ def colocar_arrowreqs(semestre,sesgo,fila,dir,color):
     return dump
 
 
-def colocar_arrowcoreq(semestre,sesgo,fila,color):
+def colocar_arrowcoreq(semestre,sesgo,fila,dir,color):
     dump = NoEscape(r"\draw ")
     dump += NoEscape(f"[-{{Stealth[length=3mm,width=2mm]}},{color},line width=0.5mm]")
-    dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila+2.08,2)}) --++ ")
-    dump += NoEscape(f"(0,-0.97);")
+    if dir == 1:
+        dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila-3.08,2)}) --++ ")
+        dump += NoEscape(f"(0,0.97);")
+    if dir == -1:
+        dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila+2.08,2)}) --++ ")
+        dump += NoEscape(f"(0,-0.97);")        
     return dump
 
 def colocar_diaesreq(semestre,sesgo,fila,sesgovert,num,color):#1.35 de largo
@@ -275,14 +279,12 @@ def generar_malla():
                     sevreq = cursos_TRC[cursos_TRC.id == idreq].sevreq.item()
                     if (filareq == fila) and (semreq == semestre - 1):
                         malla_TRC.append(colocar_arrowreq(semestre,sesgo,fila,-0.7,"black"))
-                        cursos_TRC.loc[cursos_TRC['id'] == idreq, 'sevreq'] = sevreq + 1
                     elif ((filareq == fila - 1) or (filareq == fila + 1)) and (semreq == semestre - 1):
                         if (filareq == fila - 1):
                             dir = -1
                         if (filareq == fila + 1):
                             dir = 1
-                        malla_TRC.append(colocar_arrowreqs(semestre,sesgo,fila,dir,"black"))   
-                        cursos_TRC.loc[cursos_TRC['id'] == idreq, 'sevreq'] = sevreq + 1                 
+                        malla_TRC.append(colocar_arrowreqs(semestre,sesgo,fila,dir,"black"))                   
                     else:
                         reqcounter +=1
                         malla_TRC.append(colocar_diareq(semestre,sesgo,fila,0,reqcounter,"black"))
@@ -291,8 +293,12 @@ def generar_malla():
             if not(corequi == 'nan'):
                 semcoreq = cursos_TRC[cursos_TRC.id == corequi].semestre.item()
                 filacoreq = cursos_TRC[cursos_TRC.id == corequi].fila.item()
-                if (semcoreq == semestre) and (filacoreq == fila - 1):
-                    malla_TRC.append(colocar_arrowcoreq(semestre,sesgo,fila,"black"))
+                if ((filacoreq == fila - 1) or (filacoreq == fila + 1)) and (semcoreq == semestre):
+                    if (filacoreq == fila - 1):
+                        dir = -1
+                    if (filacoreq == fila + 1):
+                        dir = 1
+                    malla_TRC.append(colocar_arrowcoreq(semestre,sesgo,fila,dir,"black"))
                 else:
                     print('Peligro: correquisitos en filas no lejanas')
 
