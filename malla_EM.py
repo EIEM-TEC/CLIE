@@ -13,6 +13,8 @@ from pylatex.utils import NoEscape, bold, italic
 
 cursos = pd.read_csv("cursos/cursos_malla.csv",
     dtype = {'id':str,'codigo':str,'nombre':str,'area':str,'semestre':int,'fila':int,'horasTeoria':int,'horasPractica':int,'creditos':int})
+cursos['sevreq'] = cursos['creditos'] * 0
+
 areas = pd.read_csv("areas.csv")
 
 TRC = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD"]
@@ -67,23 +69,43 @@ def colocar_semestre(semestre,sesgo,color,horasteoriasemestre,horaspracticasemes
 
 def colocar_arrowreq(semestre,sesgo,fila,sesgovert,color):
     dump = NoEscape(r"\draw ")
-    dump += NoEscape(f"[-{{Stealth[length=3mm,width=2mm]}},{color},line width=0.5mm,]")
+    dump += NoEscape(f"[-{{Stealth[length=3mm,width=2mm]}},{color},line width=0.5mm]")
     dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila-sesgovert,2)}) -- ")
     dump += NoEscape(f"({round(6.87*(semestre-sesgo)-2.03,2)},{round(-4.2*fila-sesgovert,2)});")
     return dump
 
+def colocar_arrowreqs(semestre,sesgo,fila,dir,color):
+    dump = NoEscape(r"\draw ")
+    dump += NoEscape(f"[{color},line width=0.5mm]") 
+    if dir == 1:
+        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila-3.5,2)}) --++ (0.5,0) --++ (0,1.8)coordinate(inicio)")
+    else:
+        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila+2.5,2)}) --++ (0.5,0) --++ (0,-1.8)coordinate(inicio)")
+    dump += NoEscape(r";")
+    dump += NoEscape("\n")
+    dump += NoEscape(r"\draw ")
+    dump += NoEscape(f"[-{{Stealth[length=3mm,width=2mm]}},{color},line width=0.5mm]")
+    dump += NoEscape(f"(inicio) --++ (1.35,0)")
+    dump += NoEscape(r";")
+    dump += NoEscape("\n")
+    dump += NoEscape(r"\draw ")
+    dump += NoEscape(f"[fill,{color}] ")
+    dump += NoEscape(f"(inicio) circle (0.45mm)")
+    dump += NoEscape(r";")
+    return dump
+
+
 def colocar_arrowcoreq(semestre,sesgo,fila,color):
     dump = NoEscape(r"\draw ")
-    dump += NoEscape(f"[-{{Stealth[length=3mm,width=2mm]}},{color},line width=0.5mm,]")
-    dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila+2.08,2)}) -- ")
-    dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila+1.11,2)});")
+    dump += NoEscape(f"[-{{Stealth[length=3mm,width=2mm]}},{color},line width=0.5mm]")
+    dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila+2.08,2)}) --++ ")
+    dump += NoEscape(f"(0,-0.97);")
     return dump
 
 def colocar_diaesreq(semestre,sesgo,fila,sesgovert,num,color):#1.35 de largo
     dump = NoEscape(r"\draw ")
     dump += NoEscape(f"[-{{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}},{color},line width=0.5mm,]")
-    dump += NoEscape(f"({round(6.87*(semestre-sesgo)+3.02,2)},{round(-4.2*fila-sesgovert,2)}) -- ")
-    dump += NoEscape(f"({round(6.87*(semestre-sesgo)+4.37,2)},{round(-4.2*fila-sesgovert,2)}) ")
+    dump += NoEscape(f"({round(6.87*(semestre-sesgo)+3.02,2)},{round(-4.2*fila-sesgovert,2)}) --++ (1.35,0) ")
     dump += NoEscape(r"node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
     dump += NoEscape(f"{num}")
     dump += NoEscape(r"}};")                 
@@ -96,8 +118,17 @@ def colocar_diareq(semestre,sesgo,fila,sesgovert,num,color):#1.35 de largo
     dump += NoEscape(r"node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
     dump += NoEscape(f"{num}")
     dump += NoEscape(r"}}")  
-    dump += NoEscape(f"-- ({round(6.87*(semestre-sesgo)-2.03,2)},{round(-4.2*fila-sesgovert,2)});")
+    dump += NoEscape(f"--++ (1.35,0);")
     return dump
+
+# def colocar_diacoreq(semestre,sesgo,fila,num,color):
+#     dump = NoEscape(r"\draw ")
+#     dump += NoEscape(f"[{{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}}-,{color},line width=0.5mm,]")
+#     dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila+1.11,2)})--++ (0,0.5)")
+#     dump += NoEscape(r"node[align=center,text width=4mm,yshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
+#     dump += NoEscape(f"{num}")
+#     dump += NoEscape(r"}};")  
+#     return dump
 
 def generar_malla():
     #Geometría
@@ -235,25 +266,35 @@ def generar_malla():
             corequi = str(cursos_TRC[cursos_TRC.id == id].correquisitos.item())
             esrequi = cursos_TRC[cursos_TRC.id == id].esrequisito.str.split(';',expand=True)         
             malla_TRC.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
-            sesgovert = 0
             if not(requi[0].isna().item()):
                 for column in requi.columns:
                     idreq = requi[column].item()
                     codreq = cursos_TRC[cursos_TRC.id == idreq].codigo.item()
                     semreq = cursos_TRC[cursos_TRC.id == idreq].semestre.item()
                     filareq = cursos_TRC[cursos_TRC.id == idreq].fila.item()
+                    sevreq = cursos_TRC[cursos_TRC.id == idreq].sevreq.item()
                     if (filareq == fila) and (semreq == semestre - 1):
                         malla_TRC.append(colocar_arrowreq(semestre,sesgo,fila,-0.7,"black"))
+                        cursos_TRC.loc[cursos_TRC['id'] == idreq, 'sevreq'] = sevreq + 1
+                    elif ((filareq == fila - 1) or (filareq == fila + 1)) and (semreq == semestre - 1):
+                        if (filareq == fila - 1):
+                            dir = -1
+                        if (filareq == fila + 1):
+                            dir = 1
+                        malla_TRC.append(colocar_arrowreqs(semestre,sesgo,fila,dir,"black"))   
+                        cursos_TRC.loc[cursos_TRC['id'] == idreq, 'sevreq'] = sevreq + 1                 
                     else:
                         reqcounter +=1
-                        malla_TRC.append(colocar_diareq(semestre,sesgo,fila,sesgovert,reqcounter,"black"))
-                        malla_TRC.append(colocar_diaesreq(semreq,sesgo,filareq,0.9,reqcounter,"black"))
-                        sesgovert += -0.9
+                        malla_TRC.append(colocar_diareq(semestre,sesgo,fila,0,reqcounter,"black"))
+                        malla_TRC.append(colocar_diaesreq(semreq,sesgo,filareq,sevreq + 0.9,reqcounter,"black"))
+                        cursos_TRC.loc[cursos_TRC['id'] == idreq, 'sevreq'] = sevreq + 1
             if not(corequi == 'nan'):
                 semcoreq = cursos_TRC[cursos_TRC.id == corequi].semestre.item()
                 filacoreq = cursos_TRC[cursos_TRC.id == corequi].fila.item()
                 if (semcoreq == semestre) and (filacoreq == fila - 1):
                     malla_TRC.append(colocar_arrowcoreq(semestre,sesgo,fila,"black"))
+                else:
+                    print('Peligro: correquisitos en filas no lejanas')
 
     doc.append(NoEscape(r"\newpage"))
     sesgo = 8
