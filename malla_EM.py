@@ -18,6 +18,7 @@ cursos['sevreq'] = cursos['creditos'] * 0
 areas = pd.read_csv("areas.csv")
 
 TRC = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD"]
+INS = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD","INS"]
 
 # black, blue, brown, cyan, darkgray, gray, green, lightgray, lime, magenta, olive, orange, pink, purple, red, teal, violet, white, yellow.
 
@@ -267,8 +268,7 @@ def generar_malla():
             area = cursos_TRC[cursos_TRC.id == id].area.item()           
             color = area_colors.get(area)
             requi = cursos_TRC[cursos_TRC.id == id].requisitos.str.split(';',expand=True)
-            corequi = str(cursos_TRC[cursos_TRC.id == id].correquisitos.item())
-            esrequi = cursos_TRC[cursos_TRC.id == id].esrequisito.str.split(';',expand=True)         
+            corequi = str(cursos_TRC[cursos_TRC.id == id].correquisitos.item())     
             malla_TRC.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
             if not(requi[0].isna().item()):
                 for column in requi.columns:
@@ -303,7 +303,7 @@ def generar_malla():
                     print('Peligro: correquisitos en filas no lejanas')
 
     doc.append(NoEscape(r"\newpage"))
-    sesgo = 8
+    sesgo = 7
     with doc.create(TikZ(
             options=TikZOptions
                 (    
@@ -312,23 +312,58 @@ def generar_malla():
                 )
         )) as malla_INS:
         malla_INS.append(colocar_titulo("Licenciatura en Ingeniería Electromecánica con énfasis en Instalaciones (debe cursar primero tronco común)","lightgray"))
-        cursos_INS = cursos[cursos["area"] == "INS"]
-        for semestre in range(8,11):
+        cursos_INS = cursos[cursos["area"].isin(INS)]
+        for semestre in range(7,11):
             horasteoriasemestre = cursos_INS[cursos_INS.semestre == semestre].horasTeoria.sum()
             horaspracticasemestre = cursos_INS[cursos_INS.semestre == semestre].horasPractica.sum()
             creditossemestre = cursos_INS[cursos_INS.semestre == semestre].creditos.sum()
             malla_INS.append(colocar_semestre(semestre,sesgo,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
-        for id in cursos_INS[cursos_INS["area"] == "INS"].id:
-            codigo = cursos_INS[cursos_INS.id == id].codigo.item()
-            nombre = cursos_INS[cursos_INS.id == id].nombre.item()
-            fila = cursos_INS[cursos_INS.id == id].fila.item()
+        for id in cursos_INS.id:
             semestre = cursos_INS[cursos_INS.id == id].semestre.item()
-            horasteoria = cursos_INS[cursos_INS.id == id].horasTeoria.item()
-            horaspractica = cursos_INS[cursos_INS.id == id].horasPractica.item()
-            creditos = cursos_INS[cursos_INS.id == id].creditos.item()
-            area = cursos_INS[cursos_INS.id == id].area.item()           
-            color = area_colors.get(area)            
-            malla_INS.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+            if semestre >= 7:
+                codigo = cursos_INS[cursos_INS.id == id].codigo.item()
+                nombre = cursos_INS[cursos_INS.id == id].nombre.item()
+                fila = cursos_INS[cursos_INS.id == id].fila.item()
+                horasteoria = cursos_INS[cursos_INS.id == id].horasTeoria.item()
+                horaspractica = cursos_INS[cursos_INS.id == id].horasPractica.item()
+                creditos = cursos_INS[cursos_INS.id == id].creditos.item()
+                area = cursos_INS[cursos_INS.id == id].area.item()           
+                color = area_colors.get(area)
+                requi = cursos_INS[cursos_INS.id == id].requisitos.str.split(';',expand=True)
+                corequi = str(cursos_INS[cursos_INS.id == id].correquisitos.item())                 
+                malla_INS.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+                if not(requi[0].isna().item()):
+                    for column in requi.columns:
+                        idreq = requi[column].item()
+                        codreq = cursos_INS[cursos_INS.id == idreq].codigo.item()
+                        semreq = cursos_INS[cursos_INS.id == idreq].semestre.item()
+                        filareq = cursos_INS[cursos_INS.id == idreq].fila.item()
+                        sevreq = cursos_INS[cursos_INS.id == idreq].sevreq.item()
+                        if semestre > 7:
+                            if (filareq == fila) and (semreq == semestre - 1):
+                                malla_INS.append(colocar_arrowreq(semestre,sesgo,fila,-0.7,"black"))
+                            elif ((filareq == fila - 1) or (filareq == fila + 1)) and (semreq == semestre - 1):
+                                if (filareq == fila - 1):
+                                    dir = -1
+                                if (filareq == fila + 1):
+                                    dir = 1
+                                malla_INS.append(colocar_arrowreqs(semestre,sesgo,fila,dir,"black"))                   
+                            else:
+                                reqcounter +=1
+                                malla_INS.append(colocar_diareq(semestre,sesgo,fila,0,reqcounter,"black"))
+                                malla_INS.append(colocar_diaesreq(semreq,sesgo,filareq,sevreq + 0.9,reqcounter,"black"))
+                                cursos_INS.loc[cursos_INS['id'] == idreq, 'sevreq'] = sevreq + 1
+                if not(corequi == 'nan'):
+                    semcoreq = cursos_INS[cursos_INS.id == corequi].semestre.item()
+                    filacoreq = cursos_INS[cursos_INS.id == corequi].fila.item()
+                    if ((filacoreq == fila - 1) or (filacoreq == fila + 1)) and (semcoreq == semestre):
+                        if (filacoreq == fila - 1):
+                            dir = -1
+                        if (filacoreq == fila + 1):
+                            dir = 1
+                        malla_INS.append(colocar_arrowcoreq(semestre,sesgo,fila,dir,"black"))
+                    else:
+                        print('Peligro: correquisitos en filas no lejanas')
     doc.append(NoEscape(r"\newpage"))
     with doc.create(TikZ(
             options=TikZOptions
