@@ -19,6 +19,8 @@ areas = pd.read_csv("areas.csv")
 
 TRC = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD"]
 INS = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD","INS"]
+AER = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD","AER"]
+SCF = ["CIB","FPH","CYD","IEE","IMM","AUT","ADD","SCF"]
 
 # black, blue, brown, cyan, darkgray, gray, green, lightgray, lime, magenta, olive, orange, pink, purple, red, teal, violet, white, yellow.
 
@@ -328,7 +330,10 @@ def generar_malla():
                 horaspractica = cursos_INS[cursos_INS.id == id].horasPractica.item()
                 creditos = cursos_INS[cursos_INS.id == id].creditos.item()
                 area = cursos_INS[cursos_INS.id == id].area.item()           
-                color = area_colors.get(area)
+                if area == "INS":
+                    color = area_colors.get(area)
+                else:
+                    color = "white"
                 requi = cursos_INS[cursos_INS.id == id].requisitos.str.split(';',expand=True)
                 corequi = str(cursos_INS[cursos_INS.id == id].correquisitos.item())                 
                 malla_INS.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
@@ -373,23 +378,61 @@ def generar_malla():
                 )
         )) as malla_AER:
         malla_AER.append(colocar_titulo("Licenciatura en Ingeniería Electromecánica con énfasis en Aeronáutica (debe cursar primero tronco común)","lightgray"))
-        cursos_AER = cursos[cursos["area"] == "AER"]
-        for semestre in range(8,11):
+        cursos_AER = cursos[cursos["area"].isin(AER)]
+        for semestre in range(7,11):
             horasteoriasemestre = cursos_AER[cursos_AER.semestre == semestre].horasTeoria.sum()
             horaspracticasemestre = cursos_AER[cursos_AER.semestre == semestre].horasPractica.sum()
             creditossemestre = cursos_AER[cursos_AER.semestre == semestre].creditos.sum()
             malla_AER.append(colocar_semestre(semestre,sesgo,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
-        for id in cursos_AER[cursos_AER["area"] == "AER"].id:
-            codigo = cursos_AER[cursos_AER.id == id].codigo.item()
-            nombre = cursos_AER[cursos_AER.id == id].nombre.item()
-            fila = cursos_AER[cursos_AER.id == id].fila.item()
+        for id in cursos_AER.id:
             semestre = cursos_AER[cursos_AER.id == id].semestre.item()
-            horasteoria = cursos_AER[cursos_AER.id == id].horasTeoria.item()
-            horaspractica = cursos_AER[cursos_AER.id == id].horasPractica.item()
-            creditos = cursos_AER[cursos_AER.id == id].creditos.item()
-            area = cursos_AER[cursos_AER.id == id].area.item()           
-            color = area_colors.get(area)            
-            malla_AER.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+            if semestre >= 7:
+                codigo = cursos_AER[cursos_AER.id == id].codigo.item()
+                nombre = cursos_AER[cursos_AER.id == id].nombre.item()
+                fila = cursos_AER[cursos_AER.id == id].fila.item()
+                horasteoria = cursos_AER[cursos_AER.id == id].horasTeoria.item()
+                horaspractica = cursos_AER[cursos_AER.id == id].horasPractica.item()
+                creditos = cursos_AER[cursos_AER.id == id].creditos.item()
+                area = cursos_AER[cursos_AER.id == id].area.item()           
+                if area == "AER":
+                    color = area_colors.get(area)
+                else:
+                    color = "white"       
+                requi = cursos_AER[cursos_AER.id == id].requisitos.str.split(';',expand=True)
+                corequi = str(cursos_AER[cursos_AER.id == id].correquisitos.item())     
+                malla_AER.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+                if not(requi[0].isna().item()):
+                        for column in requi.columns:
+                            idreq = requi[column].item()
+                            codreq = cursos_AER[cursos_AER.id == idreq].codigo.item()
+                            semreq = cursos_AER[cursos_AER.id == idreq].semestre.item()
+                            filareq = cursos_AER[cursos_AER.id == idreq].fila.item()
+                            sevreq = cursos_AER[cursos_AER.id == idreq].sevreq.item()
+                            if semestre > 7:
+                                if (filareq == fila) and (semreq == semestre - 1):
+                                    malla_AER.append(colocar_arrowreq(semestre,sesgo,fila,-0.7,"black"))
+                                elif ((filareq == fila - 1) or (filareq == fila + 1)) and (semreq == semestre - 1):
+                                    if (filareq == fila - 1):
+                                        dir = -1
+                                    if (filareq == fila + 1):
+                                        dir = 1
+                                    malla_AER.append(colocar_arrowreqs(semestre,sesgo,fila,dir,"black"))                   
+                                else:
+                                    reqcounter +=1
+                                    malla_AER.append(colocar_diareq(semestre,sesgo,fila,0,reqcounter,"black"))
+                                    malla_AER.append(colocar_diaesreq(semreq,sesgo,filareq,sevreq + 0.9,reqcounter,"black"))
+                                    cursos_AER.loc[cursos_AER['id'] == idreq, 'sevreq'] = sevreq + 1
+                        if not(corequi == 'nan'):
+                            semcoreq = cursos_AER[cursos_AER.id == corequi].semestre.item()
+                            filacoreq = cursos_AER[cursos_AER.id == corequi].fila.item()
+                            if ((filacoreq == fila - 1) or (filacoreq == fila + 1)) and (semcoreq == semestre):
+                                if (filacoreq == fila - 1):
+                                    dir = -1
+                                if (filacoreq == fila + 1):
+                                    dir = 1
+                                malla_AER.append(colocar_arrowcoreq(semestre,sesgo,fila,dir,"black"))
+                            else:
+                                print('Peligro: correquisitos en filas no lejanas')
     doc.append(NoEscape(r"\newpage"))
     with doc.create(TikZ(
             options=TikZOptions
@@ -398,24 +441,62 @@ def generar_malla():
                 "transform shape"
                 )
         )) as malla_SCF:
-        malla_SCF.append(colocar_titulo("Licenciatura en Ingeniería Electromecánica con énfasis en Sistemas Ciberfísicos (debe cursar primero tronco común)","lightgray"))
-        cursos_SCF = cursos[cursos["area"] == "SCF"]
-        for semestre in range(8,11):
+        malla_SCF.append(colocar_titulo("Licenciatura en Ingeniería Electromecánica con énfasis en Sistemas Ciberfísicos (debe cursar primero tronco común)","lightgray"))         
+        cursos_SCF = cursos[cursos["area"].isin(SCF)]
+        for semestre in range(7,11):
             horasteoriasemestre = cursos_SCF[cursos_SCF.semestre == semestre].horasTeoria.sum()
             horaspracticasemestre = cursos_SCF[cursos_SCF.semestre == semestre].horasPractica.sum()
             creditossemestre = cursos_SCF[cursos_SCF.semestre == semestre].creditos.sum()
             malla_SCF.append(colocar_semestre(semestre,sesgo,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
-        for id in cursos_SCF[cursos_SCF["area"] == "SCF"].id:
-            codigo = cursos_SCF[cursos_SCF.id == id].codigo.item()
-            nombre = cursos_SCF[cursos_SCF.id == id].nombre.item()
-            fila = cursos_SCF[cursos_SCF.id == id].fila.item()
+        for id in cursos_SCF.id:
             semestre = cursos_SCF[cursos_SCF.id == id].semestre.item()
-            horasteoria = cursos_SCF[cursos_SCF.id == id].horasTeoria.item()
-            horaspractica = cursos_SCF[cursos_SCF.id == id].horasPractica.item()
-            creditos = cursos_SCF[cursos_SCF.id == id].creditos.item()
-            area = cursos_SCF[cursos_SCF.id == id].area.item()           
-            color = area_colors.get(area)            
-            malla_SCF.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+            if semestre >= 7:
+                codigo = cursos_SCF[cursos_SCF.id == id].codigo.item()
+                nombre = cursos_SCF[cursos_SCF.id == id].nombre.item()
+                fila = cursos_SCF[cursos_SCF.id == id].fila.item()
+                horasteoria = cursos_SCF[cursos_SCF.id == id].horasTeoria.item()
+                horaspractica = cursos_SCF[cursos_SCF.id == id].horasPractica.item()
+                creditos = cursos_SCF[cursos_SCF.id == id].creditos.item()
+                area = cursos_SCF[cursos_SCF.id == id].area.item()           
+                if area == "SCF":
+                    color = area_colors.get(area)
+                else:
+                    color = "white"       
+                requi = cursos_SCF[cursos_SCF.id == id].requisitos.str.split(';',expand=True)
+                corequi = str(cursos_SCF[cursos_SCF.id == id].correquisitos.item())     
+                malla_SCF.append(colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
+                if not(requi[0].isna().item()):
+                        for column in requi.columns:
+                            idreq = requi[column].item()
+                            codreq = cursos_SCF[cursos_SCF.id == idreq].codigo.item()
+                            semreq = cursos_SCF[cursos_SCF.id == idreq].semestre.item()
+                            filareq = cursos_SCF[cursos_SCF.id == idreq].fila.item()
+                            sevreq = cursos_SCF[cursos_SCF.id == idreq].sevreq.item()
+                            if semestre > 7:
+                                if (filareq == fila) and (semreq == semestre - 1):
+                                    malla_SCF.append(colocar_arrowreq(semestre,sesgo,fila,-0.7,"black"))
+                                elif ((filareq == fila - 1) or (filareq == fila + 1)) and (semreq == semestre - 1):
+                                    if (filareq == fila - 1):
+                                        dir = -1
+                                    if (filareq == fila + 1):
+                                        dir = 1
+                                    malla_SCF.append(colocar_arrowreqs(semestre,sesgo,fila,dir,"black"))                   
+                                else:
+                                    reqcounter +=1
+                                    malla_SCF.append(colocar_diareq(semestre,sesgo,fila,0,reqcounter,"black"))
+                                    malla_SCF.append(colocar_diaesreq(semreq,sesgo,filareq,sevreq + 0.9,reqcounter,"black"))
+                                    cursos_SCF.loc[cursos_SCF['id'] == idreq, 'sevreq'] = sevreq + 1
+                        if not(corequi == 'nan'):
+                            semcoreq = cursos_SCF[cursos_SCF.id == corequi].semestre.item()
+                            filacoreq = cursos_SCF[cursos_SCF.id == corequi].fila.item()
+                            if ((filacoreq == fila - 1) or (filacoreq == fila + 1)) and (semcoreq == semestre):
+                                if (filacoreq == fila - 1):
+                                    dir = -1
+                                if (filacoreq == fila + 1):
+                                    dir = 1
+                                malla_SCF.append(colocar_arrowcoreq(semestre,sesgo,fila,dir,"black"))
+                            else:
+                                print('Peligro: correquisitos en filas no lejanas')
     doc.generate_pdf(f"malla_EM", clean=True, clean_tex=False, compiler='lualatex',silent=True)
 
 
