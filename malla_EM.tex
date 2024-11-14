@@ -260,8 +260,11 @@
 \newpage%
 \begin{tikzpicture}[scale = 0.45,transform shape]%
 \draw (28,4)pic{titulo={Licenciatura en Ingeniería Electromecánica con énfasis en Instalaciones Electromecánicas,lightgray}};%
-\filldraw [fill=teal!20!white, draw=black](30,1)  rectangle  ++ (25,-40);
-\filldraw [fill=teal!20!white, draw=black](30,1)  rectangle  ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{Electivas}};%
+\filldraw [fill=white, draw=black](30,1)  rectangle  ++ (25,-40);
+\filldraw [fill=lightgray, draw=black](30,1)  rectangle  ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{Electivas}};
+\filldraw [fill=lightgray, draw=black](30,-18)  rectangle  ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{Notas}};%
+\filldraw [fill=white, draw=white](31,-21) rectangle  ++ (23,-2) node[midway,align=left,text width=220mm]{\color{black}\fontsize{16pt}{10pt}\selectfont \textbf{1. Cursos del tronco común en color blanco}};%
+\filldraw [fill=white, draw=white](31,-23) rectangle  ++ (23,-2) node[midway,align=left,text width=220mm]{\color{black}\fontsize{16pt}{10pt}\selectfont \textbf{2. Deben escogerse 2 de las 9 electivas posibles para cursarlas en el décimo semestre}};%
 \draw (0.5,0)pic{semestre={VII,lightgray,19,5,17}};%
 \draw (7.37,0)pic{semestre={VIII,lightgray,19,8,18}};%
 \draw (14.24,0)pic{semestre={IX,lightgray,17,6,17}};%
@@ -363,8 +366,11 @@
 \newpage%
 \begin{tikzpicture}[scale = 0.45,transform shape]%
 \draw (28,4)pic{titulo={Licenciatura en Ingeniería Electromecánica con énfasis en Aeronautica,lightgray}};%
-\filldraw [fill=brown!20!white, draw=black](30,1)  rectangle  ++ (25,-40);
-\filldraw [fill=brown!20!white, draw=black](30,1)  rectangle  ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{Electivas}};%
+\filldraw [fill=white, draw=black](30,1)  rectangle  ++ (25,-40);
+\filldraw [fill=lightgray, draw=black](30,1)  rectangle  ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{Electivas}};
+\filldraw [fill=lightgray, draw=black](30,-18)  rectangle  ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{Notas}};%
+\filldraw [fill=white, draw=white](31,-21) rectangle  ++ (23,-2) node[midway,align=left,text width=220mm]{\color{black}\fontsize{16pt}{10pt}\selectfont \textbf{1. Cursos del tronco común en color blanco}};%
+\filldraw [fill=white, draw=white](31,-23) rectangle  ++ (23,-2) node[midway,align=left,text width=220mm]{\color{black}\fontsize{16pt}{10pt}\selectfont \textbf{2. Deben escogerse 2 de las 9 electivas posibles para cursarlas en el décimo semestre}};%
 \draw (0.5,0)pic{semestre={VII,lightgray,19,5,17}};%
 \draw (7.37,0)pic{semestre={VIII,lightgray,22,6,18}};%
 \draw (14.24,0)pic{semestre={IX,lightgray,22,2,17}};%
@@ -437,12 +443,38 @@
 \draw (21.11,-25.7)pic{curso={MI0902,Electiva II,4,0,3,brown!20!white}};%
 \draw (21.11,-29.9)pic{curso={MI0822,Instalaciones aeroportuarias,3,0,2,brown!20!white}};%
 \draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](16.76,-28.7) -- (18.58,-28.7);%
+\draw (34.85,-4.7)pic{curso={MI1090,Sistemas de propulsión avanzada,4,0,3,brown!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-4.2) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{2}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](9.89,-34.5) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{2}};%
+\draw (34.85,-8.9)pic{curso={MI1091,Movilidad aerea avanzada,4,0,3,brown!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{3}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{3}};%
+\draw (34.85,-13.1)pic{curso={MI1092,Introducción a los sistemas espaciales,4,0,3,brown!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-12.6) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{4}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-30.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{4}};%
+\draw (41.72,-4.7)pic{curso={MI0804,Instalaciones mecánico-sanitarias,4,0,3,brown!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](41.72,-7.28) --++ (0,0.97);%
+\draw (41.72,-8.9)pic{curso={MI4212,Instalaciones eléctricas,4,0,3,brown!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](37.84,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{5}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](9.89,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{5}};%
+\draw (41.72,-13.1)pic{curso={MI0803,Gestión de la energía,4,0,3,brown!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](41.72,-10.52) --++ (0,-0.97);%
+\draw (48.59,-4.7)pic{curso={MI0826,Sistemas de monitoreo e internet de las cosas,2,2,3,brown!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](48.59,-7.28) --++ (0,0.97);%
+\draw (48.59,-8.9)pic{curso={MI0823,Sistemas embebidos en tiempo real,2,2,3,brown!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](44.71,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{6}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](3.02,-21.9) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{6}};%
+\draw (48.59,-13.1)pic{curso={MI0827,Sistemas de visión de máquina,2,2,3,brown!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](48.59,-10.52) --++ (0,-0.97);%
 \end{tikzpicture}%
 \newpage%
 \begin{tikzpicture}[scale = 0.45,transform shape]%
 \draw (28,4)pic{titulo={Licenciatura en Ingeniería Electromecánica con énfasis en Sistemas Ciberfísicos,lightgray}};%
-\filldraw [fill=violet!20!white, draw=black](30,1)  rectangle  ++ (25,-40);
-\filldraw [fill=violet!20!white, draw=black](30,1)  rectangle  ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{Electivas}};%
+\filldraw [fill=white, draw=black](30,1)  rectangle  ++ (25,-40);
+\filldraw [fill=lightgray, draw=black](30,1)  rectangle  ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{Electivas}};
+\filldraw [fill=lightgray, draw=black](30,-18)  rectangle  ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{Notas}};%
+\filldraw [fill=white, draw=white](31,-21) rectangle  ++ (23,-2) node[midway,align=left,text width=220mm]{\color{black}\fontsize{16pt}{10pt}\selectfont \textbf{1. Cursos del tronco común en color blanco}};%
+\filldraw [fill=white, draw=white](31,-23) rectangle  ++ (23,-2) node[midway,align=left,text width=220mm]{\color{black}\fontsize{16pt}{10pt}\selectfont \textbf{2. Deben escogerse 2 de las 9 electivas posibles para cursarlas en el décimo semestre}};%
 \draw (0.5,0)pic{semestre={VII,lightgray,19,5,17}};%
 \draw (7.37,0)pic{semestre={VIII,lightgray,20,8,18}};%
 \draw (14.24,0)pic{semestre={IX,lightgray,14,8,17}};%
@@ -504,5 +536,30 @@
 \draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](21.11,-10.52) --++ (0,-0.97);%
 \draw (21.11,-21.5)pic{curso={MI0901,Electiva I,4,0,3,violet!20!white}};%
 \draw (21.11,-25.7)pic{curso={MI0902,Electiva II,4,0,3,violet!20!white}};%
+\draw (34.85,-4.7)pic{curso={MI9090,Sistemas autonomos y multiagente,2,2,3,violet!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-4.2) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{3}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{3}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-6.0) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{4}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-26.1) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{4}};%
+\draw (34.85,-8.9)pic{curso={MI9091,Análisis predictivo de series temporales,2,2,3,violet!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{5}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-10.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{5}};%
+\draw (34.85,-13.1)pic{curso={MI9092,Desarrollo de software para aplicaciones críticas,2,2,3,violet!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-12.6) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{6}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](9.89,-34.5) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{6}};%
+\draw (41.72,-4.7)pic{curso={MI0813,Sistemas de aeronaves de ala fija y giratoria,4,0,3,violet!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](41.72,-7.28) --++ (0,0.97);%
+\draw (41.72,-8.9)pic{curso={MI0810,Avionica,4,0,3,violet!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](37.84,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{7}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](9.89,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{7}};%
+\draw (41.72,-13.1)pic{curso={MI0814,Sistemas de aeronaves no tripulados y de despegue vertical,4,0,3,violet!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](41.72,-10.52) --++ (0,-0.97);%
+\draw (48.59,-4.7)pic{curso={MI0804,Instalaciones mecánico-sanitarias,4,0,3,violet!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](48.59,-7.28) --++ (0,0.97);%
+\draw (48.59,-8.9)pic{curso={MI4212,Instalaciones eléctricas,4,0,3,violet!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](44.71,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{8}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](9.89,-10.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{8}};%
+\draw (48.59,-13.1)pic{curso={MI0803,Gestión de la energía,4,0,3,violet!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](48.59,-10.52) --++ (0,-0.97);%
 \end{tikzpicture}%
 \end{document}

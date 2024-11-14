@@ -166,60 +166,6 @@ def generar_malla():
         )) as malla_TRC:
         titulo = "Bachillerato en Ingeniería Electromecánica y tronco común de Licenciatura en Ingeniería Electromecánica - Plan: 2026"
         fun.malla_enf(malla_TRC,cursos,sesgo,TRC,"TRC",area_colors,titulo,rango,False)
-        # malla_TRC.append(fun.colocar_titulo("Bachillerato en Ingeniería Electromecánica y tronco común de Licenciatura en Ingeniería Electromecánica - Plan: 2026","lightgray"))
-        # cursos_TRC = cursos[cursos["area"].isin(TRC)]
-        # for semestre in range(0,9):
-        #     horasteoriasemestre = cursos_TRC[cursos_TRC.semestre == semestre].horasTeoria.sum()
-        #     horaspracticasemestre = cursos_TRC[cursos_TRC.semestre == semestre].horasPractica.sum()
-        #     creditossemestre = cursos_TRC[cursos_TRC.semestre == semestre].creditos.sum()
-        #     malla_TRC.append(fun.colocar_semestre(semestre,sesgo,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
-        # for id in cursos_TRC.id:
-        #     codigo = cursos_TRC[cursos_TRC.id == id].codigo.item()
-        #     nombre = cursos_TRC[cursos_TRC.id == id].nombre.item()
-        #     fila = cursos_TRC[cursos_TRC.id == id].fila.item()
-        #     semestre = cursos_TRC[cursos_TRC.id == id].semestre.item()
-        #     horasteoria = cursos_TRC[cursos_TRC.id == id].horasTeoria.item()
-        #     horaspractica = cursos_TRC[cursos_TRC.id == id].horasPractica.item()
-        #     creditos = cursos_TRC[cursos_TRC.id == id].creditos.item()
-        #     area = cursos_TRC[cursos_TRC.id == id].area.item()           
-        #     color = area_colors.get(area)
-        #     requi = cursos_TRC[cursos_TRC.id == id].requisitos.str.split(';',expand=True)
-        #     corequi = str(cursos_TRC[cursos_TRC.id == id].correquisitos.item())     
-        #     malla_TRC.append(fun.colocar_curso(codigo,nombre,fila,semestre,sesgo,horasteoria,horaspractica,creditos,color))
-        #     if not(requi[0].isna().item()):
-        #         for column in requi.columns:
-        #             idreq = requi[column].item()
-        #             codreq = cursos_TRC[cursos_TRC.id == idreq].codigo.item()
-        #             semreq = cursos_TRC[cursos_TRC.id == idreq].semestre.item()
-        #             filareq = cursos_TRC[cursos_TRC.id == idreq].fila.item()
-        #             sevesreq = cursos_TRC[cursos_TRC.id == idreq].sevesreq.item()
-        #             sevreq = cursos_TRC[cursos_TRC.id == id].sevreq.item()
-        #             if (filareq == fila) and (semreq == semestre - 1):
-        #                 malla_TRC.append(fun.colocar_arrowreq(semestre,sesgo,fila,-0.7,"black"))
-        #             elif ((filareq == fila - 1) or (filareq == fila + 1)) and (semreq == semestre - 1):
-        #                 if (filareq == fila - 1):
-        #                     dir = -1
-        #                 if (filareq == fila + 1):
-        #                     dir = 1
-        #                 malla_TRC.append(fun.colocar_arrowreqs(semestre,sesgo,fila,dir,"black"))                   
-        #             else:
-        #                 reqcounter +=1
-        #                 malla_TRC.append(fun.colocar_diareq(semestre,sesgo,fila,sevreq,reqcounter,"black"))
-        #                 malla_TRC.append(fun.colocar_diaesreq(semreq,sesgo,filareq,sevesreq + 0.9,reqcounter,"black"))
-        #                 cursos_TRC.loc[cursos_TRC['id'] == idreq, 'sevesreq'] = sevesreq + 1
-        #                 cursos_TRC.loc[cursos_TRC['id'] == id, 'sevreq'] = sevreq + 1.8
-        #     if not(corequi == 'nan'):
-        #         semcoreq = cursos_TRC[cursos_TRC.id == corequi].semestre.item()
-        #         filacoreq = cursos_TRC[cursos_TRC.id == corequi].fila.item()
-        #         if ((filacoreq == fila - 1) or (filacoreq == fila + 1)) and (semcoreq == semestre):
-        #             if (filacoreq == fila - 1):
-        #                 dir = -1
-        #             if (filacoreq == fila + 1):
-        #                 dir = 1
-        #             malla_TRC.append(fun.colocar_arrowcoreq(semestre,sesgo,fila,dir,"black"))
-        #         else:
-        #             print('Peligro: correquisitos en filas no lejanas')
-
     doc.append(NoEscape(r"\newpage"))
     sesgo = 7
     rango = range(7,11)

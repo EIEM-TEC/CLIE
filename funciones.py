@@ -203,9 +203,9 @@ def colocar_diareq(semestre,sesgo,fila,sesgovert,num,color):#1.35 de largo
     dump += NoEscape(f"--++ (1.35,0);")
     return dump
 
-def colocar_recreq(titulo,color):
+def colocar_recreq(titulo1,titulo2,color):
     dump = NoEscape(r"\filldraw ")
-    dump += NoEscape(f"[fill={color}, draw=black]")
+    dump += NoEscape(f"[fill=white, draw=black]")
     dump += NoEscape(r"(30,1) ")
     dump += NoEscape(r" rectangle ") 
     dump += NoEscape(r" ++ (25,-40);")
@@ -215,7 +215,25 @@ def colocar_recreq(titulo,color):
     dump += NoEscape(r"(30,1) ")
     dump += NoEscape(r" rectangle ") 
     dump += NoEscape(r" ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{")
-    dump += NoEscape(f"{titulo}")
+    dump += NoEscape(f"{titulo1}")
+    dump += NoEscape(r"}};") 
+    dump += NoEscape("\n")
+    dump += NoEscape(r"\filldraw ")
+    dump += NoEscape(f"[fill={color}, draw=black]")
+    dump += NoEscape(r"(30,-18) ")
+    dump += NoEscape(r" rectangle ") 
+    dump += NoEscape(r" ++ (25,-2) node[midway,align=center,text width=60mm]{\color{black}\fontsize{20pt}{10pt}\selectfont \textbf{")
+    dump += NoEscape(f"{titulo2}")
+    dump += NoEscape(r"}};") 
+    return dump
+
+def colocar_notas(textonota,sesgo):
+    dump = NoEscape(r"\filldraw ")
+    dump += NoEscape(r"[fill=white, draw=white]")
+    dump += NoEscape(f"(31,{round(-19-sesgo*2)})")
+    dump += NoEscape(r" rectangle ") 
+    dump += NoEscape(r" ++ (23,-2) node[midway,align=left,text width=220mm]{\color{black}\fontsize{16pt}{10pt}\selectfont \textbf{")
+    dump += NoEscape(f"{sesgo}. {textonota}")
     dump += NoEscape(r"}};") 
     return dump
 
@@ -223,7 +241,9 @@ def malla_enf(malla,cursos,sesgo,lista,nombrearea,area_colors,titulo,rango,enf):
         reqcounter = 0
         malla.append(colocar_titulo(titulo,"lightgray"))
         if enf:
-            malla.append(colocar_recreq("Electivas",area_colors.get(nombrearea)))
+            malla.append(colocar_recreq("Electivas","Notas","lightgray"))
+            malla.append(colocar_notas("Cursos del tronco común en color blanco",1))
+            malla.append(colocar_notas("Deben escogerse 2 de las 9 electivas posibles para cursarlas en el décimo semestre",2))
         cursos_enf = cursos[cursos["area"].isin(lista)]
         for semestre in rango:
             horasteoriasemestre = cursos_enf[cursos_enf.semestre == semestre].horasTeoria.sum()
