@@ -51,27 +51,27 @@ IMM0605,CM4108,Transferencia de calor,IMM,6,6,4,0,3,IMM0506,,IMM0707
 IMM0607,MI3108,Mecánica de fluidos,IMM,6,7,4,0,3,IMM0407,,IMM0707
 IMM0608,MI3111,Laboratorio de mecánica de fluidos,IMM,6,8,0,2,1,,IMM0607,
 CYD0609,MI3124,Dibujo industrial,CYD,6,9,4,0,3,IMM0508,,IMM0709
-FPH0701,MI0717,Metodología de la investigación,FPH,7,1,2,0,1,FPH0601,,
-IEE0703,MI0718,Máquinas eléctricas I,IEE,7,2,4,0,3,IEE0604;IEE0603,,IEE0803
+FPH0701,MI0717,Metodología de la investigación,FPH,7,1,2,0,1,FPH0601,,SCF0801
+IEE0703,MI0718,Máquinas eléctricas I,IEE,7,2,4,0,3,IEE0604;IEE0603,,IEE0803;INS0806
 IEE0704,MI0719,Laboratorio de máquinas eléctricas I,IEE,7,3,0,2,1,,IEE0703,IEE0803
 AUT0705,MI0720,Control automático,AUT,7,4,4,0,3,AUT0505,,AUT0805
-AUT0706,MI0721,Microcontroladores,AUT,7,5,2,1,2,,AUT0705,AUT0805
-IMM0709,MI4136,Elementos de máquinas,IMM,7,6,4,0,3,IMM0606;CYD0609,,
-IMM0707,MI0722,Sistemas térmicos,IMM,7,7,3,0,3,IMM0607;IMM0605,,
-IMM0708,MI0723,Laboratorio de sistemas térmicos,IMM,7,8,0,2,1,,IMM0707,
-IEE0803,MI0724,Máquinas eléctricas II,IEE,8,2,4,0,3,IEE0704;IEE0703,,
+AUT0706,MI0721,Microcontroladores,AUT,7,5,2,1,2,,AUT0705,AUT0805;INS0997;AER9097;SCF0807
+IMM0709,MI4136,Elementos de máquinas,IMM,7,6,4,0,3,IMM0606;CYD0609,,AER0806;SCF0806
+IMM0707,MI0722,Sistemas térmicos,IMM,7,7,3,0,3,IMM0607;IMM0605,,INS0807;INS0908;AER0808
+IMM0708,MI0723,Laboratorio de sistemas térmicos,IMM,7,8,0,2,1,,IMM0707,INS0807;INS0908;AER0808
+IEE0803,MI0724,Máquinas eléctricas II,IEE,8,2,4,0,3,IEE0704;IEE0703,,INS0994;AER9094;SCF9094;SCF9097
 IEE0804,MI0725,Laboratorio de máquinas eléctricas II,IEE,8,3,0,2,1,,IEE0803,
-AUT0805,MI0726,Control por eventos discretos,AUT,8,4,4,0,3,AUT0705;AUT0706,,
-AUT0806,MI0727,Laboratorio de control,AUT,8,5,0,2,1,,AUT0805,
+AUT0805,MI0726,Control por eventos discretos,AUT,8,4,4,0,3,AUT0705;AUT0706,,AER0903
+AUT0806,MI0727,Laboratorio de control,AUT,8,5,0,2,1,,AUT0805,AER0903
 FPH0809,SE1400,Actividad cultural - deportiva,FPH,8,9,0,2,0,,,
-INS0801,MI0801,Sistemas electricos de transmisión y distribución,INS,8,1,3,0,3,,IEE0803,
-INS0806,MI4212,Instalaciones eléctricas,INS,8,6,4,0,3,IEE0703,,
-INS0807,MI3116,Turbomáquinas,INS,8,7,4,0,3,IMM0707;IMM0708,,
+INS0801,MI0801,Sistemas electricos de transmisión y distribución,INS,8,1,3,0,3,,IEE0803,INS0901;INS0902
+INS0806,MI4212,Instalaciones eléctricas,INS,8,6,4,0,3,IEE0703,,INS0905;INS0906
+INS0807,MI3116,Turbomáquinas,INS,8,7,4,0,3,IMM0707;IMM0708,,INS0907
 INS0808,MI3119,Laboratorio de turbomáquinas,INS,8,8,0,2,1,,INS0807,
-INS0901,MI0802,Sistemas de generación y almacenamiento de energía,INS,9,1,4,0,3,INS0801,,
-INS0902,MI0803,Gestión de la energía,INS,9,2,4,0,3,INS0801,,
-INS0905,MI0804,Instalaciones mecánico-sanitarias,INS,9,5,4,0,3,INS0806,,
-INS0906,MI0805,Taller de dibujo para instalaciones electromecánicas,INS,9,6,0,2,1,INS0806,,
+INS0901,MI0802,Sistemas de generación y almacenamiento de energía,INS,9,1,4,0,3,INS0801,,INS0990;INS0992
+INS0902,MI0803,Gestión de la energía,INS,9,2,4,0,3,INS0801,,INS1002
+INS0905,MI0804,Instalaciones mecánico-sanitarias,INS,9,5,4,0,3,INS0806,,INS1005;INS0991
+INS0906,MI0805,Taller de dibujo para instalaciones electromecánicas,INS,9,6,0,2,1,INS0806,,INS1005
 INS0907,MI6252,Neumática y oleohidraulica,INS,9,7,2,2,3,INS0807,,
 INS0908,MI0806,Sistemas de refrigeración y aire acondicionado,INS,9,8,3,0,3,IMM0707;IMM0708,,
 INS0909,MI0807,Laboratorio de refrigeración y aire acondicionado,INS,9,9,0,2,1,,INS0908,
@@ -89,18 +89,18 @@ INS0995,MI0814,Sistemas de aeronaves no tripulados y de despegue vertical,INS,13
 INS0996,MI0826,Sistemas de monitoreo e internet de las cosas,INS,14,1,2,2,3,,INS0997,
 INS0997,MI0823,Sistemas embebidos en tiempo real,INS,14,2,2,2,3,AUT0706,,
 INS0998,MI0827,Sistemas de visión de máquina,INS,14,3,2,2,3,,INS0997,
-AER0801,MI0810,Aviónica,AER,8,1,4,0,3,,IEE0803,
-AER0806,MI0811,Máquinas y mecanismos,AER,8,6,4,0,3,IMM0709,,
-AER0807,MI0820,Taller de metrología aeronautica,AER,8,7,2,0,1,,AER0806,
-AER0808,MI0812,Sistemas de propulsión,AER,8,8,4,0,3,IMM0707;IMM0708,,
+AER0801,MI0810,Aviónica,AER,8,1,4,0,3,,IEE0803,AER0901;AER0902
+AER0806,MI0811,Máquinas y mecanismos,AER,8,6,4,0,3,IMM0709,,AER0906
+AER0807,MI0820,Taller de metrología aeronautica,AER,8,7,2,0,1,,AER0806,AER0907
+AER0808,MI0812,Sistemas de propulsión,AER,8,8,4,0,3,IMM0707;IMM0708,,AER9090
 AER0901,MI0813,Sistemas de aeronaves de ala fija y giratoria,AER,9,1,4,0,3,AER0801,,
-AER0902,MI0814,Sistemas de aeronaves no tripulados y de despegue vertical,AER,9,2,4,0,3,AER0801,
-AER0903,MI0815,Aerodinámica y dinámica de vuelo,AER,9,3,4,0,3,AUT0805;AUT0806,,
-AER0904,MI0816,Laboratorio de aerodinámica y dinámica de vuelo,AER,9,4,0,2,1,,AER0903,
+AER0902,MI0814,Sistemas de aeronaves no tripulados y de despegue vertical,AER,9,2,4,0,3,AER0801,,AER9091
+AER0903,MI0815,Aerodinámica y dinámica de vuelo,AER,9,3,4,0,3,AUT0805;AUT0806,,AER1003
+AER0904,MI0816,Laboratorio de aerodinámica y dinámica de vuelo,AER,9,4,0,2,1,,AER0903,AER1003
 AER0905,MI0817,Materiales en aeronautica,AER,9,5,3,0,2,,AER0906,
 AER0906,MI0818,Análisis mecánico de estructuras y mecanismos de la aeronave,AER,9,6,4,0,3,AER0806,,
-AER0907,MI0819,Gestión del ciclo de vida de la aeronave,AER,9,7,3,0,2,AER0807,,
-AER1003,MI0821,Control automático de vuelo y tráfico,AER,10,3,4,0,3,AER0903;AER0904,
+AER0907,MI0819,Gestión del ciclo de vida de la aeronave,AER,9,7,3,0,2,AER0807,,AER1007;AER9092
+AER1003,MI0821,Control automático de vuelo y tráfico,AER,10,3,4,0,3,AER0903;AER0904,,
 AER1004,MI1001,Trabajo final de graduación,AER,10,4,0,21,7,,AER1003,
 AER1005,MI0901,Electiva I,AER,10,5,4,0,3,,,
 AER1006,MI0902,Electiva II,AER,10,6,4,0,3,,,
@@ -114,14 +114,14 @@ AER9095,MI0803,Gestión de la energía,AER,13,3,4,0,3,,AER9094,
 AER9096,MI0826,Sistemas de monitoreo e internet de las cosas,AER,14,1,2,2,3,,AER9097,
 AER9097,MI0823,Sistemas embebidos en tiempo real,AER,14,2,2,2,3,AUT0706,,
 AER9098,MI0827,Sistemas de visión de máquina,AER,14,3,2,2,3,,AER9097,
-SCF0801,MI0825,Ingenieria de sistemas: requerimientos y arquitectura,SCF,8,1,4,0,3,FPH0701,,
-SCF0806,MI0811,Máquinas y mecanismos,SCF,8,6,4,0,3,IMM0709,,
-SCF0807,MI0823,Sistemas embebidos en tiempo real,SCF,8,7,2,2,3,AUT0706,,
-SCF0808,MI0832,Fundamentos de ciberseguridad,SCF,8,8,2,0,1,,SCF0807,
-SCF0901,MI0831,Ingenieria de sistemas: integración y validación,SCF,9,1,4,0,3,SCF0801,,
-SCF0902,MI0830,Machine Learning e Inteligiencia Artificial,SCF,9,2,2,2,3,SCF0807,,
+SCF0801,MI0825,Ingenieria de sistemas: requerimientos y arquitectura,SCF,8,1,4,0,3,FPH0701,,SCF0901
+SCF0806,MI0811,Máquinas y mecanismos,SCF,8,6,4,0,3,IMM0709,,SCF0906
+SCF0807,MI0823,Sistemas embebidos en tiempo real,SCF,8,7,2,2,3,AUT0706,,SCF0902;SCF0907
+SCF0808,MI0832,Fundamentos de ciberseguridad,SCF,8,8,2,0,1,,SCF0807,SCF9092
+SCF0901,MI0831,Ingenieria de sistemas: integración y validación,SCF,9,1,4,0,3,SCF0801,,SCF1001
+SCF0902,MI0830,Machine Learning e Inteligiencia Artificial,SCF,9,2,2,2,3,SCF0807,,SCF9090;SCF9091
 SCF0903,MI0830,Tecnologías de empaquetado de semiconductores y MEMS,SCF,9,3,2,0,2,,SCF0902,
-SCF0906,MI0828,Sistema de robótica y domótica,SCF,9,6,2,2,3,SCF0806,SCF0907,
+SCF0906,MI0828,Sistema de robótica y domótica,SCF,9,6,2,2,3,SCF0806,SCF0907,SCF9090
 SCF0907,MI0826,Sistemas de monitoreo e internet de las cosas,SCF,9,7,2,2,3,SCF0807,,
 SCF0908,MI0827,Sistemas de visión de máquina,SCF,9,8,2,2,3,,SCF0907,
 SCF1001,MI0834,Taller de integración de sistemas,SCF,10,1,2,2,2,SCF0901,,
@@ -129,7 +129,7 @@ SCF1002,MI0833,Diseño de interfases humano-máquina,SCF,10,2,3,0,3,,SCF1001,
 SCF1003,MI1001,Trabajo final de graduación,SCF,10,3,0,21,7,,SCF1002,
 SCF1005,MI0901,Electiva I,SCF,10,5,4,0,3,,,
 SCF1006,MI0902,Electiva II,SCF,10,6,4,0,3,,,
-SCF9090,MI9090,Sistemas autonomos y multiagente,SCF,12,1,2,2,3,SCF0902;SCF0906,
+SCF9090,MI9090,Sistemas autonomos y multiagente,SCF,12,1,2,2,3,SCF0902;SCF0906,,
 SCF9091,MI9091,Análisis predictivo de series temporales,SCF,12,2,2,2,3,SCF0902,,
 SCF9092,MI9092,Desarrollo de software para aplicaciones críticas,SCF,12,3,2,2,3,SCF0808,,
 SCF9093,MI0813,Sistemas de aeronaves de ala fija y giratoria,SCF,13,1,4,0,3,,SCF9094,
