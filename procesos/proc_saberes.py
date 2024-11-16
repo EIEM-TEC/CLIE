@@ -4,10 +4,13 @@ porcTC = 0.75
 
 saberes = pd.read_csv("saberes.csv")
 
-# saberes['porcDIG'] = porcTC*saberes['porcTRC']
-# saberes['porcAER'] = porcTC*saberes['porcTRC']
-# saberes['porcCIB'] = porcTC*saberes['porcTRC']
+TRC = ['CIB','FPH','CYD','IEE','IMM','AUT','ADD']
+saberes2 = saberes[saberes["codArea"].isin(TRC)]
+saberes2['porcINS'] = porcTC*saberes2['porcTRC']
+saberes2['porcAER'] = porcTC*saberes2['porcTRC']
+saberes2['porcSCF'] = porcTC*saberes2['porcTRC']
+saberes[saberes["codArea"].isin(TRC)] = saberes2[saberes2["codArea"].isin(TRC)]
 
-#saberes.to_csv('saberes.csv',index=False)
+saberes.to_csv('saberes.csv',index=False)
 
 print(saberes.head(50))

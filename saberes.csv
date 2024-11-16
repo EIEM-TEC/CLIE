@@ -1,47 +1,46 @@
 nombre,codArea,porcTRC,porcINS,porcAER,porcSCF
-Matemática,CIB,15,11.25,11.25,11.25
-Física,CIB,9,7.5,7.5,7.5
-Química,CIB,3,2.25,2.25,2.25
-Ética y ciencias sociales,FPH,3,2.25,2.25,2.25
-Habilidades interpersonales,FPH,1,0.75,0.75,0.75
-Salud y seguridad laboral,FPH,1,0.75,0.75,0.75
-Administración de proyectos,FPH,2,1.5,1.5,1.5
-Metodología de la investigación,FPH,1,0.75,0.75,0.75
-Comunicación oral y escrita,CYD,1,0.75,0.75,0.75
-Inglés,CYD,1,0.75,0.75,0.75
-Dibujo para ingeniería,CYD,5,3.75,3.75,3.75
-Circuitos eléctricos y electrónica,IEE,8,6.0,6.0,6.0
-Máquinas eléctricas,IEE,4,3.0,3.0,3.0
-Instrumentación y transductores,IEE,4,2.25,2.25,2.25
-Microcontroladores,IEE,2,1.5,1.5,1.5
-Telecomunicaciones y redes,IEE,2,1.5,1.5,1.5
-Ciencia e ingeniería de los materiales,IMM,3,2.25,2.25,2.25
-Mecánica de sólidos y fluidos,IMM,10,6.75,6.75,6.75
-Termodinámica y transferencia de calor,IMM,5,3.0,3.0,3.0
-Elementos de máquinas,IMM,3,2.25,2.25,2.25
-Manufactura,IMM,3,1.5,1.5,1.5
-Programación y arquitectura de computadores,AUT,2,1.5,1.5,1.5
-Modelado y simulación,AUT,3,2.25,2.25,2.25
-Sistemas de control y automatización,AUT,6,3.75,3.75,3.75
-Estadística y metrología,ADD,1,1.5,1.5,1.5
-Diseño de experimentos,ADD,1,0.75,0.75,0.75
-"Confiabilidad,disponibilidad,mantenibilidad y seguridad",ADD,1,0.75,0.75,0.75
-Sistemas de transporte de masa y energía,INS,0,10,0.0,0.0
-Sistemas de generación y almacenamiento de energía,INS,0,3,0.0,0.0
-Sistemas de distribución y transmisión de energía eléctrica,INS,0,4,0.0,0.0
-Instalaciones electromecánicas,INS,0,3,0.0,0.0
-Gestión del ciclo de vida y transformación digital,INS,0,3,0.0,0.0
-Gestión de la energía,INS,0,2,0.0,0.0
-Aviónica y control automático de vuelo y tráfico,AER,0,0,6,0.0
-"Sistemas de propulsión, aerodinámica y dinámica de vuelo",AER,0,0,5,0.0
-"Análisis mecánico de materiales, estructuras y mecanismos de la aeronave",AER,0,0,7,0.0
-Gestión del ciclo de vida de la aeronave,AER,0,0,3,0.0
-Instalaciones aeroportuarias,AER,0,0,2,0.0
-Movilidad aérea avanzada,AER,0,0,2,0.0
-Sistemas embebidos en tiempo real,SCF,0,0.0,0,4
-Interfaz humano máquina,SCF,0,0.0,0.0,1
-Ingeniería de sistemas complejos,SCF,0,0.0,0.0,6
-Machine Learning e inteligencia artificial embebida,SCF,0,0.0,0.0,4
-"Visión de máquina, robótica y domótica",SCF,0,0.0,0.0,5
-Internet de las cosas,SCF,0,0.0,0.0,3
-Ciberseguridad,SCF,0,0.0,0.0,2
+Matemática,CIB,15.0,11.25,11.25,11.25
+Física,CIB,9.0,6.75,6.75,6.75
+Química,CIB,3.0,2.25,2.25,2.25
+Ética y ciencias sociales,FPH,3.0,2.25,2.25,2.25
+Habilidades interpersonales,FPH,2.0,1.5,1.5,1.5
+Emprendedurismo,FPH,3.0,2.25,2.25,2.25
+Administración de proyectos,FPH,2.0,1.5,1.5,1.5
+Metodología de la investigación,FPH,1.0,0.75,0.75,0.75
+Comunicación oral y escrita,CYD,2.0,1.5,1.5,1.5
+Inglés,CYD,1.0,0.75,0.75,0.75
+Dibujo para ingeniería,CYD,4.5,3.375,3.375,3.375
+Circuitos eléctricos y electrónica,IEE,9.0,6.75,6.75,6.75
+Máquinas eléctricas,IEE,5.0,3.75,3.75,3.75
+Instrumentación y transductores,IEE,4.0,3.0,3.0,3.0
+Ciencia e ingeniería de los materiales,IMM,3.0,2.25,2.25,2.25
+Mecánica de sólidos y fluidos,IMM,10.0,7.5,7.5,7.5
+Termodinámica y transferencia de calor,IMM,5.0,3.75,3.75,3.75
+Elementos de máquinas,IMM,3.0,2.25,2.25,2.25
+Manufactura,IMM,3.0,2.25,2.25,2.25
+Programación y arquitectura de computadores,AUT,2.0,1.5,1.5,1.5
+Modelado y simulación,AUT,3.0,2.25,2.25,2.25
+Microcontroladores,AUT,1.0,0.75,0.75,0.75
+Sistemas de control y automatización,AUT,5.0,3.75,3.75,3.75
+Estadística y metrología,ADD,0.5,0.375,0.375,0.375
+Diseño de experimentos,ADD,0.5,0.375,0.375,0.375
+"Confiabilidad,disponibilidad,mantenibilidad y seguridad",ADD,0.5,0.375,0.375,0.375
+Sistemas de transporte de masa y energía,INS,0.0,10.0,0.0,0.0
+Sistemas de generación y almacenamiento de energía,INS,0.0,3.0,0.0,0.0
+Sistemas de distribución y transmisión de energía eléctrica,INS,0.0,4.0,0.0,0.0
+Instalaciones electromecánicas,INS,0.0,3.0,0.0,0.0
+Gestión del ciclo de vida y transformación digital,INS,0.0,3.0,0.0,0.0
+Gestión de la energía,INS,0.0,2.0,0.0,0.0
+Aviónica y control automático de vuelo y tráfico,AER,0.0,0.0,6.0,0.0
+"Sistemas de propulsión, aerodinámica y dinámica de vuelo",AER,0.0,0.0,5.0,0.0
+"Análisis mecánico de materiales, estructuras y mecanismos de la aeronave",AER,0.0,0.0,7.0,0.0
+Gestión del ciclo de vida de la aeronave,AER,0.0,0.0,3.0,0.0
+Instalaciones aeroportuarias,AER,0.0,0.0,2.0,0.0
+Movilidad aérea avanzada,AER,0.0,0.0,2.0,0.0
+Sistemas embebidos en tiempo real,SCF,0.0,0.0,0.0,4.0
+Interfaz humano máquina,SCF,0.0,0.0,0.0,1.0
+Ingeniería de sistemas complejos,SCF,0.0,0.0,0.0,6.0
+Machine Learning e inteligencia artificial embebida,SCF,0.0,0.0,0.0,4.0
+"Visión de máquina, robótica y domótica",SCF,0.0,0.0,0.0,5.0
+Internet de las cosas,SCF,0.0,0.0,0.0,3.0
+Ciberseguridad,SCF,0.0,0.0,0.0,2.0

@@ -37,22 +37,22 @@ FPH0408,4,CS4402,Seminario de estudios costarricenses,Teórico,CS3404,,2,3,3
 FPH0409,4,SE1200,Actividad deportiva I,Práctico,,,0,2,0
 CIB0501,5,CM3207,Métodos numéricos para ingeniería,Teórico,MI0705,,3,4,5
 ADD0502,5,MI0710,Estadística aplicada II,Teórico,MI0705,,2,3,3
-IEE0503,5,MI0711,Sistemas analógicos,Teórico,MI0707; MI0706,,2,3,3
+IEE0503,5,MI0711,Sistemas analógicos,Teórico - Práctico,MI0707; MI0706,,2,3,3
 AUT0505,5,MI0712,Modelado y simulación de sistemas electromecánicos,Teórico - Práctico,MI0708; MI0709,CM3207,3,4,5
 IMM0506,5,ME220X,Ciencia e ingeniería de los materiales,Teórico - Práctico,QU1106,MI0713,3,4,5
 IMM0507,5,MI0713,Manufactura,Teórico,MI3117,,2,3,3
 IMM0508,5,MI0714,Taller de manufactura,Teórico - Práctico,,MI0713,2,4,2
 CYD0509,5,CI3203,Inglés para Electromecánica,Teórico,,,1,2,1
 FPH0601,6,MI0714,Administración de proyectos,Teórico,CS4402,,2,3,3
-IEE0603,6,MI0715,Sistemas digitales,Teórico,MI0711,,2,3,3
-IEE0604,6,MI0716,Laboratorio de sistemas analógicos y digitales,Práctico,,MI0715,1,2,1
+IEE0603,6,MI0715,Sistemas digitales,Teórico - Práctico,MI0711,,2,3,3
+IEE0604,6,MI0716,Telecomunicaciones y redes,Teórico,MI0711,,1,2,1
 IMM0606,6,MI3115,Resistencia de materiales,Teórico,ME220X,,3,4,5
 IMM0605,6,CM4108,Transferencia de calor,Teórico,ME220X,,3,4,5
 IMM0607,6,MI3108,Mecánica de fluidos,Teórico,MI3130,,3,4,5
 IMM0608,6,MI3111,Laboratorio de mecánica de fluidos,Práctico,,MI3108,1,2,1
 CYD0609,6,MI3124,Dibujo industrial,Teórico,MI0714,,3,4,5
 FPH0701,7,MI0717,Metodología de la investigación,Teórico,MI0714,,1,2,1
-IEE0703,7,MI0718,Máquinas eléctricas I,Teórico,MI0716; MI0715,,3,4,5
+IEE0703,7,MI0718,Máquinas eléctricas I,Teórico,MI0715,,3,4,5
 IEE0704,7,MI0719,Laboratorio de máquinas eléctricas I,Práctico,,MI0718,1,2,1
 AUT0705,7,MI0720,Control automático,Teórico,MI0712,,3,4,5
 AUT0706,7,MI0721,Microcontroladores,Teórico - Práctico,,MI0720,2,3,3
@@ -76,65 +76,65 @@ INS0907,9,MI6252,Neumática y oleohidraulica,Teórico - Práctico,MI3116,,3,4,5
 INS0908,9,MI0806,Sistemas de refrigeración y aire acondicionado,Teórico,MI0722; MI0723,,3,3,6
 INS0909,9,MI0807,Laboratorio de refrigeración y aire acondicionado,Práctico,,MI0806,1,2,1
 INS1002,10,MI0808,Gestion del ciclo de vida y la transformación digital,Teórico,MI0803,,2,3,3
-INS1003,10,MI0901,Electiva I,Teórico,,,3,4,5
-INS1004,10,MI0902,Electiva II,Teórico,,,3,4,5
+INS1003,10,MI1102,Electiva I,Teórico,,,3,4,5
+INS1004,10,MI1103,Electiva II,Teórico,,,3,4,5
 INS1005,10,MI0809,Diseño e integración de instalaciones electromecánicas,Teórico,MI0804; MI0805,,3,4,5
-INS1006,10,MI1001,Trabajo final de graduación,Práctico,,MI0809,7,21,0
-INS0990,12,MI0990,Sistemas de puesta a tierra,Teórico,MI0802,,3,4,5
-INS0991,12,MI0991,Sistemas contra incendios,Teórico,MI0804,,3,4,5
-INS0992,12,MI0991,Electronica de potencia,Teórico,MI0802,,3,4,5
-INS0993,13,MI0813,Sistemas de aeronaves de ala fija y giratoria,Teórico,,MI0810,3,4,5
-INS0994,13,MI0810,Avionica,Teórico,MI0724,,3,4,5
-INS0995,13,MI0814,Sistemas de aeronaves no tripulados y de despegue vertical,Teórico,,MI0810,3,4,5
-INS0996,14,MI0826,Sistemas de monitoreo e internet de las cosas,Teórico - Práctico,,MI0823,3,4,5
-INS0997,14,MI0823,Sistemas embebidos en tiempo real,Teórico - Práctico,MI0721,,3,4,5
-INS0998,14,MI0827,Sistemas de visión de máquina,Teórico - Práctico,,MI0823,3,4,5
-AER0801,8,MI0810,Aviónica,Teórico,,MI0724,3,4,5
-AER0806,8,MI0811,Máquinas y mecanismos,Teórico,MI4136,,3,4,5
-AER0807,8,MI0820,Taller de metrología aeronautica,Teórico,,MI0811,1,2,1
-AER0808,8,MI0812,Sistemas de propulsión,Teórico,MI0722; MI0723,,3,4,5
-AER0901,9,MI0813,Sistemas de aeronaves de ala fija y giratoria,Teórico,MI0810,,3,4,5
-AER0902,9,MI0814,Sistemas de aeronaves no tripulados y de despegue vertical,Teórico,MI0810,,3,4,5
-AER0903,9,MI0815,Aerodinámica y dinámica de vuelo,Teórico,MI0726; MI0727,,3,4,5
-AER0904,9,MI0816,Laboratorio de aerodinámica y dinámica de vuelo,Práctico,,MI0815,1,2,1
-AER0905,9,MI0817,Materiales en aeronautica,Teórico,,MI0818,2,3,3
-AER0906,9,MI0818,Análisis mecánico de estructuras y mecanismos de la aeronave,Teórico,MI0811,,3,4,5
-AER0907,9,MI0819,Gestión del ciclo de vida de la aeronave,Teórico,MI0820,,2,3,3
-AER1003,10,MI0821,Control automático de vuelo y tráfico,Teórico,MI0815; MI0816,,3,4,5
-AER1004,10,MI1001,Trabajo final de graduación,Práctico,,MI0821,7,21,0
-AER1005,10,MI0901,Electiva I,Teórico,,,3,4,5
-AER1006,10,MI0902,Electiva II,Teórico,,,3,4,5
-AER1007,10,MI0822,Instalaciones aeroportuarias,Teórico,MI0819,,2,3,3
-AER9090,12,MI1090,Sistemas de propulsión avanzada,Teórico,MI0812,,3,4,5
-AER9091,12,MI1091,Movilidad aerea avanzada,Teórico,MI0814,,3,4,5
-AER9092,12,MI1092,Introducción a los sistemas espaciales,Teórico,MI0819,,3,4,5
+INS1006,10,MI1101,Trabajo final de graduación,Práctico,,MI0809,7,21,0
+INS0990,12,MI0890,Sistemas de puesta a tierra,Teórico,MI0802,,3,4,5
+INS0991,12,MI0891,Sistemas contra incendios,Teórico,MI0804,,3,4,5
+INS0992,12,MI0891,Electronica de potencia,Teórico,MI0802,,3,4,5
+INS0993,13,MI0905,Sistemas de aeronaves de ala fija y giratoria,Teórico,,MI0901,3,4,5
+INS0994,13,MI0901,Avionica,Teórico,MI0724,,3,4,5
+INS0995,13,MI0906,Sistemas de aeronaves no tripulados y de despegue vertical,Teórico,,MI0901,3,4,5
+INS0996,14,MI1008,Sistemas de monitoreo e internet de las cosas,Teórico - Práctico,,MI1002,3,4,5
+INS0997,14,MI1002,Sistemas embebidos en tiempo real,Teórico - Práctico,MI0721,,3,4,5
+INS0998,14,MI1009,Sistemas de visión de máquina,Teórico - Práctico,,MI1002,3,4,5
+AER0801,8,MI0901,Aviónica,Teórico,,MI0724,3,4,5
+AER0806,8,MI0728,Máquinas y mecanismos,Teórico,MI4136,,3,4,5
+AER0807,8,MI0903,Taller de metrología aeronáutica,Teórico,,MI0728,1,2,1
+AER0808,8,MI0904,Sistemas de propulsión,Teórico,MI0722; MI0723,,3,4,5
+AER0901,9,MI0905,Sistemas de aeronaves de ala fija y giratoria,Teórico,MI0901,,3,4,5
+AER0902,9,MI0906,Sistemas de aeronaves no tripulados y de despegue vertical,Teórico,MI0901,,3,4,5
+AER0903,9,MI0907,Aerodinámica y dinámica de vuelo,Teórico,MI0726; MI0727,,3,4,5
+AER0904,9,MI0908,Laboratorio de aerodinámica y dinámica de vuelo,Práctico,,MI0907,1,2,1
+AER0905,9,MI0909,Materiales en aeronáutica,Teórico,,MI0910,2,3,3
+AER0906,9,MI0910,Análisis mecánico de estructuras y mecanismos de la aeronave,Teórico,MI0728,,3,4,5
+AER0907,9,MI0911,Gestión del ciclo de vida de la aeronave,Teórico,MI0903,,2,3,3
+AER1003,10,MI0912,Control automático de vuelo y tráfico,Teórico,MI0907; MI0908,,3,4,5
+AER1004,10,MI1101,Trabajo final de graduación,Práctico,,MI0912,7,21,0
+AER1005,10,MI1102,Electiva I,Teórico,,,3,4,5
+AER1006,10,MI1103,Electiva II,Teórico,,,3,4,5
+AER1007,10,MI0913,Instalaciones aeroportuarias,Teórico,MI0911,,2,3,3
+AER9090,12,MI0990,Sistemas de propulsión avanzada,Teórico,MI0904,,3,4,5
+AER9091,12,MI0991,Movilidad aérea avanzada,Teórico,MI0906,,3,4,5
+AER9092,12,MI0992,Introducción a los sistemas espaciales,Teórico,MI0911,,3,4,5
 AER9093,13,MI0804,Instalaciones mecánico-sanitarias,Teórico,,MI4212,3,4,5
 AER9094,13,MI4212,Instalaciones eléctricas,Teórico,MI0724,,3,4,5
 AER9095,13,MI0803,Gestión de la energía,Teórico,,MI4212,3,4,5
-AER9096,14,MI0826,Sistemas de monitoreo e internet de las cosas,Teórico - Práctico,,MI0823,3,4,5
-AER9097,14,MI0823,Sistemas embebidos en tiempo real,Teórico - Práctico,MI0721,,3,4,5
-AER9098,14,MI0827,Sistemas de visión de máquina,Teórico - Práctico,,MI0823,3,4,5
-SCF0801,8,MI0825,Ingenieria de sistemas: requerimientos y arquitectura,Teórico,MI0717,,3,4,5
-SCF0806,8,MI0811,Máquinas y mecanismos,Teórico,MI4136,,3,4,5
-SCF0807,8,MI0823,Sistemas embebidos en tiempo real,Teórico - Práctico,MI0721,,3,4,5
-SCF0808,8,MI0832,Fundamentos de ciberseguridad,Teórico,,MI0823,1,2,1
-SCF0901,9,MI0831,Ingenieria de sistemas: integración y validación,Teórico,MI0825,,3,4,5
-SCF0902,9,MI0830,Machine Learning e Inteligiencia Artificial,Teórico - Práctico,MI0823,,3,4,5
-SCF0903,9,MI0830,Tecnologías de empaquetado de semiconductores y MEMS,Teórico,,MI0830,2,2,4
-SCF0906,9,MI0828,Sistema de robótica y domótica,Teórico - Práctico,MI0811,MI0826,3,4,5
-SCF0907,9,MI0826,Sistemas de monitoreo e internet de las cosas,Teórico - Práctico,MI0823,,3,4,5
-SCF0908,9,MI0827,Sistemas de visión de máquina,Teórico - Práctico,,MI0826,3,4,5
-SCF1001,10,MI0834,Taller de integración de sistemas,Teórico - Práctico,MI0831,,2,4,2
-SCF1002,10,MI0833,Diseño de interfases humano-máquina,Teórico,,MI0834,3,3,6
-SCF1003,10,MI1001,Trabajo final de graduación,Práctico,,MI0833,7,21,0
-SCF1005,10,MI0901,Electiva I,Teórico,,,3,4,5
-SCF1006,10,MI0902,Electiva II,Teórico,,,3,4,5
-SCF9090,12,MI9090,Sistemas autonomos y multiagente,Teórico - Práctico,MI0830; MI0828,,3,4,5
-SCF9091,12,MI9091,Análisis predictivo de series temporales,Teórico - Práctico,MI0830,,3,4,5
-SCF9092,12,MI9092,Desarrollo de software para aplicaciones críticas,Teórico - Práctico,MI0832,,3,4,5
-SCF9093,13,MI0813,Sistemas de aeronaves de ala fija y giratoria,Teórico,,MI0810,3,4,5
-SCF9094,13,MI0810,Avionica,Teórico,MI0724,,3,4,5
-SCF9095,13,MI0814,Sistemas de aeronaves no tripulados y de despegue vertical,Teórico,,MI0810,3,4,5
+AER9096,14,MI1008,Sistemas de monitoreo e internet de las cosas,Teórico - Práctico,,MI1002,3,4,5
+AER9097,14,MI1002,Sistemas embebidos en tiempo real,Teórico - Práctico,MI0721,,3,4,5
+AER9098,14,MI1009,Sistemas de visión de máquina,Teórico - Práctico,,MI1002,3,4,5
+SCF0801,8,MI1001,Ingenieria de sistemas: requerimientos y arquitectura,Teórico,MI0717,,3,4,5
+SCF0806,8,MI0728,Máquinas y mecanismos,Teórico,MI4136,,3,4,5
+SCF0807,8,MI1002,Sistemas embebidos en tiempo real,Teórico - Práctico,MI0721,,3,4,5
+SCF0808,8,MI1003,Fundamentos de ciberseguridad,Teórico,,MI1002,1,2,1
+SCF0901,9,MI1004,Ingenieria de sistemas: integración y validación,Teórico,MI1001,,3,4,5
+SCF0902,9,MI1005,Machine Learning e Inteligiencia Artificial,Teórico - Práctico,MI1002,,3,4,5
+SCF0903,9,MI1005,Tecnologías de empaquetado de semiconductores y MEMS,Teórico,,MI1005,2,2,4
+SCF0906,9,MI1007,Sistema de robótica y domótica,Teórico - Práctico,MI0728,MI1008,3,4,5
+SCF0907,9,MI1008,Sistemas de monitoreo e internet de las cosas,Teórico - Práctico,MI1002,,3,4,5
+SCF0908,9,MI1009,Sistemas de visión de máquina,Teórico - Práctico,,MI1008,3,4,5
+SCF1001,10,MI1010,Taller de integración de sistemas,Teórico - Práctico,MI1004,,2,4,2
+SCF1002,10,MI1011,Diseño de interfases humano-máquina,Teórico,,MI1010,3,3,6
+SCF1003,10,MI1101,Trabajo final de graduación,Práctico,,MI1011,7,21,0
+SCF1005,10,MI1102,Electiva I,Teórico,,,3,4,5
+SCF1006,10,MI1103,Electiva II,Teórico,,,3,4,5
+SCF9090,12,MI1090,Sistemas autonomos y multiagente,Teórico - Práctico,MI1005; MI1007,,3,4,5
+SCF9091,12,MI1091,Análisis predictivo de series temporales,Teórico - Práctico,MI1005,,3,4,5
+SCF9092,12,MI1092,Desarrollo de software para aplicaciones críticas,Teórico - Práctico,MI1003,,3,4,5
+SCF9093,13,MI0905,Sistemas de aeronaves de ala fija y giratoria,Teórico,,MI0901,3,4,5
+SCF9094,13,MI0901,Avionica,Teórico,MI0724,,3,4,5
+SCF9095,13,MI0906,Sistemas de aeronaves no tripulados y de despegue vertical,Teórico,,MI0901,3,4,5
 SCF9096,14,MI0804,Instalaciones mecánico-sanitarias,Teórico,,MI4212,3,4,5
 SCF9097,14,MI4212,Instalaciones eléctricas,Teórico,MI0724,,3,4,5
 SCF9098,14,MI0803,Gestión de la energía,Teórico,,MI4212,3,4,5
