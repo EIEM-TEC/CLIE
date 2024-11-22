@@ -274,6 +274,7 @@ def malla_enf(malla,cursos,sesgo,lista,nombrearea,area_colors,titulo,rango,enf):
                     for column in requi.columns:
                         idreq = requi[column].item()
                         codreq = cursos_enf[cursos_enf.id == idreq].codigo.item()
+                        #print(nombre)
                         semreq = cursos_enf[cursos_enf.id == idreq].semestre.item()
                         filareq = cursos_enf[cursos_enf.id == idreq].fila.item()
                         sevesreq = cursos_enf[cursos_enf.id == idreq].sevesreq.item()
