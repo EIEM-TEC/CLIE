@@ -294,6 +294,7 @@ def malla_enf(malla,cursos,sesgo,lista,nombrearea,area_colors,titulo,rango,enf):
                                 cursos_enf.loc[cursos_enf['id'] == idreq, 'sevesreq'] = sevesreq + 1
                                 cursos_enf.loc[cursos_enf['id'] == id, 'sevreq'] = sevreq + 1.8
                 if not(corequi == 'nan'):
+                    print(nombre)
                     semcoreq = cursos_enf[cursos_enf.id == corequi].semestre.item()
                     filacoreq = cursos_enf[cursos_enf.id == corequi].fila.item()
                     if ((filacoreq == fila - 1) or (filacoreq == fila + 1)) and (semcoreq == semestre):

@@ -27,7 +27,7 @@ areas.insert(0,"nombre",["Analisís de datos",
                          "Formación profesional y habilidades interpersonales",
                          "Ingeniería eléctrica y electrónica",
                          "Ingeniería mecánica y de materiales",
-                         "Instalaciones",
+                         "Instalaciones electromecánicas",
                          "Sistemas ciberfísicos",
                          "Total"])
 
