@@ -61,25 +61,25 @@ IEE0804,MI0722,Laboratorio de máquinas eléctricas II,IEE,8,3,0,2,1,,IEE0803,
 AUT0805,MI0723,Control por eventos discretos,AUT,8,4,4,0,3,AUT0705;AUT0706,,AER0903
 AUT0806,MI0724,Laboratorio de control,AUT,8,5,0,2,1,,AUT0805,AER0903
 FPH0809,SE1400,Actividad cultural - deportiva,FPH,8,9,0,2,0,,,
-INS0801,MI0801,Sistemas electricos de transmisión y distribución,INS,8,1,4,0,3,,IEE0803,INS0901;INS0902
-INS0806,MI0803,Gestión de la energía,INS,8,6,4,0,3,IEE0703,INS1002,
+INS0801,MI0801,Sistemas electricos de transmisión y distribución,INS,8,1,4,0,3,,IEE0803,INS0901
+INS0806,MI0803,Gestión de la energía,INS,8,6,4,0,3,IEE0703,,
 INS0807,MI3116,Turbomáquinas,INS,8,7,4,0,3,IMM0707;IMM0708,,INS0907
 INS0808,MI3119,Laboratorio de turbomáquinas,INS,8,8,0,2,1,,INS0807,
 INS0901,MI0802,Sistemas de generación y almacenamiento de energía,INS,9,1,4,0,3,INS0801,,INS0990
 INS0904,MI4212,Instalaciones eléctricas,INS,9,4,4,0,3,IEE0803,,INS0905;INS0906
 INS0905,MI0804,Instalaciones mecánico-sanitarias,INS,9,5,4,0,3,INS0807,INS0904,INS1005;INS0991
-INS0906,MI0805,Taller de dibujo para instalaciones electromecánicas,INS,9,6,0,2,1,,INS0905,INS1005;INS0992
-INS0907,MI6252,Neumática y oleohidraulica,INS,9,7,2,2,3,INS0807,,
-INS0908,MI0806,Sistemas de refrigeración y aire acondicionado,INS,9,8,3,0,3,IMM0707;IMM0708,,
-INS0909,MI0807,Laboratorio de refrigeración y aire acondicionado,INS,9,9,0,2,1,,INS0908,
-INS1002,MI0808,Gestion del ciclo de vida y la transformación digital,INS,10,2,3,0,2,INS0902,,
+INS0906,MI0805,Sistemas de vapor,INS,9,6,4,0,3,INS0807,,
+INS0907,MI0806,Laboratorio de Sistemas de Vapor,INS,9,7,0,2,1,,INS0906,
+INS0908,MI0807,Sistemas de refrigeración y aire acondicionado,INS,9,8,3,0,3,IMM0707;IMM0708,,
+INS0909,MI0808,Laboratorio de refrigeración y aire acondicionado,INS,9,9,0,2,1,,INS0908,
+INS1007,MI0809,Taller de neumática y oleohidráulica,INS,10,7,1,2,2,INS0807,,
 INS1003,MI1102,Electiva I,INS,10,3,4,0,3,,,
 INS1004,MI1103,Electiva II,INS,10,4,4,0,3,,,
-INS1005,MI0809,Diseño e integración de instalaciones electromecánicas,INS,10,5,4,0,3,INS0905;INS0906,,
+INS1005,MI0809,Diseño e integración de instalaciones electromecánicas,INS,10,5,2,2,3,INS0905,,
 INS1006,MI1101,Trabajo final de graduación,INS,10,6,0,21,7,,INS1005,
 INS0990,MI0890,Sistemas de puesta a tierra,INS,12,1,4,0,3,INS0901,,
 INS0991,MI0891,Sistemas contra incendios,INS,12,2,4,0,3,INS0905,,
-INS0992,MI0891,Modelado de información para edificaciones (BIM),INS,12,3,4,0,3,INS0906,,
+INS0992,MI0891,Edificios inteligentes,INS,12,3,4,0,3,INS0906,,
 INS0993,MI0905,Sistemas de aeronaves de ala fija y giratoria,INS,13,1,4,0,3,,INS0994,
 INS0994,MI0901,Avionica,INS,13,2,4,0,3,IEE0803,,
 INS0995,MI0906,Sistemas de aeronaves no tripulados y de despegue vertical,INS,13,3,4,0,3,,INS0994,
