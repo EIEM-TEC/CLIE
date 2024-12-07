@@ -1,0 +1,126 @@
+\documentclass[letterpaper]{article}%
+\usepackage{lastpage}%
+\usepackage{parskip}%
+\usepackage{geometry}%
+\geometry{left=22.5mm,right=16.1mm,top=48mm,bottom=25mm,headheight=12.5mm,footskip=12.5mm}%
+\usepackage{fontspec}%
+\usepackage[spanish,activeacute]{babel}%
+\usepackage{anyfontsize}%
+\usepackage{fancyhdr}%
+\usepackage{csquotes}%
+\usepackage[style=ieee,backend=biber]{biblatex}%
+\usepackage[skins,breakable]{tcolorbox}%
+\usepackage{color}%
+\usepackage{tikz}%
+\usepackage{tabularx}%
+\usepackage{ragged2e}%
+\usepackage{graphicx}%
+\usepackage{xcolor}%
+%
+\setmainfont{Arial}%
+\addbibresource{../bibliografia.bib}%
+\renewcommand*{\bibfont}{\fontsize{12}{16}\selectfont}%
+\definecolor{gris}{rgb}{0.27,0.27,0.27}%
+\definecolor{parte}{rgb}{0.02,0.204,0.404}%
+\definecolor{azulsuaveTEC}{rgb}{0.02,0.455,0.773}%
+\definecolor{fila}{rgb}{0.929,0.929,0.929}%
+\definecolor{linea}{rgb}{0.749,0.749,0.749}%
+\fancypagestyle{headfoot}{%
+\renewcommand{\headrulewidth}{0pt}%
+\renewcommand{\footrulewidth}{0pt}%
+\fancyhead{%
+}%
+\fancyfoot{%
+}%
+\fancyhead[L]{%
+\begin{minipage}{0.5\textwidth}%
+\flushleft%
+\includegraphics[width=62.5mm]{../figuras/Logo.png}%
+\end{minipage}%
+}%
+\fancyfoot[L]{%
+\textcolor{azulsuaveTEC}{%
+Escuela de Ingeniería Electromecánica%
+}%
+\par \parbox{0.85\textwidth}{%
+\fontsize{8}{0}\selectfont \textcolor{azulsuaveTEC}{Carrera de Ingeniería Electromecánica}%
+}%
+}%
+\fancyfoot[R]{%
+\textcolor{azulsuaveTEC}{%
+Página \thepage \hspace{1pt} de \pageref*{LastPage}%
+}%
+}%
+}%
+%
+\begin{document}%
+\normalsize%
+\thispagestyle{empty}%
+\begin{tikzpicture}[overlay,remember picture]%
+\node[inner sep = 0mm,outer sep = 0mm,anchor = north west,xshift = -23mm,yshift = 22mm] at (0.0,0.0) {\includegraphics[width=21cm]{../figuras/Logo_portada.png}};%
+\end{tikzpicture}%
+\vspace*{100mm}%
+\par\fontsize{14}{0}\selectfont \textcolor{black}{Programa del curso MI0712}%
+\par\fontsize{18}{25}\selectfont \textbf{\textcolor{azulsuaveTEC}{Modelado y simulación de sistemas electromecánicos}}%
+\vspace*{15mm}%
+\newline%
+\begin{tabularx}{\textwidth}{m{0.02\textwidth}m{0.98\textwidth}}%
+&\hspace*{0mm}\fontsize{12}{0}\selectfont \textbf{\textcolor{gris}{Escuela de Ingeniería Electromecánica}}\\%
+[-12pt]%
+&\hspace*{0mm}\fontsize{12}{0}\selectfont \textbf{\textcolor{gris}{Carrera de Ingeniería Electromecánica}}\\%
+\end{tabularx}%
+\newpage%
+\pagestyle{headfoot}%
+\par\fontsize{14}{0}\selectfont \textbf{\textcolor{parte}{I parte: Aspectos relativos al plan de estudios}}%
+\par\hspace*{2mm}\fontsize{12}{20}\selectfont \textbf{\textcolor{parte}{1. Datos generales}}%
+\vspace*{3mm}%
+\newline%
+\fontsize{10}{12}\selectfont %
+\begin{tabularx}{\textwidth}{p{6cm}p{10cm}}%
+\textbf{Nombre del curso:}&Modelado y simulación de sistemas electromecánicos\\%
+[10pt]%
+\textbf{Código:}&MI0712\\%
+[10pt]%
+\textbf{Tipo de curso:}&Teórico {-} Práctico\\%
+[10pt]%
+\textbf{Obligatorio o electivo:}&Obligatorio\\%
+[10pt]%
+\textbf{Nº de créditos:}&3\\%
+[10pt]%
+\textbf{Nº horas de clase por semana:}&4\\%
+[10pt]%
+\textbf{Nº horas extraclase por semana:}&5\\%
+[10pt]%
+\textbf{Ubicación en el plan de estudios:}&Curso de V semestre en Ingeniería Electromecánica\\%
+[10pt]%
+\textbf{Requisitos:}&MI3117 Dinámica; CM3207 Métodos numéricos para ingeniería\\%
+[10pt]%
+\textbf{Correquisitos:}&\\%
+[10pt]%
+\textbf{El curso es requisito de:}&MI3108 Mecánica de fluidos; MI0720 Control automático\\%
+[10pt]%
+\textbf{Asistencia:}&Obligatoria\\%
+[10pt]%
+\textbf{Suficiencia:}&Si\\%
+[10pt]%
+\textbf{Posibilidad de reconocimiento:}&Si\\%
+[10pt]%
+\textbf{Aprobación y actualización del programa:}&I semestre de 2026\\%
+[10pt]%
+\end{tabularx}%
+\newpage%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{20}\selectfont \textbf{\textcolor{parte}{2. Descripción general}}&El curso de Modelado y Simulación de Sistemas Electromecánicos contribuye significativamente al desarrollo profesional de los estudiantes, ya que proporciona las herramientas necesarias para analizar, representar y comprender sistemas complejos en el ámbito de la ingeniería electromecánica. Este curso fomenta la integración de conocimientos teóricos con herramientas computacionales avanzadas, promoviendo soluciones innovadoras y eficientes.\newline%
+\newline%
+Entre los aprendizajes más destacados se encuentran: aplicar técnicas de modelado matemático para representar sistemas electromecánicos; implementar simulaciones utilizando software especializado; analizar los resultados de las simulaciones para optimizar el desempeño de los sistemas; y utilizar modelos para evaluar diferentes escenarios operativos en sistemas electromecánicos.\newline%
+\newline%
+Este curso se complementa con Control Automático y Control por Eventos Discretos, sentando las bases para la formación en automática. Juntos, estos cursos permiten a los estudiantes abordar con éxito el diseño y análisis de sistemas de control integrados, esenciales para aplicaciones avanzadas en la ingeniería electromecánica.\\%
+\end{tabularx}%
+\vspace*{4mm}%
+\newline%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{20}\selectfont \textbf{\textcolor{parte}{3. Objetivos}}&Al final del curso la persona estudiante será capaz de:\newline%
+\newline%
+\textbackslash{}textbf\{Objetivo general\}\\%
+\end{tabularx}%
+\end{document}

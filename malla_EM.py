@@ -1,6 +1,3 @@
-import roman
-import subprocess
-import numpy as np
 import pandas as pd
 from pylatex import Document, Package, Command, PageStyle, Head, Foot, NewPage,\
     TextColor, MiniPage, StandAloneGraphic, simple_page_number,\
