@@ -1,6 +1,3 @@
-﻿id,tipo,electivo,asistencia,suficiencia,reconocimiento,vigencia,programas
-CYD0107,2,0,1,1,1,2023,"Ingeniería en Mantenimiento Industrial;2
-Ingeniería en Electrónica;1
-Ingeniería en Producción Industrial;1
-Ingeniería Mecatrónica;3
-Ingeniería en Materiales;4"
+﻿id,tipo,electivo,asistencia,suficiencia,reconocimiento,vigencia
+AUT0504,2,0,1,1,1,1;2026
+CYD0107,2,0,1,1,1,1;2023
