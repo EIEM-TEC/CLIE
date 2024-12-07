@@ -8,6 +8,7 @@
 \usepackage{anyfontsize}%
 \usepackage{fancyhdr}%
 \usepackage{csquotes}%
+\usepackage[ampersand]{easylist}%
 \usepackage[style=ieee,backend=biber]{biblatex}%
 \usepackage[skins,breakable]{tcolorbox}%
 \usepackage{color}%
@@ -72,7 +73,7 @@ Página \thepage \hspace{1pt} de \pageref*{LastPage}%
 \newpage%
 \pagestyle{headfoot}%
 \par\fontsize{14}{0}\selectfont \textbf{\textcolor{parte}{I parte: Aspectos relativos al plan de estudios}}%
-\par\hspace*{2mm}\fontsize{12}{20}\selectfont \textbf{\textcolor{parte}{1. Datos generales}}%
+\par\hspace*{2mm}\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{1. Datos generales}}%
 \vspace*{3mm}%
 \newline%
 \fontsize{10}{12}\selectfont %
@@ -110,17 +111,25 @@ Página \thepage \hspace{1pt} de \pageref*{LastPage}%
 \end{tabularx}%
 \newpage%
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
-\par\fontsize{12}{20}\selectfont \textbf{\textcolor{parte}{2. Descripción general}}&El curso de Modelado y Simulación de Sistemas Electromecánicos contribuye significativamente al desarrollo profesional de los estudiantes, ya que proporciona las herramientas necesarias para analizar, representar y comprender sistemas complejos en el ámbito de la ingeniería electromecánica. Este curso fomenta la integración de conocimientos teóricos con herramientas computacionales avanzadas, promoviendo soluciones innovadoras y eficientes.\newline%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{2. Descripción general}}&El curso de Modelado y Simulación de Sistemas Electromecánicos contribuye significativamente al desarrollo profesional de los estudiantes, ya que proporciona las herramientas necesarias para analizar, representar y comprender sistemas complejos en el ámbito de la ingeniería electromecánica. Este curso fomenta la integración de conocimientos teóricos con herramientas computacionales avanzadas, promoviendo soluciones innovadoras y eficientes.
 \newline%
-Entre los aprendizajes más destacados se encuentran: aplicar técnicas de modelado matemático para representar sistemas electromecánicos; implementar simulaciones utilizando software especializado; analizar los resultados de las simulaciones para optimizar el desempeño de los sistemas; y utilizar modelos para evaluar diferentes escenarios operativos en sistemas electromecánicos.\newline%
+\newline%
+Entre los aprendizajes más destacados se encuentran: aplicar técnicas de modelado matemático para representar sistemas electromecánicos; implementar simulaciones utilizando software especializado; analizar los resultados de las simulaciones para optimizar el desempeño de los sistemas; y utilizar modelos para evaluar diferentes escenarios operativos en sistemas electromecánicos.
+\newline%
 \newline%
 Este curso se complementa con Control Automático y Control por Eventos Discretos, sentando las bases para la formación en automática. Juntos, estos cursos permiten a los estudiantes abordar con éxito el diseño y análisis de sistemas de control integrados, esenciales para aplicaciones avanzadas en la ingeniería electromecánica.\\%
 \end{tabularx}%
 \vspace*{4mm}%
 \newline%
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
-\par\fontsize{12}{20}\selectfont \textbf{\textcolor{parte}{3. Objetivos}}&Al final del curso la persona estudiante será capaz de:\newline%
-\newline%
-\textbackslash{}textbf\{Objetivo general\}\\%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{3. Objetivos}}&Al final del curso la persona estudiante será capaz de:\newline\newline \textbf{Objetivo general}\begin{itemize}\item Desarrollar en los estudiantes las competencias necesarias para modelar y simular sistemas electromecánicos, utilizando herramientas matemáticas y computacionales que permitan analizar y optimizar su comportamiento en diferentes escenarios operativos.\end{itemize} \vspace{2mm}\textbf{Objetivos específicos}\begin{itemize}\item Aplicar técnicas de modelado matemático para representar sistemas electromecánicos, integrando conceptos físicos y de ingeniería que describan su dinámica y funcionamiento.\item Implementar simulaciones computacionales que permitan analizar el comportamiento de los sistemas electromecánicos bajo distintas condiciones operativas.\item Interpretar y evaluar los resultados de las simulaciones para optimizar diseños y mejorar el desempeño de los sistemas electromecánicos.\end{itemize}\\%
+\end{tabularx}%
+\newpage%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{4. Contenidos}}&En el curso se desarrollaran los siguientes temas: \newline\newline 
+\begin{easylist}
+    & Conceptos básicos
+    & Modelado de sistemas lineales 
+\end{easylist}\\%
 \end{tabularx}%
 \end{document}

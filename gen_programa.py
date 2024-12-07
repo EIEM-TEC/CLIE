@@ -190,54 +190,34 @@ def generar_programa(id,listProf):
     print(f'Asistencia: {tipAsist}, Suficiencia: {posSufic}, Reconocimiento: {posRecon}') 
     aprCurso = detall[detall.id == id].aprobacion.str.split(';').explode().reset_index(drop=True)
     aprCurso = roman.toRoman(int(aprCurso[0])) + " semestre de " + aprCurso[1]
-    print(f'Aprobación del programa: {aprCurso}')
+    print(f'Aprobación del programa: {aprCurso}\n\n')
     desGener = descri[descri.id == id].descripcion.item().replace("\n", "\n\n")
     lisObjet = objeti[objeti.id == id].reset_index(drop=True).objetivo
-    print(lisObjet)
     for consecutivo, objetivo in lisObjet.items():
         if consecutivo == 0:
-            objGener = NoEscape(r"\hspace*{0.02\linewidth}\parbox{0.98\linewidth}{\strut\textbullet\, ") + objetivo + NoEscape(r"\strut}\\") + '\n'
-            objEspec = r""
+            objGener = NoEscape(objetivo)
+            objEspec = NoEscape(r"\begin{itemize}")
         else:
-            objEspec += r"\hspace*{0.02\linewidth}\parbox{0.98\linewidth}{\strut\textbullet\, " + objetivo + r"\strut}\\" + '\n' 
-    print(f'Objetivo general: {objGener}')
-    objCurso = NoEscape(r"Al final del curso la persona estudiante será capaz de:") + "\n\n"
-    print(NoEscape(Command("textbf", "Objetivo general").dumps()))
+            objEspec += NoEscape(r"\item ") + NoEscape(objetivo)
+    objEspec += NoEscape(r"\end{itemize}")
+    objCurso = NoEscape(r"Al final del curso la persona estudiante será capaz de:") 
+    objCurso += NoEscape(r"\newline\newline ")
     objCurso += NoEscape(Command("textbf", "Objetivo general").dumps())
-    #objCurso += objGener
+    objCurso += NoEscape(r"\begin{itemize}\item ")
+    objCurso += objGener
+    objCurso += NoEscape(r"\end{itemize} \vspace{2mm}")
+    objCurso += NoEscape(Command("textbf", "Objetivos específicos").dumps())
+    objCurso += objEspec
+    conCurso = NoEscape(r"En el curso se desarrollaran los siguientes temas: \newline\newline ")
+    conCurso += NoEscape(r"\begin{easylist}")
+    conCurso += NoEscape(conten[conten.id == id].contenidos.item())
+    conCurso += NoEscape(r"\end{easylist}")
+
     #+ "La persona estudiante será capaz de:" + r'\\' + '\n'   
 
     # coaCurso = cursos[cursos.id == id].area.item()
     # noaCurso = areas[areas.codArea == coaCurso].nombre.item()
 
-    # #Genera ubicación en el plan de estudios en las diferentes carreras
-    # ubiPlane = ""
-    # for sem in np.sort(lisProgr['semestre'].unique()):
-    #     filter = lisProgr["semestre"] == str(sem)
-    #     filterlist = lisProgr[filter]
-    #     ubiPlane += "Curso de "
-    #     ubiPlane += number_to_ordinals(str(sem))
-    #     ubiPlane += " semestre en "
-    #     if len(filterlist)  > 1:
-    #         ubiPlane += ' e'.join(filterlist['programa'].str.cat(sep='; ').rsplit(';',1)) + ". "
-    #     else:
-    #         ubiPlane += filterlist['programa'].item() + ". "
-    # 
-    # corRequi = cursos[cursos.id == id].correquisitos.item()
-    # essRequi = cursos[cursos.id == id].esrequisito.item()
-
-    
-
-    # porAreas = round((numCredi/180) * 100,2)
-    
-    # desGener = descri[descri.id == id].descripcion.item()
-    # objGener = objgen[objgen.id == id].objetivoGeneral.item()
-    # objGener = objGener[0].lower() + objGener[1:len(objGener)] # primera letra en minuscula
-    # objCurso = f"Al final del curso la persona estudiante será capaz de {objGener}" + r'\\' + '\n'\
-    # + "La persona estudiante será capaz de:" + r'\\' + '\n'
-    # objEspec = objesp[objesp.id == id].objetivosEspecificos.str.split('\n',expand=False).explode()
-    # for index, row in objEspec.items():     
-    #     objCurso += r"\hspace*{0.02\linewidth}\parbox{0.98\linewidth}{\strut\textbullet\, " + row + r"\strut}\\" + '\n'
     # conCurso = conten[conten.id == id].contenidos.str.split('\r\n',expand=False).explode()
     # conCurso.reset_index(inplace = True, drop = True)
     # nivel_1, nivel_2, nivel_3 = [0,0,0]
@@ -314,12 +294,11 @@ def generar_programa(id,listProf):
     doc.packages.append(Package(name="anyfontsize"))
     doc.packages.append(Package(name="fancyhdr"))
     doc.packages.append(Package(name="csquotes"))
+    doc.packages.append(Package(name="easylist", options=['ampersand']))
     doc.packages.append(Package(name="biblatex", options=['style=ieee','backend=biber']))
     doc.packages.append(Package(name="tcolorbox",options=['skins','breakable']))
     #Package options
     doc.preamble.append(Command('setmainfont','Arial'))
-    #doc.preamble.append(Command('usetikzlibrary','calc'))
-    #doc.preamble.append(Command('linespread', '0.9'))
     doc.preamble.append(Command('addbibresource', '../bibliografia.bib'))
     doc.preamble.append(NoEscape(r'\renewcommand*{\bibfont}{\fontsize{12}{16}\selectfont}'))
     doc.add_color('gris','rgb','0.27,0.27,0.27') #70,70,70
@@ -429,7 +408,7 @@ def generar_programa(id,listProf):
             (   
             hspace="2mm",
             size="12",
-            vspace="20",
+            vspace="14",
             color="parte",
             bold=True,
             text="1. Datos generales"
@@ -477,7 +456,7 @@ def generar_programa(id,listProf):
             table.add_row([textcolor
             (   
             size="12",
-            vspace="20",
+            vspace="14",
             color="parte",
             bold=True,
             text="2. Descripción general"
@@ -489,16 +468,23 @@ def generar_programa(id,listProf):
             table.add_row([textcolor
             (   
             size="12",
-            vspace="20",
+            vspace="14",
             color="parte",
             bold=True,
             text="3. Objetivos"
             )
             ,objCurso])
-    # doc.append(VarCol("2 Descripción general",desGener))
-    # doc.append(VerticalSpace("10mm", star=True))
-    # doc.append(VarCol("3 Objetivos",objCurso))
-    # doc.append(VerticalSpace("10mm", star=True))
+    doc.append(NewPage())
+    with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
+        table.add_row([textcolor
+        (   
+        size="12",
+        vspace="14",
+        color="parte",
+        bold=True,
+        text="4. Contenidos"
+        )
+        ,conCurso])
     # doc.append(VarCol("4 Contenidos",conCursoStr))
     # doc.append(VerticalSpace("10mm", star=True))
     # doc.append(NewPage())

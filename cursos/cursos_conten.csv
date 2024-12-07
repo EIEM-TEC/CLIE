@@ -1,77 +1,79 @@
 id,contenidos
-AUT0504,"*Conceptos básicos
-**uno
-**dos
-*Modelado de sistemas lineales"
-CYD0107,"*Generalidades
-**El Dibujo Técnico como lenguaje. Historia del Dibujo Técnico.
-**Objetivos del curso
-**Instrumentos de Dibujo: Escalímetro, escuadras.
-**Rotulado técnico y Formatos para dibujo Técnico
-**Norma de rotulado INTE-ISO 3098/0/2/3-2008
-**Formatos según INTE-ISO 5457-2008
-**Información que debe contener un cajetín INTE-ISO 7200-2008
-*Geometría Descriptiva (2 hrs)
-**Consideraciones fundamentales de la Geometría Descriptiva :
-***Objetivos del curso
-***Concepto de Geometría Descriptiva y su Historia
-**Proyección del punto, el segmento y los planos en el espacio
-***Proyección de un punto, el segmento y los planos en las vistas
-***Proyección de un punto, el segmento y los planos en el espacio
-**Longitudes y dimensiones naturales
-***Procedimiento de rotación para encontrar la dimensión real de un segmento y un plano;
-***Procedimiento de sustitución de planos para encontrar la dimensión real de un segmento y un plano;
-***Procedimiento de superposición para encontrar la dimensión real de un segmento y un plano.
-**Características particulares de la representación de los Cuerpos Geométricos
-***Características particulares del prisma y su representación;
-***Características del cono y su representación;
-***Características de la pirámide y su representación;
-***Características del cilindro y su representación;
-***Características del toroide y su representación;
-***Características de la esfera y su representación
-*Escalas (4 hrs)
-**Concepto de escalas
-**Escalas según INTE ISO 5455-2008
-*Proyecciones ortogonales (14 hrs)
-**Sistema de proyección y designación de vistas según la norma INTE- ISO 128/30/34-2008
-**Criterios de selección de la vista frontal y la ubicación de las otras vistas.
-**Cantidad de vistas que definen un objeto.
-**Significado y utilización de los tipos de líneas.
-**Tipos de líneas según la norma INTE ISO 128/20/21/22/23/24-2008
-*Presentación de un plano:
-**Calidad de líneas
-**Orden y adecuada ubicación de la información
-**Especificaciones técnicas.
-**Práctica de proyecciones ortogonales croquizando “a mano alzada”.
-**Práctica de proyecciones ortogonales utilizando Software de dibujo.
-*Proyecciones Axonométricas (12 hrs)
-**Ejes de proyección
-**Tipos de axonometrías
-**Proyecciones axonométricas a mano alzada y utilizando software de dibujo.
-*Acotado (4 hrs) 
-**Normas y recomendaciones INTE/ISO 129/1-2008 sobre acotado.
-**Líneas utilizadas en el acotado
-**Posición de la cota
-**Rotulado de cotas
-**Criterios para la acotación correcta de piezas.
-**Relación entre cota y escala.
-*Cortes y secciones (4 hrs)
-**Concepto de cortes y secciones. Conveniencia de su utilización
-**Representación e indicación de cortes según la norma INTE/ISO 128/40-44- 2008
-**Achurado
-**Tipos de cortes.
-***Sección en un plano de corte.
-***Sección en dos planos paralelos.
-***Sección en tres planos de corte continuos
-***Sección en dos planos de intersección
-***Plano de corte posesionado parcialmente fuera de la pieza
-***Sección removida de una vista
-***Secciones sucesivas
-***Cortes oblicuos o auxiliares
-***Cortes y secciones parciales
-***Corte y secciones de piezas simétricas
-*Vistas auxiliares simples (4 hrs)
-**Vistas auxiliares
-**Tipos de vistas auxiliares
-**Ubicación de las vistas auxiliares
-**Rotulado de vistas auxiliares."
+AUT0504,"
+&Conceptos básicos
+&&uno
+&&dos
+&Modelado de sistemas lineales
+"
+CYD0107,"#Generalidades
+##El Dibujo Técnico como lenguaje. Historia del Dibujo Técnico.
+##Objetivos del curso
+##Instrumentos de Dibujo: Escalímetro, escuadras.
+##Rotulado técnico y Formatos para dibujo Técnico
+##Norma de rotulado INTE-ISO 3098/0/2/3-2008
+##Formatos según INTE-ISO 5457-2008
+##Información que debe contener un cajetín INTE-ISO 7200-2008
+#Geometría Descriptiva (2 hrs)
+##Consideraciones fundamentales de la Geometría Descriptiva :
+###Objetivos del curso
+###Concepto de Geometría Descriptiva y su Historia
+##Proyección del punto, el segmento y los planos en el espacio
+###Proyección de un punto, el segmento y los planos en las vistas
+###Proyección de un punto, el segmento y los planos en el espacio
+##Longitudes y dimensiones naturales
+###Procedimiento de rotación para encontrar la dimensión real de un segmento y un plano;
+###Procedimiento de sustitución de planos para encontrar la dimensión real de un segmento y un plano;
+###Procedimiento de superposición para encontrar la dimensión real de un segmento y un plano.
+##Características particulares de la representación de los Cuerpos Geométricos
+###Características particulares del prisma y su representación;
+###Características del cono y su representación;
+###Características de la pirámide y su representación;
+###Características del cilindro y su representación;
+###Características del toroide y su representación;
+###Características de la esfera y su representación
+#Escalas (4 hrs)
+##Concepto de escalas
+##Escalas según INTE ISO 5455-2008
+#Proyecciones ortogonales (14 hrs)
+##Sistema de proyección y designación de vistas según la norma INTE- ISO 128/30/34-2008
+##Criterios de selección de la vista frontal y la ubicación de las otras vistas.
+##Cantidad de vistas que definen un objeto.
+##Significado y utilización de los tipos de líneas.
+##Tipos de líneas según la norma INTE ISO 128/20/21/22/23/24-2008
+#Presentación de un plano:
+##Calidad de líneas
+##Orden y adecuada ubicación de la información
+##Especificaciones técnicas.
+##Práctica de proyecciones ortogonales croquizando “a mano alzada”.
+##Práctica de proyecciones ortogonales utilizando Software de dibujo.
+#Proyecciones Axonométricas (12 hrs)
+##Ejes de proyección
+##Tipos de axonometrías
+##Proyecciones axonométricas a mano alzada y utilizando software de dibujo.
+#Acotado (4 hrs) 
+##Normas y recomendaciones INTE/ISO 129/1-2008 sobre acotado.
+##Líneas utilizadas en el acotado
+##Posición de la cota
+##Rotulado de cotas
+##Criterios para la acotación correcta de piezas.
+##Relación entre cota y escala.
+#Cortes y secciones (4 hrs)
+##Concepto de cortes y secciones. Conveniencia de su utilización
+##Representación e indicación de cortes según la norma INTE/ISO 128/40-44- 2008
+##Achurado
+##Tipos de cortes.
+###Sección en un plano de corte.
+###Sección en dos planos paralelos.
+###Sección en tres planos de corte continuos
+###Sección en dos planos de intersección
+###Plano de corte posesionado parcialmente fuera de la pieza
+###Sección removida de una vista
+###Secciones sucesivas
+###Cortes oblicuos o auxiliares
+###Cortes y secciones parciales
+###Corte y secciones de piezas simétricas
+#Vistas auxiliares simples (4 hrs)
+##Vistas auxiliares
+##Tipos de vistas auxiliares
+##Ubicación de las vistas auxiliares
+##Rotulado de vistas auxiliares."
