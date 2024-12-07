@@ -66,44 +66,6 @@ def fontselect(size,vspace):
     dump += NoEscape(Command("selectfont").dumps()) + NoEscape(" ")
     return dump
 
-def VarCol(ltext,rtext):
-    dump = NoEscape(
-r'''
-\begin{tcolorbox}[
-blanker,
-width=0.78\textwidth,enlarge left by=0.24\textwidth,
-before skip=6pt,
-breakable,
-overlay unbroken and first={%
-    \node[inner sep=0pt,outer sep=0pt,text width=0.22\textwidth,
-    align=none,
-    below right]
-    at ([xshift=-0.24\textwidth]frame.north west)
-{
-'''
-    )
-    dump += textcolor(   
-            par=False,
-            hspace="0mm",
-            size="12",
-            vspace="14",
-            color="parte",
-            bold=True,
-            text=f"{ltext}" 
-            )
-    dump += NoEscape(
-r'''
-};}]
-'''
-    )
-    dump += NoEscape(rtext)
-    dump += NoEscape(
-r''' 
-\end{tcolorbox}
-'''
-    )
-    return dump
-
 def generar_programa(id,listProf):
     codCurso = cursos[cursos.id == id].codigo.item()
     nomEscue = "Escuela de Ingeniería Electromecánica"
@@ -136,9 +98,13 @@ def generar_programa(id,listProf):
     horExtra = (numCredi * 3) - horClass
     print(f'Créditos: {numCredi}, Horas clase: {horClass}, Horas extraclase: {horExtra}')
     ubiPlane = ""
+    counter = 0
     for programa in lisProgr.programa:
+        counter +=1
         semestre = lisProgr[lisProgr['programa'] == programa].semestre.item()
         ubiPlane += "Curso de " + roman.toRoman(int(semestre)) + " semestre en " + programa
+        if counter > 1:
+            ubiPlane += ". "
     print(ubiPlane)
     susRequi = ""
     lisRequi = cursos[cursos.id == id].requisitos.item()
@@ -153,6 +119,8 @@ def generar_programa(id,listProf):
             susRequi += cursos[cursos.id == requisito].nombre.item()
             if counter < numRequi:
                 susRequi += "; "
+    else:
+        susRequi += "Ninguno"
     print(f'Requisitos: {susRequi}')
     corRequi = ""
     lisCorre = cursos[cursos.id == id].correquisitos.item()
@@ -167,6 +135,8 @@ def generar_programa(id,listProf):
             corRequi += cursos[cursos.id == correquisito].nombre.item()
             if counter < numCorre:
                 corRequi += "; "
+    else:
+        corRequi += "Ninguno"
     print(f'Correquisitos: {corRequi}')
     essRequi = ""
     lisEsreq = cursos[cursos.id == id].esrequisito.item()
@@ -208,36 +178,18 @@ def generar_programa(id,listProf):
     objCurso += NoEscape(r"\end{itemize} \vspace{2mm}")
     objCurso += NoEscape(Command("textbf", "Objetivos específicos").dumps())
     objCurso += objEspec
-    conCurso = NoEscape(r"En el curso se desarrollaran los siguientes temas: \newline\newline ")
-    conCurso += NoEscape(r"\begin{easylist}")
-    conCurso += NoEscape(conten[conten.id == id].contenidos.item())
-    conCurso += NoEscape(r"\end{easylist}")
+    conCurso = NoEscape(
+r'''
 
+''')
+    conCurso += NoEscape(r"\setlength{\leftskip}{4cm}\begin{easylist}\ListProperties(Progressive*=3ex)")
+    conCurso += NoEscape(conten[conten.id == id].contenidos.item())
+    conCurso += NoEscape(r"\end{easylist}\setlength{\leftskip}{0pt}")
     #+ "La persona estudiante será capaz de:" + r'\\' + '\n'   
 
     # coaCurso = cursos[cursos.id == id].area.item()
     # noaCurso = areas[areas.codArea == coaCurso].nombre.item()
 
-    # conCurso = conten[conten.id == id].contenidos.str.split('\r\n',expand=False).explode()
-    # conCurso.reset_index(inplace = True, drop = True)
-    # nivel_1, nivel_2, nivel_3 = [0,0,0]
-    # for index, row in conCurso.items():
-    #     res = 0
-    #     for pos in range(3):
-    #         if pos == row.find('*', pos, pos+1):
-    #             res += 1
-    #     if res == 1:
-    #         nivel_1 += 1
-    #         nivel_2 = 0
-    #         conCurso.iloc[index] = row.replace('*', f"{str(nivel_1)}. ")
-    #     elif res == 2:
-    #         nivel_2 += 1
-    #         nivel_3 = 0
-    #         conCurso.iloc[index] = r"\hspace*{0.02\linewidth}\parbox{0.98\linewidth}{\strut " + row.replace('**', f"{str(nivel_1)}.{str(nivel_2)}. ") + r"\strut}"
-    #     elif res == 3:
-    #         nivel_3 += 1
-    #         conCurso.iloc[index] = r"\hspace*{0.04\linewidth}\parbox{0.96\linewidth}{\strut " + row.replace('***', f"{str(nivel_1)}.{str(nivel_2)}.{str(nivel_3)}. ") + r"\strut}"
-    # conCursoStr = (r'\\'+'\n').join(conCurso) + r'\\'
     # metCurso = metodo[metodo.id == id].metodologia.item()
     # evaCurso = evalua[evalua.id == id].evaluacion.str.split('\n',expand=False).explode()
     # evaCurso = evaCurso.str.split(';',expand=True)
@@ -484,7 +436,8 @@ def generar_programa(id,listProf):
         bold=True,
         text="4. Contenidos"
         )
-        ,conCurso])
+        ,"En el curso se desarrollaran los siguientes temas:"])
+    doc.append(conCurso)
     # doc.append(VarCol("4 Contenidos",conCursoStr))
     # doc.append(VerticalSpace("10mm", star=True))
     # doc.append(NewPage())
@@ -595,3 +548,4 @@ def generar_programa(id,listProf):
 
 listProf = ['SMO0']
 generar_programa("AUT0504",listProf)
+generar_programa("CYD0107",listProf)

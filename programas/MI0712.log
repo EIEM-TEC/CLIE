@@ -1,7 +1,7 @@
 This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.12.7)  7 DEC 2024 11:11
  restricted system commands enabled.
-**C:/Repositories/CLIE/programas/MI2101.tex
-(C:/Repositories/CLIE/programas/MI2101.tex
+**C:/Repositories/CLIE/programas/MI0712.tex
+(C:/Repositories/CLIE/programas/MI0712.tex
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
 Lua module: luaotfload 2024-02-14 v3.28 Lua based OpenType font support
@@ -1104,11 +1104,11 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
 
-(./MI2101.aux
+(./MI0712.aux
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 )
-\openout1 = MI2101.aux
+\openout1 = MI0712.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
@@ -1233,10 +1233,10 @@ Package biblatex Info: LuaTeX detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 
-\openout3 = MI2101.bcf
+\openout3 = MI0712.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'MI2101.bbl' found.
- (./MI2101.bbl)
+Package biblatex Info: ... file 'MI0712.bbl' found.
+ (./MI0712.bbl)
 Package biblatex Info: Reference section=0 on input line 57.
 Package biblatex Info: Reference segment=0 on input line 57.
 
@@ -1298,14 +1298,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
  []
 
 
+Underfull \hbox (badness 3471) in paragraph at lines 121--121
+\TU/Arial(0)/m/n/10 Entre los apren-di-za-jes más des-ta-ca-dos se en-cuen-tran
+: apli-car téc-ni-cas de
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 121--121
+\TU/Arial(0)/m/n/10 si-mu-la-cio-nes uti-li-zan-do soft-wa-re es-pe-cia-li-za-do
+; ana-li-zar los re-sul-ta-dos de las
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 121--121
 
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 121--121
-\TU/Arial(0)/m/n/10 Este cur-so sien-ta las ba-ses fun-da-men-ta-les pa-ra asig-
-na-tu-ras más avan-za-das
+Underfull \hbox (badness 2644) in paragraph at lines 121--121
+\TU/Arial(0)/m/n/10 Este cur-so se com-ple-men-ta con Con-trol Au-to-má-ti-co 
+y Con-trol por Even-tos
  []
 
 
@@ -1335,32 +1347,14 @@ Underfull \hbox (badness 10000) in alignment at lines 130--130
  []
 
 
-Overfull \hbox (11.99615pt too wide) in paragraph at lines 195--196
- [][]\TU/Arial(0)/m/n/10 Sis-te-ma de pro-yec-ción y de-sig-na-ción de vis-tas
- se-gún la nor-ma INTE- ISO 128/30/34-
- []
-
-
 
 File: ../figuras/Logo.png Graphic file (type png)
 <use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 196.
+Package luatex.def Info: ../figuras/Logo.png  used on input line 144.
 (luatex.def)             Requested size: 177.82971pt x 32.89896pt.
-[4]
-
-File: ../figuras/Logo.png Graphic file (type png)
-<use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 261.
-(luatex.def)             Requested size: 177.82971pt x 32.89896pt.
-[5]
-
-File: ../figuras/Logo.png Graphic file (type png)
-<use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 280.
-(luatex.def)             Requested size: 177.82971pt x 32.89896pt.
-[6] 
+[4] 
 enddocument/afterlastpage: lastpage setting LastPage.
-(./MI2101.aux
+(./MI0712.aux
 LaTeX Info: Redefining \sptext on input line 10.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
@@ -1369,25 +1363,25 @@ LaTeX Info: Redefining \% on input line 10.
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-Package logreq Info: Writing requests to 'MI2101.run.xml'.
+Package logreq Info: Writing requests to 'MI0712.run.xml'.
 
-\openout1 = MI2101.run.xml
+\openout1 = MI0712.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 29660 strings out of 475664
+ 29654 strings out of 475664
  125056,1977958 words of node,token memory allocated
  593 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 4 glue, 3 kern, 1 glyph, 10 attribute, 77 glue_spec
 , 6 attribute_list, 2 write nodes
-   avail lists: 1:2,2:1045,3:171,4:49,5:77,6:85,7:5205,8:2,9:602,10:32,11:744
+   avail lists: 1:2,2:1045,3:161,4:48,5:78,6:82,7:5474,8:1,9:592,10:32,11:898
  51846 multiletter control sequences out of 65536+600000
  59 fonts using 16679967 bytes
- 116i,18n,114p,1214b,1796s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,17n,114p,1214b,1796s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Windows/Fonts/arialbd.ttf><C:/Windows/Fonts/arial.ttf>
-Output written on MI2101.pdf (6 pages, 186777 bytes).
+Output written on MI0712.pdf (4 pages, 179457 bytes).
 
-PDF statistics: 42 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 36 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
