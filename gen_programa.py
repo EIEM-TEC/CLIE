@@ -185,12 +185,25 @@ r'''
     conCurso += NoEscape(r"\setlength{\leftskip}{4cm}\begin{easylist}\ListProperties(Progressive*=3ex)")
     conCurso += NoEscape(conten[conten.id == id].contenidos.item())
     conCurso += NoEscape(r"\end{easylist}\setlength{\leftskip}{0pt}")
+    lisMetod = metodo[metodo.id == id].reset_index(drop=True).metodologia
+    for consecutivo, metodos in lisMetod.items():
+        if consecutivo == 0:
+            metGener = NoEscape(metodos)
+            metEspec = NoEscape(r"\begin{itemize}")
+        else:
+            metEspec += NoEscape(r"\item ") + NoEscape(metodos)
+    metEspec += NoEscape(r"\end{itemize}")
+    metCurso = metGener
+    metCurso += NoEscape(r"\newline\newline ")
+    metCurso += NoEscape(Command("textbf", "El curso contempla:").dumps())
+    metCurso += objEspec
+
     #+ "La persona estudiante será capaz de:" + r'\\' + '\n'   
 
     # coaCurso = cursos[cursos.id == id].area.item()
     # noaCurso = areas[areas.codArea == coaCurso].nombre.item()
 
-    # metCurso = metodo[metodo.id == id].metodologia.item()
+    
     # evaCurso = evalua[evalua.id == id].evaluacion.str.split('\n',expand=False).explode()
     # evaCurso = evaCurso.str.split(';',expand=True)
     # evaCurso.reset_index(inplace = True, drop = True)
@@ -438,37 +451,33 @@ r'''
         )
         ,"En el curso se desarrollaran los siguientes temas:"])
     doc.append(conCurso)
-    # doc.append(VarCol("4 Contenidos",conCursoStr))
-    # doc.append(VerticalSpace("10mm", star=True))
-    # doc.append(NewPage())
-    # doc.append(textcolor
-    # (   
-    # size="14",
-    # vspace="0",
-    # color="parte",
-    # bold=True,
-    # text="II parte: Aspectos operativos"
-    # ))
-    # doc.append(textcolor
-    # (   
-    # size="12",
-    # vspace="0",
-    # color="parte",
-    # bold=True,
-    # text=" "
-    # ))
-    # with doc.create(LongTabularx(table_spec=r">{\raggedright}p{0.18\textwidth}p{0.72\textwidth}",row_height=1.5)) as table:
-    #         table.add_row([
-    #             textcolor
-    #             (
-    #             size="12",
-    #             vspace="0",
-    #             color="parte",
-    #             bold=True,
-    #             text="5 Metodología de enseñanza y aprendizaje"
-    #             ),
-    #             f"{metCurso}"
-    #         ])
+    doc.append(textcolor
+        (   
+        size="14",
+        vspace="0",
+        color="parte",
+        bold=True,
+        text="II parte: Aspectos operativos"
+        ))
+    doc.append(VerticalSpace("4mm", star=True))  
+    doc.append(NewLine())
+    doc.append(fontselect
+        (
+        size="10",
+        vspace="12"      
+        ))
+    with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
+        table.add_row([textcolor
+        (   
+        size="12",
+        vspace="14",
+        color="parte",
+        bold=True,
+        text="5. Metodología"
+        )
+        ,metCurso])
+    doc.append(NewLine())
+
     # # doc.append(VarCol("5 Metodología de enseñanza y aprendizaje",metCurso))
     # with doc.create(Tabularx(table_spec=r">{\raggedright}m{0.18\textwidth}m{0.07\textwidth}m{0.17\textwidth}m{0.17\textwidth}m{0.17\textwidth}m{0.04\textwidth}")) as table:
     #         #table.add_hline(start=3, end=5)
@@ -548,4 +557,4 @@ r'''
 
 listProf = ['SMO0']
 generar_programa("AUT0504",listProf)
-generar_programa("CYD0107",listProf)
+#generar_programa("CYD0107",listProf)

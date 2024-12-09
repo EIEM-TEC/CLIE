@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.12.7)  7 DEC 2024 11:11
+This is LuaHBTeX, Version 1.18.1 (MiKTeX 24.4) (format=lualatex 2024.12.7)  7 DEC 2024 12:34
  restricted system commands enabled.
 **C:/Repositories/CLIE/programas/MI0712.tex
 (C:/Repositories/CLIE/programas/MI0712.tex
@@ -1347,10 +1347,25 @@ Underfull \hbox (badness 10000) in alignment at lines 130--130
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 150--150
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--152
+
+ []
+
+
 
 File: ../figuras/Logo.png Graphic file (type png)
 <use ../figuras/Logo.png>
-Package luatex.def Info: ../figuras/Logo.png  used on input line 144.
+Package luatex.def Info: ../figuras/Logo.png  used on input line 152.
 (luatex.def)             Requested size: 177.82971pt x 32.89896pt.
 [4] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -1374,12 +1389,12 @@ Here is how much of LuaTeX's memory you used:
  593 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 4 glue, 3 kern, 1 glyph, 10 attribute, 77 glue_spec
 , 6 attribute_list, 2 write nodes
-   avail lists: 1:2,2:1045,3:161,4:48,5:78,6:82,7:5474,8:1,9:592,10:32,11:898
+   avail lists: 1:2,2:1045,3:161,4:48,5:80,6:82,7:5474,8:1,9:592,10:32,11:898
  51846 multiletter control sequences out of 65536+600000
  59 fonts using 16679967 bytes
  116i,17n,114p,1214b,1796s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Windows/Fonts/arialbd.ttf><C:/Windows/Fonts/arial.ttf>
-Output written on MI0712.pdf (4 pages, 179457 bytes).
+Output written on MI0712.pdf (4 pages, 180799 bytes).
 
 PDF statistics: 36 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
