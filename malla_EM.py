@@ -37,15 +37,6 @@ area_colors = {
     "SCF": "violet!20!white"
 }
 
-# def colocar_diacoreq(semestre,sesgo,fila,num,color):
-#     dump = NoEscape(r"\draw ")
-#     dump += NoEscape(f"[{{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}}-,{color},line width=0.5mm,]")
-#     dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila+1.11,2)})--++ (0,0.5)")
-#     dump += NoEscape(r"node[align=center,text width=4mm,yshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
-#     dump += NoEscape(f"{num}")
-#     dump += NoEscape(r"}};")  
-#     return dump
-
 def generar_malla():
     #Geometría
     geometry_options = { 
@@ -123,34 +114,11 @@ def generar_malla():
     }'''
     #1: semestre, #2: color, #3: horasteoria, #4: horaspractica, #5: creditos
     )
-    circReq = NoEscape(
-    r'''\tikzset{
-            pics/requi/.style args={#1,#2}{
-            code={
-                \def\diam{0.4}
-                \draw[fill=#2] circle (\diam) node[midway,align=center,text width=\diam cm]{\fontsize{10pt}{10pt}\selectfont \textbf{#1}};
-            }
-        }
-    }'''
-    )
-
-    arrowReq = NoEscape(
-    r'''\tikzset{
-        pics/arrowreq/.style args={#1}{
-            code={
-                \def\len{0.4} % Arrow length in mm
-                \def\wid{0.2} % Arrow width in mm
-                \draw[#1] -{Stealth[length=\len mm, width=\wid mm]};
-            }
-        }
-    }'''
-    )
-
+    
     doc.preamble.append(bloqueTitulo)        
     doc.preamble.append(bloqueCurso)
     doc.preamble.append(bloqueSemestre)
-    doc.preamble.append(circReq)
-    doc.preamble.append(arrowReq)
+
     doc.append(Command('centering'))
     sesgo = 0
     rango = range(0,9)

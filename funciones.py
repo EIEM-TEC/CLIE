@@ -156,14 +156,14 @@ def colocar_arrowreqs(semestre,sesgo,fila,dir,color):
     dump = NoEscape(r"\draw ")
     dump += NoEscape(f"[{color},line width=0.5mm]") 
     if dir == 1:
-        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila-3.5,2)}) --++ (0.5,0) --++ (0,1.8)coordinate(inicio)")
+        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila-3.5,2)}) --++ (0.4,0) --++ (0,1.8)coordinate(inicio)")
     else:
-        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila+2.5,2)}) --++ (0.5,0) --++ (0,-1.8)coordinate(inicio)")
+        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila+2.5,2)}) --++ (0.4,0) --++ (0,-1.8)coordinate(inicio)")
     dump += NoEscape(r";")
     dump += NoEscape("\n")
     dump += NoEscape(r"\draw ")
     dump += NoEscape(f"[-{{Stealth[length=3mm,width=2mm]}},{color},line width=0.5mm]")
-    dump += NoEscape(f"(inicio) --++ (1.35,0)")
+    dump += NoEscape(f"(inicio) --++ (1.45,0)")
     dump += NoEscape(r";")
     dump += NoEscape("\n")
     dump += NoEscape(r"\draw ")
@@ -201,6 +201,26 @@ def colocar_diareq(semestre,sesgo,fila,sesgovert,num,color):#1.35 de largo
     dump += NoEscape(f"{num}")
     dump += NoEscape(r"}}")  
     dump += NoEscape(f"--++ (1.35,0);")
+    return dump
+
+def colocar_triacoreq(semestre,sesgo,fila,num,color):
+    dump = NoEscape(r"\draw ")
+    dump += NoEscape(f"[-{{Triangle[reversed,open,length=3mm,line width=0.25mm,width=4mm]}},{color},line width=0.5mm,]")
+    dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila+1.11,2)}) --++ ")
+    dump += NoEscape(f"(0,0.97)")
+    dump += NoEscape(r"node[align=center,text width=4mm,yshift=-3mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
+    dump += NoEscape(f"{num}")
+    dump += NoEscape(r"}};")      
+    return dump
+
+def colocar_triaescoreq(semestre,sesgo,fila,num,color):
+    dump = NoEscape(r"\draw ")
+    dump += NoEscape(f"[-{{Triangle[open,length=3mm,line width=0.25mm,width=4mm]}},{color},line width=0.5mm,]")
+    dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila-2.11,2)}) --++ ")
+    dump += NoEscape(f"(0,-0.97)")    
+    dump += NoEscape(r"node[align=center,text width=4mm,yshift=4mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
+    dump += NoEscape(f"{num}")
+    dump += NoEscape(r"}};")      
     return dump
 
 def colocar_recreq(titulo1,titulo2,color):
@@ -273,8 +293,8 @@ def malla_enf(malla,cursos,sesgo,lista,nombrearea,area_colors,titulo,rango,enf):
                 if not(requi[0].isna().item()):
                     for column in requi.columns:
                         idreq = requi[column].item()
-                        print(id)
-                        print(idreq)
+                        # print(id)
+                        # print(idreq)
                         codreq = cursos_enf[cursos_enf.id == idreq].codigo.item()
                         semreq = cursos_enf[cursos_enf.id == idreq].semestre.item()
                         filareq = cursos_enf[cursos_enf.id == idreq].fila.item()
@@ -305,4 +325,6 @@ def malla_enf(malla,cursos,sesgo,lista,nombrearea,area_colors,titulo,rango,enf):
                             dir = 1
                         malla.append(colocar_arrowcoreq(semestre,sesgo,fila,dir,"black"))
                     else:
-                        print('Peligro: correquisitos en filas no lejanas')
+                        reqcounter +=1
+                        malla.append(colocar_triacoreq(semestre,sesgo,fila,reqcounter,"black"))
+                        malla.append(colocar_triaescoreq(semcoreq,sesgo,filacoreq,reqcounter,"black"))

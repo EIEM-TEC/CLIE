@@ -95,15 +95,15 @@ AER0902,MI0906,Sistemas de aeronaves no tripulados y de despegue vertical,AER,9,
 AER0903,MI0907,Aerodinámica y dinámica de vuelo,AER,9,3,3,1,3,AUT0805;AUT0806,,AER1003
 AER0904,MI0904,Sistemas de propulsión,AER,9,4,3,1,3,IMM0707,,
 AER0906,MI0910,Análisis mecánico de estructuras de la aeronave,AER,9,6,4,0,3,AER0806;AER0807,,
-AER0907,MI0911,Análisis de mecanismos de la aeronave,AER,9,7,4,0,3,,AER0906,AER9092
+AER0907,MI1102,Electiva I,AER,9,7,4,0,3,,,
 AER1001,MI0912,Gestión del ciclo de vida de la aeronave,AER,10,1,3,0,2,AER0901;AER0902,,
 AER1003,MI0913,Control automático de vuelo y tráfico,AER,10,3,4,0,3,AER0903,,
 AER1004,MI1101,Trabajo final de graduación,AER,10,4,0,21,7,,AER1003,
-AER1005,MI1102,Electiva I,AER,10,5,4,0,3,,,
-AER1006,MI1103,Electiva II,AER,10,6,4,0,3,,,
-AER9090,MI0990,Sistemas de propulsión avanzada,AER,12,1,4,0,3,AER0808,,
+AER1006,MI0911,Análisis de mecanismos de la aeronave,AER,10,6,4,0,3,AER0906,,AER9092
+AER1007,MI1103,Electiva II,AER,10,7,4,0,3,,,
+AER9090,MI0990,Infraestructura y servicios aeroportuarios,AER,12,1,4,0,3,,AER1001,
 AER9091,MI0991,Movilidad aérea avanzada,AER,12,2,4,0,3,AER0902,,
-AER9092,MI0992,Introducción a los sistemas espaciales,AER,12,3,4,0,3,AER0907,,
+AER9092,MI0992,Manufactura en la cadena de valor aeroespacial,AER,12,3,4,0,3,AER0807,,
 AER9093,MI0804,Instalaciones mecánico-sanitarias,AER,13,1,4,0,3,,AER9094,
 AER9094,MI4212,Instalaciones eléctricas,AER,13,2,4,0,3,IEE0803,,
 AER9095,MI0803,Gestión de la energía,AER,13,3,4,0,3,,AER9094,
@@ -116,15 +116,15 @@ SCF0807,MI1002,Sistemas embebidos en tiempo real,SCF,8,7,2,2,3,AUT0706,,SCF0902;
 SCF0808,MI1003,Fundamentos de ciberseguridad,SCF,8,8,2,0,1,,SCF0807,SCF9092
 SCF0901,MI1004,Modelado y simulación de sistemas ciberfísicos,SCF,9,1,4,0,3,SCF0801,,SCF1001
 SCF0902,MI1005,Machine Learning e Inteligiencia Artificial,SCF,9,2,2,2,3,SCF0807,,SCF9090;SCF9091
-SCF0903,MI1005,Dispositivos electrónicos,SCF,9,3,2,0,2,,SCF0902,
+SCF0903,MI1005,Dispositivos electrónicos,SCF,9,3,2,0,2,AUT0805,,
+SCF0905,MI1102,Electiva I,SCF,9,5,4,0,3,,,
 SCF0906,MI1007,Robótica,SCF,9,6,2,2,3,SCF0806,SCF0907,SCF9090
 SCF0907,MI1008,Internet de las cosas y domótica,SCF,9,7,2,2,3,SCF0807,,
-SCF0908,MI1009,Visión de máquina,SCF,9,8,2,2,3,,SCF0907,
 SCF1001,MI1010,Taller de integración de sistemas,SCF,10,1,2,2,2,SCF0901,,
 SCF1002,MI1011,Diseño de interfases humano-máquina,SCF,10,2,3,0,3,,SCF1001,
 SCF1003,MI1101,Trabajo final de graduación,SCF,10,3,0,21,7,,SCF1002,
-SCF1005,MI1102,Electiva I,SCF,10,5,4,0,3,,,
-SCF1006,MI1103,Electiva II,SCF,10,6,4,0,3,,,
+SCF1005,MI1103,Electiva II,SCF,10,5,4,0,3,,,
+SCF1007,MI1009,Visión de máquina,SCF,10,7,2,2,3,,SCF0907,
 SCF9090,MI1090,Sistemas autonomos y multiagente,SCF,12,1,2,2,3,SCF0902;SCF0906,,
 SCF9091,MI1091,Análisis predictivo de series temporales,SCF,12,2,2,2,3,SCF0902,,
 SCF9092,MI1092,Desarrollo de software para aplicaciones críticas,SCF,12,3,2,2,3,SCF0808,,
@@ -132,5 +132,5 @@ SCF9093,MI0905,Sistemas de aeronaves de ala fija y giratoria,SCF,13,1,4,0,3,,SCF
 SCF9094,MI0901,Avionica,SCF,13,2,4,0,3,IEE0803,,
 SCF9095,MI0906,Sistemas de aeronaves no tripulados y de despegue vertical,SCF,13,3,4,0,3,,SCF9094,
 SCF9096,MI0804,Instalaciones mecánico-sanitarias,SCF,14,1,4,0,3,,SCF9097,
-SCF9097,MI4212,Instalaciones eléctricas,SCF,14,2,4,0,3,IEE0803,,
+SCF9097,MI4212,Instalaciones eléctricas,SCF,14,2,4,0,3,IEE0703,,
 SCF9098,MI0803,Gestión de la energía,SCF,14,3,4,0,3,,SCF9097,
