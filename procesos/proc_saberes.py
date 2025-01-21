@@ -2,10 +2,10 @@ import pandas as pd
 
 porcTC = 0.75
 
-saberes = pd.read_csv("saberes.csv")
+saberes = pd.read_csv("./cursos/cursos_malla.csv")
 
 TRC = ['CIB','FPH','CYD','IEE','IMM','AUT','ADD']
-saberes2 = saberes[saberes["codArea"].isin(TRC)]
+saberes2 = saberes[saberes["area"].isin(TRC)]
 saberes2['porcINS'] = porcTC*saberes2['porcTRC']
 saberes2['porcAER'] = porcTC*saberes2['porcTRC']
 saberes2['porcSCF'] = porcTC*saberes2['porcTRC']
