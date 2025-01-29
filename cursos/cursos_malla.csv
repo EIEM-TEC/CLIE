@@ -110,7 +110,7 @@ AER9095,MI0803,Gestión de la energía,AER,13,3,4,0,3,,AER9094,
 AER9096,MI1008,Internet de las cosas y domótica,AER,14,1,2,2,3,,AER9097,
 AER9097,MI1002,Sistemas embebidos en tiempo real,AER,14,2,2,2,3,AUT0706,,
 AER9098,MI1009,Visión de máquina,AER,14,3,2,2,3,,AER9097,
-SCF0801,MI1001,Ingenieria de sistemas,SCF,8,1,4,0,3,FPH0701,,SCF0901
+SCF0801,MI1001,Ingeniería de sistemas,SCF,8,1,4,0,3,FPH0701,,SCF0901
 SCF0806,MI0728,Máquinas y mecanismos,SCF,8,6,4,0,3,IMM0709,,SCF0906
 SCF0807,MI1002,Sistemas embebidos en tiempo real,SCF,8,7,2,2,3,AUT0706,,SCF0903;SCF0907
 SCF0808,MI1003,Fundamentos de ciberseguridad,SCF,8,8,2,0,1,,SCF0807,SCF9092
