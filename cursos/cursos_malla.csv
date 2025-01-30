@@ -61,7 +61,7 @@ IEE0804,MI0722,Laboratorio de máquinas eléctricas II,IEE,8,3,0,2,1,,IEE0803,
 AUT0805,MI0723,Control por eventos discretos,AUT,8,4,4,0,3,AUT0705;AUT0706,,INS0992;AER0903;SCF0902
 AUT0806,MI0724,Laboratorio de control,AUT,8,5,0,2,1,,AUT0805,AER0903
 FPH0809,SE1400,Actividad cultural - deportiva,FPH,8,9,0,2,0,,,
-INS0801,MI0801,Sistemas electricos de transmisión y distribución,INS,8,1,4,0,3,,IEE0803,INS0901
+INS0801,MI0801,Sistemas eléctricos de transmisión y distribución,INS,8,1,4,0,3,,IEE0803,INS0901
 INS0904,MI4212,Instalaciones eléctricas,INS,8,6,4,0,3,IEE0703,,INS0905;INS0990
 INS0807,MI3116,Turbomáquinas,INS,8,7,4,0,3,IMM0707;IMM0708,,INS0906;INS1007
 INS0808,MI3119,Laboratorio de turbomáquinas,INS,8,8,0,2,1,,INS0807,
