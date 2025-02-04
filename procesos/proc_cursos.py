@@ -1,7 +1,7 @@
 import pandas as pd
 
-cursos = pd.read_csv("cursos.csv")
+cursos = pd.read_csv("./cursos/cursos_malla.csv").drop(columns="id")
 
 cursos.insert(0,'id',cursos["area"] + cursos["semestre"].astype(str).str.zfill(2) + cursos["fila"].astype(str).str.zfill(2))
 
-cursos.to_csv('cursosid.csv',index=False)
+cursos.to_csv("./cursos/cursos_id.csv",index=False)
