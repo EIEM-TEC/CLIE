@@ -19,8 +19,8 @@ Termodinámica y transferencia de calor,IMM,TTC,5.0,3.75,3.75,3.75
 Elementos de máquinas,IMM,EDM,3.0,2.25,2.25,2.25
 Manufactura,IMM,MAN,3.0,2.25,2.25,2.25
 Programación,AUT,PRO,2.0,1.5,1.5,1.5
-Modelado y simulación,AUT,MYS,3.0,2.25,2.25,2.25
-Microcontroladores y arquitectura de computadores,AUT,MAC,1.0,0.75,0.75,0.75
+Modelado y simulación,AUT,MYS,2.0,1.5,1.5,1.5
+Microcontroladores y arquitectura de computadores,AUT,MAC,2.0,1.5,1.5,1.5
 Sistemas de control y automatización,AUT,SCA,5.0,3.75,3.75,3.75
 Estadística y metrología,ADD,EYM,1.0,0.75,0.75,0.75
 Diseño de experimentos,ADD,DDE,1.0,0.75,0.75,0.75
