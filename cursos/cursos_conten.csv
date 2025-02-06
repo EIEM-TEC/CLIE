@@ -1,4 +1,33 @@
 id,contenidos
+SCF0801,"
+& Introducción a la Ingeniería de Sistemas
+&& Conceptos fundamentales de la ingeniería de sistemas
+&& Ciclo de vida del desarrollo de sistemas
+&& Enfoque sistémico y pensamiento complejo en la resolución de problemas
+& Trabajo colaborativo en equipos multidisciplinarios
+&& Definición de roles
+&& Estrategias de trabajo en equipos multidisciplinarios
+&& Gestión de la información y la toma de decisiones
+&& Planificación del trabajo y gestión de tareas
+&& Control de versiones
+& Definición y análisis de requisitos
+&& Identificación de interesados y sus expectativas
+&& Técnicas para la recopilación y análisis de requisitos
+&& Diferentes niveles de requisitos y su relación con la arquitectura del sistema
+&& Modelado de requisitos y especificaciones funcionales
+& Diseño de la arquitectura 
+&& Principios y enfoques para el diseño de la arquitectura del sistema
+&& Metodologías de evaluación de configuraciones del sistema (trade-off)
+&& Gestión de interfaces y compatibilidad de sistemas
+&& Estrategias para la integración de subsistemas en un sistema coherente
+& Modelado, simulación y verificación del Diseño
+&& Métodos de modelado para la representación de sistemas
+&& Desarrollo de representaciones funcionales del sistema
+&& Evaluación de desempeño y optimización de sistemas
+&& Análisis de sensibilidad y pruebas iterativas en entornos virtuales
+&& Verificación del sistema en escenarios simulados
+&& Validación de requisitos
+"
 AUT0504,"
 & Conceptos básicos
 && uno

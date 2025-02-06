@@ -1,4 +1,9 @@
 id,consecutivo,objetivo
+SCF0801,0,"Integrar principios, metodologías y herramientas de la ingeniería de sistemas en el análisis, diseño y gestión de sistemas, colaborando con equipos de trabajo multidisciplinarios."
+SCF0801,1,"Definir los requisitos y la arquitectura de los sistemas considerando las necesidades y expectativas de los interesados."
+SCF0801,2,"Integrar componentes físicos y digitales en un sistema coherente y funcional."
+SCF0801,3,"Verificar el diseño del sistema o sus partes por medio de modelos, simulaciones y/o prototipos."
+SCF0801,4,"Colaborar en equipos de trabajo multidisciplinarios en el análisis, diseño y gestión de sistemas."
 CYD0107,0,"Realizar un plano de una pieza mecánica, según las normas INTE/ISO, que contenga información necesaria y suficiente para la interpretación de la forma y dimensiones de la pieza."
 CYD0107,1,"Aplicar las normas INTE/ISO y de otros estándares."
 CYD0107,2,"Representar mediante proyecciones ortogonales, proyecciones axonométricas, vistas auxiliares y vistas de corte una pieza mecánica."

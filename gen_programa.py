@@ -451,6 +451,7 @@ r'''
         )
         ,"En el curso se desarrollaran los siguientes temas:"])
     doc.append(conCurso)
+    doc.append(NewPage())
     doc.append(textcolor
         (   
         size="14",
@@ -549,12 +550,12 @@ r'''
     #doc.append(VarCol("8 Profesor",proCurso))
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
     subprocess.run(["biber", f"C:\\Repositories\\CLIE\\programas\\{codCurso}"])
-    doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
-    doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex') 
+    doc.generate_pdf(f"./programas/{codCurso}", clean=True, clean_tex=False, compiler='lualatex')
+    doc.generate_pdf(f"./programas/{codCurso}", clean=True, clean_tex=False, compiler='lualatex') 
 
 # for id in cursos.id:
 #      generar_programa(id)
 
-listProf = ['SMO0']
-generar_programa("AUT0504",listProf)
+listProf = ['JRH0','JMJ0']
+generar_programa("SCF0801",listProf)
 #generar_programa("CYD0107",listProf)

@@ -1,5 +1,8 @@
-id,consecutivo,evaluacion,cantidad,porcentaje
-CYD0107,1,Examen Parcial,1,25
-CYD0107,2,Examen Parcial,1,35
-CYD0107,3,Proyecto grupal,1,25
-CYD0107,4,Tareas digitales coordinadas,6,15
+id,consecutivo,evaluacion,cantidad,porcentaje,descripción
+CYD0107,1,Examen Parcial,1,25,
+CYD0107,2,Examen Parcial,1,35,
+CYD0107,3,Proyecto grupal,1,25,
+CYD0107,4,Tareas digitales coordinadas,6,15,
+SCF0801,1,Participación,15,20,"evaluación formativa del aporte en discusiones, actividades en equipo y gestión del trabajo colaborativo."
+SCF0801,2,Pruebas cortas,7,20,"evaluación formativa del conocimiento adquirido en temas clave como análisis de requisitos, modelado y evaluación de alternativas."
+SCF0801,3,Proyecto integrador,1,60,"evaluación sumativa del desarrollo de un sistema de interés mediante la definición de requisitos, diseño de arquitectura, modelado y verificación en simulaciones."

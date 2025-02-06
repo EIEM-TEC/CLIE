@@ -1,4 +1,10 @@
 id,consecutivo,metodologia
+SCF0801,0,"En este curso, la estrategia central será la investigación práctica aplicada, implementada mediante técnicas como el aprendizaje basado en proyectos (PBL), el análisis de alternativas (trade-off) y el modelado y simulación."
+SCF0801,1,"Seleccionarán un sistema de interés y conformarán el grupo de trabajo para su desarrollo."
+SCF0801,2,"Asumirán roles específicos dentro de las disciplinas de la ingeniería electromecánica, garantizando la integración efectiva de conocimientos y habilidades en el desarrollo del sistema.""
+SCF0801,3,"Definirán y analizarán los requisitos del sistema en diferentes niveles."
+SCF0801,4,"Establecerán la arquitectura del sistema y evaluarán distintas configuraciones considerando costos, desempeño y factibilidad técnica."
+SCF0801,5,"Aplicarán herramientas de modelado para desarrollar representaciones funcionales del sistema ya integrado y realizar pruebas en entornos simulados que permitan evaluar su desempeño y cumplimiento de requisitos."
 AUT0504,0,"Este es un curso teórico-práctico 100\% presencial"
 AUT0504,1,"Exposiciones magistrales participativas, en las cuales el profesor del curso introduce los conceptos de los temas a desarrollar, apoyado con material audiovisual y lecturas guidas"
 AUT0504,2,"Practicas guiadas de modelado y simulación usando software especializado"
