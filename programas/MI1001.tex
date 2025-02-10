@@ -11,6 +11,7 @@
 \usepackage[ampersand]{easylist}%
 \usepackage[style=ieee,backend=biber]{biblatex}%
 \usepackage[skins,breakable]{tcolorbox}%
+\usepackage{booktabs}%
 \usepackage{color}%
 \usepackage{tikz}%
 \usepackage{tabularx}%
@@ -128,9 +129,8 @@ Una vez aprobado este curso, los estudiantes podrán emplear algunos de los apre
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
 \par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{4. Contenidos}}&En el curso se desarrollaran los siguientes temas:\\%
 \end{tabularx}%
-
-
-\setlength{\leftskip}{4cm}\begin{easylist}\ListProperties(Progressive*=3ex)
+\newline%
+\par \setlength{\leftskip}{4cm} \begin{easylist} \ListProperties(Progressive*=3ex)
 & Introducción a la Ingeniería de Sistemas
 && Conceptos fundamentales de la ingeniería de sistemas
 && Ciclo de vida del desarrollo de sistemas
@@ -158,14 +158,34 @@ Una vez aprobado este curso, los estudiantes podrán emplear algunos de los apre
 && Análisis de sensibilidad y pruebas iterativas en entornos virtuales
 && Verificación del sistema en escenarios simulados
 && Validación de requisitos
-\end{easylist}\setlength{\leftskip}{0pt}%
+\end{easylist} \setlength{\leftskip}{0cm} %
 \newpage%
 \par\fontsize{14}{0}\selectfont \textbf{\textcolor{parte}{II parte: Aspectos operativos}}%
 \vspace*{4mm}%
 \newline%
 \fontsize{10}{12}\selectfont %
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
-\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{5. Metodología}}&En este curso, la estrategia central será la investigación práctica aplicada, implementada mediante técnicas como el aprendizaje basado en proyectos (PBL), el análisis de alternativas (trade-off) y el modelado y simulación.\newline\newline \textbf{El curso contempla:}\begin{itemize}\item Definir los requisitos y la arquitectura de los sistemas considerando las necesidades y expectativas de los interesados.\item Integrar componentes físicos y digitales en un sistema coherente y funcional.\item Verificar el diseño del sistema o sus partes por medio de modelos, simulaciones y/o prototipos.\item Colaborar en equipos de trabajo multidisciplinarios en el análisis, diseño y gestión de sistemas.\end{itemize}\\%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{5. Metodología}}&En este curso, la estrategia central será la investigación práctica aplicada, implementada mediante técnicas como el aprendizaje basado en proyectos (PBL), el análisis de alternativas (trade-off) y el modelado y simulación.\newline\newline \textbf{Los estudiantes:}\begin{itemize}\item Seleccionarán un sistema de interés y conformarán el grupo de trabajo para su desarrollo.\item Asumirán roles específicos dentro de las disciplinas de la ingeniería electromecánica, garantizando la integración efectiva de conocimientos y habilidades en el desarrollo del sistema.\item Definirán y analizarán los requisitos del sistema en diferentes niveles.\item Establecerán la arquitectura del sistema y evaluarán distintas configuraciones considerando costos, desempeño y factibilidad técnica.\item Aplicarán herramientas de modelado para desarrollar representaciones funcionales del sistema ya integrado y realizar pruebas en entornos simulados que permitan evaluar su desempeño y cumplimiento de requisitos.\end{itemize}\vspace*{2mm}Este enfoque metodológico permitirá a la persona estudiante integrar principios, metodologías y herramientas de la ingeniería de sistemas en el análisis, diseño y gestión de sistemas, colaborando con equipos de trabajo multidisciplinarios.\vspace*{2mm} \newline  Si un estudiante requiere apoyos educativos, podrá solicitarlos a través del Departamento de Orientación y Psicología.\\%
+\end{tabularx}%
+\vspace*{4mm}%
+\newline%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{6. Evaluación}}&La evaluación se distribuye en los siguientes rubros:\vspace*{1mm} \newline  \begin{itemize} \item Participación: evaluación formativa del aporte en discusiones, actividades en equipo y gestión del trabajo colaborativo. \item Pruebas cortas: evaluación formativa del conocimiento adquirido en temas clave como análisis de requisitos, modelado y evaluación de alternativas. \item Proyecto integrador: evaluación sumativa del desarrollo de un sistema de interés mediante la definición de requisitos, diseño de arquitectura, modelado y verificación en simulaciones. \end{itemize}\\%
 \end{tabularx}%
 \newline%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+& \begin{minipage}{\linewidth}  \centering \vspace*{4mm}  \begin{tabular}{ p{4cm}  p{1.5cm} }  \toprule  Participación & 20 \% \\  \midrule  Pruebas cortas & 20 \% \\  \midrule  Proyecto integrador & 60 \% \\  \midrule Total & 100 \% \\  \bottomrule  \end{tabular} \end{minipage} \\%
+\end{tabularx}%
+\vspace*{4mm}%
+\newline%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{7. Bibliografía}}&
+\nocite{incose2023}
+\printbibliography[heading=none]\\%
+\end{tabularx}%
+\vspace*{4mm}%
+\newline%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{8. Persona docente}}&El curso será impartido por: \vspace*{4mm} \newline \textbf{Dr.{-}Ing. Juan José Rojas Hernández} \vspace*{2mm} \newline Doctor en ciencia aplicada a la integración de sistemas. Instituto Tecnológico de Kyushu. Japón. \vspace*{1mm} \newline Máster en electrónica con énfasis en microsistemas. Licenciado en Mantenimiento Industrial. Instituto Tecnológico de Costa Rica. Costa Rica. \vspace*{1mm} \newline \textbf{Correo:} juan.rojas@itcr.ac.cr\textbf{  Oficina:} 31 \vspace*{1mm} \newline \textbf{Escuela:} Ingeniería Electromecánica\textbf{  Sede:} Cartago \vspace*{4mm} \newline \textbf{Juan José Montero Jimenez, Ph.D.} \vspace*{2mm} \newline Doctorado en Ingeniería Industrial e Informática. Universidad de Toulouse. Francia. \vspace*{1mm} \newline Máster en ciencias en Ingeniería Aeroespacial. ISAE-SUPAERO. Francia \vspace*{1mm} \newline Licenciado en Ingeniería en Mantenimiento Industrial. Instituto Tecnológico de Costa Rica. Costa Rica \vspace*{1mm} \newline \textbf{Correo:} juan.montero@itcr.ac.cr\textbf{  Oficina:} 5 \vspace*{1mm} \newline \textbf{Escuela:} Ingeniería Electromecánica\textbf{  Sede:} Cartago \vspace*{4mm} \newline \\%
+\end{tabularx}%
 \end{document}

@@ -178,13 +178,11 @@ def generar_programa(id,listProf):
     objCurso += NoEscape(r"\end{itemize} \vspace{2mm}")
     objCurso += NoEscape(Command("textbf", "Objetivos específicos").dumps())
     objCurso += objEspec
-    conCurso = NoEscape(
-r'''
-
-''')
-    conCurso += NoEscape(r"\setlength{\leftskip}{4cm}\begin{easylist}\ListProperties(Progressive*=3ex)")
+    conCurso = NoEscape(r"\par \setlength{\leftskip}{4cm} ")
+    conCurso += NoEscape(r"\begin{easylist} \ListProperties(Progressive*=3ex)")
     conCurso += NoEscape(conten[conten.id == id].contenidos.item())
-    conCurso += NoEscape(r"\end{easylist}\setlength{\leftskip}{0pt}")
+    conCurso += NoEscape(r"\end{easylist} ")
+    conCurso += NoEscape(r"\setlength{\leftskip}{0cm} ")
     lisMetod = metodo[metodo.id == id].reset_index(drop=True).metodologia
     for consecutivo, metodos in lisMetod.items():
         if consecutivo == 0:
@@ -195,43 +193,59 @@ r'''
     metEspec += NoEscape(r"\end{itemize}")
     metCurso = metGener
     metCurso += NoEscape(r"\newline\newline ")
-    metCurso += NoEscape(Command("textbf", "El curso contempla:").dumps())
-    metCurso += objEspec
-
-    #+ "La persona estudiante será capaz de:" + r'\\' + '\n'   
-
-    # coaCurso = cursos[cursos.id == id].area.item()
-    # noaCurso = areas[areas.codArea == coaCurso].nombre.item()
-
-    
-    # evaCurso = evalua[evalua.id == id].evaluacion.str.split('\n',expand=False).explode()
-    # evaCurso = evaCurso.str.split(';',expand=True)
-    # evaCurso.reset_index(inplace = True, drop = True)
-    # evaCurso.columns = ['2','3','4']
-    # evaCurso[['0','1','5']] = ""
-    # evaCurso.sort_index(axis=1, inplace=True)
-    # bibCurso = NoEscape('\n'+ r'\nocite{' + ('}\n'+r'\nocite{').join(bibtex[bibtex.id == id].bibtex.item().split(';')) + '}\n' + r'\printbibliography[heading=none]')
-    # filProfe = datProfes[datProfes.Codigo.isin(listProf)]
-    # proCurso = r"" 
-    # for index, row in filProfe.iterrows():
-    #     titulo = row['Titulo']
-    #     match titulo:
-    #         case "M.Sc." | "Ing." | "Máster":
-    #             proCurso += \
-    #             row['Titulo'] + " "\
-    #             + row['Nombre']
-    #         case "Ph.D.":
-    #             proCurso += \
-    #             row['Nombre'] + " "\
-    #             + row['Titulo']
-    #     proCurso += r'\\' + '\n'
-    #     for i in range(len(row['Titulos'].split('\r\n'))):
-    #         proCurso += row['Titulos'].split('\r\n')[i] + r'\\' + '\n'
-    #     proCurso += \
-    #     'Correo: ' + row['Correo']\
-    #     + '. Oficina: ' + str(row['Oficina']) + r'\\' + '\n'\
-    #     + 'Escuela de ' + row['Escuela']\
-    #     + '. ' + row['Sede'] + r'\\[12pt]' + '\n'                    
+    metCurso += NoEscape(Command("textbf", "Los estudiantes:").dumps())
+    metCurso += metEspec
+    metCurso += NoEscape(r"\vspace*{2mm}")
+    metCurso += NoEscape(f"Este enfoque metodológico permitirá a la persona estudiante {objGener[0].lower() + objGener[1:]}")
+    metCurso += NoEscape(r"\vspace*{2mm} \newline  ")
+    metCurso += NoEscape(r"Si un estudiante requiere apoyos educativos, podrá solicitarlos a través del Departamento de Orientación y Psicología.")
+    evaCurso = NoEscape(r"La evaluación se distribuye en los siguientes rubros:")
+    evaCurso += NoEscape(r"\vspace*{1mm} \newline  ")
+    lisEvalu = evalua[evalua.id == id].reset_index(drop=True)
+    for consecutivo, evaluas in lisEvalu.iterrows():
+        if consecutivo == 0:
+            descriEval = NoEscape(r"\begin{itemize} ")  
+        descriEval += NoEscape(r"\item ") + NoEscape(f"{evaluas.evaluacion}: {evaluas.descripcion} ")  
+    descriEval += NoEscape(r"\end{itemize}") 
+    evaCurso += descriEval
+    evaTabla = NoEscape(r" \begin{minipage}{\linewidth} ")
+    evaTabla += NoEscape(r" \centering \vspace*{4mm} ") 
+    evaTabla += NoEscape(r" \begin{tabular}{ p{4cm}  p{1.5cm} } ")
+    evaTabla += NoEscape(r" \toprule ") 
+    total = 0
+    for consecutivo, evaluas in lisEvalu.iterrows():
+        evaTabla += NoEscape(f" {evaluas.evaluacion} & {evaluas.porcentaje} \\% \\\ ")
+        evaTabla += NoEscape(r" \midrule ")
+        total += evaluas.porcentaje
+        if consecutivo == len(lisEvalu)-1:
+            evaTabla += NoEscape(f"Total & {total} \\% \\\ ")
+            evaTabla += NoEscape(r" \bottomrule ")
+    # #evaCurso += NoEscape(r" A & B \\ C & D \\ 
+    evaTabla += NoEscape(r" \end{tabular} \end{minipage} ")
+    bibCurso = NoEscape('\n'+ r'\nocite{' + ('}\n'+r'\nocite{').join(bibtex[bibtex.id == id].bibtex.item().split(';')) + '}\n' + r'\printbibliography[heading=none]')
+    dataProf = datProfes[datProfes.Codigo.isin(listProf)]
+    print(dataProf)
+    proCurso = NoEscape(r"El curso será impartido por: \vspace*{4mm} \newline ")
+    for consecutivo, profes in dataProf.iterrows():
+        match profes.Titulo:
+            case "M.Sc." | "Ing." | "Máster" | "Dr.-Ing.":
+                proCurso += NoEscape(Command("textbf", f"{profes.Titulo} {profes.Nombre}").dumps())
+            case "Ph.D.":
+                proCurso += NoEscape(Command("textbf", f"{profes.Nombre}, {profes.Titulo}").dumps())
+        proCurso += NoEscape(r" \vspace*{2mm} \newline ")
+        for titulo in profes.Titulos.split('\r\n'):
+            proCurso += NoEscape(f"{titulo}")
+            proCurso += NoEscape(r" \vspace*{1mm} \newline ")   
+        proCurso += NoEscape(Command("textbf", "Correo:").dumps())               
+        proCurso += NoEscape(f" {profes.Correo}")
+        proCurso += NoEscape(Command("textbf", "  Oficina:").dumps())     
+        proCurso += NoEscape(f" {int(profes.Oficina)}")
+        proCurso += NoEscape(r" \vspace*{1mm} \newline ")
+        proCurso += NoEscape(Command("textbf", "Escuela:").dumps())  
+        proCurso += NoEscape(f" {profes.Escuela}")
+        proCurso += NoEscape(Command("textbf", "  Sede:").dumps())  
+        proCurso += NoEscape(f" {profes.Sede}")
+        proCurso += NoEscape(r" \vspace*{4mm} \newline ")             
     #Config
     config.active = config.Version1(row_heigth=1.5)
     #Geometry
@@ -262,6 +276,7 @@ r'''
     doc.packages.append(Package(name="easylist", options=['ampersand']))
     doc.packages.append(Package(name="biblatex", options=['style=ieee','backend=biber']))
     doc.packages.append(Package(name="tcolorbox",options=['skins','breakable']))
+    doc.packages.append(Package(name="booktabs"))
     #Package options
     doc.preamble.append(Command('setmainfont','Arial'))
     doc.preamble.append(Command('addbibresource', '../bibliografia.bib'))
@@ -450,6 +465,7 @@ r'''
         text="4. Contenidos"
         )
         ,"En el curso se desarrollaran los siguientes temas:"])
+    doc.append(NewLine())
     doc.append(conCurso)
     doc.append(NewPage())
     doc.append(textcolor
@@ -477,81 +493,50 @@ r'''
         text="5. Metodología"
         )
         ,metCurso])
+    doc.append(VerticalSpace("4mm", star=True))  
     doc.append(NewLine())
+    with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
+        table.add_row([textcolor
+        (   
+        size="12",
+        vspace="14",
+        color="parte",
+        bold=True,
+        text="6. Evaluación"
+        )
+        ,evaCurso])
+    doc.append(NewLine())
+    with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
+        table.add_row(["",evaTabla])
+    doc.append(VerticalSpace("4mm", star=True))  
+    doc.append(NewLine())
+    with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
+        table.add_row([textcolor
+        (   
+        size="12",
+        vspace="14",
+        color="parte",
+        bold=True,
+        text="7. Bibliografía"
+        )
+        ,bibCurso])
+    doc.append(VerticalSpace("4mm", star=True))  
+    doc.append(NewLine())
+    with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
+        table.add_row([textcolor
+        (   
+        size="12",
+        vspace="14",
+        color="parte",
+        bold=True,
+        text="8. Persona docente"
+        )
+        ,proCurso])
 
-    # # doc.append(VarCol("5 Metodología de enseñanza y aprendizaje",metCurso))
-    # with doc.create(Tabularx(table_spec=r">{\raggedright}m{0.18\textwidth}m{0.07\textwidth}m{0.17\textwidth}m{0.17\textwidth}m{0.17\textwidth}m{0.04\textwidth}")) as table:
-    #         #table.add_hline(start=3, end=5)
-    #         table.add_row([
-    #             textcolor
-    #             (
-    #             size="12",
-    #             vspace="0",
-    #             color="parte",
-    #             bold=True,
-    #             text="6 Evaluación"
-    #             ),
-    #             '',
-    #             textcolor
-    #             (
-    #             size="12",
-    #             vspace="16",
-    #             color="black",
-    #             bold=True,
-    #             text="Tipo"
-    #             ),
-    #             textcolor
-    #             (
-    #             size="12",
-    #             vspace="16",
-    #             color="black",
-    #             bold=True,
-    #             text="Cantidad"
-    #             ),
-    #             textcolor
-    #             (
-    #             size="12",
-    #             vspace="16",
-    #             color="black",
-    #             bold=True,
-    #             text="Porcentaje" 
-    #             ),
-    #             ''
-    #         ])
-    #         table.append(NoEscape('[12pt]'))
-    #         for row in evaCurso.itertuples(index=False):
-    #             #table.add_hline(start=3, end=5)
-    #             table.add_row(row)
-    #             table.append(NoEscape('[12pt]'))
-    # # with doc.create(LongTabularx(table_spec=r">{\raggedright}p{0.18\textwidth}p{0.72\textwidth}",row_height=1.5)) as table:
-    # #         table.add_row([
-    # #             textcolor
-    # #             (
-    # #             size="12",
-    # #             vspace="0",
-    # #             color="parte",
-    # #             bold=True,
-    # #             text="7 Bibliografía"
-    # #             ),NoEscape(bibCurso)
-    # #         ])
-    # doc.append(VarCol("7 Bibliografía",bibCurso))
-    # doc.append(VerticalSpace("10mm", star=True))
-    # doc.append(textcolor
-    #     (   
-    #     hspace="4mm",
-    #     size="12",
-    #     vspace="20",
-    #     color="parte",
-    #     bold=True,
-    #     text="1 Profesor"
-    #     ))
-    # doc.append(NewLine())
-    # doc.append(proCurso)
-    #doc.append(VarCol("8 Profesor",proCurso))
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
     subprocess.run(["biber", f"C:\\Repositories\\CLIE\\programas\\{codCurso}"])
-    doc.generate_pdf(f"./programas/{codCurso}", clean=True, clean_tex=False, compiler='lualatex')
-    doc.generate_pdf(f"./programas/{codCurso}", clean=True, clean_tex=False, compiler='lualatex') 
+    doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
+    doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex') 
 
 # for id in cursos.id:
 #      generar_programa(id)
