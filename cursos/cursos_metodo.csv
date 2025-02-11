@@ -5,8 +5,3 @@ SCF0801,2,"Asumirán roles específicos dentro de las disciplinas de la ingenier
 SCF0801,3,"Definirán y analizarán los requisitos del sistema en diferentes niveles."
 SCF0801,4,"Establecerán la arquitectura del sistema y evaluarán distintas configuraciones considerando costos, desempeño y factibilidad técnica."
 SCF0801,5,"Aplicarán herramientas de modelado para desarrollar representaciones funcionales del sistema ya integrado y realizar pruebas en entornos simulados que permitan evaluar su desempeño y cumplimiento de requisitos."
-AUT0504,0,"Este es un curso teórico-práctico 100\% presencial"
-AUT0504,1,"Exposiciones magistrales participativas, en las cuales el profesor del curso introduce los conceptos de los temas a desarrollar, apoyado con material audiovisual y lecturas guidas"
-AUT0504,2,"Practicas guiadas de modelado y simulación usando software especializado"
-AUT0504,3,"Asignaciones extraclase que profundizan la compresión de la materia vista en clase"
-CYD0107,0,"Modalidad presencial en el horario de clase correspondiente. En las sesiones se expondrán los conceptos teóricos relevantes de cada tema por medio de material escrito o audiovisual, los cuales serán trabajados por el estudiante en numerosas prácticas realizadas en clases y tareas coordinadas."

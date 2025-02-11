@@ -156,14 +156,14 @@ def colocar_arrowreqs(semestre,sesgo,fila,dir,color):
     dump = NoEscape(r"\draw ")
     dump += NoEscape(f"[{color},line width=0.5mm]") 
     if dir == 1:
-        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila-3.5,2)}) --++ (0.4,0) --++ (0,1.8)coordinate(inicio)")
+        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila-3.5,2)}) --++ (0.3,0) --++ (0,1.8)coordinate(inicio)")
     else:
-        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila+2.5,2)}) --++ (0.4,0) --++ (0,-1.8)coordinate(inicio)")
+        dump += NoEscape(f"({round(6.87*(semestre-sesgo)-3.85,2)},{round(-4.2*fila+2.5,2)}) --++ (0.3,0) --++ (0,-1.8)coordinate(inicio)")
     dump += NoEscape(r";")
     dump += NoEscape("\n")
     dump += NoEscape(r"\draw ")
     dump += NoEscape(f"[-{{Stealth[length=3mm,width=2mm]}},{color},line width=0.5mm]")
-    dump += NoEscape(f"(inicio) --++ (1.45,0)")
+    dump += NoEscape(f"(inicio) --++ (1.55,0)")
     dump += NoEscape(r";")
     dump += NoEscape("\n")
     dump += NoEscape(r"\draw ")
