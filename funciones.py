@@ -271,7 +271,6 @@ def malla_enf(malla,cursos,sesgo,lista,nombrearea,area_colors,titulo,rango,enf):
             creditossemestre = cursos_enf[cursos_enf.semestre == semestre].creditos.sum()
             malla.append(colocar_semestre(semestre,sesgo,"lightgray",horasteoriasemestre,horaspracticasemestre,creditossemestre))            
         for id in cursos_enf.id:
-            print(id)
             semestre = cursos_enf[cursos_enf.id == id].semestre.item()
             codigo = cursos_enf[cursos_enf.id == id].codigo.item()
             nombre = cursos_enf[cursos_enf.id == id].nombre.item()
@@ -317,7 +316,6 @@ def malla_enf(malla,cursos,sesgo,lista,nombrearea,area_colors,titulo,rango,enf):
                                 cursos_enf.loc[cursos_enf['id'] == idreq, 'sevesreq'] = sevesreq + 1
                                 cursos_enf.loc[cursos_enf['id'] == id, 'sevreq'] = sevreq + 1.8
                 if not(corequi == 'nan'):
-                    print(corequi)
                     semcoreq = cursos_enf[cursos_enf.id == corequi].semestre.item()
                     filacoreq = cursos_enf[cursos_enf.id == corequi].fila.item()
                     if ((filacoreq == fila - 1) or (filacoreq == fila + 1)) and (semcoreq == semestre):
