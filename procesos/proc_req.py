@@ -10,6 +10,7 @@ for index, row in cursosreq.iterrows():
     id = row['id']
     reqs = row['requisitos'].split(';')
     for req in reqs:
+        print(req)
         curr_val = cursos.loc[cursos['id'] == req, 'esrequisito'].item()
         if curr_val == None:
             cursos.loc[cursos['id'] == req, 'esrequisito'] = id

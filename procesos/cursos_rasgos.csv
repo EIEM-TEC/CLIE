@@ -8,7 +8,7 @@ CIB0104,Química básica I,QUI
 CIB0105,Laboratorio de química básica I,QUI
 CYD0106,Comunicación escrita,COE
 CYD0107,Dibujo técnico,DPI
-FPH0108,Introducción a la ingeniería electromecánica,ECS;HIP
+FPH0108,Introducción a la Ingeniería Electromecánica,ECS;HIP
 CIB0201,Cálculo y álgebra lineal,MAT
 CIB0202,Física general II,FIS
 CIB0203,Laboratorio de física general II,FIS
@@ -35,14 +35,13 @@ FPH0408,Seminario de estudios costarricenses,ESC
 FPH0409,Actividad deportiva I,HIP
 FPH0501,Desarrollo de emprendedores,EMP
 ADD0502,Estadística aplicada,EYM;DDE
-IEE0503,Sistemas analógicos,CEE
 AUT0504,Modelado y simulación de sistemas,MYS
 IMM0506,Ciencia e ingeniería de los materiales,CIM
 IMM0507,Manufactura,MAN;CIM
 IMM0508,Laboratorio de manufactura,MAN;CIM
 CYD0601,Inglés para electromecánica,ING
 ADD0602,Fiabilidad y disponibilidad de sistemas electromecánicos,CDM
-IEE0604,Sistemas digitales,CEE
+IEE0503,Sistemas analógicos,CEE
 IMM0605,Resistencia de materiales,TTC
 IMM0606,Transferencia de calor,MSF
 IMM0607,Mecánica de fluidos,MSF
@@ -64,17 +63,17 @@ FPH0809,Actividad cultural - deportiva,HIP
 INS0801,Sistemas eléctricos de transmisión y distribución,DTE;TME
 INS0806,Instalaciones eléctricas,IEM;LID
 INS0807,Ventilación y aire comprimido,IEM
-INS0808,Gestión del mantenimiento,GCV
+INS0808,Laboratorio de sistemas de fluidos,IEM
 INS0901,Sistemas de generación y almacenamiento de energía,GAE
 INS0903,Sistemas de refrigeración y aire acondicionado,IEM;TME
 INS0904,Laboratorio de refrigeración y aire acondicionado,IEM;TME
-INS0906,Instalaciones mecánico-sanitarias,IEM;TME;SYC
-INS0907,Laboratorio de sistemas de fluidos,IEM
-INS0908,Sistemas de vapor,IEM;TME
-INS0909,Laboratorio de sistemas de vapor,IEM;TME
+INS0905,Instalaciones mecánico-sanitarias,IEM;TME;SYC
+INS0906,Sistemas de vapor,IEM;TME
+INS0907,Laboratorio de sistemas de vapor,IEM;TME
+INS1007,Taller de neumática y oleohidráulica,IEM;TME;LID
+INS0806,Instalaciones eléctricas,IEM
 INS1003,Gestión de la energía,GEE
 INS1005,Gestión del ciclo de vida de instalaciones electromecánicas,GCV;LID
-INS1007,Taller de neumática y oleohidráulica,IEM;TME;LID
 INS1006,Trabajo final de graduación,LID;SYC
 AER0801,Aviónica,ACA
 AER0806,Máquinas y mecanismos,AME
@@ -89,13 +88,14 @@ AER1001,Gestión del ciclo de vida de la aeronave,GCA;SYC
 AER1003,Control automático de vuelo y tráfico,ACA;LID
 AER1004,Trabajo final de graduación,LID;SYC
 AER1006,Análisis de mecanismos de la aeronave,AME
+AER9090,Infraestructura y servicios aeroportuarios,IAE;SYC
 SCF0801,Ingeniería de sistemas,ISC;LID
 SCF0806,Máquinas y mecanismos,VRD
 SCF0807,Aplicaciones de sistemas embebidos,ETR
 SCF0808,Fundamentos de ciberseguridad,CIB
 SCF0901,Modelado numérico y simulación computacional,ISC
-SCF0902,Aplicaciones de circuitos integrados,ISC
-SCF0903,Machine Learning e Inteligencia Artificial,ETR
+SCF0902,Circuitos integrados y aplicaciones,ISC
+SCF0903,Machine Learning e Inteligiencia Artificial,ETR
 SCF0906,Robótica,VRD
 SCF0907,Automatización y digitalización industrial,IOT;VRD;ISC;SYC
 SCF1001,Taller de integración de sistemas,ISC;HMI;LID
