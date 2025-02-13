@@ -73,7 +73,7 @@ INS0907,Laboratorio de sistemas de fluidos,IEM
 INS0908,Sistemas de vapor,IEM;TME
 INS0909,Laboratorio de sistemas de vapor,IEM;TME
 INS1003,Gestión de la energía,GEE
-INS1005,Gestión del ciclo de vida de instalaciones electromecánicas,GCV;LID
+INS1006,Gestión del ciclo de vida de instalaciones electromecánicas,GCV;LID
 INS1007,Taller de neumática y oleohidráulica,IEM;TME;LID
 INS1006,Trabajo final de graduación,LID;SYC
 AER0801,Aviónica,ACA

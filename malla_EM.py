@@ -129,7 +129,7 @@ def generar_malla():
                 "transform shape"
                 )
         )) as malla_TRC:
-        titulo = "Bachillerato en Ingeniería Electromecánica y tronco común de Licenciatura en Ingeniería Electromecánica - Plan: 2026"
+        titulo = "Tronco común de Licenciatura en Ingeniería Electromecánica y salida lateral de Bachillerato en Ingeniería Electromecánica"
         fun.malla_enf(malla_TRC,cursos,sesgo,TRC,"TRC",area_colors,titulo,rango,False)
     doc.append(NoEscape(r"\newpage"))
     sesgo = 7

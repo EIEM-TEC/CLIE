@@ -247,6 +247,15 @@ def colocar_recreq(titulo1,titulo2,color):
     dump += NoEscape(r"}};") 
     return dump
 
+def colocar_notasTC(textonota,sesgo):
+    dump = NoEscape(r"\filldraw ")
+    dump += NoEscape(r"[fill=white, draw=white]")
+    dump += NoEscape(f"(25,{round(-39.8-sesgo*.8,2)})")
+    dump += NoEscape(r" node[align=left,text width=490mm]{\color{black}\fontsize{16pt}{10pt}\selectfont \textbf{")
+    dump += NoEscape(f"{sesgo}. {textonota}")
+    dump += NoEscape(r"}};") 
+    return dump
+
 def colocar_notas(textonota,sesgo):
     dump = NoEscape(r"\filldraw ")
     dump += NoEscape(r"[fill=white, draw=white]")
@@ -263,7 +272,11 @@ def malla_enf(malla,cursos,sesgo,lista,nombrearea,area_colors,titulo,rango,enf):
         if enf:
             malla.append(colocar_recreq("Electivas","Notas","lightgray"))
             malla.append(colocar_notas("Cursos del tronco común en color blanco",1))
-            malla.append(colocar_notas("Deben escogerse 2 de las 9 electivas posibles para cursarlas en el décimo semestre",2))
+            malla.append(colocar_notas("Debe escogerse 2 de las 9 electivas posibles para cursarlas en el décimo semestre",2))
+            malla.append(colocar_notas("Debe realizarse un Trabajo Final de Graduación para poder graduarse de Licenciatura. Este equivale a 7 créditos y 21 horas prácticas semanales",3))
+        else:
+            malla.append(colocar_notasTC("Debe cursarse tres centros de formación humanistica para poder graduarse",1))
+            malla.append(colocar_notasTC("Debe realizarse una Práctica Profesional para poder escoger la salida lateral de bachillerato. Esta equivale a 7 créditos y 315 horas laboradas en un semestre",2))
         cursos_enf = cursos[cursos["area"].isin(lista)]
         for semestre in rango:
             horasteoriasemestre = cursos_enf[cursos_enf.semestre == semestre].horasTeoria.sum()
