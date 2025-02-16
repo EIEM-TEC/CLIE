@@ -76,20 +76,20 @@ INS1003,Gestión de la energía,GEE
 INS1006,Gestión del ciclo de vida de instalaciones electromecánicas,GCV;LID
 INS1007,Taller de neumática y oleohidráulica,IEM;TME;LID
 INS1006,Trabajo final de graduación,LID;SYC
-AER0801,Aviónica,ACA
+AER0801,Sistemas de la aeronave,ACA;SPA
 AER0806,Máquinas y mecanismos,AME
 AER0807,Materiales en aeronáutica,AME
 AER0808,Taller de metrología aeronáutica,AME;LID
-AER0901,Sistemas de aeronaves,ACA;SPA
-AER0903,Aerodinámica y propulsión,SPA
-AER0904,Seminario de graduación I,
-AER0905,Dinámica de vuelo,SPA
+AER0901,Aviónica,ACA
+AER0902,Aerodinámica,SPA
+AER0903,Sistemas de propulsión,SPA
+AER0905,Seminario de graduación I,
 AER0906,Análisis mecánico de estructuras de la aeronave,AME
 AER0908,Seguridad aeronáutica y aeronavegabilidad,GCA
 AER1001,Gestión del ciclo de vida de la aeronave,GCA;SYC
 AER1003,Control automático de vuelo,ACA;LID
-AER1004,Seminario de graduación II,LID;SYC
-AER1006,Análisis de mecanismos de la aeronave,AME
+AER1005,Seminario de graduación II,LID;SYC
+AER1006,Dinámica de vuelo,SPA
 SCF0801,Ingeniería de sistemas,ISC;LID
 SCF0806,Máquinas y mecanismos,VRD
 SCF0807,Aplicaciones de sistemas embebidos,ETR
