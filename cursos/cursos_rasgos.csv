@@ -80,14 +80,15 @@ AER0801,Aviónica,ACA
 AER0806,Máquinas y mecanismos,AME
 AER0807,Materiales en aeronáutica,AME
 AER0808,Taller de metrología aeronáutica,AME;LID
-AER0901,Sistemas de aeronaves de ala fija y giratoria,ACA;SPA
-AER0902,Sistemas de aeronaves no tripulados y de despegue vertical,ACA;SPA
-AER0903,Aerodinámica y dinámica de vuelo,SPA
-AER0904,Sistemas de propulsión,SPA
+AER0901,Sistemas de aeronaves,ACA;SPA
+AER0903,Aerodinámica y propulsión,SPA
+AER0904,Seminario de graduación I,
+AER0905,Dinámica de vuelo,SPA
 AER0906,Análisis mecánico de estructuras de la aeronave,AME
+AER0908,Seguridad aeronáutica y aeronavegabilidad,GCA
 AER1001,Gestión del ciclo de vida de la aeronave,GCA;SYC
-AER1003,Control automático de vuelo y tráfico,ACA;LID
-AER1004,Trabajo final de graduación,LID;SYC
+AER1003,Control automático de vuelo,ACA;LID
+AER1004,Seminario de graduación II,LID;SYC
 AER1006,Análisis de mecanismos de la aeronave,AME
 SCF0801,Ingeniería de sistemas,ISC;LID
 SCF0806,Máquinas y mecanismos,VRD
