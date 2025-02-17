@@ -60,20 +60,20 @@ fun.radar('TRC',areas,catTRC,valTRC,'Distribución de areas para el tronco comú
 
 fun.multiradar(list_trc,saberes,areas,'porcTRC',10,12,15,5,20)
 
-fun.radar('INS',areas,catINS,valINS,'Distribución de areas para el énfasis: Diseño, instalaciones y gestión',14,18,30,5,30)
+#fun.radar('INS',areas,catINS,valINS,'Distribución de areas para el énfasis: Instalaciones electromecánicas',14,18,30,5,30)
+
+fun.radar_saberes('INS',saberes,areas,'porcINS',14,18,12,3,30)
 
 fun.multiradar(list_INS,saberes,areas,'porcINS',10,12,15,5,20)
 
-# fig, axs = plt.subplots(subplot_kw=dict(projection='polar'), figsize=(10, 10))
+#fun.radar('AER',areas,catAER,valAER,'Distribución de areas para el énfasis: Aeronaútica',14,18,30,5,30)
 
-# fun.radar_clie(axs,catAER,valAER,'Distribución de areas para el énfasis: Aeronáutica',12,14,30,5,30)
+fun.radar_saberes('AER',saberes,areas,'porcAER',14,18,12,3,30)
 
 fun.multiradar(list_AER,saberes,areas,'porcAER',10,12,15,5,20)
 
-# fig, axs = plt.subplots(subplot_kw=dict(projection='polar'), figsize=(10, 10))
+#fun.radar('SCF',areas,catAER,valAER,'Distribución de areas para el énfasis: Sistemas ciberfísicos',14,18,30,5,30)
 
-# fun.radar_clie(axs,catSCB,valSCB,'Distribución de areas para el énfasis: Sistemas ciberfísicos',12,14,30,5,30)
+fun.radar_saberes('SCF',saberes,areas,'porcSCF',14,18,12,3,30)
 
 fun.multiradar(list_SCF,saberes,areas,'porcSCF',10,12,15,5,20)
-
-# fig, axs = plt.subplots(subplot_kw=dict(projection='polar'), figsize=(12, 15))

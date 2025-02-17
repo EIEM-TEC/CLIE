@@ -112,6 +112,17 @@ def radar(nombre,areas,cat,val,title,fontsize,tfontsize,rpmax,mult,textw):
     radar_clie(axs,nom,val,title,fontsize,tfontsize,rpmax,mult,textw)
     plt.savefig(f'./graficos/{nombre}.svg',dpi=600)
 
+def radar_saberes(nombre,saberes,areas,columnaPorc,fontsize,tfontsize,rpmax,mult,textw):
+    nom = areas[areas['codArea']==nombre].nombre.item()
+    sab = saberes[saberes['codArea']==nombre]
+    porc = areas[areas['codArea']==nombre]
+    porc = porc[columnaPorc].item()
+    cat = sab['nombre'].to_list()
+    val = sab[columnaPorc].to_list()
+    fig, axs = plt.subplots(subplot_kw=dict(projection='polar'), figsize=(10, 10))
+    radar_clie(axs,cat,val,nom,fontsize,tfontsize,rpmax,mult,textw)
+    plt.savefig(f'./graficos/{nombre}.svg',dpi=600)
+
 def textcolor(size,vspace,color,bold,text,hspace="0"):
     dump = NoEscape(r"\par")
     if hspace!="0":
