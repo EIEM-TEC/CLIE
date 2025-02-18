@@ -287,7 +287,7 @@ def malla_enf(malla,cursos,sesgo,lista,nombrearea,area_colors,titulo,rango,enf):
             malla.append(colocar_notas("Debe realizarse un Trabajo Final de Graduación para poder graduarse de Licenciatura. Este equivale a 7 créditos y 21 horas prácticas semanales",3))
         else:
             malla.append(colocar_notasTC("Debe cursarse tres centros de formación humanistica para poder graduarse",1))
-            malla.append(colocar_notasTC("Debe realizarse una Práctica Profesional para poder escoger la salida lateral de bachillerato. Esta equivale a 7 créditos y 315 horas laboradas en un semestre",2))
+            #malla.append(colocar_notasTC("Debe realizarse una Práctica Profesional para poder escoger la salida lateral de bachillerato. Esta equivale a 7 créditos y 315 horas laboradas en un semestre",2))
         cursos_enf = cursos[cursos["area"].isin(lista)]
         for semestre in rango:
             horasteoriasemestre = cursos_enf[cursos_enf.semestre == semestre].horasTeoria.sum()
