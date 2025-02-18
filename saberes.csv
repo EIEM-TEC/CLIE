@@ -25,28 +25,29 @@ Sistemas de control y automatización,AUT,SCA,5.0,3.75,3.75,3.75
 Estadística y metrología,ADD,EYM,1.0,0.75,0.75,0.75
 Diseño de experimentos,ADD,DDE,1.0,0.75,0.75,0.75
 "Confiabilidad,disponibilidad,mantenibilidad y seguridad",ADD,CDM,0.5,0.375,0.375,0.375
-Sistemas de transporte de masa y energía,INS,TME,0.0,10.0,0.0,0.0
-Sistemas de generación y almacenamiento de energía,INS,GAE,0.0,3.0,0.0,0.0
-Sistemas de distribución y transmisión de energía eléctrica,INS,DTE,0.0,4.0,0.0,0.0
-Instalaciones electromecánicas,INS,IEM,0.0,3.0,0.0,0.0
-Gestión del ciclo de vida y transformación digital,INS,GCV,0.0,3.0,0.0,0.0
-Gestión de la energía,INS,GEE,0.0,2.0,0.0,0.0
-"Liderazgo e inclusión",INS,LID,0.0,0.0,0.0,0.0
-"Sostenibilidad e impacto social de la ingeniería",INS,SYC,0.0,0.0,0.0,0.0
-Aviónica y control automático de vuelo y tráfico,AER,ACA,0.0,0.0,6.0,0.0
-"Sistemas de propulsión, aerodinámica y dinámica de vuelo",AER,SPA,0.0,0.0,5.0,0.0
-"Análisis mecánico de materiales, estructuras y mecanismos de la aeronave",AER,AME,0.0,0.0,7.0,0.0
-Gestión del ciclo de vida de la aeronave,AER,GCA,0.0,0.0,3.0,0.0
-Instalaciones aeroportuarias,AER,IAE,0.0,0.0,2.0,0.0
-Movilidad aérea avanzada,AER,MAA,0.0,0.0,2.0,0.0
-"Liderazgo e inclusión",AER,LID,0.0,0.0,0.0,0.0
-"Sostenibilidad e impacto social de la ingeniería",AER,SYC,0.0,0.0,0.0,0.0
-Sistemas embebidos en tiempo real,SCF,ETR,0.0,0.0,0.0,4.0
-Interfaz humano máquina,SCF,HMI,0.0,0.0,0.0,1.0
-Ingeniería de sistemas complejos,SCF,ISC,0.0,0.0,0.0,6.0
-Machine Learning e inteligencia artificial embebida,SCF,MIE,0.0,0.0,0.0,4.0
-"Visión de máquina, robótica y domótica",SCF,VRD,0.0,0.0,0.0,5.0
-Internet de las cosas,SCF,IOT,0.0,0.0,0.0,3.0
-Ciberseguridad,SCF,CIS,0.0,0.0,0.0,2.0
-"Liderazgo e inclusión",SCF,LID,0.0,0.0,0.0,0.0
-"Sostenibilidad e impacto social de la ingeniería",SCF,SYC,0.0,0.0,0.0,0.0
+Instalaciones electromecánicas,INS,IEM,0.0,12.2,0.0,0.0
+Sistemas de generación y almacenamiento de energía,INS,GAE,0.0,1.9,0.0,0.0
+Sistemas de distribución y transmisión de energía eléctrica,INS,DTE,0.0,1.9,0.0,0.0
+Gestión del ciclo de vida y transformación digital,INS,GCV,0.0,2.6,0.0,0.0
+Gestión de la energía,INS,GEE,0.0,1.9,0.0,0.0
+"Liderazgo e inclusión",INS,LID,0.0,1.3,0.0,0.0
+"Sostenibilidad e impacto social de la ingeniería",INS,SYC,0.0,1.3,0.0,0.0
+"Investigación y presentación de resultados",INS,IPR,0.0,1.9,0.0,0.0
+"Aviónica, dinamica de vuelo y control de vuelo",AER,ADC,0.0,0.0,5.8,0.0
+"Aerodinámica y sistemas de propulsión",AER,ACP,0.0,0.0,5.0,0.0
+"Análisis mecánico de materiales, estructuras y mecanismos de la aeronave",AER,AME,0.0,0.0,5.1,0.0
+Gestión del ciclo de vida de la aeronave,AER,GCA,0.0,0.0,3.2,0.0
+Seguridad aeronáutica y aeronavegabilidad,AER,SAA,0.0,0.0,2.6,0.0
+"Liderazgo e inclusión",AER,LID,0.0,0.0,1.3,0.0
+"Sostenibilidad e impacto social de la ingeniería",AER,SYC,0.0,0.0,1.3,0.0
+"Investigación y presentación de resultados",AER,IPR,0.0,0.0,1.9,0.0
+Aplicaciones de sistemas embebidos,SCF,ETR,0.0,0.0,0.0,1.9
+Automatización y digitalización,SCF,AYD,0.0,0.0,0.0,3.8
+Robótica,SCF,RBT,0.0,0.0,0.0,3.8
+Modelado numérico y simulación computacional,SCF,MNC,0.0,0.0,0.0,1.9
+Ingeniería de sistemas complejos,SCF,ISC,0.0,0.0,0.0,4.5
+"Machine Learning, inteligencia artificial y visión de máquina",SCF,MIE,0.0,0.0,0.0,3.8
+Ciberseguridad,SCF,CIS,0.0,0.0,0.0,0.8
+"Liderazgo e inclusión",SCF,LID,0.0,0.0,0.0,1.3
+"Sostenibilidad e impacto social de la ingeniería",SCF,SYC,0.0,0.0,0.0,1.3
+"Investigación y presentación de resultados",SCF,IPR,0.0,0.0,0.0,1.9

@@ -60,36 +60,37 @@ IEE0803,Laboratorio de máquinas eléctricas II,MEE
 AUT0804,Control por eventos discretos,SCA
 AUT0805,Laboratorio de control,SCA
 FPH0809,Actividad cultural - deportiva,HIP
-INS0801,Sistemas eléctricos de transmisión y distribución,DTE;TME
-INS0806,Instalaciones eléctricas,IEM;LID
-INS0807,Ventilación y aire comprimido,IEM
-INS0808,Laboratorio de sistemas de fluidos,IEM
-INS0901,Sistemas de generación y almacenamiento de energía,GAE
-INS0903,Sistemas de refrigeración y aire acondicionado,IEM;TME
-INS0904,Laboratorio de refrigeración y aire acondicionado,IEM;TME
-INS0905,Instalaciones mecánico-sanitarias,IEM;TME;SYC
-INS0906,Sistemas de vapor,IEM;TME
-INS0907,Laboratorio de sistemas de vapor,IEM;TME
-INS1007,Taller de neumática y oleohidráulica,IEM;TME;LID
+INS0801,Sistemas eléctricos de transmisión y distribución,DTE
 INS0806,Instalaciones eléctricas,IEM
+INS0807,Ventilación y aire comprimido,IEM
+INS0808,Gestión del mantenimiento,GCV
+INS0901,Sistemas de generación y almacenamiento de energía,GAE
+INS0903,Sistemas de refrigeración y aire acondicionado,IEM
+INS0904,Laboratorio de refrigeración y aire acondicionado,IEM
+INS0905,Seminario de graduación I,LID;SYC;IPR
+INS0906,Instalaciones mecánico-sanitarias,IEM
+INS0907,Laboratorio de sistemas de fluidos,IEM
+INS0908,Sistemas de vapor,IEM
+INS0909,Laboratorio de sistemas de vapor,IEM
 INS1003,Gestión de la energía,GEE
-INS1005,Gestión del ciclo de vida de instalaciones electromecánicas,GCV;LID
-INS1006,Trabajo final de graduación,LID;SYC
-AER0801,Aviónica,ACA
+INS1005,Seminario de graduación II,LID;SYC;IPR
+INS1006,Gestión del ciclo de vida de instalaciones electromecánicas,GCV
+INS1007,Taller de neumática y oleohidráulica,IEM
+AER0801,Sistemas de la aeronave,GCA
 AER0806,Máquinas y mecanismos,AME
 AER0807,Materiales en aeronáutica,AME
-AER0808,Taller de metrología aeronáutica,AME;LID
-AER0901,Sistemas de aeronaves de ala fija y giratoria,ACA;SPA
-AER0902,Sistemas de aeronaves no tripulados y de despegue vertical,ACA;SPA
-AER0903,Aerodinámica y dinámica de vuelo,SPA
-AER0904,Sistemas de propulsión,SPA
+AER0808,Taller de metrología aeronáutica,SAA
+AER0901,Aviónica,ADC
+AER0902,Aerodinámica,ACP
+AER0903,Dinámica de vuelo,ADC
+AER0905,Seminario de graduación I,LID;SYC;IPR
 AER0906,Análisis mecánico de estructuras de la aeronave,AME
-AER1001,Gestión del ciclo de vida de la aeronave,GCA;SYC
-AER1003,Control automático de vuelo y tráfico,ACA;LID
-AER1004,Trabajo final de graduación,LID;SYC
-AER1006,Análisis de mecanismos de la aeronave,AME
-AER9090,Infraestructura y servicios aeroportuarios,IAE;SYC
-SCF0801,Ingeniería de sistemas,ISC;LID
+AER0908,Seguridad aeronáutica y aeronavegabilidad,SAA
+AER1001,Gestión del ciclo de vida de la aeronave,GCA
+AER1002,Sistemas de propulsión,ACP
+AER1003,Control automático de vuelo,ADC
+AER1005,Seminario de graduación II,LID;SYC;IPR
+SCF0801,Ingeniería de sistemas,ISC
 SCF0806,Máquinas y mecanismos,VRD
 SCF0807,Aplicaciones de sistemas embebidos,ETR
 SCF0808,Fundamentos de ciberseguridad,CIB
