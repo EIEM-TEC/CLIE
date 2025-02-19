@@ -1,23 +1,14 @@
 import pandas as pd
 
-porcTC = 0.75
-
 saberes = pd.read_csv("saberes.csv")
 
-areas = saberes[['codArea','porcTRC']].groupby("codArea",as_index=False).sum()
+areas = saberes[['codArea','porcTRC','porcINS','porcAER','porcSCF']].groupby("codArea",as_index=True).sum().round(2)
 
-areas.to_csv('areas.csv',index=False)
+areas['porcENF'] = areas['porcTRC']
 
-areas = pd.read_csv('areas.csv',index_col='codArea')
+areas.loc["ENF"] = [0,0,0,0,25]
 
-areas['porcINS'] = porcTC*areas['porcTRC']
-areas.loc['INS','porcINS'] = (1 - porcTC)*100
-areas['porcAER'] = porcTC*areas['porcTRC']
-areas.loc['AER','porcAER'] = (1 - porcTC)*100
-areas['porcSCF'] = porcTC*areas['porcTRC']
-areas.loc['SCF','porcSCF'] = (1 - porcTC)*100
-
-areas.loc["TOT"] = areas.sum()
+areas.loc["TOT"] = areas.sum().round(2)
 
 areas.insert(0,"nombre",["Analisís de datos",
                          "Aeronáutica",
@@ -29,7 +20,9 @@ areas.insert(0,"nombre",["Analisís de datos",
                          "Ingeniería mecánica y de materiales",
                          "Instalaciones electromecánicas",
                          "Sistemas ciberfísicos",
+                         "Énfasis",
                          "Total"])
+
 
 print(areas)
 

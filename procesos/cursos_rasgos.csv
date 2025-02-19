@@ -8,7 +8,7 @@ CIB0104,Química básica I,QUI
 CIB0105,Laboratorio de química básica I,QUI
 CYD0106,Comunicación escrita,COE
 CYD0107,Dibujo técnico,DPI
-FPH0108,Introducción a la Ingeniería Electromecánica,ECS;HIP
+FPH0108,Introducción a la Ingeniería Electromecánica,ESC;HIP
 CIB0201,Cálculo y álgebra lineal,MAT
 CIB0202,Física general II,FIS
 CIB0203,Laboratorio de física general II,FIS
@@ -20,7 +20,7 @@ FPH0209,Introducción a la técnica ciencia y tecnología,ESC
 CIB0301,Ecuaciones diferenciales,MAT
 CIB0302,Física general III,MAT
 IEE0303,Análisis de circuitos I,CEE
-IEE0304,Laboratorio de circuitos I,CEE
+IEE0304,Laboratorio de circuitos I,CEE;MET
 IEE0305,Transductores,IYT
 IMM0307,Dinámica,MSF
 FPH0308,Seminario de ética para la ingeniería,ESC
@@ -28,35 +28,35 @@ FPH0309,Actividad cultural I,HIP
 CIB0401,Cálculo superior,MAT
 CIB0402,Métodos numéricos para ingeniería,MAT
 IEE0403,Análisis de circuitos II,CEE
-IEE0404,Laboratorio de circuitos II,CEE
-IEE0405,Instrumentación,IYT
+IEE0404,Laboratorio de circuitos II,CEE;MET
+IEE0405,Instrumentación,IYT;MET
 IMM0407,Termodinámica,TTC
 FPH0408,Seminario de estudios costarricenses,ESC
 FPH0409,Actividad deportiva I,HIP
 FPH0501,Desarrollo de emprendedores,EMP
-ADD0502,Estadística aplicada,EYM;DDE
+ADD0502,Estadística aplicada,EYD
 AUT0504,Modelado y simulación de sistemas,MYS
 IMM0506,Ciencia e ingeniería de los materiales,CIM
 IMM0507,Manufactura,MAN;CIM
-IMM0508,Laboratorio de manufactura,MAN;CIM
+IMM0508,Laboratorio de manufactura,MAN;CIM;MET
 CYD0601,Inglés para electromecánica,ING
 ADD0602,Fiabilidad y disponibilidad de sistemas electromecánicos,CDM
 IEE0503,Sistemas analógicos,CEE
 IMM0605,Resistencia de materiales,TTC
 IMM0606,Transferencia de calor,MSF
 IMM0607,Mecánica de fluidos,MSF
-IMM0608,Laboratorio de mecánica de fluidos,MSF
+IMM0608,Laboratorio de mecánica de fluidos,MSF;MET
 CYD0609,Dibujo industrial,DPI
 FPH0701,Administración de proyectos,ADP
-IEE0702,Máquinas eléctricas I,CEE;MEE
-IEE0703,Laboratorio de máquinas eléctricas I,CEE;MEE
+IEE0702,Máquinas eléctricas I,MEE
+IEE0703,Laboratorio de máquinas eléctricas I,MEE;MET
 AUT0704,Control automático,SCA
 AUT0705,Microcontroladores,MAC
 IMM0706,Elementos de máquinas,EDM
 IMM0707,Sistemas térmicos,TTC
-IMM0708,Laboratorio de sistemas térmicos,TTC
+IMM0708,Laboratorio de sistemas térmicos,TTC;MET
 IEE0802,Máquinas eléctricas II,MEE
-IEE0803,Laboratorio de máquinas eléctricas II,MEE
+IEE0803,Laboratorio de máquinas eléctricas II,MEE;MET
 AUT0804,Control por eventos discretos,SCA
 AUT0805,Laboratorio de control,SCA
 FPH0809,Actividad cultural - deportiva,HIP
@@ -66,12 +66,12 @@ INS0807,Ventilación y aire comprimido,IEM
 INS0808,Gestión del mantenimiento,GCV
 INS0901,Sistemas de generación y almacenamiento de energía,GAE
 INS0903,Sistemas de refrigeración y aire acondicionado,IEM
-INS0904,Laboratorio de refrigeración y aire acondicionado,IEM
+INS0904,Laboratorio de refrigeración y aire acondicionado,IEM;MET
 INS0905,Seminario de graduación I,LID;SYC;IPR
 INS0906,Instalaciones mecánico-sanitarias,IEM
-INS0907,Laboratorio de sistemas de fluidos,IEM
+INS0907,Laboratorio de sistemas de fluidos,IEM;MET
 INS0908,Sistemas de vapor,IEM
-INS0909,Laboratorio de sistemas de vapor,IEM
+INS0909,Laboratorio de sistemas de vapor,IEM;MET
 INS1003,Gestión de la energía,GEE
 INS1005,Seminario de graduación II,LID;SYC;IPR
 INS1006,Gestión del ciclo de vida de instalaciones electromecánicas,GCV

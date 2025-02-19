@@ -28,52 +28,25 @@ catTRC = trc['codArea'].to_list()
 
 valTRC = trc['porcTRC'].to_list()
 
-#INS
-list_INS = ['CIB', 'FPH', 'CYD', 'IEE', 'IMM', 'AUT', 'ADD', 'INS']
+#ENF
+list_ENF = ['CIB', 'FPH', 'CYD', 'IEE', 'IMM', 'AUT', 'ADD', 'ENF']
 
-ins = areas[areas['codArea'].isin(list_INS)]
+enf = areas[areas['codArea'].isin(list_ENF)]
 
-catINS = ins['codArea'].to_list()
+catENF = enf['codArea'].to_list()
 
-valINS = ins['porcINS'].to_list()
-
-#AER
-list_AER = ['CIB', 'FPH', 'CYD', 'IEE', 'IMM', 'AUT', 'ADD', 'AER']
-
-aer = areas[areas['codArea'].isin(list_AER)]
-
-catAER = aer['codArea'].to_list()
-
-valAER = aer['porcAER'].to_list()
-
-#SCF
-list_SCF = ['CIB', 'FPH', 'CYD', 'IEE', 'IMM', 'AUT', 'ADD', 'SCF']
-
-scf = areas[areas['codArea'].isin(list_SCF)]
-
-catSCF = scf['codArea'].to_list()
-
-valSCF = scf['porcSCF'].to_list()
+valENF = enf['porcENF'].to_list()
 
 
-fun.radar('TRC',areas,catTRC,valTRC,'Distribución de areas para el tronco común',14,18,30,5,30)
+fun.radar('TRC',areas,catTRC,valTRC,'',14,18,20,5,30)
 
-fun.multiradar(list_trc,saberes,areas,'porcTRC',10,12,15,5,20)
-
-#fun.radar('INS',areas,catINS,valINS,'Distribución de areas para el énfasis: Instalaciones electromecánicas',14,18,30,5,30)
+fun.multiradar(list_trc,saberes,areas,'porcTRC',10,12,12,4,20)
 
 fun.radar_saberes('INS',saberes,areas,'porcINS',14,18,12,3,30)
 
-fun.multiradar(list_INS,saberes,areas,'porcINS',10,12,15,5,20)
-
-#fun.radar('AER',areas,catAER,valAER,'Distribución de areas para el énfasis: Aeronaútica',14,18,30,5,30)
-
 fun.radar_saberes('AER',saberes,areas,'porcAER',14,18,12,3,30)
-
-fun.multiradar(list_AER,saberes,areas,'porcAER',10,12,15,5,20)
-
-#fun.radar('SCF',areas,catAER,valAER,'Distribución de areas para el énfasis: Sistemas ciberfísicos',14,18,30,5,30)
 
 fun.radar_saberes('SCF',saberes,areas,'porcSCF',14,18,12,3,30)
 
-fun.multiradar(list_SCF,saberes,areas,'porcSCF',10,12,15,5,20)
+fun.radar('ENF',areas,catENF,valENF,'',14,18,25,5,30)
+

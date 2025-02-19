@@ -120,7 +120,7 @@ def radar_saberes(nombre,saberes,areas,columnaPorc,fontsize,tfontsize,rpmax,mult
     cat = sab['nombre'].to_list()
     val = sab[columnaPorc].to_list()
     fig, axs = plt.subplots(subplot_kw=dict(projection='polar'), figsize=(10, 10))
-    radar_clie(axs,cat,val,nom,fontsize,tfontsize,rpmax,mult,textw)
+    radar_clie(axs,cat,val,"",fontsize,tfontsize,rpmax,mult,textw)
     plt.savefig(f'./graficos/{nombre}.svg',dpi=600)
 
 def textcolor(size,vspace,color,bold,text,hspace="0"):
