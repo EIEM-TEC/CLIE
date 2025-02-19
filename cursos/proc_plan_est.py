@@ -47,9 +47,9 @@ for index, row in planestudioscoreq.iterrows():
         counter += 1
     planestudios.loc[planestudios['id'] == id, 'correquisitos'] = codigos
 planestudios['creditos'] = cursos['creditos']
-planestudios['horasTot'] = cursos['horasTeoria'] + cursos['horasPractica']
-planestudios['horasEC'] = (planestudios['creditos'] * 3) - planestudios['horasTot']
-planestudios['horasEC'] = planestudios['horasEC'].apply(lambda x: 0 if x < 0 else x)
+planestudios['HC'] = cursos['horasTeoria'] + cursos['horasPractica']
+planestudios['HE'] = (planestudios['creditos'] * 3) - planestudios['HC']
+planestudios['HE'] = planestudios['HE'].apply(lambda x: 0 if x < 0 else x)
 
 print(planestudios.head())
 

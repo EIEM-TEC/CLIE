@@ -170,19 +170,19 @@ datos_malla = pd.DataFrame()
 cursos_malla = cursos[cursos["semestre"]<=10]
 datos_malla["cred_TRC"] = cursos_malla.groupby("area")["creditos"].sum(numeric_only=True)
 datos_malla.loc[["INS","AER","SCF"],"cred_TRC"] = 0
-datos_malla["pt_TRC"] = areas["porcTRC"].to_list()[:-1]
+datos_malla["pt_TRC"] = areas["porcTRC"].to_list()[:-2]
 datos_malla["pm_TRC"] = round((datos_malla["cred_TRC"] / datos_malla["cred_TRC"].sum())*100,1)
 datos_malla["cred_INS"] = cursos_malla.groupby("area")["creditos"].sum(numeric_only=True)
 datos_malla.loc[["AER","SCF"],"cred_INS"] = 0
-datos_malla["pt_INS"] = areas["porcINS"].to_list()[:-1]
+datos_malla["pt_INS"] = areas["porcINS"].to_list()[:-2]
 datos_malla["pm_INS"] = round(((datos_malla["cred_INS"]/180)*100),1)
 datos_malla["cred_AER"] = cursos_malla.groupby("area")["creditos"].sum(numeric_only=True)
 datos_malla.loc[["INS","SCF"],"cred_AER"] = 0
-datos_malla["pt_AER"] = areas["porcAER"].to_list()[:-1]
+datos_malla["pt_AER"] = areas["porcAER"].to_list()[:-2]
 datos_malla["pm_AER"] = round(((datos_malla["cred_AER"]/180)*100),1)
 datos_malla["cred_SCF"] = cursos_malla.groupby("area")["creditos"].sum(numeric_only=True)
 datos_malla.loc[["AER","INS"],"cred_SCF"] = 0
-datos_malla["pt_SCF"] = areas["porcSCF"].to_list()[:-1]
+datos_malla["pt_SCF"] = areas["porcSCF"].to_list()[:-2]
 datos_malla["pm_SCF"] = round(((datos_malla["cred_SCF"]/180)*100),1)
 datos_malla.loc["TOT"] = datos_malla.sum(numeric_only=True)
 datos_malla.to_csv('datos_malla.csv')

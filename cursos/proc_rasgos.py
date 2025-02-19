@@ -7,8 +7,9 @@ cursosraw = pd.read_csv("./cursos/cursos_malla.csv")
 cursos = cursosraw[  (cursosraw["semestre"]<=10)\
                    & (cursosraw["nombre"]!="Electiva I")\
                    & (cursosraw["nombre"]!="Electiva II") ]
-saberes = pd.read_csv("./saberes.csv")
-rasgos = pd.read_csv("./rasgos.csv")
+
+saberes = pd.read_csv("./rasgos_ejes/saberes.csv")
+rasgos = pd.read_csv("./rasgos_ejes/rasgos.csv")
 rasgos["codSaber"] = rasgos["codSaber"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
 rasgos = rasgos.explode("codSaber") #expadir la lista
 curras = pd.read_csv("./cursos/cursos_rasgos.csv")

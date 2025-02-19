@@ -12,7 +12,7 @@ FPH0108,MI0701,Introducción a la ingeniería electromecánica,FPH,1,8,2,0,1,,,A
 CIB0201,MA1103,Cálculo y álgebra lineal,CIB,2,1,4,0,4,CIB0101,,CIB0301;CIB0401
 CIB0202,FI1102,Física general II,CIB,2,2,4,0,3,CIB0102;CIB0101,,IEE0303;IMM0506;CIB0203
 CIB0203,FI1202,Laboratorio de física general II,CIB,2,3,0,2,1,CIB0103,CIB0202,IEE0303
-AUT0205,CAXXXX,Introducción a la computación,AUT,2,5,4,0,2,FPH0108,,IEE0305
+AUT0205,CA2026,Introducción a la computación,AUT,2,5,4,0,2,FPH0108,,IEE0305
 CYD0206,CI1107,Comunicación oral,CYD,2,6,3,0,1,CYD0106,,
 IMM0207,MI2106,Estática,IMM,2,7,4,0,3,CIB0102;CYD0107,,IMM0307
 FPH0208,CS2303,Relaciones laborales,FPH,2,8,3,0,2,FPH0108,,FPH0209
@@ -68,48 +68,48 @@ INS0808,MI0803,Gestión del mantenimiento,INS,8,8,2,0,1,FPH0701,,
 INS0901,MI0804,Sistemas de generación y almacenamiento de energía,INS,9,1,4,0,3,INS0801,,INS1003
 INS0903,MI0805,Sistemas de refrigeración y aire acondicionado,INS,9,3,3,0,3,IMM0707;IMM0708,,INS0904
 INS0904,MI0806,Laboratorio de refrigeración y aire acondicionado,INS,9,4,0,2,1,,INS0903,
-INS0905,MI0807,Seminario de graduación I,INS,9,5,2,2,3,FPH0701,,INS1005
-INS0906,MI0808,Instalaciones mecánico-sanitarias,INS,9,6,4,0,3,INS0807,,INS1006;INS1202;INS0907
-INS0907,MI0809,Laboratorio de sistemas de fluidos,INS,9,7,0,2,1,,INS0906,INS1007
-INS0908,MI0810,Sistemas de vapor,INS,9,8,4,0,3,INS0807,,INS1003;INS0909
-INS0909,MI0811,Laboratorio de sistemas de vapor,INS,9,9,0,2,1,,INS0908,
-INS1003,MI0812,Gestión de la energía,INS,10,3,4,0,3,INS0908;INS0901,,
+INS0905,MI1104,Seminario de graduación I,INS,9,5,2,2,3,FPH0701,,INS1005
+INS0906,MI0807,Instalaciones mecánico-sanitarias,INS,9,6,4,0,3,INS0807,,INS1006;INS1202;INS0907
+INS0907,MI0808,Laboratorio de sistemas de fluidos,INS,9,7,0,2,1,,INS0906,INS1007
+INS0908,MI0809,Sistemas de vapor,INS,9,8,4,0,3,INS0807,,INS1003;INS0909
+INS0909,MI0810,Laboratorio de sistemas de vapor,INS,9,9,0,2,1,,INS0908,
+INS1003,MI0811,Gestión de la energía,INS,10,3,4,0,3,INS0908;INS0901,,
 INS1001,MI1102,Electiva I,INS,10,1,4,0,3,,,
 INS1002,MI1103,Electiva II,INS,10,2,4,0,3,,,
-INS1005,MI0807,Seminario de graduación II,INS,10,5,0,4,4,INS0905,,
-INS1006,MI0813,Gestión del ciclo de vida de instalaciones electromecánicas,INS,10,6,2,2,3,INS0906,,
-INS1007,MI0814,Taller de neumática y oleohidráulica,INS,10,7,0,3,2,INS0907,,
+INS1005,MI1105,Seminario de graduación II,INS,10,5,0,4,4,INS0905,,
+INS1006,MI0812,Gestión del ciclo de vida de instalaciones electromecánicas,INS,10,6,2,2,3,INS0906,,
+INS1007,MI0813,Taller de neumática y oleohidráulica,INS,10,7,0,3,2,INS0907,,
 INS1201,MI0890,Sistemas de puesta a tierra,INS,12,1,4,0,3,INS0806,,
 INS1202,MI0891,Sistemas contra incendios,INS,12,2,4,0,3,INS0906,,
 INS1203,MI0892,Edificios inteligentes,INS,12,3,4,0,3,AUT0805,,
-INS1301,MI0901,Avionica,INS,13,1,3,1,3,,INS1302,
-INS1302,MI0904,Sistemas de la aeronave,INS,13,2,4,0,3,IEE0802,,INS1301;INS1303
+INS1301,MI0904,Avionica,INS,13,1,3,1,3,,INS1302,
+INS1302,MI0901,Sistemas de la aeronave,INS,13,2,4,0,3,IEE0802,,INS1301;INS1303
 INS1303,MI0905,Aerodinámica,INS,13,3,4,0,3,INS0907,INS1302,
 INS1401,MI1008,Automatización y digitalización industrial,INS,14,1,2,2,3,,INS1402,
 INS1402,MI1002,Aplicaciones de sistemas embebidos,INS,14,2,2,2,3,AUT0705,,INS1401;INS1403
 INS1403,MI1006,Machine Learning e Inteligencia Artificial,INS,14,3,2,2,3,,INS1402,
-AER0801,MI0904,Sistemas de la aeronave,AER,8,1,4,0,3,,IEE0802,AER0901
+AER0801,MI0901,Sistemas de la aeronave,AER,8,1,4,0,3,,IEE0802,AER0901
 AER0806,MI0728,Máquinas y mecanismos,AER,8,6,4,0,3,IMM0706,,AER0906;AER0807
 AER0807,MI0902,Materiales en aeronáutica,AER,8,7,3,0,2,,AER0806,AER0906;AER1203
 AER0808,MI0903,Taller de metrología aeronáutica,AER,8,8,0,2,1,IMM0706,,AER0908
-AER0901,MI0901,Aviónica,AER,9,1,3,1,3,AER0801,,AER1001
-AER0902,MI0906,Aerodinámica,AER,9,2,3,1,3,IMM0707,,AER1002;AER1003;AER0903
-AER0903,MI0911,Dinámica de vuelo,AER,9,3,3,1,3,,AER0902,AER1003
-AER0905,MI0807,Seminario de graduación I,AER,9,5,2,2,3,FPH0701,,AER1005
-AER0906,MI0908,Análisis mecánico de estructuras de la aeronave,AER,9,6,4,0,3,AER0806;AER0807,AER0903,
-AER0908,MI0905,Seguridad aeronáutica y aeronavegabilidad,AER,9,8,4,0,3,AER0808,,AER1001;AER1202
+AER0901,MI0904,Aviónica,AER,9,1,3,1,3,AER0801,,AER1001
+AER0902,MI0905,Aerodinámica,AER,9,2,3,1,3,IMM0707,,AER1002;AER1003;AER0903
+AER0903,MI0906,Dinámica de vuelo,AER,9,3,3,1,3,,AER0902,AER1003
+AER0905,MI1104,Seminario de graduación I,AER,9,5,2,2,3,FPH0701,,AER1005
+AER0906,MI0907,Análisis mecánico de estructuras de la aeronave,AER,9,6,4,0,3,AER0806;AER0807,AER0903,
+AER0908,MI0908,Seguridad aeronáutica y aeronavegabilidad,AER,9,8,4,0,3,AER0808,,AER1001;AER1202
 AER1001,MI0909,Gestión del ciclo de vida de la aeronave,AER,10,1,3,0,2,AER0901;AER0908,,AER1201
-AER1002,MI0906,Sistemas de propulsión,AER,10,2,3,1,3,AER0902,,
-AER1003,MI0910,Control automático de vuelo,AER,10,3,3,1,3,AER0902;AER0903,,
-AER1005,MI0807,Seminario de graduación II,AER,10,5,0,4,4,AER0905,,
+AER1002,MI0910,Sistemas de propulsión,AER,10,2,3,1,3,AER0902,,
+AER1003,MI0911,Control automático de vuelo,AER,10,3,3,1,3,AER0902;AER0903,,
+AER1005,MI1105,Seminario de graduación II,AER,10,5,0,4,4,AER0905,,
 AER1007,MI1102,Electiva I,AER,10,7,4,0,3,,,
 AER1008,MI1103,Electiva II,AER,10,8,4,0,3,,,
 AER1201,MI0990,Infraestructura y servicios aeroportuarios,AER,12,1,4,0,3,,AER1001,
 AER1202,MI0991,Telemetría y comunicaciones para aeronáutica,AER,12,2,4,0,3,AER0908,,
 AER1203,MI0992,Manufactura en la cadena de valor aeroespacial,AER,12,3,4,0,3,AER0807,,
-AER1301,MI0809,Gestión del ciclo de vida de instalaciones electromecánicas,AER,13,1,4,0,3,,AER1302,
+AER1301,MI0812,Gestión del ciclo de vida de instalaciones electromecánicas,AER,13,1,4,0,3,,AER1302,
 AER1302,MI4212,Instalaciones eléctricas,AER,13,2,4,0,3,IEE0802,,AER1301;AER1303
-AER1303,MI0808,Gestión de la energía,AER,13,3,4,0,3,,AER1302,
+AER1303,MI0811,Gestión de la energía,AER,13,3,4,0,3,,AER1302,
 AER1401,MI1008,Automatización y digitalización industrial,AER,14,1,2,2,3,,AER1402,
 AER1402,MI1002,Aplicaciones de sistemas embebidos,AER,14,2,2,2,3,AUT0705,,AER1401;AER1403
 AER1403,MI1006,Machine Learning e Inteligencia Artificial,AER,14,3,2,2,3,,AER1402,
@@ -120,21 +120,21 @@ SCF0808,MI1003,Fundamentos de ciberseguridad,SCF,8,8,2,0,1,,SCF0807,SCF1203
 SCF0901,MI1004,Modelado numérico y simulación computacional,SCF,9,1,2,2,3,IMM0707;AUT0804,,SCF1001
 SCF0902,MI1005,Aplicaciones de circuitos integrados,SCF,9,2,2,1,2,AUT0805,,SCF1001
 SCF0903,MI1006,Machine Learning e Inteligencia Artificial,SCF,9,3,2,2,3,SCF0807,,SCF1201;SCF1202
-SCF0905,MI0807,Seminario de graduación I,SCF,9,5,2,2,3,FPH0701,,SCF1005
+SCF0905,MI1104,Seminario de graduación I,SCF,9,5,2,2,3,FPH0701,,SCF1005
 SCF0906,MI1007,Robótica,SCF,9,6,2,2,3,SCF0806,SCF0907,SCF1201
 SCF0907,MI1008,Automatización y digitalización industrial,SCF,9,7,2,2,3,SCF0807,,SCF0906;SCF1007
 SCF1001,MI1009,Taller de integración de sistemas,SCF,10,1,0,4,2,SCF0901;SCF0902,,SCF1002
 SCF1002,MI1010,Diseño de interfases humano-máquina,SCF,10,2,2,2,3,,SCF1001,
-SCF1005,MI0807,Seminario de graduación II,SCF,10,5,0,4,4,SCF0905,,
+SCF1005,MI1105,Seminario de graduación II,SCF,10,5,0,4,4,SCF0905,,
 SCF1007,MI1011,Visión de máquina,SCF,10,7,2,2,3,,SCF0907,
 SCF1008,MI1102,Electiva I,SCF,10,8,4,0,3,,,
 SCF1009,MI1103,Electiva II,SCF,10,9,4,0,3,,,
 SCF1201,MI1090,Sistemas autónomos y multiagente,SCF,12,1,2,2,3,SCF0903;SCF0906,,
 SCF1202,MI1091,Análisis predictivo de series temporales,SCF,12,2,2,2,3,SCF0903,,
 SCF1203,MI1092,Desarrollo de software para aplicaciones críticas,SCF,12,3,2,2,3,SCF0808,,
-SCF1301,MI0901,Avionica,SCF,13,1,3,1,3,,SCF1302,
-SCF1302,MI0904,Sistemas de la aeronave,SCF,13,2,4,0,3,IEE0802,,
+SCF1301,MI0904,Avionica,SCF,13,1,3,1,3,,SCF1302,
+SCF1302,MI0901,Sistemas de la aeronave,SCF,13,2,4,0,3,IEE0802,,
 SCF1303,MI0905,Aerodinámica,SCF,13,3,4,0,3,IMM0707,SCF1302,
-SCF1401,MI0809,Gestión del ciclo de vida de instalaciones electromecánicas,SCF,14,1,4,0,3,,SCF1402,
+SCF1401,MI0812,Gestión del ciclo de vida de instalaciones electromecánicas,SCF,14,1,4,0,3,,SCF1402,
 SCF1402,MI4212,Instalaciones eléctricas,SCF,14,2,4,0,3,IEE0702,,SCF1401;SCF1403
-SCF1403,MI0808,Gestión de la energía,SCF,14,3,4,0,3,,SCF1402,
+SCF1403,MI0811,Gestión de la energía,SCF,14,3,4,0,3,,SCF1402,
