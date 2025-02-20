@@ -218,8 +218,8 @@ def colocar_triacoreq(semestre,sesgo,fila,num,color):
     dump = NoEscape(r"\draw ")
     dump += NoEscape(f"[-{{Triangle[reversed,open,length=3mm,line width=0.25mm,width=4mm]}},{color},line width=0.5mm,]")
     dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila+1.11,2)}) --++ ")
-    dump += NoEscape(f"(0,0.97)")
-    dump += NoEscape(r"node[align=center,text width=4mm,yshift=-3mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
+    dump += NoEscape(f"(0,0.94)")
+    dump += NoEscape(r"node[align=center,text width=4mm,yshift=-2.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
     dump += NoEscape(f"{num}")
     dump += NoEscape(r"}};")      
     return dump
@@ -228,8 +228,8 @@ def colocar_triaescoreq(semestre,sesgo,fila,num,color):
     dump = NoEscape(r"\draw ")
     dump += NoEscape(f"[-{{Triangle[open,length=3mm,line width=0.25mm,width=4mm]}},{color},line width=0.5mm,]")
     dump += NoEscape(f"({round(6.87*(semestre-sesgo)+0.5,2)},{round(-4.2*fila-2.11,2)}) --++ ")
-    dump += NoEscape(f"(0,-0.97)")    
-    dump += NoEscape(r"node[align=center,text width=4mm,yshift=4mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
+    dump += NoEscape(f"(0,-0.94)")    
+    dump += NoEscape(r"node[align=center,text width=4mm,yshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{")
     dump += NoEscape(f"{num}")
     dump += NoEscape(r"}};")      
     return dump
