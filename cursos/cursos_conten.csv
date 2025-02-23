@@ -28,3 +28,68 @@ SCF0801,"
 && Verificación del sistema en escenarios simulados
 && Validación de requisitos
 "
+IEE0305,"
+& Conceptos básicos
+&& Señales, estímulos y sistemas
+&& Modelos y simulaciones
+&& Sensores, actuadores y transductores
+&& Clasificaciones
+& Características de los transductores 
+&& Función de transferencia
+&& Entrada y salida a escala completa
+&& Exactitud y precisión
+&& Repetibilidad y reproducibilidad
+&& Histéresis y no linealidad
+&& Saturación y banda muerta
+&& Resolución
+&& Impedancia de salida
+&& Excitación
+&& Características dinámicas 
+&& Confiabilidad e incertidumbre
+& Transductores térmicos
+&& Bimetales
+&& Termoresistivos
+&& Termoelectricos
+&& Termomecanicos
+&& Inductivos y microondas para calentamiento
+& Transductores ópticos
+&& Fotoconductores
+&& Fotodiodos 
+&& Fototransistores
+&& Fotovoltaicos
+&& Piroeléctricos y termopilas para radiación térmica
+& Transductores eléctricos y magnéticos
+&& Capacitivos
+&& Magnetrostrictivos
+&& Piezoelectricos
+&& Piezoresistivos
+&& Efecto Hall
+&& Motores
+&& Solenoides
+& Transductores acústicos
+&& Micrófonos e hidrófonos
+&& Parlantes
+&& Ultrasónicos
+& Transductores químicos
+&& Electroquímicos
+&& Potenciométricos
+&& Termoquímicos
+& Transductores de radiación
+&& Ionizante
+&& Microondas
+& Transductores MEMS
+&& Métodos de fabricación
+&& Unidades de medición inercial (IMU)
+&& Sensores de presión
+&& Micrófonos 
+&& Interruptores ópticos
+& Interfaces de los transductores
+&& Amplificadores operacionales
+&& Amplificadores de potencia
+&& PWMs para actuadores
+&& Convertidores A/D y D/A
+&& Puentes
+&& Transmisión de datos
+&& Excitadores
+&& Ruido e interferencia
+"

@@ -280,7 +280,7 @@ def generar_programa(id,listProf):
     #Package options
     doc.preamble.append(Command('setmainfont','Arial'))
     doc.preamble.append(Command('addbibresource', '../bibliografia.bib'))
-    doc.preamble.append(NoEscape(r'\renewcommand*{\bibfont}{\fontsize{12}{16}\selectfont}'))
+    doc.preamble.append(NoEscape(r'\renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}'))
     doc.add_color('gris','rgb','0.27,0.27,0.27') #70,70,70
     doc.add_color('parte','rgb','0.02,0.204,0.404') #5,52,103
     doc.add_color('azulsuaveTEC','rgb','0.02,0.455,0.773') #5,116,197
@@ -293,23 +293,23 @@ def generar_programa(id,listProf):
     with headerfooter.create(Head("L")) as header_left:
         with header_left.create(MiniPage(width=r"0.5\textwidth",align="l")) as logobox:
             logobox.append(StandAloneGraphic(image_options="width=62.5mm", filename='../figuras/Logo.png'))
-    #Left foot
-    with headerfooter.create(Foot("L")) as footer_left:
-        footer_left.append(TextColor("azulsuaveTEC", f"{nomEscue}"))
-        footer_left.append(NoEscape(r"\par \parbox{0.85\textwidth}{"))
-        footer_left.append(textcolor
-            (   
-            par=False,
-            size="8",
-            vspace="0",
-            color="azulsuaveTEC",
-            bold=False,
-            text=f"{strProgr}" 
-            ))
-        footer_left.append(NoEscape(r"}"))
+    #Left foot # eliminada en nuevo formato
+    # with headerfooter.create(Foot("L")) as footer_left:
+    #     footer_left.append(TextColor("gris", f"{nomEscue}"))
+    #     footer_left.append(NoEscape(r"\par \parbox{0.85\textwidth}{"))
+    #     footer_left.append(textcolor
+    #         (   
+    #         par=False,
+    #         size="8",
+    #         vspace="0",
+    #         color="gris",
+    #         bold=False,
+    #         text=f"{strProgr}" 
+    #         ))
+    #     footer_left.append(NoEscape(r"}"))
     #Right foot
     with headerfooter.create(Foot("R")) as footer_right:
-        footer_right.append(TextColor("azulsuaveTEC", NoEscape(r"Página \thepage \hspace{1pt} de \pageref*{LastPage}")))        
+        footer_right.append(TextColor("black", NoEscape(r"Página \thepage \hspace{1pt} de \pageref*{LastPage}")))        
     #Add header and footer 
     doc.preamble.append(headerfooter)
     doc.change_page_style("empty")
@@ -346,7 +346,7 @@ def generar_programa(id,listProf):
             (
             size="18",
             vspace="25",
-            color="azulsuaveTEC",
+            color="black",
             bold=True,
             text=f"{nomCurso}" 
             ))
@@ -537,10 +537,19 @@ def generar_programa(id,listProf):
     subprocess.run(["biber", f"C:\\Repositories\\CLIE\\programas\\{codCurso}"])
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex') 
+    subprocess.run(f'move "C:\\Repositories\\CLIE\\programas\\{codCurso}.pdf" "C:\\Repositories\\CLIE\\programas\\{codCurso}-{nomCurso}.pdf"', shell=True, check=True)
 
 # for id in cursos.id:
 #      generar_programa(id)
 
 listProf = ['JRH0','JMJ0']
+generar_programa("IEE0305",listProf)
 generar_programa("SCF0801",listProf)
-#generar_programa("CYD0107",listProf)
+# generar_programa("CYD0107",listProf)
+
+subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.bbl"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.bcf"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.blg"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.log"], shell=True, check=True)
+subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.run.xml"], shell=True, check=True)

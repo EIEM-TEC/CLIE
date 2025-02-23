@@ -5,3 +5,6 @@ SCF0801,2,"Asumirán roles específicos dentro de las disciplinas de la ingenier
 SCF0801,3,"Definirán y analizarán los requisitos del sistema en diferentes niveles."
 SCF0801,4,"Establecerán la arquitectura del sistema y evaluarán distintas configuraciones considerando costos, desempeño y factibilidad técnica."
 SCF0801,5,"Aplicarán herramientas de modelado para desarrollar representaciones funcionales del sistema ya integrado y realizar pruebas en entornos simulados que permitan evaluar su desempeño y cumplimiento de requisitos."
+IEE0305,0,"En este curso, se utilizará el enfoque sistémico-complejo para la ejecución de las sesiones magistrales y se integrará la investigación práctica aplicada para las sesiones prácticas. Esta última se implementará mediante técnicas como la experimentación controlada y el estudio de casos."
+IEE0305,1,"Recibirán instrucción sobre los principios físicos que gobiernan el comportamiento de los transductores."
+IEE0305,2,"Analizarán alternativas para seleccionar el transductor adecuado de acuerdo con cada aplicación vista en los estudios de caso."
