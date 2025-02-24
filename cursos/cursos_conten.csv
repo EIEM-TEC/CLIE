@@ -93,3 +93,26 @@ IEE0305,"
 && Excitadores
 && Ruido e interferencia
 "
+IEE0405,"
+& Sistemas de adquisición de datos
+&& Arquitectura básica
+&& Transductores analógicos y digitales
+&& Acondicionamiento de señales
+&& A/D: muestreo, cuantización y codificación
+&& D/A: decodificación y filtrado
+&& Interfaz de transductores con DAQs y microcontroladores
+& Instrumentos virtuales
+&& Estructuras de datos
+&& Estructuras de ejecución
+&& Máquinas de estados
+&& Guardado de archivos
+&& Interfaces gráficas
+&& Comunicación serial y USB
+&& Control de instrumentos externos
+& Simbología y metrología de instrumentación
+&& Norma ISA 5.1
+&& Calibración y trazabilidad
+&& Verificación y validación
+&& Propagación de incertidumbres
+&& Norma GUM
+"

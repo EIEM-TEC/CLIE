@@ -22,6 +22,18 @@
 \setmainfont{Arial}%
 \addbibresource{../bibliografia.bib}%
 \renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}%
+
+\defbibenvironment{bibliography}
+    {\list
+    {\printfield[labelnumberwidth]{labelnumber}}
+    {\setlength{\leftmargin}{4cm}
+    \setlength{\rightmargin}{1.1cm}
+    \setlength{\itemindent}{0pt}
+    \setlength{\itemsep}{\bibitemsep}
+    \setlength{\parsep}{\bibparsep}}}
+    {\endlist}
+{\item}
+%
 \definecolor{gris}{rgb}{0.27,0.27,0.27}%
 \definecolor{parte}{rgb}{0.02,0.204,0.404}%
 \definecolor{azulsuaveTEC}{rgb}{0.02,0.455,0.773}%
@@ -110,7 +122,9 @@ Los aprendizajes que los estudiantes desarrollarán en el curso son: definir los
 \newline%
 Para desempeñarse adecuadamente en este curso, los estudiantes deben poner en práctica lo aprendido en los cursos de: Metodología de la investigación y Administración de proyectos.\newline%
 \newline%
-Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en los cursos de: Modelado numérico y simulación computacional y Taller de integración de sistemas.\\%
+Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en los cursos de: Modelado numérico y simulación computacional y Taller de integración de sistemas.\newline%
+\newline%
+\\%
 \end{tabularx}%
 \vspace*{4mm}%
 \newline%
@@ -159,24 +173,20 @@ Una vez aprobado este curso, los estudiantes podrán emplear algunos de los apre
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
 \par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{5. Metodología}}&En este curso, la estrategia central será la investigación práctica aplicada, implementada mediante técnicas como el aprendizaje basado en proyectos (PBL), el análisis de alternativas (trade-off) y el modelado y simulación.\newline\newline \textbf{Los estudiantes:}\begin{itemize}\item Seleccionarán un sistema de interés y conformarán el grupo de trabajo para su desarrollo.\item Asumirán roles específicos dentro de las disciplinas de la ingeniería electromecánica, garantizando la integración efectiva de conocimientos y habilidades en el desarrollo del sistema.\item Definirán y analizarán los requisitos del sistema en diferentes niveles.\item Establecerán la arquitectura del sistema y evaluarán distintas configuraciones considerando costos, desempeño y factibilidad técnica.\item Aplicarán herramientas de modelado para desarrollar representaciones funcionales del sistema ya integrado y realizar pruebas en entornos simulados que permitan evaluar su desempeño y cumplimiento de requisitos.\end{itemize}\vspace*{2mm}Este enfoque metodológico permitirá a la persona estudiante integrar principios, metodologías y herramientas de la ingeniería de sistemas en el análisis, diseño y gestión de sistemas, colaborando con equipos de trabajo multidisciplinarios.\vspace*{2mm} \newline  Si un estudiante requiere apoyos educativos, podrá solicitarlos a través del Departamento de Orientación y Psicología.\\%
 \end{tabularx}%
-\vspace*{4mm}%
+\vspace*{2mm}%
 \newline%
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
 \par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{6. Evaluación}}&La evaluación se distribuye en los siguientes rubros:\vspace*{1mm} \newline  \begin{itemize} \item Participación: aporte en discusiones, actividades en equipo y gestión del trabajo colaborativo. \item Pruebas cortas: conocimiento adquirido en temas clave como análisis de requisitos, modelado y evaluación de alternativas. \item Proyecto integrador: desarrollo de un sistema de interés mediante la definición de requisitos, diseño de arquitectura, modelado y verificación en simulaciones. \end{itemize}\\%
 \end{tabularx}%
+\vspace*{2mm}%
 \newline%
-\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
-& \begin{minipage}{\linewidth}  \centering \vspace*{4mm}  \begin{tabular}{ p{4cm}  p{1.5cm} }  \toprule  Participación & 20 \% \\  \midrule  Pruebas cortas & 20 \% \\  \midrule  Proyecto integrador & 60 \% \\  \midrule Total & 100 \% \\  \bottomrule  \end{tabular} \end{minipage} \\%
-\end{tabularx}%
+ \begin{minipage}{\linewidth}  \centering  \begin{tabular}{ p{4cm}  p{1.5cm} }  \toprule  Participación & 20 \% \\  \midrule  Pruebas cortas & 20 \% \\  \midrule  Proyecto integrador & 60 \% \\  \midrule Total & 100 \% \\  \bottomrule  \end{tabular} \end{minipage}%
 \vspace*{4mm}%
 \newline%
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
-\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{7. Bibliografía}}&
-\nocite{incose2023}
-\printbibliography[heading=none]\\%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{7. Bibliografía}}&\nocite{incose2023} \\%
 \end{tabularx}%
-\vspace*{4mm}%
-\newline%
+\vspace*{-8mm}\printbibliography[heading=none]%
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
 \par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{8. Persona docente}}&El curso será impartido por: \vspace*{4mm} \newline \textbf{Dr.{-}Ing. Juan José Rojas Hernández} \vspace*{2mm} \newline Doctor en ciencia aplicada a la integración de sistemas. Instituto Tecnológico de Kyushu. Japón. \vspace*{1mm} \newline Máster en electrónica con énfasis en microsistemas. Licenciado en Mantenimiento Industrial. Instituto Tecnológico de Costa Rica. Costa Rica. \vspace*{1mm} \newline \textbf{Correo:} juan.rojas@itcr.ac.cr\textbf{  Oficina:} 31 \vspace*{1mm} \newline \textbf{Escuela:} Ingeniería Electromecánica\textbf{  Sede:} Cartago \vspace*{4mm} \newline \textbf{Juan José Montero Jimenez, Ph.D.} \vspace*{2mm} \newline Doctorado en Ingeniería Industrial e Informática. Universidad de Toulouse. Francia. \vspace*{1mm} \newline Máster en ciencias en Ingeniería Aeroespacial. ISAE-SUPAERO. Francia \vspace*{1mm} \newline Licenciado en Ingeniería en Mantenimiento Industrial. Instituto Tecnológico de Costa Rica. Costa Rica \vspace*{1mm} \newline \textbf{Correo:} juan.montero@itcr.ac.cr\textbf{  Oficina:} 5 \vspace*{1mm} \newline \textbf{Escuela:} Ingeniería Electromecánica\textbf{  Sede:} Cartago \vspace*{4mm} \newline \\%
 \end{tabularx}%

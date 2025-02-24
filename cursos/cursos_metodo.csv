@@ -8,3 +8,7 @@ SCF0801,5,"Aplicarán herramientas de modelado para desarrollar representaciones
 IEE0305,0,"En este curso, se utilizará el enfoque sistémico-complejo para la ejecución de las sesiones magistrales y se integrará la investigación práctica aplicada para las sesiones prácticas. Esta última se implementará mediante técnicas como la experimentación controlada y el estudio de casos."
 IEE0305,1,"Recibirán instrucción sobre los principios físicos que gobiernan el comportamiento de los transductores."
 IEE0305,2,"Analizarán alternativas para seleccionar el transductor adecuado de acuerdo con cada aplicación vista en los estudios de caso."
+IEE0405,0,"En este curso, se utilizará el enfoque sistémico-complejo para la ejecución de las sesiones magistrales y se integrará la investigación práctica aplicada para las sesiones prácticas. Esta última se implementará mediante técnicas como la experimentación controlada y el estudio de casos."
+IEE0405,1,"Recibirán instrucción sobre la integración de diferentes componentes en un sistema de adquisición de datos y sobre los componentes de un instrumento virtual."
+IEE0405,2,"Integrarán instrumentos virtuales, transductores, dispositivos de adquisición de datos y microcontroladores para crear sistemas de instrumentación a la medida según la aplicación vista en los estudios de caso."
+IEE0405,3,"Calibrarán sistemas de instrumentación y determinarán su incertidumbre."

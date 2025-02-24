@@ -22,6 +22,18 @@
 \setmainfont{Arial}%
 \addbibresource{../bibliografia.bib}%
 \renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}%
+
+\defbibenvironment{bibliography}
+    {\list
+    {\printfield[labelnumberwidth]{labelnumber}}
+    {\setlength{\leftmargin}{4cm}
+    \setlength{\rightmargin}{1.1cm}
+    \setlength{\itemindent}{0pt}
+    \setlength{\itemsep}{\bibitemsep}
+    \setlength{\parsep}{\bibparsep}}}
+    {\endlist}
+{\item}
+%
 \definecolor{gris}{rgb}{0.27,0.27,0.27}%
 \definecolor{parte}{rgb}{0.02,0.204,0.404}%
 \definecolor{azulsuaveTEC}{rgb}{0.02,0.455,0.773}%
@@ -110,7 +122,9 @@ Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender 
 \newline%
 Para desempeñarse adecuadamente en este curso, los estudiantes deben poner en práctica lo aprendido en los cursos de: Física I y Física II \newline%
 \newline%
-Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en los cursos de: Instrumentación, Modelado y simulación de sistemas, Control automático y Control por eventos discretos.\\%
+Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en los cursos de: Instrumentación, Modelado y simulación de sistemas, Control automático y Control por eventos discretos.\newline%
+\newline%
+\\%
 \end{tabularx}%
 \vspace*{4mm}%
 \newline%
@@ -195,27 +209,21 @@ Una vez aprobado este curso, los estudiantes podrán emplear algunos de los apre
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
 \par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{5. Metodología}}&En este curso, se utilizará el enfoque sistémico-complejo para la ejecución de las sesiones magistrales y se integrará la investigación práctica aplicada para las sesiones prácticas. Esta última se implementará mediante técnicas como la experimentación controlada y el estudio de casos.\newline\newline \textbf{Los estudiantes:}\begin{itemize}\item Recibirán instrucción sobre los principios físicos que gobiernan el comportamiento de los transductores.\item Analizarán alternativas para seleccionar el transductor adecuado de acuerdo con cada aplicación vista en los estudios de caso.\end{itemize}\vspace*{2mm}Este enfoque metodológico permitirá a la persona estudiante evaluar transductores para su uso en sistemas de instrumentación para la medición y modificación de variables físicas en sistemas electromecánicos.\vspace*{2mm} \newline  Si un estudiante requiere apoyos educativos, podrá solicitarlos a través del Departamento de Orientación y Psicología.\\%
 \end{tabularx}%
-\vspace*{4mm}%
+\vspace*{2mm}%
 \newline%
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
 \par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{6. Evaluación}}&La evaluación se distribuye en los siguientes rubros:\vspace*{1mm} \newline  \begin{itemize} \item Participación: aporte en clase y proactividad en los experimentos. \item Tareas: investigación sobre temas relacionados con principios físicos y aplicaciones. \item Pruebas cortas: evaluación del correcto análisis y selección de transductores basados en estudios de casos. \item Reportes: desarrollo y conclusión de los experimentos relacionados con los temas de características de los transductores. \end{itemize}\\%
 \end{tabularx}%
+\vspace*{2mm}%
 \newline%
-\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
-& \begin{minipage}{\linewidth}  \centering \vspace*{4mm}  \begin{tabular}{ p{4cm}  p{1.5cm} }  \toprule  Participación & 20 \% \\  \midrule  Tareas & 20 \% \\  \midrule  Pruebas cortas & 30 \% \\  \midrule  Reportes & 30 \% \\  \midrule Total & 100 \% \\  \bottomrule  \end{tabular} \end{minipage} \\%
-\end{tabularx}%
+ \begin{minipage}{\linewidth}  \centering  \begin{tabular}{ p{4cm}  p{1.5cm} }  \toprule  Participación & 20 \% \\  \midrule  Tareas & 20 \% \\  \midrule  Pruebas cortas & 30 \% \\  \midrule  Reportes & 30 \% \\  \midrule Total & 100 \% \\  \bottomrule  \end{tabular} \end{minipage}%
 \vspace*{4mm}%
 \newline%
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
-\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{7. Bibliografía}}&
-\nocite{ida2020sensors}
-\nocite{fraden2016sensors}
-\nocite{pallas2012sensors}
-\printbibliography[heading=none]\\%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{7. Bibliografía}}&\nocite{ida2020sensors} \nocite{fraden2016sensors} \nocite{pallas2012sensors} \\%
 \end{tabularx}%
-\vspace*{4mm}%
-\newline%
+\vspace*{-8mm}\printbibliography[heading=none]%
 \begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
-\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{8. Persona docente}}&El curso será impartido por: \vspace*{4mm} \newline \textbf{Dr.{-}Ing. Juan José Rojas Hernández} \vspace*{2mm} \newline Doctor en ciencia aplicada a la integración de sistemas. Instituto Tecnológico de Kyushu. Japón. \vspace*{1mm} \newline Máster en electrónica con énfasis en microsistemas. Licenciado en Mantenimiento Industrial. Instituto Tecnológico de Costa Rica. Costa Rica. \vspace*{1mm} \newline \textbf{Correo:} juan.rojas@itcr.ac.cr\textbf{  Oficina:} 31 \vspace*{1mm} \newline \textbf{Escuela:} Ingeniería Electromecánica\textbf{  Sede:} Cartago \vspace*{4mm} \newline \textbf{Juan José Montero Jimenez, Ph.D.} \vspace*{2mm} \newline Doctorado en Ingeniería Industrial e Informática. Universidad de Toulouse. Francia. \vspace*{1mm} \newline Máster en ciencias en Ingeniería Aeroespacial. ISAE-SUPAERO. Francia \vspace*{1mm} \newline Licenciado en Ingeniería en Mantenimiento Industrial. Instituto Tecnológico de Costa Rica. Costa Rica \vspace*{1mm} \newline \textbf{Correo:} juan.montero@itcr.ac.cr\textbf{  Oficina:} 5 \vspace*{1mm} \newline \textbf{Escuela:} Ingeniería Electromecánica\textbf{  Sede:} Cartago \vspace*{4mm} \newline \\%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{8. Persona docente}}&El curso será impartido por: \vspace*{4mm} \newline \textbf{Dr.{-}Ing. Luis Diego Murillo Soto} \vspace*{2mm} \newline Máster en Ciencias de la Ingeniería Eléctrica.Universidad de Costa Rica.Costa Rica \vspace*{1mm} \newline Máster en computación. Instituto Tecnológico de Costa Rica  \vspace*{1mm} \newline Ingeniero en Mantenimiento Industrial. Tecnológico de Costa Rica.Costa Rica \vspace*{1mm} \newline Técnico en Electrónica. COVAO \vspace*{1mm} \newline \textbf{Correo:} lmurillo@itcr.ac.cr\textbf{  Oficina:} 7 \vspace*{1mm} \newline \textbf{Escuela:} Ingeniería Electromecánica\textbf{  Sede:} Cartago \vspace*{4mm} \newline \textbf{Dr.{-}Ing. Juan José Rojas Hernández} \vspace*{2mm} \newline Doctor en ciencia aplicada a la integración de sistemas. Instituto Tecnológico de Kyushu. Japón. \vspace*{1mm} \newline Máster en electrónica con énfasis en microsistemas. Licenciado en Mantenimiento Industrial. Instituto Tecnológico de Costa Rica. Costa Rica. \vspace*{1mm} \newline \textbf{Correo:} juan.rojas@itcr.ac.cr\textbf{  Oficina:} 31 \vspace*{1mm} \newline \textbf{Escuela:} Ingeniería Electromecánica\textbf{  Sede:} Cartago \vspace*{4mm} \newline \\%
 \end{tabularx}%
 \end{document}

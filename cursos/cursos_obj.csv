@@ -8,3 +8,7 @@ IEE0305,0,"Evaluar transductores para su uso en sistemas de instrumentación par
 IEE0305,1,"Comprender las características estáticas, dinámicas, eléctricas y de fabricación de los transductores."
 IEE0305,2,"Evaluar el uso de los transductores según su aplicación en sistemas específicos, considerando sus características y principios de funcionamiento."
 IEE0305,3,"Experimentar con transductores mediante prácticas que permitan aprendizajes significativos y el desarrollo de habilidades aplicadas."
+IEE0405,0,"Implementar sistemas de instrumentación precisos y confiables para la medición y modificación de variables físicas en sistemas electromecánicos."
+IEE0405,1,"Implementar sistemas de instrumentación mediante la integración de transductores, sistemas de adquisición de datos e instrumentos virtuales."
+IEE0405,2,"Programar instrumentos virtuales para automatizar la adquisición, procesamiento y visualización de señales en sistemas de instrumentación."
+IEE0405,3,"Aplicar principios de metrología para evaluar y minimizar el error en la medición de variables físicas."

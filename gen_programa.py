@@ -66,7 +66,9 @@ def fontselect(size,vspace):
     dump += NoEscape(Command("selectfont").dumps()) + NoEscape(" ")
     return dump
 
-def generar_programa(id,listProf):
+def generar_programa(id):
+    listProf = profes[profes.id == id].profesores.str.split(';').item()
+    print(listProf)
     codCurso = cursos[cursos.id == id].codigo.item()
     nomEscue = "Escuela de Ingeniería Electromecánica"
     print(nomEscue)
@@ -209,7 +211,7 @@ def generar_programa(id,listProf):
     descriEval += NoEscape(r"\end{itemize}") 
     evaCurso += descriEval
     evaTabla = NoEscape(r" \begin{minipage}{\linewidth} ")
-    evaTabla += NoEscape(r" \centering \vspace*{4mm} ") 
+    evaTabla += NoEscape(r" \centering ") 
     evaTabla += NoEscape(r" \begin{tabular}{ p{4cm}  p{1.5cm} } ")
     evaTabla += NoEscape(r" \toprule ") 
     total = 0
@@ -221,30 +223,31 @@ def generar_programa(id,listProf):
             evaTabla += NoEscape(f"Total & {total} \\% \\\ ")
             evaTabla += NoEscape(r" \bottomrule ")
     # #evaCurso += NoEscape(r" A & B \\ C & D \\ 
-    evaTabla += NoEscape(r" \end{tabular} \end{minipage} ")
-    bibCurso = NoEscape('\n'+ r'\nocite{' + ('}\n'+r'\nocite{').join(bibtex[bibtex.id == id].bibtex.item().split(';')) + '}\n' + r'\printbibliography[heading=none]')
+    evaTabla += NoEscape(r" \end{tabular} \end{minipage}")
+    bibCurso = NoEscape(r'\nocite{' + ('} '+r'\nocite{').join(bibtex[bibtex.id == id].bibtex.item().split(';')) + '} ')
+    bibPrint = NoEscape(r'\vspace*{-8mm}\printbibliography[heading=none]')
     dataProf = datProfes[datProfes.Codigo.isin(listProf)]
     print(dataProf)
     proCurso = NoEscape(r"El curso será impartido por: \vspace*{4mm} \newline ")
-    for consecutivo, profes in dataProf.iterrows():
-        match profes.Titulo:
+    for consecutivo, profe in dataProf.iterrows():
+        match profe.Titulo:
             case "M.Sc." | "Ing." | "Máster" | "Dr.-Ing.":
-                proCurso += NoEscape(Command("textbf", f"{profes.Titulo} {profes.Nombre}").dumps())
+                proCurso += NoEscape(Command("textbf", f"{profe.Titulo} {profe.Nombre}").dumps())
             case "Ph.D.":
-                proCurso += NoEscape(Command("textbf", f"{profes.Nombre}, {profes.Titulo}").dumps())
+                proCurso += NoEscape(Command("textbf", f"{profe.Nombre}, {profe.Titulo}").dumps())
         proCurso += NoEscape(r" \vspace*{2mm} \newline ")
-        for titulo in profes.Titulos.split('\r\n'):
+        for titulo in profe.Titulos.split('\r\n'):
             proCurso += NoEscape(f"{titulo}")
             proCurso += NoEscape(r" \vspace*{1mm} \newline ")   
         proCurso += NoEscape(Command("textbf", "Correo:").dumps())               
-        proCurso += NoEscape(f" {profes.Correo}")
+        proCurso += NoEscape(f" {profe.Correo}")
         proCurso += NoEscape(Command("textbf", "  Oficina:").dumps())     
-        proCurso += NoEscape(f" {int(profes.Oficina)}")
+        proCurso += NoEscape(f" {int(profe.Oficina)}")
         proCurso += NoEscape(r" \vspace*{1mm} \newline ")
         proCurso += NoEscape(Command("textbf", "Escuela:").dumps())  
-        proCurso += NoEscape(f" {profes.Escuela}")
+        proCurso += NoEscape(f" {profe.Escuela}")
         proCurso += NoEscape(Command("textbf", "  Sede:").dumps())  
-        proCurso += NoEscape(f" {profes.Sede}")
+        proCurso += NoEscape(f" {profe.Sede}")
         proCurso += NoEscape(r" \vspace*{4mm} \newline ")             
     #Config
     config.active = config.Version1(row_heigth=1.5)
@@ -281,6 +284,18 @@ def generar_programa(id,listProf):
     doc.preamble.append(Command('setmainfont','Arial'))
     doc.preamble.append(Command('addbibresource', '../bibliografia.bib'))
     doc.preamble.append(NoEscape(r'\renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}'))
+    doc.preamble.append(NoEscape(r'''
+\defbibenvironment{bibliography}
+    {\list
+    {\printfield[labelnumberwidth]{labelnumber}}
+    {\setlength{\leftmargin}{4cm}
+    \setlength{\rightmargin}{1.1cm}
+    \setlength{\itemindent}{0pt}
+    \setlength{\itemsep}{\bibitemsep}
+    \setlength{\parsep}{\bibparsep}}}
+    {\endlist}
+{\item}
+'''))
     doc.add_color('gris','rgb','0.27,0.27,0.27') #70,70,70
     doc.add_color('parte','rgb','0.02,0.204,0.404') #5,52,103
     doc.add_color('azulsuaveTEC','rgb','0.02,0.455,0.773') #5,116,197
@@ -493,7 +508,7 @@ def generar_programa(id,listProf):
         text="5. Metodología"
         )
         ,metCurso])
-    doc.append(VerticalSpace("4mm", star=True))  
+    doc.append(VerticalSpace("2mm", star=True))  
     doc.append(NewLine())
     with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
         table.add_row([textcolor
@@ -505,9 +520,9 @@ def generar_programa(id,listProf):
         text="6. Evaluación"
         )
         ,evaCurso])
+    doc.append(VerticalSpace("2mm", star=True))  
     doc.append(NewLine())
-    with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
-        table.add_row(["",evaTabla])
+    doc.append(evaTabla)
     doc.append(VerticalSpace("4mm", star=True))  
     doc.append(NewLine())
     with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
@@ -519,9 +534,10 @@ def generar_programa(id,listProf):
         bold=True,
         text="7. Bibliografía"
         )
-        ,bibCurso])
-    doc.append(VerticalSpace("4mm", star=True))  
-    doc.append(NewLine())
+        ,bibCurso]) 
+    doc.append(bibPrint)
+    # doc.append(VerticalSpace("2mm", star=True))  
+    # doc.append(NewLine())
     with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
         table.add_row([textcolor
         (   
@@ -542,9 +558,10 @@ def generar_programa(id,listProf):
 # for id in cursos.id:
 #      generar_programa(id)
 
-listProf = ['JRH0','JMJ0']
-generar_programa("IEE0305",listProf)
-generar_programa("SCF0801",listProf)
+
+generar_programa("IEE0305")
+generar_programa("IEE0405")
+generar_programa("SCF0801")
 # generar_programa("CYD0107",listProf)
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
