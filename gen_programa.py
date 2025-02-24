@@ -228,7 +228,8 @@ def generar_programa(id):
     bibPrint = NoEscape(r'\vspace*{-8mm}\printbibliography[heading=none]')
     dataProf = datProfes[datProfes.Codigo.isin(listProf)]
     print(dataProf)
-    proCurso = NoEscape(r"El curso será impartido por: \vspace*{4mm} \newline ")
+    proImpar = NoEscape(r"El curso será impartido por:")
+    proCurso = NoEscape(r'\vspace*{-4mm}\begin{textoMargen}')
     for consecutivo, profe in dataProf.iterrows():
         match profe.Titulo:
             case "M.Sc." | "Ing." | "Máster" | "Dr.-Ing.":
@@ -249,6 +250,7 @@ def generar_programa(id):
         proCurso += NoEscape(Command("textbf", "  Sede:").dumps())  
         proCurso += NoEscape(f" {profe.Sede}")
         proCurso += NoEscape(r" \vspace*{4mm} \newline ")             
+    proCurso += NoEscape(r"\end{textoMargen}")
     #Config
     config.active = config.Version1(row_heigth=1.5)
     #Geometry
@@ -295,6 +297,19 @@ def generar_programa(id):
     \setlength{\parsep}{\bibparsep}}}
     {\endlist}
 {\item}
+'''))
+    doc.preamble.append(NoEscape(r'''
+\newenvironment{textoMargen}
+    {%
+    \begin{list}{}{%
+        \setlength{\leftmargin}{3.6cm}%
+        \setlength{\rightmargin}{1.1cm}%
+    }%
+    \item[]%
+  }
+  {%
+    \end{list}%
+  }
 '''))
     doc.add_color('gris','rgb','0.27,0.27,0.27') #70,70,70
     doc.add_color('parte','rgb','0.02,0.204,0.404') #5,52,103
@@ -547,7 +562,8 @@ def generar_programa(id):
         bold=True,
         text="8. Persona docente"
         )
-        ,proCurso])
+        ,proImpar])
+    doc.append(proCurso)
 
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
     subprocess.run(["biber", f"C:\\Repositories\\CLIE\\programas\\{codCurso}"])
