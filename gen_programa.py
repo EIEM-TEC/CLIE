@@ -10,6 +10,7 @@ from pylatex import Document, Package, Command, PageStyle, Head, Foot, NewPage, 
     config
 from pylatex.base_classes import Arguments
 from pylatex.utils import NoEscape, bold
+import funciones as fun
 
 cursos = pd.read_csv("cursos/cursos_malla.csv")
 detall = pd.read_csv("cursos/cursos_detalles.csv")
@@ -21,6 +22,8 @@ metodo = pd.read_csv("cursos/cursos_metodo.csv")
 evalua = pd.read_csv("cursos/cursos_evalua.csv")
 bibtex = pd.read_csv("cursos/cursos_bibtex.csv")
 profes = pd.read_csv("cursos/cursos_profes.csv")
+rasgos = pd.read_csv("rasgos_ejes/rasgos.csv")
+curras = pd.read_csv("cursos/cursos_rasgos.csv")
 datProfes = pd.read_csv("profes_datos.csv")
 areas = pd.read_csv("areas.csv")
 
@@ -104,7 +107,7 @@ def generar_programa(id):
     for programa in lisProgr.programa:
         counter +=1
         semestre = lisProgr[lisProgr['programa'] == programa].semestre.item()
-        ubiPlane += "Curso de " + roman.toRoman(int(semestre)) + " semestre en " + programa
+        ubiPlane += "Curso de " + fun.number_to_ordinals(str(int(semestre))) + " semestre en " + programa
         if counter > 1:
             ubiPlane += ". "
     print(ubiPlane)
@@ -116,7 +119,7 @@ def generar_programa(id):
         counter = 0
         for requisito in lisRequi:
             counter += 1
-            susRequi += cursos[cursos.id == requisito].codigo.item()
+            susRequi += cursos[cursos.id == requisito].codigo.item()[:2] + "-" + cursos[cursos.id == requisito].codigo.item()[2:]
             susRequi += " "
             susRequi += cursos[cursos.id == requisito].nombre.item()
             if counter < numRequi:
@@ -132,7 +135,7 @@ def generar_programa(id):
         counter = 0
         for correquisito in lisCorre:
             counter += 1
-            corRequi += cursos[cursos.id == correquisito].codigo.item()
+            corRequi += cursos[cursos.id == correquisito].codigo.item()[:2] + "-" + cursos[cursos.id == requisito].codigo.item()[2:]
             corRequi += " "
             corRequi += cursos[cursos.id == correquisito].nombre.item()
             if counter < numCorre:
@@ -148,7 +151,7 @@ def generar_programa(id):
         counter = 0
         for esrequisito in lisEsreq:
             counter += 1
-            essRequi += cursos[cursos.id == esrequisito].codigo.item()
+            essRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == requisito].codigo.item()[2:]
             essRequi += " "
             essRequi += cursos[cursos.id == esrequisito].nombre.item()
             if counter < numEsreq:
@@ -161,9 +164,10 @@ def generar_programa(id):
     posRecon = sinoDic.get(detall[detall.id == id].reconocimiento.item())
     print(f'Asistencia: {tipAsist}, Suficiencia: {posSufic}, Reconocimiento: {posRecon}') 
     aprCurso = detall[detall.id == id].aprobacion.str.split(';').explode().reset_index(drop=True)
-    aprCurso = roman.toRoman(int(aprCurso[0])) + " semestre de " + aprCurso[1]
+    aprCurso = aprCurso[0] + "/" + aprCurso[1] + "/" + aprCurso[2] + " en sesión de Consejo de Escuela " + aprCurso[3]
     print(f'Aprobación del programa: {aprCurso}\n\n')
-    desGener = descri[descri.id == id].descripcion.item().replace("\n", "\n\n")
+    desGener = "El curso de " + nomCurso + "contribuye con los siguientes rasgos del plan de estudios: "
+    #desGener = descri[descri.id == id].descripcion.item().replace("\n", "\n\n")
     lisObjet = objeti[objeti.id == id].reset_index(drop=True).objetivo
     for consecutivo, objetivo in lisObjet.items():
         if consecutivo == 0:
@@ -370,7 +374,7 @@ def generar_programa(id):
             vspace="0",
             color="black",
             bold=False,
-            text=f"Programa del curso {codCurso}" 
+            text=f"Programa del curso {str(codCurso)[:2]}-{str(codCurso)[2:]}"
             ))
     doc.append(textcolor
             (
@@ -433,7 +437,7 @@ def generar_programa(id):
     with doc.create(Tabularx(table_spec=r"p{6cm}p{10cm}")) as table:
             table.add_row([bold("Nombre del curso:"), f"{nomCurso}"])
             table.append(NoEscape('[10pt]'))
-            table.add_row([bold("Código:"), f"{codCurso}"])
+            table.add_row([bold("Código:"), f"{str(codCurso)[:2]}-{str(codCurso)[2:]}"])
             table.append(NoEscape('[10pt]'))
             table.add_row([bold("Tipo de curso:"), f"{tipCurso}"])
             table.append(NoEscape('[10pt]'))
