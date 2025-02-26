@@ -1,0 +1,112 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{ida2020sensors}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=afa94258109d6f2446c5c17f3660f983}{%
+           family={Ida},
+           familyi={I\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {The Institution of Engineering}%
+        {Technology}%
+      }
+      \strng{namehash}{afa94258109d6f2446c5c17f3660f983}
+      \strng{fullhash}{afa94258109d6f2446c5c17f3660f983}
+      \strng{fullhashraw}{afa94258109d6f2446c5c17f3660f983}
+      \strng{bibnamehash}{afa94258109d6f2446c5c17f3660f983}
+      \strng{authorbibnamehash}{afa94258109d6f2446c5c17f3660f983}
+      \strng{authornamehash}{afa94258109d6f2446c5c17f3660f983}
+      \strng{authorfullhash}{afa94258109d6f2446c5c17f3660f983}
+      \strng{authorfullhashraw}{afa94258109d6f2446c5c17f3660f983}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sensors, actuators, and their interfaces}
+      \field{year}{2020}
+      \true{nocite}
+    \endentry
+    \entry{fraden2016sensors}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=e76d46be5d7ee9722f07829c42358f70}{%
+           family={Fraden},
+           familyi={F\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e76d46be5d7ee9722f07829c42358f70}
+      \strng{fullhash}{e76d46be5d7ee9722f07829c42358f70}
+      \strng{fullhashraw}{e76d46be5d7ee9722f07829c42358f70}
+      \strng{bibnamehash}{e76d46be5d7ee9722f07829c42358f70}
+      \strng{authorbibnamehash}{e76d46be5d7ee9722f07829c42358f70}
+      \strng{authornamehash}{e76d46be5d7ee9722f07829c42358f70}
+      \strng{authorfullhash}{e76d46be5d7ee9722f07829c42358f70}
+      \strng{authorfullhashraw}{e76d46be5d7ee9722f07829c42358f70}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of Modern Sensors: Physics, Designs, and Applications}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{pallas2012sensors}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=f806e340f8eeb2b83e0b1949011704ae}{%
+           family={Pallas-Areny},
+           familyi={P\bibinithyphendelim A\bibinitperiod},
+           given={Ramon},
+           giveni={R\bibinitperiod}}}%
+        {{hash=23eb40ac2e72d6c6489b462c8d863584}{%
+           family={Webster},
+           familyi={W\bibinitperiod},
+           given={John\bibnamedelima G},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{1925446d7b631f2840e9fc17ea889df7}
+      \strng{fullhash}{1925446d7b631f2840e9fc17ea889df7}
+      \strng{fullhashraw}{1925446d7b631f2840e9fc17ea889df7}
+      \strng{bibnamehash}{1925446d7b631f2840e9fc17ea889df7}
+      \strng{authorbibnamehash}{1925446d7b631f2840e9fc17ea889df7}
+      \strng{authornamehash}{1925446d7b631f2840e9fc17ea889df7}
+      \strng{authorfullhash}{1925446d7b631f2840e9fc17ea889df7}
+      \strng{authorfullhashraw}{1925446d7b631f2840e9fc17ea889df7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sensors and signal conditioning}
+      \field{year}{2012}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

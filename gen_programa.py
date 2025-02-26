@@ -23,7 +23,10 @@ evalua = pd.read_csv("cursos/cursos_evalua.csv")
 bibtex = pd.read_csv("cursos/cursos_bibtex.csv")
 profes = pd.read_csv("cursos/cursos_profes.csv")
 rasgos = pd.read_csv("rasgos_ejes/rasgos.csv")
+rasgos["codSaber"] = rasgos["codSaber"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
+rasgos = rasgos.explode("codSaber") #expadir la lista
 curras = pd.read_csv("cursos/cursos_rasgos.csv")
+curras["codSaber"] = curras["codSaber"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
 datProfes = pd.read_csv("profes_datos.csv")
 areas = pd.read_csv("areas.csv")
 
@@ -166,9 +169,28 @@ def generar_programa(id):
     aprCurso = detall[detall.id == id].aprobacion.str.split(';').explode().reset_index(drop=True)
     aprCurso = aprCurso[0] + "/" + aprCurso[1] + "/" + aprCurso[2] + " en sesión de Consejo de Escuela " + aprCurso[3]
     print(f'Aprobación del programa: {aprCurso}\n\n')
-    desGener = "El curso de " + nomCurso + "contribuye con los siguientes rasgos del plan de estudios: "
+    print(curras[curras["id"]==id]["codSaber"])
+    codSaber = curras[curras["id"]==id]["codSaber"].item()
+    codRasgos = rasgos[rasgos["codSaber"].isin(codSaber)]["rasgo"].unique()
+    desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" colabora en el desarrollo de los siguientes rasgos del plan de estudios: ")
+    for index, rasgo in enumerate(codRasgos):
+        desGener += NoEscape(f"{rasgo[0].lower() + rasgo[1:]}")
+        if index == len(codRasgos) - 2:
+            desGener += NoEscape(f"; y ")
+        elif index < len(codRasgos) - 2:
+            desGener += NoEscape(f"; ")
+    desGener += NoEscape(r". \newline\newline ")
+    desGener += NoEscape(r"Los aprendizajes que los estudiantes desarrollarán en el curso son: ")
     #desGener = descri[descri.id == id].descripcion.item().replace("\n", "\n\n")
     lisObjet = objeti[objeti.id == id].reset_index(drop=True).objetivo
+    for index, objetivo in lisObjet.items():
+        desGener += NoEscape(f"{objetivo[0].lower() + objetivo[1:]}")
+        if index == len(lisObjet) - 2:
+            desGener += NoEscape(f"; y ")
+        elif index < len(lisObjet) - 2:
+            desGener += NoEscape(f"; ")
+    desGener += NoEscape(r". \newline\newline ")
+    desGener += NoEscape(r"Para desempeñarse adecuadamente en este curso, los estudiantes deben poner en práctica lo aprendido en los cursos de: ")
     for consecutivo, objetivo in lisObjet.items():
         if consecutivo == 0:
             objGener = NoEscape(objetivo)
