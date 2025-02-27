@@ -113,7 +113,7 @@ AER1303,EE5003,Gestión de la energía,AER,13,3,4,0,3,,AER1302,
 AER1401,EE8907,Automatización y digitalización industrial,AER,14,1,2,2,3,,AER1402,
 AER1402,EE8807,Aplicaciones de sistemas embebidos,AER,14,2,2,2,3,AUT0705,,AER1401;AER1403
 AER1403,EE8903,Machine Learning e Inteligencia Artificial,AER,14,3,2,2,3,,AER1402,
-SCF0801,EE8104,Ingeniería de sistemas,SCF,8,1,4,0,3,FPH0701,,
+SCF0801,EE8104,Ingeniería de sistemas,SCF,8,1,2,2,3,FPH0701,,
 SCF0806,EE0806,Máquinas y mecanismos,SCF,8,6,4,0,3,IMM0706,,SCF0906
 SCF0807,EE8807,Aplicaciones de sistemas embebidos,SCF,8,7,2,2,3,AUT0705,,SCF0903;SCF0907;SCF0808
 SCF0808,EE8808,Fundamentos de ciberseguridad,SCF,8,8,2,0,1,,SCF0807,SCF1203

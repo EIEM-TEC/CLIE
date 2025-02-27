@@ -27,8 +27,19 @@ rasgos["codSaber"] = rasgos["codSaber"].str.split(';', expand=False) #convertir 
 rasgos = rasgos.explode("codSaber") #expadir la lista
 curras = pd.read_csv("cursos/cursos_rasgos.csv")
 curras["codSaber"] = curras["codSaber"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
+curcur = pd.read_csv("cursos/cursos_cursos.csv")
+curAntes = pd.DataFrame()
+curAntes = curcur[["id","antes"]]
+curAntes["antes"] = curAntes["antes"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
+curAntes = curAntes.explode("antes")
+curDespues = pd.DataFrame()
+curDespues = curcur[["id","despues"]]
+curDespues["despues"] = curDespues["despues"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
+curDespues = curDespues.explode("despues")
 datProfes = pd.read_csv("profes_datos.csv")
 areas = pd.read_csv("areas.csv")
+
+print(curAntes)
 
 tipCursoDic = {
     0: "Teórico",
@@ -172,6 +183,7 @@ def generar_programa(id):
     print(curras[curras["id"]==id]["codSaber"])
     codSaber = curras[curras["id"]==id]["codSaber"].item()
     codRasgos = rasgos[rasgos["codSaber"].isin(codSaber)]["rasgo"].unique()
+    print(codRasgos)
     desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" colabora en el desarrollo de los siguientes rasgos del plan de estudios: ")
     for index, rasgo in enumerate(codRasgos):
         desGener += NoEscape(f"{rasgo[0].lower() + rasgo[1:]}")
@@ -184,13 +196,39 @@ def generar_programa(id):
     #desGener = descri[descri.id == id].descripcion.item().replace("\n", "\n\n")
     lisObjet = objeti[objeti.id == id].reset_index(drop=True).objetivo
     for index, objetivo in lisObjet.items():
-        desGener += NoEscape(f"{objetivo[0].lower() + objetivo[1:]}")
-        if index == len(lisObjet) - 2:
-            desGener += NoEscape(f"; y ")
-        elif index < len(lisObjet) - 2:
-            desGener += NoEscape(f"; ")
+        if index > 0:
+            desGener += NoEscape(f"{objetivo[0].lower() + objetivo[1:]}")
+            if index == len(lisObjet) - 2:
+                desGener += NoEscape(f"; y ")
+            elif index < len(lisObjet) - 2:
+                desGener += NoEscape(f"; ")
     desGener += NoEscape(r". \newline\newline ")
-    desGener += NoEscape(r"Para desempeñarse adecuadamente en este curso, los estudiantes deben poner en práctica lo aprendido en los cursos de: ")
+    curAntess = curAntes[curAntes["id"]==id]["antes"]
+    curDespuess = curDespues[curDespues["id"]==id]["despues"]
+    desGener += NoEscape(r"Para desempeñarse adecuadamente en este curso, los estudiantes deben poner en práctica lo aprendido en ")
+    if len(curAntess) > 1:
+        desGener += NoEscape(r"los cursos de: ")
+    else:
+        desGener += NoEscape(r"el curso de: ")
+    for index, curAnte in enumerate(curAntess):
+        desGener += NoEscape(cursos[cursos["id"]==curAnte].nombre.item())
+        if index == len(curAntess) - 2:
+            desGener += NoEscape(f", y ")
+        elif index < len(curAntess) - 2:
+            desGener += NoEscape(f", ")
+    desGener += NoEscape(r". \newline\newline ")
+    desGener += NoEscape(r"Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en ")
+    if len(curDespuess) > 1:
+        desGener += NoEscape(r"los cursos de: ")
+    else:
+        desGener += NoEscape(r"el curso de: ")
+    for index, curDespue in enumerate(curDespuess):
+        desGener += NoEscape(cursos[cursos["id"]==curDespue].nombre.item())
+        if index == len(curDespuess) - 2:
+            desGener += NoEscape(f", y ")
+        elif index < len(curDespuess) - 2:
+            desGener += NoEscape(f", ")
+    desGener += NoEscape(r". ")
     for consecutivo, objetivo in lisObjet.items():
         if consecutivo == 0:
             objGener = NoEscape(objetivo)
@@ -221,14 +259,14 @@ def generar_programa(id):
     metEspec += NoEscape(r"\end{itemize}")
     metCurso = metGener
     metCurso += NoEscape(r"\newline\newline ")
-    metCurso += NoEscape(Command("textbf", "Los estudiantes:").dumps())
+    metCurso += NoEscape(Command("textbf", "Las personas estudiantes podrán desarrollar actividades en las que:").dumps() + r" \newline")
     metCurso += metEspec
     metCurso += NoEscape(r"\vspace*{2mm}")
     metCurso += NoEscape(f"Este enfoque metodológico permitirá a la persona estudiante {objGener[0].lower() + objGener[1:]}")
     metCurso += NoEscape(r"\vspace*{2mm} \newline  ")
-    metCurso += NoEscape(r"Si un estudiante requiere apoyos educativos, podrá solicitarlos a través del Departamento de Orientación y Psicología.")
+    metCurso += NoEscape(r"Si un estudiante requiere apoyos educativos, podrá solicitarlos a través del Departamento de Orientación y Psicología. \newline ")
     evaCurso = NoEscape(r"La evaluación se distribuye en los siguientes rubros:")
-    evaCurso += NoEscape(r"\vspace*{1mm} \newline  ")
+    evaCurso += NoEscape(r" \newline ")
     lisEvalu = evalua[evalua.id == id].reset_index(drop=True)
     for consecutivo, evaluas in lisEvalu.iterrows():
         if consecutivo == 0:
@@ -250,6 +288,14 @@ def generar_programa(id):
             evaTabla += NoEscape(r" \bottomrule ")
     # #evaCurso += NoEscape(r" A & B \\ C & D \\ 
     evaTabla += NoEscape(r" \end{tabular} \end{minipage}")
+    evaRepo = NoEscape(r"De conformidad con el artículo 78 del Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica y sus Reformas, en este curso la persona estudiante ")
+    if tipCurso != 0:
+        evaRepo += NoEscape(Command("textbf", "no").dumps())
+    evaRepo += NoEscape(r" tiene derecho a presentar un examen de reposición")
+    if tipCurso == 0:
+        evaRepo += NoEscape(r" si su nota luego de redondeo es 60 o 65.")
+    else:
+        evaRepo += NoEscape(r".")
     bibCurso = NoEscape(r'\nocite{' + ('} '+r'\nocite{').join(bibtex[bibtex.id == id].bibtex.item().split(';')) + '} ')
     bibPrint = NoEscape(r'\vspace*{-8mm}\printbibliography[heading=none]')
     dataProf = datProfes[datProfes.Codigo.isin(listProf)]
@@ -263,17 +309,21 @@ def generar_programa(id):
             case "Ph.D.":
                 proCurso += NoEscape(Command("textbf", f"{profe.Nombre}, {profe.Titulo}").dumps())
         proCurso += NoEscape(r" \vspace*{2mm} \newline ")
-        for titulo in profe.Titulos.split('\r\n'):
+        # proCurso += NoEscape(profe.Titulos)
+        # proCurso += NoEscape(r" \newline ")
+        for titulo in profe.Titulos.split(';'):
             proCurso += NoEscape(f"{titulo}")
-            proCurso += NoEscape(r" \vspace*{1mm} \newline ")   
-        proCurso += NoEscape(Command("textbf", "Correo:").dumps())               
+            proCurso += NoEscape(r" \newline \newline ")   
+        proCurso += NoEscape(Command("emph", "Correo:").dumps())               
         proCurso += NoEscape(f" {profe.Correo}")
-        proCurso += NoEscape(Command("textbf", "  Oficina:").dumps())     
-        proCurso += NoEscape(f" {int(profe.Oficina)}")
+        proCurso += NoEscape(Command("emph", "  Teléfono:").dumps())     
+        proCurso += NoEscape(f" {int(profe.Telefono)}")
         proCurso += NoEscape(r" \vspace*{1mm} \newline ")
-        proCurso += NoEscape(Command("textbf", "Escuela:").dumps())  
+        proCurso += NoEscape(Command("emph", "  Oficina:").dumps())     
+        proCurso += NoEscape(f" {int(profe.Oficina)}")
+        proCurso += NoEscape(Command("emph", "  Escuela:").dumps())  
         proCurso += NoEscape(f" {profe.Escuela}")
-        proCurso += NoEscape(Command("textbf", "  Sede:").dumps())  
+        proCurso += NoEscape(Command("emph", "  Sede:").dumps())  
         proCurso += NoEscape(f" {profe.Sede}")
         proCurso += NoEscape(r" \vspace*{4mm} \newline ")             
     proCurso += NoEscape(r"\end{textoMargen}")
@@ -564,8 +614,13 @@ def generar_programa(id):
     doc.append(VerticalSpace("2mm", star=True))  
     doc.append(NewLine())
     doc.append(evaTabla)
-    doc.append(VerticalSpace("4mm", star=True))  
+    doc.append(VerticalSpace("2mm", star=True))  
     doc.append(NewLine())
+    with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
+        table.add_row([""
+        ,evaRepo])
+    doc.append(VerticalSpace("4mm", star=True))  
+    doc.append(NewPage()) #antes era newline
     with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
         table.add_row([textcolor
         (   
