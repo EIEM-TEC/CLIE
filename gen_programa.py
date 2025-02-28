@@ -15,7 +15,6 @@ import funciones as fun
 cursos = pd.read_csv("cursos/cursos_malla.csv")
 detall = pd.read_csv("cursos/cursos_detalles.csv")
 progra = pd.read_csv("cursos/cursos_programas.csv")
-descri = pd.read_csv("cursos/cursos_descri.csv")
 objeti = pd.read_csv("cursos/cursos_obj.csv")
 conten = pd.read_csv("cursos/cursos_conten.csv")
 metodo = pd.read_csv("cursos/cursos_metodo.csv")
@@ -304,13 +303,11 @@ def generar_programa(id):
     proCurso = NoEscape(r'\vspace*{-4mm}\begin{textoMargen}')
     for consecutivo, profe in dataProf.iterrows():
         match profe.Titulo:
-            case "M.Sc." | "Ing." | "Máster" | "Dr.-Ing.":
+            case "M.Sc." | "Ing." | "Máster" | "Dr.-Ing." | "Mag.":
                 proCurso += NoEscape(Command("textbf", f"{profe.Titulo} {profe.Nombre}").dumps())
             case "Ph.D.":
                 proCurso += NoEscape(Command("textbf", f"{profe.Nombre}, {profe.Titulo}").dumps())
-        proCurso += NoEscape(r" \vspace*{2mm} \newline ")
-        # proCurso += NoEscape(profe.Titulos)
-        # proCurso += NoEscape(r" \newline ")
+        proCurso += NoEscape(r" \newline ")
         for titulo in profe.Titulos.split(';'):
             proCurso += NoEscape(f"{titulo}")
             proCurso += NoEscape(r" \newline \newline ")   
@@ -656,9 +653,10 @@ def generar_programa(id):
 #      generar_programa(id)
 
 
-generar_programa("IEE0305")
-generar_programa("IEE0405")
-generar_programa("SCF0801")
+# generar_programa("IEE0305")
+# generar_programa("IEE0405")
+generar_programa("IEE0503")
+# generar_programa("SCF0801")
 # generar_programa("CYD0107",listProf)
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)

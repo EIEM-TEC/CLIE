@@ -1,33 +1,4 @@
 id,contenidos
-SCF0801,"
-& Introducción a la Ingeniería de Sistemas
-&& Conceptos fundamentales de la ingeniería de sistemas
-&& Ciclo de vida del desarrollo de sistemas
-&& Enfoque sistémico y pensamiento complejo en la resolución de problemas
-& Trabajo colaborativo en equipos multidisciplinarios
-&& Definición de roles
-&& Estrategias de trabajo en equipos multidisciplinarios
-&& Gestión de la información y la toma de decisiones
-&& Planificación del trabajo y gestión de tareas
-&& Control de versiones
-& Definición y análisis de requisitos
-&& Identificación de interesados y sus expectativas
-&& Técnicas para la recopilación y análisis de requisitos
-&& Diferentes niveles de requisitos y su relación con la arquitectura del sistema
-&& Modelado de requisitos y especificaciones funcionales
-& Diseño de la arquitectura 
-&& Principios y enfoques para el diseño de la arquitectura del sistema
-&& Metodologías de evaluación de configuraciones del sistema (trade-off)
-&& Gestión de interfaces y compatibilidad de sistemas
-&& Estrategias para la integración de subsistemas en un sistema coherente
-& Modelado, simulación y verificación del Diseño
-&& Métodos de modelado para la representación de sistemas
-&& Desarrollo de representaciones funcionales del sistema
-&& Evaluación de desempeño y optimización de sistemas
-&& Análisis de sensibilidad y pruebas iterativas en entornos virtuales
-&& Verificación del sistema en escenarios simulados
-&& Validación de requisitos
-"
 IEE0305,"
 & Conceptos básicos
 && Señales, estímulos y sistemas
@@ -115,4 +86,63 @@ IEE0405,"
 && Verificación y validación
 && Propagación de incertidumbres
 && Norma GUM
+"
+IEE0503,"
+& Introducción a los Sistemas Analógicos
+&& Conceptos básicos de sistemas analógicos
+&& Diferencias entre sistemas analógicos y digitales
+& Aplicaciones de los sistemas analógicos
+&& Características y funcionamiento de los amplificadores operacionales
+&& Analisis de amplificadores Operacionales
+&& Topologías más utilizadas: inversor, no inversor, sumador, restador
+&& Aplicaciones prácticas de amplificadores operacionales
+& Dispositivos Electrónicos
+&& Características y operación de BJT, MOSFET, IGBT, SCR, TRIAC
+&& Selección de dispositivos para aplicaciones específicas
+&& Ejemplos de circuitos con estos dispositivos
+& Reguladores de voltaje y comparadores
+&& Reguladores de voltaje lineales y conmutados
+&& Comparadores y sus aplicaciones
+&& Diseño de circuitos con reguladores y comparadores
+& Convertidores 
+&& Convertidores analógico-digital (ADC) y digital-analógico (DAC).
+&& Convertidores V/F y V/I.
+&& Integración de sensores en sistemas analógicos.
+& Circuitos Integrados Especiales
+&& Uso del CI 555 en aplicaciones de temporización y oscilación.
+&& Diseño de circuitos con DAC, ADC y otros CI especiales.
+&& Ejemplos prácticos y simulaciones.
+& Electrónica de Potencia
+&& Introducción a la electrónica de potencia.
+&& Aplicaciones de dispositivos de potencia en sistemas analógicos.
+&& Diseño de circuitos de potencia.
+"
+SCF0801,"
+& Introducción a la Ingeniería de Sistemas
+&& Conceptos fundamentales de la ingeniería de sistemas
+&& Ciclo de vida del desarrollo de sistemas
+&& Enfoque sistémico y pensamiento complejo en la resolución de problemas
+& Trabajo colaborativo en equipos multidisciplinarios
+&& Definición de roles
+&& Estrategias de trabajo en equipos multidisciplinarios
+&& Gestión de la información y la toma de decisiones
+&& Planificación del trabajo y gestión de tareas
+&& Control de versiones
+& Definición y análisis de requisitos
+&& Identificación de interesados y sus expectativas
+&& Técnicas para la recopilación y análisis de requisitos
+&& Diferentes niveles de requisitos y su relación con la arquitectura del sistema
+&& Modelado de requisitos y especificaciones funcionales
+& Diseño de la arquitectura 
+&& Principios y enfoques para el diseño de la arquitectura del sistema
+&& Metodologías de evaluación de configuraciones del sistema (trade-off)
+&& Gestión de interfaces y compatibilidad de sistemas
+&& Estrategias para la integración de subsistemas en un sistema coherente
+& Modelado, simulación y verificación del Diseño
+&& Métodos de modelado para la representación de sistemas
+&& Desarrollo de representaciones funcionales del sistema
+&& Evaluación de desempeño y optimización de sistemas
+&& Análisis de sensibilidad y pruebas iterativas en entornos virtuales
+&& Verificación del sistema en escenarios simulados
+&& Validación de requisitos
 "
