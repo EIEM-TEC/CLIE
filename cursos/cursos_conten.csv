@@ -87,6 +87,47 @@ IEE0405,"
 && Propagación de incertidumbres
 && Norma GUM
 "
+ADD0502,"
+& Fundamentos de estadística aplicada
+&& Introducción a la estadística en ingeniería
+&& Tipos de datos y escalas de medición
+&& Organización y presentación de datos
+&& Medidas de tendencia central
+&& Medidas de dispersión 
+& Fundamentos de probabilidad para Diseño de Experimentos
+&& Concepto de variabilidad y aleatoriedad
+&& Distribución normal
+&& Distribución t-Student
+&& Distribución chi-cuadrado
+&& Distribución Weibull
+&& Uso de tablas estadísticas y software para cálculos
+& Análisis exploratorio de datos
+&& Histogramas, boxplots y gráficos de dispersión
+&& Identificación de valores atípicos y tendencias
+&& Correlación y regresión lineal simple
+&& Análisis de relaciones entre variables
+& Pruebas de hipótesis y comparación de medias
+&& Concepto de prueba de hipótesis y errores tipo I y II
+&& Pruebas de hipótesis para la media de una población
+&& Comparación de dos medias
+&& Pruebas de hipótesis para la varianza
+& Diseño de Experimentos y Análisis de Varianza (ANOVA)
+&& Introducción al diseño de experimentos
+&& Diseño completamente aleatorizado
+&& Diseño en bloques
+&& Análisis de varianza (ANOVA) de un solo factor
+&& Aplicaciones del ANOVA en ingeniería
+& Regresión y modelado estadístico
+&& Regresión lineal simple y múltiple
+&& Supuestos del modelo de regresión
+&& Evaluación de la bondad del ajuste
+&& Aplicaciones en ingeniería
+& Aplicación de Software para el Análisis de Datos
+&& Introducción a herramientas estadísticas
+&& Generación de gráficos y tablas descriptivas
+&& Implementación de pruebas de hipótesis
+&& Modelado de datos y regresión
+"
 IEE0503,"
 & Introducción a los Sistemas Analógicos
 && Conceptos básicos de sistemas analógicos
@@ -116,6 +157,110 @@ IEE0503,"
 && Introducción a la electrónica de potencia.
 && Aplicaciones de dispositivos de potencia en sistemas analógicos.
 && Diseño de circuitos de potencia.
+"
+AUT0504,"
+& Introducción y modelado de Sistemas
+&& Definición de modelo y sistema
+&& Respuesta de modelos lineales.
+& Transformada de la Place 
+&& Teoremas de la transformada de la place
+&& Transformada inversa.
+&& Solución de Ecuaciones lineales invariantes en el tiempo.
+& Modelos por espacio de estado
+&& Estado
+&& Trasformación entre espacio de estados y otras representaciones.
+&& Observabilidad
+&& Controlabilidad
+& Modelado matemático.
+&& Sistemas mecánicos,
+&& Sistemas eléctricos.
+&& Sistemas térmicos.
+&& Sistemas hidráulicos.
+&& Diagramas de bloques.
+&& Diagramas de flujo 
+&& Linealización de modelos no lineales.
+& Análisis de la respuesta de los modelos
+&& Respuesta transitoria y estacionaria en dominio del tiempo y frecuencia.
+&& Evaluación de modelos.
+& Métodos numéricos para la simulación de sistemas.
+&& Errores asociados a la simulación.
+& Modelado con redes neuronales.
+& Modelado con sistemas difusos.
+"
+INS0801,"
+& Introducción
+&& Introducción al análisis de los sistemas eléctricos de potencia
+&& Perspectivas generales de los sistemas de transmisión y distribución de energía eléctrica 
+&& Desafíos y oportunidades
+& Elementos de modelado de sistemas eléctricos de potencia
+&& Centrales eléctricas 
+&& Generador sincrónico: modelo y parámetros
+&& Transformador de potencia: modelo y parámetros
+&& Elementos de compensación de potencia reactiva
+&& Subestaciones eléctricas
+&& Cargas estáticas y dinámicas
+&& Sistema p.u.
+& Elementos estáticos de las redes eléctricas
+&& Líneas aéreas
+&& Líneas subterráneas
+&& Resistencia, inductancia, capacitancia y conductancia de la línea de transmisión.
+&& Modelado de la línea de transmisión 
+& Modelado de las líneas de transmisión
+&& Modelo de la línea corta
+&& Modelo de la línea media
+&& Modelo de la línea larga
+& Modelado de componentes de los sistemas de distribución
+&& Líneas eléctricas aéreas y subterráneas
+&& Modelado de transformadores 
+&& Modelado de la demanda 
+&& Modelo de la generación distribuida e inversores 
+&& Modelado de sistemas de almacenamiento 
+&& Modelado de vehículos eléctricos  
+& Métodos de flujos de potencia
+&& Planteamiento del problema de flujo de potencia
+&& Métodos numéricos para la solución de flujos de potencia
+&& Gauss Seidel
+&& Newton Rapson
+&& Desacoplado
+&& Flujo de potencia DC
+&& Reconocimiento de programas de simulación
+&& Programación en programas de simulación 
+& Análisis de Fallas y estudio de cortocircuito
+&& Planteamiento del problema de cortocircuito
+&& Componentes simétricos 
+&& Síntesis de vectores desequilibrados a partir de componentes simétricos
+&& Operadores, componentes simétricos de vectores asimétricos
+&& Potencia en función de los componentes simétricos
+&& Impedancias de secuencia, redes de secuencia
+&& Fallas NO Simétricas 
+&& Análisis de fallas monofásicas, bifásicas y trifásicas
+&& Interpretación de las redes de secuencia interconectadas
+&& Análisis de fallas asimétricas utilizando la matriz de impedancias de barras
+Operación de sistemas de redes inteligentes de distribución
+&& Sistemas avanzados para la gestión de la distribución 
+&& Flujos de potencia y el estimador de estados 
+&& Control de tensión y potencia reactiva 
+&& Análisis de cortocircuito simétrico y asimétrico
+&& Esquemas de protección y gestión de fallas
+&& Coordinación de recursos energéticos distribuidos
+&& Coordinación operativa entre transmisión y distribución
+& Análisis de condiciones anormales en la red
+&& Sobretensiones por descargas atmosféricas 
+&& Origen de las descargas atmosféricas, campo eléctrico
+&& Variaciones del campo eléctrico y formación de rayos
+&& Pararrayos y zonas de protección, modelo electro-geométrico
+&& Parámetros eléctricos de las descargas, energía descargada
+&& Blindaje
+&& Sobretensiones por maniobra
+&& Sobretensiones temporales, sobretensiones de frente lento
+&& Sobretensiones de frente rápido, sobretensiones de frente muy rápido
+&& Mecanismos de protección, perturbaciones de baja frecuencia
+&& Perturbaciones de alta frecuencia, problemas por baja tensión
+& Conceptos y aplicaciones de las redes inteligentes
+&& Comunicaciones eléctricas y ciberseguridad  
+&& Manejo de demanda dinámica y medidores inteligentes 
+&& Automatización de sistemas de distribución 
+&& Sistemas de almacenamiento y electrónica de potencia
 "
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas

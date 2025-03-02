@@ -1,0 +1,204 @@
+\documentclass[letterpaper]{article}%
+\usepackage{lastpage}%
+\usepackage{parskip}%
+\usepackage{geometry}%
+\geometry{left=22.5mm,right=16.1mm,top=48mm,bottom=25mm,headheight=12.5mm,footskip=12.5mm}%
+\usepackage{fontspec}%
+\usepackage[spanish,activeacute]{babel}%
+\usepackage{anyfontsize}%
+\usepackage{fancyhdr}%
+\usepackage{csquotes}%
+\usepackage[ampersand]{easylist}%
+\usepackage[style=ieee,backend=biber]{biblatex}%
+\usepackage[skins,breakable]{tcolorbox}%
+\usepackage{booktabs}%
+\usepackage{color}%
+\usepackage{tikz}%
+\usepackage{tabularx}%
+\usepackage{ragged2e}%
+\usepackage{graphicx}%
+\usepackage{xcolor}%
+%
+\setmainfont{Arial}%
+\addbibresource{../bibliografia.bib}%
+\renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}%
+
+\defbibenvironment{bibliography}
+    {\list
+    {\printfield[labelnumberwidth]{labelnumber}}
+    {\setlength{\leftmargin}{4cm}
+    \setlength{\rightmargin}{1.1cm}
+    \setlength{\itemindent}{0pt}
+    \setlength{\itemsep}{\bibitemsep}
+    \setlength{\parsep}{\bibparsep}}}
+    {\endlist}
+{\item}
+%
+
+\newenvironment{textoMargen}
+    {%
+    \begin{list}{}{%
+        \setlength{\leftmargin}{3.6cm}%
+        \setlength{\rightmargin}{1.1cm}%
+    }%
+    \item[]%
+  }
+  {%
+    \end{list}%
+  }
+%
+\definecolor{gris}{rgb}{0.27,0.27,0.27}%
+\definecolor{parte}{rgb}{0.02,0.204,0.404}%
+\definecolor{azulsuaveTEC}{rgb}{0.02,0.455,0.773}%
+\definecolor{fila}{rgb}{0.929,0.929,0.929}%
+\definecolor{linea}{rgb}{0.749,0.749,0.749}%
+\fancypagestyle{headfoot}{%
+\renewcommand{\headrulewidth}{0pt}%
+\renewcommand{\footrulewidth}{0pt}%
+\fancyhead{%
+}%
+\fancyfoot{%
+}%
+\fancyhead[L]{%
+\begin{minipage}{0.5\textwidth}%
+\flushleft%
+\includegraphics[width=62.5mm]{../figuras/Logo.png}%
+\end{minipage}%
+}%
+\fancyfoot[R]{%
+\textcolor{black}{%
+Página \thepage \hspace{1pt} de \pageref*{LastPage}%
+}%
+}%
+}%
+%
+\begin{document}%
+\normalsize%
+\thispagestyle{empty}%
+\begin{tikzpicture}[overlay,remember picture]%
+\node[inner sep = 0mm,outer sep = 0mm,anchor = north west,xshift = -23mm,yshift = 22mm] at (0.0,0.0) {\includegraphics[width=21cm]{../figuras/Logo_portada.png}};%
+\end{tikzpicture}%
+\vspace*{100mm}%
+\par\fontsize{14}{0}\selectfont \textcolor{black}{Programa del curso EE{-}0504}%
+\par\fontsize{18}{25}\selectfont \textbf{\textcolor{black}{Modelado y simulación de sistemas}}%
+\vspace*{15mm}%
+\newline%
+\begin{tabularx}{\textwidth}{m{0.02\textwidth}m{0.98\textwidth}}%
+&\hspace*{0mm}\fontsize{12}{0}\selectfont \textbf{\textcolor{gris}{Escuela de Ingeniería Electromecánica}}\\%
+[-12pt]%
+&\hspace*{0mm}\fontsize{12}{0}\selectfont \textbf{\textcolor{gris}{Carrera de Ingeniería Electromecánica}}\\%
+\end{tabularx}%
+\newpage%
+\pagestyle{headfoot}%
+\par\fontsize{14}{0}\selectfont \textbf{\textcolor{parte}{I parte: Aspectos relativos al plan de estudios}}%
+\par\hspace*{2mm}\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{1. Datos generales}}%
+\vspace*{3mm}%
+\newline%
+\fontsize{10}{12}\selectfont %
+\begin{tabularx}{\textwidth}{p{6cm}p{10cm}}%
+\textbf{Nombre del curso:}&Modelado y simulación de sistemas\\%
+[10pt]%
+\textbf{Código:}&EE{-}0504\\%
+[10pt]%
+\textbf{Tipo de curso:}&Teórico {-} Práctico\\%
+[10pt]%
+\textbf{Obligatorio o electivo:}&Obligatorio\\%
+[10pt]%
+\textbf{Nº de créditos:}&3\\%
+[10pt]%
+\textbf{Nº horas de clase por semana:}&4\\%
+[10pt]%
+\textbf{Nº horas extraclase por semana:}&5\\%
+[10pt]%
+\textbf{Ubicación en el plan de estudios:}&Curso de 5\textsuperscript{to} semestre en Ingeniería Electromecánica\\%
+[10pt]%
+\textbf{Requisitos:}&EE{-}0307 Dinámica; EE{-}0403 Análisis de circuitos II\\%
+[10pt]%
+\textbf{Correquisitos:}&EE{-}0405 Instrumentación\\%
+[10pt]%
+\textbf{El curso es requisito de:}&EE{-}0607 Mecánica de fluidos; EE{-}0704 Control automático\\%
+[10pt]%
+\textbf{Asistencia:}&Libre\\%
+[10pt]%
+\textbf{Suficiencia:}&No\\%
+[10pt]%
+\textbf{Posibilidad de reconocimiento:}&Si\\%
+[10pt]%
+\textbf{Aprobación y actualización del programa:}&01/01/2026 en sesión de Consejo de Escuela 01{-}2026\\%
+[10pt]%
+\end{tabularx}%
+\newpage%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{2. Descripción general}}&El curso de \emph{Modelado y simulación de sistemas} colabora en el desarrollo de los siguientes rasgos del plan de estudios: diseñar e implementar sistemas de control y automatización en sistemas electromecánicos integrando modelado y simulación. \newline\newline Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar técnicas matemáticas de transformación entre el dominio del tiempo y frecuencia; aplicar técnicas de modelado matemático para representar sistemas electromecánicos, integrando conceptos físicos de sistemas eléctricos, mecánicos, hidráulicos y térmicos; implementar simulaciones computacionales que permitan analizar el comportamiento de los sistemas electromecánicos bajo distintas condiciones operativas; y interpretar y evaluar los resultados de las simulaciones para optimizar diseños y utilizando índices de desempeño. \newline\newline Para desempeñarse adecuadamente en este curso, los estudiantes deben poner en práctica lo aprendido en los cursos de: Ecuaciones diferenciales, Métodos numéricos para ingeniería, y Dinámica. \newline\newline Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en los cursos de: Control automático, Sistemas térmicos, y Mecánica de fluidos. \\%
+\end{tabularx}%
+\vspace*{4mm}%
+\newline%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{3. Objetivos}}&Al final del curso la persona estudiante será capaz de:\newline\newline \textbf{Objetivo general}\begin{itemize}\item Modelar sistemas electromecánicos, utilizando herramientas matemáticas y computacionales que permitan analizar y optimizar su comportamiento en diferentes escenarios operativos\end{itemize} \vspace{2mm}\textbf{Objetivos específicos}\begin{itemize}\item Aplicar técnicas matemáticas de transformación entre el dominio del tiempo y frecuencia\item Aplicar técnicas de modelado matemático para representar sistemas electromecánicos, integrando conceptos físicos de sistemas eléctricos, mecánicos, hidráulicos y térmicos\item Implementar simulaciones computacionales que permitan analizar el comportamiento de los sistemas electromecánicos bajo distintas condiciones operativas\item Interpretar y evaluar los resultados de las simulaciones para optimizar diseños y utilizando índices de desempeño\end{itemize}\\%
+\end{tabularx}%
+\newpage%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{4. Contenidos}}&En el curso se desarrollaran los siguientes temas:\\%
+\end{tabularx}%
+\newline%
+\par \setlength{\leftskip}{4cm} \begin{easylist} \ListProperties(Progressive*=3ex)
+& Introducción y modelado de Sistemas
+&& Definición de modelo y sistema
+&& Respuesta de modelos lineales.
+& Transformada de la Place 
+&& Teoremas de la transformada de la place
+&& Transformada inversa.
+&& Solución de Ecuaciones lineales invariantes en el tiempo.
+& Modelos por espacio de estado
+&& Estado
+&& Trasformación entre espacio de estados y otras representaciones.
+&& Observabilidad
+&& Controlabilidad
+& Modelado matemático.
+&& Sistemas mecánicos,
+&& Sistemas eléctricos.
+&& Sistemas térmicos.
+&& Sistemas hidráulicos.
+&& Diagramas de bloques.
+&& Diagramas de flujo 
+&& Linealización de modelos no lineales.
+& Análisis de la respuesta de los modelos
+&& Respuesta transitoria y estacionaria en dominio del tiempo y frecuencia.
+&& Evaluación de modelos.
+& Métodos numéricos para la simulación de sistemas.
+&& Errores asociados a la simulación.
+& Modelado con redes neuronales.
+& Modelado con sistemas difusos.
+\end{easylist} \setlength{\leftskip}{0cm} %
+\newpage%
+\par\fontsize{14}{0}\selectfont \textbf{\textcolor{parte}{II parte: Aspectos operativos}}%
+\vspace*{4mm}%
+\newline%
+\fontsize{10}{12}\selectfont %
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{5. Metodología}}&En este curso, la metodología adoptada es constructivista enfocada en la investigación práctica aplicada. Mediante el uso de técnicas como:  estudio de casos, análisis de alternativas, simulación y modelado de sistemas electromecánicos, experimentación controlada, se espera que el estudiante domine los fundamentos del modelado y simulación.\newline\newline \textbf{Las personas estudiantes podrán desarrollar actividades en las que:} \newline\begin{itemize}\item Analizarán y definirán los requisitos del sistema, estableciendo el mejor modelo que lo representa e identificando las herramientas de simulación.\item Evaluarán distintos modelos y los compara con el fin de determinar cuál es la mejor alternativa que negocie entre complejidad y error deseado.\item Aplicarán herramientas de al modelo seleccionado.\end{itemize}\vspace*{2mm}Este enfoque metodológico permitirá a la persona estudiante modelar sistemas electromecánicos, utilizando herramientas matemáticas y computacionales que permitan analizar y optimizar su comportamiento en diferentes escenarios operativos\vspace*{2mm} \newline  Si un estudiante requiere apoyos educativos, podrá solicitarlos a través del Departamento de Orientación y Psicología. \newline \\%
+\end{tabularx}%
+\vspace*{2mm}%
+\newline%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{6. Evaluación}}&La evaluación se distribuye en los siguientes rubros: \newline \begin{itemize} \item Tareas: tareas. \item Reportes: reportes. \item Defensa: defensa \end{itemize}\\%
+\end{tabularx}%
+\vspace*{2mm}%
+\newline%
+ \begin{minipage}{\linewidth}  \centering  \begin{tabular}{ p{4cm}  p{1.5cm} }  \toprule  Tareas & 20 \% \\  \midrule  Reportes & 60 \% \\  \midrule  Defensa & 20 \% \\  \midrule Total & 100 \% \\  \bottomrule  \end{tabular} \end{minipage}%
+\vspace*{2mm}%
+\newline%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+&De conformidad con el artículo 78 del Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica y sus Reformas, en este curso la persona estudiante \textbf{no} tiene derecho a presentar un examen de reposición.\\%
+\end{tabularx}%
+\vspace*{4mm}%
+\newline%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{7. Bibliografía}}&\nocite{chaturvedi2017modeling} \nocite{ogata2010modern} \nocite{franklin2015feedback0} \nocite{astrom2010feedback} \nocite{ogata2001system} \nocite{chapra2011applied} \\%
+\end{tabularx}%
+\vspace*{-8mm}\printbibliography[heading=none]%
+\begin{tabularx}{\textwidth}{p{3cm}p{13cm}}%
+\par\fontsize{12}{14}\selectfont \textbf{\textcolor{parte}{8. Persona docente}}&El curso será impartido por:\\%
+\end{tabularx}%
+\vspace*{-4mm}\begin{textoMargen}\textbf{M.Sc. Noel Jacob Ureña Sandí} \newline Máster en ciencias en Concepción y Producción Asistida por Computadora en Ingeniería Mecánica. RWTH Aachen University. Alemania. \newline \newline  Licenciado en Ingeniería en Materiales. Instituto Tecnológico de Costa Rica. Costa Rica \newline \newline \emph{Correo:} nurena@itcr.ac.cr\emph{  Teléfono:} 25509347 \vspace*{1mm} \newline \emph{  Oficina:} 22\emph{  Escuela:} Ingeniería Electromecánica\emph{  Sede:} Cartago \vspace*{4mm} \newline \textbf{Juan Luis Guerrero Fernández, Ph.D.} \newline Doctor en filosofía en ciencias. Universidad de Sheffield. Inglaterra. \newline \newline  Licenciado en Ingeniería en Mantenimiento Industrial. Instituto Tecnológico de Costa Rica. Costa Rica. \newline \newline  Máster en Ciencias en Mecatrónica. FH Aachen University of Applied Sciences. Alemania. \newline \newline \emph{Correo:} jguerrero@itcr.ac.cr\emph{  Teléfono:} 25509354 \vspace*{1mm} \newline \emph{  Oficina:} 10\emph{  Escuela:} Ingeniería Electromecánica\emph{  Sede:} Cartago \vspace*{4mm} \newline \end{textoMargen}%
+\end{document}

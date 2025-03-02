@@ -1,5 +1,8 @@
 id,bibtex
 IEE0305,ida2020sensors;fraden2016sensors;pallas2012sensors
 IEE0405,ida2020sensors;fraden2016sensors;pallas2012sensors;karre2023instru;ansiisa51;gum2008
+ADD0502,montgomery2020applied
 IEE0503,sedra2020microelectronic;boylestad2019electronic;horowitz2015art;floyd2012fundamentals;franco2014design
-SCF0801,incose2023;nasa2017
+AUT0504,chaturvedi2017modeling;ogata2010modern;franklin2015feedback0;astrom2010feedback;ogata2001system;chapra2011applied
+INS0801,grainger1996;kothari2008;wildi2007;kersting2012;short2014;gonen2008;momoh2012;ekanayake2012;pinheiro2018;migliavacca2020
+SCF0801,incose2023;nasa2016expanded

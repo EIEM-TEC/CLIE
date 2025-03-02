@@ -148,7 +148,7 @@ def generar_programa(id):
         counter = 0
         for correquisito in lisCorre:
             counter += 1
-            corRequi += cursos[cursos.id == correquisito].codigo.item()[:2] + "-" + cursos[cursos.id == requisito].codigo.item()[2:]
+            corRequi += cursos[cursos.id == correquisito].codigo.item()[:2] + "-" + cursos[cursos.id == correquisito].codigo.item()[2:]
             corRequi += " "
             corRequi += cursos[cursos.id == correquisito].nombre.item()
             if counter < numCorre:
@@ -164,7 +164,7 @@ def generar_programa(id):
         counter = 0
         for esrequisito in lisEsreq:
             counter += 1
-            essRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == requisito].codigo.item()[2:]
+            essRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
             essRequi += " "
             essRequi += cursos[cursos.id == esrequisito].nombre.item()
             if counter < numEsreq:
@@ -288,10 +288,10 @@ def generar_programa(id):
     # #evaCurso += NoEscape(r" A & B \\ C & D \\ 
     evaTabla += NoEscape(r" \end{tabular} \end{minipage}")
     evaRepo = NoEscape(r"De conformidad con el artículo 78 del Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica y sus Reformas, en este curso la persona estudiante ")
-    if tipCurso != 0:
+    if tipCurso != "Teórico":
         evaRepo += NoEscape(Command("textbf", "no").dumps())
     evaRepo += NoEscape(r" tiene derecho a presentar un examen de reposición")
-    if tipCurso == 0:
+    if tipCurso == "Teórico":
         evaRepo += NoEscape(r" si su nota luego de redondeo es 60 o 65.")
     else:
         evaRepo += NoEscape(r".")
@@ -617,7 +617,7 @@ def generar_programa(id):
         table.add_row([""
         ,evaRepo])
     doc.append(VerticalSpace("4mm", star=True))  
-    doc.append(NewPage()) #antes era newline
+    doc.append(NewLine()) #antes era newline
     with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
         table.add_row([textcolor
         (   
@@ -655,9 +655,12 @@ def generar_programa(id):
 
 # generar_programa("IEE0305")
 # generar_programa("IEE0405")
-generar_programa("IEE0503")
+generar_programa("ADD0502")
+# generar_programa("IEE0503")
+# generar_programa("AUT0504")
+# generar_programa("INS0801")
 # generar_programa("SCF0801")
-# generar_programa("CYD0107",listProf)
+
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.bbl"], shell=True, check=True)
