@@ -1,6 +1,7 @@
 id,bibtex
 IEE0305,ida2020sensors;fraden2016sensors;pallas2012sensors
 IEE0405,ida2020sensors;fraden2016sensors;pallas2012sensors;karre2023instru;ansiisa51;gum2008
+IMM0407,cengel2019termo;vanwylen2006termo;wark1995termo
 ADD0502,montgomery2020applied
 IEE0503,sedra2020microelectronic;boylestad2019electronic;horowitz2015art;floyd2012fundamentals;franco2014design
 AUT0504,chaturvedi2017modeling;ogata2010modern;franklin2015feedback0;astrom2010feedback;ogata2001system;chapra2011applied

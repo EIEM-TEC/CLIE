@@ -87,6 +87,41 @@ IEE0405,"
 && Propagación de incertidumbres
 && Norma GUM
 "
+IMM0407,"
+& Conceptos y definiciones
+&& Definición de la termodinámica
+&& Sistemas y volúmenes de control
+&& Propiedades y estado de una sustancia
+&& Procesos y ciclos termodinámicos
+& Energía y transferencia de energía
+&& Formas de energía
+&& Transferencia de energía por calor, trabajo y masa
+& Propiedades de una sustancia
+&& Estados de agregación
+&& Tablas de propiedades termodinámicas
+&& Diagramas de fases
+&& Sustancias puras y mezclas
+& Trabajo y calor
+&& Definición y formas de trabajo
+&& Cálculo del trabajo en procesos termodinámicos
+&& Transferencia de calor y mecanismos
+& Primera ley de la termodinámica
+&& Balance de energía en sistemas cerrados
+&& Aplicaciones en sistemas abiertos
+&& Aplicaciones en procesos cíclicos
+& Segunda ley de la termodinámica
+&& Principios de reversibilidad e irreversibilidad
+&& Concepto de eficiencia térmica
+&& Principio de Carnot y su implicación
+& Entropía
+&& Definición y propiedades
+&& Entropía en procesos reversibles e irreversibles
+&& Segunda ley en términos de entropía
+& Ciclos de generación
+&& Ciclo de Carnot
+&& Ciclos de potencia de vapor y gas
+&& Ciclos de refrigeración
+"
 ADD0502,"
 & Fundamentos de estadística aplicada
 && Introducción a la estadística en ingeniería

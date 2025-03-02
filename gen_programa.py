@@ -557,7 +557,8 @@ def generar_programa(id):
             text="3. Objetivos"
             )
             ,objCurso])
-    doc.append(NewPage())
+    doc.append(VerticalSpace("4mm", star=True)) 
+    doc.append(NewLine())
     with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
         table.add_row([textcolor
         (   
@@ -570,7 +571,6 @@ def generar_programa(id):
         ,"En el curso se desarrollaran los siguientes temas:"])
     doc.append(NewLine())
     doc.append(conCurso)
-    doc.append(NewPage())
     doc.append(textcolor
         (   
         size="14",
@@ -653,15 +653,16 @@ def generar_programa(id):
 #      generar_programa(id)
 
 
-# generar_programa("IEE0305")
-# generar_programa("IEE0405")
+generar_programa("IEE0305")
+generar_programa("IEE0405")
+generar_programa("IMM0407")
 generar_programa("ADD0502")
-# generar_programa("IEE0503")
-# generar_programa("AUT0504")
-# generar_programa("INS0801")
-# generar_programa("SCF0801")
+generar_programa("IEE0503")
+generar_programa("AUT0504")
+generar_programa("INS0801")
+generar_programa("SCF0801")
 
-
+subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.bbl"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.bcf"], shell=True, check=True)
