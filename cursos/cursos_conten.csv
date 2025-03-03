@@ -142,6 +142,7 @@ ADD0502,"
 && Correlación y regresión lineal simple
 && Análisis de relaciones entre variables
 & Pruebas de hipótesis y comparación de medias
+&& Pruebas de normalidad y teorema del límite central
 && Concepto de prueba de hipótesis y errores tipo I y II
 && Pruebas de hipótesis para la media de una población
 && Comparación de dos medias
@@ -246,32 +247,30 @@ INS0801,"
 && Modelo de la línea larga
 & Modelado de componentes de los sistemas de distribución
 && Líneas eléctricas aéreas y subterráneas
-&& Modelado de transformadores 
-&& Modelado de la demanda 
-&& Modelo de la generación distribuida e inversores 
-&& Modelado de sistemas de almacenamiento 
-&& Modelado de vehículos eléctricos  
-& Métodos de flujos de potencia
+&& Transformadores 
+&& Demanda 
+&& Generación distribuida e inversores 
+&& Sistemas de almacenamiento 
+&& Vehículos eléctricos  
+& Métodos de análsis de flujos de potencia
 && Planteamiento del problema de flujo de potencia
-&& Métodos numéricos para la solución de flujos de potencia
-&& Gauss Seidel
-&& Newton Rapson
-&& Desacoplado
-&& Flujo de potencia DC
-&& Reconocimiento de programas de simulación
-&& Programación en programas de simulación 
-& Análisis de Fallas y estudio de cortocircuito
+&& Aplicación de Gauss Seidel
+&& Aplicación de Newton Rapson
+&& Aplicación de Desacoplado rápido
+&& Aplicación de Flujo de potencia DC
+&& Reconocimiento y programación en software de simulación
+& Análisis de fallas y estudio de cortocircuito
 && Planteamiento del problema de cortocircuito
 && Componentes simétricos 
 && Síntesis de vectores desequilibrados a partir de componentes simétricos
 && Operadores, componentes simétricos de vectores asimétricos
 && Potencia en función de los componentes simétricos
-&& Impedancias de secuencia, redes de secuencia
-&& Fallas NO Simétricas 
+&& Impedancias de secuencia y redes de secuencia
+&& Fallas no simétricas 
 && Análisis de fallas monofásicas, bifásicas y trifásicas
 && Interpretación de las redes de secuencia interconectadas
 && Análisis de fallas asimétricas utilizando la matriz de impedancias de barras
-Operación de sistemas de redes inteligentes de distribución
+& Operación de sistemas de redes inteligentes de distribución
 && Sistemas avanzados para la gestión de la distribución 
 && Flujos de potencia y el estimador de estados 
 && Control de tensión y potencia reactiva 
@@ -281,16 +280,16 @@ Operación de sistemas de redes inteligentes de distribución
 && Coordinación operativa entre transmisión y distribución
 & Análisis de condiciones anormales en la red
 && Sobretensiones por descargas atmosféricas 
-&& Origen de las descargas atmosféricas, campo eléctrico
+&& Origen de las descargas atmosféricas
 && Variaciones del campo eléctrico y formación de rayos
-&& Pararrayos y zonas de protección, modelo electro-geométrico
-&& Parámetros eléctricos de las descargas, energía descargada
+&& Pararrayos y zonas de protección, y modelo electro-geométrico
+&& Parámetros eléctricos de las descargas y energía descargada
 && Blindaje
 && Sobretensiones por maniobra
-&& Sobretensiones temporales, sobretensiones de frente lento
-&& Sobretensiones de frente rápido, sobretensiones de frente muy rápido
-&& Mecanismos de protección, perturbaciones de baja frecuencia
-&& Perturbaciones de alta frecuencia, problemas por baja tensión
+&& Sobretensiones temporales y sobretensiones de frente lento
+&& Sobretensiones de frente rápido y sobretensiones de frente muy rápido
+&& Mecanismos de protección y perturbaciones de baja frecuencia
+&& Perturbaciones de alta frecuencia y problemas por baja tensión
 & Conceptos y aplicaciones de las redes inteligentes
 && Comunicaciones eléctricas y ciberseguridad  
 && Manejo de demanda dinámica y medidores inteligentes 

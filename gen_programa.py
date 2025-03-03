@@ -183,7 +183,7 @@ def generar_programa(id):
     codSaber = curras[curras["id"]==id]["codSaber"].item()
     codRasgos = rasgos[rasgos["codSaber"].isin(codSaber)]["rasgo"].unique()
     print(codRasgos)
-    desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" colabora en el desarrollo de los siguientes rasgos del plan de estudios: ")
+    desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" aporta en el desarrollo de los siguientes rasgos del plan de estudios: ")
     for index, rasgo in enumerate(codRasgos):
         desGener += NoEscape(f"{rasgo[0].lower() + rasgo[1:]}")
         if index == len(codRasgos) - 2:
@@ -653,14 +653,14 @@ def generar_programa(id):
 #      generar_programa(id)
 
 
-generar_programa("IEE0305")
-generar_programa("IEE0405")
-generar_programa("IMM0407")
-generar_programa("ADD0502")
-generar_programa("IEE0503")
-generar_programa("AUT0504")
+# generar_programa("IEE0305")
+# generar_programa("IEE0405")
+# generar_programa("IMM0407")
+# generar_programa("ADD0502")
+# generar_programa("IEE0503")
+# generar_programa("AUT0504")
 generar_programa("INS0801")
-generar_programa("SCF0801")
+# generar_programa("SCF0801")
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
