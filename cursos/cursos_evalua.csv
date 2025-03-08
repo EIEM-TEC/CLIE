@@ -1,25 +1,27 @@
-id,consecutivo,evaluacion,cantidad,porcentaje,descripcion
-IEE0305,1,Tareas,6,20,"investigación sobre temas relacionados con principios físicos y aplicaciones."
-IEE0305,2,Pruebas cortas,6,20,"evaluación del correcto análisis y selección de transductores basados en estudios de casos."
-IEE0305,3,Reportes,6,60,"desarrollo y conclusión de los experimentos relacionados con los temas de características de los transductores."
-IEE0405,1,Tareas,6,20,"implementación de instrumentos virtuales simulados, interpretación de simbología de instrumentación, cálculos de incertidumbres."
-IEE0405,2,Reportes,6,60,"desarrollo y conclusión de las prácticas relacionadas con los temas de sistemas de instrumentación integrados."
-IEE0405,3,Defensa,6,20,"exposición y defensa de una de las prácticas relacionadas con los temas de sistemas de instrumentación integrados."
-IMM0407,1,Exámenes parciales,2,50,"evaluaciones formales que miden el nivel de comprensión y aplicación de los conceptos clave del curso. Generalmente cubren una parte significativa del contenido visto hasta la fecha y pueden incluir problemas teóricos y prácticos."
-IMM0407,2,Pruebas cortas,6,30,"evaluaciones breves y frecuentes que sirven para comprobar el dominio de temas específicos. Suelen ser de menor peso en la calificación final y permiten reforzar el aprendizaje continuo."
-IMM0407,3,Proyecto,1,20,"actividad integradora donde los estudiantes aplican conocimientos teóricos y prácticos para resolver un problema real o simulado. Fomenta el desarrollo de habilidades analíticas, de investigación y trabajo en equipo."
-ADD0502,1,Examenes parciales,3,60,"evaluaciones formales que miden el nivel de comprensión y aplicación de los conceptos clave del curso. Generalmente cubren una parte significativa del contenido visto hasta la fecha y pueden incluir problemas teóricos y prácticos."
-ADD0502,2,Pruebas cortas,6,20,"evaluaciones breves y frecuentes que sirven para comprobar el dominio de temas específicos. Suelen ser de menor peso en la calificación final y permiten reforzar el aprendizaje continuo."
-ADD0502,3,Tareas,6,20,"actividad asignada a los estudiantes con el propósito de reforzar, aplicar o evaluar el aprendizaje de un tema específico. Puede requerir investigación, resolución de problemas, desarrollo de habilidades prácticas o aplicación de conocimientos teóricos."
-IEE0503,1,Tareas,6,20,"tareas."
-IEE0503,2,Reportes,6,60,"reportes."
-IEE0503,3,Defensa,6,20,"defensa."
-AUT0504,1,Tareas,6,20,"tareas."
-AUT0504,2,Reportes,6,60,"reportes."
-AUT0504,3,Defensa,6,20,"defensa"
-INS0801,1,Exámenes parciales,3,60,"evaluaciones formales que miden el nivel de comprensión y aplicación de los conceptos clave del curso. Generalmente cubren una parte significativa del contenido visto hasta la fecha y pueden incluir problemas teóricos y prácticos."
-INS0801,2,Pruebas cortas,6,25,"evaluaciones breves y frecuentes que sirven para comprobar el dominio de temas específicos. Suelen ser de menor peso en la calificación final y permiten reforzar el aprendizaje continuo."
-INS0801,3,Proyecto,1,15,"actividad integradora donde los estudiantes aplican conocimientos teóricos y prácticos para resolver un problema real o simulado. Fomenta el desarrollo de habilidades analíticas, de investigación y trabajo en equipo."
-SCF0801,1,Tareas,6,20,"asignaciones sobre definición de requisitos, diseño de arquitecturas, modelado y simulación"
-SCF0801,2,Pruebas cortas,6,30,"conocimiento adquirido en temas clave como análisis de requisitos, modelado y evaluación de alternativas."
-SCF0801,3,Proyecto integrador,1,50,"desarrollo de un sistema de interés mediante la definición de requisitos, diseño de arquitectura, modelado y verificación en simulaciones."
+id,consecutivo,evaluacion,cantidad,porcentaje
+AUT0205,1,Exámenes parciales,3,60
+AUT0205,2,Tareas,6,25
+AUT0205,3,Proyecto grupal,1,15
+IEE0305,1,Tareas,6,20
+IEE0305,2,Exámenes cortos,6,20
+IEE0305,3,Reportes,6,60
+IEE0405,1,Tareas,6,20
+IEE0405,2,Reportes,6,60
+IEE0405,3,Defensa,6,20
+IMM0407,2,Exámenes cortos,6,30
+IMM0407,3,Proyecto grupal,1,20
+ADD0502,1,Exámenes parciales,3,60
+ADD0502,2,Exámenes cortos,6,20
+ADD0502,3,Tareas,6,20
+IEE0503,1,Tareas,6,20
+IEE0503,2,Reportes,6,60
+IEE0503,3,Defensa,6,20
+AUT0504,1,Tareas,6,20
+AUT0504,2,Reportes,6,60
+AUT0504,3,Defensa,6,20
+INS0801,1,Exámenes parciales,3,60
+INS0801,2,Exámenes cortos,6,25
+INS0801,3,Proyecto grupal,1,15
+SCF0801,1,Tareas,6,20
+SCF0801,2,Exámenes cortos,6,30
+SCF0801,3,Proyecto grupal,1,50

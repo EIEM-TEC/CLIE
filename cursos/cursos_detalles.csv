@@ -1,4 +1,5 @@
 ﻿id,tipo,electivo,asistencia,suficiencia,reconocimiento,aprobacion
+AUT0205,0,0,0,1,1,01;01;2026;01-2026
 IEE0305,2,0,1,0,1,01;01;2026;01-2026
 IEE0405,2,0,1,0,1,01;01;2026;01-2026
 IMM0407,0,0,0,1,1,01;01;2026;01-2026

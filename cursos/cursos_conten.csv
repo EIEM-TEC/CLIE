@@ -1,4 +1,46 @@
 id,contenidos
+AUT0205,"
+& Introducción a las ciencias de la computación
+&& Surgimiento de computación moderna
+&& Campos de aplicación
+&& Arquitectura de un sistema computacional
+& Lenguajes de programación
+&& Paradigmas de programación, tipos, diferencias.
+&& Lenguajes de alto nivel interpretados
+&& Lenguajes de alto nivel interpretados
+&& Variables, tipos de datos y operadores
+&& Representación digital de datos
+& Estructuras de control
+&& Condicionales
+&& Bucles
+&& Manejo de excepciones
+&& Representación gráfica de las estructuras
+& Estructuras de datos
+&& Arreglos
+&& Listas y tuplas 
+&& Pilas y colas
+&& Acceso a memoria y reserva de memoria
+&& Punteros y aritmética de punteros
+& Funciones y programación modular
+&& Definición y uso de funciones
+&& Modularización del código
+&& Memoria temporal de las funciones
+& Modelado con UML 
+&& Introducción a UML
+&& Diagramas de casos de uso
+&& Diagramas de flujo
+&& Diagrama de estados
+&& Modelado de base de datos
+& Algoritmos
+&& Definición y características
+&& Diseño y análisis de algoritmos
+&& Algoritmos de ordenamiento y búsqueda
+&& Implementación de máquinas de estado
+&& Rendimiento y comparación según el orden de complejidad.
+& Compiladores
+&& Proceso de compilación
+&& Fases de un compilador
+"
 IEE0305,"
 & Conceptos básicos
 && Señales, estímulos y sistemas

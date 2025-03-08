@@ -18,7 +18,9 @@ progra = pd.read_csv("cursos/cursos_programas.csv")
 objeti = pd.read_csv("cursos/cursos_obj.csv")
 conten = pd.read_csv("cursos/cursos_conten.csv")
 metodo = pd.read_csv("cursos/cursos_metodo.csv")
+metdes = pd.read_csv("cursos/descri_metodo.csv")
 evalua = pd.read_csv("cursos/cursos_evalua.csv")
+evades = pd.read_csv("cursos/descri_evalua.csv")
 bibtex = pd.read_csv("cursos/cursos_bibtex.csv")
 profes = pd.read_csv("cursos/cursos_profes.csv")
 rasgos = pd.read_csv("rasgos_ejes/rasgos.csv")
@@ -107,6 +109,7 @@ def generar_programa(id):
     print(strProgr)
     nomCurso = cursos[cursos.id == id].nombre.item()
     print(f'Curso: {nomCurso}')
+    tipo = detall[detall.id == id].tipo.item()
     tipCurso = tipCursoDic.get(detall[detall.id == id].tipo.item())
     print(f'Tipo: {tipCurso}')
     eleCurso = eleCursoDic.get(detall[detall.id == id].electivo.item())
@@ -192,7 +195,6 @@ def generar_programa(id):
             desGener += NoEscape(f"; ")
     desGener += NoEscape(r". \newline\newline ")
     desGener += NoEscape(r"Los aprendizajes que los estudiantes desarrollarán en el curso son: ")
-    #desGener = descri[descri.id == id].descripcion.item().replace("\n", "\n\n")
     lisObjet = objeti[objeti.id == id].reset_index(drop=True).objetivo
     for index, objetivo in lisObjet.items():
         if index > 0:
@@ -251,8 +253,9 @@ def generar_programa(id):
     lisMetod = metodo[metodo.id == id].reset_index(drop=True).metodologia
     for consecutivo, metodos in lisMetod.items():
         if consecutivo == 0:
-            metGener = NoEscape(metodos)
+            metGener = NoEscape(metdes[metdes["tipo"]==tipo].descripcion.item())
             metEspec = NoEscape(r"\begin{itemize}")
+            metEspec += NoEscape(r"\item ") + NoEscape(metodos)
         else:
             metEspec += NoEscape(r"\item ") + NoEscape(metodos)
     metEspec += NoEscape(r"\end{itemize}")
@@ -270,22 +273,21 @@ def generar_programa(id):
     for consecutivo, evaluas in lisEvalu.iterrows():
         if consecutivo == 0:
             descriEval = NoEscape(r"\begin{itemize} ")  
-        descriEval += NoEscape(r"\item ") + NoEscape(f"{evaluas.evaluacion}: {evaluas.descripcion} ")  
+        descriEval += NoEscape(r"\item ") + NoEscape(f"{evaluas.evaluacion}: {evades[evades["evaluacion"]==evaluas.evaluacion].descripcion.item()}")  
     descriEval += NoEscape(r"\end{itemize}") 
     evaCurso += descriEval
     evaTabla = NoEscape(r" \begin{minipage}{\linewidth} ")
     evaTabla += NoEscape(r" \centering ") 
-    evaTabla += NoEscape(r" \begin{tabular}{ p{4cm}  p{1.5cm} } ")
+    evaTabla += NoEscape(r" \begin{tabular}{ p{4.5cm}  p{1.5cm} } ")
     evaTabla += NoEscape(r" \toprule ") 
     total = 0
     for consecutivo, evaluas in lisEvalu.iterrows():
-        evaTabla += NoEscape(f" {evaluas.evaluacion} & {evaluas.porcentaje} \\% \\\ ")
+        evaTabla += NoEscape(f" {evaluas.evaluacion} ({evaluas.cantidad}) & {evaluas.porcentaje} \\% \\\ ")
         evaTabla += NoEscape(r" \midrule ")
         total += evaluas.porcentaje
         if consecutivo == len(lisEvalu)-1:
             evaTabla += NoEscape(f"Total & {total} \\% \\\ ")
             evaTabla += NoEscape(r" \bottomrule ")
-    # #evaCurso += NoEscape(r" A & B \\ C & D \\ 
     evaTabla += NoEscape(r" \end{tabular} \end{minipage}")
     evaRepo = NoEscape(r"De conformidad con el artículo 78 del Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica y sus Reformas, en este curso la persona estudiante ")
     if tipCurso != "Teórico":
@@ -396,20 +398,6 @@ def generar_programa(id):
     with headerfooter.create(Head("L")) as header_left:
         with header_left.create(MiniPage(width=r"0.5\textwidth",align="l")) as logobox:
             logobox.append(StandAloneGraphic(image_options="width=62.5mm", filename='../figuras/Logo.png'))
-    #Left foot # eliminada en nuevo formato
-    # with headerfooter.create(Foot("L")) as footer_left:
-    #     footer_left.append(TextColor("gris", f"{nomEscue}"))
-    #     footer_left.append(NoEscape(r"\par \parbox{0.85\textwidth}{"))
-    #     footer_left.append(textcolor
-    #         (   
-    #         par=False,
-    #         size="8",
-    #         vspace="0",
-    #         color="gris",
-    #         bold=False,
-    #         text=f"{strProgr}" 
-    #         ))
-    #     footer_left.append(NoEscape(r"}"))
     #Right foot
     with headerfooter.create(Foot("R")) as footer_right:
         footer_right.append(TextColor("black", NoEscape(r"Página \thepage \hspace{1pt} de \pageref*{LastPage}")))        
@@ -652,15 +640,15 @@ def generar_programa(id):
 # for id in cursos.id:
 #      generar_programa(id)
 
-
-# generar_programa("IEE0305")
-# generar_programa("IEE0405")
-# generar_programa("IMM0407")
+generar_programa("AUT0205")
+generar_programa("IEE0305")
+generar_programa("IEE0405")
+generar_programa("IMM0407")
 generar_programa("ADD0502")
-# generar_programa("IEE0503")
-# generar_programa("AUT0504")
-# generar_programa("INS0801")
-# generar_programa("SCF0801")
+generar_programa("IEE0503")
+generar_programa("AUT0504")
+generar_programa("INS0801")
+generar_programa("SCF0801")
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
