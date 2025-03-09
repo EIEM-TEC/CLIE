@@ -265,6 +265,91 @@ AUT0504,"
 & Modelado con redes neuronales.
 & Modelado con sistemas difusos.
 "
+ADD0602,"
+& Introducción a la fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS) en sistemas electromecánicos.
+&& Conceptos clave de fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS).
+&& Importancia del análisis RAMS en la ingeniería electromecánica.
+&& Indicadores y métricas de desempeño de sistemas.
+& Métodos estadísticos aplicados a la confiabilidad
+&& Distribuciones de probabilidad utilizadas en confiabilidad: exponencial, normal, Weibull.
+&& Estimación de parámetros estadísticos y análisis de datos de fallos.
+&& Introducción a la prueba de hipótesis y análisis de tendencia en confiabilidad.
+& Análisis de Modos y Efectos de Fallo (FMEA) y Análisis de Árbol de Fallos (FTA)
+&& Metodología FMECA: identificación y priorización de fallos.
+&& Análisis de criticidad y cálculo del RPN (Risk Priority Number).
+&& Construcción y aplicación del Análisis de Árbol de Fallos (FTA).
+&& Factores que afectan la confiabilidad y vida útil de los componentes.
+& Análisis Weibull y estimación de vida útil de componentes
+&& Principios del análisis Weibull y su aplicación en confiabilidad.
+&& Estimación de parámetros $\beta$ y $\eta$ para predecir vida útil.
+&& Análisis de datos de fallos en el contexto industrial.
+& Modelos de confiabilidad para sistemas en serie, paralelo y redundancia
+&& Modelos de confiabilidad en sistemas simples y complejos.
+&& Cálculo de confiabilidad en configuraciones en serie y en paralelo.
+&& Estrategias de redundancia para mejorar la disponibilidad de sistemas.
+& Estrategias de mantenimiento: correctivo, preventivo, predictivo y basado en condición
+&& Diferencias y aplicaciones de mantenimiento correctivo, preventivo y predictivo.
+&& Criterios de selección de estrategias de mantenimiento.
+&& Análisis de costos y beneficios de cada enfoque.
+& Optimización de planes de mantenimiento y análisis costo-beneficio
+&& Estrategias para optimizar programas de mantenimiento.
+&& Métodos de análisis costo-beneficio en confiabilidad y disponibilidad.
+& Planificación de contingencias y resiliencia en sistemas electromecánicos
+&& Estrategias de continuidad operativa y gestión de crisis.
+&& Diseño de planes de contingencia y recuperación ante fallos.
+& Métodos de análisis de seguridad y normativas internacionales
+&& Principales normativas en seguridad industrial y confiabilidad.
+&& Métodos de análisis de seguridad: HAZOP, LOPA, Bow-Tie.
+&& Implementación de planes de seguridad en la industria.
+"
+IEE0604,"
+& Introducción a los Sistemas Digitales
+&& Conceptos básicos
+&& Diferencias entre sistemas digitales y analógicos
+& Reducción de expresiones booleanas
+&& Álgebra de Boole
+&& Teoremas y postulados
+&& Variables y funciones booleanas
+&& Simplificación de funciones booleanas
+&&	Mapas de Karnaugh
+&&&	Mapas cicliclos, semi-ciclicos
+&&&	Mapas de variable ingresada
+&&	Suma de productos y Producto de Sumas
+& Circuitos Combinacionales
+&& Puertas lógicas básicas (AND, OR, NOT, NAND, NOR, XOR, XNOR)
+&& Diseño y análisis de circuitos combinacionales
+&& Sumadores y restadores
+&& Multiplexores (MUX)
+&& Demultiplexores (DEMUX)
+&& Codificadores y decodificadores (ENCODERS y DECODERS)
+& Circuitos Secuenciales
+&& Conceptos de memoria y almacenamiento
+&& Flip-Flops (SR, D, JK, T)
+&& Contadores y registros
+&& Máquinas de estados finitos (FSM)
+&& Maquinas de Mealy / Moore
+& Elementos de Memoria
+&& Tipos de flip-flops y sus aplicaciones
+&& Diseño de registros y contadores
+&& Memorias RAM y ROM
+& Unidad Aritmética y Lógica (ALU)
+&& Diseño y funcionamiento de una ALU
+&& Operaciones aritméticas y lógicas
+& Lenguaje de Descripción de Hardware (VHDL)
+&& Introducción a VHDL
+&& Modelado de circuitos combinacionales y secuenciales en VHDL
+&& Simulación y síntesis de diseños en VHDL
+& FPGAs (Field-Programmable Gate Arrays)
+&& Introducción a las FPGAs
+&& Tipos de FPGAs y sus aplicaciones
+&& Arquitectura interna de una FPGA
+&& Ventajas y desventajas de las FPGAs
+& Programación de FPGAs con VHDL
+&& Diseño del circuito en VHDL
+&& Simulación y verificación del diseño
+&& Síntesis y generación del bitstream
+&& Implementación y programación en la FPGA
+"
 INS0801,"
 & Introducción
 && Introducción al análisis de los sistemas eléctricos de potencia

@@ -35,13 +35,14 @@ FPH0408,Seminario de estudios costarricenses,ESC
 FPH0409,Actividad deportiva I,HIP
 FPH0501,Desarrollo de emprendedores,EMP
 ADD0502,Estadística aplicada,EYD
+IEE0503,Sistemas analógicos,CEE
 AUT0504,Modelado y simulación de sistemas,MYS
 IMM0506,Ciencia e ingeniería de los materiales,CIM
 IMM0507,Manufactura,MAN;CIM
 IMM0508,Laboratorio de manufactura,MAN;CIM;MET
 CYD0601,Inglés para electromecánica,ING
 ADD0602,Fiabilidad y disponibilidad de sistemas electromecánicos,CDM
-IEE0503,Sistemas analógicos,CEE
+IEE0604,Sistemas digitales,CEE
 IMM0605,Resistencia de materiales,TTC
 IMM0606,Transferencia de calor,MSF
 IMM0607,Mecánica de fluidos,MSF

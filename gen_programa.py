@@ -640,13 +640,15 @@ def generar_programa(id):
 # for id in cursos.id:
 #      generar_programa(id)
 
-generar_programa("AUT0205")
-generar_programa("IEE0305")
-generar_programa("IEE0405")
-generar_programa("IMM0407")
-generar_programa("ADD0502")
-generar_programa("IEE0503")
-generar_programa("AUT0504")
+# generar_programa("AUT0205")
+# generar_programa("IEE0305")
+# generar_programa("IEE0405")
+# generar_programa("IMM0407")
+# generar_programa("ADD0502")
+# generar_programa("IEE0503")
+# generar_programa("AUT0504")
+generar_programa("ADD0602")
+generar_programa("IEE0604")
 generar_programa("INS0801")
 generar_programa("SCF0801")
 
