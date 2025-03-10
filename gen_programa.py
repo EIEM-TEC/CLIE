@@ -235,13 +235,13 @@ def generar_programa(id):
             objGener = NoEscape(objetivo)
             objEspec = NoEscape(r"\begin{itemize}")
         else:
-            objEspec += NoEscape(r"\item ") + NoEscape(objetivo)
+            objEspec += NoEscape(r"\item ") + NoEscape(objetivo) + NoEscape(r".")
     objEspec += NoEscape(r"\end{itemize}")
     objCurso = NoEscape(r"Al final del curso la persona estudiante será capaz de:") 
     objCurso += NoEscape(r"\newline\newline ")
     objCurso += NoEscape(Command("textbf", "Objetivo general").dumps())
     objCurso += NoEscape(r"\begin{itemize}\item ")
-    objCurso += objGener
+    objCurso += objGener + NoEscape(r".")
     objCurso += NoEscape(r"\end{itemize} \vspace{2mm}")
     objCurso += NoEscape(Command("textbf", "Objetivos específicos").dumps())
     objCurso += objEspec
@@ -640,13 +640,14 @@ def generar_programa(id):
 # for id in cursos.id:
 #      generar_programa(id)
 
-# generar_programa("AUT0205")
-# generar_programa("IEE0305")
-# generar_programa("IEE0405")
-# generar_programa("IMM0407")
-# generar_programa("ADD0502")
-# generar_programa("IEE0503")
-# generar_programa("AUT0504")
+generar_programa("AUT0205")
+generar_programa("IEE0303")
+generar_programa("IEE0305")
+generar_programa("IEE0405")
+generar_programa("IMM0407")
+generar_programa("ADD0502")
+generar_programa("IEE0503")
+generar_programa("AUT0504")
 generar_programa("ADD0602")
 generar_programa("IEE0604")
 generar_programa("INS0801")

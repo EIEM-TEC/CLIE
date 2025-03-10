@@ -1,6 +1,8 @@
 id,bibtex
 AUT0205,cormen2009;tanenbaum2016;patterson2020;silberschatz2020;aho2006;bryant2015
+IEE0303,hayt2007;boylestad2011;alexander2013;dorf2011
 IEE0305,ida2020sensors;fraden2016sensors;pallas2012sensors
+IEE0403,hayt2007;boylestad2011;alexander2013;dorf2011
 IEE0405,ida2020sensors;fraden2016sensors;pallas2012sensors;karre2023instru;ansiisa51;gum2008
 IMM0407,cengel2019termo;vanwylen2006termo;wark1995termo
 ADD0502,montgomery2020applied

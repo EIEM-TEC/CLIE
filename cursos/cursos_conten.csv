@@ -41,6 +41,50 @@ AUT0205,"
 && Proceso de compilación
 && Fases de un compilador
 "
+IEE0303,"
+& Conceptos y definiciones
+&& Bandas de energía
+&& Carga eléctrica
+&& Corriente 
+&& Voltaje
+&& Resistencia eléctrica
+&& Ley de Ohm
+&& Potencia eléctrica
+&& Energía
+&& Elementos activos y pasivos
+&& Corto circuito y circuito abierto
+&& Fuentes dependientes e independientes
+&& Elementos de un circuito
+& Análisis de circuitos básicos.
+&& Leyes de Kirchhoff
+&& Elementos y circuitos en serie
+&& Divisor de voltaje
+&& Elementos y circuitos en paralelo
+&& Divisor de corriente
+&& Fuentes reales
+& Técnicas para el análisis de circuitos complejos.
+&& Análisis de mallas y supermallas
+&& Análisis de nodos y supernodos
+&& Superposición
+&& Conversión de fuentes
+&& Teoremas de Thévenin y Norton
+&& Teorema de máxima transferencia de potencia
+&& Conversión de delta-estrella y estrella-delta
+&& Circuitos Puente (H, Wheastone, celda de carga)
+& Bobinas y condensadores
+&& Definición de elementos reactivos
+&& Fundamentos de condensadores y bobinas
+&& Arreglo de elementos reactivos en serie y paralelo
+&& Respuesta natural y forzada
+&& La función de singularidad
+&& Circuitos de primer orden RL y RC
+&& Circuitos de segundo orden RLC en serie y paralelo
+& Fundamentos de la transformada de Laplace
+&& Definición de la transformada de Laplace
+&& Propiedades de la transformada de Laplace
+&& Definición de elementos en el dominio “s”
+&& Análisis de circuitos RLC en estado transitorio y estable utilizando transformada de Laplace
+"
 IEE0305,"
 & Conceptos básicos
 && Señales, estímulos y sistemas
@@ -105,6 +149,53 @@ IEE0305,"
 && Transmisión de datos
 && Excitadores
 && Ruido e interferencia
+"
+IEE0403,"
+& Conceptos y Definiciones
+&& Representación fasorial y vectorial de tensiones, corrientes, impedancias y admitancias
+& Análisis de circuitos básicos
+&& Leyes de Kirchhoff en estado estable
+&& Elementos y circuitos en serie
+&& Divisor de voltaje
+&& Elementos y circuitos en paralelo
+&& Divisor de corriente
+&& Transformación de fuentes tensión y corriente
+&& Linealidad y superposición de tensiones y corrientes, cálculo de potencia
+& Técnicas para el análisis de circuitos complejos
+&& Análisis de mallas y supermallas
+&& Análisis de nodos y supernodos
+&& Superposición
+&& Conversión de fuentes
+&& Teoremas de Thévenin y Norton
+&& Teorema de máxima transferencia de potencia
+& Potencia Eléctrica
+&& Cálculo del valor efectivo
+&& Potencia instantánea y promedio. 
+&& Definición de potencias reactiva, aparente y real. 
+&& Concepto del Factor de potencia y su relación con cargas lineales
+&& Corrección del Factor de potencia
+&& Cálculo de potencia promedio en señales senoidales compuestas
+& Circuito monofásico trifilar
+&& Concepto de circuitos polifásicos y su extensión a redes monofásicas 
+&& Definición de redes simétricas (fuentes balanceadas)
+&& Esquemas de corrección del FP en circuitos monofásicas
+& Respuesta en frecuencia
+&& Teorema de Euler y el concepto de frecuencia compleja
+&& Operador s en circuitos RLC y su relación con la transformada de Laplace
+&& Función de transferencia, relaciones de impedancia, admitancia y ganancias de tensión o corriente
+&& Diagramas de Bode y representación en el plano complejo
+&& Análisis de función de transferencia, ganancia, ceros y polos. Atenuación y decibelios
+&& Filtros pasivos, ancho de banda, banda rechazada, frecuencia de corte, frecuencia central, factor de calidad
+&& Resonancia serie, paralelo, resonancia compuesta en circuitos RLC
+& Series de Fourier
+&& Definición. Relación con el valor efectivo y potencia promedio
+&& Concepto de contenido armónico, efecto de filtros en el contenido armónico
+&& Distorsión armónica total (THD)
+&& Relación del THD con el valor efectivo y el factor de potencia desplazado (FPD) en redes a 60Hz
+& Redes bipuertos
+&& Concepto de redes de dos puertos
+&& Parámetros de Impedancia, Admitancia, Híbridas y Transmisión
+&& Modelado y aplicación
 "
 IEE0405,"
 & Sistemas de adquisición de datos
