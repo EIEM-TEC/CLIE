@@ -1,39 +1,55 @@
 id,consecutivo,evaluacion,cantidad,porcentaje
-AUT0205,1,Exámenes parciales,3,60
+CYD0107,1,Pruebas parciales,2,60
+CYD0107,2,Tareas,6,15
+CYD0107,3,Proyecto(s) grupal(es),1,25
+AUT0205,1,Pruebas parciales,3,60
 AUT0205,2,Tareas,6,25
 AUT0205,3,Proyecto(s) grupal(es),1,15
-IEE0303,1,Exámenes parciales,3,60
-IEE0303,2,Exámenes cortos,6,20
-IEE0303,3,Proyecto(s) grupal(es),1,20
+IEE0303,1,Pruebas parciales,3,60
+IEE0303,2,Tareas,6,20
+IEE0303,3,Pruebas cortas,4,20
+IEE0304,1,Reportes,12,60
+IEE0304,2,Pruebas cortas,4,40
 IEE0305,1,Tareas,6,20
-IEE0305,2,Exámenes cortos,6,20
+IEE0305,2,Pruebas cortas,6,20
 IEE0305,3,Reportes,6,60
-IEE0403,1,Exámenes parciales,3,60
-IEE0403,2,Exámenes cortos,6,20
-IEE0403,3,Proyecto(s) grupal(es),1,20
+IEE0403,1,Pruebas parciales,3,60
+IEE0403,2,Tareas,6,20
+IEE0403,3,Pruebas cortas,4,20
+IEE0404,1,Reportes,12,60
+IEE0404,2,Pruebas cortas,4,40
 IEE0405,1,Tareas,6,20
 IEE0405,2,Reportes,6,60
 IEE0405,3,Defensa,6,20
-IMM0407,2,Exámenes cortos,6,30
+IMM0407,2,Pruebas cortas,6,30
 IMM0407,3,Proyecto(s) grupal(es),1,20
-ADD0502,1,Exámenes parciales,3,60
-ADD0502,2,Exámenes cortos,6,20
+ADD0502,1,Pruebas parciales,3,60
+ADD0502,2,Pruebas cortas,6,20
 ADD0502,3,Tareas,6,20
-IEE0503,1,Exámenes parciales,2,60
+IEE0503,1,Pruebas parciales,2,60
 IEE0503,2,Tareas,4,20
 IEE0503,3,Proyecto(s) grupal(es),2,20
 AUT0504,1,Tareas,6,20
 AUT0504,2,Reportes,6,60
 AUT0504,3,Defensa,6,20
-ADD0602,1,Exámenes parciales,3,70
-ADD0602,2,Exámenes cortos,6,15
+ADD0602,1,Pruebas parciales,3,70
+ADD0602,2,Pruebas cortas,6,15
 ADD0602,3,Proyecto(s) grupal(es),1,15
-IEE0604,1,Exámenes parciales,2,60
+IEE0604,1,Pruebas parciales,2,60
 IEE0604,2,Tareas,4,20
 IEE0604,3,Proyecto(s) grupal(es),2,20
-INS0801,1,Exámenes parciales,3,60
-INS0801,2,Exámenes cortos,6,25
+IEE0702,1,Pruebas parciales,3,60
+IEE0702,2,Tareas,4,20
+IEE0702,2,Pruebas cortas,4,20
+AUT0704,1,Pruebas parciales,3,60
+AUT0704,2,Tareas,4,20
+AUT0704,2,Pruebas cortas,4,20
+INS0801,1,Pruebas parciales,3,60
+INS0801,2,Pruebas cortas,6,25
 INS0801,3,Proyecto(s) grupal(es),1,15
+IEE0802,1,Pruebas parciales,3,60
+IEE0802,2,Tareas,4,20
+IEE0802,2,Pruebas cortas,4,20
 SCF0801,1,Tareas,6,20
-SCF0801,2,Exámenes cortos,6,30
+SCF0801,2,Pruebas cortas,6,30
 SCF0801,3,Proyecto(s) grupal(es),1,50

@@ -60,7 +60,7 @@ tipAsistDic = {
 
 sinoDic = {
     0: "No",
-    1: "Si" 
+    1: "Sí" 
 }
 
 
@@ -245,6 +245,10 @@ def generar_programa(id):
     objCurso += NoEscape(r"\end{itemize} \vspace{2mm}")
     objCurso += NoEscape(Command("textbf", "Objetivos específicos").dumps())
     objCurso += objEspec
+    if tipo == 1:
+        conDescr = "En el curso se desarrollaran los siguientes laboratorios:"
+    else:
+        conDescr = "En el curso se desarrollaran los siguientes temas:"
     conCurso = NoEscape(r"\par \setlength{\leftskip}{4cm} ")
     conCurso += NoEscape(r"\begin{easylist} \ListProperties(Progressive*=3ex)")
     conCurso += NoEscape(conten[conten.id == id].contenidos.item())
@@ -556,7 +560,7 @@ def generar_programa(id):
         bold=True,
         text="4. Contenidos"
         )
-        ,"En el curso se desarrollaran los siguientes temas:"])
+        ,conDescr])
     doc.append(NewLine())
     doc.append(conCurso)
     doc.append(textcolor
@@ -640,18 +644,25 @@ def generar_programa(id):
 # for id in cursos.id:
 #      generar_programa(id)
 
-generar_programa("AUT0205")
-generar_programa("IEE0303")
-generar_programa("IEE0305")
-generar_programa("IEE0405")
-generar_programa("IMM0407")
-generar_programa("ADD0502")
-generar_programa("IEE0503")
-generar_programa("AUT0504")
-generar_programa("ADD0602")
-generar_programa("IEE0604")
-generar_programa("INS0801")
-generar_programa("SCF0801")
+# generar_programa("CYD0107")
+# generar_programa("AUT0205")
+# generar_programa("IEE0303")
+# generar_programa("IEE0304")
+# generar_programa("IEE0305")
+# generar_programa("IEE0403")
+# generar_programa("IEE0404")
+# generar_programa("IEE0405")
+# generar_programa("IMM0407")
+# generar_programa("ADD0502")
+# generar_programa("IEE0503")
+# generar_programa("AUT0504")
+# generar_programa("ADD0602")
+# generar_programa("IEE0604")
+# generar_programa("IEE0702")
+generar_programa("AUT0704")
+# generar_programa("INS0801")
+# generar_programa("IEE0802")
+# generar_programa("SCF0801")
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)

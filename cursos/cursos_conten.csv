@@ -1,4 +1,36 @@
 id,contenidos
+CYD0107,"
+& Introducción al dibujo técnico como lenguaje de comunicación 
+&& Historia del dibujo técnico
+&& El dibujo técnico como lenguaje de ingeniería
+&& Instrumentos y herramientas de dibujo
+& Conceptos normativos del dibujo técnico
+&& Tipos de líneas
+&& Rotulado
+&& Formatos
+&& Cajetín
+&& Escalas
+&& Distribución de un plano 
+& Geometría descriptiva
+&& Consideraciones fundamentales de la Geometría Descriptiva
+&& Sistema de proyección y designación de vistas
+&& Proyección del punto, el segmento y los planos en el espacio
+&& Longitudes y dimensiones naturales
+&& Características particulares de la representación de los Cuerpos Geométricos
+&& Intersección de Cuerpos Geométricos
+&& Desarrollos de cuerpos geométricos
+& Proyecciones ortogonales
+&& Criterios de selección de la vista frontal y la ubicación de las otras vistas
+&& Selección de vistas mínimas para definir un objeto
+& Proyecciones Axonométricas 
+&& Axonometría isométrica
+&& Axonometrías dimétricas
+&& Construcción de proyección axonométrica a partir de proyecciones ortogonales
+& Acotado
+&& Conceptos normativos del acotado
+&& Criterios para la acotación correcta de proyecciones ortogonales
+&& Relación entre cota y escala
+"
 AUT0205,"
 & Introducción a las ciencias de la computación
 && Surgimiento de computación moderna
@@ -84,6 +116,19 @@ IEE0303,"
 && Propiedades de la transformada de Laplace
 && Definición de elementos en el dominio “s”
 && Análisis de circuitos RLC en estado transitorio y estable utilizando transformada de Laplace
+"
+IEE0304,"
+& Empleo y lectura de instrumentos de medición eléctrica para corriente y voltaje
+& Resistencia y resistividad
+& Circuitos en serie y en paralelo
+& Taller de simulación de circuitos
+& Análisis de mallas y teorema de superposición
+& Teoremas de Thévenin y máxima transferencia de potencia
+& Análisis de Elementos Reactivos: Bobinas y Condensadores
+& Análisis de la Carga y Descarga de Condensadores en Circuitos de Corriente Directa
+& Configuraciones en Serie y Paralelo de Elementos Reactivos
+& Respuesta Transitoria en Circuitos RL y RC
+& Análisis de Circuitos RLC de Segundo Orden
 "
 IEE0305,"
 & Conceptos básicos
@@ -196,6 +241,20 @@ IEE0403,"
 && Concepto de redes de dos puertos
 && Parámetros de Impedancia, Admitancia, Híbridas y Transmisión
 && Modelado y aplicación
+"
+IEE0404,"
+& Taller del osciloscopio digital y el generador de señales
+& Valores eficaces
+& Circuito RLC serie excitación senoidal
+& Circuitos mixtos RLC en corriente alterna
+& Mejoramiento del factor de potencia
+& Contenido armónico y filtros RLC
+& Respuesta de frecuencia y resonancia en RLC
+& Circuito monofásico trifilar y cálculo de Potencia 
+& Análisis del factor de potencia y su relación con cargas lineales
+& Corrección del factor de potencia en circuitos monofásicos
+& Análisis experimental de un circuito monofásico trifilar
+& Cálculo de potencia promedio en señales senoidales compuestas
 "
 IEE0405,"
 & Sistemas de adquisición de datos
@@ -441,6 +500,149 @@ IEE0604,"
 && Síntesis y generación del bitstream
 && Implementación y programación en la FPGA
 "
+IEE0702,"
+& Sistema monofásico
+&& Cargas resistivas, inductivas y capacitivas. 
+&& Cálculo de la corriente en el neutro.
+& Sistemas trifásicos
+&& Principio de generación 
+&& Tensiones trifásicas balanceadas 
+&& Tipos de circuitos trifásicos 
+&& Generador trifásico en estrella 
+&& Tensiones de línea y de fase 
+&& Desfase entre línea y fase 
+&& Secuencia de fase 
+&& Corrientes de línea y fase 
+&& Conexiones en cargas balanceadas y desbalanceadas.
+& Potencia monofásica y trifásica
+&& Sistemas balanceados y Desbalanceados
+&& Potencia activa, reactiva y aparente (triángulo de potencias) 
+&& Medición del factor de potencia.
+&& Mejoramiento de factor de potencia.
+& Estructuras ferromagnéticas excitadas en corriente directa
+&& Propiedades de los materiales ferromagnéticos.
+&& Teoría de los dominios ferromagnéticos.
+&& Curvas de magnetización.
+&& Lazo de histéresis, flujo residual y fuerza coercitiva.
+&& El concepto del circuito magnético. Fuerza magnetomotriz, reluctancia y permeancia magnética.
+&& Métodos de análisis de circuitos ferromagnéticos.
+&& Entrehierros en circuitos ferromagnéticos.
+&& Estructuras ferromagnéticas, con varias bobinas de excitación.
+&& Circuitos magnéticos, con saturación magnética.
+& Estructuras ferromagnéticas excitadas en corriente alterna
+&& Ley de inducción electromagnética de Faraday.
+&& Relaciones entre tensión aplicada, tensión inducida y flujo magnético.
+&& Forma de onda de la corriente de excitación.
+&& Energía almacenada en el núcleo ferromagnético.
+&& Pérdida de energía en el núcleo ferromagnético.
+&& Modelo de la corriente de excitación no senoidal. Armónicas impares.
+&& Cálculo de los parámetros de un reactor, con núcleo ferromagnético.
+& Transformadores Monofásicos
+&& Tipos de transformadores de distribución. Aéreos, subterráneos, sumergibles, convencionales y de pedestal.
+&& El transformador ideal.
+&& Polaridad de los transformadores.
+&& Transformadores aditivos y sustractivos.
+&& El transformador real. Núcleos laminados, flujos de dispersión, y pérdidas en el núcleo.
+&& Circuito del transformador real y diagramas fasoriales.
+&& Cálculo de parámetros del transformador real.
+&& Regulación de tensión del transformador.
+&& Eficiencia, y eficiencia máxima del transformador.
+&& Sistema en por unidad.
+&& Datos de placa.
+&& Autotransformador.
+&& Conexión en paralelo de transformadores. Intercambiador de derivaciones (tomas regulables bajo carga.
+& Transformadores trifásicos
+&& Conexiones simétricas: estrella-estrella, delta-delta, delta-estrella, estrella-delta, estrella-zigzag.
+&& Conexión en paralelo. Índice horario.
+&& Conexiones asimétricas: estrella renca - delta abierta, conexión en T, conexión de Scott.
+&& Datos de placa.
+&& Autotransformador.
+&& Transformadores de tres devanados.
+& Motor trifásico de inducción
+&& Principio de funcionamiento.
+&& Ley de Ampere
+&& Ley de Faraday-Lenz
+&& Fuerza de Lorentz
+&& Construcción de las partes principales de una máquina eléctrica rotativa.
+&& Velocidad del campo magnético rotatorio, velocidad mecánica, deslizamiento y frecuencia en el rotor.
+&& Circuito equivalente.
+&& Par desarrollado en función del deslizamiento.
+&& Curva característica: Arranque directo.
+&& Descripción de datos de la placa característica.
+&& Métodos de arranque por resistencias estatóricas, estrella-delta, devanado partido, auto transformador, resistencia rotórica y arranque suave.
+&& Métodos de control de velocidad y variador de frecuencia.
+&& Pérdidas eléctricas, mecánicas, magnéticas y eficiencia.
+& Motor monofásico de inducción
+&& Construcción y modelado dinámico de la máquina.
+&& Principio de funcionamiento (Doble campo magnético rotatorio):
+&& Tipos de motores:
+&& Fase Partida.
+&& Capacitor de arranque.
+&& Capacitor permanente.
+&& Doble capacitor.
+&& Polos sombreados.
+& Generador de inducción trifásico, auto-excitado
+&& Tipos de generadores de inducción
+&& Circuito equivalente.
+&& Capacitor de excitación.
+&& Desempeño del generador, conectado a una red de potencia infinita.
+&& Desempeño del generador, conectado en forma aislada.
+"
+AUT0704,"
+& Introducción a los sistemas de control 
+&& Conceptos básicos: Lazo abierto, Lazo cerrado, Realimentación, Estabilidad. 
+&& Objetivos: Análisis de sistemas y Diseño de controladores.  
+&& Ejemplos de sistemas de control 
+&& Definición de dominios de frecuencia y tiempo. 
+& Análisis de sistemas en el dominio temporal 
+&& Entradas del sistema  
+&& Sistemas de primer orden 
+&& Sistemas de segundo orden 
+&& Sistemas de orden superior  
+&& Tipo de sistemas 
+&& Estabilidad 
+&& Diseño de controladores en el dominio temporal 
+&& Diseño de controladores mediante el lugar de raíces.  
+&& Compensación de adelanto.  
+&& Compensación de retraso.  
+&& Compensación de retraso-adelanto.  
+& Análisis de sistemas en el dominio de la frecuencia 
+&& Representación de Funciones de Transferencia en el Dominio de la frecuencia.  
+&& Diagrama de Bode. 
+&& Diagrama Polar. 
+&& Lugar de las raíces. 
+&& Criterio de Estabilidad de Nyquist. 
+&& Estabilidad Relativa: márgenes de fase y de ganancia.  
+&& Especificaciones en frecuencia de los sistemas: ancho de banda, resonancia.  
+&& Sistemas de segundo orden. Relación respuesta temporal y en frecuencia.  
+&& Respuesta en frecuencia en Lazo Cerrado. Diagrama de Nichols.  
+&& Determinación Experimental de Funciones de Transferencia: método, casos especiales, consideraciones prácticas.  
+& El controlador PID 
+&& Estructura del controlador: Elementos básicos, propiedades y diferentes representaciones.  
+&& Controlador Proporcional, definición, usos y propiedades. 
+&& Controlador Integral, definición, usos y propiedades. 
+&& Controlador Derivativo, definición, usos y propiedades. 
+&& Controladores PI, PD, PID, definición, usos y propiedades. 
+&& Implementación Digital.  
+&& Forma incremental.  
+&& Errores de cuantización.  
+&& Utilización del PID.  
+&& PIDs comerciales.  
+&& Métodos de sintonía experimentales y analíticos.  
+& Análisis y diseño de sistemas de control  en el espacio de estados
+&& Representaciòn en espacion de estado
+&& Transformación de modelos 
+&& Controlabilidad y Observabilidad
+&& Diseño de controladores en espacio de estados
+&& Diseño de servo sistemas en espacio de estados
+&& Observadores de estado
+&& Diseño de reguladores y controladores con observadores.
+& Implementación real de los sistemas de control 
+&& Control Analógico: circuitos electrónicos de control, filtrado analógico de ruido.  
+&& Transformada z
+&& Control Digital: estructura, discretización del controlador, periodo de muestreo, aliasing, filtrado digital del ruido.  
+&& Diseño de sistemas de control en tiempo discreto con métodos convencionales.
+"
 INS0801,"
 & Introducción
 && Introducción al análisis de los sistemas eléctricos de potencia
@@ -513,6 +715,100 @@ INS0801,"
 && Manejo de demanda dinámica y medidores inteligentes 
 && Automatización de sistemas de distribución 
 && Sistemas de almacenamiento y electrónica de potencia
+"
+IEE0802,"
+& Alternador sincrónico
+&& Principio de funcionamiento
+&& Construcción de las partes principales.
+&& Tipos de rotor
+&& Sistemas de control de máquinas sincrónicas
+&& Excitación de alternadores (Con escobillas, sin escobillas)
+&& Principios de funcionamiento y curva de magnetización.
+&& Modelo en régimen permanente y diagramas fasoriales.
+&& Ecuaciones para modelado
+&& Inductancias propias de la máquina sincrónica
+&& Transformación de Park
+&& Diagramas fasoriales
+&& Ecuaciones de Potencia activa y reactiva
+&& Límites de estabilidad
+&& Sistema pu de la máquina sincrónica
+&& Alternador en funcionamiento aislado.
+&& Regulación de tensión y factor de potencia.
+&& Saturación de la máquina sincrónica
+&& Características de saturación de circuito abierto
+&& Características de saturación del entrehierro y cortocircuito.
+&& Pérdidas eléctricas, mecánicas, magnéticas y eficiencia.
+&& Modelado de saturación en sistemas de potencia (S1.0 y S1.2)
+&& Curva de capacidad de la máquina
+&& Generadores operando en paralelo de forma aislada.
+&& Generador en funcionamiento en una red de potencia infinita.
+&& Análisis de generadores considerando: efecto del gobernador y efecto de la excitación.
+&& Operación del generador conectada a una barra infinita.
+& Motor Sincrónico
+&& Principio de funcionamiento.
+&& Modelo en régimen permanente y diagramas fasoriales.
+&& Par desarrollado.
+&& Curvas V y control del factor de potencia.
+&& Pérdidas eléctricas, mecánicas, magnéticas y eficiencia
+&& Datos de placa.
+&& Condensador sincrónico.
+& Máquinas de corriente directa
+&& Principio de funcionamiento
+&& Partes constructivas (estator, rotor, colector, escobillas, etc.)
+&& Modelo matemático de flujos y corrientes de devanados
+&& Tensión inducida en una espira giratoria
+&& Par inducido por una espira giratoria
+&& El proceso de conmutación
+&& Problemas de conmutación
+&& Desplazamiento de escobillas, interpolos y devanados de compensación
+& Generador de corriente directa
+&& Construcción.
+&& Principio de funcionamiento.
+&& Generación en una espira.
+&& Generación en una armadura.
+&& Conmutación.
+&& Reacción de armadura.
+&& Métodos para disminuir la reacción de armadura.
+&& Desplazamiento de escobillas.
+&& Polos de conmutación.
+&& Bobinados de compensación.
+&& Método de excitación de campo.
+&& Generador excitación independiente.
+&& Características.
+&& Generador auto excitadas:
+&& Conexión Shunt.
+&& Conexión Serie.
+&& Conexión Compuesto-acumulativa.
+&& Conexión Compuesto diferencial.
+&& Eficiencia.
+&& Datos de placa.
+&& Escobillas.
+& Motores de corriente directa
+&& Principio de funcionamiento.
+&& Producción de par y circuito equivalente.
+&& Motor excitación independiente.
+&& Motor excitación paralela (Shunt).
+&& Motor excitación serie.
+&& Motor excitación compuesta acumulativa.
+&& Motor excitación compuesta diferencial.
+&& Eficiencia.
+&& Control de velocidad.
+&& Datos de placa.
+& Maquinas eléctricas especiales
+&& Motor universal
+&& Servomotores
+&& Motor a pasos
+&& Motores lineales
+& Fundamentos y convertidores de electrónica de potencia
+&& Introducción a la electrónica de potencia y su importancia en la conversión de energía.
+&& Principio de funcionamiento y aplicaciones de variadores de velocidad.
+&& Convertidores AC/DC (rectificadores): funcionamiento, tipos y aplicaciones.
+&& Convertidores DC/DC (choppers): clasificación, regulación de tensión y aplicaciones
+& Convertidores avanzados y aplicaciones
+&& Convertidores DC/AC (inversores): tipos, control y aplicaciones en energías renovables.
+&& Convertidores AC/AC: cicloconvertidores y reguladores de tensión.
+&& Selección y análisis de dispositivos de conmutación en convertidores de potencia.
+&& Aplicaciones prácticas y tendencias en electrónica de potencia.
 "
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas
