@@ -21,6 +21,7 @@ metodo = pd.read_csv("cursos/cursos_metodo.csv")
 metdes = pd.read_csv("cursos/descri_metodo.csv")
 evalua = pd.read_csv("cursos/cursos_evalua.csv")
 evades = pd.read_csv("cursos/descri_evalua.csv")
+evatip = pd.read_csv("cursos/tipos_evalua.csv")
 bibtex = pd.read_csv("cursos/cursos_bibtex.csv")
 profes = pd.read_csv("cursos/cursos_profes.csv")
 rasgos = pd.read_csv("rasgos_ejes/rasgos.csv")
@@ -198,10 +199,13 @@ def generar_programa(id):
     lisObjet = objeti[objeti.id == id].reset_index(drop=True).objetivo
     for index, objetivo in lisObjet.items():
         if index > 0:
+            if (index == len(lisObjet) - 1):
+                if (objetivo[0].lower() == "i"):
+                    desGener += NoEscape(f"e ")
+                else:
+                    desGener += NoEscape(f"y ")
             desGener += NoEscape(f"{objetivo[0].lower() + objetivo[1:]}")
-            if index == len(lisObjet) - 2:
-                desGener += NoEscape(f"; y ")
-            elif index < len(lisObjet) - 2:
+            if index <= len(lisObjet) - 2:
                 desGener += NoEscape(f"; ")
     desGener += NoEscape(r". \newline\newline ")
     curAntess = curAntes[curAntes["id"]==id]["antes"]
@@ -273,7 +277,8 @@ def generar_programa(id):
     metCurso += NoEscape(r"Si un estudiante requiere apoyos educativos, podrá solicitarlos a través del Departamento de Orientación y Psicología. \newline ")
     evaCurso = NoEscape(r"La evaluación se distribuye en los siguientes rubros:")
     evaCurso += NoEscape(r" \newline ")
-    lisEvalu = evalua[evalua.id == id].reset_index(drop=True)
+    tipEvalu = evalua[evalua.id == id].tipoEval.item()
+    lisEvalu = evatip[(evatip.tipo == tipo) & (evatip.tipoEval == tipEvalu)].reset_index(drop=True)
     for consecutivo, evaluas in lisEvalu.iterrows():
         if consecutivo == 0:
             descriEval = NoEscape(r"\begin{itemize} ")  
@@ -364,6 +369,10 @@ def generar_programa(id):
     #Package options
     doc.preamble.append(Command('setmainfont','Arial'))
     doc.preamble.append(Command('addbibresource', '../bibliografia.bib'))
+    doc.preamble.append(Command('addbibresource', '../bib_ADD.bib'))
+    doc.preamble.append(Command('addbibresource', '../bib_AUT.bib'))
+    doc.preamble.append(Command('addbibresource', '../bib_IEE.bib'))
+    doc.preamble.append(Command('addbibresource', '../bib_IMM.bib'))
     doc.preamble.append(NoEscape(r'\renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}'))
     doc.preamble.append(NoEscape(r'''
 \defbibenvironment{bibliography}
@@ -659,9 +668,9 @@ def generar_programa(id):
 # generar_programa("ADD0602")
 # generar_programa("IEE0604")
 # generar_programa("IEE0702")
-generar_programa("AUT0704")
-# generar_programa("INS0801")
+# generar_programa("AUT0704")
 # generar_programa("IEE0802")
+generar_programa("INS0801")
 # generar_programa("SCF0801")
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)

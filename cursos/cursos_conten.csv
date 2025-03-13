@@ -643,79 +643,6 @@ AUT0704,"
 && Control Digital: estructura, discretización del controlador, periodo de muestreo, aliasing, filtrado digital del ruido.  
 && Diseño de sistemas de control en tiempo discreto con métodos convencionales.
 "
-INS0801,"
-& Introducción
-&& Introducción al análisis de los sistemas eléctricos de potencia
-&& Perspectivas generales de los sistemas de transmisión y distribución de energía eléctrica 
-&& Desafíos y oportunidades
-& Elementos de modelado de sistemas eléctricos de potencia
-&& Centrales eléctricas 
-&& Generador sincrónico: modelo y parámetros
-&& Transformador de potencia: modelo y parámetros
-&& Elementos de compensación de potencia reactiva
-&& Subestaciones eléctricas
-&& Cargas estáticas y dinámicas
-&& Sistema p.u.
-& Elementos estáticos de las redes eléctricas
-&& Líneas aéreas
-&& Líneas subterráneas
-&& Resistencia, inductancia, capacitancia y conductancia de la línea de transmisión.
-&& Modelado de la línea de transmisión 
-& Modelado de las líneas de transmisión
-&& Modelo de la línea corta
-&& Modelo de la línea media
-&& Modelo de la línea larga
-& Modelado de componentes de los sistemas de distribución
-&& Líneas eléctricas aéreas y subterráneas
-&& Transformadores 
-&& Demanda 
-&& Generación distribuida e inversores 
-&& Sistemas de almacenamiento 
-&& Vehículos eléctricos  
-& Métodos de análsis de flujos de potencia
-&& Planteamiento del problema de flujo de potencia
-&& Aplicación de Gauss Seidel
-&& Aplicación de Newton Rapson
-&& Aplicación de Desacoplado rápido
-&& Aplicación de Flujo de potencia DC
-&& Reconocimiento y programación en software de simulación
-& Análisis de fallas y estudio de cortocircuito
-&& Planteamiento del problema de cortocircuito
-&& Componentes simétricos 
-&& Síntesis de vectores desequilibrados a partir de componentes simétricos
-&& Operadores, componentes simétricos de vectores asimétricos
-&& Potencia en función de los componentes simétricos
-&& Impedancias de secuencia y redes de secuencia
-&& Fallas no simétricas 
-&& Análisis de fallas monofásicas, bifásicas y trifásicas
-&& Interpretación de las redes de secuencia interconectadas
-&& Análisis de fallas asimétricas utilizando la matriz de impedancias de barras
-& Operación de sistemas de redes inteligentes de distribución
-&& Sistemas avanzados para la gestión de la distribución 
-&& Flujos de potencia y el estimador de estados 
-&& Control de tensión y potencia reactiva 
-&& Análisis de cortocircuito simétrico y asimétrico
-&& Esquemas de protección y gestión de fallas
-&& Coordinación de recursos energéticos distribuidos
-&& Coordinación operativa entre transmisión y distribución
-& Análisis de condiciones anormales en la red
-&& Sobretensiones por descargas atmosféricas 
-&& Origen de las descargas atmosféricas
-&& Variaciones del campo eléctrico y formación de rayos
-&& Pararrayos y zonas de protección, y modelo electro-geométrico
-&& Parámetros eléctricos de las descargas y energía descargada
-&& Blindaje
-&& Sobretensiones por maniobra
-&& Sobretensiones temporales y sobretensiones de frente lento
-&& Sobretensiones de frente rápido y sobretensiones de frente muy rápido
-&& Mecanismos de protección y perturbaciones de baja frecuencia
-&& Perturbaciones de alta frecuencia y problemas por baja tensión
-& Conceptos y aplicaciones de las redes inteligentes
-&& Comunicaciones eléctricas y ciberseguridad  
-&& Manejo de demanda dinámica y medidores inteligentes 
-&& Automatización de sistemas de distribución 
-&& Sistemas de almacenamiento y electrónica de potencia
-"
 IEE0802,"
 & Alternador sincrónico
 && Principio de funcionamiento
@@ -809,6 +736,79 @@ IEE0802,"
 && Convertidores AC/AC: cicloconvertidores y reguladores de tensión.
 && Selección y análisis de dispositivos de conmutación en convertidores de potencia.
 && Aplicaciones prácticas y tendencias en electrónica de potencia.
+"
+INS0801,"
+& Introducción
+&& Introducción al análisis de los sistemas eléctricos de potencia
+&& Perspectivas generales de los sistemas de transmisión y distribución de energía eléctrica 
+&& Desafíos y oportunidades
+& Elementos de modelado de sistemas eléctricos de potencia
+&& Centrales eléctricas 
+&& Generador sincrónico: modelo y parámetros
+&& Transformador de potencia: modelo y parámetros
+&& Elementos de compensación de potencia reactiva
+&& Subestaciones eléctricas
+&& Cargas estáticas y dinámicas
+&& Sistema p.u.
+& Elementos estáticos de las redes eléctricas
+&& Líneas aéreas
+&& Líneas subterráneas
+&& Resistencia, inductancia, capacitancia y conductancia de la línea de transmisión.
+&& Modelado de la línea de transmisión 
+& Modelado de las líneas de transmisión
+&& Modelo de la línea corta
+&& Modelo de la línea media
+&& Modelo de la línea larga
+& Modelado de componentes de los sistemas de distribución
+&& Líneas eléctricas aéreas y subterráneas
+&& Transformadores 
+&& Demanda 
+&& Generación distribuida e inversores 
+&& Sistemas de almacenamiento 
+&& Vehículos eléctricos  
+& Métodos de análsis de flujos de potencia
+&& Planteamiento del problema de flujo de potencia
+&& Aplicación de Gauss Seidel
+&& Aplicación de Newton Rapson
+&& Aplicación de Desacoplado rápido
+&& Aplicación de Flujo de potencia DC
+&& Reconocimiento y programación en software de simulación
+& Análisis de fallas y estudio de cortocircuito
+&& Planteamiento del problema de cortocircuito
+&& Componentes simétricos 
+&& Síntesis de vectores desequilibrados a partir de componentes simétricos
+&& Operadores, componentes simétricos de vectores asimétricos
+&& Potencia en función de los componentes simétricos
+&& Impedancias de secuencia y redes de secuencia
+&& Fallas no simétricas 
+&& Análisis de fallas monofásicas, bifásicas y trifásicas
+&& Interpretación de las redes de secuencia interconectadas
+&& Análisis de fallas asimétricas utilizando la matriz de impedancias de barras
+& Operación de sistemas de redes inteligentes de distribución
+&& Sistemas avanzados para la gestión de la distribución 
+&& Flujos de potencia y el estimador de estados 
+&& Control de tensión y potencia reactiva 
+&& Análisis de cortocircuito simétrico y asimétrico
+&& Esquemas de protección y gestión de fallas
+&& Coordinación de recursos energéticos distribuidos
+&& Coordinación operativa entre transmisión y distribución
+& Análisis de condiciones anormales en la red
+&& Sobretensiones por descargas atmosféricas 
+&& Origen de las descargas atmosféricas
+&& Variaciones del campo eléctrico y formación de rayos
+&& Pararrayos y zonas de protección, y modelo electro-geométrico
+&& Parámetros eléctricos de las descargas y energía descargada
+&& Blindaje
+&& Sobretensiones por maniobra
+&& Sobretensiones temporales y sobretensiones de frente lento
+&& Sobretensiones de frente rápido y sobretensiones de frente muy rápido
+&& Mecanismos de protección y perturbaciones de baja frecuencia
+&& Perturbaciones de alta frecuencia y problemas por baja tensión
+& Conceptos y aplicaciones de las redes inteligentes
+&& Comunicaciones eléctricas y ciberseguridad  
+&& Manejo de demanda dinámica y medidores inteligentes 
+&& Automatización de sistemas de distribución 
+&& Sistemas de almacenamiento y electrónica de potencia
 "
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas
