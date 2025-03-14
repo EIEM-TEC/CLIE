@@ -210,7 +210,11 @@ def generar_programa(id):
     aprCurso = aprCurso[0] + "/" + aprCurso[1] + "/" + aprCurso[2] + " en sesión de Consejo de Escuela " + aprCurso[3]
     codSaber = curras[curras["id"]==id]["codSaber"].item()
     codRasgos = rasgos[rasgos["codSaber"].isin(codSaber)]["rasgo"].unique()
-    desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" aporta en el desarrollo de los siguientes rasgos del plan de estudios: ")
+    desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" aporta en el desarrollo ")
+    if len(codRasgos) > 1:
+        desGener += NoEscape(r"de los siguientes rasgos del plan de estudios: ")
+    else:
+        desGener += NoEscape(r"del siguiente rasgo del plan de estudios: ")
     for index, rasgo in enumerate(codRasgos):
         desGener += NoEscape(f"{rasgo[0].lower() + rasgo[1:]}")
         if index == len(codRasgos) - 2:
@@ -689,14 +693,14 @@ def generar_programa(id):
 # generar_programa("AUT0205")
 # generar_programa("IEE0303")
 # generar_programa("IEE0304")
-generar_programa("IEE0305")
-generar_programa("IEE0403")
+# generar_programa("IEE0305")
+# generar_programa("IEE0403")
 # generar_programa("IEE0404")
 # generar_programa("IEE0405")
 # generar_programa("IMM0407")
 # generar_programa("ADD0502")
 # generar_programa("IEE0503")
-# generar_programa("AUT0504")
+generar_programa("AUT0504")
 # generar_programa("ADD0602")
 # generar_programa("IEE0604")
 # generar_programa("IEE0702")

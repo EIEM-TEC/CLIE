@@ -356,15 +356,15 @@ ADD0502,"
 && Modelado de datos y regresión
 "
 IEE0503,"
-& Introducción a los Sistemas Analógicos
+& Introducción a los sistemas analógicos
 && Conceptos básicos de sistemas analógicos
 && Diferencias entre sistemas analógicos y digitales
 & Aplicaciones de los sistemas analógicos
 && Características y funcionamiento de los amplificadores operacionales
-&& Analisis de amplificadores Operacionales
+&& Analisis de amplificadores operacionales
 && Topologías más utilizadas: inversor, no inversor, sumador, restador
 && Aplicaciones prácticas de amplificadores operacionales
-& Dispositivos Electrónicos
+& Dispositivos electrónicos
 && Características y operación de BJT, MOSFET, IGBT, SCR, TRIAC
 && Selección de dispositivos para aplicaciones específicas
 && Ejemplos de circuitos con estos dispositivos
@@ -376,23 +376,23 @@ IEE0503,"
 && Convertidores analógico-digital (ADC) y digital-analógico (DAC)
 && Convertidores V/F y V/I
 && Integración de sensores en sistemas analógicos
-& Circuitos Integrados Especiales
+& Circuitos integrados especiales
 && Uso del CI 555 en aplicaciones de temporización y oscilación
 && Diseño de circuitos con DAC, ADC y otros CI especiales
 && Ejemplos prácticos y simulaciones
-& Electrónica de Potencia
+& Electrónica de potencia
 && Introducción a la electrónica de potencia
 && Aplicaciones de dispositivos de potencia en sistemas analógicos
 && Diseño de circuitos de potencia
 "
 AUT0504,"
-& Introducción y modelado de Sistemas
+& Introducción y modelado de sistemas
 && Definición de modelo y sistema
 && Respuesta de modelos lineales
-& Transformada de la Place 
-&& Teoremas de la transformada de la place
+& Transformada de Laplace 
+&& Teoremas de la transformada de Laplace
 && Transformada inversa
-&& Solución de Ecuaciones lineales invariantes en el tiempo
+&& Solución de ecuaciones lineales invariantes en el tiempo
 & Modelos por espacio de estado
 && Estado
 && Trasformación entre espacio de estados y otras representaciones
@@ -411,8 +411,13 @@ AUT0504,"
 && Evaluación de modelos
 & Métodos numéricos para la simulación de sistemas
 && Errores asociados a la simulación
-& Modelado con redes neuronales
-& Modelado con sistemas difusos
+& Identificación de sistemas en el dominio del tiempo
+&& Definiciones: curvas de reacción, sistemas autorregulados y no autorregulados
+&& Modelos utilizados en la identificación: modelos integradores, modelos de primer orden más tiempo muerto, modelos de segundo orden más tiempo muerto sobreamortiguados, modelos de segundo orden más tiempo muerto subamortiguados.
+&& Métodos de identificación experimental: métodos de recta tangente, métodos de dos puntos, métodos de tres puntos, métodos por minimización de una función de error de predicción
+&& Obtención de la curva de reacción de un sistema: consideraciones prácticas, caso particular, sistemas de múltiples entradas y múltiples salidas
+& Introducción a las redes nueronales para el modelado de sistemas
+& Introducción a la lógica difusa para el modelado de sistemas
 "
 ADD0602,"
 & Introducción a la fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS) en sistemas electromecánicos
