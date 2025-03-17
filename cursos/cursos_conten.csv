@@ -73,6 +73,54 @@ AUT0205,"
 && Proceso de compilación
 && Fases de un compilador
 "
+IMM0207,"
+& Introducción a la mecánica
+&& Mecánica clásica (newtoniana), Lagrangiana y Hamiltoniana
+&& Ramas de la mecánica
+&& Cuerpos rígidos y cuerpos deformables
+&& La estática en el contexto de la mecánica para ingeniería
+& Equilibrio de una partícula
+&& Condiciones para el equilibrio de una partícula
+&& Diagrama cuerpo libre
+&& Sistemas de fuerzas tridimensionales
+& Centroides
+&& Centro de gravedad, centro de masa y centroide de un cuerpo
+&& Cuerpos compuestos
+&& Teorema de Pappus y Guldinus
+& Resultante de un sistema de fuerzas
+&& Momento de una fuerza
+&& Momento de una fuerza con respecto a un eje específico
+&& Momento de un par
+&& Simplificación de un sistema fuerza y par, fuerzas coplanares y reducción a una llave
+&& Reducción de una carga distribuida a una puntual 
+& Equilibrio de un cuerpo rígido
+&& Condiciones para el equilibrio de un cuerpo rígido
+&& Diagrama de cuerpo libre
+&& Elementos a dos fuerzas y tres fuerzas
+&& Restricciones y determinación estática
+& Análisis estructural
+&& Armaduras simples
+&& Método de nodos
+&& Elementos de fuerza cero
+&& Método de secciones
+&& Armaduras espaciales
+&& Bastidores y máquinas
+& Fuerzas internas
+&& Cargas internas desarrolladas en elementos estructurales
+&& Ecuaciones y diagramas de fuerza cortante y momento flexionante
+&& Relaciones entre carga distribuida, fuerza cortante y momento flexionante
+&& Cables
+& Fricción
+&& Características de la fricción seca
+&& Cuñas
+&& Tornillos
+&& Bandas planas
+&& Chumaceras y discos 
+& Trabajo virtual
+&& Definición de trabajo
+&& Principio del trabajo virtual
+&& Principio del trabajo virtual para un sistema de cuerpos rígidos conectados
+"
 IEE0303,"
 & Conceptos y definiciones
 && Bandas de energía
