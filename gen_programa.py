@@ -405,7 +405,6 @@ def generar_programa(id):
     doc.packages.append(Package(name="booktabs"))
     #Package options
     doc.preamble.append(Command('setmainfont','Arial'))
-    doc.preamble.append(Command('addbibresource', '../bibliografia.bib'))
     doc.preamble.append(Command('addbibresource', '../bibADD.bib'))
     doc.preamble.append(Command('addbibresource', '../bibAUT.bib'))
     doc.preamble.append(Command('addbibresource', '../bibIEE.bib'))
