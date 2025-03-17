@@ -466,7 +466,7 @@ IEE0604,"
 && Variables y funciones booleanas
 && Simplificación de funciones booleanas
 &&	Mapas de Karnaugh
-&&&	Mapas cicliclos, semi-ciclicos
+&&&	Mapas cícliclos, semi-cíclicos
 &&&	Mapas de variable ingresada
 &&	Suma de productos y Producto de Sumas
 & Circuitos Combinacionales
@@ -519,7 +519,7 @@ IEE0702,"
 && Corrientes de línea y fase 
 && Conexiones en cargas balanceadas y desbalanceadas
 & Potencia monofásica y trifásica
-&& Sistemas balanceados y Desbalanceados
+&& Sistemas balanceados y desbalanceados
 && Potencia activa, reactiva y aparente (triángulo de potencias) 
 && Medición del factor de potencia
 && Mejoramiento de factor de potencia
@@ -528,7 +528,7 @@ IEE0702,"
 && Teoría de los dominios ferromagnéticos
 && Curvas de magnetización
 && Lazo de histéresis, flujo residual y fuerza coercitiva
-&& El concepto del circuito magnético Fuerza magnetomotriz, reluctancia y permeancia magnética
+&& El concepto del circuito magnético, fuerza magnetomotriz, reluctancia y permeancia magnética
 && Métodos de análisis de circuitos ferromagnéticos
 && Entrehierros en circuitos ferromagnéticos
 && Estructuras ferromagnéticas, con varias bobinas de excitación
@@ -539,14 +539,14 @@ IEE0702,"
 && Forma de onda de la corriente de excitación
 && Energía almacenada en el núcleo ferromagnético
 && Pérdida de energía en el núcleo ferromagnético
-&& Modelo de la corriente de excitación no senoidal. Armónicas impares
-&& Cálculo de los parámetros de un reactor, con núcleo ferromagnético
-& Transformadores Monofásicos
-&& Tipos de transformadores de distribución. Aéreos, subterráneos, sumergibles, convencionales y de pedestal
+&& Modelo de la corriente de excitación no senoidal, armónicas impares
+&& Cálculo de los parámetros de un reactor con núcleo ferromagnético
+& Transformadores monofásicos
+&& Tipos de transformadores de distribución. aéreos, subterráneos, sumergibles, convencionales y de pedestal
 && El transformador ideal
 && Polaridad de los transformadores
 && Transformadores aditivos y sustractivos
-&& El transformador real. Núcleos laminados, flujos de dispersión, y pérdidas en el núcleo
+&& El transformador real: núcleos laminados, flujos de dispersión, y pérdidas en el núcleo
 && Circuito del transformador real y diagramas fasoriales
 && Cálculo de parámetros del transformador real
 && Regulación de tensión del transformador
@@ -567,20 +567,20 @@ IEE0702,"
 && Ley de Ampere
 && Ley de Faraday-Lenz
 && Fuerza de Lorentz
-&& Construcción de las partes principales de una máquina eléctrica rotativa.
+&& Construcción de las partes principales de una máquina eléctrica rotativa
 && Velocidad del campo magnético rotatorio, velocidad mecánica, deslizamiento y frecuencia en el rotor
 && Circuito equivalente
 && Par desarrollado en función del deslizamiento
-&& Curva característica: Arranque directo
+&& Curva característica: arranque directo
 && Descripción de datos de la placa característica
 && Métodos de arranque por resistencias estatóricas, estrella-delta, devanado partido, auto transformador, resistencia rotórica y arranque suave
 && Métodos de control de velocidad y variador de frecuencia
 && Pérdidas eléctricas, mecánicas, magnéticas y eficiencia
 & Motor monofásico de inducción
 && Construcción y modelado dinámico de la máquina
-&& Principio de funcionamiento (Doble campo magnético rotatorio):
+&& Principio de funcionamiento (doble campo magnético rotatorio):
 && Tipos de motores:
-&& Fase Partida
+&& Fase partida
 && Capacitor de arranque
 && Capacitor permanente
 && Doble capacitor
@@ -653,16 +653,16 @@ IEE0802,"
 && Construcción de las partes principales
 && Tipos de rotor
 && Sistemas de control de máquinas sincrónicas
-&& Excitación de alternadores (Con escobillas, sin escobillas)
+&& Excitación de alternadores (con escobillas, sin escobillas)
 && Principios de funcionamiento y curva de magnetización
 && Modelo en régimen permanente y diagramas fasoriales
 && Ecuaciones para modelado
 && Inductancias propias de la máquina sincrónica
 && Transformación de Park
 && Diagramas fasoriales
-&& Ecuaciones de Potencia activa y reactiva
+&& Ecuaciones de potencia activa y reactiva
 && Límites de estabilidad
-&& Sistema pu de la máquina sincrónica
+&& Sistema p.u. de la máquina sincrónica
 && Alternador en funcionamiento aislado
 && Regulación de tensión y factor de potencia
 && Saturación de la máquina sincrónica
@@ -706,11 +706,11 @@ IEE0802,"
 && Método de excitación de campo
 && Generador excitación independiente
 && Características
-&& Generador auto excitadas:
-&& Conexión Shunt
-&& Conexión Serie
-&& Conexión Compuesto-acumulativa
-&& Conexión Compuesto diferencial
+&& Generador auto excitadas
+&& Conexión shunt
+&& Conexión serie
+&& Conexión compuesto-acumulativa
+&& Conexión compuesto-diferencial
 && Eficiencia
 && Datos de placa
 && Escobillas

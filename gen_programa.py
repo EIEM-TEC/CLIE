@@ -86,6 +86,7 @@ def fontselect(size,vspace):
 def generar_programa(id):
     listProf = profes[profes.id == id].profesores.str.split(';').item()
     codCurso = cursos[cursos.id == id].codigo.item()
+    areCurso = cursos[cursos.id == id].area.item()
     nomEscue = "Escuela de Ingeniería Electromecánica"
     lisProgr = progra[progra.id == id].drop('id',axis=1)
     numProgr = len(lisProgr.programa)
@@ -166,7 +167,7 @@ def generar_programa(id):
         scfRequi = ""
         for esrequisito in lisEsreq:
             areaEsreq = cursos[cursos.id == esrequisito].area.item()
-            if areaEsreq not in ["INS","AER","SCF"]:
+            if (areaEsreq not in ["INS","AER","SCF"]) or (areCurso in ["INS","AER","SCF"]):
                 if cTRC != 0:
                     trcRequi += "; "
                 trcRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
@@ -409,6 +410,8 @@ def generar_programa(id):
     doc.preamble.append(Command('addbibresource', '../bibAUT.bib'))
     doc.preamble.append(Command('addbibresource', '../bibIEE.bib'))
     doc.preamble.append(Command('addbibresource', '../bibIMM.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibINS.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibSCF.bib'))
     doc.preamble.append(NoEscape(r'\renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}'))
     doc.preamble.append(NoEscape(r'''
 \defbibenvironment{bibliography}
@@ -700,14 +703,14 @@ def generar_programa(id):
 # generar_programa("IMM0407")
 # generar_programa("ADD0502")
 # generar_programa("IEE0503")
-generar_programa("AUT0504")
+# generar_programa("AUT0504")
 # generar_programa("ADD0602")
 # generar_programa("IEE0604")
 # generar_programa("IEE0702")
 # generar_programa("AUT0704")
 # generar_programa("IEE0802")
 # generar_programa("INS0801")
-# generar_programa("SCF0801")
+generar_programa("SCF0801")
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
