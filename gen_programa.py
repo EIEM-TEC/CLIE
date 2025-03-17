@@ -693,6 +693,7 @@ def generar_programa(id):
 
 # generar_programa("CYD0107")
 # generar_programa("AUT0205")
+generar_programa("IMM0207")
 # generar_programa("IEE0303")
 # generar_programa("IEE0304")
 # generar_programa("IEE0305")
@@ -709,7 +710,7 @@ def generar_programa(id):
 # generar_programa("AUT0704")
 # generar_programa("IEE0802")
 # generar_programa("INS0801")
-generar_programa("SCF0801")
+# generar_programa("SCF0801")
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
