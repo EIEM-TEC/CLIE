@@ -21,6 +21,7 @@ metodo = pd.read_csv("cursos/cursos_metodo.csv")
 metdes = pd.read_csv("cursos/descri_metodo.csv")
 evalua = pd.read_csv("cursos/cursos_evalua.csv")
 evades = pd.read_csv("cursos/descri_evalua.csv")
+evatip = pd.read_csv("cursos/tipos_evalua.csv")
 bibtex = pd.read_csv("cursos/cursos_bibtex.csv")
 profes = pd.read_csv("cursos/cursos_profes.csv")
 rasgos = pd.read_csv("rasgos_ejes/rasgos.csv")
@@ -30,17 +31,15 @@ curras = pd.read_csv("cursos/cursos_rasgos.csv")
 curras["codSaber"] = curras["codSaber"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
 curcur = pd.read_csv("cursos/cursos_cursos.csv")
 curAntes = pd.DataFrame()
-curAntes = curcur[["id","antes"]]
+curAntes = curcur[["id","antes"]].copy()
 curAntes["antes"] = curAntes["antes"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
 curAntes = curAntes.explode("antes")
 curDespues = pd.DataFrame()
-curDespues = curcur[["id","despues"]]
-curDespues["despues"] = curDespues["despues"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
+curDespues = curcur[["id","despues"]].copy()
+curDespues["despues"] = curDespues["despues"].str.split(';', expand=False)#convertir los valores separados por ; en una lista por fila
 curDespues = curDespues.explode("despues")
 datProfes = pd.read_csv("profes_datos.csv")
 areas = pd.read_csv("areas.csv")
-
-print(curAntes)
 
 tipCursoDic = {
     0: "Teórico",
@@ -86,10 +85,9 @@ def fontselect(size,vspace):
 
 def generar_programa(id):
     listProf = profes[profes.id == id].profesores.str.split(';').item()
-    print(listProf)
     codCurso = cursos[cursos.id == id].codigo.item()
+    areCurso = cursos[cursos.id == id].area.item()
     nomEscue = "Escuela de Ingeniería Electromecánica"
-    print(nomEscue)
     lisProgr = progra[progra.id == id].drop('id',axis=1)
     numProgr = len(lisProgr.programa)
     counter = 0
@@ -101,23 +99,18 @@ def generar_programa(id):
         counter += 1
         strProgr += programa
         if counter < numProgr:
-            
             if numProgr == 2:
                 strProgr += " y "
             else:
                 strProgr += ", "  
-    print(strProgr)
     nomCurso = cursos[cursos.id == id].nombre.item()
     print(f'Curso: {nomCurso}')
     tipo = detall[detall.id == id].tipo.item()
     tipCurso = tipCursoDic.get(detall[detall.id == id].tipo.item())
-    print(f'Tipo: {tipCurso}')
     eleCurso = eleCursoDic.get(detall[detall.id == id].electivo.item())
-    print(f'Obligatorio o electivo: {eleCurso}')
     numCredi = cursos[cursos.id == id].creditos.item()
     horClass = cursos[cursos.id == id].horasTeoria.item() + cursos[cursos.id == id].horasPractica.item()
     horExtra = (numCredi * 3) - horClass
-    print(f'Créditos: {numCredi}, Horas clase: {horClass}, Horas extraclase: {horExtra}')
     ubiPlane = ""
     counter = 0
     for programa in lisProgr.programa:
@@ -126,7 +119,6 @@ def generar_programa(id):
         ubiPlane += "Curso de " + fun.number_to_ordinals(str(int(semestre))) + " semestre en " + programa
         if counter > 1:
             ubiPlane += ". "
-    print(ubiPlane)
     susRequi = ""
     lisRequi = cursos[cursos.id == id].requisitos.item()
     if str(lisRequi) != "nan":
@@ -140,9 +132,10 @@ def generar_programa(id):
             susRequi += cursos[cursos.id == requisito].nombre.item()
             if counter < numRequi:
                 susRequi += "; "
+            else:
+                susRequi += "."
     else:
         susRequi += "Ninguno"
-    print(f'Requisitos: {susRequi}')
     corRequi = ""
     lisCorre = cursos[cursos.id == id].correquisitos.item()
     if str(lisCorre) != "nan":
@@ -156,37 +149,73 @@ def generar_programa(id):
             corRequi += cursos[cursos.id == correquisito].nombre.item()
             if counter < numCorre:
                 corRequi += "; "
+            else:  
+                corRequi += "."
     else:
         corRequi += "Ninguno"
-    print(f'Correquisitos: {corRequi}')
-    essRequi = ""
+    essRequi = NoEscape("")
     lisEsreq = cursos[cursos.id == id].esrequisito.item()
     if str(lisEsreq) != "nan":
         lisEsreq = cursos[cursos.id == id].esrequisito.str.split(';').explode().reset_index(drop=True)
-        numEsreq = len(lisEsreq)
-        counter = 0
+        cTRC = 0
+        trcRequi = ""
+        cINS = 0
+        insRequi = ""
+        cAER = 0
+        aerRequi = ""
+        cSCF = 0
+        scfRequi = ""
         for esrequisito in lisEsreq:
-            counter += 1
-            essRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
-            essRequi += " "
-            essRequi += cursos[cursos.id == esrequisito].nombre.item()
-            if counter < numEsreq:
-                essRequi += "; "
+            areaEsreq = cursos[cursos.id == esrequisito].area.item()
+            if (areaEsreq not in ["INS","AER","SCF"]) or (areCurso in ["INS","AER","SCF"]):
+                if cTRC != 0:
+                    trcRequi += "; "
+                trcRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
+                trcRequi += " "
+                trcRequi += cursos[cursos.id == esrequisito].nombre.item()
+                cTRC += 1
+            elif areaEsreq == "INS":
+                if cINS == 0:
+                    insRequi += r". \emph{Énfasis en Instalaciones Electromecánicas:} "
+                else:
+                    insRequi += "; "  
+                insRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
+                insRequi += " "
+                insRequi += cursos[cursos.id == esrequisito].nombre.item()
+                cINS += 1
+            elif areaEsreq == "AER":
+                if cAER == 0:
+                    aerRequi += r". \emph{Énfasis en Aeronáutica:} "
+                else:
+                    aerRequi += "; " 
+                aerRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
+                aerRequi += " "
+                aerRequi += cursos[cursos.id == esrequisito].nombre.item()             
+                cAER += 1
+            elif areaEsreq == "SCF":
+                if cSCF == 0:
+                    scfRequi += r". \emph{Énfasis en Sistemas Ciberfísicos:} "
+                else:
+                    scfRequi += "; "
+                scfRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
+                scfRequi += " "
+                scfRequi += cursos[cursos.id == esrequisito].nombre.item()
+                cSCF += 1
+        essRequi = NoEscape(trcRequi) + NoEscape(insRequi) + NoEscape(aerRequi) + NoEscape(scfRequi) + NoEscape(".")
     else:
-        essRequi += "Ninguno"
-    print(f'Es requisito de: {essRequi}')
+        essRequi += NoEscape("Ninguno")
     tipAsist = tipAsistDic.get(detall[detall.id == id].asistencia.item())
     posSufic = sinoDic.get(detall[detall.id == id].suficiencia.item())
     posRecon = sinoDic.get(detall[detall.id == id].reconocimiento.item())
-    print(f'Asistencia: {tipAsist}, Suficiencia: {posSufic}, Reconocimiento: {posRecon}') 
     aprCurso = detall[detall.id == id].aprobacion.str.split(';').explode().reset_index(drop=True)
     aprCurso = aprCurso[0] + "/" + aprCurso[1] + "/" + aprCurso[2] + " en sesión de Consejo de Escuela " + aprCurso[3]
-    print(f'Aprobación del programa: {aprCurso}\n\n')
-    print(curras[curras["id"]==id]["codSaber"])
     codSaber = curras[curras["id"]==id]["codSaber"].item()
     codRasgos = rasgos[rasgos["codSaber"].isin(codSaber)]["rasgo"].unique()
-    print(codRasgos)
-    desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" aporta en el desarrollo de los siguientes rasgos del plan de estudios: ")
+    desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" aporta en el desarrollo ")
+    if len(codRasgos) > 1:
+        desGener += NoEscape(r"de los siguientes rasgos del plan de estudios: ")
+    else:
+        desGener += NoEscape(r"del siguiente rasgo del plan de estudios: ")
     for index, rasgo in enumerate(codRasgos):
         desGener += NoEscape(f"{rasgo[0].lower() + rasgo[1:]}")
         if index == len(codRasgos) - 2:
@@ -198,10 +227,13 @@ def generar_programa(id):
     lisObjet = objeti[objeti.id == id].reset_index(drop=True).objetivo
     for index, objetivo in lisObjet.items():
         if index > 0:
+            if (index == len(lisObjet) - 1):
+                if (objetivo[0].lower() == "i"):
+                    desGener += NoEscape(f"e ")
+                else:
+                    desGener += NoEscape(f"y ")
             desGener += NoEscape(f"{objetivo[0].lower() + objetivo[1:]}")
-            if index == len(lisObjet) - 2:
-                desGener += NoEscape(f"; y ")
-            elif index < len(lisObjet) - 2:
+            if index <= len(lisObjet) - 2:
                 desGener += NoEscape(f"; ")
     desGener += NoEscape(r". \newline\newline ")
     curAntess = curAntes[curAntes["id"]==id]["antes"]
@@ -212,11 +244,16 @@ def generar_programa(id):
     else:
         desGener += NoEscape(r"el curso de: ")
     for index, curAnte in enumerate(curAntess):
-        desGener += NoEscape(cursos[cursos["id"]==curAnte].nombre.item())
-        if index == len(curAntess) - 2:
-            desGener += NoEscape(f", y ")
-        elif index < len(curAntess) - 2:
-            desGener += NoEscape(f", ")
+        cursoAntes = cursos[cursos["id"]==curAnte].nombre.item()
+        if index != 0:
+            if index == len(curAntess) - 1:
+                if cursoAntes[0].lower() == "i":
+                    desGener += NoEscape(f", e ")
+                else:
+                    desGener += NoEscape(f", y ")                
+            elif index < len(curAntess) - 1:
+                desGener += NoEscape(f", ")
+        desGener += NoEscape(cursoAntes)
     desGener += NoEscape(r". \newline\newline ")
     desGener += NoEscape(r"Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en ")
     if len(curDespuess) > 1:
@@ -224,11 +261,16 @@ def generar_programa(id):
     else:
         desGener += NoEscape(r"el curso de: ")
     for index, curDespue in enumerate(curDespuess):
-        desGener += NoEscape(cursos[cursos["id"]==curDespue].nombre.item())
-        if index == len(curDespuess) - 2:
-            desGener += NoEscape(f", y ")
-        elif index < len(curDespuess) - 2:
-            desGener += NoEscape(f", ")
+        cursoDespues = cursos[cursos["id"]==curDespue].nombre.item()
+        if index != 0:
+            if index == len(curDespuess) - 1:
+                if cursoDespues[0].lower() == "i":
+                    desGener += NoEscape(f", e ")
+                else:
+                    desGener += NoEscape(f", y ")
+            elif index < len(curDespuess) - 1:
+                desGener += NoEscape(f", ")
+        desGener += NoEscape(cursoDespues)
     desGener += NoEscape(r". ")
     for consecutivo, objetivo in lisObjet.items():
         if consecutivo == 0:
@@ -273,7 +315,8 @@ def generar_programa(id):
     metCurso += NoEscape(r"Si un estudiante requiere apoyos educativos, podrá solicitarlos a través del Departamento de Orientación y Psicología. \newline ")
     evaCurso = NoEscape(r"La evaluación se distribuye en los siguientes rubros:")
     evaCurso += NoEscape(r" \newline ")
-    lisEvalu = evalua[evalua.id == id].reset_index(drop=True)
+    tipEvalu = evalua[evalua.id == id].tipoEval.item()
+    lisEvalu = evatip[(evatip.tipo == tipo) & (evatip.tipoEval == tipEvalu)].reset_index(drop=True)
     for consecutivo, evaluas in lisEvalu.iterrows():
         if consecutivo == 0:
             descriEval = NoEscape(r"\begin{itemize} ")  
@@ -286,11 +329,11 @@ def generar_programa(id):
     evaTabla += NoEscape(r" \toprule ") 
     total = 0
     for consecutivo, evaluas in lisEvalu.iterrows():
-        evaTabla += NoEscape(f" {evaluas.evaluacion} ({evaluas.cantidad}) & {evaluas.porcentaje} \\% \\\ ")
+        evaTabla += NoEscape(f" {evaluas.evaluacion} ({evaluas.cantidad}) & {evaluas.porcentaje} \\%") + NoEscape(r" \\ ")
         evaTabla += NoEscape(r" \midrule ")
         total += evaluas.porcentaje
         if consecutivo == len(lisEvalu)-1:
-            evaTabla += NoEscape(f"Total & {total} \\% \\\ ")
+            evaTabla += NoEscape(f"Total & {total} \\%") + NoEscape(r" \\ ")
             evaTabla += NoEscape(r" \bottomrule ")
     evaTabla += NoEscape(r" \end{tabular} \end{minipage}")
     evaRepo = NoEscape(r"De conformidad con el artículo 78 del Reglamento del Régimen Enseñanza-Aprendizaje del Instituto Tecnológico de Costa Rica y sus Reformas, en este curso la persona estudiante ")
@@ -304,7 +347,6 @@ def generar_programa(id):
     bibCurso = NoEscape(r'\nocite{' + ('} '+r'\nocite{').join(bibtex[bibtex.id == id].bibtex.item().split(';')) + '} ')
     bibPrint = NoEscape(r'\vspace*{-8mm}\printbibliography[heading=none]')
     dataProf = datProfes[datProfes.Codigo.isin(listProf)]
-    print(dataProf)
     proImpar = NoEscape(r"El curso será impartido por:")
     proCurso = NoEscape(r'\vspace*{-4mm}\begin{textoMargen}')
     for consecutivo, profe in dataProf.iterrows():
@@ -322,7 +364,7 @@ def generar_programa(id):
         proCurso += NoEscape(Command("emph", "  Teléfono:").dumps())     
         proCurso += NoEscape(f" {int(profe.Telefono)}")
         proCurso += NoEscape(r" \vspace*{1mm} \newline ")
-        proCurso += NoEscape(Command("emph", "  Oficina:").dumps())     
+        proCurso += NoEscape(Command("emph", "  Oficina:").dumps())    
         proCurso += NoEscape(f" {int(profe.Oficina)}")
         proCurso += NoEscape(Command("emph", "  Escuela:").dumps())  
         proCurso += NoEscape(f" {profe.Escuela}")
@@ -363,7 +405,12 @@ def generar_programa(id):
     doc.packages.append(Package(name="booktabs"))
     #Package options
     doc.preamble.append(Command('setmainfont','Arial'))
-    doc.preamble.append(Command('addbibresource', '../bibliografia.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibADD.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibAUT.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibIEE.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibIMM.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibINS.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibSCF.bib'))
     doc.preamble.append(NoEscape(r'\renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}'))
     doc.preamble.append(NoEscape(r'''
 \defbibenvironment{bibliography}
@@ -516,7 +563,7 @@ def generar_programa(id):
             table.append(NoEscape('[10pt]'))
             table.add_row([bold("Correquisitos:"), f"{corRequi}"])
             table.append(NoEscape('[10pt]'))
-            table.add_row([bold("El curso es requisito de:"), f"{essRequi}"])
+            table.add_row([bold("El curso es requisito de:"), NoEscape(f"{essRequi}")])
             table.append(NoEscape('[10pt]'))
             table.add_row([bold("Asistencia:"), f"{tipAsist}"])
             table.append(NoEscape('[10pt]'))
@@ -659,10 +706,10 @@ def generar_programa(id):
 # generar_programa("ADD0602")
 # generar_programa("IEE0604")
 # generar_programa("IEE0702")
-generar_programa("AUT0704")
-# generar_programa("INS0801")
+# generar_programa("AUT0704")
 # generar_programa("IEE0802")
-# generar_programa("SCF0801")
+# generar_programa("INS0801")
+generar_programa("SCF0801")
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
