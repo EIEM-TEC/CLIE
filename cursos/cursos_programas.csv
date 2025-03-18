@@ -1,10 +1,12 @@
 id,programa,semestre
 CYD0107,Ingeniería Electromecánica (tronco común),1
+FPH0108,Ingeniería Electromecánica (tronco común),1
 AUT0205,Ingeniería Electromecánica (tronco común),2
 IMM0207,Ingeniería Electromecánica (tronco común),2
 IEE0303,Ingeniería Electromecánica (tronco común),3
 IEE0304,Ingeniería Electromecánica (tronco común),3
 IEE0305,Ingeniería Electromecánica (tronco común),3
+IMM0307,Ingeniería Electromecánica (tronco común),3
 IEE0403,Ingeniería Electromecánica (tronco común),4
 IEE0404,Ingeniería Electromecánica (tronco común),4
 IEE0405,Ingeniería Electromecánica (tronco común),4
@@ -12,6 +14,7 @@ IMM0407,Ingeniería Electromecánica (tronco común),4
 ADD0502,Ingeniería Electromecánica (tronco común),5
 IEE0503,Ingeniería Electromecánica (tronco común),5
 AUT0504,Ingeniería Electromecánica (tronco común),5
+IMM0506,Ingeniería Electromecánica (tronco común),5
 ADD0602,Ingeniería Electromecánica (tronco común),6
 IEE0604,Ingeniería Electromecánica (tronco común),6
 IEE0702,Ingeniería Electromecánica (tronco común),7

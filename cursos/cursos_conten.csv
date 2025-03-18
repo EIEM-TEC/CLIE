@@ -31,6 +31,77 @@ CYD0107,"
 && Criterios para la acotación correcta de proyecciones ortogonales
 && Relación entre cota y escala
 "
+FPH0108,"
+& Introducción a la ingeniería electromecánica
+&& ¿Qué es la ingeniería electromecánica?
+&& Historia y evolución de la ingeniería electromecánica
+&& Importancia en la industria y la sociedad.
+&& Relación con otras disciplinas (mecánica, eléctrica, electrónica, aeronáutica, sistemas ciber físicos).
+& El rol de la persona ingeniera electromecánica
+&& Perfil profesional y competencias clave
+&& Ética y responsabilidad en la ingeniería
+&& Impacto social, ambiental y económico de la profesión
+& Fundamentos de mecánica clásica
+&& Leyes de Newton y análisis de fuerzas
+&& Cinemática y dinámica de cuerpos rígidos
+&& Energía mecánica y eficiencia
+&& Aplicaciones en sistemas electromecánicos 
+& Termodinámica y conversión de energía
+&& Principios de la termodinámica
+&& Ciclos termodinámicos
+&& Aplicaciones en motores térmicos y sistemas de refrigeración
+& Mecánica de fluidos y transferencia de calor
+&& Principios de mecánica de fluidos: ecuación de continuidad y Bernoulli.
+&& Fundamentos de transferencia de calor: conducción, convección y radiación.
+&& Aplicaciones en sistemas térmicos y de refrigeración.
+& Principios de ingeniería eléctrica
+&& Circuitos eléctricos básicos y leyes de Kirchhoff
+&& Magnetismo y sus aplicaciones en transformadores y motores eléctricos
+&& Generación, transmisión y distribución de energía
+& Fundamentos de ingeniería electrónica y de  control
+&& Conceptos básicos de circuitos electrónicos
+&& Sensores y actuadores en sistemas electromecánicos
+&& Introducción al control automático y sistemas embebidos
+& Programación aplicada a la electromecánica para diseño y simulación
+&& Introducción al modelado y simulación
+&& Lenguajes comunes
+&& Control de sistemas electromecánicos con programación
+&& Simulación de sistemas simples
+&& Aplicaciones en la industria
+& Sistemas ciberfísicos y transformación digital
+&& Definición y aplicaciones de sistemas ciber físicos
+&& Internet de las cosas (IoT) en la ingeniería electromecánica
+&& Gemelos digitales y manufactura inteligente
+& Ingeniería Aeronáutica
+&& Sistemas electromecánicos en aeronaves
+&& Principios básicos de aerodinámica y propulsión
+&& Electrificación y automatización en la aviación
+& Energías renovables, eficiencia energética y sostenibilidad
+&& Fuentes de energía tradicionales: hidráulica, geotérmica, térmica
+&& Fuentes de energía no tradicionales: eólica, solar y oceánica
+&& Almacenamiento de energía y baterías
+&& Vehículos eléctricos
+&& Diseño para la eficiencia energética en sistemas electromecánicos
+&& Impacto ambiental y normativas de sustentabilidad
+& Gestión y administración en ingeniería
+&& Fundamentos de gestión de proyectos
+&& Costos y presupuestos en ingeniería electromecánica
+&& Estrategias clásicas y emergentes de mantenimiento industrial
+& Desarrollo profesional y oportunidades laborales
+&& Normativa nacional y responsabilidad profesional
+&& Certificaciones y especializaciones clave
+&& Sectores industriales y áreas de aplicación
+&& Habilidades y competencias para el mercado laboral
+& Seguridad en ingeniería electromecánica
+&& Normas de seguridad eléctrica, mecánica y térmica
+&& Protocolos de protección en instalaciones electromecánicas
+&& Prevención de riesgos en la industria
+& Tendencias y futuro de la ingeniería electromecánica
+&& Transformación digital y manufactura inteligente
+&& Inteligencia artificial aplicada a sistemas electromecánicos
+&& Avances en materiales inteligentes y manufactura aditiva
+&& Perspectivas futuras de la ingeniería electromecánica
+"
 AUT0205,"
 & Introducción a las ciencias de la computación
 && Surgimiento de computación moderna
@@ -241,6 +312,32 @@ IEE0305,"
 && Transmisión de datos
 && Excitadores
 && Ruido e interferencia
+"
+IMM0307,"
+& Cinemática de Partículas
+&& Cinemática del movimiento rectilíneo
+&& Cinemática del movimiento curvilíneo
+&& Movimiento dependiente absoluto y relativo de dos o más partículas
+& Cinética de partículas y sistemas de partículas
+&& Segunda Ley de Newton
+&& Métodos de trabajo y energía
+&& Principio del Impulso y cantidad de movimiento
+& Cinemática del movimiento plano de cuerpos rígidos 
+&& Traslación pura
+&& Rotación en torno a un eje fijo
+&& Movimiento plano general
+&& Análisis del movimiento relativo
+&& Sistemas de referencia en rotación
+& Cinética del movimiento plano de cuerpos rígidos 
+&& Segunda Ley de Newton
+&& Métodos de trabajo y energía
+&& Principio del Impulso y cantidad de movimiento
+& Vibraciones mecánicas    
+&& Vibración libre no amortiguada
+&& Vibración forzada no amortiguada
+&& Vibración libre amortiguada 
+&& Vibración forzada amortiguada 
+&& Métodos de Energía
 "
 IEE0403,"
 & Conceptos y Definiciones
@@ -466,6 +563,63 @@ AUT0504,"
 && Obtención de la curva de reacción de un sistema: consideraciones prácticas, caso particular, sistemas de múltiples entradas y múltiples salidas
 & Introducción a las redes nueronales para el modelado de sistemas
 & Introducción a la lógica difusa para el modelado de sistemas
+"
+IMM0506,"
+& Introducción
+&& Tipos de materiales
+&& Propiedades típicas de los materiales
+&& Uso de los materiales
+& Normas internacionales sobre materiales
+&& American Society for Testing and Materials (ASTM): Acero estructural al carbono (ASTM A36), acero inoxidable (ASTM AISI 304/316), aluminio (ASTM B209)
+&& International Organization for Standardization (ISO): Aceros para herramientas (ISO 4957), aluminio y aleaciones de aluminio (ISO 209), plásticos (ISO 1043)
+&& American Society of Mechanical Engineers (ASME): materiales ferrosos (ASME II Part A), materiales no ferrosos (ASME II Part B), tablas de propiedades (ASME II Part D)
+& Análisis de materiales
+&& Pruebas mecánicas normalizadas (ASTM y ISO)
+&& Ensayos no destructivos
+&& Análisis metalográfico
+& Estructura atómica, enlaces, cristalinidad y difusión
+&& Enlaces
+&& Redes espaciales
+&& Sistemas cristalinos
+&& Imperfecciones cristalinas
+&& Mecanismos de difusión
+&& Diagramas de fases
+& Materiales metálicos
+&& Propiedades de los materiales metálicos
+&& Soluciones sólidas, compuestos y mezclas
+&& Diagrama Fe-C
+&& Características de las aleaciones Fe-C en función de los elementos de aleación
+&& Fundiciones
+&& Tratamientos térmicos y termoquímicos
+&& Aleaciones no ferrosas (cobre, aluminio)
+&& Disponibilidad en el país
+& Materiales cerámicos
+&& Propiedades
+&& Procesos de fabricación
+&& Tipos
+&& Cerámicos refractarios
+&& Vidrios
+&& Disponibilidad en el país
+& Materiales poliméricos
+&& Introducción y clasificación
+&& Polimerización (adición y condensación)
+&& Polímeros termoplásticos
+&& Polímeros termoestables
+&& Elastómeros (el caucho)
+&& Aditivos y conformado de los polímeros
+&& Disponibilidad en el país
+& Materiales compuestos
+&& Propiedades y características
+&& Análisis tenso-elástico
+&& Matrices y fibras
+&& Disponibilidad en el país
+& Otros materiales
+&& Semiconductores
+&& Hormigón
+&& Asfalto
+&& Madera
+&& Papel
+&& Disponibilidad en el país
 "
 ADD0602,"
 & Introducción a la fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS) en sistemas electromecánicos

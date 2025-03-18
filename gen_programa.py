@@ -238,23 +238,24 @@ def generar_programa(id):
     desGener += NoEscape(r". \newline\newline ")
     curAntess = curAntes[curAntes["id"]==id]["antes"]
     curDespuess = curDespues[curDespues["id"]==id]["despues"]
-    desGener += NoEscape(r"Para desempeñarse adecuadamente en este curso, los estudiantes deben poner en práctica lo aprendido en ")
-    if len(curAntess) > 1:
-        desGener += NoEscape(r"los cursos de: ")
-    else:
-        desGener += NoEscape(r"el curso de: ")
-    for index, curAnte in enumerate(curAntess):
-        cursoAntes = cursos[cursos["id"]==curAnte].nombre.item()
-        if index != 0:
-            if index == len(curAntess) - 1:
-                if cursoAntes[0].lower() == "i":
-                    desGener += NoEscape(f", e ")
-                else:
-                    desGener += NoEscape(f", y ")                
-            elif index < len(curAntess) - 1:
-                desGener += NoEscape(f", ")
-        desGener += NoEscape(cursoAntes)
-    desGener += NoEscape(r". \newline\newline ")
+    if codCurso not in ["EE0108"]:
+        desGener += NoEscape(r"Para desempeñarse adecuadamente en este curso, los estudiantes deben poner en práctica lo aprendido en ")
+        if len(curAntess) > 1:
+            desGener += NoEscape(r"los cursos de: ")
+        else:
+            desGener += NoEscape(r"el curso de: ")
+        for index, curAnte in enumerate(curAntess):
+            cursoAntes = cursos[cursos["id"]==curAnte].nombre.item()
+            if index != 0:
+                if index == len(curAntess) - 1:
+                    if cursoAntes[0].lower() == "i":
+                        desGener += NoEscape(f", e ")
+                    else:
+                        desGener += NoEscape(f", y ")                
+                elif index < len(curAntess) - 1:
+                    desGener += NoEscape(f", ")
+            desGener += NoEscape(cursoAntes)
+        desGener += NoEscape(r". \newline\newline ")
     desGener += NoEscape(r"Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en ")
     if len(curDespuess) > 1:
         desGener += NoEscape(r"los cursos de: ")
@@ -405,6 +406,7 @@ def generar_programa(id):
     doc.packages.append(Package(name="booktabs"))
     #Package options
     doc.preamble.append(Command('setmainfont','Arial'))
+    doc.preamble.append(Command('addbibresource', '../bibFPH.bib'))
     doc.preamble.append(Command('addbibresource', '../bibADD.bib'))
     doc.preamble.append(Command('addbibresource', '../bibAUT.bib'))
     doc.preamble.append(Command('addbibresource', '../bibIEE.bib'))
@@ -691,12 +693,14 @@ def generar_programa(id):
 # for id in cursos.id:
 #      generar_programa(id)
 
-# generar_programa("CYD0107")
-# generar_programa("AUT0205")
-generar_programa("IMM0207")
+# generar_programa("CYD0107") #Dibujo Tec
+# generar_programa("FPH0108")
+# generar_programa("AUT0205") #Int. Compu
+# generar_programa("IMM0207")
 # generar_programa("IEE0303")
 # generar_programa("IEE0304")
 # generar_programa("IEE0305")
+# generar_programa("IMM0307") #Dinamica
 # generar_programa("IEE0403")
 # generar_programa("IEE0404")
 # generar_programa("IEE0405")
@@ -704,13 +708,14 @@ generar_programa("IMM0207")
 # generar_programa("ADD0502")
 # generar_programa("IEE0503")
 # generar_programa("AUT0504")
+generar_programa("IMM0506") #materiales
 # generar_programa("ADD0602")
 # generar_programa("IEE0604")
-# generar_programa("IEE0702")
+# generar_programa("IEE0702") #Maquinas I
 # generar_programa("AUT0704")
-# generar_programa("IEE0802")
-# generar_programa("INS0801")
-# generar_programa("SCF0801")
+# generar_programa("IEE0802") #Maquinas II
+# generar_programa("INS0801") #Trans y distr
+# generar_programa("SCF0801") #Ing. Sistemas
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
