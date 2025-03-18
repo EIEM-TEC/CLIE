@@ -706,6 +706,97 @@ IEE0604,"
 && Síntesis y generación del bitstream
 && Implementación y programación en la FPGA
 "
+IMM0605,"
+& Introducción a la mecánica de materiales
+&& Materiales en ingeniería
+&& Concepto de esfuerzo normal, tangencial y de aplastamiento
+&& Concepto de deformación
+&& Consideraciones de diseño: resistencia de los materiales, factor de seguridad y criterios de selección
+& Deformación
+&& Concepto de deformación
+&& Deformación unitaria
+& Propiedades mecánicas de los materiales
+&& Ensayos de tensión y compresión
+&& Diagrama de esfuerzo–deformación
+&& Comportamiento del esfuerzo y deformación de los materiales dúctiles y frágiles.
+&& Energía de deformación
+&& Relación de Poisson
+&& Diagrama de esfuerzo-deformación cortante
+&& Falla de materiales por flujo plástico y fatiga
+& Carga axial
+&& Principio de Saint-Venant
+&& Deformación elástica de un cuerpo cargado axialmente
+&& Principio de superposición
+&& Elementos cargados axialmente y estáticamente indeterminados
+&& Métodos de las fuerzas para el análisis de elementos cargados axialmente
+&& Esfuerzo térmico
+&& Concentraciones de esfuerzo
+& Torsión
+&& Deformación por torsión de un eje circular
+&& Fórmula de la torsión
+&& Transmisión de potencia
+&& Ángulo de giro
+&& Elementos cargados con pares de torsión estáticamente indeterminados
+&& Ejes sólidos no circulares
+&& Tubos de pared delgada con secciones transversales cerradas
+&& Concentración del esfuerzo
+& Flexión
+&& Diagramas de cortante y momento
+&& Método gráfico para la construcción de diagramas de fuerza cortante y momento
+&& Deformación flexionante de un elemento recto
+&& La fórmula de la flexión
+&& Flexión asimétrica
+&& Vigas compuestas
+&& Vigas curvas
+&& Concentraciones de esfuerzo
+& Fuerza cortante transversal
+&& Fuerza cortante en elementos rectos
+&& Fórmula de esfuerzo cortante
+&& Flujo cortante en elementos compuestos
+&& Flujo cortante en elementos de pared delgada
+&& Centro cortante para elementos abiertos de pared delgada
+& Cargas combinadas
+&& Recipientes de pared delgada sometidos a presión
+&& Estado de esfuerzo causado por cargas combinadas
+& Transformación de esfuerzos
+&& Transformación del esfuerzo plano
+&& Ecuaciones generales de la transformación del esfuerzo plano
+&& Esfuerzos principales y esfuerzo cortante máximo en el plano
+&& Círculo de Mohr – el esfuerzo plano
+&& Esfuerzo cortante máximo absoluto
+& Transformación de deformaciones
+&& Teorías de falla de materiales dúctiles 
+&& Teorías de falla de materiales frágiles
+& Diseño de vigas y ejes
+&& Fundamentos para el diseño de vigas
+&& Diseño de una viga prismática
+&& Vigas completamente esforzadas
+&& Diseño de ejes
+& Deflexión de vigas y ejes
+&& La curva elástica
+&& Pendiente y desplazamiento por integración
+&& Funciones de discontinuidad
+&& Pendiente de desplazamiento por el método del área de momento
+&& Método de superposición
+&& Métodos de análisis de vigas y ejes estáticamente indeterminados
+& Pandeo de columnas
+&& Carga crítica
+&& Columna ideal con soportes de pasador
+&& Columnas que tienen varios tipos de soporte
+&& La fórmula de la secante
+&& Pandeo inelástico
+&& Diseño de columnas para cargas concéntricas
+&& Diseño de columnas para cargas excéntricas
+& Métodos de Energía
+&& Trabajo externo y energía de deformación
+&& Energía de deformación elástica para distintos tipos de carga
+&& Conservación de la energía
+&& Carga de impacto
+&& Principio del trabajo virtual
+&& Método de las fuerzas virtuales aplicadas a las cerchas
+&& Método de las fuerzas virtuales a vigas
+&& Teorema de Castigliano aplicado a armadura y vigas
+"
 IEE0702,"
 & Sistema monofásico
 && Cargas resistivas, inductivas y capacitivas 

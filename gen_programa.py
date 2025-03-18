@@ -708,9 +708,10 @@ def generar_programa(id):
 # generar_programa("ADD0502")
 # generar_programa("IEE0503")
 # generar_programa("AUT0504")
-generar_programa("IMM0506") #materiales
+# generar_programa("IMM0506") #materiales
 # generar_programa("ADD0602")
 # generar_programa("IEE0604")
+generar_programa("IMM0605") #resi
 # generar_programa("IEE0702") #Maquinas I
 # generar_programa("AUT0704")
 # generar_programa("IEE0802") #Maquinas II
