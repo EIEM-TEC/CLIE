@@ -621,6 +621,45 @@ IMM0506,"
 && Papel
 && Disponibilidad en el país
 "
+IMM0507,"
+& Introducción a la manufactura
+&& Definición e importancia de la manufactura
+&& Relación con la ingeniería electromecánica
+&& Materiales
+&& Tendencias de la manufactura moderna (transformación digital, manufactura digital, automatización)
+& Procesos de manufactura
+&& Procesos de conformado: fundición, forja, laminado, estampado, extrusión, inyección y moldeo, trefilado
+&& Procesos de maquinado: torneado, fresado, taladrado, rectificado
+&& Procesos de unión: soldadura por arco eléctrico y protección gaseosa, soldadura laser, soldadura por ultrasonido, remachado, adhesivos industriales
+&& Procesos de corte: troquelado, cizallado, por plasma, electroerosionado, por chorro de agua, corte laser
+&& Procesos de manufactura aditiva: Deposición fundida (FDM), sinterizado láser selectivo (SLS), fusión selectiva por láser (SLM), impresión por inyección de aglutinante
+& Automatización en manufactura
+&& CNC y su programación básica (lenguajes de programación)
+&& Robótica en manufactura
+&& Celdas de manufactura
+& Metrología dimensional
+&& Metrología de contacto: Calibrador Vernier, micrómetro, reloj comparador, máquina de medición por coordenadas (CMM), galgas de espesores y bloques patrón
+&& Metrología sin contacto: interferometría láser, escaneo 3D, microscopía óptica, perfilómetro óptico
+&& Tolerancias geométricas y dimensionales
+&& Medición de rugosidades y acabados superficiales
+&& Control estadístico de procesos (CEP)
+& Diseño para manufactura y ensamblaje (DFMA)
+&& Principios de diseño para manufactura
+&& Costos y optimización en el diseño de productos
+&& Manufacturabilidad y ensamblabilidad
+& Micromanufactura 
+&& Semiconductores y silicio
+&& Crecimiento de cristales y preparación de obleas
+&& Deposición de películas
+&& Litografía
+&& Grabado
+&& Unión de cables y empaquetado
+&& Placas de circuitos impresos
+& Manufactura sostenible
+&& Impacto ambiental y estrategias de manufactura verde
+&& Reciclaje y reutilización de materiales
+&& Eficiencia energética en procesos de manufactura
+"
 ADD0602,"
 & Introducción a la fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS) en sistemas electromecánicos
 && Conceptos clave de fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS)
