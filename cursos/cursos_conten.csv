@@ -836,6 +836,57 @@ IMM0605,"
 && Método de las fuerzas virtuales a vigas
 && Teorema de Castigliano aplicado a armadura y vigas
 "
+IMM0607,"
+& Fluidos y sus propiedades
+&& Definición de fluido
+&& Propiedades físicas: densidad, viscosidad, presión, temperatura
+&& Clasificación de los fluidos (ideales, reales, compresibles e incompresibles)
+& Estática de fluidos
+&& Presión en un fluido en reposo
+&& Principio de Pascal y principio de Arquímedes
+&& Manometría y medición de presión
+&& Equilibrio de cuerpos sumergidos y flotación
+& Cinemática de fluidos (fluidos en movimiento)
+&& Descripción del movimiento de los fluidos
+&& Líneas de corriente, trayectoria y líneas de emisión
+&& Régimen de flujo: laminar y turbulento
+&& Ecuación de continuidad
+& Dinámica de fluidos (principios de energía)
+&& Principio de Bernoulli y su aplicación
+&& Ecuación general de la energía
+&& Flujo potencial y circulación
+&& Concepto de esfuerzo cortante en flujo
+& Flujo en tuberías
+&& Análisis del flujo interno
+&& Tipos de flujo en tuberías
+&& Ecuación de Darcy-Weisbach
+&& Medición de flujo en tuberías
+& Pérdidas de energía debido a la fricción
+&& Pérdidas primarias y secundarias
+&& Factores que afectan la fricción
+&& Diagramas de Moody
+&& Cálculo de pérdidas de carga
+& Sistemas de tuberías
+&& Redes de tuberías en paralelo y en serie
+&& Bombeo y selección de bombas
+&& Golpe de ariete y su control
+&& Aplicaciones en sistemas industriales
+& Análisis computacional de fluidos
+&& Introducción a la dinámica de fluidos computacional (CFD)
+&& Modelado y simulación de flujos
+&& Métodos numéricos en mecánica de fluidos
+&& Aplicaciones en ingeniería
+"
+IMM0608,"
+& Laboratorio de propiedades de los fluidos
+& Laboratorio de ley de Stokes y cálculo de viscosidad
+& Laboratorio de medición de presión mediante manómetros
+& Laboratorio de métodos para medir caudal y flujo másico en aire y agua
+& Laboratorio de estudio experimental del principio de Bernoulli
+& Laboratorio de análisis de tanques hidroneumáticos
+& Laboratorio de regímenes de flujo: laminar y turbulento
+& Laboratorio de pérdidas de carga en tuberías, accesorios y válvulas
+"
 IEE0702,"
 & Sistema monofásico
 && Cargas resistivas, inductivas y capacitivas 
