@@ -409,6 +409,7 @@ def generar_programa(id):
     doc.preamble.append(Command('addbibresource', '../bibFPH.bib'))
     doc.preamble.append(Command('addbibresource', '../bibADD.bib'))
     doc.preamble.append(Command('addbibresource', '../bibAUT.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibCYD.bib'))
     doc.preamble.append(Command('addbibresource', '../bibIEE.bib'))
     doc.preamble.append(Command('addbibresource', '../bibIMM.bib'))
     doc.preamble.append(Command('addbibresource', '../bibINS.bib'))
@@ -599,7 +600,10 @@ def generar_programa(id):
             )
             ,objCurso])
     doc.append(VerticalSpace("4mm", star=True)) 
-    doc.append(NewLine())
+    if id in ["CYD0609"]:
+        doc.append(NewPage())
+    else:
+        doc.append(NewLine())
     with doc.create(Tabularx(table_spec=r"p{3cm}p{13cm}")) as table:
         table.add_row([textcolor
         (   
@@ -694,7 +698,7 @@ def generar_programa(id):
 #      generar_programa(id)
 
 # generar_programa("CYD0107") #Dibujo Tec
-generar_programa("FPH0108") # int ing. electromecanica
+# generar_programa("FPH0108") # int ing. electromecanica
 # generar_programa("AUT0205") #Int. Compu
 # generar_programa("IMM0207")
 # generar_programa("IEE0303")
@@ -709,12 +713,13 @@ generar_programa("FPH0108") # int ing. electromecanica
 # generar_programa("IEE0503")
 # generar_programa("AUT0504")
 # generar_programa("IMM0506") #materiales
-#generar_programa("IMM0507") #manufactura
+# generar_programa("IMM0507") #manufactura
 # generar_programa("ADD0602")
 # generar_programa("IEE0604")
 # generar_programa("IMM0605") #resi
 # generar_programa("IMM0607") #mec fluidos
 # generar_programa("IMM0608") #lab mec fluidos
+generar_programa("CYD0609") #dib ind
 # generar_programa("IEE0702") #Maquinas I
 # generar_programa("AUT0704")
 # generar_programa("IEE0802") #Maquinas II

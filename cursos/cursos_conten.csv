@@ -35,8 +35,8 @@ FPH0108,"
 & Introducción a la ingeniería electromecánica
 && ¿Qué es la ingeniería electromecánica?
 && Historia y evolución de la ingeniería electromecánica
-&& Importancia en la industria y la sociedad.
-&& Relación con otras disciplinas (mecánica, eléctrica, electrónica, aeronáutica, sistemas ciber físicos).
+&& Importancia en la industria y la sociedad
+&& Relación con otras disciplinas (mecánica, eléctrica, electrónica, aeronáutica, sistemas ciber físicos)
 & El rol de la persona ingeniera electromecánica
 && Perfil profesional y competencias clave
 && Ética y responsabilidad en la ingeniería
@@ -51,9 +51,9 @@ FPH0108,"
 && Ciclos termodinámicos
 && Aplicaciones en motores térmicos y sistemas de refrigeración
 & Mecánica de fluidos y transferencia de calor
-&& Principios de mecánica de fluidos: ecuación de continuidad y Bernoulli.
-&& Fundamentos de transferencia de calor: conducción, convección y radiación.
-&& Aplicaciones en sistemas térmicos y de refrigeración.
+&& Principios de mecánica de fluidos: ecuación de continuidad y Bernoulli
+&& Fundamentos de transferencia de calor: conducción, convección y radiación
+&& Aplicaciones en sistemas térmicos y de refrigeración
 & Principios de ingeniería eléctrica
 && Circuitos eléctricos básicos y leyes de Kirchhoff
 && Magnetismo y sus aplicaciones en transformadores y motores eléctricos
@@ -632,13 +632,13 @@ IMM0507,"
 && Procesos de maquinado: torneado, fresado, taladrado, rectificado
 && Procesos de unión: soldadura por arco eléctrico y protección gaseosa, soldadura laser, soldadura por ultrasonido, remachado, adhesivos industriales
 && Procesos de corte: troquelado, cizallado, por plasma, electroerosionado, por chorro de agua, corte laser
-&& Procesos de manufactura aditiva: Deposición fundida (FDM), sinterizado láser selectivo (SLS), fusión selectiva por láser (SLM), impresión por inyección de aglutinante
+&& Procesos de manufactura aditiva: deposición fundida (FDM), sinterizado láser selectivo (SLS), fusión selectiva por láser (SLM), impresión por inyección de aglutinante
 & Automatización en manufactura
 && CNC y su programación básica (lenguajes de programación)
 && Robótica en manufactura
 && Celdas de manufactura
 & Metrología dimensional
-&& Metrología de contacto: Calibrador Vernier, micrómetro, reloj comparador, máquina de medición por coordenadas (CMM), galgas de espesores y bloques patrón
+&& Metrología de contacto: calibrador Vernier, micrómetro, reloj comparador, máquina de medición por coordenadas (CMM), galgas de espesores y bloques patrón
 && Metrología sin contacto: interferometría láser, escaneo 3D, microscopía óptica, perfilómetro óptico
 && Tolerancias geométricas y dimensionales
 && Medición de rugosidades y acabados superficiales
@@ -886,6 +886,47 @@ IMM0608,"
 & Laboratorio de análisis de tanques hidroneumáticos
 & Laboratorio de regímenes de flujo: laminar y turbulento
 & Laboratorio de pérdidas de carga en tuberías, accesorios y válvulas
+"
+CYD0609,"
+& Introducción al dibujo industrial
+&& Ramas del dibujo industrial
+&& El dibujo en el contexto de la ingeniería electromecánica
+& Cortes y secciones 
+&& Concepto de cortes y secciones
+&& Achurado
+&& Tipos de cortes
+&& Tipos de secciones
+& Vistas auxiliares
+&& Concepto de vistas auxiliares
+&& Tipos de vistas auxiliares
+&& Ubicación de las vistas auxiliares
+&& Elementos desplazados
+& Ajustes y tolerancias mecánicos
+&& Ajustes mecánicos
+&& Tolerancias de dimensión
+&& Tolerancias geométricas de forma y posición
+& Rugosidad y acabados superficiales de piezas mecánicas
+&& Parámetros relacionados con la rugosidad
+&& Criterio para la selección de la rugosidad
+&& Representación de la rugosidad
+&& Acabados superficiales
+& Uniones mecánicas
+&& Uniones roscadas
+&& Uniones remachadas
+&& Uniones soldadas
+&& Lengüetas, chavetas y pasadores
+&& Unión por pegadura (adhesivos)
+& Conjuntos mecánicos
+&& Representación de elementos mecánicos estandarizados
+&& Representación de bujes y rodamientos
+&& Representación de elementos para la transmisión de torque
+&& Especificación de conjuntos mecánicos
+&& Planos de fabricación
+& Instalaciones electromecánicas
+&& Instalaciones eléctricas
+&& Instalaciones de transporte y almacenamiento de fluidos
+&& Instalaciones mecánico-sanitarias
+&& Instalaciones de climatización (HVAC: Heating, Ventilation, and Air Conditioning)
 "
 IEE0702,"
 & Sistema monofásico
