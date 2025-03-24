@@ -694,7 +694,7 @@ def generar_programa(id):
 #      generar_programa(id)
 
 # generar_programa("CYD0107") #Dibujo Tec
-# generar_programa("FPH0108")
+generar_programa("FPH0108") # int ing. electromecanica
 # generar_programa("AUT0205") #Int. Compu
 # generar_programa("IMM0207")
 # generar_programa("IEE0303")
@@ -714,7 +714,7 @@ def generar_programa(id):
 # generar_programa("IEE0604")
 # generar_programa("IMM0605") #resi
 # generar_programa("IMM0607") #mec fluidos
-generar_programa("IMM0608") #lab mec fluidos
+# generar_programa("IMM0608") #lab mec fluidos
 # generar_programa("IEE0702") #Maquinas I
 # generar_programa("AUT0704")
 # generar_programa("IEE0802") #Maquinas II
