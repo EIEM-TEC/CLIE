@@ -118,7 +118,7 @@ def generar_programa(id):
         semestre = lisProgr[lisProgr['programa'] == programa].semestre.item()
         ubiPlane += "Curso de " + fun.number_to_ordinals(str(int(semestre))) + " semestre en " + programa
         if counter > 1:
-            ubiPlane += ". "
+            ubiPlane += " "
     susRequi = ""
     lisRequi = cursos[cursos.id == id].requisitos.item()
     if str(lisRequi) != "nan":
@@ -133,7 +133,7 @@ def generar_programa(id):
             if counter < numRequi:
                 susRequi += "; "
             else:
-                susRequi += "."
+                susRequi += " "
     else:
         susRequi += "Ninguno"
     corRequi = ""
@@ -150,7 +150,7 @@ def generar_programa(id):
             if counter < numCorre:
                 corRequi += "; "
             else:  
-                corRequi += "."
+                corRequi += " "
     else:
         corRequi += "Ninguno"
     essRequi = NoEscape("")
@@ -176,7 +176,7 @@ def generar_programa(id):
                 cTRC += 1
             elif areaEsreq == "INS":
                 if cINS == 0:
-                    insRequi += r". \emph{Énfasis en Instalaciones Electromecánicas:} "
+                    insRequi += r"\emph{Énfasis en Instalaciones Electromecánicas:} "
                 else:
                     insRequi += "; "  
                 insRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
@@ -185,7 +185,7 @@ def generar_programa(id):
                 cINS += 1
             elif areaEsreq == "AER":
                 if cAER == 0:
-                    aerRequi += r". \emph{Énfasis en Aeronáutica:} "
+                    aerRequi += r"\emph{Énfasis en Aeronáutica:} "
                 else:
                     aerRequi += "; " 
                 aerRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
@@ -194,14 +194,14 @@ def generar_programa(id):
                 cAER += 1
             elif areaEsreq == "SCF":
                 if cSCF == 0:
-                    scfRequi += r". \emph{Énfasis en Sistemas Ciberfísicos:} "
+                    scfRequi += r"\emph{Énfasis en Sistemas Ciberfísicos:} "
                 else:
                     scfRequi += "; "
                 scfRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
                 scfRequi += " "
                 scfRequi += cursos[cursos.id == esrequisito].nombre.item()
                 cSCF += 1
-        essRequi = NoEscape(trcRequi) + NoEscape(insRequi) + NoEscape(aerRequi) + NoEscape(scfRequi) + NoEscape(".")
+        essRequi = NoEscape(trcRequi) + NoEscape(" ") + NoEscape(insRequi) + NoEscape(" ") + NoEscape(aerRequi) + NoEscape(" ") + NoEscape(scfRequi) + NoEscape(" ")
     else:
         essRequi += NoEscape("Ninguno")
     tipAsist = tipAsistDic.get(detall[detall.id == id].asistencia.item())
@@ -719,7 +719,8 @@ def generar_programa(id):
 # generar_programa("IMM0605") #resi
 # generar_programa("IMM0607") #mec fluidos
 # generar_programa("IMM0608") #lab mec fluidos
-generar_programa("CYD0609") #dib ind
+# generar_programa("CYD0609") #dib ind
+generar_programa("FPH0701") #proyectos
 # generar_programa("IEE0702") #Maquinas I
 # generar_programa("AUT0704")
 # generar_programa("IEE0802") #Maquinas II
