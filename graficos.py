@@ -2,7 +2,7 @@ import pandas as pd
 import funciones as fun
 from matplotlib import pyplot as plt
 
-saberes = pd.read_csv("saberes.csv")
+saberes = pd.read_csv("rasgos_ejes/saberes.csv")
 
 areas = pd.read_csv('areas.csv')
 
