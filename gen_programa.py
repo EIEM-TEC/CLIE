@@ -720,9 +720,11 @@ def generar_programa(id):
 # generar_programa("IMM0607") #mec fluidos
 # generar_programa("IMM0608") #lab mec fluidos
 # generar_programa("CYD0609") #dib ind
-generar_programa("FPH0701") #proyectos
+# generar_programa("FPH0701") #proyectos
 # generar_programa("IEE0702") #Maquinas I
-# generar_programa("AUT0704")
+# generar_programa("AUT0704") #control
+# generar_programa("AUT0705") #micros
+generar_programa("IMM0706") #elementos maq
 # generar_programa("IEE0802") #Maquinas II
 # generar_programa("INS0801") #Trans y distr
 # generar_programa("SCF0801") #Ing. Sistemas

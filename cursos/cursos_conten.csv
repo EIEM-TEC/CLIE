@@ -1115,6 +1115,100 @@ AUT0704,"
 && Control Digital: estructura, discretización del controlador, periodo de muestreo, aliasing, filtrado digital del ruido
 && Diseño de sistemas de control en tiempo discreto con métodos convencionales
 "
+AUT0705,"
+& Introducción a los microcontroladores
+&& Arquitectura básica: CPU, memoria, periféricos.
+&& Familias de microcontroladores: diferencias entre arquitecturas de 8, 16 y 32 bits.
+&& Herramientas de desarrollo: compiladores, IDEs, simuladores, y depuradores.
+&& Enfoque en la configuración de registros: ¿Qué son los registros y cómo se usan para controlar el hardware?
+& Programación en lenguaje C para microcontroladores
+&& Sintaxis básica y estructuras de control
+&& Variables: declaración, tipos de datos (int, char, float, entre otros), alcance (local y global), y modificadores (const, volatile)
+&& Uso de punteros y direcciones de memoria para acceder a registros
+&& Manipulación de bits: operaciones AND, OR, XOR, y desplazamientos
+& GPIO (Entradas y Salidas Digitales)
+&& Configuración de registros para definir pines como entrada o salida
+&& Lectura y escritura de pines GPIO
+&& Uso de resistencias pull-up y pull-down
+& Interrupciones
+&& Configuración de registros para habilitar interrupciones
+&& Manejo de vectores de interrupción
+& Temporizadores (timers) y contadores (counters)
+&& Configuración de registros para temporizadores y contadores
+&& Uso de temporizadores para generar retardos y medición de tiempo
+&& Uso de contadores para eventos externos
+& Comunicación serial
+&& Configuración de registros para comunicación UART, SPI e I2C.
+&& Transmisión y recepción de datos en UART: Ejemplo práctico de comunicación entre microcontrolador y PC
+&& Transmisión de datos en SPI
+&& Transmisión de datos en I2C
+& Conversión Analógica-Digital (ADC) y Digital-Analógica (DAC)
+&& Configuración de registros para el módulo ADC
+&& Lectura de valores analógicos y su conversión a valores digitales
+&& Configuración de registros para el módulo DAC
+&& Generación de señales analógicas a partir de valores digitales
+& Modulación por Ancho de Pulso (PWM)
+&& Configuración de registros para generar señales PWM
+&& Control de motores DC y servomotores
+& Memoria
+&& Tipos de memoria en microcontroladores: Flash, RAM, EEPROM
+&& Configuración y manejo de memoria Flash y EEPROM
+& Reloj en Tiempo Real (RTC)
+&& Configuración de registros para el módulo RTC
+&& Uso del RTC para medición de tiempo y fechas
+& Acceso Directo a Memoria (DMA)
+&& Configuración de registros para el módulo DMA.
+&& Uso del DMA para transferencias de datos sin intervención de la CPU.
+& Watchdog Timer
+&& Configuración de registros para el Watchdog Timer.
+&& Uso del Watchdog Timer para prevenir bloqueos del sistema.
+"
+IMM0706,"
+& Introducción al diseño mecánico
+&& La finalidad del diseño mecánico
+&& Metodología del diseño
+&& Factores que afectan el diseño: seguridad, costo, materiales, manufactura y mantenimiento.
+&& Curso de elementos de máquinas en el contexto del diseño mecánico
+& Teoría de Falla estática 
+&& Teorías de falla para materiales dúctiles 
+&& Teorías de falla para materiales frágiles 
+& Resistencia de Fatiga 
+&& Definiciones fundamentales 
+&& Diagramas de las tensiones límite 
+&& Ciclo simétrico 
+&& Ciclo asimétrico 
+&& Teorías de falla a fatiga 
+&& Medios para aumentar la resistencia a la fatiga 
+& Transmisiones 
+&& Introducción a transmisiones mecánicas
+&& Transmisiones por banda 
+&& Transmisiones por fricción 
+&& Transmisiones por engranaje 
+&& Transmisiones por tornillo sin fin 
+&& Reductores 
+&& Transmisiones por cadena 
+& Uniones 
+&& Introducción a uniones mecánicas
+&& Uniones soldadas 
+&& Uniones con apretura 
+&& Uniones roscadas 
+&& Cuñas y pasadores 
+&& Uniones de chaveta 
+&& Uniones estriadas y sin chaveta 
+&& Uniones elásticas (resortes) 
+& Elementos de las transmisiones 
+&& Árboles y ejes 
+&& Cojinetes de deslizamiento 
+&& Cojinetes de contacto rodante 
+&& Acoplamientos 
+&& Juntas de retención 
+& Tornillos de potencia 
+&& Tipos de rosca 
+&& Cálculos de pandeo 
+&& Cálculos de cortante 
+&& Cálculos de desgaste 
+&& Cálculos de la eficiencia, potencia y torque 
+"
 IEE0802,"
 & Alternador sincrónico
 && Principio de funcionamiento
