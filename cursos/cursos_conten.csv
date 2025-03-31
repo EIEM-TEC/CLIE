@@ -459,46 +459,32 @@ IMM0407,"
 && Ciclos de refrigeración
 "
 ADD0502,"
-& Fundamentos de estadística aplicada
+& Fundamentos de estadística descriptiva
 && Introducción a la estadística en ingeniería
 && Tipos de datos y escalas de medición
 && Organización y presentación de datos
 && Medidas de tendencia central
-&& Medidas de dispersión 
-& Fundamentos de probabilidad para Diseño de Experimentos
-&& Concepto de variabilidad y aleatoriedad
+&& Medidas de dispersión
+&& Análisis gráfico: Histogramas, Boxplots, identificación de valores atípicos.
+&Fundamentos de probabilidad
+&& Postulados de probabilidad
+&& Modelos de confiabilidad y los postulados de probabilidad
+&& Condicionalidad, árbol y tabla de Probabilidad
+&& Distribución empírica
+& Distribuciones de probabilidad
+&& Distribuciones discretas: binomial y Poisson.
 && Distribución normal
-&& Distribución t-Student
-&& Distribución chi-cuadrado
-&& Distribución Weibull
-&& Uso de tablas estadísticas y software para cálculos
-& Análisis exploratorio de datos
-&& Histogramas, boxplots y gráficos de dispersión
-&& Identificación de valores atípicos y tendencias
-&& Correlación y regresión lineal simple
-&& Análisis de relaciones entre variables
-& Pruebas de hipótesis y comparación de medias
+&& Distribuciones muestrales: t-student, Chi-cuadrado y F
+&& Distribución Gamma
+&& Distribución Exponencial
+& Prueba hipótesis
 && Pruebas de normalidad y teorema del límite central
-&& Concepto de prueba de hipótesis y errores tipo I y II
-&& Pruebas de hipótesis para la media de una población
-&& Comparación de dos medias
-&& Pruebas de hipótesis para la varianza
-& Diseño de Experimentos y Análisis de Varianza (ANOVA)
-&& Introducción al diseño de experimentos
-&& Diseño completamente aleatorizado
-&& Diseño en bloques
-&& Análisis de varianza (ANOVA) de un solo factor
-&& Aplicaciones del ANOVA en ingeniería
-& Regresión y modelado estadístico
-&& Regresión lineal simple y múltiple
-&& Supuestos del modelo de regresión
-&& Evaluación de la bondad del ajuste
-&& Aplicaciones en ingeniería
-& Aplicación de Software para el Análisis de Datos
-&& Introducción a herramientas estadísticas
-&& Generación de gráficos y tablas descriptivas
-&& Implementación de pruebas de hipótesis
-&& Modelado de datos y regresión
+&& Concepto de prueba hipótesis y errores tipo I y II
+&& Estimación
+&& Prueba hipótesis de una y dos medias
+&& Prueba hipótesis de una y dos varianzas
+&& Pruebas de equivalencia y pruebas de Poisson
+&& Potencia de la prueba y tamaño de muestra
 "
 IEE0503,"
 & Introducción a los sistemas analógicos
@@ -1059,6 +1045,22 @@ IEE0702,"
 && Capacitor de excitación
 && Desempeño del generador, conectado a una red de potencia infinita
 && Desempeño del generador, conectado en forma aislada
+"
+IEE0703,"
+& Circuito monofásico trifilar.
+& Medición de Potencia: Conexión en estrella balanceado y desbalanceado.
+& Medición de Potencia: Conexión en delta. Balanceado y desbalanceado.
+& Mejoramiento del Factor de Potencia en redes trifásicas.
+& Transformador monofásico (Polaridad y Saturación)
+& Transformador monofásicos (Regulación de tensión).
+& Autotransformadores y Pruebas de corto y circuito abierto.
+& Conexiones Trifásicas de transformadores
+& Conexión de devanados estatóricos
+& Motor trifásico de jaula de ardilla y rotor devanado
+& Control de velocidad con VFD
+& Motores monofásicos de inducción con doble capacitor.
+& Pruebas de rotor bloqueado en motor trifásico de inducción.
+& Generador asincrónico.
 "
 AUT0704,"
 & Introducción a los sistemas de control 

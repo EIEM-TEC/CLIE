@@ -709,7 +709,7 @@ def generar_programa(id):
 # generar_programa("IEE0404")
 # generar_programa("IEE0405")
 # generar_programa("IMM0407")
-# generar_programa("ADD0502")
+generar_programa("ADD0502") #estadistica
 # generar_programa("IEE0503")
 # generar_programa("AUT0504")
 # generar_programa("IMM0506") #materiales
@@ -722,9 +722,10 @@ def generar_programa(id):
 # generar_programa("CYD0609") #dib ind
 # generar_programa("FPH0701") #proyectos
 # generar_programa("IEE0702") #Maquinas I
+generar_programa("IEE0703") #Lab Maquinas I
 # generar_programa("AUT0704") #control
 # generar_programa("AUT0705") #micros
-generar_programa("IMM0706") #elementos maq
+# generar_programa("IMM0706") #elementos maq
 # generar_programa("IEE0802") #Maquinas II
 # generar_programa("INS0801") #Trans y distr
 # generar_programa("SCF0801") #Ing. Sistemas
