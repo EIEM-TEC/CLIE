@@ -709,11 +709,12 @@ def generar_programa(id):
 # generar_programa("IEE0404")
 # generar_programa("IEE0405")
 # generar_programa("IMM0407")
-generar_programa("ADD0502") #estadistica
+# generar_programa("ADD0502") #estadistica
 # generar_programa("IEE0503")
 # generar_programa("AUT0504")
 # generar_programa("IMM0506") #materiales
 # generar_programa("IMM0507") #manufactura
+generar_programa("IMM0508") #lab manufactura
 # generar_programa("ADD0602")
 # generar_programa("IEE0604")
 # generar_programa("IMM0605") #resi

@@ -646,6 +646,37 @@ IMM0507,"
 && Reciclaje y reutilización de materiales
 && Eficiencia energética en procesos de manufactura
 "
+IMM0508,"
+& Introducción a la planta de manufactura
+&& Conceptos básicos de una planta de manufactura
+&& Seguridad
+& Procesos de manufactura
+&& Procesos de conformado: fundición e inyección y moldeo
+&& Procesos de maquinado: torneado, fresado, taladrado, rectificado, electro-erosionado
+&& Procesos de unión: soldadura por fusión (de partes y tuberías)
+&& Procesos de corte: por plasma, electro-erosionado y corte laser
+&& Procesos de manufactura aditiva: Deposición fundida (FDM), sinterizado láser selectivo (SLS), fusión selectiva por láser (SLM), impresión por inyección de aglutinante
+& Automatización en manufactura
+&& CNC y su programación básica (lenguajes de programación)
+&& Robótica en manufactura
+&& Celdas de manufactura
+& Metrología dimensional
+&& Metrología de contacto: calibrador Vernier, micrómetro, reloj comparador, máquina de medición por coordenadas (CMM), galgas de espesores y bloques patrón
+&& Metrología sin contacto: metrología óptica
+&& Tolerancias geométricas y dimensionales
+&& Medición de rugosidades y acabados superficiales
+&& Control estadístico de procesos (CEP)
+& Diseño para manufactura y ensamblaje (DFMA)
+&& 	Manufacturabilidad y ensamblabilidad
+& Micromanufactura 
+&& Deposición de películas
+&& Litografía
+&& Placas de circuitos impresos
+& Manufactura sostenible
+&& Manejo de desechos
+&& Impacto ambiental y estrategias de manufactura verde
+&& Reciclaje y reutilización de materiales
+"
 ADD0602,"
 & Introducción a la fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS) en sistemas electromecánicos
 && Conceptos clave de fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS)
@@ -1047,20 +1078,20 @@ IEE0702,"
 && Desempeño del generador, conectado en forma aislada
 "
 IEE0703,"
-& Circuito monofásico trifilar.
-& Medición de Potencia: Conexión en estrella balanceado y desbalanceado.
-& Medición de Potencia: Conexión en delta. Balanceado y desbalanceado.
-& Mejoramiento del Factor de Potencia en redes trifásicas.
-& Transformador monofásico (Polaridad y Saturación)
-& Transformador monofásicos (Regulación de tensión).
-& Autotransformadores y Pruebas de corto y circuito abierto.
-& Conexiones Trifásicas de transformadores
+& Circuito monofásico trifilar
+& Medición de potencia: conexión en estrella balanceada y desbalanceada
+& Medición de potencia: conexión en delta balanceada y desbalanceada
+& Mejoramiento del factor de potencia en redes trifásicas
+& Transformador monofásico: corto circuito, circuito abierto, polaridad y saturación
+& Transformador monofásico: regulación de tensión
+& Autotransformadores: pruebas de corto circuito y circuito abierto
+& Conexiones trifásicas de transformadores
 & Conexión de devanados estatóricos
 & Motor trifásico de jaula de ardilla y rotor devanado
-& Control de velocidad con VFD
-& Motores monofásicos de inducción con doble capacitor.
-& Pruebas de rotor bloqueado en motor trifásico de inducción.
-& Generador asincrónico.
+& Control de velocidad con variadores de frecuencia
+& Motores monofásicos de inducción con doble capacitor
+& Pruebas de rotor bloqueado en motor trifásico de inducción
+& Generador asincrónico
 "
 AUT0704,"
 & Introducción a los sistemas de control 
