@@ -714,7 +714,7 @@ def generar_programa(id):
 # generar_programa("AUT0504")
 # generar_programa("IMM0506") #materiales
 # generar_programa("IMM0507") #manufactura
-generar_programa("IMM0508") #lab manufactura
+# generar_programa("IMM0508") #lab manufactura
 # generar_programa("ADD0602")
 # generar_programa("IEE0604")
 # generar_programa("IMM0605") #resi
@@ -723,13 +723,14 @@ generar_programa("IMM0508") #lab manufactura
 # generar_programa("CYD0609") #dib ind
 # generar_programa("FPH0701") #proyectos
 # generar_programa("IEE0702") #Maquinas I
-generar_programa("IEE0703") #Lab Maquinas I
+# generar_programa("IEE0703") #Lab Maquinas I
 # generar_programa("AUT0704") #control
 # generar_programa("AUT0705") #micros
 # generar_programa("IMM0706") #elementos maq
 # generar_programa("IEE0802") #Maquinas II
 # generar_programa("INS0801") #Trans y distr
 # generar_programa("SCF0801") #Ing. Sistemas
+generar_programa("INS0905") #Sem I
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
