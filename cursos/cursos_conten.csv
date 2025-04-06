@@ -1336,6 +1336,43 @@ IEE0802,"
 && Selección y análisis de dispositivos de conmutación en convertidores de potencia
 && Aplicaciones prácticas y tendencias en electrónica de potencia
 "
+AUT0804,"
+& Introducción a los sistemas de eventos discretos
+&& Conceptos básicos de sistemas de eventos discretos
+&& Comparación con sistemas continuos
+&& Aplicaciones y ejemplos prácticos
+& Modelado con máquinas de estados
+& Definición y tipos de máquinas de estados
+& Diagramas de estados y transiciones
+& Redes de colas
+&& Introducción a las redes de colas
+&& Modelado y análisis de sistemas de colas
+&& Aplicaciones en sistemas de control y automatización
+& Máquinas de estado
+&& Introducción a máquinas de estado
+&& Integración de máquinas de estado utilizando Stateflow de Simulink
+&& Generación de código
+& Redes de Petri
+&& Introducción a las redes de Petri
+&& Propiedades dinámicas y estáticas de las redes de Petri 
+&& Ecuación característica y matriz de transición
+&& Modelado y análisis de sistemas con redes de Petri
+& Especificación de controladores según norma IEC 60848
+&& Levantamiento de requerimientos
+&& Estructuras de control
+&& Especificación de entradas y salidas
+&& Jerarquías
+& Lenguajes estandarizados de programación según IEC 61131-3
+&& Texto estructurado
+&& Nemotécnico
+&& Diagramas de escalera
+&& Bloque de funciones
+&& Sequential function chart (GRAFCET)
+&& Implementación de los lenguajes en PLCs
+& Implementación de lenguajes de programación
+&& Implementación de controladores en PLCs
+&& Implementación de controladores en microcontroladores
+"
 INS0801,"
 & Introducción
 && Introducción al análisis de los sistemas eléctricos de potencia
@@ -1409,34 +1446,53 @@ INS0801,"
 && Automatización de sistemas de distribución 
 && Sistemas de almacenamiento y electrónica de potencia
 "
-SCF0801,"
-& Introducción a la Ingeniería de Sistemas
-&& Conceptos fundamentales de la ingeniería de sistemas
-&& Ciclo de vida del desarrollo de sistemas
-&& Enfoque sistémico y pensamiento complejo en la resolución de problemas
-& Trabajo colaborativo en equipos multidisciplinarios
-&& Definición de roles
-&& Estrategias de trabajo en equipos multidisciplinarios
-&& Gestión de la información y la toma de decisiones
-&& Planificación del trabajo y gestión de tareas
-&& Control de versiones
-& Definición y análisis de requisitos
-&& Identificación de interesados y sus expectativas
-&& Técnicas para la recopilación y análisis de requisitos
-&& Diferentes niveles de requisitos y su relación con la arquitectura del sistema
-&& Modelado de requisitos y especificaciones funcionales
-& Diseño de la arquitectura 
-&& Principios y enfoques para el diseño de la arquitectura del sistema
-&& Metodologías de evaluación de configuraciones del sistema (trade-off)
-&& Gestión de interfaces y compatibilidad de sistemas
-&& Estrategias para la integración de subsistemas en un sistema coherente
-& Modelado, simulación y verificación del Diseño
-&& Métodos de modelado para la representación de sistemas
-&& Desarrollo de representaciones funcionales del sistema
-&& Evaluación de desempeño y optimización de sistemas
-&& Análisis de sensibilidad y pruebas iterativas en entornos virtuales
-&& Verificación del sistema en escenarios simulados
-&& Validación de requisitos
+INS0903,"
+& Fundamentos de la refrigeración y aire acondicionado
+&& Evolución de los sistemas de refrigeración y climatización
+&& Principios termodinámicos básicos
+&& Aplicaciones industriales y comerciales
+& Fundamentos termodinámicos y ciclos de refrigeración
+&& Primer y segundo principio de la termodinámica aplicados a la refrigeración
+&& Ciclo ideal de refrigeración por compresión de vapor
+&& Coeficiente de rendimiento (COP) y eficiencia de los sistemas
+& Refrigerantes y su impacto ambiental
+&& Propiedades y clasificación de los refrigerantes
+&& Impacto ambiental: ODP (ozone depletion potential) y GWP (global warming potential)
+&& Regulaciones nacionales e internacionales (protocolo de Montreal, normativa ASHRAE, etc.)
+&& Refrigerantes naturales y alternativas sustentables
+& Componentes de un sistema de refrigeración
+&& Compresores: tipos y aplicaciones
+&& Condensadores: funcionamiento y clasificación
+&& Evaporadores y dispositivos de expansión
+&& Intercambiadores de calor en sistemas de refrigeración
+& Psicrometría y procesos de aire acondicionado
+&& Propiedades del aire húmedo y diagrama psicrométrico
+&& Procesos psicrométricos en acondicionamiento de aire
+&& Control de temperatura y humedad
+& Cargas térmicas en sistemas de aire acondicionado
+&& Cálculo de carga térmica sensible y latente
+&& Métodos de estimación de cargas térmicas
+&& Factores que influyen en la carga térmica (ubicación, materiales, ocupación, etc.)
+&& Cálculo de diversidad
+& Selección de equipos de aire acondicionado (sistemas de expansión directa)
+&& Tipos de sistemas de aire acondicionado (paquetes, split, VRF (volumen variable de refrigerante))
+&& Selección de equipos según necesidades de climatización
+&& Parámetros de eficiencia energética en selección de sistemas
+& Selección de equipos de aire acondicionado (sistemas de agua helada)
+&& Chillers enfriados por aire vs. chillers enfriados por agua
+&& Criterios de selección según aplicación y clima
+& Selección y dimensionamiento de chillers
+&& Criterios de selección según demanda térmica.
+&& Análisis del coeficiente de desempeño (COP) y eficiencia energética (EER, IPLV, NPLV).
+&& Capacidad y redundancia en sistemas de grandes edificios.
+& Diseño del circuito de agua helada
+&& Esquemas de distribución (primario constante, primario – secundario, primario – variable)
+&& Diseño de redes de tuberías y cálculo de pérdidas de carga
+&& Selección de bombas y su control (velocidad variable, VFD)
+&& Torres de enfriamiento: funcionamiento, clasificación y selección
+& Aplicaciones especiales de la refrigeración y climatización
+&& Refrigeración industrial (procesos, almacenamiento de alimentos)
+&& Climatización en hospitales, laboratorios y cuartos limpios
 "
 INS0905,"
 & Introducción a la investigación en ingeniería
@@ -1479,4 +1535,33 @@ INS0905,"
 && Lineamientos institucionales
 && Retroalimentación de pares
 && Ajustes finales al anteproyecto
+"
+SCF0801,"
+& Introducción a la Ingeniería de Sistemas
+&& Conceptos fundamentales de la ingeniería de sistemas
+&& Ciclo de vida del desarrollo de sistemas
+&& Enfoque sistémico y pensamiento complejo en la resolución de problemas
+& Trabajo colaborativo en equipos multidisciplinarios
+&& Definición de roles
+&& Estrategias de trabajo en equipos multidisciplinarios
+&& Gestión de la información y la toma de decisiones
+&& Planificación del trabajo y gestión de tareas
+&& Control de versiones
+& Definición y análisis de requisitos
+&& Identificación de interesados y sus expectativas
+&& Técnicas para la recopilación y análisis de requisitos
+&& Diferentes niveles de requisitos y su relación con la arquitectura del sistema
+&& Modelado de requisitos y especificaciones funcionales
+& Diseño de la arquitectura 
+&& Principios y enfoques para el diseño de la arquitectura del sistema
+&& Metodologías de evaluación de configuraciones del sistema (trade-off)
+&& Gestión de interfaces y compatibilidad de sistemas
+&& Estrategias para la integración de subsistemas en un sistema coherente
+& Modelado, simulación y verificación del Diseño
+&& Métodos de modelado para la representación de sistemas
+&& Desarrollo de representaciones funcionales del sistema
+&& Evaluación de desempeño y optimización de sistemas
+&& Análisis de sensibilidad y pruebas iterativas en entornos virtuales
+&& Verificación del sistema en escenarios simulados
+&& Validación de requisitos
 "

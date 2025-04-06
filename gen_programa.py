@@ -728,9 +728,13 @@ def generar_programa(id):
 # generar_programa("AUT0705") #micros
 # generar_programa("IMM0706") #elementos maq
 # generar_programa("IEE0802") #Maquinas II
+# generar_programa("AUT0804") #Control por event.
 # generar_programa("INS0801") #Trans y distr
+generar_programa("INS0903") #ref y AC
+# generar_programa("INS0905") #Sem I
 # generar_programa("SCF0801") #Ing. Sistemas
-generar_programa("INS0905") #Sem I
+
+
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)

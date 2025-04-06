@@ -137,3 +137,4 @@ SCF1303,EE6902,Aerodinámica,SCF,13,3,4,0,3,IMM0707,SCF1302,
 SCF1401,EE5006,Gestión del ciclo de vida de instalaciones electromecánicas,SCF,14,1,4,0,3,,SCF1402,
 SCF1402,EE4806,Instalaciones eléctricas,SCF,14,2,4,0,3,IEE0702,,SCF1401;SCF1403
 SCF1403,EE5003,Gestión de la energía,SCF,14,3,4,0,3,,SCF1402,
+LEM0001,EE1501,Trabajo final de graduación,LEM,15,1,0,21,7,,,
