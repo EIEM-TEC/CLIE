@@ -151,7 +151,7 @@ def generar_malla():
                 "transform shape"
                 )
         )) as malla_AER:
-        titulo = "Licenciatura en Ingeniería Electromecánica con énfasis en Aeronautica"
+        titulo = "Licenciatura en Ingeniería Electromecánica con énfasis en Aeronáutica"
         fun.malla_enf(malla_AER,cursos,sesgo,AER,"AER",area_colors,titulo,rango,True)
     doc.append(NoEscape(r"\newpage"))
     with doc.create(TikZ(

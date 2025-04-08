@@ -103,46 +103,29 @@ FPH0108,"
 && Perspectivas futuras de la ingeniería electromecánica
 "
 AUT0205,"
-& Introducción a las ciencias de la computación
-&& Surgimiento de computación moderna
-&& Campos de aplicación
-&& Arquitectura de un sistema computacional
-& Lenguajes de programación
-&& Paradigmas de programación, tipos, diferencias.
-&& Lenguajes de alto nivel interpretados
-&& Lenguajes de alto nivel interpretados
-&& Variables, tipos de datos y operadores
-&& Representación digital de datos
-& Estructuras de control
-&& Condicionales
-&& Bucles
-&& Manejo de excepciones
-&& Representación gráfica de las estructuras
-& Estructuras de datos
-&& Arreglos
-&& Listas y tuplas 
-&& Pilas y colas
-&& Acceso a memoria y reserva de memoria
-&& Punteros y aritmética de punteros
-& Funciones y programación modular
-&& Definición y uso de funciones
-&& Modularización del código
-&& Memoria temporal de las funciones
-& Modelado con UML 
-&& Introducción a UML
-&& Diagramas de casos de uso
-&& Diagramas de flujo
-&& Diagrama de estados
-&& Modelado de base de datos
-& Algoritmos
-&& Definición y características
-&& Diseño y análisis de algoritmos
-&& Algoritmos de ordenamiento y búsqueda
-&& Implementación de máquinas de estado
-&& Rendimiento y comparación según el orden de complejidad.
-& Compiladores
-&& Proceso de compilación
-&& Fases de un compilador
+& Representación de Información  
+&& Información analógica y digital  
+&& Bases numéricas posicionales y cambio de base  
+&& Representación de números binarios  
+&& Operaciones aritméticas en otras bases  
+&& Notación de punto flotante  
+&& Representaciones de datos como números enteros, caracteres, flotantes y otros tipos de datos
+& Modelo de Computación Abstracto  
+&& Máquinas de estados finitos y autómatas  
+&& Máquinas no programables, programables y reprogramables  
+&& Historia de Alan Turing y sus aportes a la computación  
+&& Máquinas de Turing  
+&& Niveles de máquinas virtuales y construcción de lenguajes  
+& Arquitectura de Computadoras  
+&& Actores importantes en la arquitectura de computadoras y sus aportes  
+&& Arquitectura de von Neumann y arquitectura de Harvard  
+&& Estructura de la Unidad Central de Procesamiento  
+&& Jerarquía de Memoria  
+& Ciclo de Procesamiento  
+&& Historia de los procesadores y Ley de Moore  
+&& Introducción al lenguaje ensamblador  
+&& Interrupciones, operaciones de registros y microcódigo  
+&& Arquitecturas de computadoras no convencionales  
 "
 IMM0207,"
 & Introducción a la mecánica
@@ -1214,21 +1197,21 @@ IMM0706,"
 && Medios para aumentar la resistencia a la fatiga 
 & Transmisiones 
 && Introducción a transmisiones mecánicas
-&& Transmisiones por banda 
-&& Transmisiones por fricción 
-&& Transmisiones por engranaje 
-&& Transmisiones por tornillo sin fin 
+&& Por banda 
+&& Por fricción 
+&& Por engranaje 
+&& Por tornillo sin fin 
 && Reductores 
-&& Transmisiones por cadena 
+&& Por cadena 
 & Uniones 
 && Introducción a uniones mecánicas
-&& Uniones soldadas 
-&& Uniones con apretura 
-&& Uniones roscadas 
+&& Soldadas 
+&& Con apretura 
+&& Roscadas 
 && Cuñas y pasadores 
-&& Uniones de chaveta 
-&& Uniones estriadas y sin chaveta 
-&& Uniones elásticas (resortes) 
+&& De chaveta 
+&& Estriadas y sin chaveta 
+&& Elásticas (resortes) 
 & Elementos de las transmisiones 
 && Árboles y ejes 
 && Cojinetes de deslizamiento 
@@ -1342,8 +1325,8 @@ AUT0804,"
 && Comparación con sistemas continuos
 && Aplicaciones y ejemplos prácticos
 & Modelado con máquinas de estados
-& Definición y tipos de máquinas de estados
-& Diagramas de estados y transiciones
+&& Definición y tipos de máquinas de estados
+&& Diagramas de estados y transiciones
 & Redes de colas
 && Introducción a las redes de colas
 && Modelado y análisis de sistemas de colas
@@ -1372,6 +1355,16 @@ AUT0804,"
 & Implementación de lenguajes de programación
 && Implementación de controladores en PLCs
 && Implementación de controladores en microcontroladores
+"
+AUT0805,"
+& Programación de PLC con IEC 61131 con lenguajes escalera.
+& Programación de PLC con IEC 61131 con SFC.
+& Configuración e PLC, buses de campo, AS-i, Profibus.
+& Sintonización de PID en PLCs.
+& Implementación de controladores PID en microcontroladores. 
+& Diseño de controladores con lugar geométrico de las raíces y SISOTOOL.
+& Diseño de compensadores por medio análisis de respuesta en frecuencia.
+& Diseño de controladores con modelo de control predictivo (MPC).
 "
 INS0801,"
 & Introducción
