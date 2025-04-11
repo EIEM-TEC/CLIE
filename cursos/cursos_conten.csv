@@ -1225,6 +1225,26 @@ IMM0706,"
 && Cálculos de desgaste 
 && Cálculos de la eficiencia, potencia y torque 
 "
+IMM0707,"
+& Fundamentos de Termodinámica y Transferencia de Calor 
+&& Principios básicos de la termodinámica
+&& Mecanismos de transferencia de calor
+& Propiedades de los Fluidos y Mecánica de Fluidos Aplicada 
+&& Propiedades de los fluidos y ecuaciones de estado 
+&& Análisis de flujo de fluidos en sistemas térmicos
+& Sistemas de Ventilación y Aire Comprimido 
+&& Principios de ventilación y diseño de sistemas 
+&& Aplicaciones en la industria y la construcción
+& Sistemas de Refrigeración y Aire Acondicionado 
+&& Ciclos de refrigeración y termodinámica aplicada 
+&& Diseño de sistemas HVAC
+& Modelado y Simulación de Sistemas Térmicos
+&& Herramientas de modelado computacional
+&& Simulaciones para optimización de diseños
+& Evaluación de Eficiencia Energética en Sistemas Electromecánicos 
+&& Criterios de eficiencia y análisis energético 
+&& Estrategias de optimización energética
+"
 IEE0802,"
 & Alternador sincrónico
 && Principio de funcionamiento
@@ -1486,6 +1506,22 @@ INS0903,"
 & Aplicaciones especiales de la refrigeración y climatización
 && Refrigeración industrial (procesos, almacenamiento de alimentos)
 && Climatización en hospitales, laboratorios y cuartos limpios
+"
+INS0904,"
+& Componentes básicos de un sistema de refrigeración real
+& Funcionamiento y fallas principales de compresores de pistón y tornillo
+& Ajuste de controles de presión y temperatura
+& Procedimientos para hacer vacío y cargar refrigerante por el lado de baja
+& Aplicación práctica de carga de refrigerante en sistemas reales
+& Operación y medición de parámetros en paneles de refrigeración
+& Simulación de fallas en sistemas de refrigeración y análisis de parámetros
+& Procedimientos de recuperación de refrigerante y normativa ambiental
+& Diagnóstico y solución de fallas en sistemas comerciales e industriales
+& Laboratorio de aire acondicionado: diagnóstico y medición de desempeño
+& Mantenimiento preventivo y correctivo en sistemas de refrigeración y aire acondicionado
+& Estudio de casos sobre fallas en refrigeración y aire acondicionado
+& Optimización del rendimiento energético en sistemas de refrigeración
+& Evaluación del desempeño de un sistema de agua helada
 "
 INS0905,"
 & Introducción a la investigación en ingeniería

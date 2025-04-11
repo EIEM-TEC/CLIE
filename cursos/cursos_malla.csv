@@ -86,7 +86,7 @@ INS1302,EE6801,Sistemas de la aeronave,INS,13,2,4,0,3,IEE0802,,INS1301;INS1303
 INS1303,EE6902,Aerodinámica,INS,13,3,4,0,3,INS0907,INS1302,
 INS1401,EE8907,Automatización y digitalización industrial,INS,14,1,2,2,3,,INS1402,
 INS1402,EE8807,Aplicaciones de sistemas embebidos,INS,14,2,2,2,3,AUT0705,,INS1401;INS1403
-INS1403,EE8903,Machine Learning e Inteligencia Artificial,INS,14,3,2,2,3,,INS1402,
+INS1403,EE8903,Aplicaciones de Inteligencia Artificial,INS,14,3,2,2,3,,INS1402,
 AER0801,EE6801,Sistemas de la aeronave,AER,8,1,4,0,3,,IEE0802,AER0901
 AER0806,EE0806,Máquinas y mecanismos,AER,8,6,4,0,3,IMM0706,,AER0906;AER0807
 AER0807,EE6807,Materiales en aeronáutica,AER,8,7,3,0,2,,AER0806,AER0906;AER1203
@@ -111,14 +111,14 @@ AER1302,EE4806,Instalaciones eléctricas,AER,13,2,4,0,3,IEE0702,,AER1301;AER1303
 AER1303,EE5003,Gestión de la energía,AER,13,3,4,0,3,,AER1302,
 AER1401,EE8907,Automatización y digitalización industrial,AER,14,1,2,2,3,,AER1402,
 AER1402,EE8807,Aplicaciones de sistemas embebidos,AER,14,2,2,2,3,AUT0705,,AER1401;AER1403
-AER1403,EE8903,Machine Learning e Inteligencia Artificial,AER,14,3,2,2,3,,AER1402,
+AER1403,EE8903,Aplicaciones de Inteligencia Artificial,AER,14,3,2,2,3,,AER1402,
 SCF0801,EE8104,Ingeniería de sistemas,SCF,8,1,2,2,3,FPH0701,,SCF0901
 SCF0806,EE0806,Máquinas y mecanismos,SCF,8,6,4,0,3,IMM0706,,SCF0906
 SCF0807,EE8807,Aplicaciones de sistemas embebidos,SCF,8,7,2,2,3,AUT0705,,SCF0903;SCF0907;SCF0808
 SCF0808,EE8808,Fundamentos de ciberseguridad,SCF,8,8,2,0,1,,SCF0807,SCF1203
 SCF0901,EE8901,Modelado numérico y simulación computacional,SCF,9,1,2,2,3,IMM0707;SCF0801,,SCF1001
 SCF0902,EE0902,Aplicaciones de circuitos integrados,SCF,9,2,2,1,2,AUT0805,,SCF1001
-SCF0903,EE8903,Machine Learning e Inteligencia Artificial,SCF,9,3,2,2,3,SCF0807,,SCF1201;SCF1202
+SCF0903,EE8903,Aplicaciones de Inteligencia Artificial,SCF,9,3,2,2,3,SCF0807,,SCF1201;SCF1202
 SCF0905,EE1101,Seminario de graduación I,SCF,9,5,2,2,3,FPH0701,,SCF1005
 SCF0906,EE8906,Robótica,SCF,9,6,2,2,3,SCF0806,SCF0907,SCF1201
 SCF0907,EE8907,Automatización y digitalización industrial,SCF,9,7,2,2,3,SCF0807,,SCF0906;SCF1007
