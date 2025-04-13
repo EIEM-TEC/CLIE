@@ -729,11 +729,12 @@ def generar_programa(id):
 # generar_programa("IMM0706") #elementos maq
 # generar_programa("IMM0707") #sist termicos
 # generar_programa("IEE0802") #Maquinas II
+generar_programa("IEE0803") #Lab Maquinas II
 # generar_programa("AUT0804") #Control por event.
 # generar_programa("AUT0805") #Lab control
 # generar_programa("INS0801") #Trans y distr
 # generar_programa("INS0903") #ref y AC
-generar_programa("INS0904") #lab ref y AC
+# generar_programa("INS0904") #lab ref y AC
 # generar_programa("INS0905") #Sem I
 # generar_programa("SCF0801") #Ing. Sistemas
 

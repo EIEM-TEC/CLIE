@@ -1339,6 +1339,22 @@ IEE0802,"
 && Selección y análisis de dispositivos de conmutación en convertidores de potencia
 && Aplicaciones prácticas y tendencias en electrónica de potencia
 "
+IEE0803,"
+& Alternadores sincrónicos Aislado
+& Pruebas de Máquina Sincrónica (Reactancia y Resistencia armadura)
+& Curva de Capacidad del Alternador
+& Alternador Sincrónico en RED
+& Motores sincrónicos curvas en V
+& Motor sincrónico condensador sincrónico
+& Generador Corriente Directa Conexión Shunt e independiente
+& Generador Corriente Directa Conexión Compuesta
+& Motor Corriente Directa Conexión Shunt
+& Motor Corriente Directa Conexión Compuesta
+& Motor Corriente Directa Métodos Control de Velocidad
+& Motor a pasos
+& Servomotor
+& Motor universal
+"
 AUT0804,"
 & Introducción a los sistemas de eventos discretos
 && Conceptos básicos de sistemas de eventos discretos
