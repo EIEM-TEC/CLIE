@@ -1581,6 +1581,25 @@ INS0905,"
 && Retroalimentación de pares
 && Ajustes finales al anteproyecto
 "
+INS0907,"
+& Curvas características típicas de bombas
+&& Definición y clasificación de bombas
+&& Cálculo de potencia de entrada y salida
+&& Cálculo de eficiencia de una bomba
+&& Desarme y análisis de funcionamiento de diferentes tipos de bombas
+& Compresores reciprocantes y rotativos
+&& Evaluación del rendimiento de compresores de pistón, tornillo y paletas
+&& Cálculo de caudal, potencia y eficiencia en compresores
+&& Desarme y ensamblaje de compresores para análisis de sus componentes
+& Ventiladores y turbinas
+&& Caracterización experimental de ventiladores centrífugos y axiales
+&& Análisis de eficiencia de turbinas Francis y de acción mediante ensayos
+&& Cálculo de potencia de entrada y salida en sistemas de generación hidráulica
+& Válvulas y dispositivos auxiliares
+&& Principio de funcionamiento y experimentación con válvulas de control de flujo
+&& Evaluación de reguladores de presión y dispositivos de filtración
+&& Análisis de comportamiento de sistemas con diferentes configuraciones de válvulas
+"
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas
 && Conceptos fundamentales de la ingeniería de sistemas
