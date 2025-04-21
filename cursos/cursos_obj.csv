@@ -162,7 +162,7 @@ AUT0804,2,"Diseñar sistemas controlados por eventos discretos con base en máqu
 AUT0804,3,"Implementar GRAFCET/SFC para la automatización de sistemas controlados por eventos discretos"
 AUT0805,0,"Desarrollar controladores automáticos para sistemas continuos y de eventos discretos"
 AUT0805,1,"Crear soluciones de automatización utilizando técnicas y herramientas como lugar geométrico de las raíces, diagramas de Bode, técnicas de sintonización, máquinas de estado, Sequential Function Chart (SFC), y Stateflow"
-AUT0805,2,"Estudiar la implementación y sintonización de controladores proporcionales-integrales y derivativos (PID) para un proceso"
+AUT0805,2,"Implementar controladores proporcionales-integrales y derivativos (PID) para un proceso"
 AUT0805,3,"Diseñar sistemas de control utilizando controladores lógicos programables (PLC) según la norma IEC 61131-3"
 AUT0805,4,"Implementar sistemas de control utilizando microcontroladores"
 INS0801,0,"Analizar el funcionamiento, modelado y operación de los sistemas de transmisión y distribución de energía eléctrica, considerando sus elementos fundamentales, métodos de análisis y tecnologías emergentes"
