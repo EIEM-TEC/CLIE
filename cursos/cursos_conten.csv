@@ -1226,22 +1226,23 @@ IMM0706,"
 && Cálculos de la eficiencia, potencia y torque 
 "
 IMM0707,"
-& Fundamentos de Termodinámica y Transferencia de Calor 
+& Fundamentos de termodinámica y transferencia de calor 
 && Principios básicos de la termodinámica
 && Mecanismos de transferencia de calor
-& Propiedades de los Fluidos y Mecánica de Fluidos Aplicada 
+& Propiedades de los fluidos y mecánica de fluidos aplicada 
 && Propiedades de los fluidos y ecuaciones de estado 
 && Análisis de flujo de fluidos en sistemas térmicos
-& Sistemas de Ventilación y Aire Comprimido 
+& Sistemas de ventilación y aire comprimido 
 && Principios de ventilación y diseño de sistemas 
 && Aplicaciones en la industria y la construcción
-& Sistemas de Refrigeración y Aire Acondicionado 
+& Sistemas de refrigeración y aire acondicionado 
 && Ciclos de refrigeración y termodinámica aplicada 
-&& Diseño de sistemas HVAC
-& Modelado y Simulación de Sistemas Térmicos
+&& Diseño de sistemas de refrigeración 
+&& Diseño de sistemas de aire acondicionado
+& Modelado y Simulación de sistemas térmicos
 && Herramientas de modelado computacional
 && Simulaciones para optimización de diseños
-& Evaluación de Eficiencia Energética en Sistemas Electromecánicos 
+& Evaluación de eficiencia energética en sistemas electromecánicos 
 && Criterios de eficiencia y análisis energético 
 && Estrategias de optimización energética
 "
@@ -1340,17 +1341,17 @@ IEE0802,"
 && Aplicaciones prácticas y tendencias en electrónica de potencia
 "
 IEE0803,"
-& Alternadores sincrónicos Aislado
-& Pruebas de Máquina Sincrónica (Reactancia y Resistencia armadura)
-& Curva de Capacidad del Alternador
-& Alternador Sincrónico en RED
+& Alternadores sincrónicos aislados
+& Pruebas de la máquina sincrónica (reactancia y resistencia armadura)
+& Curva de capacidad del alternador
+& Alternador sincrónico en RED
 & Motores sincrónicos curvas en V
 & Motor sincrónico condensador sincrónico
-& Generador Corriente Directa Conexión Shunt e independiente
-& Generador Corriente Directa Conexión Compuesta
-& Motor Corriente Directa Conexión Shunt
-& Motor Corriente Directa Conexión Compuesta
-& Motor Corriente Directa Métodos Control de Velocidad
+& Generador corriente directa: conexión shunt e independiente
+& Generador corriente directa: conexión compuesta
+& Motor corriente directa: conexión shunt
+& Motor corriente directa: conexión compuesta
+& Motor corriente directa: métodos de control de velocidad
 & Motor a pasos
 & Servomotor
 & Motor universal
@@ -1395,7 +1396,7 @@ AUT0804,"
 AUT0805,"
 & Programación de PLC con IEC 61131 con lenguajes escalera.
 & Programación de PLC con IEC 61131 con SFC.
-& Configuración e PLC, buses de campo, AS-i, Profibus.
+& Configuración de PLC, buses de campo, AS-i, Profibus.
 & Sintonización de PID en PLCs.
 & Implementación de controladores PID en microcontroladores. 
 & Diseño de controladores con lugar geométrico de las raíces y SISOTOOL.
