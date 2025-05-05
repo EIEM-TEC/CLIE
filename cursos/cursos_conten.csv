@@ -1548,6 +1548,40 @@ INS0807,"
 && Eficiencia energética y sostenibilidad.
 && Mantenimiento de sistemas de aire comprimido.
 "
+INS0808,"
+& Introducción al mantenimiento industrial
+&& Evolución del mantenimiento: correctivo, preventivo, predictivo y proactivo
+&& Importancia de la gestión del mantenimiento en la industria
+&& Relación con la productividad y seguridad
+& Normativas y estándares internacionales en mantenimiento
+&& ISO 17359: Mantenimiento basado en condición
+&& Otras normativas relevantes (ISO 55000, IEC 60034, ISO 20816)
+&& Cumplimiento regulatorio y mejores prácticas
+& Conceptos y principios del mantenimiento basado en condición (CBM)
+&& Beneficios del CBM frente a estrategias tradicionales
+&& Proceso de implementación en entornos industriales
+&& Integración con mantenimiento predictivo y prescriptivo
+& Análisis de vibraciones en equipos rotativos
+&& Fundamentos del análisis de vibraciones
+&& Tipos de fallos detectables mediante vibraciones
+&& Uso de sensores y software de análisis
+&& Gráficos de tendencia, determinación de alarmas con base en la norma ISO 20816
+&& Forma de onda y espectros, diferencia, FFT, parámetros de configuración
+&& Patrones de vibración: desbalance, desalineamiento, engranajes, motores eléctricos y otros
+& Termografía aplicada al mantenimiento predictivo
+&& Principios de la termografía infrarroja
+&& Identificación de fallos en componentes eléctricos y mecánicos
+&& Interpretación de imágenes térmicas y toma de decisiones
+& Ultrasonido y otras técnicas de monitoreo predictivo
+&& Aplicaciones del ultrasonido en mantenimiento
+&& Detección de fugas, lubricación y fallos en rodamientos
+& Tribología y análisis de aceites
+&& Pruebas físicas, químicas y dieléctricas
+&& Cromatografía de gases
+& Pruebas de diagnóstico eléctrico
+&& Pruebas de alta tensión
+&& Pruebas de baja tensión
+"
 INS0903,"
 & Fundamentos de la refrigeración y aire acondicionado
 && Evolución de los sistemas de refrigeración y climatización
@@ -1654,6 +1688,39 @@ INS0905,"
 && Retroalimentación de pares
 && Ajustes finales al anteproyecto
 "
+INS0906,"
+& Fundamentos de instalaciones mecánico-sanitarias
+&& Bombas Centrífugas: curvas características, funcionamiento, partes principales, mantenimiento
+&& Bombas desplazamiento positivo: tipos, funcionamiento, partes principales, mantenimiento
+&& Fundamentos para proyección de sistemas suministro agua
+&& Normativa costarricense para la proyección de instalaciones hidráulicas y sanitarias en edificaciones
+&& Introducción al análisis de costos y viabilidad económica del perfil del proyecto mecánico sanitario
+& Diseño de sistemas de agua potable e hidrónico
+&& Demanda de agua
+&& Redes de distribución
+&& Movimiento del agua en tuberías a presión
+&& Método para la estimación de caudal
+&& Método para estimación de diámetro de las tuberías
+&& Métodos para proporcionar presión independiente y la determinación de las presiones de trabajo y los niveles de agua en el tanque hidroneumático 
+&& Normativa costarricense e internacional
+&& Especificación técnica y planos constructivos
+& Diseño de sistemas de aguas servidas
+&& Caudales de diseño de recolección de aguas servidas
+&& Redes de distribución
+&& Movimiento del agua en tuberías a presión
+&& Método para la estimación de caudal
+&& Método para estimación de diámetro de las tuberías
+&& Sistemas de bombeo para aguas servidas
+&& Normativa costarricense e internacional
+&& Especificación técnica y planos constructivos
+& Sistemas contra incendios
+&& Introducción a tipos de sistemas contra incendios
+&& Sistemas de supresión por agua
+&& Normativa costarricense e internacional
+& Estrategias de eficiencia energética en instalaciones sanitarias
+&& Optimización de consumo de agua y bombeo
+&& Tecnologías emergentes para la sostenibilidad
+"
 INS0907,"
 & Curvas características típicas de bombas
 && Definición y clasificación de bombas
@@ -1712,6 +1779,90 @@ INS0909,"
 && Identificación de partes de una turbina de vapor
 && Procedimientos de encendido y apagado de turbinas
 && Evaluación del flujo de condensado y desempeño energético
+"
+INS1006,"
+& Introducción y fundamentos
+&& Concepto de ciclo de vida de instalaciones electromecánicas
+&& Etapas del ciclo de vida de un activo
+&& Importancia de la gestión del ciclo de vida en ingeniería
+& Auditorías de mantenimiento
+&& Tipos de auditoría de mantenimiento
+&& Planificación, ejecución y seguimiento
+&& Herramientas de diagnóstico y mejora continua
+& Modelos de gestión de mantenimiento
+&& Estructura de un modelo de gestión de mantenimiento
+&& Norma ISO 55000 sobre gestión de activos y su integración con el ciclo de vida del activo
+&& Indicadores clave de desempeño (KPIs)
+&& Cuadro de mando integral
+& Análisis del costo del ciclo de vida
+&& Introducción al LCCA (Life Cycle Cost Analysis)
+&& Componentes del costo del ciclo de vida
+&& Metodologías de cálculo (método del valor presente neto, tasa interna de retorno, retorno de inversión, Woodward)
+&& Norma IEC 60300-3-3: guía de aplicación del cálculo del costo del ciclo de vida útil
+& Enfoque INCOSE y pensamiento sistémico
+&& Introducción a INCOSE y su relevancia en sistemas complejos
+&& Principios del enfoque de sistemas aplicados al ciclo de vida
+&& Relación entre ingeniería de sistemas y gestión de activos
+& Transformación digital y mantenimiento
+&& Transformación digital y su impacto en el mantenimiento
+&& Internet de las Cosas (IoT) y mantenimiento inteligente
+&& Big Data y analítica aplicada a la gestión de activos
+& Toma de decisiones basada en datos
+&& Métodos de análisis de datos en mantenimiento
+&& Indicadores clave de desempeño (KPIs) en mantenimiento
+&& Uso de inteligencia artificial y machine learning en pronóstico de fallos
+& Metodologías de diagnóstico de fallos en equipos industriales
+&& Identificación de modos de falla y efectos (FMEA)
+&& Métodos cualitativos y cuantitativos para el diagnóstico
+&& Herramientas de monitoreo y detección temprana de fallos
+& Modelos de pronóstico y estimación de vida útil de equipos
+&& Algoritmos de pronóstico de fallos
+&& Enfoques estadísticos y modelos de predicción
+&& Aplicación de redes neuronales y machine learning
+& Optimización del mantenimiento a partir del análisis de datos
+&& Uso de software de simulación y modelado predictivo
+&& Optimización de planes de mantenimiento basados en datos
+&& Estudios de caso y aplicación en la industria
+& Análisis causa raíz (RCA)
+&& Fundamentos del análisis causa raíz según la norma UNE-EN 62740
+&& Herramientas empleadas para el desarrollo de un RCA
+&& Aplicación en fallos recurrentes en instalaciones electromecánicas
+& Gestión del riesgo
+&& Identificación, evaluación y mitigación del riesgo
+&& Desarrollo de matrices de riesgo
+&& Integración con la gestión del mantenimiento y del ciclo de vida
+"
+AER1001,"
+& Introducción a la gestión del ciclo de vida de la aeronave
+&& Concepto de ciclo de vida de la aeronave
+&& Etapas del ciclo de vida de la aeronave
+&& Importancia en la seguridad y operatividad
+& Estrategias de mantenimiento aeronáutico
+&& Tipos de mantenimiento: preventivo, correctivo y predictivo
+&& Programación de revisiones y recursos
+&& Estrategias de planificación eficiente
+&& Optimización de procesos de mantenimiento
+& Normativas y regulaciones en la gestión de aeronaves
+&& Legislación nacional e internacional
+&& Certificación y estándares de mantenimiento
+& Análisis del costo del ciclo de vida
+&& Introducción al LCCA (Life Cycle Cost Analysis)
+&& Componentes del costo del ciclo de vida
+&& Metodologías de cálculo (método del valor presente neto, tasa interna de retorno, retorno de inversión, Woodward)
+&& Norma IEC 60300-3-3: guía de aplicación del cálculo del costo del ciclo de vida útil
+& Enfoque INCOSE y pensamiento sistémico
+&& Introducción a INCOSE y su relevancia en sistemas complejos
+&& Principios del enfoque de sistemas aplicados al ciclo de vida
+&& Relación entre ingeniería de sistemas y gestión del ciclo de vida
+& Aplicación de tecnologías en la optimización del mantenimiento
+&& Digitalización y mantenimiento basado en datos
+&& Uso de software especializado en mantenimiento aeronáutico
+& Herramientas computacionales en la gestión de aeronaves
+&& Software de simulación y análisis
+&& Aplicaciones en la planificación y control de mantenimiento
+& Estudio de casos en mantenimiento y operación de aeronaves
+&& Casos reales de optimización de mantenimiento
+&& Aplicación de estrategias exitosas
 "
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas

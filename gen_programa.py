@@ -422,6 +422,7 @@ def generar_programa(id):
     doc.preamble.append(Command('addbibresource', '../bibIEE.bib'))
     doc.preamble.append(Command('addbibresource', '../bibIMM.bib'))
     doc.preamble.append(Command('addbibresource', '../bibINS.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibAER.bib'))
     doc.preamble.append(Command('addbibresource', '../bibSCF.bib'))
     doc.preamble.append(NoEscape(r'\renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}'))
     doc.preamble.append(NoEscape(r'''
@@ -744,11 +745,15 @@ def generar_programa(id):
 # generar_programa("INS0801") #Trans y distr
 # generar_programa("INS0806") #Instalaciones
 # generar_programa("INS0807") #Vent y aire comprimido
+# generar_programa("INS0808") #Mant elec
 # generar_programa("INS0903") #ref y AC
 # generar_programa("INS0904") #lab ref y AC
 # generar_programa("INS0905") #Sem I
+# generar_programa("INS0906") #Inst mec-san
 # generar_programa("INS0907") #Lab Sist Flu
-generar_programa("INS0909") # Lab Vapor
+# generar_programa("INS0909") # Lab Vapor
+# generar_programa("INS1006") # Gestion ciclo vida
+generar_programa("AER1001") # Gestion ciclo vida aeronaves
 # generar_programa("SCF0801") #Ing. Sistemas
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
