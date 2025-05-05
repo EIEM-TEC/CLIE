@@ -1476,6 +1476,78 @@ INS0801,"
 && Automatización de sistemas de distribución 
 && Sistemas de almacenamiento y electrónica de potencia
 "
+INS0806,"
+& Tipos de instalaciones eléctricas en baja tensión
+&& Circuito monofásico trifilar. 
+&& Circuitos trifásicos. 
+& Selección de conductores
+&& Según su aplicación
+&& Según su ampacidad
+&& Según la caída de voltaje
+&& Según la temperatura de operación y temperatura ambiente
+&& Según el número de conductores
+&& Según se encuentre al aire libre o en canalizaciones
+&& Otros criterios
+& Cálculo de circuitos ramales para diferentes tipos de cargas eléctricas
+&& Selección de conductores vivos, neutros y conductores de puesta a tierra
+&& Factores de demanda
+&& Selección de protecciones térmicas y termomagnéticas
+& Seguridad en instalaciones eléctricas y puesta a tierra
+&& Tolerancia del ser humano a la electricidad, tiempo y niveles máximos de exposición, el tiempo máximo permitido para el funcionamiento de las protecciones
+&& Puesta a tierra y operación de las protecciones
+&& Puesta a tierra y neutro, conexión según CEN
+&& Cálculo del conductor de puesta a tierra y del conductor del electrodo de puesta a tierra
+&& Diferentes sistemas de puesta a tierra
+& Dimensionamiento de alimentadores y acometidas para diferentes tipos de cargas eléctricas.
+&& Conceptos de carga instalada, carga demandada, factor de carga y manejo de carga
+&& Factores de simultaneidad y diversidad
+&& Dimensionamiento de acometidas (áreas y subterráneas) y transformadores
+&& Selección de conductores vivos, neutros y conductores de puesta a tierra
+&& Selección de protecciones térmicas y termomagnéticas
+&& Dimensionamiento del transformador y su cargabilidad según normas
+&& Protección de Transformadores
+& Corrección del factor de potencia
+&& Importancia
+&& Opciones de corrección (instalación de un banco capacitores o capacitor)
+& Estudio de corto circuito (cálculo manual)
+&& Teoría de la corriente simétrica y asimétrica al corto circuito.
+&& Corto circuito en baja tensión: Método de la impedancia equivalente.
+&& Corto circuito en baja tensión: Método de los KVA´s equivalentes.
+& Coordinación de protecciones
+&& Teoría y conceptos de la respuesta selectiva de las protecciones.
+&& Curvas características de las protecciones eléctricas.
+& Principios de luminotecnia y diseño de sistemas de iluminación
+&& Teoría y conceptos de luminotecnia
+&& Tipos de luminarias y sus datos técnicos.
+&& Métodos de diseño de iluminación:
+&& Lúmenes
+&& Cavidades zonales
+&& Punto por punto
+& Calidad de la energía eléctrica
+&& Niveles de calidad normados por la Autoridad Reguladora de los Servicios Públicos (ARESEP) en voltaje, corriente, frecuencia, distorsión armónica, etc.
+&& Distorsión armónica, transitorios y métodos de mitigación de sus efectos
+& Planos y especificaciones
+&& Simbología
+&& Normativa
+&& Conformación de los planos
+"
+INS0807,"
+& Sistemas de Aire Comprimido
+&& Tipos de compresores: funcionamiento, enfriadores, purgadores y mantenimiento.
+&& Dispositivos e instrumentación de redes de aire comprimido.
+&& Cálculo y diseño de sistemas de aire comprimido.
+&& Normativa aplicable (ISO 8573, OSHA, NFPA 99, ASME PTC 9).
+&& Eficiencia energética y sostenibilidad.
+&& Mantenimiento de sistemas de aire comprimido.
+& Sistemas de Ventilación
+&& Ventiladores: Tipos, funcionamiento, curvas características.
+&& Dispositivos e instrumentación de redes de sistemas de ventilación.
+&& Cálculo y diseño de sistemas de ventilación mecánica.
+&& Sistemas de extracción de contaminantes y control de calidad del aire.
+&& Normativa aplicable (ASHRAE 62.1, NFPA 90A, ISO 14644, EN 16798-3).
+&& Eficiencia energética y sostenibilidad.
+&& Mantenimiento de sistemas de aire comprimido.
+"
 INS0903,"
 & Fundamentos de la refrigeración y aire acondicionado
 && Evolución de los sistemas de refrigeración y climatización
@@ -1600,6 +1672,46 @@ INS0907,"
 && Principio de funcionamiento y experimentación con válvulas de control de flujo
 && Evaluación de reguladores de presión y dispositivos de filtración
 && Análisis de comportamiento de sistemas con diferentes configuraciones de válvulas
+"
+INS0909,"
+& Métodos de medición de temperatura en sistemas de vapor
+&& Termómetros de vidrio y mercurio
+&& Termómetro de bulbo y capilar
+&& Termómetro de resistencia
+&& Termistores y termopares
+& Medición de eficiencia en sistemas de combustión y generación de vapor
+&& Parámetros de combustión
+&& Medición del exceso de aire
+&& Evaluación visual de la llama
+&& Instrumentación para análisis de gases de combustión
+& Reconocimiento y funcionamiento de calderas
+&& Partes y funcionamiento de una caldera pirotubular
+&& Partes y funcionamiento de una caldera acuotubular
+&& Controles eléctricos y de seguridad en calderas
+& Quemadores y control de combustión
+&& Tipos de quemadores: vapor atomizante, aire atomizante, mecánicos
+&& Métodos de regulación de la combustión
+&& Análisis del desempeño térmico de un quemador
+& Trampas de vapor: identificación y evaluación de eficiencia
+&& Clasificación de trampas de vapor (termostáticas, mecánicas y termodinámicas)
+&& Métodos de detección de fallas en trampas de vapor
+&& Evaluación de eficiencia en trampas mediante medición de temperatura y flujo
+& Análisis de calidad del agua en calderas
+&& Medición de dureza del agua
+&& Evaluación del pH del agua en sistemas de vapor
+&& Métodos de tratamiento y acondicionamiento del agua para calderas
+& Inspección y pruebas de seguridad en calderas
+&& Revisión del Reglamento Nacional de Calderas
+&& Prueba en frío y prueba hidrostática
+&& Inspección operativa y análisis de eficiencia térmica
+& Diagnóstico de sistemas de vapor en aplicaciones industriales
+&& Diagnóstico de fallas en sistemas de vapor
+&& Análisis de pérdida de energía en líneas de distribución
+&& Técnicas para la optimización del consumo de vapor en procesos
+& Turbinas de vapor: reconocimiento y evaluación de eficiencia
+&& Identificación de partes de una turbina de vapor
+&& Procedimientos de encendido y apagado de turbinas
+&& Evaluación del flujo de condensado y desempeño energético
 "
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas
