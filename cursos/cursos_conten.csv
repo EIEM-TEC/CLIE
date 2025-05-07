@@ -1864,6 +1864,87 @@ AER1001,"
 && Casos reales de optimización de mantenimiento
 && Aplicación de estrategias exitosas
 "
+AER1002,"
+& Introducción de los sistemas de propulsión
+&& El principio de la propulsión a chorro
+&& Impulso de fluidos y fuerza de reacción
+&& Cohetes
+&& Hélices
+&& Motores turbojet, turbofan y ramjet
+& Mecánica y termodinámica del flujo de fluidos
+&& Ecuaciones fundamentales
+&& Termodinámica de gases
+&& Termodinámica de combustión en equilibrio, reacciones químicas
+& Etapas de compresión de aire
+&& Principio de la compresión en turbinas 
+&& Relación compresión-propulsión 
+&& Etapas de ingreso y compresión de aire
+& Enfriamiento de la turbina 
+&& Sistemas de enfriamiento convencionales 
+&& Casos específicos 
+&& Fallas en sistema de enfriamiento y caza fallas 
+& Combustión en turbinas 
+&& Principio de combustión 
+&& Sistema de combustión en aeronaves 
+&& Ejemplos de combustión en motores básicos 
+& Sistema de control de combustible de las turbinas 
+&& Bomba de combustible
+&& Generalidades y partes básicas 
+& Montaje y conexiones del motor con el avión
+&& Soportes e ingeniería de fijación de la turbina 
+&& Conexiones eléctricas 
+&& Drenajes 
+& Lectura de hojas de especificaciones técnicas 
+&& General Electric 
+&& SNECMA 
+&& Boeing 
+&& Embraer 
+"
+AER1003,"
+& Introducción al control automático de vuelo
+&& Historia y evolución del control automático de vuelo.
+&& Conceptos básicos y terminología.
+&& Familiarización con el entorno de simulación (MATLAB/Simulink).
+& Modelado dinámico de aeronaves
+&& Ecuaciones de movimiento.
+&& Modelado de sistemas lineales y no lineales.
+&& Implementación de modelos dinámicos básicos en simulación.
+& Análisis de estabilidad y control
+&& Estabilidad estática y dinámica.
+&& Análisis de modos de movimiento (longitudinal y lateral-direccional).
+&& Simulación de respuestas a perturbaciones.
+& Diseño de controladores automáticos
+&& Controladores PID.
+&& Control con LQR (Regulador Cuadrático Lineal).
+&& Conceptos de control robusto.
+&& Introducción al control no lineal.
+&& Principios del control adaptativo.
+& Control de trayectoria
+&& Principios del control de trayectoria.
+&& Algoritmos de seguimiento de trayectorias.
+&& Simulación de trayectorias de vuelo.
+& Planificación de Trayectorias
+&& Métodos de planificación de trayectorias.
+&& Optimización de rutas y evitación de obstáculos.
+&& Implementación de algoritmos de planificación de trayectorias.
+& Aeronavegabilidad y normativas
+&& Conceptos de aeronavegabilidad.
+&& Normativas y regulaciones para UAVs.
+&& Análisis de casos de estudio y cumplimiento normativo.
+& Sistemas GPS y Navegación
+&& Teoría de sistemas GPS y navegación.
+&& Principios de funcionamiento del GPS.
+&& Integración de sistemas GPS en UAVs.
+&& Implementación de navegación basada en GPS.
+& Comunicación entre UAVs y aviones
+&& Protocolos de comunicación y enlace de datos.
+&& Coordinación y control de múltiples UAVs.
+&& Simulación de comunicación y coordinación entre UAVs..
+& Pruebas y Validación
+&& Métodos de prueba y validación de sistemas de control.
+&& Análisis de datos y evaluación de desempeño.
+&& Realización de pruebas experimentales.
+"
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas
 && Conceptos fundamentales de la ingeniería de sistemas
