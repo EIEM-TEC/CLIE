@@ -1902,48 +1902,48 @@ AER1002,"
 "
 AER1003,"
 & Introducción al control automático de vuelo
-&& Historia y evolución del control automático de vuelo.
-&& Conceptos básicos y terminología.
-&& Familiarización con el entorno de simulación (MATLAB/Simulink).
+&& Historia y evolución del control automático de vuelo
+&& Conceptos básicos y terminología
+&& Familiarización con el entorno de simulación (MATLAB/Simulink)
 & Modelado dinámico de aeronaves
-&& Ecuaciones de movimiento.
-&& Modelado de sistemas lineales y no lineales.
-&& Implementación de modelos dinámicos básicos en simulación.
+&& Ecuaciones de movimiento
+&& Modelado de sistemas lineales y no lineales
+&& Implementación de modelos dinámicos básicos en simulación
 & Análisis de estabilidad y control
-&& Estabilidad estática y dinámica.
-&& Análisis de modos de movimiento (longitudinal y lateral-direccional).
-&& Simulación de respuestas a perturbaciones.
+&& Estabilidad estática y dinámica
+&& Análisis de modos de movimiento (longitudinal y lateral-direccional)
+&& Simulación de respuestas a perturbaciones
 & Diseño de controladores automáticos
-&& Controladores PID.
-&& Control con LQR (Regulador Cuadrático Lineal).
-&& Conceptos de control robusto.
-&& Introducción al control no lineal.
-&& Principios del control adaptativo.
+&& Controladores PID
+&& Control con LQR (Regulador Cuadrático Lineal)
+&& Conceptos de control robusto
+&& Introducción al control no lineal
+&& Principios del control adaptativo
 & Control de trayectoria
-&& Principios del control de trayectoria.
-&& Algoritmos de seguimiento de trayectorias.
-&& Simulación de trayectorias de vuelo.
+&& Principios del control de trayectoria
+&& Algoritmos de seguimiento de trayectorias
+&& Simulación de trayectorias de vuelo
 & Planificación de Trayectorias
-&& Métodos de planificación de trayectorias.
-&& Optimización de rutas y evitación de obstáculos.
-&& Implementación de algoritmos de planificación de trayectorias.
+&& Métodos de planificación de trayectorias
+&& Optimización de rutas y evitación de obstáculos
+&& Implementación de algoritmos de planificación de trayectorias
 & Aeronavegabilidad y normativas
-&& Conceptos de aeronavegabilidad.
-&& Normativas y regulaciones para UAVs.
-&& Análisis de casos de estudio y cumplimiento normativo.
+&& Conceptos de aeronavegabilidad
+&& Normativas y regulaciones para UAVs
+&& Análisis de casos de estudio y cumplimiento normativo
 & Sistemas GPS y Navegación
-&& Teoría de sistemas GPS y navegación.
-&& Principios de funcionamiento del GPS.
-&& Integración de sistemas GPS en UAVs.
-&& Implementación de navegación basada en GPS.
+&& Teoría de sistemas GPS y navegación
+&& Principios de funcionamiento del GPS
+&& Integración de sistemas GPS en UAVs
+&& Implementación de navegación basada en GPS
 & Comunicación entre UAVs y aviones
-&& Protocolos de comunicación y enlace de datos.
-&& Coordinación y control de múltiples UAVs.
-&& Simulación de comunicación y coordinación entre UAVs..
+&& Protocolos de comunicación y enlace de datos
+&& Coordinación y control de múltiples UAVs
+&& Simulación de comunicación y coordinación entre UAVs
 & Pruebas y Validación
-&& Métodos de prueba y validación de sistemas de control.
-&& Análisis de datos y evaluación de desempeño.
-&& Realización de pruebas experimentales.
+&& Métodos de prueba y validación de sistemas de control
+&& Análisis de datos y evaluación de desempeño
+&& Realización de pruebas experimentales
 "
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas
