@@ -263,12 +263,24 @@ IEE0305,"
 && Piroeléctricos y termopilas para radiación térmica
 & Transductores eléctricos y magnéticos
 && Capacitivos
+&& Inductivos
+&& Efecto Hall
+&& Magnetohidrodinámicos
+&& Magnetoresistivos
 && Magnetrostrictivos
+&& Magnetómetros
 && Piezoelectricos
 && Piezoresistivos
-&& Efecto Hall
+&& Voltaje, corriente y resistencia
 && Motores
 && Solenoides
+& Transductores mecánicos
+&& Galgas extensiometricas
+&& Celdas de carga
+&& Acelerómetros
+&& Sensores de presión
+&& Velocidad
+&& Giroscopios
 & Transductores acústicos
 && Micrófonos e hidrófonos
 && Parlantes
@@ -1180,50 +1192,133 @@ AUT0705,"
 && Uso del Watchdog Timer para prevenir bloqueos del sistema.
 "
 IMM0706,"
-& Introducción al diseño mecánico
-&& La finalidad del diseño mecánico
-&& Metodología del diseño
-&& Factores que afectan el diseño: seguridad, costo, materiales, manufactura y mantenimiento.
-&& Curso de elementos de máquinas en el contexto del diseño mecánico
-& Teoría de Falla estática 
-&& Teorías de falla para materiales dúctiles 
-&& Teorías de falla para materiales frágiles 
-& Resistencia de Fatiga 
-&& Definiciones fundamentales 
-&& Diagramas de las tensiones límite 
-&& Ciclo simétrico 
-&& Ciclo asimétrico 
-&& Teorías de falla a fatiga 
-&& Medios para aumentar la resistencia a la fatiga 
-& Transmisiones 
-&& Introducción a transmisiones mecánicas
-&& Por banda 
-&& Por fricción 
-&& Por engranaje 
-&& Por tornillo sin fin 
-&& Reductores 
-&& Por cadena 
-& Uniones 
-&& Introducción a uniones mecánicas
-&& Soldadas 
-&& Con apretura 
-&& Roscadas 
-&& Cuñas y pasadores 
-&& De chaveta 
-&& Estriadas y sin chaveta 
-&& Elásticas (resortes) 
-& Elementos de las transmisiones 
-&& Árboles y ejes 
-&& Cojinetes de deslizamiento 
-&& Cojinetes de contacto rodante 
-&& Acoplamientos 
-&& Juntas de retención 
-& Tornillos de potencia 
-&& Tipos de rosca 
-&& Cálculos de pandeo 
-&& Cálculos de cortante 
-&& Cálculos de desgaste 
-&& Cálculos de la eficiencia, potencia y torque 
+& Introducción al diseño en Ingeniería Mecánica 
+&& Fases e interacciones del proceso de diseño
+&& Economía, seguridad, estándares y códigos
+&& Incertidumbre, factor de diseño y de seguridad
+&& Confiabilidad y probabilidad de falla
+&& Dimensiones y tolerancias
+& Materiales de ingeniería y su caracterización
+&& Resistencia y rigidez del material
+&& Deformación plástica y trabajo en frío
+&& Dureza, resistencia al impacto
+&& Tratamiento térmico del acero 
+&& Aceros aleados e inoxidables
+&& Metales no ferrosos
+&& Materiales poliméricos
+&& Materiales compuestos
+& Análisis de esfuerzo y deformación, 
+&& Fuerza cortante y momentos flectores en vigas
+&& Esfuerzo, componentes cartesianos del esfuerzo
+&& Círculo de Mohr de esfuerzo plano
+&& Esfuerzo tridimensional general
+&& Esfuerzo normales y cortantes en vigas a flexión
+&& Torsión
+&& Concentración del esfuerzo
+& Deflexión y rigidez
+&& Índices de resorte
+&& Tensión, compresión y torsión
+&& Deflexión debida a flexión
+&& Métodos de deflexión en vigas (superposición, funciones de singularidad).
+&& Energía de deformación
+&& Teorema de Castigliano
+& Falla resultante por carga estática 
+&& Teoría de esfuerzo cortante máximo para materiales dúctiles
+&& Teoría de la energía de distorsión de materiales dúctiles
+&& Teoría de Mohr-Coulomb de materiales dúctiles
+&& Teoría del esfuerzo normal máximo de materiales frágiles
+&& Modificaciones de la teoría de Mohr para materiales frágiles 
+& Fallas por fatiga debidas a cargas variables
+&& Formación y propagación de grietas
+&& Métodos de fatiga-vida 
+&& Método de mecánica de la fractura lineal elástica
+&& Método de deformación-vida 
+&& El método esfuerzo-vida y el diagrama S-N
+&& Diagrama S-N idealizado para aceros
+&& Concentración del esfuerzo y sensibilidad a la muesca
+&& Caracterización y diagramas de esfuerzos fluctuantes
+&& Curvas de vida constante
+&& Criterios de falla por fatiga   
+& Diseño de ejes y sus componentes
+&& Materiales y disposición del eje
+&&  Diseño de ejes para esfuerzo
+&& Consideraciones sobre deflexión
+&& Velocidades críticas de ejes
+&& Diversos componentes de los ejes
+&& Límites y ajustes 
+& Rodamientos de contacto rodante
+&& Tipos de cojinetes
+&& Tiempo de vida de un cojinete
+&& Vida útil de la carga de los cojinetes a confiabilidad nominal
+&& Confiabilidad contra tiempo de vida: distribución de Weibull
+&& Relación entre carga, tiempo de vida y confiabilidad
+&& Carga radial y de empuje combinadas y carga variable
+&& Selección de cojinetes de contacto rodante, lubricación, montaje y cubierta
+& Rodamientos de contacto deslizante y lubricación
+&& Tipos de lubricación
+&& Viscosidad
+&& Ecuación de Petroff
+&& Lubricación estable y  de película gruesa
+&& Teoría hidrodinámica
+&& Holgura
+&& Cargas y materiales
+&& Tipos de cojinetes
+&& Cojinetes lisos cargados dinámicamente
+&& Cojinetes de lubricación límite
+& Engranajes descripción general y trenes de engranajes
+&& Tipos, nomenclatura, acción conjugada, involuta
+&& Interferencia, manufactura
+&& Engranajes cónicos rectos
+&& Engranajes helicoidales paralelos
+&& Engranajes de tornillo sinfín
+&& Sistemas de dientes
+&& Trenes de engranajes
+& Tornillos, sujetadores y diseño de juntas no permanentes
+&& Estándares y definiciones de roscas
+&& Mecánica de los tornillos de potencia
+&& Sujetadores roscados
+&& Uniones: rigidez de los sujetadores
+&& Uniones: rigidez del miembro
+&& Resistencia del perno
+&& Uniones en tracción: la carga externa
+&& Relación del par del perno con la tracción del perno
+&& Unión en tracción cargada estáticamente con precarga
+&& Uniones con empaquetadura
+&& Carga de fatiga sobre las uniones en tracción
+&& Uniones atornilladas y remachadas  cargadas en cortante
+& Soldadura, adhesión y diseño de uniones permanentes
+&& Símbolos de soldadura
+&& Soldaduras a tope y de filete
+&& Esfuerzos en uniones soldadas sujetas a torsión
+&& Esfuerzos en uniones soldadas sujetas a flexión
+&& Resistencia de las uniones soldadas
+&& Carga estática
+&& Carga por fatiga
+&& Soldadura por resistencia
+&& Uniones con adhesivo 
+& Resortes mecánicos
+&& Esfuerzos en resortes helicoidales
+&& Efecto de curvatura
+&& Deflexión de resortes helicoidales
+&& Resortes de compresión
+&& Estabilidad
+&& Materiales para fabricar resortes
+&& Diseño de un resorte de compresión helicoidal para servicio estático
+&& Frecuencia crítica de los resortes helicoidales
+&& Carga de fatiga de resortes de compresión helicoidales
+&& Diseño de resortes de compresión helicoidal para carga por fatiga
+&& Resortes de extensión
+&& Resortes de torsión helicoidales
+&& Resortes Belleville
+&& Resortes diversos
+& Elementos mecánicos flexibles
+&& Bandas
+&& Transmisiones por banda plana  y redonda
+&& Bandas en V
+&& Bandas dentadas
+&& Cadena de rodillos
+&& Cables metálicos
+&& Flechas flexibles
 "
 IMM0707,"
 & Fundamentos de termodinámica y transferencia de calor 
@@ -1245,6 +1340,15 @@ IMM0707,"
 & Evaluación de eficiencia energética en sistemas electromecánicos 
 && Criterios de eficiencia y análisis energético 
 && Estrategias de optimización energética
+"
+IMM0708,"
+Introducción a la metrología térmica e instrumentos de medición
+Determinación de propiedades termodinámicas de sustancias
+Evaluación experimental de ciclos termodinámicos simples
+Transferencia de calor: conducción, convección y radiación
+Determinación del coeficiente de transferencia de calor
+Evaluación de intercambiadores de calor
+Uso de software para análisis térmico
 "
 IEE0802,"
 & Alternador sincrónico
