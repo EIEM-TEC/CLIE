@@ -421,6 +421,7 @@ def generar_programa(id):
     doc.preamble.append(Command('addbibresource', '../bibIEE.bib'))
     doc.preamble.append(Command('addbibresource', '../bibIMM.bib'))
     doc.preamble.append(Command('addbibresource', '../bibINS.bib'))
+    doc.preamble.append(Command('addbibresource', '../bibAER.bib'))
     doc.preamble.append(Command('addbibresource', '../bibSCF.bib'))
     doc.preamble.append(NoEscape(r'\renewcommand*{\bibfont}{\fontsize{10}{14}\selectfont}'))
     doc.preamble.append(NoEscape(r'''
@@ -734,19 +735,27 @@ def generar_programa(id):
 # generar_programa("IEE0703") #Lab Maquinas I
 # generar_programa("AUT0704") #control
 # generar_programa("AUT0705") #micros
-generar_programa("IMM0706") #elementos maq
+# generar_programa("IMM0706") #elementos maq
 # generar_programa("IMM0707") #sist termicos
-# generar_programa("IMM0708") #lab sist termicos
 # generar_programa("IEE0802") #Maquinas II
 # generar_programa("IEE0803") #Lab Maquinas II
 # generar_programa("AUT0804") #Control por event.
 # generar_programa("AUT0805") #Lab control
 # generar_programa("INS0801") #Trans y distr
+# generar_programa("INS0806") #Instalaciones
+# generar_programa("INS0807") #Vent y aire comprimido
+# generar_programa("INS0808") #Mant elec
 # generar_programa("INS0903") #ref y AC
 # generar_programa("INS0904") #lab ref y AC
 # generar_programa("INS0905") #Sem I
+# generar_programa("INS0906") #Inst mec-san
 # generar_programa("INS0907") #Lab Sist Flu
-# generar_programa("SCF0801") #Ing. Sistemas
+# generar_programa("INS0909") # Lab Vapor
+# generar_programa("INS1006") # Gestion ciclo vida
+# generar_programa("AER1001") # Gestion ciclo vida aeronaves
+# generar_programa("AER1002") # Sist propuls
+generar_programa("AER1003") # Control de vuelo
+#generar_programa("SCF0801") #Ing. Sistemas
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)

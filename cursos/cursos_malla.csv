@@ -63,7 +63,7 @@ FPH0809,SE1400,Actividad cultural - deportiva,FPH,8,9,0,2,0,,,
 INS0801,EE4801,Sistemas eléctricos de transmisión y distribución,INS,8,1,4,0,3,,IEE0802,INS0901
 INS0806,EE4806,Instalaciones eléctricas,INS,8,6,4,0,3,IEE0702,INS0807,INS1201
 INS0807,EE4807,Ventilación y aire comprimido,INS,8,7,3,0,2,IMM0707;IMM0708,,INS0906;INS0908;INS0806
-INS0808,EE4808,Matenimiento electromecánico,INS,8,8,2,0,1,FPH0701,,
+INS0808,EE4808,Mantenimiento electromecánico,INS,8,8,2,0,1,FPH0701,,
 INS0901,EE4901,Sistemas de generación y almacenamiento de energía,INS,9,1,4,0,3,INS0801,,INS1003
 INS0903,EE4903,Sistemas de refrigeración y aire acondicionado,INS,9,3,3,0,3,IMM0707;IMM0708,,INS0904
 INS0904,EE4904,Laboratorio de refrigeración y aire acondicionado,INS,9,4,0,2,1,,INS0903,
