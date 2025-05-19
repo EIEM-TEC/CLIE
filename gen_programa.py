@@ -712,7 +712,7 @@ def generar_programa(id):
 # generar_programa("IMM0207")
 # generar_programa("IEE0303")
 # generar_programa("IEE0304")
-# generar_programa("IEE0305")
+generar_programa("IEE0305") #Transductores
 # generar_programa("IMM0307") #Dinamica
 # generar_programa("IEE0403")
 # generar_programa("IEE0404")
@@ -754,7 +754,7 @@ def generar_programa(id):
 # generar_programa("INS1006") # Gestion ciclo vida
 # generar_programa("AER1001") # Gestion ciclo vida aeronaves
 # generar_programa("AER1002") # Sist propuls
-generar_programa("AER1003") # Control de vuelo
+# generar_programa("AER1003") # Control de vuelo
 #generar_programa("SCF0801") #Ing. Sistemas
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
