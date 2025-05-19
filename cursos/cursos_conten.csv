@@ -1844,6 +1844,38 @@ INS0907,"
 && Evaluación de reguladores de presión y dispositivos de filtración
 && Análisis de comportamiento de sistemas con diferentes configuraciones de válvulas
 "
+INS0908,"
+& Introducción a sistemas de vapor
+&& Propiedades de sustancias puras
+&& La importancia del vapor en la industria
+&& Componentes del sistema de vapor
+& Combustibles y combustión
+&& Funcionamiento de la combustión y su eficiencia
+&& Medición de la eficiencia y diseño de chimeneas
+& Calderas y distribución de vapor
+&& Tipos de calderas y su funcionamiento
+&& Selección y mantenimiento de calderas
+&& Dimensionamiento de tuberías para distribución de vapor
+&& Especificación técnica y planos constructivos 
+& Tipos de usuarios de vapor
+&& Operación de turbinas de vapor
+&& Selección de usuarios de vapor
+&& Sistemas de calentamiento
+&& Instrumentación y control de temperatura
+& Tratamiento de aguas de calderas
+&& Parámetros, métodos y equipos para el tratamiento del agua
+&& Eficiencia térmica del sistema de vapor y prevención de corrosión
+&& Especificación técnica y planos constructivos 
+& Sistemas de recuperación de condensados
+&& Tipos de trampas de vapor
+&& Selección de trampas de vapor
+&& Dimensionamiento de tuberías de retorno de condensados
+&& Cálculo de pérdidas y recuperación de energía
+&& Especificación técnica y planos constructivos 
+& Ahorro de energía en sistemas de vapor y proyectos en vapor
+&& Estrategias para la optimización de la eficiencia de sistemas de vapor
+&& Evaluación de costos y mejora de eficiencia
+"
 INS0909,"
 & Métodos de medición de temperatura en sistemas de vapor
 && Termómetros de vidrio y mercurio

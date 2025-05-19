@@ -167,7 +167,7 @@ def generar_programa(id):
         scfRequi = ""
         for esrequisito in lisEsreq:      
             areaEsreq = cursos[cursos.id == esrequisito].area.item()
-            if (areaEsreq not in ["INS","AER","SCF"]) or (areCurso in ["INS","AER","SCF"]):
+            if (areaEsreq not in ["INS","AER","SCF"]):
                 if cTRC != 0:
                     trcRequi += "; "
                 trcRequi += cursos[cursos.id == esrequisito].codigo.item()[:2] + "-" + cursos[cursos.id == esrequisito].codigo.item()[2:]
@@ -706,56 +706,57 @@ def generar_programa(id):
 # for id in cursos.id:
 #      generar_programa(id)
 
-# generar_programa("CYD0107") #Dibujo Tec
-# generar_programa("FPH0108") # int ing. electromecanica
-# generar_programa("AUT0205") #Int. Compu
-# generar_programa("IMM0207")
-# generar_programa("IEE0303")
-# generar_programa("IEE0304")
+generar_programa("CYD0107") #Dibujo Tec
+generar_programa("FPH0108") # int ing. electromecanica
+generar_programa("AUT0205") #Int. Compu
+generar_programa("IMM0207")
+generar_programa("IEE0303")
+generar_programa("IEE0304")
 generar_programa("IEE0305") #Transductores
-# generar_programa("IMM0307") #Dinamica
-# generar_programa("IEE0403")
-# generar_programa("IEE0404")
-# generar_programa("IEE0405")
-# generar_programa("IMM0407")
-# generar_programa("ADD0502") #estadistica
-# generar_programa("IEE0503")
-# generar_programa("AUT0504")
-# generar_programa("IMM0506") #materiales
-# generar_programa("IMM0507") #manufactura
-# generar_programa("IMM0508") #lab manufactura
-# generar_programa("ADD0602")
-# generar_programa("IEE0604")
-# generar_programa("IMM0605") #resi
-# generar_programa("IMM0607") #mec fluidos
-# generar_programa("IMM0608") #lab mec fluidos
-# generar_programa("CYD0609") #dib ind
-# generar_programa("FPH0701") #proyectos
-# generar_programa("IEE0702") #Maquinas I
-# generar_programa("IEE0703") #Lab Maquinas I
-# generar_programa("AUT0704") #control
-# generar_programa("AUT0705") #micros
-# generar_programa("IMM0706") #elementos maq
-# generar_programa("IMM0707") #sist termicos
-# generar_programa("IEE0802") #Maquinas II
-# generar_programa("IEE0803") #Lab Maquinas II
-# generar_programa("AUT0804") #Control por event.
-# generar_programa("AUT0805") #Lab control
-# generar_programa("INS0801") #Trans y distr
-# generar_programa("INS0806") #Instalaciones
-# generar_programa("INS0807") #Vent y aire comprimido
-# generar_programa("INS0808") #Mant elec
-# generar_programa("INS0903") #ref y AC
-# generar_programa("INS0904") #lab ref y AC
-# generar_programa("INS0905") #Sem I
-# generar_programa("INS0906") #Inst mec-san
-# generar_programa("INS0907") #Lab Sist Flu
-# generar_programa("INS0909") # Lab Vapor
-# generar_programa("INS1006") # Gestion ciclo vida
-# generar_programa("AER1001") # Gestion ciclo vida aeronaves
-# generar_programa("AER1002") # Sist propuls
-# generar_programa("AER1003") # Control de vuelo
-#generar_programa("SCF0801") #Ing. Sistemas
+generar_programa("IMM0307") #Dinamica
+generar_programa("IEE0403")
+generar_programa("IEE0404")
+generar_programa("IEE0405")
+generar_programa("IMM0407")
+generar_programa("ADD0502") #estadistica
+generar_programa("IEE0503")
+generar_programa("AUT0504")
+generar_programa("IMM0506") #materiales
+generar_programa("IMM0507") #manufactura
+generar_programa("IMM0508") #lab manufactura
+generar_programa("ADD0602")
+generar_programa("IEE0604")
+generar_programa("IMM0605") #resi
+generar_programa("IMM0607") #mec fluidos
+generar_programa("IMM0608") #lab mec fluidos
+generar_programa("CYD0609") #dib ind
+generar_programa("FPH0701") #proyectos
+generar_programa("IEE0702") #Maquinas I
+generar_programa("IEE0703") #Lab Maquinas I
+generar_programa("AUT0704") #control
+generar_programa("AUT0705") #micros
+generar_programa("IMM0706") #elementos maq
+generar_programa("IMM0707") #sist termicos
+generar_programa("IEE0802") #Maquinas II
+generar_programa("IEE0803") #Lab Maquinas II
+generar_programa("AUT0804") #Control por event.
+generar_programa("AUT0805") #Lab control
+generar_programa("INS0801") #Trans y distr
+generar_programa("INS0806") #Instalaciones
+generar_programa("INS0807") #Vent y aire comprimido
+generar_programa("INS0808") #Mant elec
+generar_programa("INS0903") #ref y AC
+generar_programa("INS0904") #lab ref y AC
+generar_programa("INS0905") #Sem I
+generar_programa("INS0906") #Inst mec-san
+generar_programa("INS0907") #Lab Sist Flu
+generar_programa("INS0908") #Vapor
+generar_programa("INS0909") # Lab Vapor
+generar_programa("INS1006") # Gestion ciclo vida
+generar_programa("AER1001") # Gestion ciclo vida aeronaves
+generar_programa("AER1002") # Sist propuls
+generar_programa("AER1003") # Control de vuelo
+generar_programa("SCF0801") #Ing. Sistemas
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.aux"], shell=True, check=True)
