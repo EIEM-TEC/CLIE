@@ -2110,3 +2110,87 @@ SCF0801,"
 && Verificación del sistema en escenarios simulados
 && Validación de requisitos
 "
+SCF0806,"
+& Introducción a mecanismos
+&& Introducción
+&& Análisis y síntesis
+&& Ciencia de la mecánica
+&& Terminología, definiciones y suposiciones
+&& Mecanismos planos, esféricos y espaciales
+&& Movilidad
+&& Características de los mecanismos
+&& Inversión cinemática
+&& Ley de Grashof
+&& Ventaja mecánica
+& Posición, postura y desplazamiento
+&& Postura de un cuerpo rígido
+&& Ecuaciones de cierre de bucle
+&& Álgebra polar compleja
+& Velocidad
+&& Definición de velocidad
+&& Rotación de un cuerpo rígido
+&& Diferencia de velocidad entre puntos de un cuerpo rígido
+&& Polígonos de velocidad; imágenes de velocidad
+&& Velocidad aparente de un punto en un sistema de coordenadas en movimiento
+&& Velocidad angular aparente
+&& Contacto directo y contacto rodante
+&& Estrategia sistemática para el análisis de velocidad
+&& Análisis algebraico complejo de velocidad
+&& Método de coeficientes cinemáticos
+&& Centros instantáneos de velocidad
+&& Teorema de Aronhold-Kennedy de tres centros
+&& Localización de centros instantáneos de velocidad
+&& Análisis de velocidad usando centros instantáneos
+& Aceleración
+&& Definición de aceleración
+&& Aceleración angular
+&& Diferencia de aceleración entre puntos de un cuerpo rígido
+&& Polígonos de aceleración; imágenes de aceleración
+&& Aceleración aparente de un punto en un sistema de coordenadas en movimiento
+&& Aceleración angular aparente
+&& Contacto directo y contacto rodante
+&& Estrategia sistemática para el análisis de aceleración
+& Análisis de fuerzas estáticas
+&& Introducción
+&& Leyes de newton
+&& Sistemas de unidades
+&& Fuerzas aplicadas y de restricción
+&& Diagramas de cuerpo libre
+&& Condiciones para el equilibrio
+&& Miembros de dos y tres fuerzas
+&& Miembros de cuatro o más fuerzas
+&& Modelos de fuerzas de fricción
+&& Análisis de fuerzas con fricción
+& Análisis de fuerzas dinámicas
+&& Introducción
+&& Centroide y centro de masa
+&& Momentos de masa y productos de inercia
+&& Fuerzas de inercia y principio de d’Alembert
+&& Principio de superposición
+& Diseño de levas
+&& Introducción
+&& Clasificación de levas y seguidores
+&& Diagramas de desplazamiento
+&& Diseño gráfico de perfiles de levas
+&& Coeficientes cinemáticos del seguidor
+&& Levas de alta velocidad
+&& Movimientos estándar de levas
+&& Emparejamiento de derivadas de diagramas de desplazamiento
+&& Leva de placa con seguidor de cara plana reciprocante
+&& Leva de placa con seguidor de rodillo reciprocante
+& Engranajes rectos
+&& Terminología y definiciones
+&& Ley fundamental del engranaje dentado
+&& Propiedades de la evolvente
+&& Engranajes intercambiables: normas AGMA
+&& Fundamentos de la acción del diente del engranaje
+&& Fabricación de dientes de engranaje
+&& Interferencia y recorte
+&& Relación de contacto
+&& Variación de la distancia entre centros
+&& Dientes de engranaje no estándar
+&& Análisis de trenes de engranajes epicíclicos por fórmula
+&& Análisis tabular de trenes de engranajes epicíclicos
+& Sistemas espaciales y robótica
+&& Programas informáticos de análisis de mecanismos generalizados
+"
