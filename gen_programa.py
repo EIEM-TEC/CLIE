@@ -755,7 +755,7 @@ def generar_programa(id):
 # generar_programa("INS1006") # Gestion ciclo vida
 # generar_programa("AER1001") # Gestion ciclo vida aeronaves
 # generar_programa("AER1002") # Sist propuls
-# generar_programa("AER1003") # Control de vuelo
+generar_programa("AER1003") # Control de vuelo
 # generar_programa("SCF0801") #Ing. Sistemas
 generar_programa("SCF0806") # maq y meca
 
