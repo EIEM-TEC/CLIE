@@ -1686,6 +1686,50 @@ INS0808,"
 && Pruebas de alta tensión
 && Pruebas de baja tensión
 "
+INS0901,"
+& Introducción a las energías renovables y no renovables
+&& Contexto nacional internacional
+&& Tipos de energías renovables y no renovables
+&& Importancia del almacenamiento de energía
+&& Marco regulatorio
+& Energías renovables: tecnologías e integración a la red
+&& Generación hidroeléctrica 
+&& Generación geotérmica 
+&& Generación solar fotovoltaica 
+&& Generación eólica 
+&& Generación por biomasa 
+&& Generación por energía de las olas 
+& Energías no renovables 
+&& Fundamentos de la energía no renovable
+&& Tecnologías de las energías no renovables
+&& Integración a la red de las energías no renovables
+& Almacenamiento de energía: baterías electroquímicas 
+&& Tipos de baterías y sus aplicaciones
+&& Diseño y dimensionamiento de sistemas de baterías
+&& Ciclo de vida y reciclaje
+&& Integración a la red eléctrica
+& Almacenamiento de energía: hidrógeno y combustibles sintéticos 
+&& Producción y almacenamiento de hidrógeno
+&& Aplicaciones de combustibles sintéticos
+&& Integración a la red eléctrica
+& Otros tipos de almacenamiento de energía 
+&& Principios de funcionamiento del almacenamiento mecánico, químico, térmico, eléctrico.   
+&& Aplicaciones prácticas y alternativas modernas de almacenamiento
+&& Comparación con otras tecnologías
+& Operación económica de la generación de electricidad 
+&& Costos y beneficios de la generación de electricidad 
+&& Distribución de cargas entre unidades de una misma central
+&& Pérdidas de transmisión en función de la producción, cálculo de los coeficientes de pérdidas, distribución de la carga entre centrales, factores de penalización
+&& Despacho económico de la generación
+& Integración de sistemas de generación y almacenamiento al sistema de potencia 
+&& Modelado y simulación de sistemas integrados
+&& Análisis de estabilidad, el problema de estabilidad
+&& Estabilidad en régimen permanente y estabilidad en régimen transitorio
+&& Ecuación de oscilación
+&& Principios de regulación de tensión y frecuencia en un sistema interconectado
+&& Estrategias de control y regulación
+&& Casos de estudio
+"
 INS0903,"
 & Fundamentos de la refrigeración y aire acondicionado
 && Evolución de los sistemas de refrigeración y climatización
@@ -1967,6 +2011,42 @@ INS1006,"
 && Identificación, evaluación y mitigación del riesgo
 && Desarrollo de matrices de riesgo
 && Integración con la gestión del mantenimiento y del ciclo de vida
+"
+INS1201,"
+& Introducción a los sistemas de Protección y Puesta a Tierra
+&& Historia 
+&& Importancia de los sistemas de protección de puesta a tierra
+&& Aspectos de Seguridad Eléctrica
+& Conceptos básicos y base normativa 
+&& NEC, IEEE 142, IEEE 1100, IEEE 80
+&& Electrodos de puesta a tierra permitidos, características mínimas exigidas
+&& Cálculo del conductor según corriente de cortocircuito
+&& Corriente tolerable y valores máximos de tensión que soporta el ser humano
+& Resistividad 
+&& Medición de resistividad, método Wenner
+&& Interpretación de resistividad aparente, uso de Carta Maestra según IEEE Std 80 y programas de cómputo
+&& Error RMS
+& Diseño de electrodos de puesta a tierra 
+&& Ecuaciones empíricas IEEE 142, IEEE 80
+&& Tensiones generadas producto de la corriente de cortocircuito conducida por tierra (GPR, Tensiones de Toque y Paso, Tensión Transferida)
+&& Diseño de Mallas de puesta a tierra, IEEE 80, Elemento Finito
+&& Sustitución de terreno
+&& Corrosión, protección catódica
+& Pruebas realizadas a los Electrodos de Puesta a Tierra 
+&& Resistencia
+&& Integridad
+&& Tensiones de toque y paso
+&& Ubicación de Conductore
+&& Equipos, procedimientos, protocolos
+& Puesta a tierra de Equipos 
+&& Tierra Aislada
+&& Equipo Sensible
+&& Equipo de Telecomunicaciones
+& Mantenimiento 
+&& Valoración de sistemas construidos
+&& Plan de Mantenimiento de sistemas de puesta a tierra
+&& Errores frecuentes
+&& Casos de estudio
 "
 AER1001,"
 & Introducción a la gestión del ciclo de vida de la aeronave

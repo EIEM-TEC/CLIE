@@ -111,6 +111,7 @@ def generar_programa(id):
     numCredi = cursos[cursos.id == id].creditos.item()
     horClass = cursos[cursos.id == id].horasTeoria.item() + cursos[cursos.id == id].horasPractica.item()
     horExtra = (numCredi * 3) - horClass
+    semCurso = cursos[cursos.id == id].semestre.item()
     ubiPlane = ""
     counter = 0
     for programa in lisProgr.programa:
@@ -217,19 +218,24 @@ def generar_programa(id):
     posRecon = sinoDic.get(detall[detall.id == id].reconocimiento.item())
     aprCurso = detall[detall.id == id].aprobacion.str.split(';').explode().reset_index(drop=True)
     aprCurso = aprCurso[0] + "/" + aprCurso[1] + "/" + aprCurso[2] + " en sesión de Consejo de Escuela " + aprCurso[3]
-    codSaber = curras[curras["id"]==id]["codSaber"].item()
-    codRasgos = rasgos[rasgos["codSaber"].isin(codSaber)]["rasgo"].unique()
-    desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" aporta en el desarrollo ")
-    if len(codRasgos) > 1:
-        desGener += NoEscape(r"de los siguientes rasgos del plan de estudios: ")
+    if semCurso <= 10:
+        codSaber = curras[curras["id"]==id]["codSaber"].item()
+        codRasgos = rasgos[rasgos["codSaber"].isin(codSaber)]["rasgo"].unique()
+        desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" aporta en el desarrollo ")
+        if len(codRasgos) > 1:
+            desGener += NoEscape(r"de los siguientes rasgos del plan de estudios: ")
+        else:
+            desGener += NoEscape(r"del siguiente rasgo del plan de estudios: ")
+        for index, rasgo in enumerate(codRasgos):
+            desGener += NoEscape(f"{rasgo[0].lower() + rasgo[1:]}")
+            if index == len(codRasgos) - 2:
+                desGener += NoEscape(f"; y ")
+            elif index < len(codRasgos) - 2:
+                desGener += NoEscape(f"; ")
     else:
-        desGener += NoEscape(r"del siguiente rasgo del plan de estudios: ")
-    for index, rasgo in enumerate(codRasgos):
-        desGener += NoEscape(f"{rasgo[0].lower() + rasgo[1:]}")
-        if index == len(codRasgos) - 2:
-            desGener += NoEscape(f"; y ")
-        elif index < len(codRasgos) - 2:
-            desGener += NoEscape(f"; ")
+        codSaber = ""
+        codRasgos = ""
+        desGener = NoEscape(r"El curso de " + r"\emph{" + f"{nomCurso}" + r"}" + r" es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios")
     desGener += NoEscape(r". \newline\newline ")
     desGener += NoEscape(r"Los aprendizajes que los estudiantes desarrollarán en el curso son: ")
     lisObjet = objeti[objeti.id == id].reset_index(drop=True).objetivo
@@ -745,6 +751,7 @@ def generar_programa(id):
 # generar_programa("INS0806") #Instalaciones
 # generar_programa("INS0807") #Vent y aire comprimido
 # generar_programa("INS0808") #Mant elec
+generar_programa("INS0901") #Gen y almacenamiento energia
 # generar_programa("INS0903") #ref y AC
 # generar_programa("INS0904") #lab ref y AC
 # generar_programa("INS0905") #Sem I
@@ -753,11 +760,12 @@ def generar_programa(id):
 # generar_programa("INS0908") #Vapor
 # generar_programa("INS0909") # Lab Vapor
 # generar_programa("INS1006") # Gestion ciclo vida
+generar_programa("INS1201") # Sist puesta tierra
 # generar_programa("AER1001") # Gestion ciclo vida aeronaves
 # generar_programa("AER1002") # Sist propuls
 generar_programa("AER1003") # Control de vuelo
 # generar_programa("SCF0801") #Ing. Sistemas
-generar_programa("SCF0806") # maq y meca
+# generar_programa("SCF0806") # maq y meca
 
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
