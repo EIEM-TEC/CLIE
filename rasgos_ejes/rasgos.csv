@@ -12,7 +12,7 @@ MSF;TTC;EDM,IMM02,"Aplicar los principios de la mecánica de sólidos y fluidos,
 PRO,AUT01,"Desarrollar soluciones de software para el control y procesamiento de datos en sistemas electromecánicos"
 MAC,AUT02,"Desarrollar soluciones de hardware usando microcontroladores para el control y procesamiento de datos en sistemas electromecánicos"
 SCA;MYS,AUT03,"Diseñar e implementar sistemas de control y automatización en sistemas electromecánicos integrando modelado y simulación"
-EYD;CDM,ADD01,"Aplicar herramientas estadísticas para diseñar experimentos, evaluar datos con rigor científico, y garantizar la confiabilidad, disponibilidad, mantenibilidad y seguridad en sistemas electromecánicos"
+EYD;CDM,ADD01,"Aplicar herramientas estadísticas, evaluar datos con rigor científico, y garantizar la confiabilidad, disponibilidad, mantenibilidad y seguridad en sistemas electromecánicos"
 MET,ADD02,"Aplicar principios de metrología para medir variables físicas en sistemas electromecánicos"
 GAE,INS01,"Desarrollar soluciones de generación y almacenamiento de energía para autoconsumo y venta de energía"
 DTE,INS02,"Comprender los fundamentos de los sistemas de distribución y transmisión de energía eléctrica"
