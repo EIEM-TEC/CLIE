@@ -2152,6 +2152,56 @@ INS1203,"
 && Edificios como plataformas de servicios: aplicaciones y modelos de negocio
 && Tendencias futuras: gemelos digitales en edificios y realidad aumentada
 "
+AER0801,"
+& Introducción a los sistemas de la aeronave
+&& Definición y clasificación de los sistemas aeronáuticos
+&& Principales sistemas a bordo
+&& Interdependencia entre sistemas 
+& Sistemas eléctricos y electrónicos en aeronaves
+&& Componentes principales y funcionamiento
+&& Fuentes de energía: generadores, baterías, alternadores
+&& Distribución y protección eléctrica
+&& Sistemas de control eléctrico
+& Sistemas neumáticos de la aeronave
+&& Principios del aire comprimido en aeronaves
+&& Componentes: compresores, válvulas, ductos
+&& Aplicaciones: frenos, instrumentos, sistemas de control
+& Sistema hidráulico de la aeronave
+&& Principios de hidráulica aplicados en la aeronave
+&& Bombas, actuadores, acumuladores
+&& Tipos de fluidos hidráulicos
+&& Aplicaciones: tren de aterrizaje, frenos, control de superficies
+&& Mantenimiento y detección de fallas
+&& Seguridad y redundancia
+& Sistema de combustión y combustible para aeronaves
+&& Tipos de combustible aeronáutico
+&& Sistema de almacenamiento y suministro de combustible
+&& Bombas, válvulas, sensores
+&& Combustión en motores de aviación
+&& Inyección, encendido, mezcla aire-combustible
+&& Control y monitoreo del sistema
+& Sistema de aire acondicionado y presurización para aeronaves
+&& Control ambiental en cabina
+&& Ciclo de aire acondicionado
+&& Intercambiadores de calor, ventiladores, compresores
+&& Sistema de presurización
+&& Control de temperatura y presión
+&& Riesgos por pérdida de presurización
+& Sistemas de protección y seguridad en aeronaves
+&& Alarmas, sistemas de detección de fuego y humo
+&& Extinción de incendios
+&& Detección de hielo y sistemas antihielo
+&& Evacuación y oxígeno de emergencia
+&& Sistemas de monitoreo y control de fallas
+&& Caja negra y registro de datos
+& Integración de sistemas en la aeronave
+&& Ejemplos de integración: fly-by-wire, buses de datos
+&& Consideraciones de diseño y mantenimiento integrado
+&& Diagnóstico de fallas multicomponente
+&& Casos reales de fallos en sistemas
+&& Análisis de causas raíz
+&& Evaluación de impacto operacional
+"
 AER0807,"
 & Introducción a los materiales aeronáuticos
 && Clasificación y propiedades mecánicas, térmicas y químicas

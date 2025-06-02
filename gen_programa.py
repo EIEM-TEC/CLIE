@@ -759,12 +759,13 @@ def generar_programa(id):
 # generar_programa("INS0907") #Lab Sist Flu
 # generar_programa("INS0908") #Vapor
 # generar_programa("INS0909") # Lab Vapor
-# generar_programa("INS1006") # Gestion ciclo vida
-generar_programa("INS1007") # Neumática
+generar_programa("INS1006") # Gestion ciclo vida electromecanica
+# generar_programa("INS1007") # Neumática
 # generar_programa("INS1201") # Sist puesta tierra
 # generar_programa("INS1203") # Ed Inte
+generar_programa("AER0801") #sist de aeronaves
 # generar_programa("AER0807") #mat en aeronáutica
-# generar_programa("AER1001") # Gestion ciclo vida aeronaves
+generar_programa("AER1001") # Gestion ciclo vida aeronaves
 # generar_programa("AER1002") # Sist propuls
 # generar_programa("AER1003") # Control de vuelo
 # generar_programa("SCF0801") #Ing. Sistemas
