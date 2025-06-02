@@ -716,12 +716,12 @@ def generar_programa(id):
 # generar_programa("FPH0108") # int ing. electromecanica
 # generar_programa("AUT0205") #Int. Compu
 # generar_programa("IMM0207")
-# generar_programa("IEE0303")
-# generar_programa("IEE0304")
+# generar_programa("IEE0303") #circuitos I
+# generar_programa("IEE0304") #Lab Circuitos I
 # generar_programa("IEE0305") #Transductores
 # generar_programa("IMM0307") #Dinamica
-# generar_programa("IEE0403")
-# generar_programa("IEE0404")
+# generar_programa("IEE0403") #circuitos II
+# generar_programa("IEE0404") #Lab Circuitos II
 # generar_programa("IEE0405")
 # generar_programa("IMM0407")
 # generar_programa("ADD0502") #estadistica
@@ -751,7 +751,7 @@ def generar_programa(id):
 # generar_programa("INS0806") #Instalaciones
 # generar_programa("INS0807") #Vent y aire comprimido
 # generar_programa("INS0808") #Mant elec
-generar_programa("INS0901") #Gen y almacenamiento energia
+# generar_programa("INS0901") #Gen y almacenamiento energia
 # generar_programa("INS0903") #ref y AC
 # generar_programa("INS0904") #lab ref y AC
 # generar_programa("INS0905") #Sem I
@@ -760,10 +760,13 @@ generar_programa("INS0901") #Gen y almacenamiento energia
 # generar_programa("INS0908") #Vapor
 # generar_programa("INS0909") # Lab Vapor
 # generar_programa("INS1006") # Gestion ciclo vida
-generar_programa("INS1201") # Sist puesta tierra
+generar_programa("INS1007") # Neumática
+# generar_programa("INS1201") # Sist puesta tierra
+# generar_programa("INS1203") # Ed Inte
+# generar_programa("AER0807") #mat en aeronáutica
 # generar_programa("AER1001") # Gestion ciclo vida aeronaves
 # generar_programa("AER1002") # Sist propuls
-generar_programa("AER1003") # Control de vuelo
+# generar_programa("AER1003") # Control de vuelo
 # generar_programa("SCF0801") #Ing. Sistemas
 # generar_programa("SCF0806") # maq y meca
 

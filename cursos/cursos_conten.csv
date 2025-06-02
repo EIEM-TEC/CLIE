@@ -41,9 +41,11 @@ FPH0108,"
 && Perfil profesional y competencias clave
 && Ética y responsabilidad en la ingeniería
 && Impacto social, ambiental y económico de la profesión
+&& Experiencias de personas ingenieras en el mundo
 & Fundamentos de mecánica clásica
 && Leyes de Newton y análisis de fuerzas
 && Cinemática y dinámica de cuerpos rígidos
+&& Visualización Lagrangiana y Hamiltoniana de movimiento
 && Energía mecánica y eficiencia
 && Aplicaciones en sistemas electromecánicos 
 & Termodinámica y conversión de energía
@@ -52,6 +54,7 @@ FPH0108,"
 && Aplicaciones en motores térmicos y sistemas de refrigeración
 & Mecánica de fluidos y transferencia de calor
 && Principios de mecánica de fluidos: ecuación de continuidad y Bernoulli
+&& Aplicaciones de las ecuaciones de Navier Stokes
 && Fundamentos de transferencia de calor: conducción, convección y radiación
 && Aplicaciones en sistemas térmicos y de refrigeración
 & Principios de ingeniería eléctrica
@@ -101,6 +104,11 @@ FPH0108,"
 && Inteligencia artificial aplicada a sistemas electromecánicos
 && Avances en materiales inteligentes y manufactura aditiva
 && Perspectivas futuras de la ingeniería electromecánica
+& La investigación en el campo de la ingeniería electromecánica
+&& Las líneas actuales de investigación
+&& Metodologías científicas aplicadas a la ingeniería
+&& Vínculos entre academia, industria y sociedad
+&& Ética, sostenibilidad y responsabilidad en la investigación
 "
 AUT0205,"
 & Representación de Información  
@@ -225,6 +233,8 @@ IEE0304,"
 & Taller de simulación de circuitos
 & Análisis de mallas y teorema de superposición
 & Teoremas de Thévenin y máxima transferencia de potencia
+& Taller del osciloscopio digital y el generador de señales
+& Análisis de elementos reactivos: bobinas y condensadores
 & Análisis de elementos almacenadores de energía: bobinas y condensadores
 & Análisis de la carga y descarga de condensadores en circuitos de corriente directa
 & Configuraciones en serie y paralelo de bobinas y condensadores
@@ -382,7 +392,6 @@ IEE0403,"
 && Modelado y aplicación
 "
 IEE0404,"
-& Taller del osciloscopio digital y el generador de señales
 & Valores eficaces
 & Circuito RLC serie excitación senoidal
 & Circuitos mixtos RLC en corriente alterna
@@ -2012,9 +2021,68 @@ INS1006,"
 && Desarrollo de matrices de riesgo
 && Integración con la gestión del mantenimiento y del ciclo de vida
 "
+INS1007,"
+& Introducción y Fundamentos
+&& Introducción a los sistemas neumáticos y oleohidráulicos.
+&& Historia y evolución de estos sistemas.
+&& Principios físicos básicos: presión, flujo y fuerza.
+&& Comparación entre sistemas neumáticos y oleohidráulicos.
+&& Identificación de componentes y herramientas básicas.
+&& Montaje de un circuito neumático simple.
+&& Medición de presión y flujo en el circuito.
+&& Análisis de fallos comunes y soluciones básicas.
+& Válvulas y actuadores
+&& Tipos de válvulas direccionales y su funcionamiento.
+&& Actuadores neumáticos y oleohidráulicos: cilindros, motores, pinzas, ventozas, mezas giratorias, etc.
+&& Selección de válvulas y actuadores según la aplicación.
+&& Cálculo de fuerzas y velocidades en actuadores.
+&& Diseño y montaje de circuitos con válvulas y actuadores.
+&& Ajuste de velocidades y fuerzas en actuadores.
+&& Pruebas de funcionamiento y eficiencia.
+& Electroválvulas y Detectores de Proximidad
+&& Principios de funcionamiento de las electroválvulas 2 y 3 vias.
+&& Tipos de detectores de proximidad: inductivos, capacitivos, fotoeléctricos, etc. 
+&& Integración de electroválvulas y detectores en sistemas automatizados.
+&& Normativas de seguridad en sistemas con electroválvulas.
+&& Implementación de sistemas con electroválvulas y detectores
+&& Programación básica de controladores para electroválvulas.
+&& Pruebas de detección y respuesta en sistemas automatizados.
+& Métodos de diseño circuitos neumáticos
+&& Interpretación de diagramas de secuencia.
+&& Métodos empíricos de diseño
+&& Métodos formales de diseño
+&& Herramientas de software para la simulación de secuencias.
+&& Mandos neumáticos y electroneumáticos: secuenciadores, PLC.
+&& Integración de mandos electroneumáticos en sistemas automatizados.
+&& Normativas y estándares de seguridad en mandos neumáticos.
+&& Creación de diagramas de secuencia para aplicaciones específicas.
+&& Simulación de secuencias en software especializado.
+&& Implementación de secuencias en sistemas reales.
+&& Programación de controladores para mandos electroneumáticos.
+&& Análisis y optimización de secuencias para mejorar la eficiencia.
+& Neumática proporcional y aplicaciones
+&& Principios de la neumática proporcional.
+&& Componentes y funcionamiento de sistemas de neumática proporcional.
+&& Aplicaciones industriales de la neumática proporcional.
+&& Ventajas y desventajas de la neumática proporcional.
+&& Implementación de sistemas de neumática proporcional.
+&& Ajuste y calibración de componentes proporcionales.
+&& Pruebas de precisión y respuesta en sistemas proporcionales.
+&& Diagnóstico y solución de problemas en sistemas de neumática proporcional.
+& Sistemas Oleohidráulicos
+&& Principios y aplicaciones de sistemas oleohidráulicos.
+&& Tipos de fluidos hidráulicos y sus propiedades.
+&& Componentes de un sistema oleohidráulico: bombas, válvulas y actuadores.
+&& Técnicas de diseño de sistemas oleohidráulicos.
+&& Simulación de sistemas oleohidráulicos.
+&& Normativas y estándares de seguridad en sistemas oleohidráulicos.
+&& Montaje de circuitos oleohidráulicos.
+&& Pruebas de funcionamiento y ajuste de sistemas oleohidráulicos.
+&& Mantenimiento preventivo y correctivo de sistemas oleohidráulicos.
+&& Diagnóstico y solución de problemas en sistemas oleohidráulicos.
+"
 INS1201,"
 & Introducción a los sistemas de Protección y Puesta a Tierra
-&& Historia 
 && Importancia de los sistemas de protección de puesta a tierra
 && Aspectos de Seguridad Eléctrica
 & Conceptos básicos y base normativa 
@@ -2025,7 +2093,6 @@ INS1201,"
 & Resistividad 
 && Medición de resistividad, método Wenner
 && Interpretación de resistividad aparente, uso de Carta Maestra según IEEE Std 80 y programas de cómputo
-&& Error RMS
 & Diseño de electrodos de puesta a tierra 
 && Ecuaciones empíricas IEEE 142, IEEE 80
 && Tensiones generadas producto de la corriente de cortocircuito conducida por tierra (GPR, Tensiones de Toque y Paso, Tensión Transferida)
@@ -2047,6 +2114,87 @@ INS1201,"
 && Plan de Mantenimiento de sistemas de puesta a tierra
 && Errores frecuentes
 && Casos de estudio
+"
+INS1203,"
+& Fundamentos de los edificios inteligentes y normativa 
+&& Conceptos clave y evolución de los edificios inteligentes
+&& Normativas y estándares (ISO, ANSI, ASHRAE, IEC)
+&& Sostenibilidad, eficiencia energética y certificaciones (Leadership in Energy and Environmental Design LEED, Building Research Establishment Environmental Assessment Method BREEAM)
+&& Introducción a la integración de sistemas y plataformas BMS
+& Sistemas de control de acceso y flujo de personas
+&& Tecnologías de control de acceso: biometría, tarjetas, reconocimiento facial
+&& Gestión de ascensores y escaleras mecánicas: integración y optimización
+&& Sistemas de guiado y señalización inteligente
+&& Análisis de flujos de personas y simulación de rutas de evacuación
+& Seguridad electrónica y ciberseguridad 
+&& Sistemas de detección de intrusiones y alarmas
+&& Video vigilancia inteligente: analítica de video y reconocimiento de objetos
+&& Sistemas de detección y extinción de incendios
+&& Ciberseguridad en edificios inteligentes: protocolos y protección de datos
+& Infraestructura de cableado y redes de comunicación 
+&& Diseño e implementación de cableado estructurado: fibra óptica y Ethernet
+&& Redes LAN y WAN: configuración y administración
+&& Protocolos de comunicación: TCP/IP, BACnet, Modbus, MQTT, Matter
+&& Redes inalámbricas: Wi-Fi, Zigbee, Bluetooth, KNX y LoRaWAN
+& Control de ambiente y eficiencia energética 
+&& Sistemas HVAC inteligentes: optimización y control predictivo
+&& Iluminación inteligente: sensores de ocupación y control de luz natural
+&& Gestión de agua y energía: monitoreo y reducción del consumo
+&& Automatización de persianas y toldos: integración con sistemas de control
+& Plataformas BMS y monitoreo integrado 
+&& Configuración y uso de plataformas BMS
+&& Integración de sensores y actuadores inteligentes
+&& Visualización y análisis de datos: dashboards y reportes
+&& Mantenimiento predictivo: detección de fallas y optimización del rendimiento
+& Integración de sistemas y tecnologías emergentes 
+&& Integración de sistemas de terceros: IoT, cloud computing y APIs
+&& Inteligencia artificial y aprendizaje automático: aplicaciones en edificios inteligentes
+&& Edificios como plataformas de servicios: aplicaciones y modelos de negocio
+&& Tendencias futuras: gemelos digitales en edificios y realidad aumentada
+"
+AER0807,"
+& Introducción a los materiales aeronáuticos
+&& Clasificación y propiedades mecánicas, térmicas y químicas
+&& Comportamiento frente a esfuerzos: tracción, compresión, flexión y torsión
+&& Factores de selección de materiales en aeronaves
+&& Normas y certificaciones aplicables en la industria aeronáutica
+& Materiales metálicos ferrosos y no ferrosos
+&& Aceros: tipos, nomenclatura y tratamientos térmicos
+&& Ensayos mecánicos: tracción, fatiga, dureza (Brinell, Vickers, Rockwell, Shore)
+&& Aleaciones de aluminio, magnesio, titanio, cobre, níquel y superaleaciones
+&& Ensayos de materiales no ferrosos y comparación de desempeño
+& Materiales compuestos y no metálicos
+&& Clasificación: plásticos, cerámicos, compuestos, sellantes y adhesivos
+&& Propiedades mecánicas y térmicas de compuestos utilizados en aeronáutica
+&& Técnicas de inspección: detección y tipos de defectos
+&& Modelado de fallas en materiales compuestos
+&& Estrategias de reparación y solución de problemas
+& Corrosión en materiales aeronáuticos
+&& Fundamentos electroquímicos y ambientales
+&& Tipos de corrosión: galvánica, microbiológica, por presión, entre otras
+&& Análisis de causas y prevención en estructuras aeronáuticas
+&& Modelado del deterioro por corrosión en materiales críticos
+& Dispositivos de fijación en estructuras aeronáuticas
+&& Elementos roscados: tornillos, tuercas, espárragos y pasadores
+&& Nomenclatura, tolerancias y normalización internacional
+&& Roblones y dispositivos de bloqueo: tipos y aplicación
+&& Ensayos de esfuerzo y simulación de uniones mecánicas
+& Transmisiones mecánicas en aeronaves
+&& Tipos de engranajes y relaciones de transmisión
+&& Transmisión por correas, poleas, cadenas y ruedas dentadas
+&& Análisis de carga en sistemas de transmisión
+&& Simulación del funcionamiento en sistemas de ala rotativa y fija
+& Sistemas de mando mecánico
+&& Cables de mando, poleas, tensores y conexiones mecánicas
+&& Sistemas flexibles: cable tipo Bowden
+&& Análisis de esfuerzo y deformación en componentes de mando
+& Materiales en sistemas eléctricos de aeronaves
+&& Cables, conectores y terminales: tipos y aplicaciones
+&& Comportamiento térmico y mecánico de cables especializados
+&& Modelado de fallas eléctricas por degradación de materiales
+& Otros elementos mecánicos en aeronáutica
+&& Resortes: tipos, materiales, vida útil y aplicaciones
+&& Cojinetes y rodamientos: clasificación, selección y análisis de desgaste
 "
 AER1001,"
 & Introducción a la gestión del ciclo de vida de la aeronave
