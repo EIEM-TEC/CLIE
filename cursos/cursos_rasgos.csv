@@ -1,106 +1,106 @@
-id,nombre,codSaber
-CIB0001,Matemática general,MAT
-CYD0002,Prueba avanzada de inglés,ING
-CIB0101,Cálculo diferencial e integral,MAT
-CIB0102,Física general I,FIS
-CIB0103,Laboratorio de física general I,FIS
-CIB0104,Química básica I,QUI
-CIB0105,Laboratorio de química básica I,QUI
-CYD0106,Comunicación escrita,COE
-CYD0107,Dibujo técnico,DPI
-FPH0108,Introducción a la Ingeniería Electromecánica,ESC;HIP
-CIB0201,Cálculo y álgebra lineal,MAT
-CIB0202,Física general II,FIS
-CIB0203,Laboratorio de física general II,FIS
-AUT0205,Introducción a la computación,PRO;MAC
-CYD0206,Comunicación oral,COE
-IMM0207,Estática,MSF
-FPH0208,Relaciones laborales,ESC;HIP
-FPH0209,Introducción a la técnica ciencia y tecnología,ESC
-CIB0301,Ecuaciones diferenciales,MAT
-CIB0302,Física general III,MAT
-IEE0303,Análisis de circuitos I,CEE
-IEE0304,Laboratorio de circuitos I,CEE;MET
-IEE0305,Transductores,IYT;MET
-IMM0307,Dinámica,MSF
-FPH0308,Seminario de ética para la ingeniería,ESC
-FPH0309,Actividad cultural I,HIP
-CIB0401,Cálculo superior,MAT
-CIB0402,Métodos numéricos para ingeniería,MAT
-IEE0403,Análisis de circuitos II,CEE
-IEE0404,Laboratorio de circuitos II,CEE;MET
-IEE0405,Instrumentación,IYT;MET
-IMM0407,Termodinámica,TTC
-FPH0408,Seminario de estudios costarricenses,ESC
-FPH0409,Actividad deportiva I,HIP
-FPH0501,Desarrollo de emprendedores,EMP
-ADD0502,Estadística aplicada,EYD
-IEE0503,Sistemas analógicos,CEE
-AUT0504,Modelado y simulación de sistemas,MYS
-IMM0506,Ciencia e ingeniería de los materiales,CIM
-IMM0507,Manufactura,MAN;CIM
-IMM0508,Laboratorio de manufactura,MAN;CIM;MET
-CYD0601,Inglés para electromecánica,ING
-ADD0602,Fiabilidad y disponibilidad de sistemas electromecánicos,CDM
-IEE0604,Sistemas digitales,CEE
-IMM0605,Resistencia de materiales,TTC
-IMM0606,Transferencia de calor,MSF
-IMM0607,Mecánica de fluidos,MSF
-IMM0608,Laboratorio de mecánica de fluidos,MSF;MET
-CYD0609,Dibujo industrial,DPI
-FPH0701,Administración de proyectos,ADP
-IEE0702,Máquinas eléctricas I,MEE
-IEE0703,Laboratorio de máquinas eléctricas I,MEE;MET
-AUT0704,Control automático,SCA
-AUT0705,Microcontroladores,MAC
-IMM0706,Elementos de máquinas,EDM
-IMM0707,Sistemas térmicos,TTC
-IMM0708,Laboratorio de sistemas térmicos,TTC;MET
-IEE0802,Máquinas eléctricas II,MEE
-IEE0803,Laboratorio de máquinas eléctricas II,MEE;MET
-AUT0804,Control por eventos discretos,SCA
-AUT0805,Laboratorio de control,SCA
-FPH0809,Actividad cultural - deportiva,HIP
-INS0801,Sistemas eléctricos de transmisión y distribución,DTE
-INS0806,Instalaciones eléctricas,IEM
-INS0807,Ventilación y aire comprimido,IEM
-INS0808,Gestión del mantenimiento,GCV
-INS0901,Sistemas de generación y almacenamiento de energía,GAE
-INS0903,Sistemas de refrigeración y aire acondicionado,IEM
-INS0904,Laboratorio de refrigeración y aire acondicionado,IEM;MET
-INS0905,Seminario de graduación I,LID;SYC;IPR
-INS0906,Instalaciones mecánico-sanitarias,IEM
-INS0907,Laboratorio de sistemas de fluidos,IEM;MET
-INS0908,Sistemas de vapor,IEM
-INS0909,Laboratorio de sistemas de vapor,IEM;MET
-INS1003,Gestión de la energía,GEE
-INS1005,Seminario de graduación II,LID;SYC;IPR
-INS1006,Gestión del ciclo de vida de instalaciones electromecánicas,GCV
-INS1007,Taller de neumática y oleohidráulica,IEM
-AER0801,Sistemas de la aeronave,GCA
-AER0806,Máquinas y mecanismos,AME
-AER0807,Materiales en aeronáutica,AME
-AER0808,Taller de metrología aeronáutica,SAA
-AER0901,Aviónica,ADC
-AER0902,Aerodinámica,ACP
-AER0903,Dinámica de vuelo,ADC
-AER0905,Seminario de graduación I,LID;SYC;IPR
-AER0906,Análisis mecánico de estructuras de la aeronave,AME
-AER0908,Seguridad aeronáutica y aeronavegabilidad,SAA
-AER1001,Gestión del ciclo de vida de la aeronave,GCA
-AER1002,Sistemas de propulsión,ACP
-AER1003,Control automático de vuelo,ADC
-AER1005,Seminario de graduación II,LID;SYC;IPR
-SCF0801,Ingeniería de sistemas,ISC
-SCF0806,Máquinas y mecanismos,RBT
-SCF0807,Aplicaciones de sistemas embebidos,ASE
-SCF0808,Fundamentos de ciberseguridad,CIB
-SCF0901,Modelado numérico y simulación computacional,MNC
-SCF0902,Circuitos integrados y aplicaciones,ISC
-SCF0903,Machine Learning e Inteligiencia Artificial,MIE
-SCF0906,Robótica,RBT
-SCF0907,Automatización y digitalización industrial,AYD
-SCF1001,Taller de integración de sistemas,ISC
-SCF1002,Diseño de interfases humano-máquina,AYD
-SCF1003,Trabajo final de graduación,LID;SYC;IPR
-SCF1007,Visión de máquina,MIE
+id,codSaber
+CIB0001,MAT
+CYD0002,ING
+CIB0101,MAT
+CIB0102,FIS
+CIB0103,FIS
+CIB0104,QUI
+CIB0105,QUI
+CYD0106,COE
+CYD0107,DPI
+FPH0108,ESC;HIP
+CIB0201,MAT
+CIB0202,FIS
+CIB0203,FIS
+AUT0205,PRO;MAC
+CYD0206,COE
+IMM0207,MSF
+FPH0208,ESC;HIP
+FPH0209,ESC
+CIB0301,MAT
+CIB0302,MAT
+IEE0303,CEE
+IEE0304,CEE;MET
+IEE0305,IYT;MET
+IMM0307,MSF
+FPH0308,ESC
+FPH0309,HIP
+CIB0401,MAT
+CIB0402,MAT
+IEE0403,CEE
+IEE0404,CEE;MET
+IEE0405,IYT;MET
+IMM0407,TTC
+FPH0408,ESC
+FPH0409,HIP
+FPH0501,EMP
+ADD0502,EYD
+IEE0503,CEE
+AUT0504,MYS
+IMM0506,CIM
+IMM0507,MAN;CIM
+IMM0508,MAN;CIM;MET
+CYD0601,ING
+ADD0602,CDM
+IEE0604,CEE
+IMM0605,TTC
+IMM0606,MSF
+IMM0607,MSF
+IMM0608,MSF;MET
+CYD0609,DPI
+FPH0701,ADP
+IEE0702,MEE
+IEE0703,MEE;MET
+AUT0704,SCA
+AUT0705,MAC
+IMM0706,EDM
+IMM0707,TTC
+IMM0708,TTC;MET
+IEE0802,MEE
+IEE0803,MEE;MET
+AUT0804,SCA
+AUT0805,SCA
+FPH0809,HIP
+INS0801,DTE
+INS0806,IEM
+INS0807,IEM
+INS0808,GCV
+INS0901,GAE
+INS0903,IEM
+INS0904,IEM;MET
+INS0905,LID;SYC;IPR
+INS0906,IEM
+INS0907,IEM;MET
+INS0908,IEM
+INS0909,IEM;MET
+INS1003,GEE
+INS1005,LID;SYC;IPR
+INS1006,GCV
+INS1007,IEM
+AER0801,GCA
+AER0806,AME
+AER0807,AME
+AER0808,SAA
+AER0901,ADC
+AER0902,ACP
+AER0903,ADC
+AER0905,LID;SYC;IPR
+AER0906,AME
+AER0908,SAA
+AER1001,GCA
+AER1002,ACP
+AER1003,ADC
+AER1005,LID;SYC;IPR
+SCF0801,ISC
+SCF0806,RBT
+SCF0807,ASE
+SCF0808,CIB
+SCF0901,MNC
+SCF0902,ISC
+SCF0903,MIE
+SCF0906,RBT
+SCF0907,AYD
+SCF1001,ISC
+SCF1002,AYD
+SCF1003,LID;SYC;IPR
+SCF1007,MIE

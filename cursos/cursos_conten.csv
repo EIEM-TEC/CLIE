@@ -2246,6 +2246,48 @@ AER0807,"
 && Resortes: tipos, materiales, vida útil y aplicaciones
 && Cojinetes y rodamientos: clasificación, selección y análisis de desgaste
 "
+AER0808,"
+& Fundamentos de la metrología aeronáutica
+&& Trazabilidad, exactitud, precisión, repetibilidad e incertidumbre de medición
+&& Sistemas internacionales de referencia y patrones (NIST, BIPM, OACI)
+&& Normativas aplicables (RTCA DO-160, ISO 10012, ISO 17025, AS9100)
+& Medición geométrica aplicada a aeronaves
+&& Herramientas de medición dimensional: calibradores, micrómetros, comparadores, relojes, rugosímetros
+&& Verificación de parámetros geométricos: planeidad, perpendicularidad, paralelismo, concentricidad, entre otros
+&& Técnicas avanzadas: máquinas de coordenadas (CMM), escaneo 3D, fotogrametría
+& Medición de variables eléctricas en aeronáutica
+&& Instrumentos de medición eléctrica: voltímetro, amperímetro, ohmímetro, megóhmetro
+&& Verificación de sensores y transductores: presión, nivel, posición, temperatura
+&& Calibración de equipos eléctricos embarcados
+& Termometría y pirometría aeronáutica
+&& Medición de temperatura con RTD, termopares y sensores NTC
+&& Uso de pirómetros ópticos e infrarrojos
+&& Aplicación en motores, sistemas de escape y climatización
+& Metrología de fluidos en sistemas aeronáuticos
+&& Medición de presión, caudal, viscosidad y densidad
+&& Instrumentos para sistemas hidráulicos, neumáticos y de combustible
+&& Verificación y ajuste de sensores de presión y caudal
+& Metrología de vibraciones y dinámica
+&& Medición de vibraciones con acelerómetros y sensores dinámicos
+&& Análisis modal y diagnóstico de desequilibrios
+&& Aplicación en motores, hélices y estructuras
+& Medición óptica y de alineación
+&& Uso de colimadores, teodolitos, sistemas láser y de interferometría
+&& Alineación de componentes y verificación óptica de geometría
+&& Aplicaciones en navegación visual y sistemas estructurales
+& Medición de condiciones ambientales
+&& Sensores de presión barométrica, temperatura, humedad y altitud
+&& Influencia ambiental en instrumentos de cabina y navegación
+&& Evaluación y calibración de sensores ambientales
+& Medición de tiempo y frecuencia
+&& Osciladores, relojes de precisión y generadores de pulso
+&& Sincronización de sistemas electrónicos y de navegación
+&& Verificación y ajuste de instrumentos dependientes del tiempo
+& Gestión metrológica y documentación técnica
+&& Elaboración de rutinas de calibración con trazabilidad
+&& Lectura e interpretación de certificados de calibración
+&& Integración de la metrología con procesos de mantenimiento aeronáutico
+"
 AER1001,"
 & Introducción a la gestión del ciclo de vida de la aeronave
 && Concepto de ciclo de vida de la aeronave
