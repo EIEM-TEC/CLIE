@@ -251,7 +251,6 @@ def generar_programa(id):
                 desGener += NoEscape(f"; ")
     desGener += NoEscape(r". \newline\newline ")
     curAntess = curAntes[curAntes["id"]==id]["antes"]
-    curDespuess = curDespues[curDespues["id"]==id]["despues"]
     if codCurso not in ["EE0108"]:
         desGener += NoEscape(r"Para desempeñarse adecuadamente en este curso, los estudiantes deben poner en práctica lo aprendido en ")
         if len(curAntess) > 1:
@@ -270,7 +269,8 @@ def generar_programa(id):
                     desGener += NoEscape(f", ")
             desGener += NoEscape(cursoAntes)
         desGener += NoEscape(r".")
-    if codCurso not in ["EE1102"]:
+    if int(id[3:5]) < 10:
+        curDespuess = curDespues[curDespues["id"]==id]["despues"]
         desGener += NoEscape(r" \newline\newline Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en ")
         if len(curDespuess) > 1:
             desGener += NoEscape(r"los cursos de: ")
@@ -304,7 +304,10 @@ def generar_programa(id):
     objCurso += NoEscape(Command("textbf", "Objetivos específicos").dumps())
     objCurso += objEspec
     if tipo == 1:
-        conDescr = "En el curso se desarrollaran los siguientes laboratorios:"
+        if codCurso not in ["EE9001","EE1102"]:
+            conDescr = "En el curso se desarrollaran los siguientes laboratorios:"
+        else:
+            conDescr = "En el curso se desarrollarán los siguientes temas:"
     else:
         conDescr = "En el curso se desarrollaran los siguientes temas:"
     conCurso = NoEscape(r"\par \setlength{\leftskip}{4cm} ")
@@ -755,12 +758,12 @@ def generar_programa(id):
 # generar_programa("INS0901") #Gen y almacenamiento energia
 # generar_programa("INS0903") #ref y AC
 # generar_programa("INS0904") #lab ref y AC
-generar_programa("INS0905") #Sem I
+# generar_programa("INS0905") #Sem I
 # generar_programa("INS0906") #Inst mec-san
 # generar_programa("INS0907") #Lab Sist Flu
 # generar_programa("INS0908") #Vapor
 # generar_programa("INS0909") # Lab Vapor
-generar_programa("INS1005") # Sem II
+# generar_programa("INS1005") # Sem II
 # generar_programa("INS1006") # Gestion ciclo vida electromecanica
 # generar_programa("INS1007") # Neumática
 # generar_programa("INS1201") # Sist puesta tierra
@@ -775,6 +778,8 @@ generar_programa("INS1005") # Sem II
 # generar_programa("SCF0801") #Ing. Sistemas
 # generar_programa("SCF0806") # maq y meca
 # generar_programa("SCF0808") # fund de cibers
+# generar_programa("SCF1001") # taller inte
+generar_programa("SCF1002") # HMI
 
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)

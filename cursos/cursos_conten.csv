@@ -2614,7 +2614,7 @@ SCF1001,"
 && Revisión de tecnologías disponibles
 & Diseño del sistema
 && Arquitectura funcional de un sistema ciberfísico
-&& Selección de componentes (sensores, actuadores, microcontroladores, CI comerciales)
+&& Selección de componentes (sensores, actuadores, microcontroladores, integrados)
 && Diseño de controladores (PID, lógicos, discretos)
 && Diseño de comunicación (bus, protocolos, sincronización)
 & Implementación
@@ -2626,8 +2626,41 @@ SCF1001,"
 && Evaluación de desempeño
 && Ajustes y mejoras
 & Documentación del sistema
-&& Documento de control de interfases
+&& Documento de control de interfases (ICD)
 && Documento de ensamblaje
-&& Documento de especificaciones técnicas
+&& Documento de validación
 && Manual de usuario
+"
+SCF1002,"
+& Introducción a la interacción humano-computadora (HCI)
+&& Historia y evolución del diseño de interfases
+&& Principios de usabilidad: eficiencia, seguridad, satisfacción del usuario
+& Diseño centrado en el usuario
+&& Etapas del proceso de diseño iterativo
+&& Participación del usuario y evaluación temprana
+&& Identificación de necesidades y perfiles de usuario
+& Modelos de interacción y diseño conceptual
+&& Modelos mentales y estructuras de tareas
+&& Diseño de flujos de interacción y navegación
+&& Metáforas y consistencia en la interfaz
+& Diseño de controles y dispositivos de entrada/salida
+&& Tipos de entrada: táctil, teclado, voz, sensores
+&& Principios de diseño de controles físicos y virtuales
+&& Retroalimentación visual, auditiva y háptica
+& Diseño de interfaces gráficas y móviles
+&& Componentes de GUI: botones, menús, formularios
+&& Diseño adaptativo y responsivo para distintos dispositivos
+&& Buenas prácticas visuales y jerarquía de información
+& Evaluación de usabilidad
+&& Métodos heurísticos y pruebas con usuarios
+&& Métricas de evaluación: eficiencia, errores, satisfacción
+&& Análisis e iteración del diseño basado en retroalimentación
+& Interacción en sistemas ciberfísicos
+&& Integración de HMI con sistemas embebidos
+&& Consideraciones de tiempo real, latencia y robustez
+&& Comunicación con sensores, actuadores y redes locales
+& Aspectos humanos, sociales y éticos
+&& Accesibilidad para usuarios con diversidad funcional
+&& Inclusividad, privacidad y ética en el diseño de interfases
+&& Responsabilidad social del diseñador de sistemas interactivos
 "
