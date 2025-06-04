@@ -1969,6 +1969,19 @@ INS0909,"
 && Procedimientos de encendido y apagado de turbinas
 && Evaluación del flujo de condensado y desempeño energético
 "
+INS1005,"
+& Aplicación de conocimientos del área ciencias básicas
+& Aplicación de conocimientos del área de formación profesional y habilidades interpersonales 
+& Aplicación de conocimientos del área comunicación y dibujo
+& Aplicación de conocimientos del area ingeniería mecánica y de materiales
+& Aplicación de conocimientos del área ingeniería eléctrica y electrónica
+& Aplicación de conocimientos del área automática
+& Aplicación de conocimientos del área analisís de datos
+& Aplicación de conocimientos del énfasis
+&& Instalaciones electromecánicas
+&& Aeronáutica 
+&& Sistemas ciberfísicos
+"
 INS1006,"
 & Introducción y fundamentos
 && Concepto de ciclo de vida de instalaciones electromecánicas
@@ -2288,6 +2301,49 @@ AER0808,"
 && Lectura e interpretación de certificados de calibración
 && Integración de la metrología con procesos de mantenimiento aeronáutico
 "
+AER0903,"
+& Introducción a dinámica de vuelo
+&& Consideraciones generales 
+&& Cualidades de vuelo maniobrabilidad
+&& Ecuaciones de movimiento del avión
+&& Aerodinámica
+&& Simulación
+& Sistemas de referencia y notación
+&& Ejes de referencia terrestres
+&& Fuselaje del avión y ejes de referencia fijos
+&& Ángulos de Euler y actitud de la aeronave
+&& Transformaciones de los ejes
+&& Geometría de referencia del avión
+& Equilibrio estático y ajuste
+&& Equilibrio de ajuste
+&& Estabilidad estática longitudinal, lateral y direccional
+&& Cálculo de condición de ajuste de la aeronave
+& Ecuaciones de movimiento
+&& Ecuaciones de movimiento de aeronaves rígidas simétricas
+&& Ecuaciones linealizadas de movimiento
+&& Formas alternativas de ecuaciones de movimiento
+& Métodos de solución para las ecuaciones de movimiento 
+&& Métodos de solución
+&& Regla de Cramer
+&& Funciones de transferencia de la respuesta de la aeronave
+&& Respuesta a controles
+&& Funciones de transferencia a respuestas de aceleración
+&& Método de estado espacio
+& Dinámica longitudinal, lateral y direccional
+&& Respuesta a controles
+&& Modos de estabilidad dinámica
+&& Modelos de orden reducida
+&& Respuesta de frecuencia
+&& Cualidades de vuelo maniobrabilidad
+&& Modo de excitación
+& Maniobrabilidad 
+&& Principios de maniobrabilidad
+&& Dinámica de la aeronave y maniobrabilidad
+& Estabilidad
+&& Principios de Estabilidad
+&& Interpretación gráfica de estabilidad
+& Modelado de aerodinámica 
+"
 AER1001,"
 & Introducción a la gestión del ciclo de vida de la aeronave
 && Concepto de ciclo de vida de la aeronave
@@ -2513,4 +2569,65 @@ SCF0806,"
 && Análisis tabular de trenes de engranajes epicíclicos
 & Sistemas espaciales y robótica
 && Programas informáticos de análisis de mecanismos generalizados
+"
+SCF0808,"
+& Introducción a la ciberseguridad
+&& Historia y evolución de la ciberseguridad
+&& Principios básicos de ciberseguridad
+&& Importancia de la ciberseguridad en el mundo actual
+& Redes y protocolos
+&& Tipos de redes (LAN, WAN, MAN)
+&& Protocolos de comunicación (TCP/IP, HTTP, HTTPS, MQTT)
+&& Seguridad en redes: firewalls y sistemas de detección de intrusos (IDS/IPS)
+& Programación para la ciberseguridad
+&& Scripts y automatización para la seguridad informática
+&& Ejercicios prácticos de programación para detectar y mitigar vulnerabilidades
+& Amenazas y vulnerabilidades
+&& Tipos de amenazas (malware, phishing, ataques DDoS)
+&& Análisis de vulnerabilidades y gestión de parches
+&& Uso de software antivirus y antimalware
+& Criptografía
+&& Fundamentos de criptografía (simétrica y asimétrica)
+&& Aplicaciones prácticas del cifrado en la protección de datos
+&& Implementación de técnicas de cifrado en proyectos prácticos
+& Seguridad en redes
+&& Configuración y gestión de firewalls
+&& Seguridad en redes inalámbricas (WPA2, WPA3)
+&& Control de acceso y autenticación multifactor (MFA)
+& Seguridad en aplicaciones
+&& Desarrollo seguro de software (principios y prácticas)
+&& Pruebas de penetración y análisis de seguridad en aplicaciones web
+&& Herramientas y técnicas para asegurar aplicaciones
+& Gestión de incidentes
+&& Respuesta a incidentes de ciberseguridad
+&& Recuperación y análisis forense
+&& Estudios de caso de incidentes reales y lecciones aprendidas
+& Cumplimiento y normativas
+&& Normativas y estándares de ciberseguridad (ISO 27001, GDPR)
+&& Políticas de seguridad y su implementación
+&& Evaluación de cumplimiento y auditorías de seguridad
+"
+SCF1001,"
+& Fase de planificación del proyecto
+&& Definición del problema
+&& Recolección de requerimientos
+&& Revisión de tecnologías disponibles
+& Diseño del sistema
+&& Arquitectura funcional de un sistema ciberfísico
+&& Selección de componentes (sensores, actuadores, microcontroladores, CI comerciales)
+&& Diseño de controladores (PID, lógicos, discretos)
+&& Diseño de comunicación (bus, protocolos, sincronización)
+& Implementación
+&& Desarrollo de circuitos electrónicos y su integración
+&& Programación de sistemas embebidos
+&& Integración con sistemas de supervisión (interfaces HMI, visualización, adquisición)
+& Pruebas y validación
+&& Planificación de pruebas
+&& Evaluación de desempeño
+&& Ajustes y mejoras
+& Documentación del sistema
+&& Documento de control de interfases
+&& Documento de ensamblaje
+&& Documento de especificaciones técnicas
+&& Manual de usuario
 "

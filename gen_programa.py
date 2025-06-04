@@ -269,24 +269,25 @@ def generar_programa(id):
                 elif index < len(curAntess) - 1:
                     desGener += NoEscape(f", ")
             desGener += NoEscape(cursoAntes)
-        desGener += NoEscape(r". \newline\newline ")
-    desGener += NoEscape(r"Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en ")
-    if len(curDespuess) > 1:
-        desGener += NoEscape(r"los cursos de: ")
-    else:
-        desGener += NoEscape(r"el curso de: ")
-    for index, curDespue in enumerate(curDespuess):
-        cursoDespues = cursos[cursos["id"]==curDespue].nombre.item()
-        if index != 0:
-            if index == len(curDespuess) - 1:
-                if cursoDespues[0].lower() == "i":
-                    desGener += NoEscape(f", e ")
-                else:
-                    desGener += NoEscape(f", y ")
-            elif index < len(curDespuess) - 1:
-                desGener += NoEscape(f", ")
-        desGener += NoEscape(cursoDespues)
-    desGener += NoEscape(r". ")
+        desGener += NoEscape(r".")
+    if codCurso not in ["EE1102"]:
+        desGener += NoEscape(r" \newline\newline Una vez aprobado este curso, los estudiantes podrán emplear algunos de los aprendizajes adquiridos en ")
+        if len(curDespuess) > 1:
+            desGener += NoEscape(r"los cursos de: ")
+        else:
+            desGener += NoEscape(r"el curso de: ")
+        for index, curDespue in enumerate(curDespuess):
+            cursoDespues = cursos[cursos["id"]==curDespue].nombre.item()
+            if index != 0:
+                if index == len(curDespuess) - 1:
+                    if cursoDespues[0].lower() == "i":
+                        desGener += NoEscape(f", e ")
+                    else:
+                        desGener += NoEscape(f", y ")
+                elif index < len(curDespuess) - 1:
+                    desGener += NoEscape(f", ")
+            desGener += NoEscape(cursoDespues)
+        desGener += NoEscape(r". ")
     for consecutivo, objetivo in lisObjet.items():
         if consecutivo == 0:
             objGener = NoEscape(objetivo)
@@ -754,23 +755,26 @@ def generar_programa(id):
 # generar_programa("INS0901") #Gen y almacenamiento energia
 # generar_programa("INS0903") #ref y AC
 # generar_programa("INS0904") #lab ref y AC
-# generar_programa("INS0905") #Sem I
+generar_programa("INS0905") #Sem I
 # generar_programa("INS0906") #Inst mec-san
 # generar_programa("INS0907") #Lab Sist Flu
 # generar_programa("INS0908") #Vapor
 # generar_programa("INS0909") # Lab Vapor
+generar_programa("INS1005") # Sem II
 # generar_programa("INS1006") # Gestion ciclo vida electromecanica
 # generar_programa("INS1007") # Neumática
 # generar_programa("INS1201") # Sist puesta tierra
 # generar_programa("INS1203") # Ed Inte
 # generar_programa("AER0801") #sist de aeronaves
 # generar_programa("AER0807") #mat en aeronáutica
-generar_programa("AER0808") # met aer
+# generar_programa("AER0808") # met aer
+# generar_programa("AER0903") # dinamica de vuelo
 # generar_programa("AER1001") # Gestion ciclo vida aeronaves
 # generar_programa("AER1002") # Sist propuls
 # generar_programa("AER1003") # Control de vuelo
 # generar_programa("SCF0801") #Ing. Sistemas
 # generar_programa("SCF0806") # maq y meca
+# generar_programa("SCF0808") # fund de cibers
 
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)

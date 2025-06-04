@@ -77,7 +77,7 @@ INS1001,10,EE1103,Electiva I,Teórico,,,3,4,5
 INS1002,10,EE1104,Electiva II,Teórico,,,3,4,5
 INS1005,10,EE1102,Seminario de graduación II,Práctico,EE1101,,4,4,8
 INS1006,10,EE5006,Gestión del ciclo de vida de instalaciones electromecánicas,Teórico - Práctico,EE4906,,3,4,5
-INS1007,10,EE5007,Taller de neumática y oleohidráulica,Práctico,EE4907,,2,3,3
+INS1007,10,EE5007,Neumática y oleohidráulica,Teórico - Práctico,EE4907,,2,3,3
 INS1201,12,EE5201,Sistemas de puesta a tierra,Teórico,EE4806,,3,4,5
 INS1202,12,EE5202,Sistemas contra incendios,Teórico,EE4906,,3,4,5
 INS1203,12,EE5203,Edificios inteligentes,Teórico,EE0805,,3,4,5
@@ -90,7 +90,7 @@ INS1403,14,EE8903,Aplicaciones de Inteligencia Artificial,Teórico - Práctico,,
 AER0801,8,EE6801,Sistemas de la aeronave,Teórico,,EE0802,3,4,5
 AER0806,8,EE0806,Máquinas y mecanismos,Teórico,EE0706,,3,4,5
 AER0807,8,EE6807,Materiales en aeronáutica,Teórico,,EE0806,2,3,3
-AER0808,8,EE6808,Taller de metrología aeronáutica,Práctico,EE0706,,1,2,1
+AER0808,8,EE6808,Metrología aeronáutica,Teórico - Práctico,EE0706,,1,2,1
 AER0901,9,EE6901,Aviónica,Teórico - Práctico,EE6801,,3,4,5
 AER0902,9,EE6902,Aerodinámica,Teórico - Práctico,EE0707,,3,4,5
 AER0903,9,EE6903,Dinámica de vuelo,Teórico - Práctico,,EE6902,3,4,5
