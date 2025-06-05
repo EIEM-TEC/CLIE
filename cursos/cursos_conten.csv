@@ -2650,6 +2650,41 @@ SCF1001,"
 && Documento de validación
 && Manual de usuario
 "
+SCF1201,"
+& Fundamentos de sistemas inteligentes
+&& Tipos de inteligencia en sistemas embebidos
+&& Conceptos de autonomía, adaptabilidad y aprendizaje
+&& Arquitectura básica de sistemas inteligentes distribuidos
+& Modelos de Agentes Inteligentes
+&& Modelos deliberativos, reactivos y BDI
+&& Estados internos, percepciones y acciones
+&& Ciclo de razonamiento de un agente
+&& Implementación básica de un agente
+& Sistemas multiagente (MAS)
+&& Coordinación y cooperación entre agentes
+&& Organización jerárquica vs. distribuida
+&& Protocolos de comunicación (KQML, ACL)
+&& Casos de estudio: robótica distribuida, simulación
+& Razonamiento simbólico y planificación
+&& Lógica proposicional y modal en agentes
+&& Planificación automática (STRIPS, Graphplan)
+&& Resolución de conflictos y metas múltiples
+&& Planificación multiagente
+& Aprendizaje Autónomo y Adaptación
+&& Introducción al aprendizaje en línea
+&& Redes neuronales recurrentes y adaptativas
+&& Control adaptativo y modelos supervisados
+&& Aplicaciones en sistemas dinámicos y robótica
+& Modelado Inteligente en tiempo real
+&& Modelado basado en datos
+&& Inferencia difusa y lógica difusa adaptativa
+&& Algoritmos genéticos para ajuste dinámico
+&& Casos prácticos con sistemas COTS
+& Integración en sistemas ciberfísicos
+&& Diseño de una red de agentes inteligentes
+&& Interoperabilidad entre sensores, actuadores y agentes
+&& Consideraciones de robustez, latencia y escalabilidad
+"
 SCF1002,"
 & Introducción a la interacción humano-computadora (HCI)
 && Historia y evolución del diseño de interfases

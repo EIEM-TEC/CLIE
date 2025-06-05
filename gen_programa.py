@@ -771,19 +771,21 @@ def generar_programa(id):
 # generar_programa("INS1007") # Neumática
 # generar_programa("INS1201") # Sist puesta tierra
 # generar_programa("INS1203") # Ed Inte
-# generar_programa("AER0801") #sist de aeronaves
-# generar_programa("AER0807") #mat en aeronáutica
+# generar_programa("AER0801") # sist de aeronaves
+# generar_programa("AER0807") # mat en aeronáutica
 # generar_programa("AER0808") # met aer
 # generar_programa("AER0903") # dinamica de vuelo
 # generar_programa("AER1001") # Gestion ciclo vida aeronaves
 # generar_programa("AER1002") # Sist propuls
 # generar_programa("AER1003") # Control de vuelo
-generar_programa("AER1203") # man cad valor aer
+# generar_programa("AER1203") # man cad valor aer
 # generar_programa("SCF0801") #Ing. Sistemas
 # generar_programa("SCF0806") # maq y meca
 # generar_programa("SCF0808") # fund de cibers
 # generar_programa("SCF1001") # taller inte
 # generar_programa("SCF1002") # HMI
+generar_programa("SCF1201") # sist autonomos y multiagente
+# generar_programa("SCF1202") # sist 
 # generar_programa("SCF1203") # des soft ap crit
 
 
