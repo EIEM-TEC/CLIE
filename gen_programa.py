@@ -117,7 +117,10 @@ def generar_programa(id):
     for programa in lisProgr.programa:
         counter +=1
         semestre = lisProgr[lisProgr['programa'] == programa].semestre.item()
-        ubiPlane += "Curso de " + fun.number_to_ordinals(str(int(semestre))) + " semestre en " + programa
+        if semestre <= 10:
+            ubiPlane += "Curso de " + fun.number_to_ordinals(str(int(semestre))) + " semestre en " + programa
+        elif semestre > 10:
+            ubiPlane += "Curso electivo en " + programa
         if counter > 1:
             ubiPlane += " "
     susRequi = ""
@@ -775,11 +778,13 @@ def generar_programa(id):
 # generar_programa("AER1001") # Gestion ciclo vida aeronaves
 # generar_programa("AER1002") # Sist propuls
 # generar_programa("AER1003") # Control de vuelo
+generar_programa("AER1203") # man cad valor aer
 # generar_programa("SCF0801") #Ing. Sistemas
 # generar_programa("SCF0806") # maq y meca
 # generar_programa("SCF0808") # fund de cibers
 # generar_programa("SCF1001") # taller inte
-generar_programa("SCF1002") # HMI
+# generar_programa("SCF1002") # HMI
+# generar_programa("SCF1203") # des soft ap crit
 
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)

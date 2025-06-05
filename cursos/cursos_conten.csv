@@ -2457,6 +2457,25 @@ AER1003,"
 && Análisis de datos y evaluación de desempeño
 && Realización de pruebas experimentales
 "
+AER1203,"
+& Administración Industrial en procesos aeroespaciales
+&& Programación de la producción y secuenciamiento.
+&& Gestión de capacidad productiva y balanceo de planta.
+&& Administración de cuellos de botella (Teoría de restricciones).
+&& Lean Manufacturing: técnicas de mejora continua (5S, Kaizen, SMED, TPM, Kanban).
+& Sistemas de gestión de calidad aeroespacial
+&& Normativas AS9100, AS9110 y AS9120.
+&& Certificaciones NADCAP para procesos especiales.
+&& Herramientas básicas de calidad: SPC, gráficos de control, FMEA.
+& Requisitos regulatorios en manufactura aeroespacial
+&& Alcance de regulaciones DGAC, FAA, EASA.
+&& Análisis y gestión de requisitos ITAR y EAR.
+&& Trazabilidad y gestión documental electrónica (PLM/ERP).
+& Gestión de proyectos bajo estándares aeroespaciales
+&& Metodología AS9102: Primera Inspección del Artículo (FAI).
+&& Planificación avanzada de calidad del producto (AS9145 - APQP).
+&& Gestión integrada de proyectos con ERP/PLM.
+"
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas
 && Conceptos fundamentales de la ingeniería de sistemas
@@ -2663,4 +2682,36 @@ SCF1002,"
 && Accesibilidad para usuarios con diversidad funcional
 && Inclusividad, privacidad y ética en el diseño de interfases
 && Responsabilidad social del diseñador de sistemas interactivos
+"
+SCF1203,"
+& Introducción a sistemas software críticos
+&& Clasificación de aplicaciones críticas.
+&& Ciclo de vida del software en sistemas embebidos.
+& Modelado y especificación de requisitos
+&& Requisitos funcionales y no funcionales.
+&& Lenguajes de especificación formal
+& Arquitecturas y diseño seguro
+&& Principios de modularidad, aislamiento y redundancia.
+&& Patrones de diseño seguros.
+& Programación robusta
+&& Técnicas de programación defensiva.
+&& Control de errores y fallos.
+& Sistemas operativos en tiempo real (RTOS)
+&& Planificación, sincronización y manejo de recursos.
+&& Implementación de tareas periódicas y esporádicas.
+& Verificación, validación y pruebas
+&& Pruebas unitarias, de integración y de sistema.
+&& Pruebas en hardware-in-the-loop (HIL).
+&& Cobertura de código y análisis estático.
+& Normativas y certificación
+&& ISO 26262 (automotriz)
+&& DO-178C (aeroespacial)
+&& IEC 61508 (industrial)
+& Ciclo de certificación y documentación.
+&& Casos de estudio 
+& Sistemas de control de vuelo (autopilotos, gestión de potencia).
+& Sistemas médicos embebidos (bombas de infusión, marcapasos).
+& Sistemas automotrices seguros (ADAS, frenos ABS).
+& Automatización industrial con redundancia y diagnóstico.
+& Análisis de fallas y mitigación: estudio de fallos históricos (Therac-25, Ariane 5, Toyota).
 "

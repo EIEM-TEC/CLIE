@@ -59,8 +59,10 @@ AER0903,cook2007flight
 AER1001,Kinnison2012;Moir2012;FederalAviation2018;Woodward1997;incose2023
 AER1002,hill1991mechanics;bathie1987fundamentos;cohen1983teoria
 AER1003,stevens2003aircraft;nelson1998flight;beard2012small;sidi1997spacecraft;stengel2004flight;cook2012flight
+AER1203,womack2003lean;SAE-AS9100;SAE-AS9110;SAE-AS9120;SAE-AS9102;SAE-AS9145;NADCAP;FAA-EASA;ITAR-EAR
 SCF0801,incose2023;nasa2016expanded
 SCF0806,Uicker2023;Mabie1987
 SCF0808,stallings2018;stuttard2011;stallings2013;erickson2008
 SCF1001,incose2023;nasa2016expanded;cohen2015prototype
 SCF1002,shneiderman2010designing
+SCF1203,laplante2011real;storey1996safety;wolf2012computers;iso26262;do178c;iec61508
