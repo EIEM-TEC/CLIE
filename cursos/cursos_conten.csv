@@ -2457,6 +2457,25 @@ AER1003,"
 && Análisis de datos y evaluación de desempeño
 && Realización de pruebas experimentales
 "
+AER1203,"
+& Administración Industrial en procesos aeroespaciales
+&& Programación de la producción y secuenciamiento.
+&& Gestión de capacidad productiva y balanceo de planta.
+&& Administración de cuellos de botella (Teoría de restricciones).
+&& Lean Manufacturing: técnicas de mejora continua (5S, Kaizen, SMED, TPM, Kanban).
+& Sistemas de gestión de calidad aeroespacial
+&& Normativas AS9100, AS9110 y AS9120.
+&& Certificaciones NADCAP para procesos especiales.
+&& Herramientas básicas de calidad: SPC, gráficos de control, FMEA.
+& Requisitos regulatorios en manufactura aeroespacial
+&& Alcance de regulaciones DGAC, FAA, EASA.
+&& Análisis y gestión de requisitos ITAR y EAR.
+&& Trazabilidad y gestión documental electrónica (PLM/ERP).
+& Gestión de proyectos bajo estándares aeroespaciales
+&& Metodología AS9102: Primera Inspección del Artículo (FAI).
+&& Planificación avanzada de calidad del producto (AS9145 - APQP).
+&& Gestión integrada de proyectos con ERP/PLM.
+"
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas
 && Conceptos fundamentales de la ingeniería de sistemas
