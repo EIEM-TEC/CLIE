@@ -2664,3 +2664,35 @@ SCF1002,"
 && Inclusividad, privacidad y ética en el diseño de interfases
 && Responsabilidad social del diseñador de sistemas interactivos
 "
+SCF1203,"
+& Introducción a sistemas software críticos
+&& Clasificación de aplicaciones críticas.
+&& Ciclo de vida del software en sistemas embebidos.
+& Modelado y especificación de requisitos
+&& Requisitos funcionales y no funcionales.
+&& Lenguajes de especificación formal
+& Arquitecturas y diseño seguro
+&& Principios de modularidad, aislamiento y redundancia.
+&& Patrones de diseño seguros.
+& Programación robusta
+&& Técnicas de programación defensiva.
+&& Control de errores y fallos.
+& Sistemas operativos en tiempo real (RTOS)
+&& Planificación, sincronización y manejo de recursos.
+&& Implementación de tareas periódicas y esporádicas.
+& Verificación, validación y pruebas
+&& Pruebas unitarias, de integración y de sistema.
+&& Pruebas en hardware-in-the-loop (HIL).
+&& Cobertura de código y análisis estático.
+& Normativas y certificación
+&& ISO 26262 (automotriz)
+&& DO-178C (aeroespacial)
+&& IEC 61508 (industrial)
+& Ciclo de certificación y documentación.
+&& Casos de estudio 
+& Sistemas de control de vuelo (autopilotos, gestión de potencia).
+& Sistemas médicos embebidos (bombas de infusión, marcapasos).
+& Sistemas automotrices seguros (ADAS, frenos ABS).
+& Automatización industrial con redundancia y diagnóstico.
+& Análisis de fallas y mitigación: estudio de fallos históricos (Therac-25, Ariane 5, Toyota).
+"
