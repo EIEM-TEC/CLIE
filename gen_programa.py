@@ -372,6 +372,7 @@ def generar_programa(id):
     proImpar = NoEscape(r"El curso será impartido por:")
     proCurso = NoEscape(r'\vspace*{-4mm}\begin{textoMargen}')
     for consecutivo, profe in dataProf.iterrows():
+        print(f'Profesor: {profe.Nombre}')
         match profe.Titulo:
             case "M.Sc." | "Ing." | "Máster" | "Dr.-Ing." | "Mag.":
                 proCurso += NoEscape(Command("textbf", f"{profe.Titulo} {profe.Nombre}").dumps())
@@ -721,8 +722,8 @@ def generar_programa(id):
 
 # generar_programa("CYD0107") #Dibujo Tec
 # generar_programa("FPH0108") # int ing. electromecanica
-# generar_programa("AUT0205") #Int. Compu
-# generar_programa("IMM0207")
+# #generar_programa("AUT0205") #Int. Compu
+# generar_programa("IMM0207") #estatica
 # generar_programa("IEE0303") #circuitos I
 # generar_programa("IEE0304") #Lab Circuitos I
 # generar_programa("IEE0305") #Transductores
@@ -734,7 +735,7 @@ def generar_programa(id):
 # generar_programa("ADD0502") #estadistica
 # generar_programa("IEE0503")
 # generar_programa("AUT0504")
-# generar_programa("IMM0506") #materiales
+# #generar_programa("IMM0506") #materiales
 # generar_programa("IMM0507") #manufactura
 # generar_programa("IMM0508") #lab manufactura
 # generar_programa("ADD0602")
@@ -782,11 +783,12 @@ def generar_programa(id):
 # generar_programa("SCF0801") #Ing. Sistemas
 # generar_programa("SCF0806") # maq y meca
 # generar_programa("SCF0808") # fund de cibers
+# generar_programa("SCF0901") # mod num
 # generar_programa("SCF1001") # taller inte
 # generar_programa("SCF1002") # HMI
-generar_programa("SCF1201") # sist autonomos y multiagente
-# generar_programa("SCF1202") # sist 
-# generar_programa("SCF1203") # des soft ap crit
+# generar_programa("SCF1201") # sist autonomos y multiagente
+generar_programa("SCF1202") # an pred series
+generar_programa("SCF1203") # des soft ap crit
 
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)

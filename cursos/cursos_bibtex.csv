@@ -63,7 +63,9 @@ AER1203,womack2003lean;SAE-AS9100;SAE-AS9110;SAE-AS9120;SAE-AS9102;SAE-AS9145;NA
 SCF0801,incose2023;nasa2016expanded
 SCF0806,Uicker2023;Mabie1987
 SCF0808,stallings2018;stuttard2011;stallings2013;erickson2008
+SCF0901,chapra2014metodos;zienkiewicz2005finite;quarteroni2007numerical;pryor2012multiphysics
 SCF1001,incose2023;nasa2016expanded;cohen2015prototype
-SCF1201,fahimi2008autonomous;wooldridge2009mas;parker2005multi
 SCF1002,shneiderman2010designing
+SCF1201,fahimi2008autonomous;wooldridge2009mas;parker2005multi
+SCF1202,palit2005computational;kirchgassner2007introduction;hyndman2018forecasting;box2015time
 SCF1203,laplante2011real;storey1996safety;wolf2012computers;iso26262;do178c;iec61508

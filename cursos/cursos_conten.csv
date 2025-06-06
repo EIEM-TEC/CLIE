@@ -196,14 +196,14 @@ IEE0303,"
 && Elementos activos y pasivos
 && Corto circuito y circuito abierto
 && Fuentes dependientes e independientes
-& Análisis de circuitos básicos.
+& Análisis de circuitos básicos
 && Leyes de Kirchhoff
 && Elementos y circuitos en serie
 && Divisor de voltaje
 && Elementos y circuitos en paralelo
 && Divisor de corriente
 && Fuentes reales
-& Técnicas para el análisis de circuitos complejos.
+& Técnicas para el análisis de circuitos complejos
 && Análisis de mallas y supermallas
 && Análisis de nodos y supernodos
 && Superposición
@@ -364,8 +364,8 @@ IEE0403,"
 && Teorema de máxima transferencia de potencia
 & Potencia Eléctrica
 && Cálculo del valor efectivo
-&& Potencia instantánea y promedio. 
-&& Definición de potencias reactiva, aparente y real. 
+&& Potencia instantánea y promedio 
+&& Definición de potencias reactiva, aparente y real 
 && Concepto del Factor de potencia y su relación con cargas lineales
 && Corrección del Factor de potencia
 && Cálculo de potencia promedio en señales senoidales compuestas
@@ -378,11 +378,11 @@ IEE0403,"
 && Operador s en circuitos RLC y su relación con la transformada de Laplace
 && Función de transferencia, relaciones de impedancia, admitancia y ganancias de tensión o corriente
 && Diagramas de Bode y representación en el plano complejo
-&& Análisis de función de transferencia, ganancia, ceros y polos. Atenuación y decibelios
+&& Análisis de función de transferencia, ganancia, ceros y polos Atenuación y decibelios
 && Filtros pasivos, ancho de banda, banda rechazada, frecuencia de corte, frecuencia central, factor de calidad
 && Resonancia serie, paralelo, resonancia compuesta en circuitos RLC
 & Series de Fourier
-&& Definición. Relación con el valor efectivo y potencia promedio
+&& Definición Relación con el valor efectivo y potencia promedio
 && Concepto de contenido armónico, efecto de filtros en el contenido armónico
 && Distorsión armónica total (THD)
 && Relación del THD con el valor efectivo y el factor de potencia desplazado (FPD) en redes a 60Hz
@@ -421,7 +421,7 @@ IEE0405,"
 && Comunicación serial y USB
 && Control de instrumentos externos
 & Simbología y metrología de instrumentación
-&& Norma ISA 5.1
+&& Norma ISA 51
 && Calibración y trazabilidad
 && Verificación y validación
 && Propagación de incertidumbres
@@ -469,14 +469,14 @@ ADD0502,"
 && Organización y presentación de datos
 && Medidas de tendencia central
 && Medidas de dispersión
-&& Análisis gráfico: Histogramas, Boxplots, identificación de valores atípicos.
+&& Análisis gráfico: Histogramas, Boxplots, identificación de valores atípicos
 &Fundamentos de probabilidad
 && Postulados de probabilidad
 && Modelos de confiabilidad y los postulados de probabilidad
 && Condicionalidad, árbol y tabla de Probabilidad
 && Distribución empírica
 & Distribuciones de probabilidad
-&& Distribuciones discretas: binomial y Poisson.
+&& Distribuciones discretas: binomial y Poisson
 && Distribución normal
 && Distribuciones muestrales: t-student, Chi-cuadrado y F
 && Distribución Gamma
@@ -548,7 +548,7 @@ AUT0504,"
 && Errores asociados a la simulación
 & Identificación de sistemas en el dominio del tiempo
 && Definiciones: curvas de reacción, sistemas autorregulados y no autorregulados
-&& Modelos utilizados en la identificación: modelos integradores, modelos de primer orden más tiempo muerto, modelos de segundo orden más tiempo muerto sobreamortiguados, modelos de segundo orden más tiempo muerto subamortiguados.
+&& Modelos utilizados en la identificación: modelos integradores, modelos de primer orden más tiempo muerto, modelos de segundo orden más tiempo muerto sobreamortiguados, modelos de segundo orden más tiempo muerto subamortiguados
 && Métodos de identificación experimental: métodos de recta tangente, métodos de dos puntos, métodos de tres puntos, métodos por minimización de una función de error de predicción
 && Obtención de la curva de reacción de un sistema: consideraciones prácticas, caso particular, sistemas de múltiples entradas y múltiples salidas
 & Introducción a las redes nueronales para el modelado de sistemas
@@ -778,7 +778,7 @@ IMM0605,"
 & Propiedades mecánicas de los materiales
 && Ensayos de tensión y compresión
 && Diagrama de esfuerzo–deformación
-&& Comportamiento del esfuerzo y deformación de los materiales dúctiles y frágiles.
+&& Comportamiento del esfuerzo y deformación de los materiales dúctiles y frágiles
 && Energía de deformación
 && Relación de Poisson
 && Diagrama de esfuerzo-deformación cortante
@@ -1031,7 +1031,7 @@ IEE0702,"
 && Modelo de la corriente de excitación no senoidal, armónicas impares
 && Cálculo de los parámetros de un reactor con núcleo ferromagnético
 & Transformadores monofásicos
-&& Tipos de transformadores de distribución. aéreos, subterráneos, sumergibles, convencionales y de pedestal
+&& Tipos de transformadores de distribución aéreos, subterráneos, sumergibles, convencionales y de pedestal
 && El transformador ideal
 && Polaridad de los transformadores
 && Transformadores aditivos y sustractivos
@@ -1043,10 +1043,10 @@ IEE0702,"
 && Sistema en por unidad
 && Datos de placa
 && Autotransformador
-&& Conexión en paralelo de transformadores. Intercambiador de derivaciones (tomas regulables bajo carga
+&& Conexión en paralelo de transformadores Intercambiador de derivaciones (tomas regulables bajo carga
 & Transformadores trifásicos
 && Conexiones simétricas: estrella-estrella, delta-delta, delta-estrella, estrella-delta, estrella-zigzag
-&& Conexión en paralelo. Índice horario
+&& Conexión en paralelo Índice horario
 && Conexiones asimétricas: estrella renca - delta abierta, conexión en T, conexión de Scott
 && Datos de placa
 && Autotransformador
@@ -1119,12 +1119,12 @@ AUT0704,"
 && Representación de Funciones de Transferencia en el Dominio de la frecuencia
 && Diagrama de Bode
 && Diagrama Polar
-&& Lugar de las raíces. 
+&& Lugar de las raíces 
 && Criterio de Estabilidad de Nyquist
 && Estabilidad Relativa: márgenes de fase y de ganancia
 && Especificaciones en frecuencia de los sistemas: ancho de banda, resonancia
-&& Sistemas de segundo orden. Relación respuesta temporal y en frecuencia
-&& Respuesta en frecuencia en Lazo Cerrado. Diagrama de Nichols
+&& Sistemas de segundo orden Relación respuesta temporal y en frecuencia
+&& Respuesta en frecuencia en Lazo Cerrado Diagrama de Nichols
 && Determinación Experimental de Funciones de Transferencia: método, casos especiales, consideraciones prácticas
 & El controlador PID 
 && Estructura del controlador: Elementos básicos, propiedades y diferentes representaciones
@@ -1154,9 +1154,9 @@ AUT0704,"
 "
 AUT0705,"
 & Introducción a los microcontroladores
-&& Arquitectura básica: CPU, memoria, periféricos.
-&& Familias de microcontroladores: diferencias entre arquitecturas de 8, 16 y 32 bits.
-&& Herramientas de desarrollo: compiladores, IDEs, simuladores, y depuradores.
+&& Arquitectura básica: CPU, memoria, periféricos
+&& Familias de microcontroladores: diferencias entre arquitecturas de 8, 16 y 32 bits
+&& Herramientas de desarrollo: compiladores, IDEs, simuladores, y depuradores
 && Enfoque en la configuración de registros: ¿Qué son los registros y cómo se usan para controlar el hardware?
 & Programación en lenguaje C para microcontroladores
 && Sintaxis básica y estructuras de control
@@ -1175,7 +1175,7 @@ AUT0705,"
 && Uso de temporizadores para generar retardos y medición de tiempo
 && Uso de contadores para eventos externos
 & Comunicación serial
-&& Configuración de registros para comunicación UART, SPI e I2C.
+&& Configuración de registros para comunicación UART, SPI e I2C
 && Transmisión y recepción de datos en UART: Ejemplo práctico de comunicación entre microcontrolador y PC
 && Transmisión de datos en SPI
 && Transmisión de datos en I2C
@@ -1194,11 +1194,11 @@ AUT0705,"
 && Configuración de registros para el módulo RTC
 && Uso del RTC para medición de tiempo y fechas
 & Acceso Directo a Memoria (DMA)
-&& Configuración de registros para el módulo DMA.
-&& Uso del DMA para transferencias de datos sin intervención de la CPU.
+&& Configuración de registros para el módulo DMA
+&& Uso del DMA para transferencias de datos sin intervención de la CPU
 & Watchdog Timer
-&& Configuración de registros para el Watchdog Timer.
-&& Uso del Watchdog Timer para prevenir bloqueos del sistema.
+&& Configuración de registros para el Watchdog Timer
+&& Uso del Watchdog Timer para prevenir bloqueos del sistema
 "
 IMM0706,"
 & Introducción al diseño en Ingeniería Mecánica 
@@ -1228,7 +1228,7 @@ IMM0706,"
 && Índices de resorte
 && Tensión, compresión y torsión
 && Deflexión debida a flexión
-&& Métodos de deflexión en vigas (superposición, funciones de singularidad).
+&& Métodos de deflexión en vigas (superposición, funciones de singularidad)
 && Energía de deformación
 && Teorema de Castigliano
 & Falla resultante por carga estática 
@@ -1374,14 +1374,14 @@ IEE0802,"
 && Diagramas fasoriales
 && Ecuaciones de potencia activa y reactiva
 && Límites de estabilidad
-&& Sistema p.u. de la máquina sincrónica
+&& Sistema pu de la máquina sincrónica
 && Alternador en funcionamiento aislado
 && Regulación de tensión y factor de potencia
 && Saturación de la máquina sincrónica
 && Características de saturación de circuito abierto
 && Características de saturación del entrehierro y cortocircuito
 && Pérdidas eléctricas, mecánicas, magnéticas y eficiencia
-&& Modelado de saturación en sistemas de potencia (S1.0 y S1.2)
+&& Modelado de saturación en sistemas de potencia (S10 y S12)
 && Curva de capacidad de la máquina
 && Generadores operando en paralelo de forma aislada
 && Generador en funcionamiento en una red de potencia infinita
@@ -1397,7 +1397,7 @@ IEE0802,"
 && Condensador sincrónico
 & Máquinas de corriente directa
 && Principio de funcionamiento
-&& Partes constructivas (estator, rotor, colector, escobillas, etc.)
+&& Partes constructivas (estator, rotor, colector, escobillas, etc)
 && Modelo matemático de flujos y corrientes de devanados
 && Tensión inducida en una espira giratoria
 && Par inducido por una espira giratoria
@@ -1507,14 +1507,14 @@ AUT0804,"
 && Implementación de controladores en microcontroladores
 "
 AUT0805,"
-& Programación de PLC con IEC 61131 con lenguajes escalera.
-& Programación de PLC con IEC 61131 con SFC.
-& Configuración de PLC, buses de campo, AS-i, Profibus.
-& Sintonización de PID en PLCs.
-& Implementación de controladores PID en microcontroladores. 
-& Diseño de controladores con lugar geométrico de las raíces y SISOTOOL.
-& Diseño de compensadores por medio análisis de respuesta en frecuencia.
-& Diseño de controladores con modelo de control predictivo (MPC).
+& Programación de PLC con IEC 61131 con lenguajes escalera
+& Programación de PLC con IEC 61131 con SFC
+& Configuración de PLC, buses de campo, AS-i, Profibus
+& Sintonización de PID en PLCs
+& Implementación de controladores PID en microcontroladores 
+& Diseño de controladores con lugar geométrico de las raíces y SISOTOOL
+& Diseño de compensadores por medio análisis de respuesta en frecuencia
+& Diseño de controladores con modelo de control predictivo (MPC)
 "
 INS0801,"
 & Introducción
@@ -1528,11 +1528,11 @@ INS0801,"
 && Elementos de compensación de potencia reactiva
 && Subestaciones eléctricas
 && Cargas estáticas y dinámicas
-&& Sistema p.u.
+&& Sistema pu
 & Elementos estáticos de las redes eléctricas
 && Líneas aéreas
 && Líneas subterráneas
-&& Resistencia, inductancia, capacitancia y conductancia de la línea de transmisión.
+&& Resistencia, inductancia, capacitancia y conductancia de la línea de transmisión
 && Modelado de la línea de transmisión 
 & Modelado de las líneas de transmisión
 && Modelo de la línea corta
@@ -1591,8 +1591,8 @@ INS0801,"
 "
 INS0806,"
 & Tipos de instalaciones eléctricas en baja tensión
-&& Circuito monofásico trifilar. 
-&& Circuitos trifásicos. 
+&& Circuito monofásico trifilar 
+&& Circuitos trifásicos 
 & Selección de conductores
 && Según su aplicación
 && Según su ampacidad
@@ -1611,7 +1611,7 @@ INS0806,"
 && Puesta a tierra y neutro, conexión según CEN
 && Cálculo del conductor de puesta a tierra y del conductor del electrodo de puesta a tierra
 && Diferentes sistemas de puesta a tierra
-& Dimensionamiento de alimentadores y acometidas para diferentes tipos de cargas eléctricas.
+& Dimensionamiento de alimentadores y acometidas para diferentes tipos de cargas eléctricas
 && Conceptos de carga instalada, carga demandada, factor de carga y manejo de carga
 && Factores de simultaneidad y diversidad
 && Dimensionamiento de acometidas (áreas y subterráneas) y transformadores
@@ -1623,21 +1623,21 @@ INS0806,"
 && Importancia
 && Opciones de corrección (instalación de un banco capacitores o capacitor)
 & Estudio de corto circuito (cálculo manual)
-&& Teoría de la corriente simétrica y asimétrica al corto circuito.
-&& Corto circuito en baja tensión: Método de la impedancia equivalente.
-&& Corto circuito en baja tensión: Método de los KVA´s equivalentes.
+&& Teoría de la corriente simétrica y asimétrica al corto circuito
+&& Corto circuito en baja tensión: Método de la impedancia equivalente
+&& Corto circuito en baja tensión: Método de los KVA´s equivalentes
 & Coordinación de protecciones
-&& Teoría y conceptos de la respuesta selectiva de las protecciones.
-&& Curvas características de las protecciones eléctricas.
+&& Teoría y conceptos de la respuesta selectiva de las protecciones
+&& Curvas características de las protecciones eléctricas
 & Principios de luminotecnia y diseño de sistemas de iluminación
 && Teoría y conceptos de luminotecnia
-&& Tipos de luminarias y sus datos técnicos.
+&& Tipos de luminarias y sus datos técnicos
 && Métodos de diseño de iluminación:
 && Lúmenes
 && Cavidades zonales
 && Punto por punto
 & Calidad de la energía eléctrica
-&& Niveles de calidad normados por la Autoridad Reguladora de los Servicios Públicos (ARESEP) en voltaje, corriente, frecuencia, distorsión armónica, etc.
+&& Niveles de calidad normados por la Autoridad Reguladora de los Servicios Públicos (ARESEP) en voltaje, corriente, frecuencia, distorsión armónica, etc
 && Distorsión armónica, transitorios y métodos de mitigación de sus efectos
 & Planos y especificaciones
 && Simbología
@@ -1646,20 +1646,20 @@ INS0806,"
 "
 INS0807,"
 & Sistemas de Aire Comprimido
-&& Tipos de compresores: funcionamiento, enfriadores, purgadores y mantenimiento.
-&& Dispositivos e instrumentación de redes de aire comprimido.
-&& Cálculo y diseño de sistemas de aire comprimido.
-&& Normativa aplicable (ISO 8573, OSHA, NFPA 99, ASME PTC 9).
-&& Eficiencia energética y sostenibilidad.
-&& Mantenimiento de sistemas de aire comprimido.
+&& Tipos de compresores: funcionamiento, enfriadores, purgadores y mantenimiento
+&& Dispositivos e instrumentación de redes de aire comprimido
+&& Cálculo y diseño de sistemas de aire comprimido
+&& Normativa aplicable (ISO 8573, OSHA, NFPA 99, ASME PTC 9)
+&& Eficiencia energética y sostenibilidad
+&& Mantenimiento de sistemas de aire comprimido
 & Sistemas de Ventilación
-&& Ventiladores: Tipos, funcionamiento, curvas características.
-&& Dispositivos e instrumentación de redes de sistemas de ventilación.
-&& Cálculo y diseño de sistemas de ventilación mecánica.
-&& Sistemas de extracción de contaminantes y control de calidad del aire.
-&& Normativa aplicable (ASHRAE 62.1, NFPA 90A, ISO 14644, EN 16798-3).
-&& Eficiencia energética y sostenibilidad.
-&& Mantenimiento de sistemas de aire comprimido.
+&& Ventiladores: Tipos, funcionamiento, curvas características
+&& Dispositivos e instrumentación de redes de sistemas de ventilación
+&& Cálculo y diseño de sistemas de ventilación mecánica
+&& Sistemas de extracción de contaminantes y control de calidad del aire
+&& Normativa aplicable (ASHRAE 621, NFPA 90A, ISO 14644, EN 16798-3)
+&& Eficiencia energética y sostenibilidad
+&& Mantenimiento de sistemas de aire comprimido
 "
 INS0808,"
 & Introducción al mantenimiento industrial
@@ -1722,7 +1722,7 @@ INS0901,"
 && Aplicaciones de combustibles sintéticos
 && Integración a la red eléctrica
 & Otros tipos de almacenamiento de energía 
-&& Principios de funcionamiento del almacenamiento mecánico, químico, térmico, eléctrico.   
+&& Principios de funcionamiento del almacenamiento mecánico, químico, térmico, eléctrico   
 && Aplicaciones prácticas y alternativas modernas de almacenamiento
 && Comparación con otras tecnologías
 & Operación económica de la generación de electricidad 
@@ -1751,7 +1751,7 @@ INS0903,"
 & Refrigerantes y su impacto ambiental
 && Propiedades y clasificación de los refrigerantes
 && Impacto ambiental: ODP (ozone depletion potential) y GWP (global warming potential)
-&& Regulaciones nacionales e internacionales (protocolo de Montreal, normativa ASHRAE, etc.)
+&& Regulaciones nacionales e internacionales (protocolo de Montreal, normativa ASHRAE, etc)
 && Refrigerantes naturales y alternativas sustentables
 & Componentes de un sistema de refrigeración
 && Compresores: tipos y aplicaciones
@@ -1765,19 +1765,19 @@ INS0903,"
 & Cargas térmicas en sistemas de aire acondicionado
 && Cálculo de carga térmica sensible y latente
 && Métodos de estimación de cargas térmicas
-&& Factores que influyen en la carga térmica (ubicación, materiales, ocupación, etc.)
+&& Factores que influyen en la carga térmica (ubicación, materiales, ocupación, etc)
 && Cálculo de diversidad
 & Selección de equipos de aire acondicionado (sistemas de expansión directa)
 && Tipos de sistemas de aire acondicionado (paquetes, split, VRF (volumen variable de refrigerante))
 && Selección de equipos según necesidades de climatización
 && Parámetros de eficiencia energética en selección de sistemas
 & Selección de equipos de aire acondicionado (sistemas de agua helada)
-&& Chillers enfriados por aire vs. chillers enfriados por agua
+&& Chillers enfriados por aire vs chillers enfriados por agua
 && Criterios de selección según aplicación y clima
 & Selección y dimensionamiento de chillers
-&& Criterios de selección según demanda térmica.
-&& Análisis del coeficiente de desempeño (COP) y eficiencia energética (EER, IPLV, NPLV).
-&& Capacidad y redundancia en sistemas de grandes edificios.
+&& Criterios de selección según demanda térmica
+&& Análisis del coeficiente de desempeño (COP) y eficiencia energética (EER, IPLV, NPLV)
+&& Capacidad y redundancia en sistemas de grandes edificios
 & Diseño del circuito de agua helada
 && Esquemas de distribución (primario constante, primario – secundario, primario – variable)
 && Diseño de redes de tuberías y cálculo de pérdidas de carga
@@ -2036,63 +2036,63 @@ INS1006,"
 "
 INS1007,"
 & Introducción y Fundamentos
-&& Introducción a los sistemas neumáticos y oleohidráulicos.
-&& Historia y evolución de estos sistemas.
-&& Principios físicos básicos: presión, flujo y fuerza.
-&& Comparación entre sistemas neumáticos y oleohidráulicos.
-&& Identificación de componentes y herramientas básicas.
-&& Montaje de un circuito neumático simple.
-&& Medición de presión y flujo en el circuito.
-&& Análisis de fallos comunes y soluciones básicas.
+&& Introducción a los sistemas neumáticos y oleohidráulicos
+&& Historia y evolución de estos sistemas
+&& Principios físicos básicos: presión, flujo y fuerza
+&& Comparación entre sistemas neumáticos y oleohidráulicos
+&& Identificación de componentes y herramientas básicas
+&& Montaje de un circuito neumático simple
+&& Medición de presión y flujo en el circuito
+&& Análisis de fallos comunes y soluciones básicas
 & Válvulas y actuadores
-&& Tipos de válvulas direccionales y su funcionamiento.
-&& Actuadores neumáticos y oleohidráulicos: cilindros, motores, pinzas, ventozas, mezas giratorias, etc.
-&& Selección de válvulas y actuadores según la aplicación.
-&& Cálculo de fuerzas y velocidades en actuadores.
-&& Diseño y montaje de circuitos con válvulas y actuadores.
-&& Ajuste de velocidades y fuerzas en actuadores.
-&& Pruebas de funcionamiento y eficiencia.
+&& Tipos de válvulas direccionales y su funcionamiento
+&& Actuadores neumáticos y oleohidráulicos: cilindros, motores, pinzas, ventozas, mezas giratorias, etc
+&& Selección de válvulas y actuadores según la aplicación
+&& Cálculo de fuerzas y velocidades en actuadores
+&& Diseño y montaje de circuitos con válvulas y actuadores
+&& Ajuste de velocidades y fuerzas en actuadores
+&& Pruebas de funcionamiento y eficiencia
 & Electroválvulas y Detectores de Proximidad
-&& Principios de funcionamiento de las electroválvulas 2 y 3 vias.
-&& Tipos de detectores de proximidad: inductivos, capacitivos, fotoeléctricos, etc. 
-&& Integración de electroválvulas y detectores en sistemas automatizados.
-&& Normativas de seguridad en sistemas con electroválvulas.
+&& Principios de funcionamiento de las electroválvulas 2 y 3 vias
+&& Tipos de detectores de proximidad: inductivos, capacitivos, fotoeléctricos, etc 
+&& Integración de electroválvulas y detectores en sistemas automatizados
+&& Normativas de seguridad en sistemas con electroválvulas
 && Implementación de sistemas con electroválvulas y detectores
-&& Programación básica de controladores para electroválvulas.
-&& Pruebas de detección y respuesta en sistemas automatizados.
+&& Programación básica de controladores para electroválvulas
+&& Pruebas de detección y respuesta en sistemas automatizados
 & Métodos de diseño circuitos neumáticos
-&& Interpretación de diagramas de secuencia.
+&& Interpretación de diagramas de secuencia
 && Métodos empíricos de diseño
 && Métodos formales de diseño
-&& Herramientas de software para la simulación de secuencias.
-&& Mandos neumáticos y electroneumáticos: secuenciadores, PLC.
-&& Integración de mandos electroneumáticos en sistemas automatizados.
-&& Normativas y estándares de seguridad en mandos neumáticos.
-&& Creación de diagramas de secuencia para aplicaciones específicas.
-&& Simulación de secuencias en software especializado.
-&& Implementación de secuencias en sistemas reales.
-&& Programación de controladores para mandos electroneumáticos.
-&& Análisis y optimización de secuencias para mejorar la eficiencia.
+&& Herramientas de software para la simulación de secuencias
+&& Mandos neumáticos y electroneumáticos: secuenciadores, PLC
+&& Integración de mandos electroneumáticos en sistemas automatizados
+&& Normativas y estándares de seguridad en mandos neumáticos
+&& Creación de diagramas de secuencia para aplicaciones específicas
+&& Simulación de secuencias en software especializado
+&& Implementación de secuencias en sistemas reales
+&& Programación de controladores para mandos electroneumáticos
+&& Análisis y optimización de secuencias para mejorar la eficiencia
 & Neumática proporcional y aplicaciones
-&& Principios de la neumática proporcional.
-&& Componentes y funcionamiento de sistemas de neumática proporcional.
-&& Aplicaciones industriales de la neumática proporcional.
-&& Ventajas y desventajas de la neumática proporcional.
-&& Implementación de sistemas de neumática proporcional.
-&& Ajuste y calibración de componentes proporcionales.
-&& Pruebas de precisión y respuesta en sistemas proporcionales.
-&& Diagnóstico y solución de problemas en sistemas de neumática proporcional.
+&& Principios de la neumática proporcional
+&& Componentes y funcionamiento de sistemas de neumática proporcional
+&& Aplicaciones industriales de la neumática proporcional
+&& Ventajas y desventajas de la neumática proporcional
+&& Implementación de sistemas de neumática proporcional
+&& Ajuste y calibración de componentes proporcionales
+&& Pruebas de precisión y respuesta en sistemas proporcionales
+&& Diagnóstico y solución de problemas en sistemas de neumática proporcional
 & Sistemas Oleohidráulicos
-&& Principios y aplicaciones de sistemas oleohidráulicos.
-&& Tipos de fluidos hidráulicos y sus propiedades.
-&& Componentes de un sistema oleohidráulico: bombas, válvulas y actuadores.
-&& Técnicas de diseño de sistemas oleohidráulicos.
-&& Simulación de sistemas oleohidráulicos.
-&& Normativas y estándares de seguridad en sistemas oleohidráulicos.
-&& Montaje de circuitos oleohidráulicos.
-&& Pruebas de funcionamiento y ajuste de sistemas oleohidráulicos.
-&& Mantenimiento preventivo y correctivo de sistemas oleohidráulicos.
-&& Diagnóstico y solución de problemas en sistemas oleohidráulicos.
+&& Principios y aplicaciones de sistemas oleohidráulicos
+&& Tipos de fluidos hidráulicos y sus propiedades
+&& Componentes de un sistema oleohidráulico: bombas, válvulas y actuadores
+&& Técnicas de diseño de sistemas oleohidráulicos
+&& Simulación de sistemas oleohidráulicos
+&& Normativas y estándares de seguridad en sistemas oleohidráulicos
+&& Montaje de circuitos oleohidráulicos
+&& Pruebas de funcionamiento y ajuste de sistemas oleohidráulicos
+&& Mantenimiento preventivo y correctivo de sistemas oleohidráulicos
+&& Diagnóstico y solución de problemas en sistemas oleohidráulicos
 "
 INS1201,"
 & Introducción a los sistemas de Protección y Puesta a Tierra
@@ -2459,22 +2459,22 @@ AER1003,"
 "
 AER1203,"
 & Administración Industrial en procesos aeroespaciales
-&& Programación de la producción y secuenciamiento.
-&& Gestión de capacidad productiva y balanceo de planta.
-&& Administración de cuellos de botella (Teoría de restricciones).
-&& Lean Manufacturing: técnicas de mejora continua (5S, Kaizen, SMED, TPM, Kanban).
+&& Programación de la producción y secuenciamiento
+&& Gestión de capacidad productiva y balanceo de planta
+&& Administración de cuellos de botella (Teoría de restricciones)
+&& Lean Manufacturing: técnicas de mejora continua (5S, Kaizen, SMED, TPM, Kanban)
 & Sistemas de gestión de calidad aeroespacial
-&& Normativas AS9100, AS9110 y AS9120.
-&& Certificaciones NADCAP para procesos especiales.
-&& Herramientas básicas de calidad: SPC, gráficos de control, FMEA.
+&& Normativas AS9100, AS9110 y AS9120
+&& Certificaciones NADCAP para procesos especiales
+&& Herramientas básicas de calidad: SPC, gráficos de control, FMEA
 & Requisitos regulatorios en manufactura aeroespacial
-&& Alcance de regulaciones DGAC, FAA, EASA.
-&& Análisis y gestión de requisitos ITAR y EAR.
-&& Trazabilidad y gestión documental electrónica (PLM/ERP).
+&& Alcance de regulaciones DGAC, FAA, EASA
+&& Análisis y gestión de requisitos ITAR y EAR
+&& Trazabilidad y gestión documental electrónica (PLM/ERP)
 & Gestión de proyectos bajo estándares aeroespaciales
-&& Metodología AS9102: Primera Inspección del Artículo (FAI).
-&& Planificación avanzada de calidad del producto (AS9145 - APQP).
-&& Gestión integrada de proyectos con ERP/PLM.
+&& Metodología AS9102: Primera Inspección del Artículo (FAI)
+&& Planificación avanzada de calidad del producto (AS9145 - APQP)
+&& Gestión integrada de proyectos con ERP/PLM
 "
 SCF0801,"
 & Introducción a la Ingeniería de Sistemas
@@ -2626,6 +2626,32 @@ SCF0808,"
 && Políticas de seguridad y su implementación
 && Evaluación de cumplimiento y auditorías de seguridad
 "
+SCF0901,"
+& Introducción al modelado computacional
+&& Rol del modelado en la ingeniería
+&& Tipos de modelos: algebraicos, diferenciales, empíricos
+&& Relación con el curso de Métodos Numéricos: repaso breve de discretización, errores, estabilidad
+& Modelado con ecuaciones diferenciales ordinarias (ODEs)
+&& Modelos dinámicos de primer y segundo orden
+&& Sistemas acoplados de ODEs
+&& Condiciones iniciales y resolución numérica en el dominio temporal
+&& Estudio de la estabilidad de soluciones y sensibilidad a parámetros
+& Introducción a ecuaciones en derivadas parciales (PDEs)
+&& Clasificación de PDEs: elípticas, parabólicas, hiperbólicas
+&& Aplicaciones típicas: transferencia de calor, vibraciones, difusiones
+&& Condiciones de frontera: Dirichlet, Neumann, mixtas
+&& Formulación del problema físico completo
+& Simulación numérica por elementos y volúmenes discretos
+&& Concepto de malla y discretización espacial
+&& Análisis de convergencia y refinamiento
+&& Simulación de fenómenos acoplados: térmico-mecánico, fluido-estructura
+&& Interpretación de resultados y validación contra modelos teóricos o experimentales
+& Casos de estudio
+&& Microbombas y microfluidos: modelado de flujos en microcanales
+&& Simulación del calentamiento en sistemas electrónicos embebidos
+&& Dinámica de fluidos y transferencia de calor en sistemas de refrigeración
+&& Modelado termomecánico de transformadores eléctricos
+"
 SCF1001,"
 & Fase de planificación del proyecto
 && Definición del problema
@@ -2649,41 +2675,6 @@ SCF1001,"
 && Documento de ensamblaje
 && Documento de validación
 && Manual de usuario
-"
-SCF1201,"
-& Fundamentos de sistemas inteligentes
-&& Tipos de inteligencia en sistemas embebidos
-&& Conceptos de autonomía, adaptabilidad y aprendizaje
-&& Arquitectura básica de sistemas inteligentes distribuidos
-& Modelos de Agentes Inteligentes
-&& Modelos deliberativos, reactivos y BDI
-&& Estados internos, percepciones y acciones
-&& Ciclo de razonamiento de un agente
-&& Implementación básica de un agente
-& Sistemas multiagente (MAS)
-&& Coordinación y cooperación entre agentes
-&& Organización jerárquica vs. distribuida
-&& Protocolos de comunicación (KQML, ACL)
-&& Casos de estudio: robótica distribuida, simulación
-& Razonamiento simbólico y planificación
-&& Lógica proposicional y modal en agentes
-&& Planificación automática (STRIPS, Graphplan)
-&& Resolución de conflictos y metas múltiples
-&& Planificación multiagente
-& Aprendizaje Autónomo y Adaptación
-&& Introducción al aprendizaje en línea
-&& Redes neuronales recurrentes y adaptativas
-&& Control adaptativo y modelos supervisados
-&& Aplicaciones en sistemas dinámicos y robótica
-& Modelado Inteligente en tiempo real
-&& Modelado basado en datos
-&& Inferencia difusa y lógica difusa adaptativa
-&& Algoritmos genéticos para ajuste dinámico
-&& Casos prácticos con sistemas COTS
-& Integración en sistemas ciberfísicos
-&& Diseño de una red de agentes inteligentes
-&& Interoperabilidad entre sensores, actuadores y agentes
-&& Consideraciones de robustez, latencia y escalabilidad
 "
 SCF1002,"
 & Introducción a la interacción humano-computadora (HCI)
@@ -2718,35 +2709,114 @@ SCF1002,"
 && Inclusividad, privacidad y ética en el diseño de interfases
 && Responsabilidad social del diseñador de sistemas interactivos
 "
+SCF1201,"
+& Fundamentos de sistemas inteligentes
+&& Tipos de inteligencia en sistemas embebidos
+&& Conceptos de autonomía, adaptabilidad y aprendizaje
+&& Arquitectura básica de sistemas inteligentes distribuidos
+& Modelos de Agentes Inteligentes
+&& Modelos deliberativos, reactivos y BDI
+&& Estados internos, percepciones y acciones
+&& Ciclo de razonamiento de un agente
+&& Implementación básica de un agente
+& Sistemas multiagente (MAS)
+&& Coordinación y cooperación entre agentes
+&& Organización jerárquica vs distribuida
+&& Protocolos de comunicación (KQML, ACL)
+&& Casos de estudio: robótica distribuida, simulación
+& Razonamiento simbólico y planificación
+&& Lógica proposicional y modal en agentes
+&& Planificación automática (STRIPS, Graphplan)
+&& Resolución de conflictos y metas múltiples
+&& Planificación multiagente
+& Aprendizaje Autónomo y Adaptación
+&& Introducción al aprendizaje en línea
+&& Redes neuronales recurrentes y adaptativas
+&& Control adaptativo y modelos supervisados
+&& Aplicaciones en sistemas dinámicos y robótica
+& Modelado Inteligente en tiempo real
+&& Modelado basado en datos
+&& Inferencia difusa y lógica difusa adaptativa
+&& Algoritmos genéticos para ajuste dinámico
+&& Casos prácticos con sistemas COTS
+& Integración en sistemas ciberfísicos
+&& Diseño de una red de agentes inteligentes
+&& Interoperabilidad entre sensores, actuadores y agentes
+&& Consideraciones de robustez, latencia y escalabilidad
+"
+SCF1202,"
+& Conceptos básicos de series temporales
+&& Características básicas
+&& Clasificación de series temporales
+&& Análisis de series temporales
+&& Deficiencias en datos de series temporales
+& Herramientas básicas de predicción
+&& Herramientas gráficas Herramientas numéricas
+&& Medida de los errores de predicción
+&& Intervalos de predicción 
+&& Transformaciones y ajustes 
+& Descomposición de series temporales
+&& Principios de descomposición 
+&& Medias móviles 
+&& Suavizado por regresión local 
+&& Descomposición clásica 
+&& Método Census 
+&& Descomposición STL 
+&& Utilidad en predicción 
+& Métodos de suavizado 
+&& Métodos de promediado 
+&& Suavizado exponencial 
+&& Comparación de modelos 
+& Metodología ARIMA 
+&& Correlaciones en series temporales 
+&& Examinando la estacionareidad 
+&& Modelos AR y ARMA 
+&& Identificación y estimación de parámetros del modelo
+&& Re-identificación
+&& Análisis de residuos
+&& Predicción con modelos ARIMA 
+& Modelos basados en redes neuronales artificiales 
+&& La neurona artificial 
+&& Entrenamiento de redes neuronales
+&& Tipos de redes neuronales usadas en modelos de predicción
+&& Mapas auto-organizados
+&& Modelos híbridos Software neurosolutions 
+& Integración en sistemas ciberfísicos
+&& Conceptos básicos de sistemas ciberfísicos
+&& Implementación de modelos predictivos en sistemas ciberfísicos
+&& Evaluación y mejora de modelos
+&& Técnicas de evaluación de rendimiento
+&& Ajustes y mejoras para precisión
+"
 SCF1203,"
 & Introducción a sistemas software críticos
-&& Clasificación de aplicaciones críticas.
-&& Ciclo de vida del software en sistemas embebidos.
+&& Clasificación de aplicaciones críticas
+&& Ciclo de vida del software en sistemas embebidos
 & Modelado y especificación de requisitos
-&& Requisitos funcionales y no funcionales.
+&& Requisitos funcionales y no funcionales
 && Lenguajes de especificación formal
 & Arquitecturas y diseño seguro
-&& Principios de modularidad, aislamiento y redundancia.
-&& Patrones de diseño seguros.
+&& Principios de modularidad, aislamiento y redundancia
+&& Patrones de diseño seguros
 & Programación robusta
-&& Técnicas de programación defensiva.
-&& Control de errores y fallos.
+&& Técnicas de programación defensiva
+&& Control de errores y fallos
 & Sistemas operativos en tiempo real (RTOS)
-&& Planificación, sincronización y manejo de recursos.
-&& Implementación de tareas periódicas y esporádicas.
+&& Planificación, sincronización y manejo de recursos
+&& Implementación de tareas periódicas y esporádicas
 & Verificación, validación y pruebas
-&& Pruebas unitarias, de integración y de sistema.
-&& Pruebas en hardware-in-the-loop (HIL).
-&& Cobertura de código y análisis estático.
+&& Pruebas unitarias, de integración y de sistema
+&& Pruebas en hardware-in-the-loop (HIL)
+&& Cobertura de código y análisis estático
 & Normativas y certificación
 && ISO 26262 (automotriz)
 && DO-178C (aeroespacial)
 && IEC 61508 (industrial)
-& Ciclo de certificación y documentación.
+& Ciclo de certificación y documentación
 && Casos de estudio 
-& Sistemas de control de vuelo (autopilotos, gestión de potencia).
-& Sistemas médicos embebidos (bombas de infusión, marcapasos).
-& Sistemas automotrices seguros (ADAS, frenos ABS).
-& Automatización industrial con redundancia y diagnóstico.
-& Análisis de fallas y mitigación: estudio de fallos históricos (Therac-25, Ariane 5, Toyota).
+& Sistemas de control de vuelo (autopilotos, gestión de potencia)
+& Sistemas médicos embebidos (bombas de infusión, marcapasos)
+& Sistemas automotrices seguros (ADAS, frenos ABS)
+& Automatización industrial con redundancia y diagnóstico
+& Análisis de fallas y mitigación: estudio de fallos históricos (Therac-25, Ariane 5, Toyota)
 "
