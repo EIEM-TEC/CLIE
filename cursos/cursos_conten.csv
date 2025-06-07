@@ -2342,6 +2342,38 @@ AER0808,"
 && Lectura e interpretación de certificados de calibración
 && Integración de la metrología con procesos de mantenimiento aeronáutico
 "
+AER0902,"
+& Introducción a la aerodinámica
+&& Definición y principios fundamentales
+&& Aplicaciones en la aviación
+& Dinámica de fluidos aplicada a aeronaves
+&& Ecuaciones de movimiento de los fluidos
+&& Modelos de flujo aerodinámico
+& Flujo compresible e incompresible
+&& Principios de la mecánica de fluidos en aerodinámica
+&& Aplicaciones en vuelos subsónicos y supersónicos
+& Principios de sustentación y arrastre
+&& Fuerzas aerodinámicas fundamentales
+&& Coeficientes aerodinámicos y su interpretación
+& Perfiles aerodinámicos y sus características
+&& Diseño y clasificación de perfiles
+&& Factores que afectan el rendimiento aerodinámico
+& Propulsión aeronáutica y eficiencia energética
+&& Tipos de sistemas de propulsión
+&& Relación entre aerodinámica y propulsión
+& Interacción aerodinámica-propulsión
+&& Evaluación del rendimiento del sistema
+&& Optimización del consumo energético
+& Aplicaciones computacionales en aerodinámica
+&& Simulación numérica de flujo aerodinámico
+&& Software y herramientas de modelado
+& Optimización aerodinámica
+&& Métodos de diseño y optimización
+&& Factores de mejora en eficiencia aerodinámica
+& Análisis de casos en aerodinámica aplicada
+&& Estudios de casos reales
+&& Implementación de mejoras aerodinámicas en aeronaves
+"
 AER0903,"
 & Introducción a dinámica de vuelo
 && Consideraciones generales 
