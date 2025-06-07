@@ -2128,6 +2128,47 @@ INS1201,"
 && Errores frecuentes
 && Casos de estudio
 "
+INS1202,"
+& Introducción a los sistemas contra incendios
+&& Generalidades y clasificación de sistemas (activos, pasivos, detección, supresión)
+&& Normativa general y marco regulatorio (NFPA, códigos locales)
+& Fundamentos del fuego y su comportamiento
+&& Teoría del fuego y triángulo del fuego
+&& Métodos de extinción y tipos de agentes
+& Sistemas de detección y alarma contra incendios
+&& Tipos de detectores (humo, calor, llama)
+&& Diseño e instalación según NFPA 72
+& Sistemas de bombeo para protección contra incendios
+&& Tipos de bombas y sus aplicaciones
+&& Diseño, selección y pruebas (NFPA 20)
+&& Tanques de almacenamiento de agua
+&& Tipos de almacenamiento y diseño
+&& Normativa NFPA 22
+& Redes de tuberías y distribución de agua
+&& Tipos de tuberías y accesorios
+&& Cálculo hidráulico y diseño
+& Sistemas de tuberías verticales y mangueras
+&& Sistemas montantes y gabinetes
+&& Diseño y mantenimiento
+& Hidrantes y protección exterior
+&& Tipos de hidrantes
+&& Inspección, pruebas y mantenimiento
+& Sistemas de rociadores automáticos
+&& Tipos, diseño y cálculo (NFPA 13)
+&& Aplicaciones y limitaciones
+& Sistemas de pulverización de agua
+&& Tipos de boquillas y aplicaciones
+&& Normativa NFPA 15
+& Sistemas de espumas contra incendios
+&& Tipos de espuma y agentes
+&& Diseño, instalación y pruebas
+& Inspección, pruebas y mantenimiento
+&& Normativa NFPA 25
+&& Planes de mantenimiento y documentación
+& Integración con sistemas electromecánicos
+&& Automatización, control y monitoreo
+&& Interacción con sistemas HVAC, eléctricos y de seguridad
+"
 INS1203,"
 & Fundamentos de los edificios inteligentes y normativa 
 && Conceptos clave y evolución de los edificios inteligentes

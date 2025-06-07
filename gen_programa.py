@@ -771,6 +771,7 @@ def generar_programa(id):
 # generar_programa("INS1006") # Gestion ciclo vida electromecanica
 # generar_programa("INS1007") # Neumática
 # generar_programa("INS1201") # Sist puesta tierra
+generar_programa("INS1202") # Sist contra incendios
 # generar_programa("INS1203") # Ed Inte
 # generar_programa("AER0801") # sist de aeronaves
 # generar_programa("AER0807") # mat en aeronáutica
