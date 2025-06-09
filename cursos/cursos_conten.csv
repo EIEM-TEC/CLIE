@@ -492,27 +492,30 @@ ADD0502,"
 "
 IEE0503,"
 & Introducción a los sistemas analógicos
+&& Introducción a la física del estado sólido en dispositivos electrónicos
 && Conceptos básicos de sistemas analógicos
 && Diferencias entre sistemas analógicos y digitales
-& Aplicaciones de los sistemas analógicos
-&& Características y funcionamiento de los amplificadores operacionales
-&& Analisis de amplificadores operacionales
-&& Topologías más utilizadas: inversor, no inversor, sumador, restador
-&& Aplicaciones prácticas de amplificadores operacionales
 & Dispositivos electrónicos
-&& Características y operación de BJT, MOSFET, IGBT, SCR, TRIAC
+&& Características y operación de diodos, BJT, MOSFET, IGBT, SCR, TRIAC
 && Selección de dispositivos para aplicaciones específicas
 && Ejemplos de circuitos con estos dispositivos
-& Reguladores de voltaje y comparadores
-&& Reguladores de voltaje lineales y conmutados
-&& Comparadores y sus aplicaciones
+& Reguladores de voltaje
+&& Reguladores de voltaje lineales
+&& PWM: modulación por ancho de pulso
 && Diseño de circuitos con reguladores y comparadores
+& Aplicaciones de los sistemas analógicos
+&& Características y funcionamiento de los amplificadores operacionales
+&& Limitaciones estáticas y dinámica de los amplificadores operacionales
+&& Analisis de amplificadores operacionales
+&& Ruido y filtrado
+&& Osciladores y generadores de señales
+&& Procesamiento de señales
 & Convertidores 
 && Convertidores analógico-digital (ADC) y digital-analógico (DAC)
 && Convertidores V/F y V/I
 && Integración de sensores en sistemas analógicos
 & Circuitos integrados especiales
-&& Uso del CI 555 en aplicaciones de temporización y oscilación
+&& Uso del 555 en aplicaciones de temporización y oscilación
 && Diseño de circuitos con DAC, ADC y otros CI especiales
 && Ejemplos prácticos y simulaciones
 & Electrónica de potencia
@@ -534,7 +537,7 @@ AUT0504,"
 && Observabilidad
 && Controlabilidad
 & Modelado matemático
-&& Sistemas mecánicos,
+&& Sistemas mecánicos
 && Sistemas eléctricos
 && Sistemas térmicos
 && Sistemas hidráulicos

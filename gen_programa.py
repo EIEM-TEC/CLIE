@@ -733,7 +733,7 @@ def generar_programa(id):
 # generar_programa("IEE0405")
 # generar_programa("IMM0407")
 # generar_programa("ADD0502") #estadistica
-# generar_programa("IEE0503")
+# generar_programa("IEE0503") #analogica
 # generar_programa("AUT0504")
 # #generar_programa("IMM0506") #materiales
 # generar_programa("IMM0507") #manufactura
@@ -783,12 +783,12 @@ def generar_programa(id):
 # generar_programa("SCF0801") #Ing. Sistemas
 # generar_programa("SCF0806") # maq y meca
 # generar_programa("SCF0808") # fund de cibers
-# generar_programa("SCF0901") # mod num
+generar_programa("SCF0901") # mod num
 # generar_programa("SCF1001") # taller inte
 # generar_programa("SCF1002") # HMI
 # generar_programa("SCF1201") # sist autonomos y multiagente
-generar_programa("SCF1202") # an pred series
-generar_programa("SCF1203") # des soft ap crit
+# generar_programa("SCF1202") # an pred series
+# generar_programa("SCF1203") # des soft ap crit
 
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
