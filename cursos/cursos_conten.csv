@@ -2131,6 +2131,47 @@ INS1201,"
 && Errores frecuentes
 && Casos de estudio
 "
+INS1202,"
+& Introducción a los sistemas contra incendios
+&& Generalidades y clasificación de sistemas (activos, pasivos, detección, supresión)
+&& Normativa general y marco regulatorio (NFPA, códigos locales)
+& Fundamentos del fuego y su comportamiento
+&& Teoría del fuego y triángulo del fuego
+&& Métodos de extinción y tipos de agentes
+& Sistemas de detección y alarma contra incendios
+&& Tipos de detectores (humo, calor, llama)
+&& Diseño e instalación según NFPA 72
+& Sistemas de bombeo para protección contra incendios
+&& Tipos de bombas y sus aplicaciones
+&& Diseño, selección y pruebas (NFPA 20)
+&& Tanques de almacenamiento de agua
+&& Tipos de almacenamiento y diseño
+&& Normativa NFPA 22
+& Redes de tuberías y distribución de agua
+&& Tipos de tuberías y accesorios
+&& Cálculo hidráulico y diseño
+& Sistemas de tuberías verticales y mangueras
+&& Sistemas montantes y gabinetes
+&& Diseño y mantenimiento
+& Hidrantes y protección exterior
+&& Tipos de hidrantes
+&& Inspección, pruebas y mantenimiento
+& Sistemas de rociadores automáticos
+&& Tipos, diseño y cálculo (NFPA 13)
+&& Aplicaciones y limitaciones
+& Sistemas de pulverización de agua
+&& Tipos de boquillas y aplicaciones
+&& Normativa NFPA 15
+& Sistemas de espumas contra incendios
+&& Tipos de espuma y agentes
+&& Diseño, instalación y pruebas
+& Inspección, pruebas y mantenimiento
+&& Normativa NFPA 25
+&& Planes de mantenimiento y documentación
+& Integración con sistemas electromecánicos
+&& Automatización, control y monitoreo
+&& Interacción con sistemas HVAC, eléctricos y de seguridad
+"
 INS1203,"
 & Fundamentos de los edificios inteligentes y normativa 
 && Conceptos clave y evolución de los edificios inteligentes
@@ -2304,6 +2345,38 @@ AER0808,"
 && Lectura e interpretación de certificados de calibración
 && Integración de la metrología con procesos de mantenimiento aeronáutico
 "
+AER0902,"
+& Introducción a la aerodinámica
+&& Definición y principios fundamentales
+&& Aplicaciones en la aviación
+& Dinámica de fluidos aplicada a aeronaves
+&& Ecuaciones de movimiento de los fluidos
+&& Modelos de flujo aerodinámico
+& Flujo compresible e incompresible
+&& Principios de la mecánica de fluidos en aerodinámica
+&& Aplicaciones en vuelos subsónicos y supersónicos
+& Principios de sustentación y arrastre
+&& Fuerzas aerodinámicas fundamentales
+&& Coeficientes aerodinámicos y su interpretación
+& Perfiles aerodinámicos y sus características
+&& Diseño y clasificación de perfiles
+&& Factores que afectan el rendimiento aerodinámico
+& Propulsión aeronáutica y eficiencia energética
+&& Tipos de sistemas de propulsión
+&& Relación entre aerodinámica y propulsión
+& Interacción aerodinámica-propulsión
+&& Evaluación del rendimiento del sistema
+&& Optimización del consumo energético
+& Aplicaciones computacionales en aerodinámica
+&& Simulación numérica de flujo aerodinámico
+&& Software y herramientas de modelado
+& Optimización aerodinámica
+&& Métodos de diseño y optimización
+&& Factores de mejora en eficiencia aerodinámica
+& Análisis de casos en aerodinámica aplicada
+&& Estudios de casos reales
+&& Implementación de mejoras aerodinámicas en aeronaves
+"
 AER0903,"
 & Introducción a dinámica de vuelo
 && Consideraciones generales 
@@ -2346,6 +2419,60 @@ AER0903,"
 && Principios de Estabilidad
 && Interpretación gráfica de estabilidad
 & Modelado de aerodinámica 
+"
+AER0906,"
+& Introducción a la teoría de elasticidad
+&& Teoría básica de elasticidad
+&& Problemas de elasticidad en 2D
+&& Torsión de secciones sólidas
+&& Flexión de platos delgados
+& Inestabilidad Estructural
+&& Pandeo elástico (Euler) e inelástico de columnas
+&& Pandeo elástico (Euler) e inelástico de platos delgados
+&& Inestabilidad local y de paneles rígidos
+&& Esfuerzos de falla de platos delgados y paneles rígidos
+& Introducción al análisis matricial
+&& Análisis estructural clásico, matricial y de elemento finito
+&& Clasificación de las estructuras de marco
+&& Métodos analíticos
+&& Relaciones fundamentales del análisis estructural
+&& Análisis lineal vs. análisis no lineal
+& Cargas típicas de aeronaves
+&& Cargas en vuelo
+&& Cargas en tierra
+& Estructuras de aeronaves 
+&& Principios de construcción de estructuras forradas
+&& Flexión, cortante y torsión de vigas de pared delgada
+&& Análisis de componentes de la aeronave
+"
+AER0908,"
+& Conceptos Fundamentales
+&& Definiciones de seguridad aeronáutica y aeronavegabilidad.
+&& Marco legal y normativo nacional e internacional.
+& Gestión de la Seguridad
+&& Sistemas de gestión de seguridad operacional (SMS).
+&& Identificación y gestión de riesgos en aviación.
+&& Factores humanos y culturales en seguridad.
+& Aeronavegabilidad
+&& Certificación inicial y continua de aeronaves.
+&& Procedimientos de inspección y mantenimiento aeronáutico.
+&& Documentación técnica y registros de mantenimiento.
+& Investigación de Accidentes e Incidentes
+&& Técnicas y procedimientos de investigación.
+&& Análisis de factores humanos en accidentes.
+&& Elaboración de informes técnicos.
+& Mercancías Peligrosas
+&& Clasificación y manejo de mercancías peligrosas.
+&& Procedimientos operacionales y emergencias.
+& Protección Ambiental
+&& Normativa sobre ruido y emisiones de motores aeronáuticos.
+&& Gestión ambiental en operaciones aéreas.
+& Seguridad Física de la Aviación
+&& Prevención y control de actos de interferencia ilícita.
+&& Procedimientos de seguridad aeroportuaria.
+& Auditoría y Supervisión
+&& Auditorías internas y externas en aviación.
+&& Supervisión continua del cumplimiento normativo.
 "
 AER1001,"
 & Introducción a la gestión del ciclo de vida de la aeronave
@@ -2459,6 +2586,38 @@ AER1003,"
 && Métodos de prueba y validación de sistemas de control
 && Análisis de datos y evaluación de desempeño
 && Realización de pruebas experimentales
+"
+AER1202,"
+& Panorama general de las comunicaciones aeronáuticas
+&& Rol estratégico de las comunicaciones en la aviación.
+&& Historia de la radio y telecomunicaciones en aeronáutica.
+&& Tipos de comunicación: aire-aire, aire-tierra, tierra-tierra.
+&& Ejemplos ilustrativos: control de tráfico aéreo, transmisiones satelitales, UAVs.
+& Fundamentos físicos y conceptuales de la comunicación
+&& Conceptos esenciales: señal, frecuencia, modulación (visión cualitativa).
+&& El espectro electromagnético en aviación.
+&& Ruido, interferencia y confiabilidad de la señal.
+&& Nociones de multiplexación, ancho de banda y latencia.
+& Estructura general de un sistema de telemetría
+&& Concepto de telemetría en aviación: monitoreo remoto de parámetros.
+&& Flujo de información: adquisición – transmisión – recepción – almacenamiento.
+&& Esquema conceptual de una trama (frame): cabecera, datos, control de errores.
+&& Topologías comunes: centralizada, distribuida.
+& Protocolos y normas en aviación
+&& Introducción general a ARINC 429, MIL-STD-1553, CAN-Aerospace.
+&& Importancia del diseño determinista y la redundancia.
+&& Regulaciones y entidades: ICAO, RTCA, EASA, FAA.
+&& DO-178C, DO-160G, DO-254 (enfoque conceptual).
+& Comunicación y aviónica moderna
+&& Arquitectura conceptual de un sistema aviónico.
+&& Tendencias: aviónica modular integrada (IMA), sistemas abiertos.
+&& Interoperabilidad, ciberseguridad, mantenimiento basado en datos.
+&& Enlaces satelitales, ADS-B, integración con GNSS.
+& Nuevas tecnologías y desafíos
+&& Comunicaciones en UAVs y sistemas autónomos.
+&& Gestión de datos en tiempo real.
+&& Convergencia entre comunicaciones aeronáuticas y comerciales.
+&& Impacto de la inteligencia artificial en la gestión de comunicaciones.
 "
 AER1203,"
 & Administración Industrial en procesos aeroespaciales
@@ -2591,6 +2750,37 @@ SCF0806,"
 && Análisis tabular de trenes de engranajes epicíclicos
 & Sistemas espaciales y robótica
 && Programas informáticos de análisis de mecanismos generalizados
+"
+SCF0807,"
+& Introducción a sistemas embebidos
+&& Arquitectura de microcontroladores ARM Cortex-M
+&& Arquitectura de FPGAs
+&& Comparación entre sistemas embebidos y sistemas generales
+&& Aplicaciones modernas de sistemas embebidos: IoT, automatización, y sistemas ciberfísicos
+& Programación en C++ para Sistemas Embebidos
+&& Introducción a C++ para sistemas embebidos
+&& Uso de clases, herencia, y polimorfismo en sistemas con recursos limitados
+&& Patrones de diseño para sistemas embebidos (Singleton, State, Observer)
+&& Manejo de memoria dinámica y optimización de código
+& Periféricos en ARM Cortex-M
+&& Configuración y uso de DMA para transferencias de datos eficientes
+&& Uso de RTC (Reloj en Tiempo Real) para aplicaciones de temporización
+&& Implementación de Watchdog Timer para sistemas robustos
+&& Configuración de periféricos como DAC, PWM, y comunicación serial (UART, SPI, I2C)
+&& Configuración de protocolos de comunicación avanzados (CAN, Modbus, Ethernet)
+& Comunicación inalámbrica y IoT
+&& Integración de módulos Wi-Fi y Bluetooth en sistemas embebidos
+&& Protocolos de comunicación IoT (MQTT, CoAP, HTTP)
+&& Implementación de sistemas embebidos conectados a la nube
+& Sistemas Operativos en Tiempo Real (RTOS)
+&& Introducción a RTOS: FreeRTOS, Zephyr, y otros
+&& Gestión de tareas, colas, y semáforos en RTOS
+&& Implementación de sistemas multitarea en microcontroladores ARM
+& Aplicaciones Embebidas Basadas en FPGA
+&& Introducción a aplicaciones embebidas completamente basadas en FPGA
+&& Diseño de sistemas de control en FPGA (control de motores paso a paso o servomotores)
+&& Implementación de procesamiento de señales digitales (DSP) en FPGA (filtrado, transformadas, etc.)
+&& Aplicaciones de FPGA en sistemas ciberfísicos
 "
 SCF0808,"
 & Introducción a la ciberseguridad
