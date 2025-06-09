@@ -767,6 +767,7 @@ def generar_programa(id):
 # generar_programa("INS0907") #Lab Sist Flu
 # generar_programa("INS0908") #Vapor
 # generar_programa("INS0909") # Lab Vapor
+# generar_programa("INS1003") #gestion de energia
 # generar_programa("INS1005") # Sem II
 # generar_programa("INS1006") # Gestion ciclo vida electromecanica
 # generar_programa("INS1007") # Neumática
@@ -787,9 +788,10 @@ def generar_programa(id):
 # generar_programa("AER1203") # man cad valor aer
 # generar_programa("SCF0801") #Ing. Sistemas
 # generar_programa("SCF0806") # maq y meca
-generar_programa("SCF0807") # ap sist emb
+# generar_programa("SCF0807") # ap sist emb
 # generar_programa("SCF0808") # fund de cibers
-generar_programa("SCF0901") # mod num
+# generar_programa("SCF0901") # mod num
+generar_programa("SCF0906") # rob
 # generar_programa("SCF1001") # taller inte
 # generar_programa("SCF1002") # HMI
 # generar_programa("SCF1201") # sist autonomos y multiagente

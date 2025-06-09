@@ -52,7 +52,7 @@ INS1007,serrano2009neumatica;carnicer1994aire;serrano2002oleohidraulica;esposito
 INS1201,IEEE81-1983;IEEE81.2-1991;IEEE1100-2005;IEEE142-2007;IEEEP80-2013;Meliopoulos1988;NFPA70-2009;TIA-607-2015
 INS1202,nfpa2012manual_proteccion;nfpa2006inspeccion_seguridad;nfpa2013nfpa20;nfpa2011nfpa25;nfpa2018nfpa101
 INS1203,ashrae2019handbook;sinopoli2009smart;jadhav2016green;Gnana2022
-INS1003,
+INS1003,capehart2020guide;thumann2020handbook;boyle2012renewable;hohenthal2021footprint;iso50001;iso50002;iso50006
 INS1005,thiel2014research
 AER0801,moir2023aircraft;tooley2022electrical;farokhi2021propulsion;langton2020hydraulic;davis2019environmental
 AER0807,liu2016aerospace;lu2019materials;diaz2011materiales
@@ -71,6 +71,7 @@ SCF0806,Uicker2023;Mabie1987
 SCF0807,barr1999programming;Yiu2013;White2011;Valvano2011;Wolf2004
 SCF0808,stallings2018;stuttard2011;stallings2013;erickson2008
 SCF0901,chapra2014metodos;zienkiewicz2005finite;quarteroni2007numerical;pryor2012multiphysics
+SCF0906,craig2005;spong2006;ghosal2006;lynch2017;corke2023robotics;lynch2017modern
 SCF1001,incose2023;nasa2016expanded;cohen2015prototype
 SCF1002,shneiderman2010designing
 SCF1201,fahimi2008autonomous;wooldridge2009mas;parker2005multi

@@ -213,7 +213,7 @@ IEE0303,"
 && Conversión de delta-estrella y estrella-delta
 && Circuitos Puente (H, Wheatstone, celda de carga)
 & Bobinas y condensadores
-&& Definición de elementos almacenadores de energía
+&& Definición de elementos reactivos, inductivos y capacitivos
 && Fundamentos de condensadores y bobinas
 && Arreglo de elementos en serie y paralelo
 && Respuesta natural y forzada
@@ -221,8 +221,9 @@ IEE0303,"
 && Circuitos de primer orden RL y RC
 && Circuitos de segundo orden RLC en serie y paralelo
 & Fundamentos de la transformada de Laplace
-&& Definición de la transformada de Laplace
-&& Propiedades de la transformada de Laplace
+&& Definición de la transformada directa e inversa de Laplace
+&& Solución de ecuaciones diferenciales con la transformada de Laplace
+&& Propiedades de la transformada directa e inversa de Laplace
 && Definición de elementos en el dominio “s”
 && Análisis de circuitos RLC en estado transitorio y estable
 "
@@ -1972,6 +1973,54 @@ INS0909,"
 && Procedimientos de encendido y apagado de turbinas
 && Evaluación del flujo de condensado y desempeño energético
 "
+INS1003,"
+& Introducción a la Gestión de la Energía
+&& Contexto global y tendencias
+&& Fundamentos de eficiencia energética
+&& Conceptos de energía útil, primaria, final y neta
+&& Legislación energética y ambiental
+&& Incentivos y políticas públicas
+&& Responsabilidad corporativa y sostenibilidad
+& Modelos de gestión de energía
+&& Gestión basada en ciclo de mejora continua (PDCA)
+&& Políticas energéticas institucionales
+&& Norma ISO 50001 – requisitos del sistema de gestión
+&& Ejemplos de implementación industrial
+& Auditorías energéticas
+&& Tipos de auditoría
+&& Etapas, instrumentos y metodologías
+&& Norma ISO 50002 – auditorías energéticas
+& Balances de energía
+&& Principios del balance energético
+&& Mapas de flujo de energía (Energy Flow Diagram)
+&& Eficiencia y pérdidas por proceso
+& Balance de masa y análisis exergético
+&& Aplicación en procesos térmicos e industriales
+&& Identificación de puntos críticos de mejora
+& Indicadores energéticos (EnPIs)
+&& Tipos de indicadores (intensidad, productividad)
+&& Línea base energética (EnB)
+&& Uso de regresión estadística y normalización
+&& Norma ISO 50006 – indicadores energéticos
+& Oportunidades de conservación de energía (OCES)
+&& Tecnologías de eficiencia energética
+&& Evaluación técnica y económica
+&& Casos de estudio por sector (industrial, edificaciones, transporte)
+& Energías renovables
+&& Solar térmica y fotovoltaica
+&& Eólica y minihidráulica
+&& Biomasa y biogás
+&& Almacenamiento energético
+&& Integración con redes (smart grids, microrredes)
+&& Tendencias futuras
+& Huella de carbono y gestión de emisiones
+&& Cálculo de emisiones (alcances 1, 2 y 3)
+&& Metodologías GHG Protocol e ISO 14064
+&& Carbono neutralidad
+& Huella hídrica
+&& Componentes (azul, verde, gris)
+&& Cálculo y estrategias de reducción
+"
 INS1005,"
 & Aplicación de conocimientos del área ciencias básicas
 & Aplicación de conocimientos del área de formación profesional y habilidades interpersonales 
@@ -2844,6 +2893,32 @@ SCF0901,"
 && Simulación del calentamiento en sistemas electrónicos embebidos
 && Dinámica de fluidos y transferencia de calor en sistemas de refrigeración
 && Modelado termomecánico de transformadores eléctricos
+"
+SCF0906,"
+& Introducción a la Robótica Industrial
+&& Historia y evolución
+&& Tipos de robots industriales
+&& Preliminares matemáticos
+& Cinemática directa
+&& Modelado de robots
+&& Matrices de transformación homogénea
+& Cinemática inversa
+&& Solución de ecuaciones cinemáticas
+&& Métodos numéricos y analíticos
+& Dinámica de robots
+&& Ecuaciones de movimiento
+&& Control de trayectoria
+&& Planeación de rutas
+& Programación de robots
+&& Lenguajes de programación
+&& Simulación y pruebas
+& Sensores y Actuadores
+&& Tipos y aplicaciones
+&& Integración en sistemas robóticos
+& Control Automático en Robótica
+&& Control de posición 
+&& Control de movimiento
+&& Control de Secuencia y rutas
 "
 SCF1001,"
 & Fase de planificación del proyecto
