@@ -2894,6 +2894,90 @@ SCF0901,"
 && Dinámica de fluidos y transferencia de calor en sistemas de refrigeración
 && Modelado termomecánico de transformadores eléctricos
 "
+SCF0902,"
+& Introducción a los circuitos integrados con componentes comerciales salidos del estante (COTS)
+&& Clasificación funcional de COTS: potencia, señal, sensado, comunicación, etc.
+&& Análisis e interpretación de hojas de datos
+&& Lectura y comprensión de esquemáticos típicos
+&& Asignación de pines (pin assignment) y funciones especiales
+&& Recomendaciones para la distribución de elementos (layout) y circuitos de aplicación típica
+&& Uso de aplicación notes como guía de diseño
+& Regulación y distribución de energía
+&& Reguladores lineales (LDOs): selección y estabilidad
+&& Convertidores DC-DC integrados (buck, boost, buck-boost)
+&& Secuenciadores, eFuses y protección contra sobrevoltaje/sobrecorriente
+&& Interruptores de carga (Load switches) y manejo de encendido/apagado de subsistemas
+& Manejo de señales analógicas
+&& Amplificadores operacionales: rail-to-rail, bajo ruido, bajo offset, fully differential
+&& Amplificadores de instrumentación y para sensores como termopares
+&& Comparadores integrados y su aplicación en decisiones de umbral
+&& Referencias de voltaje de precisión
+& Sensado y monitoreo
+&& Amplificadores de corriente (shunt monitors)
+&& Sensores integrados de temperatura y voltaje
+&& Supervisores de sistema: detección de caída de tensión, reinicio, watchdog
+&& ADCs y DACs autónomos para adquisición y generación de señales
+& Controladores y drivers
+&& Drivers para servomotores, motores DC y stepper
+&& Drivers para MOSFETs (low-side, high-side, half-bridge, full-bridge)
+&& Controladores de LEDs de alta potencia
+&& Controladores PWM para fuentes conmutadas y otras aplicaciones
+& Interfaz y comunicación
+&& Transceptores RS-485, RS-232, CAN, LIN
+&& Conversores USB a UART
+&& Conversores de nivel lógico (level shifters)
+&& Interruptores y multiplexores analógicos
+&& Aislamiento de señales en buses de comunicación
+& Integración de sistemas
+&& Diseño modular de subsistemas usando múltiples COTS
+&& Simulación funcional con herramientas como LTspice o similares
+&& Buenas prácticas de diseño y prototipado en PCB
+&& Preparación para fabricación y depuración
+"
+SCF0903,"
+& Fundamentos de Inteligencia Artificial para sistemas ciberfísicos  
+&& Definición y evolución de la IA  
+&& Diferencias entre IA simbólica y conexionista  
+&& Relación entre IA, automatización, robótica y CPS  
+&& Aplicaciones de IA en la industria y sistemas embebidos  
+& Representación del conocimiento y toma de decisiones  
+&& Lógica proposicional y de primer orden  
+&& Sistemas expertos basados en reglas  
+&& Razonamiento simbólico y basado en casos  
+&& Planificación automatizada de tareas  
+&& Agentes inteligentes y entornos dinámicos  
+& Control Inteligente y sistemas Difusos  
+&& Conceptos de lógica difusa  
+&& Diseño de controladores difusos  
+&& Aplicaciones en sistemas de control adaptativo y confort ambiental  
+&& Comparación con control clásico  
+& Algoritmos evolutivos y optimización inteligente  
+&& Introducción a la computación evolutiva  
+&& Algoritmos genéticos y evolución diferencial  
+&& Aplicaciones en diseño de sistemas y optimización de recursos  
+&& Casos prácticos: asignación de tareas, ajuste de parámetros  
+& Aprendizaje Automático en Sistemas Ciberfísicos  
+&& Tipos de aprendizaje: supervisado, no supervisado, por refuerzo  
+&& Preprocesamiento y análisis de datos de sensores  
+&& Clasificación, regresión y clustering en señales reales  
+&& Métricas y validación de modelos  
+& Redes neuronales y Aprendizaje Profundo  
+&& Perceptrones y redes multicapa (MLP)  
+&& Redes convolucionales (CNN) para visión artificial  
+&& Redes recurrentes (RNN/LSTM) para series temporales  
+&& Limitaciones, overfitting y estrategias de regularización  
+& Implementación de IA en Plataformas Embebidas  
+&& Restricciones de cómputo y consumo energético  
+&& Herramientas: TensorFlow Lite, Edge Impulse, MicroPython  
+&& Inferencia en tiempo real en microcontroladores (ESP32, STM32, etc.)  
+&& Integración en sistemas IoT: monitoreo, actuadores y feedback  
+& Evaluación, Seguridad y Ética de Sistemas Inteligentes  
+&& Fiabilidad y validación de modelos en producción  
+&& Ciberseguridad en modelos integrados  
+&& Explicabilidad y transparencia en IA embebida  
+&& Riesgos éticos: autonomía, sesgos, fallos en decisiones críticas  
+&& Ética y confiabilidad en sistemas inteligentes  
+"
 SCF0906,"
 & Introducción a la Robótica Industrial
 && Historia y evolución
@@ -2919,6 +3003,47 @@ SCF0906,"
 && Control de posición 
 && Control de movimiento
 && Control de Secuencia y rutas
+"
+SCF0907,"
+& Introducción a la Digitalización Industrial
+&& Conceptos y beneficios de la digitalización
+&& Industria 4.0 y sus componentes
+&& Casos de estudio en digitalización industrial
+&& Norma IEC 62541 (OPC UA): Comunicación de datos y interoperabilidad en sistemas industriales1
+& Redes Industriales
+&& Tipos de redes industriales (Ethernet/IP, Modbus, Profibus, Profinet, AS-i,  etc.)
+&& Diseño e implementación de redes industriales
+&& Seguridad en redes industriales
+&& Norma IEC 61784: Redes de comunicación industrial
+&& Norma IEC 62443: Ciberseguridad en sistemas de automatización y control industrial2
+& Supervisión, Control y Adquisición de Datos (SCADA)
+&& Introducción a los sistemas SCADA
+&& Componentes y arquitectura de SCADA
+&& Configuración y programación básica de SCADA
+&& Norma IEC 61131: Controladores lógicos programables (PLCs)
+& Integración de Sistemas SCADA
+&& Integración de SCADA con PLCs y otros dispositivos
+&& Protocolos de comunicación en SCADA
+&& Monitoreo y control remoto
+&& Norma IEC 62541 (OPC UA): Integración y comunicación en sistemas SCADA1
+& Análisis de Datos en Sistemas Industriales
+&& Recolección y almacenamiento de datos
+&& Técnicas de análisis de datos
+&& Aplicaciones de Big Data en la industria
+&& Norma IEC 62264: Integración de sistemas de control y gestión de la producción2
+& Internet de las Cosas (IoT) Industrial
+&& Conceptos y aplicaciones del IoT en la industria
+&& Arquitectura de IoT industrial
+&& Integración de IoT con SCADA y otros sistemas
+&& Norma IEC 62541 (OPC UA): Interoperabilidad y comunicación en IoT industrial1
+& Ciberseguridad en Sistemas Industriales
+&& Amenazas y vulnerabilidades en sistemas industriales
+&& Estrategias de ciberseguridad para redes y SCADA
+&& Implementación de medidas de seguridad
+&& Norma IEC 62443: Ciberseguridad en sistemas de automatización y control industrial2
+& Aplicaciones Avanzadas
+&& Tendencias futuras en digitalización y automatización industrial
+&& Norma IEC 61499: Arquitectura de sistemas distribuidos y programación de aplicaciones de automatización
 "
 SCF1001,"
 & Fase de planificación del proyecto
@@ -2976,6 +3101,29 @@ SCF1002,"
 && Accesibilidad para usuarios con diversidad funcional
 && Inclusividad, privacidad y ética en el diseño de interfases
 && Responsabilidad social del diseñador de sistemas interactivos
+"
+SCF1007,"
+& Introducción a la Visión de Máquina
+&& Conceptos básicos y aplicaciones
+&& Historia y evolución de la visión artificial
+& Fundamentos del procesamiento de imágenes
+&& Técnicas de filtrado (filtros espaciales y frecuenciales)
+&& Análisis espectral (transformada de Fourier y wavelets)
+& Morfología Matemática
+&& Operaciones morfológicas básicas (erosión, dilatación, apertura, cierre)
+&& Aplicaciones de la morfología en la segmentación de imágenes
+& Detección de bordes y análisis de formas
+&& Técnicas de detección de bordes (Sobel, Canny, Laplaciano)
+&& Análisis de contornos y formas
+& Detección y clasificación de objetos
+&& Algoritmos de detección de objetos (HOG, SIFT, SURF)
+&& Redes neuronales y aprendizaje profundo para clasificación
+& Herramientas y tecnologías de Visión de Máquina
+&& Introducción a OpenCV y TensorFlow
+&& Ejercicios prácticos con Python
+& Casos de estudio y aplicaciones avanzadas 
+&& Análisis de casos reales en la industria
+&& Desarrollo de soluciones innovadoras
 "
 SCF1201,"
 & Fundamentos de sistemas inteligentes

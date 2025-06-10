@@ -791,9 +791,12 @@ def generar_programa(id):
 # generar_programa("SCF0807") # ap sist emb
 # generar_programa("SCF0808") # fund de cibers
 # generar_programa("SCF0901") # mod num
-generar_programa("SCF0906") # rob
-# generar_programa("SCF1001") # taller inte
+# generar_programa("SCF0902") #app de CI
+# generar_programa("SCF0903")
+# generar_programa("SCF0906") # rob# generar_programa("SCF1001") # taller inte
+# generar_programa("SCF0907") #aut y dig ind
 # generar_programa("SCF1002") # HMI
+generar_programa("SCF1007") #vision maq
 # generar_programa("SCF1201") # sist autonomos y multiagente
 # generar_programa("SCF1202") # an pred series
 # generar_programa("SCF1203") # des soft ap crit

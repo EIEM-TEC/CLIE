@@ -117,7 +117,7 @@ SCF0806,EE0806,Máquinas y mecanismos,SCF,8,6,4,0,3,IMM0706,,SCF0906
 SCF0807,EE8807,Aplicaciones de sistemas embebidos,SCF,8,7,2,2,3,AUT0705,,SCF0903;SCF0907;SCF0808
 SCF0808,EE8808,Fundamentos de ciberseguridad,SCF,8,8,2,0,1,,SCF0807,SCF1203
 SCF0901,EE8901,Modelado numérico y simulación computacional,SCF,9,1,2,2,3,IMM0707;SCF0801,,SCF1001
-SCF0902,EE0902,Aplicaciones de circuitos integrados,SCF,9,2,2,1,2,AUT0805,,SCF1001
+SCF0902,EE8902,Aplicaciones de circuitos integrados,SCF,9,2,2,1,2,AUT0805,,SCF1001
 SCF0903,EE8903,Aplicaciones de Inteligencia Artificial,SCF,9,3,2,2,3,SCF0807,,SCF1201;SCF1202
 SCF0905,EE1101,Seminario de graduación I,SCF,9,5,2,2,3,FPH0701,,SCF1005
 SCF0906,EE8906,Robótica,SCF,9,6,2,2,3,SCF0806,SCF0907,SCF1201
