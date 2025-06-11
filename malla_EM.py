@@ -164,6 +164,7 @@ def generar_malla():
         titulo = "Licenciatura en Ingeniería Electromecánica con énfasis en Sistemas Ciberfísicos"
         fun.malla_enf(malla_SCF,cursos,sesgo,SCF,"SCF",area_colors,titulo,rango,True)
     doc.generate_pdf(f"malla_EM", clean=True, clean_tex=False, compiler='lualatex',silent=True)
+    
 
 
 datos_malla = pd.DataFrame()
