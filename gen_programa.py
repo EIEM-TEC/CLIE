@@ -23,8 +23,16 @@ evalua = pd.read_csv("cursos/cursos_evalua.csv")
 evades = pd.read_csv("cursos/descri_evalua.csv")
 evatip = pd.read_csv("cursos/tipos_evalua.csv")
 bibtex = pd.read_csv("cursos/cursos_bibtex.csv")
-profes = pd.read_csv("cursos/cursos_profes.csv")
 rasgos = pd.read_csv("rasgos_ejes/rasgos.csv")
+profes = pd.read_csv("cursos/cursos_profes.csv")
+datpro = pd.read_csv("profes/datos.csv")
+grapro = pd.read_csv("profes/grados.csv")
+datProfes = pd.read_csv("profes_datos.csv")
+areas = pd.read_csv("areas.csv")
+
+TRClist = ["ADD","AUT","CIB","CYD","FPH","IEE","IMM"]
+
+
 rasgos["codSaber"] = rasgos["codSaber"].str.split(';', expand=False) #convertir los valores separados por ; en una lista por fila
 rasgos = rasgos.explode("codSaber") #expadir la lista
 curras = pd.read_csv("cursos/cursos_rasgos.csv")
@@ -38,8 +46,6 @@ curDespues = pd.DataFrame()
 curDespues = curcur[["id","despues"]].copy()
 curDespues["despues"] = curDespues["despues"].str.split(';', expand=False)#convertir los valores separados por ; en una lista por fila
 curDespues = curDespues.explode("despues")
-datProfes = pd.read_csv("profes_datos.csv")
-areas = pd.read_csv("areas.csv")
 
 tipCursoDic = {
     0: "Teórico",
@@ -368,31 +374,32 @@ def generar_programa(id):
         evaRepo += NoEscape(r".")
     bibCurso = NoEscape(r'\nocite{' + ('} '+r'\nocite{').join(bibtex[bibtex.id == id].bibtex.item().split(';')) + '} ')
     bibPrint = NoEscape(r'\vspace*{-8mm}\printbibliography[heading=none]')
-    dataProf = datProfes[datProfes.Codigo.isin(listProf)]
+    dataProf = datpro[datpro.codigo.isin(listProf)]
     proImpar = NoEscape(r"El curso será impartido por:")
     proCurso = NoEscape(r'\vspace*{-4mm}\begin{textoMargen}')
     for consecutivo, profe in dataProf.iterrows():
-        print(f'Profesor: {profe.Nombre}')
-        match profe.Titulo:
-            case "M.Sc." | "Ing." | "Máster" | "Dr.-Ing." | "Mag.":
-                proCurso += NoEscape(Command("textbf", f"{profe.Titulo} {profe.Nombre}").dumps())
+        print(f'Profesor: {profe.nombre}')
+        match profe.titulo:
+            case "M.Sc." | "Lic." | "Máster" | "Dr.-Ing." | "Mag.":
+                proCurso += NoEscape(Command("textbf", f"{profe.titulo} {profe.nombre}").dumps())
             case "Ph.D.":
-                proCurso += NoEscape(Command("textbf", f"{profe.Nombre}, {profe.Titulo}").dumps())
+                proCurso += NoEscape(Command("textbf", f"{profe.nombre}, {profe.titulo}").dumps())
         proCurso += NoEscape(r" \newline ")
-        for titulo in profe.Titulos.split(';'):
-            proCurso += NoEscape(f"{titulo}")
-            proCurso += NoEscape(r" \newline \newline ")   
+        gradProf = grapro[grapro.codigo == profe.codigo]
+        for consecutivo, grado in gradProf.iterrows():
+            proCurso += NoEscape(Command("textbf", f"{grado.grado} en {grado.campo}, {grado.institucion}, {grado.pais}").dumps())
+            proCurso += NoEscape(r" \newline \newline ") 
         proCurso += NoEscape(Command("emph", "Correo:").dumps())               
-        proCurso += NoEscape(f" {profe.Correo}")
+        proCurso += NoEscape(f" {profe.correo}")
         proCurso += NoEscape(Command("emph", "  Teléfono:").dumps())     
-        proCurso += NoEscape(f" {int(profe.Telefono)}")
+        proCurso += NoEscape(f" {int(profe.telefono)}")
         proCurso += NoEscape(r" \vspace*{1mm} \newline ")
         proCurso += NoEscape(Command("emph", "  Oficina:").dumps())    
-        proCurso += NoEscape(f" {int(profe.Oficina)}")
+        proCurso += NoEscape(f" {int(profe.oficina)}")
         proCurso += NoEscape(Command("emph", "  Escuela:").dumps())  
-        proCurso += NoEscape(f" {profe.Escuela}")
+        proCurso += NoEscape(f" {profe.escuela}")
         proCurso += NoEscape(Command("emph", "  Sede:").dumps())  
-        proCurso += NoEscape(f" {profe.Sede}")
+        proCurso += NoEscape(f" {profe.sede}")
         proCurso += NoEscape(r" \vspace*{4mm} \newline ")             
     proCurso += NoEscape(r"\end{textoMargen}")
     #Config
@@ -714,93 +721,97 @@ def generar_programa(id):
     subprocess.run(["biber", f"C:\\Repositories\\CLIE\\programas\\{codCurso}"])
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex')
     doc.generate_pdf(f"./programas/{codCurso}", clean=False, clean_tex=False, compiler='lualatex') 
-    subprocess.run(f'move "C:\\Repositories\\CLIE\\programas\\{codCurso}.pdf" "C:\\Repositories\\CLIE\\programas\\{id[3:7]}-{codCurso}-{nomCurso}.pdf"', shell=True, check=True)
+    if areCurso in TRClist:
+        prefix = "TRC"
+    else:
+        prefix = areCurso
+    subprocess.run(f'move "C:\\Repositories\\CLIE\\programas\\{codCurso}.pdf" "C:\\Repositories\\CLIE\\programas\\{prefix}-{id[3:7]}-{codCurso}-{nomCurso}.pdf"', shell=True, check=True)
 
 # for id in cursos.id:
 #      generar_programa(id)
 
-# generar_programa("CYD0107") #Dibujo Tec
-# generar_programa("FPH0108") # int ing. electromecanica
-# generar_programa("AUT0205") #Int. Compu
-# generar_programa("IMM0207") #estatica
-# generar_programa("IEE0303") #circuitos I
-# generar_programa("IEE0304") #Lab Circuitos I
-# generar_programa("IEE0305") #Transductores
-# generar_programa("IMM0307") #Dinamica
-# generar_programa("IEE0403") #circuitos II
-# generar_programa("IEE0404") #Lab Circuitos II
-# generar_programa("IEE0405")
-# generar_programa("IMM0407")
-# generar_programa("IEE0503") #analogica
-# generar_programa("AUT0504")
-# generar_programa("IMM0507") #manufactura
-# generar_programa("IMM0508") #lab manufactura
-# generar_programa("ADD0602")
-# generar_programa("IEE0604")
-# generar_programa("IMM0605") #resi
-# generar_programa("IMM0607") #mec fluidos
-# generar_programa("IMM0608") #lab mec fluidos
-# generar_programa("CYD0609") #dib ind
-# generar_programa("FPH0701") #proyectos
-# generar_programa("IEE0702") #Maquinas I
-# generar_programa("IEE0703") #Lab Maquinas I
-# generar_programa("AUT0704") #control
-# generar_programa("AUT0705") #micros
-# generar_programa("IMM0706") #elementos maq
-# generar_programa("IMM0707") #sist termicos
-# generar_programa("IMM0708") #lab sist term
-# generar_programa("IEE0802") #Maquinas II
-# generar_programa("IEE0803") #Lab Maquinas II
-# generar_programa("AUT0804") #Control por event.
-# generar_programa("AUT0805") #Lab control
-# generar_programa("INS0801") #Trans y distr
-# generar_programa("INS0806") #Instalaciones
-# generar_programa("INS0807") #Vent y aire comprimido
-# generar_programa("INS0808") #Mant elec
-# generar_programa("INS0901") #Gen y almacenamiento energia
-# generar_programa("INS0903") #ref y AC
-# generar_programa("INS0904") #lab ref y AC
-# generar_programa("INS0905") #Sem I
-# generar_programa("INS0906") #Inst mec-san
-# generar_programa("INS0907") #Lab Sist Flu
-# generar_programa("INS0908") #Vapor
-# generar_programa("INS0909") # Lab Vapor
-# generar_programa("INS1003") #gestion de energia
-# generar_programa("INS1005") # Sem II
-# generar_programa("INS1006") # Gestion ciclo vida electromecanica
-# generar_programa("INS1007") # Neumática
-# generar_programa("INS1201") # Sist puesta tierra
-# generar_programa("INS1202") # Sist contra incendios
-# generar_programa("INS1203") # Ed Inte
-# generar_programa("AER0801") # sist de aeronaves
-# generar_programa("AER0807") # mat en aeronáutica
-# generar_programa("AER0808") # met aer
-# generar_programa("AER0901") #avionica
-# generar_programa("AER0902") # aerodinamica
-# generar_programa("AER0903") # dinamica de vuelo
-# generar_programa("AER0906") # analisis estructural aeronaves
-# generar_programa("AER0908") # seg y aeronav
-# generar_programa("AER1001") # Gestion ciclo vida aeronaves
-# generar_programa("AER1002") # Sist propuls
-# generar_programa("AER1003") # Control de vuelo
-# generar_programa("AER1201") #infra aer
-# generar_programa("AER1202") # Com en aer
-# generar_programa("AER1203") # man cad valor aer
-# generar_programa("SCF0801") #Ing. Sistemas
-# generar_programa("SCF0806") # maq y meca
-# generar_programa("SCF0807") # ap sist emb
-# generar_programa("SCF0808") # fund de cibers
-# generar_programa("SCF0901") # mod num
-# generar_programa("SCF0902") #app de CI
-# generar_programa("SCF0903")
-# generar_programa("SCF0906") # rob# generar_programa("SCF1001") # taller inte
-# generar_programa("SCF0907") #aut y dig ind
+generar_programa("CYD0107") #Dibujo Tec
+generar_programa("FPH0108") # int ing. electromecanica
+generar_programa("AUT0205") #Int. Compu
+generar_programa("IMM0207") #estatica
+generar_programa("IEE0303") #circuitos I
+generar_programa("IEE0304") #Lab Circuitos I
+generar_programa("IEE0305") #Transductores
+generar_programa("IMM0307") #Dinamica
+generar_programa("IEE0403") #circuitos II
+generar_programa("IEE0404") #Lab Circuitos II
+generar_programa("IEE0405")
+generar_programa("IMM0407")
+generar_programa("IEE0503") #analogica
+generar_programa("AUT0504")
+generar_programa("IMM0507") #manufactura
+generar_programa("IMM0508") #lab manufactura
+generar_programa("ADD0602")
+generar_programa("IEE0604")
+generar_programa("IMM0605") #resi
+generar_programa("IMM0607") #mec fluidos
+generar_programa("IMM0608") #lab mec fluidos
+generar_programa("CYD0609") #dib ind
+generar_programa("FPH0701") #proyectos
+generar_programa("IEE0702") #Maquinas I
+generar_programa("IEE0703") #Lab Maquinas I
+generar_programa("AUT0704") #control
+generar_programa("AUT0705") #micros
+generar_programa("IMM0706") #elementos maq
+generar_programa("IMM0707") #sist termicos
+generar_programa("IMM0708") #lab sist term
+generar_programa("IEE0802") #Maquinas II
+generar_programa("IEE0803") #Lab Maquinas II
+generar_programa("AUT0804") #Control por event.
+generar_programa("AUT0805") #Lab control
+generar_programa("INS0801") #Trans y distr
+generar_programa("INS0806") #Instalaciones
+generar_programa("INS0807") #Vent y aire comprimido
+generar_programa("INS0808") #Mant elec
+generar_programa("INS0901") #Gen y almacenamiento energia
+generar_programa("INS0903") #ref y AC
+generar_programa("INS0904") #lab ref y AC
+generar_programa("INS0905") #Sem I
+generar_programa("INS0906") #Inst mec-san
+generar_programa("INS0907") #Lab Sist Flu
+generar_programa("INS0908") #Vapor
+generar_programa("INS0909") # Lab Vapor
+generar_programa("INS1003") #gestion de energia
+generar_programa("INS1005") # Sem II
+generar_programa("INS1006") # Gestion ciclo vida electromecanica
+generar_programa("INS1007") # Neumática
+generar_programa("INS1201") # Sist puesta tierra
+generar_programa("INS1202") # Sist contra incendios
+generar_programa("INS1203") # Ed Inte
+generar_programa("AER0801") # sist de aeronaves
+generar_programa("AER0807") # mat en aeronáutica
+generar_programa("AER0808") # met aer
+generar_programa("AER0901") #avionica
+generar_programa("AER0902") # aerodinamica
+generar_programa("AER0903") # dinamica de vuelo
+generar_programa("AER0906") # analisis estructural aeronaves
+generar_programa("AER0908") # seg y aeronav
+generar_programa("AER1001") # Gestion ciclo vida aeronaves
+generar_programa("AER1002") # Sist propuls
+generar_programa("AER1003") # Control de vuelo
+generar_programa("AER1201") #infra aer
+generar_programa("AER1202") # Com en aer
+generar_programa("AER1203") # man cad valor aer
+generar_programa("SCF0801") #Ing. Sistemas
+generar_programa("SCF0806") # maq y meca
+generar_programa("SCF0807") # ap sist emb
+generar_programa("SCF0808") # fund de cibers
+generar_programa("SCF0901") # mod num
+generar_programa("SCF0902") #app de CI
+generar_programa("SCF0903") # app de IA
+generar_programa("SCF0906") # rob
+generar_programa("SCF0907") #aut y dig ind
 generar_programa("SCF1001") #taller int
-# generar_programa("SCF1002") # HMI
-# generar_programa("SCF1007") #vision maq
-# generar_programa("SCF1201") # sist autonomos y multiagente
-# generar_programa("SCF1202") # an pred series
-# generar_programa("SCF1203") # des soft ap crit
+generar_programa("SCF1002") # HMI
+generar_programa("SCF1007") #vision maq
+generar_programa("SCF1201") # sist autonomos y multiagente
+generar_programa("SCF1202") # an pred series
+generar_programa("SCF1203") # des soft ap crit
 
 
 subprocess.run(["del", f"C:\\Repositories\\CLIE\\programas\\*.tex"], shell=True, check=True)
