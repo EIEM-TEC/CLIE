@@ -721,7 +721,7 @@ def generar_programa(id):
 
 # generar_programa("CYD0107") #Dibujo Tec
 # generar_programa("FPH0108") # int ing. electromecanica
-generar_programa("AUT0205") #Int. Compu
+# generar_programa("AUT0205") #Int. Compu
 # generar_programa("IMM0207") #estatica
 # generar_programa("IEE0303") #circuitos I
 # generar_programa("IEE0304") #Lab Circuitos I
@@ -731,10 +731,8 @@ generar_programa("AUT0205") #Int. Compu
 # generar_programa("IEE0404") #Lab Circuitos II
 # generar_programa("IEE0405")
 # generar_programa("IMM0407")
-# generar_programa("ADD0502") #estadistica
 # generar_programa("IEE0503") #analogica
 # generar_programa("AUT0504")
-# #generar_programa("IMM0506") #materiales
 # generar_programa("IMM0507") #manufactura
 # generar_programa("IMM0508") #lab manufactura
 # generar_programa("ADD0602")
@@ -750,6 +748,7 @@ generar_programa("AUT0205") #Int. Compu
 # generar_programa("AUT0705") #micros
 # generar_programa("IMM0706") #elementos maq
 # generar_programa("IMM0707") #sist termicos
+# generar_programa("IMM0708") #lab sist term
 # generar_programa("IEE0802") #Maquinas II
 # generar_programa("IEE0803") #Lab Maquinas II
 # generar_programa("AUT0804") #Control por event.
@@ -796,6 +795,7 @@ generar_programa("AUT0205") #Int. Compu
 # generar_programa("SCF0903")
 # generar_programa("SCF0906") # rob# generar_programa("SCF1001") # taller inte
 # generar_programa("SCF0907") #aut y dig ind
+generar_programa("SCF1001") #taller int
 # generar_programa("SCF1002") # HMI
 # generar_programa("SCF1007") #vision maq
 # generar_programa("SCF1201") # sist autonomos y multiagente
