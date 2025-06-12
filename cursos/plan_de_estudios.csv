@@ -11,7 +11,7 @@ FPH0108,1,EE0108,Introducción a la ingeniería electromecánica,Teórico,,,1,2,
 CIB0201,2,MA1103,Cálculo y álgebra lineal,Teórico,MA1102,,4,4,8
 CIB0202,2,FI1102,Física general II,Teórico,FI1101; MA1102,,3,4,5
 CIB0203,2,FI1202,Laboratorio de física general II,Práctico,FI2201,FI1102,1,2,1
-AUT0205,2,CA2026,Introducción a la computación,Teórico,EE0108,,2,4,2
+AUT0205,2,CA0205,Fundamentos de organización de computadoras,Teórico,EE0108,,2,3,3
 CYD0206,2,CI1107,Comunicación oral,Teórico,CI1106,,1,3,0
 IMM0207,2,EE0207,Estática,Teórico,FI1101; EE0107,,3,4,5
 FPH0208,2,CS2303,Relaciones laborales,Teórico,EE0108,,2,3,3
@@ -20,7 +20,7 @@ CIB0301,3,MA2105,Ecuaciones diferenciales,Teórico,MA1103,,4,4,8
 CIB0302,3,FI2103,Física general III,Teórico,MA1102; FI1101,,3,4,5
 IEE0303,3,EE0303,Análisis de circuitos I,Teórico,FI1202; FI1102,,3,4,5
 IEE0304,3,EE0304,Laboratorio de circuitos I,Práctico,,EE0303,1,2,1
-IEE0305,3,EE0305,Transductores,Teórico - Práctico,CA2026,EE0304,2,3,3
+IEE0305,3,EE0305,Transductores,Teórico - Práctico,CA0205,EE0304,2,3,3
 IMM0307,3,EE0307,Dinámica,Teórico,EE0207,MA2105,3,4,5
 FPH0308,3,CS3404,Seminario de ética para la ingeniería,Teórico,CS1502,,2,3,3
 FPH0309,3,SE1100,Actividad cultural I,Teórico,,,0,2,0
@@ -39,7 +39,7 @@ AUT0504,5,EE0504,Modelado y simulación de sistemas,Teórico - Práctico,EE0307;
 IMM0506,5,ME2208,Ciencia de los materiales,Teórico,QU1902; FI1102,EE0507,3,3,6
 IMM0507,5,EE0507,Manufactura,Teórico,EE0307,,2,3,3
 IMM0508,5,EE0508,Laboratorio de manufactura,Teórico - Práctico,,EE0507,2,4,2
-CYD0601,6,CI3202,Inglés para electromecánica,Teórico,,,1,2,1
+CYD0601,6,CI3202,Inglés para mecatrónica,Teórico,,,1,3,0
 ADD0602,6,EE0602,Fiabilidad y disponibilidad de sistemas electromecánicos,Teórico,PI0502,,2,3,3
 IEE0604,6,EE0604,Sistemas digitales,Teórico - Práctico,EE0503,,2,4,2
 IMM0605,6,EE0605,Resistencia de materiales,Teórico,ME2208,,3,4,5
@@ -75,7 +75,7 @@ INS0909,9,EE4909,Laboratorio de sistemas de vapor,Práctico,,EE4908,1,2,1
 INS1003,10,EE5003,Gestión de la energía,Teórico,EE4908; EE4901,,3,4,5
 INS1001,10,EE1103,Electiva I,Teórico,,,3,4,5
 INS1002,10,EE1104,Electiva II,Teórico,,,3,4,5
-INS1005,10,EE1102,Seminario de graduación II,Práctico,EE1101,,4,4,8
+INS1005,10,EE1102,Seminario de graduación II,No aplica,EE1101,,4,0,12
 INS1006,10,EE5006,Gestión del ciclo de vida de instalaciones electromecánicas,Teórico - Práctico,EE4906,,3,4,5
 INS1007,10,EE5007,Neumática y oleohidráulica,Teórico - Práctico,EE4907,,2,3,3
 INS1201,12,EE5201,Sistemas de puesta a tierra,Teórico,EE4806,,3,4,5
@@ -83,7 +83,7 @@ INS1202,12,EE5202,Sistemas contra incendios,Teórico,EE4906,,3,4,5
 INS1203,12,EE5203,Edificios inteligentes,Teórico,EE0805,,3,4,5
 INS1301,13,EE6901,Aviónica,Teórico - Práctico,,EE6801,3,4,5
 INS1302,13,EE6801,Sistemas de la aeronave,Teórico,EE0802,,3,4,5
-INS1303,13,EE6902,Aerodinámica,Teórico,EE4907,EE6801,3,4,5
+INS1303,13,EE6902,Aerodinámica,Teórico - Práctico,EE4907,EE6801,3,4,5
 INS1401,14,EE8907,Automatización y digitalización industrial,Teórico - Práctico,,EE8807,3,4,5
 INS1402,14,EE8807,Aplicaciones de sistemas embebidos,Teórico - Práctico,EE0705,,3,4,5
 INS1403,14,EE8903,Aplicaciones de Inteligencia Artificial,Teórico - Práctico,,EE8807,3,4,5
@@ -100,7 +100,7 @@ AER0908,9,EE6908,Seguridad aeronáutica y aeronavegabilidad,Teórico,EE6808,,3,4
 AER1001,10,EE7001,Gestión del ciclo de vida de la aeronave,Teórico,EE6901; EE6908,,2,3,3
 AER1002,10,EE7002,Sistemas de propulsión,Teórico - Práctico,EE6902,,3,4,5
 AER1003,10,EE7003,Control automático de vuelo,Teórico - Práctico,EE6902; EE6903,,3,4,5
-AER1005,10,EE1102,Seminario de graduación II,Práctico,EE1101,,4,4,8
+AER1005,10,EE1102,Seminario de graduación II,No aplica,EE1101,,4,0,12
 AER1007,10,EE1103,Electiva I,Teórico,,,3,4,5
 AER1008,10,EE1104,Electiva II,Teórico,,,3,4,5
 AER1201,12,EE7201,Infraestructura y servicios aeroportuarios,Teórico,,EE7001,3,4,5
@@ -117,14 +117,14 @@ SCF0806,8,EE0806,Máquinas y mecanismos,Teórico,EE0706,,3,4,5
 SCF0807,8,EE8807,Aplicaciones de sistemas embebidos,Teórico - Práctico,EE0705,,3,4,5
 SCF0808,8,EE8808,Fundamentos de ciberseguridad,Teórico,,EE8807,1,2,1
 SCF0901,9,EE8901,Modelado numérico y simulación computacional,Teórico - Práctico,EE0707; EE8104,,3,4,5
-SCF0902,9,EE0902,Aplicaciones de circuitos integrados,Teórico - Práctico,EE0805,,2,3,3
+SCF0902,9,EE8902,Aplicaciones de circuitos integrados,Teórico - Práctico,EE0805,,2,3,3
 SCF0903,9,EE8903,Aplicaciones de Inteligencia Artificial,Teórico - Práctico,EE8807,,3,4,5
 SCF0905,9,EE1101,Seminario de graduación I,Teórico - Práctico,EE0701,,3,4,5
 SCF0906,9,EE8906,Robótica,Teórico - Práctico,EE0806,EE8907,3,4,5
 SCF0907,9,EE8907,Automatización y digitalización industrial,Teórico - Práctico,EE8807,,3,4,5
-SCF1001,10,EE9001,Taller de integración de sistemas,Práctico,EE8901; EE0902,,2,4,2
+SCF1001,10,EE9001,Taller de integración de sistemas,Práctico,EE8901; EE8902,,2,4,2
 SCF1002,10,EE9002,Diseño de interfases humano-máquina,Teórico - Práctico,,EE9001,3,4,5
-SCF1005,10,EE1102,Seminario de graduación II,Práctico,EE1101,,4,4,8
+SCF1005,10,EE1102,Seminario de graduación II,No aplica,EE1101,,4,0,12
 SCF1007,10,EE9007,Visión de máquina,Teórico - Práctico,,EE8907,3,4,5
 SCF1008,10,EE1103,Electiva I,Teórico,,,3,4,5
 SCF1009,10,EE1104,Electiva II,Teórico,,,3,4,5
@@ -133,7 +133,7 @@ SCF1202,12,EE9202,Análisis predictivo de series temporales,Teórico - Práctico
 SCF1203,12,EE9302,Desarrollo de software para aplicaciones críticas,Teórico - Práctico,EE8808,,3,4,5
 SCF1301,13,EE6901,Aviónica,Teórico - Práctico,,EE6801,3,4,5
 SCF1302,13,EE6801,Sistemas de la aeronave,Teórico,EE0802,,3,4,5
-SCF1303,13,EE6902,Aerodinámica,Teórico,EE0707,EE6801,3,4,5
+SCF1303,13,EE6902,Aerodinámica,Teórico - Práctico,EE0707,EE6801,3,4,5
 SCF1401,14,EE5006,Gestión del ciclo de vida de instalaciones electromecánicas,Teórico,,EE4806,3,4,5
 SCF1402,14,EE4806,Instalaciones eléctricas,Teórico,EE0702,,3,4,5
 SCF1403,14,EE5003,Gestión de la energía,Teórico,,EE4806,3,4,5
