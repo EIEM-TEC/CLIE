@@ -3,14 +3,14 @@ CIB0001,0,MA0101,Matemática general,Teórico,,,2,5,1
 CYD0002,0,CI0205,Prueba avanzada de inglés,No aplica,,,0,0,0
 CIB0101,1,MA1102,Cálculo diferencial e integral,Teórico,MA0101,,4,5,7
 CIB0102,1,FI1101,Física general I,Teórico,,MA1102,3,4,5
-CIB0103,1,FI2201,Laboratorio de física general I,Práctico,,FI1101,1,2,1
-CIB0104,1,QU1902,Fundamentos de Química,Teórico,,,4,5,7
+CIB0103,1,FI1201,Laboratorio de física general I,Práctico,,FI1101,1,2,1
+CIB0104,1,QU1902,Fundamentos de química,Teórico,,,4,5,7
 CYD0106,1,CI1106,Comunicación escrita,Teórico,,,2,3,3
 CYD0107,1,EE0107,Dibujo técnico,Teórico - Práctico,,,3,4,5
 FPH0108,1,EE0108,Introducción a la ingeniería electromecánica,Teórico,,,1,2,1
 CIB0201,2,MA1103,Cálculo y álgebra lineal,Teórico,MA1102,,4,4,8
 CIB0202,2,FI1102,Física general II,Teórico,FI1101; MA1102,,3,4,5
-CIB0203,2,FI1202,Laboratorio de física general II,Práctico,FI2201,FI1102,1,2,1
+CIB0203,2,FI1202,Laboratorio de física general II,Práctico,FI1201,FI1102,1,2,1
 AUT0205,2,CA0205,Fundamentos de organización de computadoras,Teórico,EE0108,,2,3,3
 CYD0206,2,CI1107,Comunicación oral,Teórico,CI1106,,1,3,0
 IMM0207,2,EE0207,Estática,Teórico,FI1101; EE0107,,3,4,5
