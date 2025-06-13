@@ -874,6 +874,7 @@ IMM0607,"
 && Régimen de flujo: laminar y turbulento
 && Ecuación de continuidad
 & Dinámica de fluidos (principios de energía)
+&& Ecuaciones que gobiernan el movimiento de los fluidos: Navier-Stokes, sus supuestos y simplificaciones comunes
 && Principio de Bernoulli y su aplicación
 && Ecuación general de la energía
 && Flujo potencial y circulación
@@ -889,7 +890,7 @@ IMM0607,"
 && Diagramas de Moody
 && Cálculo de pérdidas de carga
 & Sistemas de tuberías
-&& Redes de tuberías en paralelo y en serie
+&& Redes de tuberías
 && Bombeo y selección de bombas
 && Golpe de ariete y su control
 && Aplicaciones en sistemas industriales
@@ -908,6 +909,8 @@ IMM0608,"
 & Laboratorio de análisis de tanques hidroneumáticos
 & Laboratorio de regímenes de flujo: laminar y turbulento
 & Laboratorio de pérdidas de carga en tuberías, accesorios y válvulas
+& Laboratorio de flujo externo
+& Laboratorio de redes hidráulicas
 "
 CYD0609,"
 & Introducción al dibujo industrial

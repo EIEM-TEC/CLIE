@@ -27,7 +27,6 @@ rasgos = pd.read_csv("rasgos_ejes/rasgos.csv")
 profes = pd.read_csv("cursos/cursos_profes.csv")
 datpro = pd.read_csv("profes/datos.csv")
 grapro = pd.read_csv("profes/grados.csv")
-datProfes = pd.read_csv("profes_datos.csv")
 areas = pd.read_csv("areas.csv")
 
 TRClist = ["ADD","AUT","CIB","CYD","FPH","IEE","IMM"]
