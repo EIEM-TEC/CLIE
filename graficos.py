@@ -49,4 +49,3 @@ fun.radar_saberes('AER',saberes,areas,'porcAER',14,18,12,3,30)
 fun.radar_saberes('SCF',saberes,areas,'porcSCF',14,18,12,3,30)
 
 fun.radar('ENF',areas,catENF,valENF,'',14,18,25,5,30)
-
