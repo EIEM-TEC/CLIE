@@ -25,8 +25,8 @@ evatip = pd.read_csv("cursos/tipos_evalua.csv")
 bibtex = pd.read_csv("cursos/cursos_bibtex.csv")
 rasgos = pd.read_csv("rasgos_ejes/rasgos.csv")
 profes = pd.read_csv("cursos/cursos_profes.csv")
-datpro = pd.read_csv("profes/datos.csv")
-grapro = pd.read_csv("profes/grados.csv")
+datpro = pd.read_csv("https://raw.githubusercontent.com/EIEM-TEC/profes/refs/heads/main/00_datos.csv")
+grapro = pd.read_csv("https://raw.githubusercontent.com/EIEM-TEC/profes/refs/heads/main/01_grados.csv")
 areas = pd.read_csv("areas.csv")
 
 TRClist = ["ADD","AUT","CIB","CYD","FPH","IEE","IMM"]
