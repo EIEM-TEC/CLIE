@@ -1,7 +1,7 @@
 import pandas as pd
 
 cursos_profes = pd.read_csv("./cursos/cursos_profes.csv")
-datos_profes = pd.read_csv("./profes/datos.csv")
+datos_profes = pd.read_csv("https://raw.githubusercontent.com/EIEM-TEC/profes/refs/heads/main/00_datos.csv")
 cursos_malla = pd.read_csv("./cursos/cursos_malla.csv")
 
 cursos_profes["profesores"] = cursos_profes["profesores"].str.split(";",expand=False)
