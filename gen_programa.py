@@ -1,7 +1,5 @@
 import subprocess
-import roman
 import pandas as pd
-import numpy as np
 from pylatex import Document, Package, Command, PageStyle, Head, Foot, NewPage, NewLine,\
     TextColor, MiniPage, StandAloneGraphic, simple_page_number,\
     TikZ, TikZNode, TikZOptions, TikZCoordinate,\

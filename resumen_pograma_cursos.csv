@@ -1,0 +1,774 @@
+"id","codigo","nombre","creditos","descripcion","objetivo","contenidos"
+"CYD0107","EE0107","Dibujo técnico","3","El curso de Dibujo técnico aporta en el desarrollo del siguiente rasgo del plan de estudios: estructurar sus ideas de manera clara y transmitirlas de forma oral, escrita o mediante dibujos de ingeniería, tanto en español como en inglés
+Los aprendizajes que los estudiantes desarrollarán en el curso son: desarrollar la inteligencia espacial y la capacidad de la elaboración de bocetos a mano alzada y el uso de instrumentos básicos de dibujo, con el fin de interpretar y comunicar eficazmente ideas en el ámbito de la ingeniería; comprender los fundamentos teóricos del dibujo técnico básico necesarios para la correcta construcción de proyecciones ortogonales y axonométricas, escalas y acotado de cuerpos geométricos; usar las normas de dibujo, en particular las normas INTE/ISO y ANSI, para construir planos técnicos que representen de forma clara y detallada cuerpos geométricos, incorporando toda la información necesaria para su correcta especificación geométrica y dimensional; y utilizar herramientas de diseño asistido por computadora (CAD) de vanguardia, de forma integral para leer, diseñar y editar planos de ingeniería.","Aplicar de manera efectiva los fundamentos, normas y herramientas del dibujo técnico para elaborar e interpretar planos de cuerpos geométricos de forma clara y precisa, tanto en español como en inglés","• Introducción al dibujo técnico como lenguaje de comunicación
+• Conceptos normativos del dibujo técnico
+• Geometría descriptiva
+• Proyecciones ortogonales
+• Proyecciones Axonométricas
+• Acotado"
+"FPH0108","EE0108","Introducción a la ingeniería electromecánica","1","El curso de Introducción a la ingeniería electromecánica aporta en el desarrollo del siguiente rasgo del plan de estudios: actuar con integridad y responsabilidad social en el ejercicio de la ingeniería, fomentando una comunicación efectiva y una actitud colaborativa en equipos de trabajo, y promoviendo una cultura de salud, seguridad y bienestar en el entorno laboral
+Los aprendizajes que los estudiantes desarrollarán en el curso son: contextualizar la ingeniería electromecánica dentro de las ciencias de la ingeniería y su impacto en la industria y la sociedad; introducir conceptos fundamentales de mecánica, electricidad, termodinámica y control, resaltando sus interacciones en sistemas electromecánicos, enfatizando la importancia de la eficiencia energética y la sostenibilidad; familiarizar a los estudiantes con herramientas y metodologías de análisis y diseño utilizadas en la resolución de problemas técnicos, fomentando el pensamiento crítico e interdisciplinario; y explorar aplicaciones prácticas en sectores clave como energía, manufactura, robótica y transporte, considerando aspectos de la normativa nacional y la responsabilidad profesional.","Comprender de manera integral la ingeniería electromecánica, incluyendo sus principios básicos, aplicaciones y metodologías de resolución de problemas, para el desarrollo un pensamiento analítico y una perspectiva interdisciplinaria sobre el diseño, análisis, seguridad y mantenimiento de sistemas electromecánicos","• Introducción a la ingeniería electromecánica
+• El rol de la persona ingeniera electromecánica
+• Fundamentos de mecánica clásica
+• Termodinámica y conversión de energía
+• Mecánica de fluidos y transferencia de calor
+• Principios de ingeniería eléctrica
+• Fundamentos de ingeniería electrónica y de  control
+• Programación aplicada a la electromecánica para diseño y simulación
+• Sistemas ciberfísicos y transformación digital
+• Ingeniería Aeronáutica
+• Energías renovables, eficiencia energética y sostenibilidad
+• Gestión y administración en ingeniería
+• Desarrollo profesional y oportunidades laborales
+• Seguridad en ingeniería electromecánica
+• Tendencias y futuro de la ingeniería electromecánica
+• La investigación en el campo de la ingeniería electromecánica"
+"AUT0205","CA0205","Fundamentos de organización de computadoras","2","El curso de Fundamentos de organización de computadoras aporta en el desarrollo de los siguientes rasgos del plan de estudios: desarrollar soluciones de software para el control y procesamiento de datos en sistemas electromecánicos; y desarrollar soluciones de hardware usando microcontroladores para el control y procesamiento de datos en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: reconocer a los principales actores históricos de la computación y sus aportes, valorando cómo estos influyeron en la evolución de las arquitecturas computacionales modernas; aplicar conceptos matemáticos en la representación de datos digitales, entendiendo cómo se modela la información del mundo físico dentro de dispositivos digitales ; simular procesos computacionales por medio de una representación abstracta de máquina, ya sea una máquina de estados o una máquina de Turing como herramienta para la abstracción de problemas y soluciones ; y explicar el rol y funcionamiento de los diferentes componentes arquitecturales de la computadora digital moderna.","Comprender los fundamentos del procesamiento y representación de la información en sistemas computacionales, así como la estructura básica de las computadoras digitales, con el fin de aplicar estos conocimientos en el análisis, selección e integración de tecnologías computacionales dentro de sistemas electromecánicos","• Representación de Información
+• Modelo de Computación Abstracto
+• Arquitectura de Computadoras
+• Ciclo de Procesamiento"
+"IMM0207","EE0207","Estática","3","El curso de Estática aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor para  analizar el comportamiento de los sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los principios fundamentales de la estática de partículas y cuerpos rígidos; analizar diferentes tipos de sistemas mecánicos, como armaduras simples, marcos y máquinas, para la determinación de las fuerzas externas, internas y los efectos de la fricción en sus componentes; resolver problemas de equilibrio de cuerpos rígidos utilizando los conceptos centro de gravedad, centro de masa y centroide; y utilizar el principio de trabajo virtual para el estudio del equilibrio de un sistema mecánico.","Resolver problemas de equilibrio estático de partículas y cuerpos rígidos aplicando los principios fundamentales de la mecánica vectorial","• Introducción a la mecánica
+• Equilibrio de una partícula
+• Centroides
+• Resultante de un sistema de fuerzas
+• Equilibrio de un cuerpo rígido
+• Análisis estructural
+• Fuerzas internas
+• Fricción
+• Trabajo virtual"
+"IEE0303","EE0303","Análisis de circuitos I","3","El curso de Análisis de circuitos I aporta en el desarrollo del siguiente rasgo del plan de estudios: conocer y aplicar los principios de los circuitos eléctricos y la electrónica, y analizar su funcionamiento en las diversas aplicaciónes en ingeniería electromecánica
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender la teoría de los circuitos eléctricos en corriente directa, incluyendo sus leyes y componentes principales; aplicar métodos de análisis y simulación para la solución de circuitos eléctricos en corriente directa; y evaluar circuitos en corriente directa para su uso en diversas aplicaciones de sistemas electromecánico.","Analizar  los circuitos eléctricos en corriente directa, mediante métodos y teoremas, permitiendo su implementación y optimización en diversas aplicaciones de la ingeniería electromecánica","• Conceptos y definiciones
+• Análisis de circuitos básicos
+• Técnicas para el análisis de circuitos complejos
+• Bobinas y condensadores
+• Fundamentos de la transformada de Laplace"
+"IEE0304","EE0304","Laboratorio de circuitos I","1","El curso de Laboratorio de circuitos I aporta en el desarrollo de los siguientes rasgos del plan de estudios: conocer y aplicar los principios de los circuitos eléctricos y la electrónica, y analizar su funcionamiento en las diversas aplicaciónes en ingeniería electromecánica; y aplicar principios de metrología para medir variables físicas en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: experimentar en circuitos de corriente directa, ejecutando y aplicando métodos de análisis de las pruebas y ensayos; medir parámetros eléctricos fundamentales (tensión, corriente, resistencia y potencia) con la instrumentación adecuada, asegurando precisión y repetibilidad en los resultados; interpretar los resultados, desarrollando informes y documentos de los experimentos; y evaluar el error en la mediciones electricas en corriente directa usando los principios de la metrología.","Comprobar experimentalmente los métodos de análisis de circuitos eléctricos en corriente directa","• Empleo y lectura de instrumentos de medición eléctrica para corriente y voltaje
+• Resistencia y resistividad
+• Circuitos en serie y en paralelo
+• Taller de simulación de circuitos
+• Análisis de mallas y teorema de superposición
+• Teoremas de Thévenin y máxima transferencia de potencia
+• Taller del osciloscopio digital y el generador de señales
+• Análisis de elementos reactivos: bobinas y condensadores
+• Análisis de elementos almacenadores de energía: bobinas y condensadores
+• Análisis de la carga y descarga de condensadores en circuitos de corriente directa
+• Configuraciones en serie y paralelo de bobinas y condensadores
+• Respuesta transitoria en circuitos RL y RC
+• Análisis de circuitos RLC de segundo orden"
+"IEE0305","EE0305","Transductores","2","El curso de Transductores aporta en el desarrollo de los siguientes rasgos del plan de estudios: implementar sistemas de instrumentación para la medición y modificación de variables físicas en sistemas electromecánicos; y aplicar principios de metrología para medir variables físicas en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender las características estáticas, dinámicas, eléctricas y de fabricación de los transductores; seleccionar transductores según su aplicación en sistemas específicos, considerando sus características y principios de funcionamiento; y experimentar con transductores mediante prácticas que permitan aprendizajes significativos y el desarrollo de habilidades aplicadas.","Evaluar transductores para su integración en sistemas de instrumentación dedicados a la medición y manipulación de variables físicas en sistemas electromecánicos","• Conceptos básicos
+• Características de los transductores
+• Transductores térmicos
+• Transductores ópticos
+• Transductores eléctricos y magnéticos
+• Transductores mecánicos
+• Transductores acústicos
+• Transductores químicos
+• Transductores de radiación
+• Transductores MEMS
+• Interfaces de los transductores"
+"IMM0307","EE0307","Dinámica","3","El curso de Dinámica aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor para  analizar el comportamiento de los sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: estudiar los principios fundamentales de la mecánica clásica necesarios para analizar y resolver problemas de cinemática y cinética de partículas y cuerpos rígidos; estudiar los efectos de las fuerzas y vibraciones en partículas y cuerpos rígidos en movimiento; y determinar los parámetros de movimiento de cuerpos rígidos y partículas, incluyendo posición, velocidad y aceleración, a partir de las leyes de Newton, los principios de trabajo-energía y conservación de la cantidad de movimiento.","Aplicar los principios fundamentales de la mecánica clásica de manera clara y lógica para analizar y resolver problemas de sistemas físicos en movimiento","• Cinemática de Partículas
+• Cinética de partículas y sistemas de partículas
+• Cinemática del movimiento plano de cuerpos rígidos
+• Cinética del movimiento plano de cuerpos rígidos
+• Vibraciones mecánicas"
+"IEE0403","EE0403","Análisis de circuitos II","3","El curso de Análisis de circuitos II aporta en el desarrollo del siguiente rasgo del plan de estudios: conocer y aplicar los principios de los circuitos eléctricos y la electrónica, y analizar su funcionamiento en las diversas aplicaciónes en ingeniería electromecánica
+Los aprendizajes que los estudiantes desarrollarán en el curso son: identificar los fundamentos de los circuitos eléctricos en corriente alterna, incluyendo sus leyes y componentes principales; aplicar métodos de análisis y simulación para la solución de circuitos eléctricos en corriente alterna; evaluar circuitos en corriente alterna para su uso en diversas aplicaciones de sistemas electromecánicos; y determinar el funcionamiento de circuitos en equipos y sistemas eléctricos en diversas aplicaciones para la identificación de su eficiencia y desempeño.","Analizar los circuitos eléctricos en corriente alterna, permitiendo su implementación y optimización en diversas aplicaciones de la ingeniería electromecánica","• Corriente alterna
+• Potencia Eléctrica
+• Respuesta en frecuencia
+• Series de Fourier
+• Redes de dos puertos
+• Sistemas monofásicos trifilar"
+"IEE0404","EE0404","Laboratorio de circuitos II","1","El curso de Laboratorio de circuitos II aporta en el desarrollo de los siguientes rasgos del plan de estudios: conocer y aplicar los principios de los circuitos eléctricos y la electrónica, y analizar su funcionamiento en las diversas aplicaciónes en ingeniería electromecánica; y aplicar principios de metrología para medir variables físicas en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: experimentar en circuitos de corriente alterna, ejecutando y aplicando métodos de análisis de las pruebas y ensayos; medir parámetros eléctricos fundamentales (tensión, corriente, resistencia y potencia) con la instrumentación adecuada, asegurando precisión y repetibilidad en los resultados.; interpretar los resultados, desarrollando informes y documentos de los experimentos; y evaluar el error en la mediciones electricas en corriente alterna usando los principios de la metrología.","Comprobar experimentalmente los métodos de análisis de circuitos eléctricos en corriente alterna","• Valores eficaces
+• Circuito RLC serie excitación senoidal
+• Circuitos mixtos RLC en corriente alterna
+• Mejoramiento del factor de potencia
+• Contenido armónico y filtros RLC
+• Respuesta de frecuencia y resonancia en RLC
+• Circuito monofásico trifilar y cálculo de Potencia
+• Análisis del factor de potencia y su relación con cargas lineales
+• Corrección del factor de potencia en circuitos monofásicos
+• Análisis experimental de un circuito monofásico trifilar
+• Cálculo de potencia promedio en señales senoidales compuestas"
+"IEE0405","EE0405","Instrumentación","2","El curso de Instrumentación aporta en el desarrollo de los siguientes rasgos del plan de estudios: implementar sistemas de instrumentación para la medición y modificación de variables físicas en sistemas electromecánicos; y aplicar principios de metrología para medir variables físicas en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: integrar transductores, sistemas de adquisición de datos e instrumentos virtuales para la implementación de sistemas de instrumentación; automatizar la adquisición, el procesamiento, la visualización y el control de señales usando instrumentos virtuales; y evaluar el error en la medición y manipulación de variables físicas usando los principios de la metrología.","Implementar sistemas de instrumentación precisos y confiables para la medición y manipulación de variables físicas en sistemas electromecánicos","• Sistemas de adquisición de datos
+• Instrumentos virtuales
+• Simbología y metrología de instrumentación"
+"IMM0407","EE0407","Termodinámica","3","El curso de Termodinámica aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor para  analizar el comportamiento de los sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar los conceptos fundamentales de la termodinámica en el análisis energético de sistemas térmicos; analizar las propiedades termodinámicas de las sustancias puras y su impacto en el diseño y operación de sistemas térmicos; evaluar el desempeño de los diferentes ciclos termodinámicos y su aplicación en la conversión de energía en sistemas de potencia, refrigeración y otros procesos industriales; y comprender el uso de la primera y segunda ley de la termodinámica en la solución de problemas de ingeniería.","Evaluar los principios básicos de la termodinámica clásica en el análisis energético del comportamiento de los sistemas electromecánicos, desarrollando un enfoque integral en la comprensión y gestión de estos sistemas","• Conceptos y definiciones
+• Energía y transferencia de energía
+• Propiedades de una sustancia
+• Trabajo y calor
+• Primera ley de la termodinámica
+• Segunda ley de la termodinámica
+• Entropía
+• Ciclos de generación"
+"IEE0503","EE0503","Sistemas analógicos","2","El curso de Sistemas analógicos aporta en el desarrollo del siguiente rasgo del plan de estudios: conocer y aplicar los principios de los circuitos eléctricos y la electrónica, y analizar su funcionamiento en las diversas aplicaciónes en ingeniería electromecánica
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender las características de operación y principios fundamentales de dispositivos y circuitos electrónicos analógicos, tales como amplificadores operacionales, comparadores, reguladores, convertidores y dispositivos de electrónica de potencia; analizar el comportamiento y las configuraciones típicas de circuitos integrados para identificar su funcionalidad y condiciones óptimas de operación en diferentes contextos; seleccionar adecuadamente los componentes electrónicos según sus especificaciones técnicas, criterios de eficiencia, confiabilidad y aplicación en sistemas analógicos y de potencia; y diseñar soluciones electrónicas funcionales mediante la integración de circuitos integrados y dispositivos electrónicos, aplicando criterios de desempeño, seguridad y viabilidad técnica.","Desarrollar competencias en el análisis, selección y aplicación de dispositivos y circuitos electrónicos analógicos, con el fin de diseñar soluciones electrónicas funcionales en diversas aplicaciones prácticas","• Introducción a los sistemas analógicos
+• Dispositivos electrónicos
+• Reguladores de voltaje
+• Aplicaciones de los sistemas analógicos
+• Convertidores
+• Circuitos integrados especiales
+• Electrónica de potencia"
+"AUT0504","EE0504","Modelado y simulación de sistemas","3","El curso de Modelado y simulación de sistemas aporta en el desarrollo del siguiente rasgo del plan de estudios: diseñar e implementar sistemas de control y automatización en sistemas electromecánicos integrando modelado y simulación
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar herramientas matemáticas de transformación entre el dominio del tiempo y frecuencia; aplicar herramientas de modelado matemático para representar sistemas electromecánicos, integrando conceptos físicos de sistemas eléctricos, mecánicos, hidráulicos y térmicos; implementar simulaciones computacionales que permitan analizar el comportamiento de los sistemas electromecánicos bajo distintas condiciones de operación; y evaluar el resultado de las simulaciones para garantizar su validez.","Modelar sistemas electromecánicos, utilizando herramientas matemáticas y computacionales que permitan analizar su comportamiento en diferentes escenarios operativos","• Introducción y modelado de sistemas
+• Transformada de Laplace
+• Modelos por espacio de estado
+• Modelado matemático
+• Análisis de la respuesta de los modelos
+• Métodos numéricos para la simulación de sistemas
+• Identificación de sistemas en el dominio del tiempo
+• Introducción a las redes nueronales para el modelado de sistemas
+• Introducción a la lógica difusa para el modelado de sistemas"
+"IMM0507","EE0507","Manufactura","2","El curso de Manufactura aporta en el desarrollo del siguiente rasgo del plan de estudios: evaluar las caracteristicas de los materiales y seleccionar los procesos de manufactura adecuados para el desarrollo y la producción de sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar las características de los materiales y su influencia en la selección de procesos de manufactura para la fabricación de productos; clasificar los diferentes procesos de manufactura con base en su aplicabilidad y su relación con las etapas de diseño e inspección; y determinar las técnicas de manufactura más adecuadas según los requerimientos de diseño, funcionalidad y costos.","Seleccionar los procesos de manufactura necesarios para la creación de productos a partir de la comprensión de las características de los materiales, los recursos disponibles y los procesos de manufactura utilizados en la industria electromecánica y su relación con las etapas de diseño e inspección","• Introducción a la manufactura
+• Procesos de manufactura
+• Automatización en manufactura
+• Metrología dimensional
+• Diseño para manufactura y ensamblaje (DFMA)
+• Micromanufactura
+• Manufactura sostenible"
+"IMM0508","EE0508","Laboratorio de manufactura","2","El curso de Laboratorio de manufactura aporta en el desarrollo de los siguientes rasgos del plan de estudios: evaluar las caracteristicas de los materiales y seleccionar los procesos de manufactura adecuados para el desarrollo y la producción de sistemas electromecánicos; y aplicar principios de metrología para medir variables físicas en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: explorar, mediante demostraciones y prácticas dirigidas, el funcionamiento y aplicación de los procesos de manufactura más relevantes en la industria electromecánica, y su relación con las características de los materiales; evaluar los datos obtenidos de los procesos de manufactura para comprender su impacto en la calidad, eficiencia y viabilidad del producto final; y relacionar los procesos de manufactura con las etapas de diseño e inspección, destacando su influencia en la optimización y mejora del desarrollo de productos.","Comprender los principales procesos de manufactura en la industria electromecánica mediante demostraciones, prácticas dirigidas y análisis de datos, resaltando su relación con las características de los materiales y las etapas de diseño e inspección","• Introducción a la planta de manufactura
+• Procesos de manufactura
+• Automatización en manufactura
+• Metrología dimensional
+• Diseño para manufactura y ensamblaje (DFMA)
+• Micromanufactura
+• Manufactura sostenible"
+"ADD0602","EE0602","Fiabilidad y disponibilidad de sistemas electromecánicos","2","El curso de Fiabilidad y disponibilidad de sistemas electromecánicos aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar herramientas estadísticas, evaluar datos con rigor científico, y garantizar la confiabilidad, disponibilidad, mantenibilidad y seguridad en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los fundamentos de confiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS) en sistemas electromecánicos, así como su importancia en la industria; modelar modos de falla, utilizando metodologías como FMEA (Análisis de Modos y Efectos de Falla) y FTA (Análisis de Árbol de Fallas); diseñar estrategias de mantenimiento óptimo, incluyendo mantenimiento predictivo, preventivo y correctivo, basadas en criterios de disponibilidad y costos; y elaborar planes de mitigación de riesgos que garanticen la seguridad operacional en sistemas electromecánicos, integrando normativas y mejores prácticas de la industria.","Aplicar las herramientas estadísticas, metodologías de análisis de fallos y estrategias de mantenimiento, para el análisis y mejora de la confiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS), de sistemas electromecánicos que garanticen el funcionamiento seguro y eficiente","• Introducción a la fiabilidad, disponibilidad, mantenibilidad y seguridad (RAMS) en sistemas electromecánicos
+• Métodos estadísticos aplicados a la confiabilidad
+• Análisis de Modos y Efectos de Fallo (FMEA) y Análisis de Árbol de Fallos (FTA)
+• Análisis Weibull y estimación de vida útil de componentes
+• Modelos de confiabilidad para sistemas en serie, paralelo y redundancia
+• Estrategias de mantenimiento: correctivo, preventivo, predictivo y basado en condición
+• Optimización de planes de mantenimiento y análisis costo-beneficio
+• Planificación de contingencias y resiliencia en sistemas electromecánicos
+• Métodos de análisis de seguridad y normativas internacionales"
+"IEE0604","EE0604","Sistemas digitales","2","El curso de Sistemas digitales aporta en el desarrollo del siguiente rasgo del plan de estudios: conocer y aplicar los principios de los circuitos eléctricos y la electrónica, y analizar su funcionamiento en las diversas aplicaciónes en ingeniería electromecánica
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar técnicas de simplificación de variables en circuitos combinacionales; implementar conectivas lógicas en lógica digital y lógica programada en FPGA; analizar el funcionamiento, diseño e implementación de contadores digitales, MUX y Decos y ADC; e implementar circuitos digitales combinacionales y secuenciales usando lenguajes como VHDL o Verilog.","Desarrollar circuitos digitales con circuitos integrados y/o componentes programados","• Introducción a los Sistemas Digitales
+• Reducción de expresiones booleanas
+• Circuitos Combinacionales
+• Circuitos Secuenciales
+• Elementos de Memoria
+• Unidad Aritmética y Lógica (ALU)
+• Lenguaje de Descripción de Hardware (VHDL)
+• FPGAs (Field-Programmable Gate Arrays)
+• Programación de FPGAs con VHDL"
+"IMM0605","EE0605","Resistencia de materiales","3","El curso de Resistencia de materiales aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor para  analizar el comportamiento de los sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los diferentes tipos de esfuerzos y deformaciones en materiales sólidos, bajo diversas condiciones de carga, aplicando principios de mecánica de materiales; determinar las deformaciones y esfuerzos resultantes en un cuerpo sólido, ocasionadas por una condición de carga dada o viceversa; seleccionar materiales adecuados, según sus propiedades mecánicas para aplicaciones de carga específicas; y obtener de las dimensiones óptimas y/o factor de seguridad de un componente dúctil o frágil, dentro de sus límites de esfuerzo y deformación, aplicando las teorías de falla estática.","Resolver problemas de sólidos sometidos a esfuerzos y deformaciones, con énfasis en el diseño y evaluación de estructuras y componentes mecánicos sencillos, aplicando los principios fundamentales y normas de la mecánica de materiales","• Introducción a la mecánica de materiales
+• Deformación
+• Propiedades mecánicas de los materiales
+• Carga axial
+• Torsión
+• Flexión
+• Fuerza cortante transversal
+• Cargas combinadas
+• Transformación de esfuerzos
+• Transformación de deformaciones
+• Diseño de vigas y ejes
+• Deflexión de vigas y ejes
+• Pandeo de columnas
+• Métodos de Energía"
+"IMM0607","EE0607","Mecánica de fluidos","3","El curso de Mecánica de fluidos aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor para  analizar el comportamiento de los sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: conocer las ecuaciones que gobiernan el movimiento de los fluidos, con énfasis en las ecuaciones de Navier-Stokes y las simplificaciones necesarias para su aplicación en distintos contextos; analizar las propiedades de los fluidos y su relación con el comportamiento de sistemas hidráulicos y neumáticos; aplicar los principios fundamentales de la estática y dinámica de fluidos en la solución de problemas de ingeniería; evaluar la pérdida de energía en sistemas de flujo, diseñando sistemas de transporte de fluidos eficientes; e implementar herramientas computacionales y metodologías experimentales en el análisis de sistemas de flujo de fluidos.","Analizar sistemas de transporte de fluidos aplicando sus propiedades, el comportamiento estático y dinámico, y las ecuaciones fundamentales que rigen su movimiento","• Fluidos y sus propiedades
+• Estática de fluidos
+• Cinemática de fluidos (fluidos en movimiento)
+• Dinámica de fluidos (principios de energía)
+• Flujo en tuberías
+• Pérdidas de energía debido a la fricción
+• Sistemas de tuberías
+• Análisis computacional de fluidos"
+"IMM0608","EE0608","Laboratorio de mecánica de fluidos","1","El curso de Laboratorio de mecánica de fluidos aporta en el desarrollo de los siguientes rasgos del plan de estudios: aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor para  analizar el comportamiento de los sistemas electromecánicos; y aplicar principios de metrología para medir variables físicas en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: identificar las propiedades de los fluidos mediante técnicas experimentales; aplicar métodos de medición para la caracterización del flujo de fluidos en diversas condiciones; evaluar experimentalmente la influencia de la viscosidad, presión y pérdidas de carga en sistemas hidráulicos; e interpretar resultados experimentales a través de cálculos, gráficas y análisis de tendencias para validar principios fundamentales de la mecánica de fluidos.","Aplicar los principios de la mecánica de fluidos para el análisis del comportamiento de los sistemas con fluidos a través de la experimentación en laboratorio, fortaleciendo la comprensión de los conceptos teóricos mediante la recolección y análisis de datos experimentales","• Laboratorio de propiedades de los fluidos
+• Laboratorio de ley de Stokes y cálculo de viscosidad
+• Laboratorio de medición de presión mediante manómetros
+• Laboratorio de métodos para medir caudal y flujo másico en aire y agua
+• Laboratorio de estudio experimental del principio de Bernoulli
+• Laboratorio de análisis de tanques hidroneumáticos
+• Laboratorio de regímenes de flujo: laminar y turbulento
+• Laboratorio de pérdidas de carga en tuberías, accesorios y válvulas
+• Laboratorio de flujo externo
+• Laboratorio de redes hidráulicas"
+"CYD0609","EE0609","Dibujo industrial","3","El curso de Dibujo industrial aporta en el desarrollo del siguiente rasgo del plan de estudios: estructurar sus ideas de manera clara y transmitirlas de forma oral, escrita o mediante dibujos de ingeniería, tanto en español como en inglés
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los principios teóricos del dibujo técnico aplicados a vistas auxiliares, cortes, secciones y conjuntos mecánicos, esenciales para la representación gráfica precisa de componentes mecánicos y máquinas; implementar las normas de tolerancias geométricas y dimensionales, rugosidades y acabados superficiales, así como de elementos estandarizados, garantizando una representación gráfica adecuada de componentes mecánicos y máquinas; utilizar las normativas de dibujo para sistemas electromecánicos en la representación y especificación precisa de instalaciones electromecánicas, tanto de sistemas eléctricos, de transporte de fluidos y mecánico-sanitarios; y emplear herramientas computacionales de manera integral, para la lectura, diseño y edición de planos técnicos de ingeniería, abarcando tanto máquinas como instalaciones electromecánicas.","Aplicar de manera efectiva los fundamentos, normas y herramientas del dibujo técnico para la elaboración e interpretación de planos constructivos de piezas, conjuntos mecánicos y sistemas electromecánicos de forma clara y precisa, tanto en español como en inglés","• Introducción al dibujo industrial
+• Cortes y secciones
+• Vistas auxiliares
+• Ajustes y tolerancias mecánicos
+• Rugosidad y acabados superficiales de piezas mecánicas
+• Uniones mecánicas
+• Conjuntos mecánicos
+• Instalaciones electromecánicas"
+"FPH0701","EE0701","Administración de proyectos","2","El curso de Administración de proyectos aporta en el desarrollo del siguiente rasgo del plan de estudios: administrar eficientemente proyectos, garantizando el cumplimiento de objetivos técnicos, financieros y de tiempo
+Los aprendizajes que los estudiantes desarrollarán en el curso son: definir las herramientas técnico-administrativas, legales y ambientales, para el análisis del entorno (contexto nacional e internacional) en la determinación de oportunidades innovadoras de desarrollo, alineadas con los objetivos y metas estratégicas de la organización; aplicar las herramientas de planificación, estimación, implementación, evaluación y seguimiento de proyectos para la adecuada gestión de un proyecto; emplear herramientas de optimización de recursos financieros, humanos, materiales y tiempo durante la ejecución de proyectos, estableciendo sus indicadores de gestión; y explorar las nuevas tendencias y desarrollos en el tema de la gestión de proyectos y su aplicación dependiendo del tipo de proyecto.","Evaluar proyectos de ingeniería utilizando herramientas de planeamiento y gestión para la toma de decisiones alineadas con la estrategia de la organización, garantizando el cumplimiento de objetivos técnicos, financieros y de tiempo","• El estudio de proyectos
+• Oportunidades de negocio e investigación
+• Presupuestos electromecánicos
+• Alcances del estudio de proyectos
+• Evaluación financiera de proyectos
+• Fundamentos de la gestión de proyectos
+• Estimación de costos y tiempos del proyecto
+• Construcción de redes de proyectos
+• Nuevas tendencias en formulación y administración de proyectos"
+"IEE0702","EE0702","Máquinas eléctricas I","3","El curso de Máquinas eléctricas I aporta en el desarrollo del siguiente rasgo del plan de estudios: evaluar el comportamiento de las máquinas eléctricas y sus accionamientos bajo diversas condiciones de operación, así como analizar su diseño y aplicaciones
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los principios de operación de los sistemas trifásicos, circuitos magnéticos, transformadores y máquinas de inducción, comprendiendo su funcionamiento y modelado matemático; calcular el desempeño de las máquinas eléctricas y sus accionamientos bajo diferentes condiciones de carga y operación, identificando factores que afectan su eficiencia y estabilidad; aplicar métodos de análisis para la interpretación de las curvas características, circuitos equivalentes y parámetros clave en transformadores y motores de inducción; y seleccionar máquinas eléctricas para aplicaciones específicas en la industria y sistemas de generación, transmisión y distribución de energía.","Evaluar el comportamiento de los sistemas trifásicos, circuitos magnéticos, transformadores y máquinas de inducción para la comprensión de su funcionamiento, diseño y aplicaciones en sistemas eléctricos y de accionamiento","• Sistema monofásico
+• Sistemas trifásicos
+• Potencia monofásica y trifásica
+• Estructuras ferromagnéticas excitadas en corriente directa
+• Estructuras ferromagnéticas excitadas en corriente alterna
+• Transformadores monofásicos
+• Transformadores trifásicos
+• Motor trifásico de inducción
+• Motor monofásico de inducción
+• Generador de inducción trifásico, auto-excitado"
+"IEE0703","EE0703","Laboratorio de máquinas eléctricas I","1","El curso de Laboratorio de máquinas eléctricas I aporta en el desarrollo de los siguientes rasgos del plan de estudios: evaluar el comportamiento de las máquinas eléctricas y sus accionamientos bajo diversas condiciones de operación, así como analizar su diseño y aplicaciones; y aplicar principios de metrología para medir variables físicas en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar métodos de medición y metrología para determinar variables eléctricas y mecánicas en sistemas trifásicos, transformadores y motores de inducción; evaluar el desempeño de los transformadores y los motores de inducción bajo diferentes condiciones de carga y operación, identificando factores que afectan su eficiencia; e interpretar los resultados, desarrollando informes y documentos de los experimentos.","Realizar experimentos de sistemas trifásicos, transformadores y motores de inducción","• Circuito monofásico trifilar
+• Medición de potencia: conexión en estrella balanceada y desbalanceada
+• Medición de potencia: conexión en delta balanceada y desbalanceada
+• Mejoramiento del factor de potencia en redes trifásicas
+• Transformador monofásico: corto circuito, circuito abierto, polaridad y saturación
+• Transformador monofásico: regulación de tensión
+• Autotransformadores: pruebas de corto circuito y circuito abierto
+• Conexiones trifásicas de transformadores
+• Conexión de devanados estatóricos
+• Motor trifásico de jaula de ardilla y rotor devanado
+• Control de velocidad con variadores de frecuencia
+• Motores monofásicos de inducción con doble capacitor
+• Pruebas de rotor bloqueado en motor trifásico de inducción
+• Generador asincrónico"
+"AUT0704","EE0704","Control automático","3","El curso de Control automático aporta en el desarrollo del siguiente rasgo del plan de estudios: diseñar e implementar sistemas de control y automatización en sistemas electromecánicos integrando modelado y simulación
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender el concepto de sistema de control, el de lazo de control realimentado y definir la función de sus componentes; analizar el control por realimentación frente al control en bucle abierto y las acciones básicas de control por realimentación; aplicar métodos en el dominio de la frecuencia de análisis y síntesis de controladores de sistemas realimentados; y sintonizar sistemas de control discretos en autómatas programables.","Diseñar e implementar sistemas de control automático en sistemas electromecánicos integrando modelado y simulación","• Introducción a los sistemas de control
+• Análisis de sistemas en el dominio temporal
+• Análisis de sistemas en el dominio de la frecuencia
+• El controlador PID
+• Análisis y diseño de sistemas de control  en el espacio de estados
+• Implementación real de los sistemas de control"
+"AUT0705","EE0705","Microcontroladores","2","El curso de Microcontroladores aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar soluciones de hardware usando microcontroladores para el control y procesamiento de datos en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender la arquitectura interna de un microcontrolador; programar microcontroladores en lenguaje C; y aplicar microcontroladores para el control y procesamiento datos.","Desarrollar soluciones de hardware usando microcontroladores para el control y procesamiento de datos en sistemas electromecánicos","• Introducción a los microcontroladores
+• Programación en lenguaje C para microcontroladores
+• GPIO (Entradas y Salidas Digitales)
+• Interrupciones
+• Temporizadores (timers) y contadores (counters)
+• Comunicación serial
+• Conversión Analógica-Digital (ADC) y Digital-Analógica (DAC)
+• Modulación por Ancho de Pulso (PWM)
+• Memoria
+• Reloj en Tiempo Real (RTC)
+• Acceso Directo a Memoria (DMA)
+• Watchdog Timer"
+"IMM0706","EE0706","Elementos de máquinas","3","El curso de Elementos de máquinas aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor para  analizar el comportamiento de los sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar esfuerzos y deformaciones para la estimación de factores de seguridad en componentes mecánicos, utilizando teorías de falla estática y dinámica; seleccionar materiales adecuados para componentes mecánicos, teniendo en cuenta sus propiedades y el comportamiento frente a esfuerzos estáticos y dinámicos; evaluar la falla en componentes mecánicos, considerando factores como la fatiga, el desgaste y la fractura, garantizando la seguridad y durabilidad de los diseños; y optimizar el diseño de componentes mecánicos, mediante el uso de métodos de análisis y simulación, mejorando su desempeño y la seguridad en aplicaciones de ingeniería.","Aplicar los fundamentos de la mecánica, para el diseño y selección de componentes mecánicos, enfocándose en los principios que rigen la elección y especificación de materiales y geometrías, el análisis de esfuerzos y deformaciones, factores de seguridad, la prevención de fallos y la optimización de componentes para aplicaciones de la ingeniería mecánica","• Introducción al diseño en Ingeniería Mecánica
+• Materiales de ingeniería y su caracterización
+• Análisis de esfuerzo y deformación,
+• Deflexión y rigidez
+• Falla resultante por carga estática
+• Fallas por fatiga debidas a cargas variables
+• Diseño de ejes y sus componentes
+• Rodamientos de contacto rodante
+• Rodamientos de contacto deslizante y lubricación
+• Engranajes descripción general y trenes de engranajes
+• Tornillos, sujetadores y diseño de juntas no permanentes
+• Soldadura, adhesión y diseño de uniones permanentes
+• Resortes mecánicos
+• Elementos mecánicos flexibles"
+"IMM0707","EE0707","Sistemas térmicos","3","El curso de Sistemas térmicos aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor para  analizar el comportamiento de los sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar el comportamiento de los sistemas térmicos según los principios de la termodinámica y la transferencia de calor; evaluar el desempeño y eficiencia de los sistemas electromecánicos relacionados con la mecánica de fluidos y transferencia de calor; seleccionar elementos de ventilación, refrigeración y aire acondicionado; y aplicar metodologías de modelado y simulación para el análisis de sistemas térmicos en contextos industriales.","Aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor analizando el comportamiento de los sistemas térmicos","• Fundamentos de termodinámica y transferencia de calor
+• Propiedades de los fluidos y mecánica de fluidos aplicada
+• Sistemas de ventilación y aire comprimido
+• Sistemas de refrigeración y aire acondicionado
+• Modelado y Simulación de sistemas térmicos
+• Evaluación de eficiencia energética en sistemas electromecánicos"
+"IMM0708","EE0708","Laboratorio de sistemas térmicos","1","El curso de Laboratorio de sistemas térmicos aporta en el desarrollo de los siguientes rasgos del plan de estudios: aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor para  analizar el comportamiento de los sistemas electromecánicos; y aplicar principios de metrología para medir variables físicas en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: ejecutar experimentos que validen los principios de la termodinámica y transferencia de calor en sistemas reales; aplicar principios de metrología para la medición y análisis de variables en sistemas térmicos; interpretar los resultados experimentales mediante el uso de gráficas, tablas y análisis comparativos; y elaborar informes técnicos que incluyan procedimientos, resultados y conclusiones fundamentadas.","Aplicar los principios de la mecánica de sólidos y fluidos, termodinámica y transferencia de calor analizando el comportamiento de los sistemas térmicos, al realizar experiencias prácticas de laboratorio","• Introducción a la metrología térmica e instrumentos de medición
+• Determinación de propiedades termodinámicas de sustancias
+• Evaluación experimental de ciclos termodinámicos simples
+• Transferencia de calor: conducción, convección y radiación
+• Determinación del coeficiente de transferencia de calor
+• Evaluación de intercambiadores de calor
+• Uso de software para análisis térmico"
+"IEE0802","EE0802","Máquinas eléctricas II","3","El curso de Máquinas eléctricas II aporta en el desarrollo del siguiente rasgo del plan de estudios: evaluar el comportamiento de las máquinas eléctricas y sus accionamientos bajo diversas condiciones de operación, así como analizar su diseño y aplicaciones
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los principios de operación de las máquinas eléctricas sincrónicas y de corriente directa, comprendiendo su funcionamiento y modelado matemático; aplicar métodos de análisis para la interpretación de las curvas características, circuitos equivalentes y parámetros clave en máquinas eléctricas sincrónicas y de corriente directa; y seleccionar máquinas eléctricas sincrónicas y de corriente directa para aplicaciones específicas en la industria y sistemas de generación, transmisión y distribución de energía.","Evaluar el comportamiento de las máquinas eléctricas sincrónicas y de corriente directa para la comprensión de su funcionamiento, diseño y aplicaciones en sistemas eléctricos y de accionamiento","• Alternador sincrónico
+• Motor Sincrónico
+• Máquinas de corriente directa
+• Generador de corriente directa
+• Motores de corriente directa
+• Maquinas eléctricas especiales
+• Fundamentos y convertidores de electrónica de potencia
+• Convertidores avanzados y aplicaciones"
+"IEE0803","EE0803","Laboratorio de máquinas eléctricas II","1","El curso de Laboratorio de máquinas eléctricas II aporta en el desarrollo de los siguientes rasgos del plan de estudios: evaluar el comportamiento de las máquinas eléctricas y sus accionamientos bajo diversas condiciones de operación, así como analizar su diseño y aplicaciones; y aplicar principios de metrología para medir variables físicas en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar métodos de medición y metrología para la determinación de variables eléctricas y mecánicas en máquinas eléctricas sincrónicas y máquinas de corriente directa; evaluar el desempeño de máquinas eléctricas sincrónicas y máquinas de corriente directa bajo diferentes condiciones de carga y operación, identificando factores que afectan su eficiencia; analizar los resultados experimentales obtenidos en pruebas de máquinas eléctricas sincrónicas y máquinas de corriente directa; e interpretar los resultados, desarrollando informes y documentos de los experimentos a máquinas eléctricas sincrónicas y máquinas de corriente directa.","Realizar experimentos de máquinas eléctricas sincrónicas y máquinas de corriente directa para la comprensión de su funcionamiento, diseño y aplicaciones en sistemas eléctricos y de accionamiento","• Alternadores sincrónicos aislados
+• Pruebas de la máquina sincrónica (reactancia y resistencia armadura)
+• Curva de capacidad del alternador
+• Alternador sincrónico en RED
+• Motores sincrónicos curvas en V
+• Motor sincrónico condensador sincrónico
+• Generador corriente directa: conexión shunt e independiente
+• Generador corriente directa: conexión compuesta
+• Motor corriente directa: conexión shunt
+• Motor corriente directa: conexión compuesta
+• Motor corriente directa: métodos de control de velocidad
+• Motor a pasos
+• Servomotor
+• Motor universal"
+"AUT0804","EE0804","Control por eventos discretos","3","El curso de Control por eventos discretos aporta en el desarrollo del siguiente rasgo del plan de estudios: diseñar e implementar sistemas de control y automatización en sistemas electromecánicos integrando modelado y simulación
+Los aprendizajes que los estudiantes desarrollarán en el curso son: modelar sistemas controlados por eventos discretos usando redes de Petri, haciendo énfasis en redes de colas y máquinas de estado; diseñar sistemas controlados por eventos discretos con base en máquinas de estado, Sequential Function Chart (SFC), Stateflow, redes de Petri; e implementar GRAFCET/SFC para la automatización de sistemas controlados por eventos discretos.","Desarrollar sistemas de control por eventos discretos utilizando microcontroladores y controladores lógicos programables (PLC)","• Introducción a los sistemas de eventos discretos
+• Modelado con máquinas de estados
+• Redes de colas
+• Máquinas de estado
+• Redes de Petri
+• Especificación de controladores según norma IEC 60848
+• Lenguajes estandarizados de programación según IEC 61131-3
+• Implementación de lenguajes de programación"
+"AUT0805","EE0805","Laboratorio de control","1","El curso de Laboratorio de control aporta en el desarrollo del siguiente rasgo del plan de estudios: diseñar e implementar sistemas de control y automatización en sistemas electromecánicos integrando modelado y simulación
+Los aprendizajes que los estudiantes desarrollarán en el curso son: crear soluciones de automatización utilizando técnicas y herramientas como lugar geométrico de las raíces, diagramas de Bode, técnicas de sintonización, máquinas de estado, Sequential Function Chart (SFC), y Stateflow; implementar controladores proporcionales-integrales y derivativos (PID) para un proceso; diseñar sistemas de control utilizando controladores lógicos programables (PLC) según la norma IEC 61131-3; e implementar sistemas de control utilizando microcontroladores.","Desarrollar controladores automáticos para sistemas continuos y de eventos discretos","• Programación de PLC con IEC 61131 con lenguajes escalera
+• Programación de PLC con IEC 61131 con SFC
+• Configuración de PLC, buses de campo, AS-i, Profibus
+• Sintonización de PID en PLCs
+• Implementación de controladores PID en microcontroladores
+• Diseño de controladores con lugar geométrico de las raíces y SISOTOOL
+• Diseño de compensadores por medio análisis de respuesta en frecuencia
+• Diseño de controladores con modelo de control predictivo (MPC)"
+"INS0801","EE4801","Sistemas eléctricos de transmisión y distribución","3","El curso de Sistemas eléctricos de transmisión y distribución aporta en el desarrollo del siguiente rasgo del plan de estudios: comprender los fundamentos de los sistemas de distribución y transmisión de energía eléctrica
+Los aprendizajes que los estudiantes desarrollarán en el curso son: describir la estructura de los sistemas de transmisión y distribución de energía eléctrica, representando los componentes fundamentales de los sistemas eléctricos de potencia, incluyendo generadores, transformadores, líneas de transmisión y elementos de compensación de potencia reactiva; determinar los métodos de análisis de flujos de potencia y estudios de cortocircuito para la evaluación del desempeño de las redes eléctricas; examinar el impacto de tecnologías emergentes como generación distribuida, almacenamiento de energía y redes inteligentes en la operación de los sistemas eléctricos; e identificar las condiciones anormales en la red eléctrica y los mecanismos de protección, garantizando la seguridad y estabilidad operativa del sistema.","Analizar el funcionamiento, modelado y operación de los sistemas de transmisión y distribución de energía eléctrica, considerando sus elementos fundamentales, métodos de análisis y tecnologías emergentes","• Introducción
+• Elementos de modelado de sistemas eléctricos de potencia
+• Elementos estáticos de las redes eléctricas
+• Modelado de las líneas de transmisión
+• Modelado de componentes de los sistemas de distribución
+• Métodos de análsis de flujos de potencia
+• Análisis de fallas y estudio de cortocircuito
+• Operación de sistemas de redes inteligentes de distribución
+• Análisis de condiciones anormales en la red
+• Conceptos y aplicaciones de las redes inteligentes"
+"INS0806","EE4806","Instalaciones eléctricas","3","El curso de Instalaciones eléctricas aporta en el desarrollo del siguiente rasgo del plan de estudios: supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar la norma CEN para el diseño y especificación de acometidas, conductores, conductos, protecciones, transformadores, barra de tierra, centros de carga, etc., en instalaciones residenciales, comerciales e industriales; realizar estudios de corto circuito, factor de potencia y su corrección, iluminación, coordinación de protecciones y selectividad, calidad de energía en instalaciones eléctricas; especificar instalaciones mediante planos eléctricos con sus presupuestos; y utilizar software especializados de simulación de sistemas eléctricos e iluminación.","Aplicar los principios del diseño, operación y mantenimiento en sistemas eléctricos en baja tensión, bajo consulta del Código Eléctrico Nacional (CEN) vigente, en redes monofásicas de tipo residencial y trifásicas de tipo comercial e industrial","• Tipos de instalaciones eléctricas en baja tensión
+• Selección de conductores
+• Cálculo de circuitos ramales para diferentes tipos de cargas eléctricas
+• Seguridad en instalaciones eléctricas y puesta a tierra
+• Dimensionamiento de alimentadores y acometidas para diferentes tipos de cargas eléctricas
+• Corrección del factor de potencia
+• Estudio de corto circuito (cálculo manual)
+• Coordinación de protecciones
+• Principios de luminotecnia y diseño de sistemas de iluminación
+• Calidad de la energía eléctrica
+• Planos y especificaciones"
+"INS0807","EE4807","Ventilación y aire comprimido","2","El curso de Ventilación y aire comprimido aporta en el desarrollo del siguiente rasgo del plan de estudios: supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los principios de funcionamiento de los sistemas de ventilación y aire comprimido; comprender la normativa nacional e internacional para el diseño de sistemas electromecánicos de ventilación y aire comprimido; implementar metodologías para la instalación, operación y mantenimiento de sistemas de ventilación y aire comprimido; y desarrollar sistemas de ventilación y aire comprimido garantizando la eficiencia energética y la sostenibilidad.","Diseñar sistemas electromecánicos de ventilación y aire comprimido, con un enfoque en la gestión eficiente de la energía y el cumplimiento normativo","• Sistemas de Aire Comprimido
+• Sistemas de Ventilación"
+"INS0808","EE4808","Mantenimiento electromecánico","1","El curso de Mantenimiento electromecánico aporta en el desarrollo del siguiente rasgo del plan de estudios: gestionar el ciclo de vida de sistemas electromecánicos considerando la viabilidad de su transformación digital
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender el ciclo de vida de los activos industriales y su relación con la gestión del mantenimiento, identificando estrategias para que optimicen su desempeño y prolonguen su vida útil; aplicar técnicas de mantenimiento basado en condición mediante el análisis de vibraciones, termografía y otras metodologías predictivas para la detección temprana de fallos en equipos industriales; implementar herramientas digitales y estrategias de transformación digital en la gestión del mantenimiento, evaluando su impacto en la confiabilidad y eficiencia de los activos industriales; y desarrollar habilidades para el diagnóstico y pronóstico del mantenimiento, utilizando metodologías basadas en datos y normativas internacionales para la toma de decisiones fundamentadas alineadas con la estrategia del negocio.","Gestionar el mantenimiento electromecánico aplicando técnicas modernas, integrando herramientas digitales y estrategias de transformación digital que optimicen la disponibilidad, confiabilidad y eficiencia operativa de los activos industriales","• Introducción al mantenimiento industrial
+• Normativas y estándares internacionales en mantenimiento
+• Conceptos y principios del mantenimiento basado en condición (CBM)
+• Análisis de vibraciones en equipos rotativos
+• Termografía aplicada al mantenimiento predictivo
+• Ultrasonido y otras técnicas de monitoreo predictivo
+• Tribología y análisis de aceites
+• Pruebas de diagnóstico eléctrico"
+"INS0901","EE4901","Sistemas de generación y almacenamiento de energía","3","El curso de Sistemas de generación y almacenamiento de energía aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar soluciones de generación y almacenamiento de energía para autoconsumo y venta de energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los principios fundamentales de las tecnologías de generación de energía renovable y no renovable; analizar diferentes sistemas de almacenamiento de energía y su integración en redes eléctricas; dimensionar soluciones de generación y almacenamiento de energía adaptadas a diferentes contextos y necesidades; y aplicar técnicas de análisis de estabilidad para la evaluación de sistemas de generación y almacenamiento de energía, mediante el uso de herramientas de simulación y modelado.","Desarrollar en los estudiantes las competencias necesarias para la evaluación de sistemas de generación y almacenamiento de energía, tanto para autoconsumo como para la venta de energía en pequeña y gran escala, utilizando tecnologías sostenibles y eficientes","• Introducción a las energías renovables y no renovables
+• Energías renovables: tecnologías e integración a la red
+• Energías no renovables
+• Almacenamiento de energía: baterías electroquímicas
+• Almacenamiento de energía: hidrógeno y combustibles sintéticos
+• Otros tipos de almacenamiento de energía
+• Operación económica de la generación de electricidad
+• Integración de sistemas de generación y almacenamiento al sistema de potencia"
+"INS0903","EE4903","Sistemas de refrigeración y aire acondicionado","3","El curso de Sistemas de refrigeración y aire acondicionado aporta en el desarrollo del siguiente rasgo del plan de estudios: supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los componentes principales de los sistemas de refrigeración, aire acondicionado y su funcionamiento; analizar los principios fundamentales de la refrigeración y el acondicionamiento del aire para su aplicación en sistemas industriales y comerciales; evaluar el desempeño energético de los sistemas de refrigeración y aire acondicionado mediante herramientas de análisis y normativas vigentes; y diseñar soluciones para la optimización de sistemas de refrigeración y aire acondicionado, considerando eficiencia, impacto ambiental y normativas.","Desarrollar soluciones integrales para sistemas electromecánicos de refrigeración y aire acondicionado que optimicen la eficiencia energética, minimicen el impacto ambiental y promuevan la preservación de los recursos, garantizando al mismo tiempo la conservación de los equipos y el confort en todas las etapas de su ciclo de vida","• Fundamentos de la refrigeración y aire acondicionado
+• Fundamentos termodinámicos y ciclos de refrigeración
+• Refrigerantes y su impacto ambiental
+• Componentes de un sistema de refrigeración
+• Psicrometría y procesos de aire acondicionado
+• Cargas térmicas en sistemas de aire acondicionado
+• Selección de equipos de aire acondicionado (sistemas de expansión directa)
+• Selección de equipos de aire acondicionado (sistemas de agua helada)
+• Selección y dimensionamiento de chillers
+• Diseño del circuito de agua helada
+• Aplicaciones especiales de la refrigeración y climatización"
+"INS0904","EE4904","Laboratorio de refrigeración y aire acondicionado","1","El curso de Laboratorio de refrigeración y aire acondicionado aporta en el desarrollo de los siguientes rasgos del plan de estudios: aplicar principios de metrología para medir variables físicas en sistemas electromecánicos; y supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los componentes principales de los sistemas de refrigeración y aire acondicionado en condiciones reales; aplicar métodos experimentales para evaluar el desempeño de sistemas de refrigeración y aire acondicionado; diagnosticar fallas en sistemas de refrigeración y aire acondicionado mediante herramientas y procedimientos técnicos; e implementar prácticas de mantenimiento preventivo y correctivo en equipos de refrigeración y aire acondicionado.","Aplicar principios y técnicas de refrigeración y aire acondicionado mediante prácticas experimentales, orientadas al análisis, operación y evaluación de sistemas reales, promoviendo la eficiencia energética, el confort térmico y la sostenibilidad","• Componentes básicos de un sistema de refrigeración real
+• Funcionamiento y fallas principales de compresores de pistón y tornillo
+• Ajuste de controles de presión y temperatura
+• Procedimientos para hacer vacío y cargar refrigerante por el lado de baja
+• Aplicación práctica de carga de refrigerante en sistemas reales
+• Operación y medición de parámetros en paneles de refrigeración
+• Simulación de fallas en sistemas de refrigeración y análisis de parámetros
+• Procedimientos de recuperación de refrigerante y normativa ambiental
+• Diagnóstico y solución de fallas en sistemas comerciales e industriales
+• Laboratorio de aire acondicionado: diagnóstico y medición de desempeño
+• Mantenimiento preventivo y correctivo en sistemas de refrigeración y aire acondicionado
+• Estudio de casos sobre fallas en refrigeración y aire acondicionado
+• Optimización del rendimiento energético en sistemas de refrigeración
+• Evaluación del desempeño de un sistema de agua helada"
+"INS0905","EE1101","Seminario de graduación I","3","El curso de Seminario de graduación I aporta en el desarrollo de los siguientes rasgos del plan de estudios: liderar equipos de trabajo promoviendo el pensamiento crítico, la colaboración y la innovación, fomentando una convivencia respetuosa e inclusiva; impulsar el progreso sostenible y la mejora en la calidad de vida del mayor número de personas como objetivos centrales de la ingeniería; y desarrollar habilidades en investigación y presentación de resultados con rigor científico y ético.
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar los conceptos fundamentales de la metodología científica para la defición del problema, objetivos y justificación de un proyecto de investigación en ingeniería; desarrollar habilidades para la búsqueda, análisis y síntesis de información técnica y científica relevante mediante una revisión bibliográfica rigurosa; y elaborar un anteproyecto de investigación estructurado, técnicamente fundamentado y viable, incluyendo cronograma, metodología, y criterios éticos, que sirva como base para el Trabajo Final de Graduación.","Desarrollar en el estudiante las competencias necesarias para la formulación, planificación y sustentación un anteproyecto de investigación en ingeniería, mediante la aplicación de principios metodológicos, éticos y técnicos que orienten el desarrollo del Trabajo Final de Graduación","• Introducción a la investigación en ingeniería
+• El proceso de investigación
+• Revisión bibliográfica y búsqueda de información técnica
+• Diseño de proyectos de investigación
+• Ética en la investigación
+• Metodología cuantitativa y cualitativa
+• Análisis de datos
+• Redacción técnica y presentación de proyectos
+• Gestión de proyectos de investigación
+• Presentación del anteproyecto de graduación"
+"INS0906","EE4906","Instalaciones mecánico-sanitarias","3","El curso de Instalaciones mecánico-sanitarias aporta en el desarrollo del siguiente rasgo del plan de estudios: supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: diseñar sistemas de distribución y manejo de agua potable, de recolección de aguas negras, pluviales y jabonosas; y sistemas hidrónicos, evaluando distintas configuraciones y materiales para la optimización de la eficiencia y sostenibilidad del sistema, con base en normativa nacional e internacional; elaborar planos constructivos de sistemas mecánico-sanitarios utilizando herramientas computacionales de vanguardia y aplicando la normativa y códigos vigentes.; realizar el análisis de costos y viabilidad económica en el diseño y mantenimiento de sistemas mecánico-sanitarios; e identificar aplicaciones de sistemas contra incendios en edificaciones e infraestructuras.","Diseñar sistemas de instalaciones mecánico-sanitarias, aplicando normativa nacional e internacional vigente logrando instalaciones eficientes y sostenibles","• Fundamentos de instalaciones mecánico-sanitarias
+• Diseño de sistemas de agua potable e hidrónico
+• Diseño de sistemas de aguas servidas
+• Sistemas contra incendios
+• Estrategias de eficiencia energética en instalaciones sanitarias"
+"INS0907","EE4907","Laboratorio de sistemas de fluidos","1","El curso de Laboratorio de sistemas de fluidos aporta en el desarrollo de los siguientes rasgos del plan de estudios: aplicar principios de metrología para medir variables físicas en sistemas electromecánicos; y supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: evaluar el rendimiento y eficiencia de bombas, ventiladores, compresores y turbinas a través de los laboratorios; aplicar metodologías experimentales para la medición y análisis de parámetros en sistemas de fluidos; registrar datos experimentales en bitácoras de laboratorio para su interpretación, elaborando informes técnicos fundamentados; y desarrollar habilidades en el desarme, montaje y mantenimiento de componentes de sistemas de fluidos, asegurando su correcto funcionamiento.","Experimentar con sistemas de fluidos aplicando los principios de la mecánica de fluidos, termodinámica y transferencia de calor analizando la operación de bombas, ventiladores y turbinas hidráulicas","• Curvas características típicas de bombas
+• Compresores reciprocantes y rotativos
+• Ventiladores y turbinas
+• Válvulas y dispositivos auxiliares"
+"INS0908","EE4908","Sistemas de vapor","3","El curso de Sistemas de vapor aporta en el desarrollo del siguiente rasgo del plan de estudios: supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: estudiar los principios de combustión; y procesos de recuperación y tratamiento del agua en sistemas de vapor, con énfasis en el mejoramiento de la eficiencia del sistema; elaborar planos constructivos de sistemas de vapor utilizando herramientas computacionales de vanguardia y aplicando la normativa y códigos vigentes; aplicar técnicas de mantenimiento y gestión de la energía en sistemas de vapor para garantizar su operación eficiente y sostenible; y desarrollar sistemas de vapor garantizando la eficiencia energética y la sostenibilidad.","Diseñar sistemas de vapor garantizando un transporte eficiente de masa y energía, con un enfoque en la gestión del ciclo de vida y el cumplimiento normativo","• Introducción a sistemas de vapor
+• Combustibles y combustión
+• Calderas y distribución de vapor
+• Tipos de usuarios de vapor
+• Tratamiento de aguas de calderas
+• Sistemas de recuperación de condensados
+• Ahorro de energía en sistemas de vapor y proyectos en vapor"
+"INS0909","EE4909","Laboratorio de sistemas de vapor","1","El curso de Laboratorio de sistemas de vapor aporta en el desarrollo de los siguientes rasgos del plan de estudios: aplicar principios de metrología para medir variables físicas en sistemas electromecánicos; y supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los componentes principales de los sistemas de vapor y su funcionamiento; aplicar métodos experimentales para la medición de temperatura, presión y eficiencia en sistemas de combustión y generación de vapor; evaluar el desempeño de las trampas de vapor y su impacto en la eficiencia del sistema; e implementar técnicas de inspección y diagnóstico de calderas y turbinas de vapor en condiciones operativas.","Experimentar con sistemas de vapor aplicando los principios de la mecánica de fluidos, termodinámica y transferencia de calor, promoviendo la eficiencia energética y la sostenibilidad","• Métodos de medición de temperatura en sistemas de vapor
+• Medición de eficiencia en sistemas de combustión y generación de vapor
+• Reconocimiento y funcionamiento de calderas
+• Quemadores y control de combustión
+• Trampas de vapor: identificación y evaluación de eficiencia
+• Análisis de calidad del agua en calderas
+• Inspección y pruebas de seguridad en calderas
+• Diagnóstico de sistemas de vapor en aplicaciones industriales
+• Turbinas de vapor: reconocimiento y evaluación de eficiencia"
+"INS1003","EE5003","Gestión de la energía","3","El curso de Gestión de la energía aporta en el desarrollo del siguiente rasgo del plan de estudios: supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los principales modelos de gestión energética y su aplicación práctica en organizaciones de distintos sectores, con base en el ciclo de mejora continua (PDCA) y buenas prácticas reconocidas a nivel internacional; interpretar los requisitos normativos de la familia ISO 50000, en particular ISO 50001:2018, para establecer, implementar, mantener y mejorar un sistema de gestión de la energía (SGEn) conforme a estándares internacionales; evaluar mejoras en la eficiencia de procesos productivos a través del cálculo de indicadores energéticos, balances de energía y masa, así como oportunidades de conservación de la energía.; y evaluar el potencial de implementación de tecnologías de energía renovable y de reducción de impacto ambiental, considerando su influencia en la huella de carbono y la huella hídrica, desde un enfoque de sostenibilidad energética..","Gestionar la energía desde una perspectiva de la especificación, diseño, instalación, operación y mantenimiento de sistemas electromecánicos que promuevan la eficiencia, el uso racional de la energía, y la reducción del impacto ambiental en instalaciones industriales, comerciales o institucionales a través del uso de herramientas y estándares energéticos internacionales","• Introducción a la Gestión de la Energía
+• Modelos de gestión de energía
+• Auditorías energéticas
+• Balances de energía
+• Balance de masa y análisis exergético
+• Indicadores energéticos (EnPIs)
+• Oportunidades de conservación de energía (OCES)
+• Energías renovables
+• Huella de carbono y gestión de emisiones
+• Huella hídrica"
+"INS1005","EE1102","Seminario de graduación II","4","El curso de Seminario de graduación II aporta en el desarrollo de los siguientes rasgos del plan de estudios: liderar equipos de trabajo promoviendo el pensamiento crítico, la colaboración y la innovación, fomentando una convivencia respetuosa e inclusiva; impulsar el progreso sostenible y la mejora en la calidad de vida del mayor número de personas como objetivos centrales de la ingeniería; y desarrollar habilidades en investigación y presentación de resultados con rigor científico y ético.
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comunicar de manera clara y estructurada los avances técnicos y metodológicos del TFG, mediante informes escritos y presentaciones orales; integrar retroalimentación recibida del profesor y pares para mejorar el desarrollo del proyecto y fortalecer la argumentación técnica; aplicar criterios de calidad técnica, ética profesional y redacción académica en la elaboración del informe final del TFG; y preparar y sustentar la defensa oral del TFG, demostrando dominio del tema, claridad expositiva y capacidad de respuesta ante preguntas críticas.","Evaluar de forma crítica el estado de avance del Trabajo Final de Graduación (TFG) con base en los objetivos planteados, la metodología definida y los resultados obtenidos","• Aplicación de conocimientos del área ciencias básicas
+• Aplicación de conocimientos del área de formación profesional y habilidades interpersonales
+• Aplicación de conocimientos del área comunicación y dibujo
+• Aplicación de conocimientos del area ingeniería mecánica y de materiales
+• Aplicación de conocimientos del área ingeniería eléctrica y electrónica
+• Aplicación de conocimientos del área automática
+• Aplicación de conocimientos del área analisís de datos
+• Aplicación de conocimientos del énfasis"
+"INS1006","EE5006","Gestión del ciclo de vida de instalaciones electromecánicas","3","El curso de Gestión del ciclo de vida de instalaciones electromecánicas aporta en el desarrollo del siguiente rasgo del plan de estudios: gestionar el ciclo de vida de sistemas electromecánicos considerando la viabilidad de su transformación digital
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar el costo del ciclo de vida útil de las instalaciones electromecánicas mediante el uso de herramientas financieras y técnicas homologadas para la toma de decisiones informadas sobre adquisición, operación, mantenimiento y retiro de activos; desarrollar las interrelaciones entre las distintas fases del ciclo de vida de un sistema electromecánico y su impacto en el desempeño global de la instalación a través de la aplicación de los principios del enfoque sistémico propuesto por INCOSE; evaluar los diferentes modelos de gestión de la ingeniería electromecánica, así como los procedimientos de auditoría técnica, para la determinación de su eficacia en la optimización de la disponibilidad, mantenibilidad y confiabilidad de activos; e implementar metodologías estructuradas de análisis causa raíz y gestión del riesgo para la identificación de fallos recurrentes, establecimiento de acciones correctivas y prevención de incidentes que afecten la seguridad o la eficiencia operativa de los activos.","Gestionar de manera integral el ciclo de vida de instalaciones electromecánicas mediante la aplicación de principios de análisis de costo del ciclo de vida (LCCA), mantenimiento basado en condición, diagnóstico y pronóstico de fallos, estándares internacionales como los propuestos por INCOSE, modelos de mantenimiento, auditorías técnicas, análisis causa raíz y gestión del riesgo, para la optimización de la confiabilidad, disponibilidad y eficiencia operativa de los activos enfocado al impacto al negocio","• Introducción y fundamentos
+• Auditorías de mantenimiento
+• Modelos de gestión de mantenimiento
+• Análisis del costo del ciclo de vida
+• Enfoque INCOSE y pensamiento sistémico
+• Transformación digital y mantenimiento
+• Toma de decisiones basada en datos
+• Metodologías de diagnóstico de fallos en equipos industriales
+• Modelos de pronóstico y estimación de vida útil de equipos
+• Optimización del mantenimiento a partir del análisis de datos
+• Análisis causa raíz (RCA)
+• Gestión del riesgo"
+"INS1007","EE5007","Neumática y oleohidráulica","2","El curso de Neumática y oleohidráulica aporta en el desarrollo del siguiente rasgo del plan de estudios: supervisar y gestionar el diseño, especificaciones, instalación, operación y mantenimiento de sistemas electromecánicos, con un enfoque en la gestión eficiente de la energía
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los principios básicos de los sistemas neumáticos y oleohidráulicos; simular circuitos neumáticos y oleohidráulicos; implementar sistemas neumáticos y oleohidráulicos en un entorno de laboratorio; resolver problemas comunes en sistemas neumáticos y oleohidráulicos; y aplicar técnicas de mantenimiento preventivo y correctivo en estos sistemas.","Desarrollar competencias para el diseño, implementación, mantenimiento y diagnóstico de sistemas neumáticos y oleohidráulicos, mediante el estudio de sus principios fundamentales, el uso de herramientas de simulación y la ejecución de prácticas en laboratorio, con el fin de resolver eficientemente problemas técnicos asociados a su operación en entornos industriales","• Introducción y Fundamentos
+• Válvulas y actuadores
+• Electroválvulas y Detectores de Proximidad
+• Métodos de diseño circuitos neumáticos
+• Neumática proporcional y aplicaciones
+• Sistemas Oleohidráulicos"
+"INS1201","EE5201","Sistemas de puesta a tierra","3","El curso de Sistemas de puesta a tierra es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar conceptos, normativas y requisitos técnicos para la puesta a tierra en sistemas eléctricos; determinar la resistividad del terreno mediante métodos normados, interpretando los resultados para su aplicación en el diseño de sistemas de puesta a tierra; diseñar electrodos de puesta a tierra conforme a normativas internacionales, considerando factores como tensiones generadas, sustitución de terreno y protección contra corrosión; y evaluar la integridad y desempeño de los sistemas de puesta a tierra mediante pruebas técnicas, procedimientos adecuados y planes de mantenimiento preventivo.","Diseñar sistemas de puesta a tierra eficientes y seguros, aplicando normativas internacionales, metodologías de cálculo y criterios técnicos para garantizar su correcto funcionamiento en instalaciones eléctricas","• Introducción a los sistemas de Protección y Puesta a Tierra
+• Conceptos básicos y base normativa
+• Resistividad
+• Diseño de electrodos de puesta a tierra
+• Pruebas realizadas a los Electrodos de Puesta a Tierra
+• Puesta a tierra de Equipos
+• Mantenimiento"
+"INS1202","EE5202","Sistemas contra incendios","3","El curso de Sistemas contra incendios es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los fundamentos de los sistemas contra incendios y su marco normativo; diseñar sistemas de protección contra incendios con base en la normativa NFPA y regulaciones nacionales; aplicar métodos de inspección, prueba y mantenimiento en sistemas de protección contra incendios; y desarrollar proyectos de diseño de sistemas contra incendios integrando normativa, eficiencia y seguridad.","Desarrollar sistemas de protección contra incendios en edificaciones, con un enfoque en la eficiencia energética, de acuerdo con la normativa vigente","• Introducción a los sistemas contra incendios
+• Fundamentos del fuego y su comportamiento
+• Sistemas de detección y alarma contra incendios
+• Sistemas de bombeo para protección contra incendios
+• Redes de tuberías y distribución de agua
+• Sistemas de tuberías verticales y mangueras
+• Hidrantes y protección exterior
+• Sistemas de rociadores automáticos
+• Sistemas de pulverización de agua
+• Sistemas de espumas contra incendios
+• Inspección, pruebas y mantenimiento
+• Integración con sistemas electromecánicos"
+"INS1203","EE5203","Edificios inteligentes","3","El curso de Edificios inteligentes es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios
+Los aprendizajes que los estudiantes desarrollarán en el curso son: diseñar sistemas de control de acceso, seguridad electrónica, cableado estructurado y redes; integrar sistemas de climatización, iluminación, transporte, seguridad y energía que se integren con plataformas de gestión de edificios (BMS); y gestionar la infraestructura para el monitoreo y control de edificios inteligentes.","Desarrollar sistemas inteligentes integrados para edificios, optimizando la eficiencia energética, la gestión, la seguridad, el confort y la funcionalidad, mediante la aplicación de tecnologías de vanguardia y el cumplimiento de normativas vigentes","• Fundamentos de los edificios inteligentes y normativa
+• Sistemas de control de acceso y flujo de personas
+• Seguridad electrónica y ciberseguridad
+• Infraestructura de cableado y redes de comunicación
+• Control de ambiente y eficiencia energética
+• Plataformas BMS y monitoreo integrado
+• Integración de sistemas y tecnologías emergentes"
+"AER0801","EE6801","Sistemas de la aeronave","3","El curso de Sistemas de la aeronave aporta en el desarrollo del siguiente rasgo del plan de estudios: gestionar el ciclo de vida de las aeronaves, optimizando su mantenimiento y eficiencia operativa
+Los aprendizajes que los estudiantes desarrollarán en el curso son: identificar los principales sistemas que integran una aeronave describiendo sus funciones dentro del conjunto del vehículo aéreo; analizar el principio de funcionamiento y los componentes fundamentales de los sistemas eléctricos, neumáticos e hidráulicos de una aeronave; evaluar el desempeño y operación de los sistemas de aire acondicionado, combustión y presurización en distintas fases de vuelo; y comprender los mecanismos de los sistemas de seguridad y protección de la aeronave, y su papel en la prevención de fallas y emergencias.","Evaluar la estructura y funcionamiento de los sistemas que conforman una aeronave, mediante el estudio de sus componentes, principios de operación y su integración en el conjunto aeronáutico","• Introducción a los sistemas de la aeronave
+• Sistemas eléctricos y electrónicos en aeronaves
+• Sistemas neumáticos de la aeronave
+• Sistema hidráulico de la aeronave
+• Sistema de combustión y combustible para aeronaves
+• Sistema de aire acondicionado y presurización para aeronaves
+• Sistemas de protección y seguridad en aeronaves
+• Integración de sistemas en la aeronave"
+"AER0807","EE6807","Materiales en aeronáutica","2","El curso de Materiales en aeronáutica aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar los principios de la mecánica, integrando modelado y simulación para evaluar el comportamiento de materiales, estructuras y mecanismos en la aeronave
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar las propiedades mecánicas, térmicas y químicas de los materiales aeronáuticos, interpretando su desempeño frente a cargas y condiciones reales de operación; simular el comportamiento estructural de materiales aplicados a componentes aeronáuticos, considerando esfuerzos, deformaciones, fatiga y ambientes exigentes; seleccionar materiales adecuados para distintos sistemas de aeronaves, justificando la decisión mediante criterios técnicos, normativos y de desempeño; y diagnosticar posibles fallas o limitaciones en materiales utilizados en aeronáutica, proponiendo soluciones fundamentadas en análisis mecánico y modelado predictivo.","Analizar el comportamiento de materiales metálicos, compuestos y no metálicos utilizados en aeronaves, aplicando principios de la mecánica e integrando herramientas de modelado y simulación, con el fin de sustentar decisiones técnicas sobre su selección, uso y evaluación estructural","• Introducción a los materiales aeronáuticos
+• Materiales metálicos ferrosos y no ferrosos
+• Materiales compuestos y no metálicos
+• Corrosión en materiales aeronáuticos
+• Dispositivos de fijación en estructuras aeronáuticas
+• Transmisiones mecánicas en aeronaves
+• Sistemas de mando mecánico
+• Materiales en sistemas eléctricos de aeronaves
+• Otros elementos mecánicos en aeronáutica"
+"AER0808","EE6808","Metrología aeronáutica","1","El curso de Metrología aeronáutica aporta en el desarrollo del siguiente rasgo del plan de estudios: asegurar la seguridad aeronáutica y la aeronavegabilidad, aplicando normativa internacional
+Los aprendizajes que los estudiantes desarrollarán en el curso son: reconocer los principios de trazabilidad, incertidumbre y normativas metrológicas aplicables al entorno aeronáutico; utilizar instrumentos de medición para verificar variables físicas en componentes y sistemas de aeronaves; calibrar instrumentos empleados en la medición de variables eléctricas, térmicas, geométricas, dinámicas y de fluidos; y documentar procesos de medición y calibración siguiendo criterios de trazabilidad, exactitud y conformidad normativa.","Aplicar procedimientos de medición de variables físicas y de calibración de instrumentos utilizados en sistemas aeronáuticos, conforme a normas metrológicas y regulaciones técnicas del sector aeronáutico","• Fundamentos de la metrología aeronáutica
+• Medición geométrica aplicada a aeronaves
+• Medición de variables eléctricas en aeronáutica
+• Termometría y pirometría aeronáutica
+• Metrología de fluidos en sistemas aeronáuticos
+• Metrología de vibraciones y dinámica
+• Medición óptica y de alineación
+• Medición de condiciones ambientales
+• Medición de tiempo y frecuencia
+• Gestión metrológica y documentación técnica"
+"AER0901","EE6901","Aviónica","3","El curso de Aviónica aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar sistemas de control automático de vuelo, aplicando conocimientos en aviónica y dinámica de vuelo
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los principios y componentes de los sistemas aviónicos, clasificados en navegación, control, visualización y telecomunicaciones; identificar la ubicación física de los sistemas aviónicos en diferentes zonas de la aeronave; estudiar los sistemas de navegación y control de vuelo para la comprensión de su funcionamiento detallado, fallas típicas y normativa asociada; y evaluar sistemas de gestión y control de vuelo con sus rutinas de mantenimiento.","Analizar los sistemas aviónicos, con énfasis en la arquitectura electrónica, los sistemas de navegación, comunicación, control automático de vuelo, y el cumplimiento de normativas internacionales aplicables","• Introducción a la Aviónica
+• Sistemas de Generación y Distribución de Energía
+• Sistemas de iluminación
+• Sistemas  de comunicación
+• Sistemas de Navegación por Satélite
+• Sistemas de referencia inercial y navegación inercial
+• Sistemas de navegación basados en radio
+• Sistema de Gestión de Vuelo (FMS)
+• Sistemas de Control de Vuelo Primarios
+• Sistemas de Control de Vuelo Secundarios
+• Sistemas automáticos de estabilización de vuelo
+• Sistemas de Monitoreo y Diagnóstico
+• Normativas y Regulaciones Internacionales"
+"AER0902","EE6902","Aerodinámica","3","El curso de Aerodinámica aporta en el desarrollo del siguiente rasgo del plan de estudios: comprender los principios fundamentales de aerodinámica y sistemas de propulsión
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los fundamentos de la aerodinámica y su aplicación en el diseño y operación de aeronaves; aplicar modelos matemáticos y herramientas computacionales en el análisis aerodinámico; e integrar conocimientos de aerodinámica en el estudio del desempeño de aeronaves.","Aplicar los fundamentos de la aerodinámica, para el diseño, evaluación y optimización de aeronaves en diversos entornos operacionales","• Introducción a la aerodinámica
+• Dinámica de fluidos aplicada a aeronaves
+• Flujo compresible e incompresible
+• Principios de sustentación y arrastre
+• Perfiles aerodinámicos y sus características
+• Propulsión aeronáutica y eficiencia energética
+• Interacción aerodinámica-propulsión
+• Aplicaciones computacionales en aerodinámica
+• Optimización aerodinámica
+• Análisis de casos en aerodinámica aplicada"
+"AER0903","EE6903","Dinámica de vuelo","3","El curso de Dinámica de vuelo aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar sistemas de control automático de vuelo, aplicando conocimientos en aviónica y dinámica de vuelo
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los sistemas de referencia y los ángulos de Euler para describir con precisión la actitud de la aeronave y su comportamiento en el espacio tridimensional; analizar las condiciones de equilibrio y estabilidad estática (longitudinal, lateral y direccional) mediante el estudio del trimado y las fuerzas aerodinámicas actuantes en la aeronave; resolver problemas que involucren ecuaciones de movimiento de aeronaves rígidas, tanto en su forma completa como en versiones linealizadas y de orden reducido, aplicando métodos como funciones de transferencia y representación en espacio de estados; y evaluar la dinámica longitudinal, lateral y direccional de la aeronave, identificando modos de respuesta, cualidades de vuelo y características de maniobrabilidad bajo diversas condiciones de operación.","Analizar los principios fundamentales de la dinámica de vuelo y su aplicación en el diseño y control de aeronaves","• Introducción a dinámica de vuelo
+• Sistemas de referencia y notación
+• Equilibrio estático y ajuste
+• Ecuaciones de movimiento
+• Métodos de solución para las ecuaciones de movimiento
+• Dinámica longitudinal, lateral y direccional
+• Maniobrabilidad
+• Estabilidad
+• Modelado de aerodinámica"
+"AER0906","EE6906","Análisis mecánico de estructuras de la aeronave","3","El curso de Análisis mecánico de estructuras de la aeronave aporta en el desarrollo del siguiente rasgo del plan de estudios: aplicar los principios de la mecánica, integrando modelado y simulación para evaluar el comportamiento de materiales, estructuras y mecanismos en la aeronave
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los principios básicos de elasticidad y mecánica estructural aplicados a aeronaves; aplicar métodos de análisis estructural, incluyendo el análisis de vigas, placas y estructuras de fuselaje; evaluar la respuesta de materiales y componentes estructurales bajo cargas típicas en aviones; y utilizar herramientas computacionales para el modelado y predicción del comportamiento estructural de la aeronave.","Analizar estructuras de la aeronave mediante la aplicación de principios de elasticidad y mecánica estructural, empleando métodos analíticos y computacionales para evaluar el comportamiento de componentes bajo cargas típicas en aviones","• Introducción a la teoría de elasticidad
+• Inestabilidad Estructural
+• Introducción al análisis matricial
+• Cargas típicas de aeronaves
+• Estructuras de aeronaves"
+"AER0908","EE6908","Seguridad aeronáutica y aeronavegabilidad","3","El curso de Seguridad aeronáutica y aeronavegabilidad aporta en el desarrollo del siguiente rasgo del plan de estudios: asegurar la seguridad aeronáutica y la aeronavegabilidad, aplicando normativa internacional
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los requisitos regulatorios nacionales e internacionales para la seguridad aeronáutica y aeronavegabilidad; evaluar procedimientos de gestión de seguridad operacional y mantenimiento aeronáutico para asegurar la conformidad normativa; aplicar técnicas de investigación de accidentes e incidentes aeronáuticos, considerando factores humanos, técnicos y ambientales; e implementar prácticas adecuadas para el manejo seguro de mercancías peligrosas y la protección física en contextos aeroportuarios.","Proporcionar conocimientos fundamentales sobre seguridad aeronáutica y aeronavegabilidad, enfatizando la aplicación práctica de estándares regulatorios, gestión de riesgos y procedimientos operacionales para garantizar la seguridad de las operaciones aéreas","• Conceptos Fundamentales
+• Gestión de la Seguridad
+• Aeronavegabilidad
+• Investigación de Accidentes e Incidentes
+• Mercancías Peligrosas
+• Protección Ambiental
+• Seguridad Física de la Aviación
+• Auditoría y Supervisión"
+"AER1001","EE7001","Gestión del ciclo de vida de la aeronave","2","El curso de Gestión del ciclo de vida de la aeronave aporta en el desarrollo del siguiente rasgo del plan de estudios: gestionar el ciclo de vida de las aeronaves, optimizando su mantenimiento y eficiencia operativa
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar las etapas del ciclo de vida de una aeronave, identificando su impacto en la operación y mantenimiento; evaluar metodologías de mantenimiento aeronáutico y estrategias para la optimización su eficiencia; aplicar regulaciones y normativas aeronáuticas en la gestión de mantenimiento y operación de aeronaves; e integrar herramientas de gestión para la toma de decisiones en el mantenimiento de aeronaves.","Gestionar el ciclo de vida de las aeronaves, optimizando su mantenimiento y eficiencia operativa, a través del análisis de estrategias de gestión, regulaciones aeronáuticas y metodologías de mantenimiento","• Introducción a la gestión del ciclo de vida de la aeronave
+• Estrategias de mantenimiento aeronáutico
+• Normativas y regulaciones en la gestión de aeronaves
+• Análisis del costo del ciclo de vida
+• Enfoque INCOSE y pensamiento sistémico
+• Aplicación de tecnologías en la optimización del mantenimiento
+• Herramientas computacionales en la gestión de aeronaves
+• Estudio de casos en mantenimiento y operación de aeronaves"
+"AER1002","EE7002","Sistemas de propulsión","3","El curso de Sistemas de propulsión aporta en el desarrollo del siguiente rasgo del plan de estudios: comprender los principios fundamentales de aerodinámica y sistemas de propulsión
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender la química de la combustión y la mecanica de los fluidos implicados en el funcionamiento de una turbina de reacción para sistemas de propulsión aeronáutica; explicar los principios aerodinámicos y termodinámicos que rigen la propulsión de aeronaves; describir los principios de funcionamiento, componentes y tipos de sistemas de propulsión aeronáutica, con énfasis en turbinas de reacción; y analizar las especificaciones técnicas, subsistemas y su integración con otros sistemas de la aeronave.","Comprender los principios fundamentales de sistemas de propulsión de aeronaves","• Introducción de los sistemas de propulsión
+• Mecánica y termodinámica del flujo de fluidos
+• Etapas de compresión de aire
+• Enfriamiento de la turbina
+• Combustión en turbinas
+• Sistema de control de combustible de las turbinas
+• Montaje y conexiones del motor con el avión
+• Lectura de hojas de especificaciones técnicas"
+"AER1003","EE7003","Control automático de vuelo","3","El curso de Control automático de vuelo aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar sistemas de control automático de vuelo, aplicando conocimientos en aviónica y dinámica de vuelo
+Los aprendizajes que los estudiantes desarrollarán en el curso son: diseñar sistemas de control para diferentes tipos de UAVs (ummaned aerial vehicles) utilizando software especializado; implementar y probar sistemas de control en plataformas de hardware reales; aplicar conceptos de aeronavegabilidad y normativas en el diseño de sistemas de control; e integrar sistemas GPS y de comunicación en UAVs para mejorar la navegación y coordinación.","Desarrollar sistemas de control de vuelo para vehículos aéreos no tripulados, aplicando conocimientos teóricos y prácticos, con un enfoque especial en la planificación de rutas, navegación y control autónomo","• Introducción al control automático de vuelo
+• Modelado dinámico de aeronaves
+• Análisis de estabilidad y control
+• Diseño de controladores automáticos
+• Control de trayectoria
+• Planificación de Trayectorias
+• Aeronavegabilidad y normativas
+• Sistemas GPS y Navegación
+• Comunicación entre UAVs y aviones
+• Pruebas y Validación"
+"AER1201","EE7201","Infraestructura y servicios aeroportuarios","3","El curso de Infraestructura y servicios aeroportuarios es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios
+Los aprendizajes que los estudiantes desarrollarán en el curso son: identificar los principales componentes de la infraestructura aeroportuaria y su impacto en la operación aérea; evaluar la eficiencia de los servicios aeroportuarios en función de la normativa y estándares internacionales; analizar los factores de seguridad y sostenibilidad en la planificación y operación de aeropuertos; y aplicar metodologías para la optimización del diseño y gestión de aeropuertos.","Comprender los principios fundamentales de la infraestructura y los servicios aeroportuarios, analizando la gestión y operación de aeropuertos, que garantice la eficiencia y seguridad en el transporte aéreo","• Introducción a la infraestructura y servicios aeroportuarios
+• Componentes de la infraestructura aeroportuaria
+• Normativas y regulaciones aeroportuarias
+• Seguridad y sostenibilidad en la operación aeroportuaria
+• Planificación y gestión de aeropuertos
+• Sistemas de navegación y control del tráfico aéreo
+• Evaluación de la eficiencia en la operación aeroportuaria
+• Optimización del diseño de aeropuertos
+• Tecnologías emergentes en la infraestructura aeroportuaria
+• Análisis de casos en planificación y gestión aeroportuaria"
+"AER1202","EE7202","Telemetría y comunicaciones para aeronáutica","3","El curso de Telemetría y comunicaciones para aeronáutica es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar la evolución histórica, el contexto estratégico y los tipos de comunicación utilizados en la aviación moderna; comprender los principios fundamentales de transmisión y estructuración de datos, incluyendo el concepto de tramas, codificación y flujo de información; examinar los principales protocolos, normativas y organismos que regulan las comunicaciones aeronáuticas a nivel internacional; y evaluar el papel de la comunicación en la integración de sistemas aviónicos contemporáneos y su proyección ante desafíos tecnológicos futuros como UAVs y redes colaborativas.","Analizar de forma global el papel de las comunicaciones y la telemetría en los sistemas aeronáuticos, considerando sus fundamentos, funciones, arquitectura y normativa, como parte esencial en la operación segura y eficiente de aeronaves","• Panorama general de las comunicaciones aeronáuticas
+• Fundamentos físicos y conceptuales de la comunicación
+• Estructura general de un sistema de telemetría
+• Protocolos y normas en aviación
+• Comunicación y aviónica moderna
+• Nuevas tecnologías y desafíos"
+"AER1203","EE7203","Manufactura en la cadena de valor aeroespacial","3","El curso de Manufactura en la cadena de valor aeroespacial es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar técnicas de administración industrial como secuenciamiento, determinación de capacidad productiva, gestión de cuellos de botella y metodologías Lean en la manufactura aeroespacial; implementar sistemas de gestión de calidad basados en normativas AS9100, AS9110, AS9120 y certificaciones NADCAP; asegurar el cumplimiento de requisitos regulatorios de los entes DGAC, FAA, EASA, así como normativas ITAR y EAR en los procesos productivos; y gestionar proyectos de manufactura aeroespacial aplicando metodologías específicas como AS9102 (FAI) y AS9145 (APQP).","Gestionar eficientemente los procesos de manufactura en la industria aeroespacial, aplicando herramientas de administración industrial, asegurando la calidad según estándares internacionales y cumpliendo los requisitos regulatorios del sector","• Administración Industrial en procesos aeroespaciales
+• Sistemas de gestión de calidad aeroespacial
+• Requisitos regulatorios en manufactura aeroespacial
+• Gestión de proyectos bajo estándares aeroespaciales"
+"SCF0801","EE8104","Ingeniería de sistemas","3","El curso de Ingeniería de sistemas aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar sistemas complejos que integren componentes físicos y digitales
+Los aprendizajes que los estudiantes desarrollarán en el curso son: definir los requisitos y la arquitectura de los sistemas considerando las necesidades y expectativas de los interesados; integrar modelos de componentes físicos y cibernéticos en un sistema coherente y funcional; verificar el diseño del sistema o sus partes por medio de simulaciones; y colaborar en equipos de trabajo multidisciplinarios en el análisis, diseño y gestión de sistemas.","Integrar principios, metodologías y herramientas de la ingeniería de sistemas en el análisis, diseño y gestión de sistemas, colaborando con equipos de trabajo multidisciplinarios","• Introducción a la Ingeniería de Sistemas
+• Trabajo colaborativo en equipos multidisciplinarios
+• Definición y análisis de requisitos
+• Diseño de la arquitectura
+• Modelado, simulación y verificación del Diseño"
+"SCF0806","EE0806","Máquinas y mecanismos","3","El curso de Máquinas y mecanismos aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar sistemas de robótica para aplicaciones industriales y de servicios 
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar los principios de la cinemática de mecanismos para la comprensión de la geometría de los movimientos y de las relaciones entre el desplazamiento y el tiempo; discernir la correcta elección de componentes mecánicos y su dimensionamiento para lograr un movimiento específico, mediante los métodos de diseño de mecanismos; aplicar los principios de la cinética para el análisis dinámico y diseño de máquinas y sistemas mecánicos; y analizar el comportamiento dinámico de mecanismos y sistemas mecánicos, considerando fuerzas y fenómenos que afectan su desempeño para su eventual optimización, mediante herramientas de modelado y simulación.","","• Introducción a mecanismos
+• Posición, postura y desplazamiento
+• Velocidad
+• Aceleración
+• Análisis de fuerzas estáticas
+• Análisis de fuerzas dinámicas
+• Diseño de levas
+• Engranajes rectos
+• Sistemas espaciales y robótica"
+"SCF0807","EE8807","Aplicaciones de sistemas embebidos","3","El curso de Aplicaciones de sistemas embebidos aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar aplicaciones de sistemas embebidos integrados en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: programar microcontroladores en lenguaje C++; implementar sistemas operativos en tiempo real (RTOS), en microcontroladores; y aplicar FPGAs para el control y procesamiento de señales digitales.","Desarrollar aplicaciones de sistemas embebidos basados en microcontroladores y arreglo de compuertas lógicas programable en campo (FPGA)","• Introducción a sistemas embebidos
+• Programación en C++ para Sistemas Embebidos
+• Periféricos en ARM Cortex-M
+• Comunicación inalámbrica y IoT
+• Sistemas Operativos en Tiempo Real (RTOS)
+• Aplicaciones Embebidas Basadas en FPGA"
+"SCF0808","EE8808","Fundamentos de ciberseguridad","1","El curso de Fundamentos de ciberseguridad aporta en el desarrollo del siguiente rasgo del plan de estudios: conocer e identificar las estrategias fundamentales de ciberseguridad para proteger sistemas y redes
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar medidas de ciberseguridad en el diseño de sistemas ciberfísicos, garantizando la protección de datos y la integridad de las aplicaciones.; implementar protocolos de seguridad en sistemas ciberfísicos, asegurando la confiabilidad y resiliencia de los dispositivos y redes; y desarrollar soluciones de protección mediante programación y criptografía, aplicando técnicas de cifrado, automatización de tareas de seguridad y herramientas para la detección y mitigación de riesgos.","Comprender los principios fundamentales de la ciberseguridad aplicados al diseño y desarrollo de sistemas ciberfísicos.","• Introducción a la ciberseguridad
+• Redes y protocolos
+• Programación para la ciberseguridad
+• Amenazas y vulnerabilidades
+• Criptografía
+• Seguridad en redes
+• Seguridad en aplicaciones
+• Gestión de incidentes
+• Cumplimiento y normativas"
+"SCF0901","EE8901","Modelado numérico y simulación computacional","3","El curso de Modelado numérico y simulación computacional aporta en el desarrollo del siguiente rasgo del plan de estudios: modelar y simular sistemas ciberfísicos con herramientas computacionales
+Los aprendizajes que los estudiantes desarrollarán en el curso son: analizar ecuaciones diferenciales ordinarias y parciales aplicadas a sistemas electromecánicos; diseñar simulaciones numéricas considerando condiciones iniciales y de frontera apropiadas; evaluar resultados de simulaciones mediante estudios de caso específicos; y validar modelos numéricos a través de comparaciones con soluciones analíticas o experimentales.","Aplicar métodos numéricos avanzados para el modelado y simulación computacional de sistemas electromecánicos complejos","• Introducción al modelado computacional
+• Modelado con ecuaciones diferenciales ordinarias (ODEs)
+• Introducción a ecuaciones en derivadas parciales (PDEs)
+• Simulación numérica por elementos y volúmenes discretos
+• Casos de estudio"
+"SCF0902","EE8902","Aplicaciones de circuitos integrados","2","El curso de Aplicaciones de circuitos integrados aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar sistemas complejos que integren componentes físicos y digitales
+Los aprendizajes que los estudiantes desarrollarán en el curso son: interpretar hojas de datos de circuitos integrados; diseñar aplicaciones funcionales que integren múltiples circuitos integrados en un sistema; y validar el diseño mediante herramientas de simulación.","Desarrollar sistemas complejos mediante el uso de circuitos integrados","• Introducción a los circuitos integrados con componentes comerciales salidos del estante (COTS)
+• Regulación y distribución de energía
+• Manejo de señales analógicas
+• Sensado y monitoreo
+• Controladores y drivers
+• Interfaz y comunicación
+• Integración de sistemas"
+"SCF0903","EE8903","Aplicaciones de Inteligencia Artificial","3","El curso de Aplicaciones de Inteligencia Artificial aporta en el desarrollo del siguiente rasgo del plan de estudios: automatizar y digitalizar procesos industriales y de servicios   
+Los aprendizajes que los estudiantes desarrollarán en el curso son: aplicar técnicas de representación del conocimiento y razonamiento simbólico para la toma de decisiones en sistemas ciberfísicos; diseñar modelos inteligentes mediante lógica difusa, algoritmos evolutivos y aprendizaje automático; implementar soluciones de inteligencia artificial en plataformas embebidas con restricciones de cómputo; y evaluar el desempeño, la seguridad y la confiabilidad de modelos inteligentes en contextos industriales.","Desarrollar soluciones inteligentes para sistemas ciberfísicos mediante técnicas de inteligencia artificial simbólica y conexionista","• Fundamentos de Inteligencia Artificial para sistemas ciberfísicos
+• Representación del conocimiento y toma de decisiones
+• Control Inteligente y sistemas Difusos
+• Algoritmos evolutivos y optimización inteligente
+• Aprendizaje Automático en Sistemas Ciberfísicos
+• Redes neuronales y Aprendizaje Profundo
+• Implementación de IA en Plataformas Embebidas
+• Evaluación, Seguridad y Ética de Sistemas Inteligentes"
+"SCF0906","EE8906","Robótica","3","El curso de Robótica aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar sistemas de robótica para aplicaciones industriales y de servicios 
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los principios teórico y prácticos de la robótica industrial; programar robots industriales utilizando lenguajes de programación específicos; analizar cadenas cinemáticas e inversas; aplicar técnicas de control automático en sistemas robóticos; y desarrollar habilidades prácticas en la configuración y operación de robots.","Desarrollar los principios teóricos y prácticos de la robótica, integrando conocimientos de mecánica, electrónica, programación y control","• Introducción a la Robótica Industrial
+• Cinemática directa
+• Cinemática inversa
+• Dinámica de robots
+• Programación de robots
+• Sensores y Actuadores
+• Control Automático en Robótica"
+"SCF0907","EE8907","Automatización y digitalización industrial","3","El curso de Automatización y digitalización industrial aporta en el desarrollo del siguiente rasgo del plan de estudios: automatizar y digitalizar procesos industriales y de servicios   
+Los aprendizajes que los estudiantes desarrollarán en el curso son: desarrollar soluciones de automatización bajo metodologías estandarizadas tales como:  IEC60848, IEC 61499, IEC 62061; configurar redes industriales para su implementación en sistemas reales; diseñar sistemas SCADA para la supervisión y control de procesos industriales con sistemas de alarmas según la normativa IEC 62682; integrar tecnologías IoT con sistemas SCADA y otros dispositivos industriales bajo OPC UA, IEC 62541; e implementar estrategias de ciberseguridad en redes y sistemas SCADA para proteger los sistemas industriales bajo la norma IEC 62443.","Analizar sistemas complejos de automatización y digitalización industrial, con un enfoque en redes industriales y sistemas SCADA, integrando componentes físicos y digitales para optimización y mejora de la eficiencia en entornos industriales","• Introducción a la Digitalización Industrial
+• Redes Industriales
+• Supervisión, Control y Adquisición de Datos (SCADA)
+• Integración de Sistemas SCADA
+• Análisis de Datos en Sistemas Industriales
+• Internet de las Cosas (IoT) Industrial
+• Ciberseguridad en Sistemas Industriales
+• Aplicaciones Avanzadas"
+"SCF1001","EE9001","Taller de integración de sistemas","2","El curso de Taller de integración de sistemas aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar sistemas complejos que integren componentes físicos y digitales
+Los aprendizajes que los estudiantes desarrollarán en el curso son: diseñar e implementar un sistema ciberfísico funcional con base en requerimientos específicos; integrar hardware y software en una arquitectura robusta utilizando prácticas de diseño modular; validar el funcionamiento del sistema mediante pruebas de integración, simulaciones y mediciones en entorno controlado; documentar técnica y funcionalmente el sistema, considerando buenas prácticas de ingeniería; y desarrollar habilidades de trabajo en equipo, comunicación técnica y gestión ágil de proyectos.","Desarrollar un sistema ciberfísico funcional desde cero mediante la integración práctica de conocimientos en control, electrónica, programación y documentación técnica, fomentando el trabajo en equipo y la gestión ágil de proyectos","• Fase de planificación del proyecto
+• Diseño del sistema
+• Implementación
+• Pruebas y validación
+• Documentación del sistema"
+"SCF1002","EE9002","Diseño de interfases humano-máquina","3","El curso de Diseño de interfases humano-máquina aporta en el desarrollo del siguiente rasgo del plan de estudios: automatizar y digitalizar procesos industriales y de servicios   
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los fundamentos de la interacción humano-máquina y su importancia en la ingeniería; aplicar principios de diseño centrado en el usuario para el desarrollo de interfases físicas y digitales; implementar prototipos funcionales de interfases utilizando tecnologías de entrada/salida y plataformas embebidas; evaluar la usabilidad y accesibilidad de interfases mediante técnicas de prueba e iteración; e integrar interfases en sistemas ciberfísicos considerando restricciones técnicas y humanas.","Diseñar interfases humano-máquina funcionales, usables y centradas en el usuario, que integren tecnologías de hardware y software para su aplicación en sistemas ciberfísicos","• Introducción a la interacción humano-computadora (HCI)
+• Diseño centrado en el usuario
+• Modelos de interacción y diseño conceptual
+• Diseño de controles y dispositivos de entrada/salida
+• Diseño de interfaces gráficas y móviles
+• Evaluación de usabilidad
+• Interacción en sistemas ciberfísicos
+• Aspectos humanos, sociales y éticos"
+"SCF1007","EE9007","Visión de máquina","3","El curso de Visión de máquina aporta en el desarrollo del siguiente rasgo del plan de estudios: desarrollar aplicaciones de Inteligencia Artificial integrada en sistemas electromecánicos
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los fundamentos teóricos de la visión de máquina y el procesamiento de imágenes; desarrollar habilidades prácticas en el uso de herramientas y software de visión artificial, gratuito como como OpenCV y TensorFlow o con software con licencia como MATLAB o Vision Builder de National Instrument; implementar algoritmos de procesamiento de imágenes y aprendizaje automático para la detección y reconocimiento de objetos; integrar sistemas de visión de máquina con hardware y software con otros sistemas; y evaluar y optimizar el rendimiento de los sistemas de visión de máquina en aplicaciones reales.","Desarrollar sistemas de visión de máquina, utilizando técnicas avanzadas de procesamiento de imágenes y aprendizaje automático, con aplicaciones prácticas en sistemas ciberfísicos","• Introducción a la Visión de Máquina
+• Fundamentos del procesamiento de imágenes
+• Morfología Matemática
+• Detección de bordes y análisis de formas
+• Detección y clasificación de objetos
+• Herramientas y tecnologías de Visión de Máquina
+• Casos de estudio y aplicaciones avanzadas"
+"SCF1201","EE9201","Sistemas autónomos y multiagente","3","El curso de Sistemas autónomos y multiagente es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los principios fundamentales de los sistemas inteligentes y su integración en arquitecturas ciberfísicas; diseñar agentes inteligentes individuales y multiagente con capacidades de razonamiento y cooperación; implementar modelos simbólicos, de planificación y aprendizaje en prototipos funcionales; y evaluar el desempeño de sistemas inteligentes en escenarios distribuidos con restricciones dinámicas.","Diseñar sistemas ciberfísicos inteligentes mediante el uso de modelos de agentes autónomos, razonamiento simbólico, planificación y aprendizaje adaptativo, con el fin de desarrollar soluciones distribuidas y adaptativas en contextos reales","• Fundamentos de sistemas inteligentes
+• Modelos de Agentes Inteligentes
+• Sistemas multiagente (MAS)
+• Razonamiento simbólico y planificación
+• Aprendizaje Autónomo y Adaptación
+• Modelado Inteligente en tiempo real
+• Integración en sistemas ciberfísicos"
+"SCF1202","EE9202","Análisis predictivo de series temporales","3","El curso de Análisis predictivo de series temporales es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios
+Los aprendizajes que los estudiantes desarrollarán en el curso son: comprender los fundamentos de las series temporales y su aplicación en la predicción de fallos; desarrollar modelos predictivos utilizando técnicas de suavizado, regresión, ARIMA, redes neuronales y sistemas de inferencia difusa; implementar y optimizar modelos en entornos MATLAB y Python; integrar modelos predictivos en sistemas IoT para la monitorización y detección de fallos en tiempo real; y evaluar el rendimiento de los modelos predictivos y realizar ajustes para mejorar su precisión.","Implementar modelos predictivos para la detección de fallos basados el análisis de series temporales","• Conceptos básicos de series temporales
+• Herramientas básicas de predicción
+• Descomposición de series temporales
+• Métodos de suavizado
+• Metodología ARIMA
+• Modelos basados en redes neuronales artificiales
+• Integración en sistemas ciberfísicos"
+"SCF1203","EE9302","Desarrollo de software para aplicaciones críticas","3","El curso de Desarrollo de software para aplicaciones críticas es del tipo electivo y por esta razón no se incluye en los rasgos del plan de estudios
+Los aprendizajes que los estudiantes desarrollarán en el curso son: diseñar soluciones de software robustas aplicando estrategias de programación defensiva y tolerancia a fallos; implementar módulos funcionales utilizando herramientas y plataformas embebidas con soporte en tiempo real; verificar el comportamiento del software mediante pruebas automatizadas, análisis estático y simulación; y evaluar el cumplimiento de normas y estándares internacionales relevantes según el dominio de aplicació.","Desarrollar software confiable para aplicaciones críticas, incorporando principios de diseño seguro, verificación rigurosa y cumplimiento normativo en entornos embebidos y ciberfísicos","• Introducción a sistemas software críticos
+• Modelado y especificación de requisitos
+• Arquitecturas y diseño seguro
+• Programación robusta
+• Sistemas operativos en tiempo real (RTOS)
+• Verificación, validación y pruebas
+• Normativas y certificación
+• Ciclo de certificación y documentación
+• Sistemas de control de vuelo (autopilotos, gestión de potencia)
+• Sistemas médicos embebidos (bombas de infusión, marcapasos)
+• Sistemas automotrices seguros (ADAS, frenos ABS)
+• Automatización industrial con redundancia y diagnóstico
+• Análisis de fallas y mitigación: estudio de fallos históricos (Therac-25, Ariane 5, Toyota)"
