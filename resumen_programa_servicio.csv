@@ -1,10 +1,12 @@
 "id","codigo","nombre","creditos","descripcion","objetivo","contenidos"
-"CIB0001","MA0101","Matemática General","2","El curso Matemática General aborda los contenidos matemáticos básicos que le permitan enriquecer su formación matemática como persona estudiante universitaria para un desempeño pertinente en los cursos que deberá llevar posteriormente, tanto en matemática como en otros que forman parte de su plan de estudios. 
+"CIB0001","MA0101","Matemática General","2","El curso Matemática General aborda los contenidos matemáticos básicos que le permitan enriquecer su formación matemática como persona estudiante universitaria para un desempeño pertinente en los cursos que deberá llevar posteriormente, tanto en matemática como en otros que forman parte de su plan de estudios.
 Se desarrollan los temas no solo enfatizando los aspectos prácticos y de cálculo sino, también, teóricos (conceptuales), con lo cual se da un sustento sobre el por qué y el cómo de los resultados utilizados. Asimismo, de manera complementaria a los contenidos, el curso contribuye a la constitución de su perfil profesional dado que la temática y las estrategias le forman en el desarrollo de habilidades y destrezas, tales como la organización, la disciplina, la creación de estructuras mentales de pensamiento abstracto y el razonamiento matemático en general. 
-A lo largo del curso se trabajan de forma transversal los tópicos de geometría, ecuaciones e inecuaciones. Por ejemplo, en la resolución de problemas se incorporan situaciones en las que se requiere el cálculo de áreas y volúmenes, entre otros; al obtener dominio real de funciones, el signo de una función y en el cálculo de imágenes o preimágenes se refuerza la resolución de ecuaciones e inecuaciones.","Desarrollar estructuras de razonamiento lógico matemático, algebraico y geométrico para aplicarlos en la resolución de problemas que involucren el concepto de función y habilidades que le permitirán respetar a los demás, integrarse con confianza en grupos de trabajo y elaborar de manera honesta, crítica y creativa las actividades del curso, mostrando interés permanente en la búsqueda de nuevos conocimientos.","• Funciones
+A lo largo del curso se trabajan de forma transversal los tópicos de geometría, ecuaciones e inecuaciones. Por ejemplo, en la resolución de problemas se incorporan situaciones en las que se requiere el cálculo de áreas y volúmenes, entre otros; al obtener dominio real de funciones, el signo de una función y en el cálculo de imágenes o preimágenes se refuerza la resolución de ecuaciones e inecuaciones.
+","Desarrollar estructuras de razonamiento lógico matemático, algebraico y geométrico para aplicarlos en la resolución de problemas que involucren el concepto de función y habilidades que le permitirán respetar a los demás, integrarse con confianza en grupos de trabajo y elaborar de manera honesta, crítica y creativa las actividades del curso, mostrando interés permanente en la búsqueda de nuevos conocimientos.","• Funciones
 • Funciones algebraicas
 • Funciones exponenciales y logarítmicas
-• Funciones trigonométricas"
+• Funciones trigonométricas
+"
 "CIB0101","MA1102","Cálculo Diferencial e Integral","4","El curso MA1102 Calculo Diferencial e Integral es el segundo de la secuencia de cursos diseñados para brindar la formación matemática de las carreras de ingeniería que imparte el Instituto Tecnologico de Costa Rica. 
 La tematica principal del curso se resume en los siguientes tópicos: cálculo proposicional, límite y continuidad de una funcion de una variable, derivada de una función de una variable, aplicaciones de la derivada de una funcion de una variable, la integral indefinida y la integral definida de una funcion de una variable, aplicaciones de la integral definida, e integrales impropias de primera especie y de segunda especie.","1. Introducir al estudiante a la simbología propia de la Matematica. 
 2. Fomentar en el estudiante su capacidad de analisis para la realización de razonamientos deductivos.
@@ -33,8 +35,7 @@ Este curso tiene como fin promover un aprendizaje significativo para el estudian
 • Dinámica rotacional y la cantidad de movimiento angular
 • Estática"
 "CIB0103","FI1201","Laboratorio de Física General I","1","En el Laboratorio de Física General I se realizan prácticas en las que se obtienen datos experimentales de magnitudes físicas relacionadas con la mecánica clásica. Estos datos se analizan y se contrastan con la teoría física para finalmente presentar resultados en informes de laboratorio. Las personas estudiantes desarrollan competencias en adquisición, observación y comparación de datos, análisis estadístico, redacción y presentación de un informe. Además del fortalecimiento de carácter científico, las personas estudiantes iniciarán el desarrollo de habilidades de comunicación necesarias en el campo técnico. 
-","Al finalizar el curso el estudiantado será capaz de verificar experimentalmente algunas leyes de la Física, en el ámbito de la mecánica clásica.
-","• Expresión de magnitudes en el Sistema Internacional de Unidades
+","Al finalizar el curso el estudiantado será capaz de verificar experimentalmente algunas leyes de la Física, en el ámbito de la mecánica clásica.","• Expresión de magnitudes en el Sistema Internacional de Unidades
 • Uso de Word y Excel para registro y tratamiento de datos en ciencias básicas
 • Recolección de datos de movimiento rectilíneo uniformemente acelerado
 • Conceptos básicos de estadística para análisis de movimiento rectilíneo uniformemente acelerado
@@ -45,6 +46,18 @@ Este curso tiene como fin promover un aprendizaje significativo para el estudian
 • Práctica de la conservación de la energía
 • Práctica de dinámica rotacional
 • Exposición oral de un informe de laboratorio
+"
+"CIB0104","QU1902","Fundamentos de Química","4","Se espera que al final del semestre, el estudiantado cuente con conocimientos básicos de la Química como ciencia que estudia la materia, su composición, propiedades y estados de agregación; incluyendo áreas temáticas como la periodicidad de las propiedades de los elementos, los enlaces en diversos tipos de sustancias, los cambios químicos de la materia, las características de los estados de agregación. Además, se discutirán temas globales de Química Orgánica y de temas de contaminación ambiental, así como características de diversos materiales.
+","Proporcionar al estudiantado una formación básica en Química, que le permita al estudiantado la justificación de fenómenos cotidianos o de la Ingeniería como su disciplina profesional.","• Introducción a la Química
+• Teoría atómica y periodicidad
+• Enlace químico
+• Reacciones químicas y cambios energéticos
+• Estados de agregación
+• Disperciones
+• Fundamentos de Química Orgánica
+• Familias de compuestos orgánicos
+• Los materiales y su impacto ambiental
+• Contaminación ambiental
 "
 "CYD0106","CI1106","Comunicación Escrita","2","La comunicación es esencial en la vida del ser humano y, más aún, cuando se trata del ámbito académico o del ámbito profesional, los cuales representan usos especializados de esta habilidad en los que cada persona debe ejercitarse para recibir, procesar y generar información con el fin de interrelacionarse de manera eficaz con el medio y con sus semejantes. 
 En este contexto, el curso de Comunicación Escrita tiene dos ejes fundamentales en el aprendizaje del código escrito: la lectura y la producción de textos escritos académicos que posibiliten en cada estudiante su integración a la vida académica y el desarrollo de estrategias básicas de comprensión lectora, así como competencias introductorias de escritura en educación superior. 
@@ -224,4 +237,137 @@ Dentro del modelo académico del ITCR, se busca que el arte se posicione como un
 • La novela
 • Escritura dramática
 "
-"CM3207"
+"CIB0402","CM3207","Métodos numéricos para Ingeniería","3","En el curso de Métodos Numéricos en Ingeniería se estudian distintos métodos para resolver problemas de matemática aplicada en ingeniería utilizando algoritmos numéricos y la ayuda del computador.
+","Resolver, mediante el uso de algoritmos numéricos y la ayuda de herramientas especializadas de software, problemas de matemática aplicada a la ingeniería.","• Conceptos básicos
+• Raices de ecuaciones
+• Sistema de ecuaciones lineales
+• Interpolación numérica
+• Derivación e integración numérica
+• Solución numérica de ecuaciones diferenciales
+"
+"FPH0408","CS4402","Seminario de Estudios Costarricenses","3","El curso Seminario de Estudios Costarricenses es un espacio que facilita a la persona estudiante desarrollar habilidades y destrezas vinculadas al debate, la reflexión, el análisis y la generación de explicaciones de la realidad social costarricense, vinculada con el contexto mundial. Así mismo, permite que la persona estudiante a nivel cognitivo cuente con insumos desde las ciencias sociales y las humanidades, de tal manera que, las realidades sean abordadas de forma integral e interdisciplinar en concordancia con el nuevo modelo pedagógico vigente en el ITCR. El propósito del curso es desarrollar en la persona estudiante el análisis crítico del conocimiento e información acerca de la realidad social costarricense, mediante la aplicación creativa de herramientas tecnológicas y metodológicas propias de la investigación científico social en el ámbito humanístico, necesarias para una formación integral
+","Contribuir al desarrollo en la persona estudiante de habilidades y destrezas asociadas al análisis crítico y propositivo de aspectos sociales, culturales, históricos, políticos, económicos, ambientales, de seguridad y salud, que permita una formación integral en su desempeño académico profesional desde la perspectiva de las ciencias sociales y las humanidades.","• Énfasis: Identidad y desafíos globales para Costa Rica
+• Énfasis: Ecología y Ambiente
+• Énfasis: Pensamiento y análisis político en Costa Rica.
+• Énfasis: Violencia y Medios Audiovisuales
+"
+"FPH04091","SE1204","Natación","0","Este curso está diseñado con el fin de brindar a las y los estudiantes la oportunidad de aprender a nadar de forma utilitaria y/o perfeccionar las diferentes técnicas de la natación, al igual de ver en la natación una excelente oportunidad de práctica recreativa y deportiva diaria. Promover su práctica a través de la concientización de los beneficios que se reportan de su periódica ejecución y de la importancia de lograr un equilibrio óptimo de la práctica deportiva con la carga académica que llevan los estudiantes.
+","Valorar a través del juego deportivo y del ejercicio físico la importancia del deporte, la educación física y la recreacin en su formación integral para el mejoramiento de su calidad de vida, en busca de fomentar su desarrollo humano","• Disposiciones generales para el curso
+• Familiarización
+• Progresiones de enseñanza de los cuatro estilos básicos de la natación.
+• Maniobras básicas de RCP, salvamento y supervivencia en el agua.
+• Flotación vertical, estilos
+• Diagnóstico y post-test 
+"
+"FPH04092","SE1205","Juegos y deportes en conjunto","0","El curso de Juegos y Deportes en Conjunto pretende ser un canal para la recreación del estudiantado, donde será protagonista, no espectador, teniendo la oportunidad de disfrutar de las actividades en un ambiente de buenas relaciones interpersonales con sus pares. 
+En la dinámica del curso se integran las habilidades socioemocionales, entre éstas el liderazgo y la empatía. 
+Además, se integran deportes en conjunto para la práctica del estudiantado, que no son tan tradicionales en el ambiente local denominados alternativos como por ejemplo Dodgeball, Ultimate Frisbee, Flag Football, Bádminton, Pickletball, Kickball, Korfball, y reforzando otros tradicionales.
+","Valorar a través del juego deportivo y del ejercicio físico la importancia del deporte, la educación física y la recreación en su formación integral para el mejoramiento de su calidad de vida, en busca de fomentar su desarrollo humano.","• Juegos
+• Deportes de Conjunto
+• Temas sobre Educación Física, Deporte, Recreación y Salud
+"
+"FPH04093","SE1206","Acondicionamiento físico","0","En este curso se pone en contacto al estudiante con los métodos de acondicionamiento físico más conocidos, sobre todo los de contacto con la naturaleza. 
+En la dinámica del curso se integran la habilidad de la autosuperación como una norma de vida.
+","Lograr que el estudiante valore el deporte, y el juego, como un medio más para promover y mejorar su calidad de vida.","• Capacidades físicas básicas
+• Métodos del entrenamiento
+• Temas sobre Educación Física, Deporte, Recreación y Salud
+"
+"FPH04094","SE1221","Fútbol","0","El fútbol se presenta como una actividad lúdica que fomenta hábitos saludables para la vida como la disciplina, trabajo en grupo y el desarrollo locomotor, tanto de la motora gruesa como fina, de mucho interés para el estudiante que debe desarrollar habilidades mecánicas importantes en diferentes carreras que ofrece la institución y en la vida misma.
+Este curso ofrece la posibilidad del desarrollo de la visión periférica y el desarrollo de la coordinación vista mano, vista pie importantísimo en el desarrollo integral del profesional.
+Además, dentro del desarrolló personal se analizan diferentes aspectos del liderazgo y su incorporación al proyecto de vida del ser humano.
+","Mejorar su calidad de vida por medio de la actividad físico-deportiva.","• Historia del Fútbol
+• El pase
+• Recepción
+• Conducción
+• Complementos de la conducción
+• Cabeceo
+• Control Orientado
+• Saque de Banda
+• Recursos del Jugador
+• Remate a marco con:
+• Principios básicos de táctica defensiva y ofensiva
+"
+"FPH04095","SE1223","Voleibol","0","El presente curso pretende brindar, capacitar y recrear al estudiante en la práctica de la disciplina del voleibol, para esto se estudiarán los fundamentos técnicos básicos de dicho deporte. 
+Las actividades planeadas, serán enmarcadas en un ambiente formativo y recreativo que favorezcan una amplia participación de los estudiantes, complementando el aprendizaje de los fundamentos se utilizarán diversos tipos de ejercicios físicos, así como sistemas de entrenamiento dirigidos a mejorar la condición y salud física.
+","1. Conocer sobre el origen, reglamentación y la historia del voleibol. 
+2. Ejecutar los fundamentos técnicos del voleibol. 
+3. Promover la salud física y mental. 
+4. Reforzar mediante las prácticas de juego el respeto, los valores sociales y deportivos.","• Origen e historia del voleibol
+• El calentamiento en el deporte
+• Fundamentos técnicos básicos del voleibol
+• Elementos básicos de juego
+• Posición básica y desplazamiento
+• Recepción mano baja
+• Voleo
+• El saque o servicio
+• El remate
+• Bloqueo
+• Sistemas de juego
+• Reglamento del voleibol
+• Preparación física
+"
+"FPH04096","SE1209","Beisbol - Softbol","0","En este curso se podrán desarrollar estrategias y acciones que pueden coadyuvar al desarrollo de la creatividad intelectual, motriz y de sentido crítico.
+Los aprendizajes a nivel psicomotriz, volitivo y cognitivo lograrán que la persona estudiante comprenda las facetas del juego, sus reglas generales y particulares, así como las estrategias tácticas individuales y colectivas. 
+","Mejorar su calidad de vida por medio de la actividad físico-deportiva.","• Introducción al Softbol y Béisbol
+• Destrezas defensivas
+• Estrategias defensivas y ofensivas fundamentales del juego.
+• Reglas de juego
+"
+"FPH04097","SE1219","Baloncesto Recreativo","0","El curso consistirá como su nombre lo indica en aprender, comprender, practicar y mejorar el baloncesto por medio del juego: alegre y divertido. 
+Se trabajará a través de la práctica de los fundamentos, el aprendizaje de sus reglas y de juegos recreativos y pre-deportivos por medio de la práctica de ejercicios o formaciones técnicas y divertidas y del “juego libre” (colectivos o mejengas). 
+","Valorar a través del juego la importancia del deporte, la educación física y la recreación en su formación integral y en el mejoramiento de su calidad de vida, en busca de elevar el desarrollo humano.","• Fundamentos ofensivos
+• Fundamentos defensivos
+• Reglamentación
+• Juegos pre-deportivos
+• El juego o partido: “Juego libre” (colectivos y/o mejengas)...
+• Acondicionamiento Físico: Pretest y Postest, con materiales y a cuerpo libre.
+"
+"FPH0501","AE4208","Desarrollo de Emprendedores","4","El concepto de Espíritu Emprendedor, entendido como un proceso permanente, consiste en detectar oportunidades y organizar recursos para su aprovechamiento, buscando con ello un beneficio económico, social, ambiental o de cualquier otra índole para sí mismo o para otros, está en boga en muchos países y en Costa Rica es cada vez más mencionado por diversos círculos económicos, políticos y sociales. 
+","Desarrollar las habilidades, actitudes, destrezas y talentos que incrementen el potencial emprendedor, reflejadas en la propuesta de en un proyecto empresarial innovador.","• Fomento del espíritu Emprendedor
+• Las micro, pequeñas y medianas empresas y su relación con el desarrollo económico
+• El plan de negocios y el rol del empresario
+• Proceso de creación de empresas y mecanismos de apoyo en nuestro país
+"
+"ADD0502","PI0502","Estadística Aplicada","2","El curso de Estadística aplicada aporta en el desarrollo de los siguientes rasgos del plan de estudios: aplicar herramientas estadísticas para diseñar experimentos, evaluar datos con rigor científico, y garantizar la confiabilidad, disponibilidad, mantenibilidad y seguridad en sistemas electromecánicos. Los aprendizajes que los estudiantes desarrollarán en el curso son: diseñar experimentos considerando principios estadísticos que garanticen la validez de los datos obtenidos; analizar datos experimentales mediante técnicas estadísticas que extraigan información relevante; aplicar fundamentos de probabilidad necesarios para la interpretación de experimentos y pruebas de hipótesis; y utilizar software especializado para el procesamiento y análisis de datos en estudios experimentales.
+","Aplicar metodologías de diseño de experimentos y herramientas estadísticas para la obtención y el análisis de datos en ingeniería.","• Fundamentos de estadística descriptiva
+• Fundamentos de probabilidad
+• Distribuciones de probabilidad
+• Prueba de hipótesis
+"
+"IMM0506","ME2208","Ciencia de Materiales","3","El curso de Ciencia de Materiales pretende desarrollar los aspectos más importantes que describen los materiales de uso industrial a través de una exposición de cada uno de los tipos, propiedades, aplicaciones y selección de los mismos, con el fin de brindar al futuro profesional de diversas áreas de la ingeniería, herramientas actualizadas y conocimientos pertinentes para la toma de decisiones sobre el procesamiento, análisis, elaboración y protección de los materiales que se utilizarán en diversos ámbitos de su carrera. Este curso se imparte a carreras que optan por acreditación y pretende desarrollar los atributos de Conocimientos de Ingeniería, Investigación en nivel intermedio y Ambiente y Sostenibilidad en nivel inicial.
+","1. Describir los diversos parámetros que rigen la formación, el comportamiento y las propiedades de los materiales metálicos, poliméricos, cerámicos y compuestos. 
+2. Investigar, en equipos interdisciplinarios, los procesos enfocados a la creación de productos o su mejora, mediante el estudio del manejo, selección y evaluación de los materiales. 
+3. Conocer el uso de la normativa internacional que rige el uso y el aseguramiento de la calidad de los materiales en diferentes ámbitos.","• Introducción a la Ciencia de los Materiales
+• Estructura atómica, enlaces, arreglos atómicos y difusión
+• Materiales metálicos
+• Materiales cerámicos
+• Materiales poliméricos
+• Materiales compuestos
+• Deterioro de materiales y protección
+• Otros materiales utilizados en ingeniería
+"
+"CYD0601","CI3202","Inglés para Mecatrónica","1","Este curso está diseñado para consolidar el dominio lingüístico de B1+ del estudiante que ingresa con perfil B1- según el Marco Común de Referencia para las lenguas 2001. 
+Se emplearán diferentes estrategias de enseñanza-aprendizaje para ayudar al estudiante a interactuar de forma comunicativa con otros en situaciones cotidianas, donde se emplee el vocabulario, los patrones de pronunciación y las estructuras gramaticales correspondientes a un nivel B1+. El estudiante será capaz de manejar vocabulario técnico básico de áreas como ingeniería mecánica, ingeniería electrónica, así como ingeniería eléctrica entre otras.
+","1. Comunicar de forma oral y escrita temas técnicos de la mecatrónica con vocabulario, pronunciación y patrones gramaticales de forma fluida y efectiva. 
+2. Valorar la importancia de la ética profesional.","• Ingeniería - Gramática: Presente Simple y Pasado Simple
+• Diseño y modelado - Gramática: Auxiliares y expresiones
+• Resistencia y rigidez - Gramática: La voz pasiva
+• Movimiento - Gramática: Preposiciones de lugar
+• La Electricidad - Gramática: El imperativo
+• La Electrónica - Gramática: Pasado simple vs Presente Perfecto
+• Computación y lógica - Gramática: Conectores
+• Materiales - Gramática: Comparativos y superlativos
+• Aire y Agua - Gramática: too vs enough
+"
+"IMM0606","CM4108","Transferencia de Calor","3","En el curso se desarrollarán conceptos básicos de transferencia de calor. Conducción de calor unidimensional y multidimensional en régimen permanente. Elementos de conducción de calor no-estacionaria. Convección de calor. Transferencia radiactiva de calor.
+","1. Introducir a los alumnos al estudio de la transferencia (o transporte) de calor.
+2. Establecer las ecuaciones de balance de energía térmica, incluyendo condiciones iniciales y de borde, para un problema asignado de ingeniería.
+3. Aplicar la analogía de la resistencia eléctrica y calcular eficiencias de intercambiadores de calor.
+4. Usar las resistencias de transferencia de calor para analizar flujos convectivos, conductivos y de radiación.","• Introducción a la Transferencia de calor
+• Conducción de calor unidimensional estacionaria
+• Conducción de calor multidimensional
+• Conducción de calor no estacionaria
+• Convección de calor
+• Intercambiadores de calor
+• Radiación de calor
+"
