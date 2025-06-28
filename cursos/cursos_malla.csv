@@ -11,7 +11,7 @@ FPH0108,EE0108,Introducción a la ingeniería electromecánica,FPH,1,8,2,0,1,,,A
 CIB0201,MA1103,Cálculo y álgebra lineal,CIB,2,1,4,0,4,CIB0101,,CIB0301;CIB0401
 CIB0202,FI1102,Física general II,CIB,2,2,4,0,3,CIB0102;CIB0101,,IEE0303;IMM0506;CIB0203
 CIB0203,FI1202,Laboratorio de física general II,CIB,2,3,0,2,1,CIB0103,CIB0202,IEE0303
-AUT0205,CA0205,Fundamentos de organización de computadoras,AUT,2,5,3,0,2,FPH0108,,IEE0305
+AUT0205,CA0205,Introducción a la arquitectura de computadores,AUT,2,5,3,0,2,FPH0108,,IEE0305
 CYD0206,CI1107,Comunicación oral,CYD,2,6,3,0,1,CYD0106,,
 IMM0207,EE0207,Estática,IMM,2,7,4,0,3,CIB0102;CYD0107,,IMM0307
 FPH0208,CS2303,Relaciones laborales,FPH,2,8,3,0,2,FPH0108,,FPH0209
