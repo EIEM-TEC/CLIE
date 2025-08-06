@@ -123,7 +123,7 @@ SCF0905,EE1101,Seminario de graduación I,SCF,9,5,2,2,3,FPH0701,,SCF1005
 SCF0906,EE8906,Robótica,SCF,9,6,2,2,3,SCF0806,SCF0907,SCF1201
 SCF0907,EE8907,Automatización y digitalización industrial,SCF,9,7,2,2,3,SCF0807,,SCF0906;SCF1007
 SCF1001,EE9001,Taller de integración de sistemas,SCF,10,1,0,4,2,SCF0901;SCF0902,,SCF1002
-SCF1002,EE9002,Diseño de interfases humano-máquina,SCF,10,2,2,2,3,,SCF1001,
+SCF1002,EE9002,Diseño de interfaces humano-máquina,SCF,10,2,2,2,3,,SCF1001,
 SCF1005,EE1102,Seminario de graduación II,SCF,10,5,0,0,4,SCF0905,,
 SCF1007,EE9007,Visión de máquina,SCF,10,7,2,2,3,,SCF0907,
 SCF1008,EE1103,Electiva I,SCF,10,8,4,0,3,,,
