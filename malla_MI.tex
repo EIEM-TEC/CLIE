@@ -1,0 +1,291 @@
+\documentclass[letterpaper,landscape]{article}%
+\usepackage{lastpage}%
+\usepackage{parskip}%
+\usepackage{geometry}%
+\geometry{left=0mm,right=0mm,top=1mm,bottom=0mm,headheight=1mm,footskip=1mm}%
+\usepackage{fontspec}%
+\usepackage[spanish,activeacute]{babel}%
+\usepackage{graphicx}%
+\usepackage{tikz}%
+\usepackage{anyfontsize}%
+\usepackage[dvipsnames]{xcolor}%
+\usepackage{colortbl}%
+\usepackage{array}%
+\usepackage{float}%
+\usepackage{longtable}%
+\usepackage{multirow}%
+\usepackage{fancyhdr}%
+%
+\usetikzlibrary{arrows.meta}%
+\tikzset{
+            pics/titulo/.style args={#1,#2}{
+            code={
+                \def\ancho{75}
+                \def\alto{0.7}
+                \draw[fill=#2] (-\ancho/2+7,2*\alto) rectangle (\ancho/2+7,-2*\alto) node[midway,align=center,text width=45cm]{\fontsize{30pt}{0pt}\selectfont \textbf{#1}};
+            }
+        }
+    }%
+\tikzset{
+            pics/curso/.style args={#1,#2,#3,#4,#5,#6}{
+            code={
+                \def\ancho{5}
+                \def\alto{0.8}
+                \draw[fill=#6] (-\ancho/2,\alto) rectangle (\ancho/2,-\alto) node[midway,align=center,text width=\ancho cm]{\fontsize{16pt}{2pt}\selectfont {#2}};
+                \draw[fill=#6] (-\ancho/2,\alto) rectangle (\ancho/2,\alto + \alto) node[midway]{\fontsize{14pt}{14pt}\selectfont #1};
+                \draw[fill=#6] (-\ancho/2,-\alto) rectangle (-\ancho/2 + \ancho/3, -\alto - \alto) node[midway]{\fontsize{14pt}{14pt}\selectfont #3};
+                \draw[fill=#6] (-\ancho/2 + \ancho/3,-\alto) rectangle (-\ancho/2 + 2*\ancho/3, -\alto - \alto) node[midway]{\fontsize{14pt}{14pt}\selectfont #4};
+                \draw[fill=#6] (-\ancho/2 + 2*\ancho/3,-\alto) rectangle (-\ancho/2 + 3*\ancho/3, -\alto - \alto) node[midway]{\fontsize{14pt}{14pt}\selectfont #5};
+            }
+        }
+    }%
+\tikzset{
+            pics/semestre/.style args={#1,#2,#3,#4,#5}{
+            code={
+                \def\ancho{6}
+                \def\alto{0.8}
+                \draw[fill=#2] (-\ancho/2,1.5*\alto) rectangle (\ancho/2,-1.5*\alto) node[midway,align=center,text width=\ancho cm]{\fontsize{16pt}{12pt}\selectfont \textbf{#1}};
+                \draw[fill=#2] (-\ancho/2,-\alto) rectangle (-\ancho/2 + \ancho/3, -\alto - \alto) node[midway]{\fontsize{12pt}{14pt}\selectfont #3};
+                \draw[fill=#2] (-\ancho/2 + \ancho/3,-\alto) rectangle (-\ancho/2 + 2*\ancho/3, -\alto - \alto) node[midway]{\fontsize{12pt}{14pt}\selectfont #4};
+                \draw[fill=#2] (-\ancho/2 + 2*\ancho/3,-\alto) rectangle (-\ancho/2 + 3*\ancho/3, -\alto - \alto) node[midway]{\fontsize{12pt}{14pt}\selectfont #5};
+            }
+        }
+    }%
+%
+\begin{document}%
+\normalsize%
+\centering%
+\begin{tikzpicture}[scale = 0.37,transform shape]%
+\draw (28,4)pic{titulo={Licenciatura en Ingeniería en Mantenimiento Industrial,lightgray}};%
+\filldraw [fill=white, draw=white](25,-40.6) node[align=left,text width=490mm]{\color{black}\fontsize{16pt}{10pt}\selectfont \textbf{1. Debe cursarse tres centros de formación humanistica para poder graduarse}};%
+\draw (0.5,0)pic{semestre={0,lightgray,2,0,2}};%
+\draw (7.37,0)pic{semestre={I,lightgray,21,4,14}};%
+\draw (14.24,0)pic{semestre={II,lightgray,20,6,16}};%
+\draw (21.11,0)pic{semestre={III,lightgray,21,6,20}};%
+\draw (27.98,0)pic{semestre={IV,lightgray,19,2,16}};%
+\draw (34.85,0)pic{semestre={V,lightgray,23,4,22}};%
+\draw (41.72,0)pic{semestre={VI,lightgray,16,5,18}};%
+\draw (48.59,0)pic{semestre={VII,lightgray,22,2,22}};%
+\draw (55.46,0)pic{semestre={VIII,lightgray,22,2,18}};%
+\draw (62.33,0)pic{semestre={IX,lightgray,23,2,22}};%
+\draw (69.2,0)pic{semestre={X,lightgray,0,30,12}};%
+\draw (0.5,-4.7)pic{curso={CI0200,Examen de diagnóstico,0,0,0,blue!20!white}};%
+\draw (0.5,-8.9)pic{curso={CI0202,Ingles básico,2,0,2,blue!20!white}};%
+\draw (7.37,-4.7)pic{curso={MA0101,Matemática general,5,0,2,blue!20!white}};%
+\draw (7.37,-8.9)pic{curso={CI1230,Inglés I,3,0,2,blue!20!white}};%
+\draw [black,line width=0.5mm](3.02,-5.9) --++ (0.3,0) --++ (0,-1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](3.02,-7.7) -- (4.84,-7.7);%
+\draw (7.37,-17.3)pic{curso={QU1106,Química básica I,4,0,3,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](7.37,-19.88) --++ (0,0.97);%
+\draw (7.37,-21.5)pic{curso={QU1102,Laboratorio de química básica I,0,2,1,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](7.37,-18.92) --++ (0,-0.97);%
+\draw (7.37,-25.7)pic{curso={CA2125,Elementos de computación,4,0,3,blue!20!white}};%
+\draw (7.37,-29.9)pic{curso={CS1502,Introducción a la técnica ciencia y tecnología,2,0,1,blue!20!white}};%
+\draw (7.37,-34.1)pic{curso={CI1106,Comunicación escrita,3,0,2,blue!20!white}};%
+\draw (7.37,-38.3)pic{curso={SE1200,Actividad deportiva I,0,2,0,blue!20!white}};%
+\draw (14.24,-4.7)pic{curso={MA1102,Cálculo diferencial e integral,5,0,4,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](9.89,-3.5) -- (11.71,-3.5);%
+\draw (14.24,-8.9)pic{curso={FI1101,Física general I,4,0,3,blue!20!white}};%
+\draw [-{Triangle[reversed,open,length=3mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](14.24,-7.29) --++ (0,0.94)node[align=center,text width=4mm,yshift=-2.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{1}};%
+\draw [-{Triangle[open,length=3mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](7.37,-6.31) --++ (0,-0.94)node[align=center,text width=4mm,yshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{1}};%
+\draw (14.24,-13.1)pic{curso={FI1201,Laboratorio de física general I,0,2,1,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](14.24,-10.52) --++ (0,-0.97);%
+\draw (14.24,-17.3)pic{curso={QU1107,Química básica II,4,0,3,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](9.89,-16.1) -- (11.71,-16.1);%
+\draw [black,line width=0.5mm](9.89,-20.3) --++ (0.3,0) --++ (0,1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](14.24,-19.88) --++ (0,0.97);%
+\draw (14.24,-21.5)pic{curso={QU1104,Laboratorio de química básica II,0,2,1,blue!20!white}};%
+\draw [black,line width=0.5mm](9.89,-18.5) --++ (0.3,0) --++ (0,-1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](9.89,-20.3) -- (11.71,-20.3);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](14.24,-18.92) --++ (0,-0.97);%
+\draw (14.24,-29.9)pic{curso={MI2101,Dibujo técnico,4,0,3,brown!20!white}};%
+\draw (14.24,-34.1)pic{curso={CI1107,Comunicación oral,3,0,1,blue!20!white}};%
+\draw (14.24,-38.3)pic{curso={SE1100,Actividad cultural I,0,2,0,blue!20!white}};%
+\draw (21.11,-4.7)pic{curso={MA1103,Cálculo y algebra lineal,4,0,4,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](16.76,-3.5) -- (18.58,-3.5);%
+\draw (21.11,-8.9)pic{curso={FI1102,Física general II,4,0,3,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](16.76,-7.7) -- (18.58,-7.7);%
+\draw [black,line width=0.5mm](16.76,-11.9) --++ (0.3,0) --++ (0,1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw [black,line width=0.5mm](16.76,-5.9) --++ (0.3,0) --++ (0,-1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw (21.11,-13.1)pic{curso={FI1202,Laboratorio de física general II,0,2,1,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](16.76,-11.9) -- (18.58,-11.9);%
+\draw [-{Triangle[reversed,open,length=3mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](21.11,-11.49) --++ (0,0.94)node[align=center,text width=4mm,yshift=-2.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{2}};%
+\draw [-{Triangle[open,length=3mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](21.11,-14.71) --++ (0,-0.94)node[align=center,text width=4mm,yshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{2}};%
+\draw (21.11,-21.5)pic{curso={MI2106,Estática,4,0,3,brown!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](17.23,-21.0) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{3}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{3}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](17.23,-22.8) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{4}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-30.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{4}};%
+\draw (21.11,-25.7)pic{curso={MI3103,Procesos de manufactura,3,0,3,brown!20!white}};%
+\draw [black,line width=0.5mm](16.76,-28.7) --++ (0.3,0) --++ (0,1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](21.11,-28.28) --++ (0,0.97);%
+\draw (21.11,-29.9)pic{curso={MI3104,Laboratorio procesos de manufactura,0,4,2,brown!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](21.11,-27.32) --++ (0,-0.97);%
+\draw (21.11,-34.1)pic{curso={CS2303,Relaciones laborales,3,0,2,blue!20!white}};%
+\draw (21.11,-38.3)pic{curso={CI1231,Inglés II,3,0,2,blue!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](17.23,-37.8) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{5}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](9.89,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{5}};%
+\draw (27.98,-4.7)pic{curso={MA2104,Cálculo superior,4,0,4,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](23.63,-3.5) -- (25.45,-3.5);%
+\draw (27.98,-8.9)pic{curso={FI2103,Física general III,4,0,3,blue!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](24.1,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{6}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-10.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{6}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](24.1,-10.2) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{7}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-5.1) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{7}};%
+\draw (27.98,-17.3)pic{curso={MI2205,Electricidad I,4,0,3,cyan!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](24.1,-16.8) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{8}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](23.63,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{8}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](24.1,-18.6) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{9}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](23.63,-5.1) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{9}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](27.98,-19.88) --++ (0,0.97);%
+\draw (27.98,-21.5)pic{curso={MI2202,Laboratorio de electricidad I,0,2,1,cyan!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](27.98,-18.92) --++ (0,-0.97);%
+\draw (27.98,-25.7)pic{curso={MI3124,Dibujo industrial,4,0,4,brown!20!white}};%
+\draw [black,line width=0.5mm](23.63,-28.7) --++ (0.3,0) --++ (0,1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw (27.98,-38.3)pic{curso={FH1000,Centros de formación humanistica,3,0,1,blue!20!white}};%
+\draw (34.85,-4.7)pic{curso={MA2105,Ecuaciones diferenciales,4,0,4,blue!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-4.2) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{10}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](23.63,-6.1) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{10}};%
+\draw (34.85,-8.9)pic{curso={MI3117,Dinámica,4,0,3,brown!20!white}};%
+\draw (34.85,-17.3)pic{curso={MI2207,Electricidad II,4,0,4,cyan!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](30.5,-16.1) -- (32.32,-16.1);%
+\draw [black,line width=0.5mm](30.5,-20.3) --++ (0.3,0) --++ (0,1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](34.85,-19.88) --++ (0,0.97);%
+\draw (34.85,-21.5)pic{curso={MI2204,Laboratorio de electricidad II,0,2,1,cyan!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](34.85,-18.92) --++ (0,-0.97);%
+\draw (34.85,-25.7)pic{curso={MI3115,Resistencia de materiales,4,0,3,brown!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-25.2) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{11}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](23.63,-21.9) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{11}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](30.5,-24.5) -- (32.32,-24.5);%
+\draw (34.85,-29.9)pic{curso={ME3208,Tecnología de materiales,3,0,2,blue!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-29.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{12}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](16.76,-17.7) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{12}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](34.85,-32.48) --++ (0,0.97);%
+\draw (34.85,-34.1)pic{curso={ME3209,Laboratorio de tecnología de materiales,0,2,1,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](34.85,-31.52) --++ (0,-0.97);%
+\draw (34.85,-38.3)pic{curso={MI3130,Termodinámica,4,0,4,magenta!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](30.97,-37.8) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{13}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](30.5,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{13}};%
+\draw (41.72,-4.7)pic{curso={PI2609,Probabilidad y estadística,3,0,2,blue!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](37.84,-4.2) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{14}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](30.5,-5.1) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{14}};%
+\draw (41.72,-8.9)pic{curso={AE5121,Ingeniería económica,3,0,3,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](41.72,-6.32) --++ (0,-0.97);%
+\draw (41.72,-17.3)pic{curso={MI3210,Máquinas Eléctricas,3,0,4,cyan!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](37.37,-16.1) -- (39.19,-16.1);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](37.37,-16.1) -- (39.19,-16.1);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](41.72,-19.88) --++ (0,0.97);%
+\draw (41.72,-21.5)pic{curso={MI3206,Laboratorio de máquinas Eléctricas,0,2,1,cyan!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](41.72,-18.92) --++ (0,-0.97);%
+\draw (41.72,-29.9)pic{curso={MI3108,Mecánica de fluidos,4,0,4,magenta!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](37.84,-29.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{15}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](37.37,-5.1) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{15}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](37.84,-31.2) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{16}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](37.37,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{16}};%
+\draw (41.72,-34.1)pic{curso={MI3111,Laboratorio de mecánica de fluidos,0,3,1,magenta!20!white}};%
+\draw [black,line width=0.5mm](37.37,-37.1) --++ (0.3,0) --++ (0,1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](41.72,-31.52) --++ (0,-0.97);%
+\draw (41.72,-38.3)pic{curso={CM4108,Transferencia de calor,3,0,3,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](37.37,-37.1) -- (39.19,-37.1);%
+\draw (48.59,-4.7)pic{curso={CM3207,Métodos numéricos,4,0,3,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](44.24,-3.5) -- (46.06,-3.5);%
+\draw (48.59,-8.9)pic{curso={MI4300,Administración de mantenimiento I,4,0,4,green!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](44.24,-7.7) -- (46.06,-7.7);%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](44.71,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{17}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](44.24,-17.7) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{17}};%
+\draw [black,line width=0.5mm](44.24,-5.9) --++ (0.3,0) --++ (0,-1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw (48.59,-13.1)pic{curso={MI4311,Modelos cuantitativos para la toma de decisiones,3,0,3,green!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](44.71,-12.6) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{18}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](23.63,-7.1) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{18}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](44.71,-14.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{19}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](44.24,-5.1) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{19}};%
+\draw (48.59,-17.3)pic{curso={MI3209,Electricidad III,3,0,3,cyan!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](44.71,-16.8) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{20}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](37.37,-17.7) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{20}};%
+\draw (48.59,-29.9)pic{curso={MI3116,Turbomáquinas,4,0,4,magenta!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](44.24,-28.7) -- (46.06,-28.7);%
+\draw [black,line width=0.5mm](44.24,-32.9) --++ (0.3,0) --++ (0,1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw (48.59,-34.1)pic{curso={MI3119,Laboratorio de turbomáquinas,0,2,1,magenta!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](44.24,-32.9) -- (46.06,-32.9);%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](48.59,-31.52) --++ (0,-0.97);%
+\draw (48.59,-38.3)pic{curso={AE4208,Desarrollo de emprendedores,4,0,4,blue!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](44.71,-37.8) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{21}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](23.63,-34.5) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{21}};%
+\draw (55.46,-8.9)pic{curso={MI4305,Administración de mantenimiento II,3,0,3,green!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](51.11,-7.7) -- (52.93,-7.7);%
+\draw (55.46,-13.1)pic{curso={MI4101,Electiva I,4,0,4,blue!20!white}};%
+\draw (55.46,-29.9)pic{curso={MI4136,Elementos de máquinas,5,0,4,brown!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](51.58,-29.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{22}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](37.37,-26.1) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{22}};%
+\draw [black,line width=0.5mm](51.11,-32.9) --++ (0.3,0) --++ (0,1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw (55.46,-34.1)pic{curso={SO2601,Fundamentos de seguridad e higiene ocupacional,2,0,1,blue!20!white}};%
+\draw [black,line width=0.5mm](51.11,-37.1) --++ (0.3,0) --++ (0,1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw (55.46,-17.3)pic{curso={MI4209,Control eléctrico,3,0,3,cyan!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](51.11,-16.1) -- (52.93,-16.1);%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](51.58,-16.8) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{23}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](44.24,-18.7) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{23}};%
+\draw (55.46,-21.5)pic{curso={MI4210,Laboratorio de control eléctrico,0,2,1,cyan!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](55.46,-18.92) --++ (0,-0.97);%
+\draw (55.46,-38.3)pic{curso={CS3404,Seminario de ética en ingeniería,5,0,2,blue!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](51.58,-37.8) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{24}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](23.63,-35.5) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{24}};%
+\draw (62.33,-8.9)pic{curso={MI6351,Mantenimiento predictivo,4,0,4,green!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](58.45,-8.4) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{25}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](51.11,-9.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{25}};%
+\draw (62.33,-13.1)pic{curso={MI5102,Electiva II,4,0,4,blue!20!white}};%
+\draw (62.33,-17.3)pic{curso={MI5215,Análisis de sistemas eléctricos de potencia,4,0,4,cyan!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](62.33,-19.88) --++ (0,0.97);%
+\draw (62.33,-21.5)pic{curso={MI4212,Instalaciones Eléctricas,4,0,4,cyan!20!white}};%
+\draw [black,line width=0.5mm](57.98,-18.5) --++ (0.3,0) --++ (0,-1.8)coordinate(inicio);
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](inicio) --++ (1.55,0);
+\draw [fill,black] (inicio) circle (0.45mm);%
+\draw (62.33,-25.7)pic{curso={MI4129,Sistemas de vapor,4,0,3,magenta!20!white}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](58.45,-25.2) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{26}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](44.24,-38.7) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{26}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](58.45,-27.0) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{27}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](51.11,-30.3) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{27}};%
+\draw [{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]}-,black,line width=0.5mm,](58.45,-28.8) node[align=center,text width=4mm,xshift=4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{28}}--++ (1.35,0);%
+\draw [-{Turned Square[open,length=4mm,line width=0.25mm,width=4mm]},black,line width=0.5mm,](51.11,-34.5) --++ (1.35,0) node[align=center,text width=4mm,xshift=-4.5mm]{\color{black}\fontsize{10pt}{10pt}\selectfont \textbf{28}};%
+\draw (62.33,-29.9)pic{curso={MI4125,Laboratorio de sistemas de vapor,0,2,1,magenta!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](62.33,-27.32) --++ (0,-0.97);%
+\draw (62.33,-38.3)pic{curso={CS4402,Seminario de estudios costarricenses,3,0,2,blue!20!white}};%
+\draw [-{Stealth[length=3mm,width=2mm]},black,line width=0.5mm](57.98,-37.1) -- (59.8,-37.1);%
+\draw (69.2,-38.3)pic{curso={MI5520,Práctica profesional,0,30,12,blue!20!white}};%
+\draw (76.07,-4.7)pic{curso={MI4126,Refrigeración,4,0,4,magenta!20!white}};%
+\draw (76.07,-8.9)pic{curso={MI4127,Laboratorio de refrigeración,0,2,1,magenta!20!white}};%
+\draw (76.07,-13.1)pic{curso={MI5135,Ventilación industrial,4,0,4,magenta!20!white}};%
+\draw (76.07,-17.3)pic{curso={MI5152,Aire acondicionado,4,0,4,magenta!20!white}};%
+\draw (76.07,-21.5)pic{curso={MI5411,Automatismo,4,0,4,cyan!20!white}};%
+\draw (76.07,-25.7)pic{curso={MI6153,Ahorro energético,4,0,4,green!20!white}};%
+\draw (76.07,-29.9)pic{curso={MI6252,Neumática,4,0,4,magenta!20!white}};%
+\draw (76.07,-34.1)pic{curso={MI6253,Fundamentos en administración de proyectos en ingeniería,4,0,4,green!20!white}};%
+\draw (76.07,-38.3)pic{curso={MI6254,Sistemas de protección contra incendios a base de agua,4,0,4,magenta!20!white}};%
+\draw (76.07,-42.5)pic{curso={MI6255,Sistemas de control automático,4,0,4,cyan!20!white}};%
+\end{tikzpicture}%
+\end{document}
